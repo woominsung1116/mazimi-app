@@ -86,7 +86,7 @@ awaiting_confirmation → completed (모두 취소·만료)
 - 프로그램은 **토큰**으로만 가리킨다: `context`(화면의 혜택, 대화나 메시지의 `program_id`), `selected`(사용자가 고른 2~4개), `saved`(북마크·준비·알림 구독, 마감 순). 모델은 id를 만들 수 없다. 서버가 사용자 데이터와 공개 조건(`currently_available_sql`)으로 푼다. 상태 기록만 마감이 지난 공고도 허용한다.
 - 토큰 확장 상한: 비교 4, 알림 5, 양식 1, 공식 페이지 2, 나머지 3.
 - v3 도구 세 개는 각자 플래그가 있다(기본 off): `ASSISTANT_AGENT_OFFICIAL_PAGE_ENABLED`(+ `OFFICIAL_PAGE_MCP_URL`·`OFFICIAL_PAGE_MCP_TOKEN`), `ASSISTANT_AGENT_DOCUMENT_LINKS_ENABLED`, `ASSISTANT_AGENT_CALENDAR_ENABLED`. 꺼져 있으면 빠른 경로는 그 도구가 없던 때처럼 라우팅하고(`goals::decide_with`), 모델 계획에서는 그 단계를 버린다. 설계·보안 분석·배포 순서는 핸드오프 `agent-tools.md`.
-- 칸에 값을 적어 달라는 목표(`이름 칸에 홍길동으로 적어줘`)는 값을 읽지 않고 `open_form_fill` 카드로 간다. 채팅으로 값을 채우는 도구(`fill_form_fields`)는 사용자 결정으로 빠졌다.
+- 칸에 값을 적어 달라는 목표(`이름 칸에 홍길동으로 적어줘`)는 값을 읽지 않고 `open_form_fill` 카드로 간다. 서버에서 채팅 값을 채우는 도구(`fill_form_fields`)는 사용자 결정으로 빠졌고, 채팅으로 말한 값은 앱이 기기 안에서 양식 칸에 맞춰 승인 카드로 넣는다(`apps/mobile/lib/formFill/chatFill.ts`). 그 값은 서버로 보내지 않는다.
 - 결과 봉투(스펙 §7.3): `{seq, tool, permission, program_id?, ok, status, data, evidence[{id, program_id, kind, quote?, source_label, source_url?, captured_at?}], error?{code,message}, executed_at}`. 내부 오류는 일반 문구로만 나간다.
 
 ## 5. 확인과 실행 (스펙 §8)
