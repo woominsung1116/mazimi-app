@@ -1,0 +1,21 @@
+# *
+User-agent: *
+Disallow: /codeit-super-admin
+Disallow: /teams-admin
+Disallow: /assignments
+Disallow: /catalog
+Disallow: /community/revisions
+Disallow: /courses
+Disallow: /dashboard
+Disallow: /learn/courses
+Disallow: /questions
+Disallow: /coupons/apply
+Disallow: /kdc/enrollments
+
+# Host
+Host: https://www.codeit.kr
+
+# Sitemaps
+Sitemap: https://www.codeit.kr/sitemap.xml
+Sitemap: https://www.codeit.kr/server-sitemap.xml
+Sitemap: https://codeit-teams.inblog.io/sitemap.xml

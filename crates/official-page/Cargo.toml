@@ -1,0 +1,35 @@
+[package]
+name = "mazimi-official-page"
+version = "0.1.0"
+edition = "2021"
+description = "Isolated live official-page fetch for the agent (MCP server, no database)."
+
+[lib]
+name = "mazimi_official_page"
+path = "src/lib.rs"
+
+[[bin]]
+name = "official-page-mcp"
+path = "src/main.rs"
+
+[dependencies]
+mazimi-core = { path = "../core", features = ["schemars"] }
+mazimi-worker = { path = "../worker" }
+# Official MCP Rust SDK (Apache-2.0). Pinned: the 3.x line releases weekly.
+rmcp = { version = "=3.9.0", default-features = false, features = ["server", "macros", "schemars", "transport-streamable-http-server"] }
+schemars = { version = "=1.2.2", features = ["chrono04"] }
+tokio-util = "0.7"
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+reqwest = { workspace = true }
+async-trait = { workspace = true }
+subtle = "2"
+
+[dev-dependencies]
+rmcp = { version = "=3.9.0", default-features = false, features = ["client", "transport-streamable-http-client-reqwest"] }

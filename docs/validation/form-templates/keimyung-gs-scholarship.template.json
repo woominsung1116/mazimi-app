@@ -1,0 +1,869 @@
+{
+  "version": 1,
+  "content_hash": "95cced44c470e01fdfbbcaf792648aa57b18cfd80fd969eed306bd7c05d0b85e",
+  "page_count": 17,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p2-f01",
+      "page": 1,
+      "rect": {
+        "x": 0.09,
+        "y": 0.05,
+        "w": 0.026,
+        "h": 0.02
+      },
+      "type": "text",
+      "label": "신청 학년도",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p2-f02",
+      "page": 1,
+      "rect": {
+        "x": 0.2329,
+        "y": 0.0499,
+        "w": 0.0286,
+        "h": 0.0202
+      },
+      "type": "checkbox",
+      "label": "신청 학기: 1학기",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f03",
+      "page": 1,
+      "rect": {
+        "x": 0.3476,
+        "y": 0.0499,
+        "w": 0.0286,
+        "h": 0.0202
+      },
+      "type": "checkbox",
+      "label": "신청 학기: 2학기",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f04",
+      "page": 1,
+      "rect": {
+        "x": 0.4622,
+        "y": 0.0499,
+        "w": 0.0286,
+        "h": 0.0202
+      },
+      "type": "checkbox",
+      "label": "신청 학기: 전기",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f05",
+      "page": 1,
+      "rect": {
+        "x": 0.563,
+        "y": 0.0499,
+        "w": 0.0286,
+        "h": 0.0202
+      },
+      "type": "checkbox",
+      "label": "신청 학기: 후기",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f06",
+      "page": 1,
+      "rect": {
+        "x": 0.1683,
+        "y": 0.092,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "학위과정: 박사",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f07",
+      "page": 1,
+      "rect": {
+        "x": 0.2603,
+        "y": 0.092,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "학위과정: 석사",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f08",
+      "page": 1,
+      "rect": {
+        "x": 0.3523,
+        "y": 0.092,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "학위과정: 통합",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f09",
+      "page": 1,
+      "rect": {
+        "x": 0.48,
+        "y": 0.089,
+        "w": 0.16,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "학과",
+      "mapping": "major",
+      "required": true
+    },
+    {
+      "id": "p2-f10",
+      "page": 1,
+      "rect": {
+        "x": 0.687,
+        "y": 0.089,
+        "w": 0.25,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "전공",
+      "mapping": "major",
+      "required": false
+    },
+    {
+      "id": "p2-f11",
+      "page": 1,
+      "rect": {
+        "x": 0.2888,
+        "y": 0.1141,
+        "w": 0.1376,
+        "h": 0.0202
+      },
+      "type": "text",
+      "label": "수험번호(학번)",
+      "mapping": "student_id",
+      "required": true
+    },
+    {
+      "id": "p2-f12",
+      "page": 1,
+      "rect": {
+        "x": 0.4801,
+        "y": 0.1141,
+        "w": 0.1768,
+        "h": 0.0202
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f13",
+      "page": 1,
+      "rect": {
+        "x": 0.7441,
+        "y": 0.1141,
+        "w": 0.1985,
+        "h": 0.0202
+      },
+      "type": "text",
+      "label": "휴대전화",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p2-f14",
+      "page": 1,
+      "rect": {
+        "x": 0.1686,
+        "y": 0.1433,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "조건선택: 우리 대학교 학부 비사스칼라 장학 수혜자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f15",
+      "page": 1,
+      "rect": {
+        "x": 0.1686,
+        "y": 0.1575,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "조건선택: 우리 대학교 출신(학사 또는 석사",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f16",
+      "page": 1,
+      "rect": {
+        "x": 0.1686,
+        "y": 0.1718,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "조건선택: 공공기관 5급 이상 재직자 또는 이에 준하는 공공단체 재직자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f17",
+      "page": 1,
+      "rect": {
+        "x": 0.1686,
+        "y": 0.186,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "조건선택: 우리 대학교 또는 법인산하 기관 재직자 또는 가족, 계성학원 또는 신명학",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f18",
+      "page": 1,
+      "rect": {
+        "x": 0.1686,
+        "y": 0.2003,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "조건선택: 해당없음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f19",
+      "page": 1,
+      "rect": {
+        "x": 0.169,
+        "y": 0.2423,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "대상 구분: 생활보호대상자(기초생활수급자·차상위계층)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f20",
+      "page": 1,
+      "rect": {
+        "x": 0.169,
+        "y": 0.316,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "대상 구분: 일반대상자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f21",
+      "page": 1,
+      "rect": {
+        "x": 0.1602,
+        "y": 0.6386,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "소득분위: 9분위 이상",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f22",
+      "page": 1,
+      "rect": {
+        "x": 0.1602,
+        "y": 0.6715,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "소득분위: 8분위 이하",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f23",
+      "page": 1,
+      "rect": {
+        "x": 0.31,
+        "y": 0.68,
+        "w": 0.04,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "건강보험료 납부 첫째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f24",
+      "page": 1,
+      "rect": {
+        "x": 0.418,
+        "y": 0.68,
+        "w": 0.04,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "건강보험료 납부 둘째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f25",
+      "page": 1,
+      "rect": {
+        "x": 0.513,
+        "y": 0.68,
+        "w": 0.038,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "건강보험료 납부 셋째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f26",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.7022,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 본인: 직장",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f27",
+      "page": 1,
+      "rect": {
+        "x": 0.294,
+        "y": 0.702,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 본인 첫째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f28",
+      "page": 1,
+      "rect": {
+        "x": 0.4,
+        "y": 0.702,
+        "w": 0.097,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 본인 둘째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f29",
+      "page": 1,
+      "rect": {
+        "x": 0.501,
+        "y": 0.702,
+        "w": 0.092,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 본인 셋째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f30",
+      "page": 1,
+      "rect": {
+        "x": 0.597,
+        "y": 0.702,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 본인 합계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f31",
+      "page": 1,
+      "rect": {
+        "x": 0.703,
+        "y": 0.702,
+        "w": 0.108,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 본인 평균",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f32",
+      "page": 1,
+      "rect": {
+        "x": 0.815,
+        "y": 0.702,
+        "w": 0.128,
+        "h": 0.108
+      },
+      "type": "text",
+      "label": "건강보험료 평균의 합계액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f33",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.7128,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 본인: 지역",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f34",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.7303,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 배우자: 직장",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f35",
+      "page": 1,
+      "rect": {
+        "x": 0.294,
+        "y": 0.73,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 배우자 첫째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f36",
+      "page": 1,
+      "rect": {
+        "x": 0.4,
+        "y": 0.73,
+        "w": 0.097,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 배우자 둘째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f37",
+      "page": 1,
+      "rect": {
+        "x": 0.501,
+        "y": 0.73,
+        "w": 0.092,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 배우자 셋째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f38",
+      "page": 1,
+      "rect": {
+        "x": 0.597,
+        "y": 0.73,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 배우자 합계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f39",
+      "page": 1,
+      "rect": {
+        "x": 0.703,
+        "y": 0.73,
+        "w": 0.108,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 배우자 평균",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f40",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.741,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 배우자: 지역",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f41",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.7584,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 부: 직장",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f42",
+      "page": 1,
+      "rect": {
+        "x": 0.294,
+        "y": 0.758,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 부 첫째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f43",
+      "page": 1,
+      "rect": {
+        "x": 0.4,
+        "y": 0.758,
+        "w": 0.097,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 부 둘째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f44",
+      "page": 1,
+      "rect": {
+        "x": 0.501,
+        "y": 0.758,
+        "w": 0.092,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 부 셋째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f45",
+      "page": 1,
+      "rect": {
+        "x": 0.597,
+        "y": 0.758,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 부 합계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f46",
+      "page": 1,
+      "rect": {
+        "x": 0.703,
+        "y": 0.758,
+        "w": 0.108,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 부 평균",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f47",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.7691,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 부: 지역",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f48",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.7865,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 모: 직장",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f49",
+      "page": 1,
+      "rect": {
+        "x": 0.294,
+        "y": 0.786,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 모 첫째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f50",
+      "page": 1,
+      "rect": {
+        "x": 0.4,
+        "y": 0.786,
+        "w": 0.097,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 모 둘째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f51",
+      "page": 1,
+      "rect": {
+        "x": 0.501,
+        "y": 0.786,
+        "w": 0.092,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 모 셋째 달",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f52",
+      "page": 1,
+      "rect": {
+        "x": 0.597,
+        "y": 0.786,
+        "w": 0.102,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 모 합계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f53",
+      "page": 1,
+      "rect": {
+        "x": 0.703,
+        "y": 0.786,
+        "w": 0.108,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "건강보험료 모 평균",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f54",
+      "page": 1,
+      "rect": {
+        "x": 0.2344,
+        "y": 0.7972,
+        "w": 0.0168,
+        "h": 0.0119
+      },
+      "type": "checkbox",
+      "label": "건강보험 모: 지역",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f55",
+      "page": 1,
+      "rect": {
+        "x": 0.399,
+        "y": 0.849,
+        "w": 0.015,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "본문 신청 학년도",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f56",
+      "page": 1,
+      "rect": {
+        "x": 0.466,
+        "y": 0.849,
+        "w": 0.015,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "본문 신청 학기",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f57",
+      "page": 1,
+      "rect": {
+        "x": 0.4315,
+        "y": 0.8663,
+        "w": 0.0215,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year2"
+    },
+    {
+      "id": "p2-f58",
+      "page": 1,
+      "rect": {
+        "x": 0.4718,
+        "y": 0.8663,
+        "w": 0.0316,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f59",
+      "page": 1,
+      "rect": {
+        "x": 0.5222,
+        "y": 0.8663,
+        "w": 0.0484,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f60",
+      "page": 1,
+      "rect": {
+        "x": 0.7898,
+        "y": 0.9008,
+        "w": 0.0557,
+        "h": 0.0261
+      },
+      "type": "signature",
+      "label": "신청자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p2-f61",
+      "page": 1,
+      "rect": {
+        "x": 0.6034,
+        "y": 0.9037,
+        "w": 0.1847,
+        "h": 0.0202
+      },
+      "type": "text",
+      "label": "신청자 성명",
+      "mapping": "name",
+      "required": true
+    }
+  ],
+  "derived": {
+    "source_sha256": "e21b3ec2fafb9d605301e5c9d6d6f04867d05a9812c6649b2f882e66fe7f9f92",
+    "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b"
+  }
+}

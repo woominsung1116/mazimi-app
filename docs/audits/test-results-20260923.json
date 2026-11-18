@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-09-24T04:41:02.924648+00:00",
+  "environment": "isolated local PostgreSQL, no production account mutation",
+  "after_rust_security_updates": true,
+  "unit": {
+    "api": 22,
+    "core": 33,
+    "worker": 116,
+    "failed": 0,
+    "ignored_external_api": 1,
+    "core_note": "Passed in earlier security validation; core unchanged since then",
+    "worker_note": "116 passed earlier; worker unchanged in application journey milestone"
+  },
+  "api_integration": {
+    "passed": 85,
+    "failed": 0
+  },
+  "mobile": {
+    "typescript": "passed",
+    "expo_web_export": "passed",
+    "fresh_browser_auth_regions": "passed",
+    "production_browser_auth_regions": "passed",
+    "google_real_callback": "deferred by user: OAuth client not issued",
+    "final_production_browser_report": "production-auth-region-check-20260923.json",
+    "development_token_injection": "removed",
+    "development_tokens_in_public_bundle": false,
+    "application_journey_browser": "passed: 7 isolated browser flows, no real provider submission",
+    "application_journey_report": "application-journey-browser-check-20260923.json",
+    "production_application_journey": "passed: public detail to login, pending target preserved, anonymous APIs denied",
+    "production_application_journey_report": "production-application-journey-check-20260923.json",
+    "application_kit_logic": "passed: aliases, files, expiry, issue dates, selected fields, mailto header injection",
+    "application_kit_browser": "passed: 10 isolated flows",
+    "application_kit_report": "application-kit-browser-check-20260923.json",
+    "application_kit_native": "not run on native device",
+    "production_application_kit": "passed: guest entry, single header, login continuation, unauthorized API rejection",
+    "production_application_kit_report": "production-application-kit-check-20260924.json"
+  },
+  "deployment": {
+    "migration": 20260923000017,
+    "api": "healthy",
+    "worker": "healthy",
+    "web": "healthy",
+    "watchdog_timer": "active",
+    "backup_timer": "active",
+    "actual_provider_submission": false,
+    "application_materials_deployed_at": "2026-09-24T04:37:45Z"
+  }
+}

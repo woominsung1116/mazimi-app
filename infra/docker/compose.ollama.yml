@@ -1,0 +1,75 @@
+# OPTIONAL overlay for A-09 AI extraction. Not part of the default stack:
+# the service sits behind the `ai` profile and the worker keeps
+# EXTRACTION_AI_ENABLED unset (off) until the rollout gates in
+# docs/mazimi-ai-extraction.md pass on this host.
+#
+#   docker compose -f compose.yml -f infra/docker/compose.ollama.yml --profile ai up -d ollama
+#   docker compose exec ollama ollama pull "$EXTRACTION_AI_MODEL"
+#   # then in .env.production: EXTRACTION_AI_ENABLED=true (worker restart)
+#
+# Rollback: set EXTRACTION_AI_ENABLED=false (or remove it), restart the
+# worker, then `docker compose ... --profile ai rm -sf ollama`.
+# Approved facts stay; pending candidates simply stop being produced.
+x-logging: &ollama-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  ollama:
+    profiles: ["ai"]
+    # Pin a tag that supports the benchmarked model. Never :latest.
+    image: ${OLLAMA_IMAGE:?pin an ollama/ollama tag}
+    restart: unless-stopped
+    logging: *ollama-logging
+    # No `ports:` and only the `ai` network: the worker reaches it as
+    # http://ollama:11434 (allowed by the endpoint allowlist); Caddy, the API
+    # and the web app are not on this network, so a request bug there cannot
+    # call /api/pull, /api/delete or /api/create. The network keeps egress so
+    # `ollama pull` works.
+    networks: [ai]
+    environment:
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_KEEP_ALIVE=5m
+      # OLLAMA_DEBUG stays unset so prompts are not logged.
+      # Ollama ignores `cpuset` when sizing its thread pool (one thread per
+      # HOST core, ~45x slower on a 2-3 core cpuset). Clients therefore send
+      # options.num_thread: keep EXTRACTION_AI_NUM_THREADS (worker below) and
+      # ASSISTANT_AI_NUM_THREADS equal to the CPU count of OLLAMA_CPUSET.
+    volumes:
+      - ollama_models:/root/.ollama
+    # 2 of 4 OCPUs, 0-1 stay for Besu/Postgres/API. On a dedicated host
+    # "1,2,3" with OLLAMA_CPUS=3 and *_NUM_THREADS=3 is fine.
+    cpuset: "${OLLAMA_CPUSET:-2,3}"
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "${OLLAMA_CPUS:-2}"
+          memory: ${OLLAMA_MEMORY:-8g}
+          pids: 256
+
+  worker:
+    networks: [default, ai]
+    environment:
+      - EXTRACTION_AI_ENABLED=${EXTRACTION_AI_ENABLED:-false}
+      - EXTRACTION_AI_URL=http://ollama:11434
+      - EXTRACTION_AI_MODEL=${EXTRACTION_AI_MODEL:-qwen3.5:9b-q4_K_M}
+      - EXTRACTION_AI_MAX_PROGRAMS=${EXTRACTION_AI_MAX_PROGRAMS:-8}
+      # = CPU count of OLLAMA_CPUSET (default "2,3" -> 2).
+      - EXTRACTION_AI_NUM_THREADS=${EXTRACTION_AI_NUM_THREADS:-2}
+      - EXTRACTION_AI_QUEUE_MAX_PROGRAMS=${EXTRACTION_AI_QUEUE_MAX_PROGRAMS:-4}
+      # Off until the auto-apply gate passes (docs/mazimi-ai-extraction.md §14.5).
+      - EXTRACTION_AUTO_APPLY_ENABLED=${EXTRACTION_AUTO_APPLY_ENABLED:-false}
+      - EXTRACTION_AUTO_APPLY_TYPES=${EXTRACTION_AUTO_APPLY_TYPES:-age,application_window,document}
+      - EXTRACTION_AUTO_APPLY_MAX_PER_RUN=${EXTRACTION_AUTO_APPLY_MAX_PER_RUN:-25}
+      - EXTRACTION_AUTO_AUDIT_PERCENT=${EXTRACTION_AUTO_AUDIT_PERCENT:-10}
+
+networks:
+  ai: {}
+
+volumes:
+  ollama_models:

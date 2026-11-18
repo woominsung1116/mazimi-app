@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "fixture_created_at": "2026-10-08",
+    "human_verified": false,
+    "labeler": "draft-by-agent, needs human review",
+    "model": "qwen3.5:9b",
+    "programs": 12,
+    "prompt_version": "program-facts-v2",
+    "provider": "ollama",
+    "schema_version": 1
+  },
+  "fields": {
+    "age": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "application_window": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "document": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "employment": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "enrollment": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "income": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.3333333333333333
+    },
+    "region": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.4
+    }
+  },
+  "overall": {
+    "tp": 24,
+    "fp": 2,
+    "fn": 6,
+    "precision": 0.9230769230769231,
+    "recall": 0.8
+  },
+  "evidence_validity_rate": 1.0,
+  "valid_rate": 0.8387096774193549,
+  "provider_failures": 0,
+  "latency_ms": {
+    "max": 157243,
+    "p50": 80260,
+    "p95": 157243
+  },
+  "programs": [
+    {
+      "id": "seed-busan-rent",
+      "latency_ms": 113237,
+      "error": null,
+      "returned": 2,
+      "valid": 2,
+      "evidence_valid": 2,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "id": "seed-daegu-living",
+      "latency_ms": 75662,
+      "error": null,
+      "returned": 2,
+      "valid": 2,
+      "evidence_valid": 2,
+      "false_positives": [],
+      "false_negatives": [
+        "region:daegu"
+      ]
+    },
+    {
+      "id": "seed-basic-livelihood",
+      "latency_ms": 47771,
+      "error": null,
+      "returned": 0,
+      "valid": 0,
+      "evidence_valid": 0,
+      "false_positives": [],
+      "false_negatives": [
+        "{\"type\":\"income\",\"criterion\":\"median_income_percent\",\"comparator\":\"lte\",\"value\":50}"
+      ]
+    },
+    {
+      "id": "seed-near-poverty",
+      "latency_ms": 65795,
+      "error": null,
+      "returned": 1,
+      "valid": 1,
+      "evidence_valid": 1,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "id": "seed-campus-income",
+      "latency_ms": 67544,
+      "error": null,
+      "returned": 1,
+      "valid": 0,
+      "evidence_valid": 1,
+      "false_positives": [],
+      "false_negatives": [
+        "{\"type\":\"income\",\"criterion\":\"income_decile\",\"comparator\":\"lte\",\"value\":4}",
+        "enrollment:enrolled"
+      ]
+    },
+    {
+      "id": "seed-national-scholarship-1",
+      "latency_ms": 157243,
+      "error": null,
+      "returned": 6,
+      "valid": 6,
+      "evidence_valid": 6,
+      "false_positives": [
+        "enrollment:enrolled"
+      ],
+      "false_negatives": []
+    },
+    {
+      "id": "seed-busan-talent",
+      "latency_ms": 157023,
+      "error": null,
+      "returned": 6,
+      "valid": 6,
+      "evidence_valid": 6,
+      "false_positives": [
+        "enrollment:enrolled"
+      ],
+      "false_negatives": [
+        "region:busan"
+      ]
+    },
+    {
+      "id": "seed-job-seeking-allowance",
+      "latency_ms": 80260,
+      "error": null,
+      "returned": 2,
+      "valid": 2,
+      "evidence_valid": 2,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "id": "seed-daegu-job-voucher",
+      "latency_ms": 95194,
+      "error": null,
+      "returned": 3,
+      "valid": 2,
+      "evidence_valid": 3,
+      "false_positives": [],
+      "false_negatives": [
+        "region:daegu"
+      ]
+    },
+    {
+      "id": "seed-busan-startup",
+      "latency_ms": 114645,
+      "error": null,
+      "returned": 4,
+      "valid": 3,
+      "evidence_valid": 4,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "id": "seed-k-digital",
+      "latency_ms": 98235,
+      "error": null,
+      "returned": 3,
+      "valid": 1,
+      "evidence_valid": 3,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "id": "pipeline-always-open-scholarship",
+      "latency_ms": 60048,
+      "error": null,
+      "returned": 1,
+      "valid": 1,
+      "evidence_valid": 1,
+      "false_positives": [],
+      "false_negatives": []
+    }
+  ]
+}

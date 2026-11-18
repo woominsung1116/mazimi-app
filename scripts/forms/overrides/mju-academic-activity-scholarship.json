@@ -1,0 +1,37 @@
+{
+ "reviewed": true,
+ "note": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). 2026-10-26: the ( ) area-code blank before ~ and the 동의인 name added, and the box before the printed '대학' is the college (단과대학), not the school name (slot check); the phone is split in two parts, so neither takes the whole number.",
+ "drop": [
+  {"page": 0, "label": "학부(과)장"},
+  {"page": 0, "label": "소속, 학번, 이름"},
+  {"page": 0, "label": "계좌번호"}
+ ],
+ "drop_re": [
+  {"page": 0, "pattern": "^신청자인적사항 대학 학부"}
+ ],
+ "set": [
+  {"match": {"page": 0, "label": "신청 근거 직전학기 취득학점"}, "fields": {"label": "직전학기 취득학점", "required": true}},
+  {"match": {"page": 0, "label": "동의함 동의하지 않음 동의인 서명"}, "fields": {"label": "개인정보 수집·이용 동의인 서명"}},
+  {"match": {"page": 0, "label": "작성일 연도", "near_y": 0.792}, "fields": {"label": "동의일 연도"}},
+  {"match": {"page": 0, "label": "작성일 월", "near_y": 0.792}, "fields": {"label": "동의일 월"}},
+  {"match": {"page": 0, "label": "작성일 일", "near_y": 0.792}, "fields": {"label": "동의일 일"}},
+  {"match": {"page": 0, "label": "신청인"}, "fields": {"rect": {"x": 0.466, "y": 0.888, "w": 0.176, "h": 0.022}}}
+ ],
+ "add": [
+  {"id": "x1", "page": 0, "rect": {"x": 0.222, "y": 0.190, "w": 0.025, "h": 0.017}, "type": "text", "label": "신청학기 학년도", "mapping": null, "required": true},
+  {"id": "x2", "page": 0, "rect": {"x": 0.354, "y": 0.190, "w": 0.025, "h": 0.017}, "type": "text", "label": "신청 학기", "mapping": null, "required": true},
+  {"id": "x3", "page": 0, "rect": {"x": 0.398, "y": 0.213, "w": 0.035, "h": 0.017}, "type": "text", "label": "장학종별 (종)", "mapping": null, "required": false},
+  {"id": "x4", "page": 0, "rect": {"x": 0.356, "y": 0.235, "w": 0.066, "h": 0.017}, "type": "text", "label": "직전학기 성적평점", "mapping": null, "required": true},
+  {"id": "x5", "page": 0, "rect": {"x": 0.176, "y": 0.382, "w": 0.114, "h": 0.018}, "type": "text", "label": "소속 단과대학", "mapping": null, "required": true},
+  {"id": "x6", "page": 0, "rect": {"x": 0.335, "y": 0.382, "w": 0.175, "h": 0.018}, "type": "text", "label": "학부(과)", "mapping": "major", "required": true},
+  {"id": "x7", "page": 0, "rect": {"x": 0.592, "y": 0.382, "w": 0.042, "h": 0.018}, "type": "text", "label": "학년", "mapping": "grade", "required": true},
+  {"id": "x8", "page": 0, "rect": {"x": 0.675, "y": 0.382, "w": 0.038, "h": 0.018}, "type": "text", "label": "학기", "mapping": null, "required": true},
+  {"id": "x9", "page": 0, "rect": {"x": 0.295, "y": 0.406, "w": 0.140, "h": 0.018}, "type": "text", "label": "성명", "mapping": "name", "required": true},
+  {"id": "x10", "page": 0, "rect": {"x": 0.295, "y": 0.429, "w": 0.140, "h": 0.018}, "type": "text", "label": "학번", "mapping": "student_id", "required": true},
+  {"id": "x11", "page": 0, "rect": {"x": 0.329, "y": 0.453, "w": 0.057, "h": 0.018}, "type": "text", "label": "은행명", "mapping": "bank", "required": true},
+  {"id": "x12", "page": 0, "rect": {"x": 0.435, "y": 0.453, "w": 0.125, "h": 0.018}, "type": "text", "label": "계좌번호", "mapping": "account", "required": true},
+  {"id": "x13", "page": 0, "rect": {"x": 0.585, "y": 0.512, "w": 0.300, "h": 0.018}, "type": "text", "label": "전화번호(핸드폰) 뒷자리", "mapping": null, "required": true},
+  {"id": "x14", "page": 0, "rect": {"x": 0.3905, "y": 0.5137, "w": 0.0745, "h": 0.0151}, "type": "text", "label": "전화번호(핸드폰) 앞자리", "mapping": null, "required": true},
+  {"id": "x15", "page": 0, "rect": {"x": 0.6395, "y": 0.7934, "w": 0.0465, "h": 0.0156}, "type": "text", "label": "개인정보 수집·이용 동의인 성명", "mapping": "name", "required": false}
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "reviewed": true,
+ "note": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json).",
+ "drop": [
+  {"page": 0, "label": "수여기관 (3행)"},
+  {"page": 0, "label": "장학기간 (3행)"}
+ ],
+ "set": [
+  {"match": {"page": 0, "label": "장학금명"}, "fields": {"label": "타장학금 장학금명 (1행)"}},
+  {"match": {"page": 0, "label": "장학(지원)금액 (3행)"}, "fields": {"label": "타장학금 장학(지원)금액 합계"}},
+  {"match": {"page": 0, "label": "신청 및 동의인"}, "fields": {"label": "신청 및 동의인 성명", "mapping": "name", "required": true}}
+ ],
+ "add": [
+  {"id": "x1", "page": 0, "rect": {"x": 0.258, "y": 0.507, "w": 0.155, "h": 0.019}, "type": "text", "label": "타장학금 장학금명 (2행)", "mapping": null, "required": false},
+  {"id": "x2", "page": 0, "rect": {"x": 0.768, "y": 0.160, "w": 0.029, "h": 0.020}, "type": "checkbox", "label": "성별: 남", "mapping": null, "required": false},
+  {"id": "x3", "page": 0, "rect": {"x": 0.850, "y": 0.160, "w": 0.029, "h": 0.020}, "type": "checkbox", "label": "성별: 여", "mapping": null, "required": false},
+  {"id": "x4", "page": 0, "rect": {"x": 0.350, "y": 0.231, "w": 0.225, "h": 0.022}, "type": "text", "label": "학교명", "mapping": "school", "required": true},
+  {"id": "x5", "page": 0, "rect": {"x": 0.686, "y": 0.231, "w": 0.232, "h": 0.022}, "type": "text", "label": "캠퍼스명", "mapping": null, "required": false},
+  {"id": "x6", "page": 0, "rect": {"x": 0.326, "y": 0.259, "w": 0.205, "h": 0.022}, "type": "text", "label": "학과", "mapping": "major", "required": true},
+  {"id": "x7", "page": 0, "rect": {"x": 0.600, "y": 0.259, "w": 0.060, "h": 0.022}, "type": "text", "label": "수업연한 (년제)", "mapping": null, "required": true},
+  {"id": "x8", "page": 0, "rect": {"x": 0.750, "y": 0.259, "w": 0.054, "h": 0.022}, "type": "text", "label": "학년", "mapping": "grade", "required": true},
+  {"id": "x9", "page": 0, "rect": {"x": 0.327, "y": 0.389, "w": 0.170, "h": 0.024}, "type": "text", "label": "은행명", "mapping": "bank", "required": true},
+  {"id": "x10", "page": 0, "rect": {"x": 0.569, "y": 0.389, "w": 0.350, "h": 0.024}, "type": "text", "label": "예금주", "mapping": "account_holder", "required": true},
+  {"id": "x11", "page": 0, "rect": {"x": 0.348, "y": 0.427, "w": 0.570, "h": 0.024}, "type": "text", "label": "계좌번호", "mapping": "account", "required": true}
+ ]
+}

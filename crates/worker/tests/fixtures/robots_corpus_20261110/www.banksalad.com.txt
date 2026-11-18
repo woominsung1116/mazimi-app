@@ -1,0 +1,75 @@
+# www.banksalad.com 도메인 전체 robots.txt
+#
+# 주의: 이 파일은 banksaladv2 뿐 아니라 www.banksalad.com 도메인의 모든 경로(credit/cards/health/loan 등 타 앱 포함)를
+#       관장한다. 규칙 삭제는 막혀있던 경로의 크롤 노출로 이어지므로, staleness 정리는 SEO 팀 검토 후 진행한다.
+User-agent: *
+Allow: /credit
+Disallow: /credit/*
+
+# kdb 약관 페이지
+Disallow: /kcb-policy/*
+# 공지사항 페이지
+Disallow: /notice/*
+Disallow: /notices/*
+# 이전 고객센터 페이지 현재 /support 로 대체되었음
+Disallow: /service-center/*
+# 약관 페이지
+Disallow: /terms/*
+
+Disallow: /*/profits
+Disallow: /app
+Disallow: /app/introduce-*
+Disallow: /cards/*/issue
+Disallow: /cards/*/events/*
+Disallow: /credit-loans/*
+Disallow: /errors/*
+Disallow: /info/*
+Disallow: /insurances/*
+Disallow: /me/*
+Disallow: /users/*
+Disallow: /*[*]*
+Disallow: /maintenance
+Disallow: /authentication
+
+# --- health-web 차단 경로 ---
+# 본인인증
+Disallow: /health/authentication/*
+Disallow: /health/insurance/authentication/*
+# 개인 건강검진 연결
+Disallow: /health/checkup/*
+# 보험 개인 자산
+Disallow: /health/insurance/asset/*
+Disallow: /health/insurance/list$
+Disallow: /health/insurance/mydata$
+Disallow: /health/insurance/concern$
+Disallow: /health/insurance/premium-savings/detail$
+Disallow: /health/insurance/premium-savings/discount-rider$
+# 보험 개인 상담
+Disallow: /health/insurance/ga-consultant/*
+Disallow: /health/insurance/contents/bridge
+Disallow: /health/insurance/request-consulting/*
+# 결제
+Disallow: /health/shopping/order/*
+Disallow: /health/shopping/payment/*
+# 개발관련
+Disallow: /health/insurance/scraping$
+Disallow: /health/developer-center/*
+
+# --- healthinsu-web 차단 경로 ---
+# 로그인
+Disallow: /healthinsu/authentication
+Disallow: /healthinsu/authentication/*
+# 마이데이터 연결
+Disallow: /healthinsu/mydata$
+# 보험 개인 상담
+Disallow: /healthinsu/request-consulting
+Disallow: /healthinsu/request-consulting/*
+# 개발관련
+Disallow: /healthinsu/dev-center/*
+Disallow: /healthinsu/api/*
+
+User-agent: Google-adstxt
+Disallow:
+
+Host: https://www.banksalad.com
+Sitemap: https://www.banksalad.com/sitemap-index.xml

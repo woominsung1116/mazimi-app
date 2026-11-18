@@ -1,0 +1,91 @@
+{
+  "file": "마지미 (공유용).fig",
+  "exported_at": "2026-07-24",
+  "images": {
+    "gift": "7689ec461874a9f54cfbd465eef84c144f0c57f6",
+    "scholarship": "ff355e1e752e442be524ba38e216b139362949a8",
+    "benefit": "7b354c34d76d19eeee31bc65821d79eeb94485d6",
+    "coffee": "bdcbcb66958fa7be6c9fd0322ca725fdb31c0798",
+    "student-enrolled": "ef7efe8ffcc34fc8d313b0b5c3f0f16ea213567a",
+    "student-leave": "1d74d83a9e7c4b8e5e837f5f68403527bf0c94ff",
+    "student-graduated": "ff355e1e752e442be524ba38e216b139362949a8",
+    "student-none": "447d1981997b9a627825e92db500270533deaffb",
+    "search-empty": "daa78a3847cc25f2bbb667bb9a45c541faa4c075",
+    "welcome": "80d984af49a9461ca92af208952c5e582776b1ec"
+  },
+  "source_sha256": "c4c0914b1b3d378b989341841415cc672128ac255d5aac58936d3204e6dbc310",
+  "vector_nodes": {
+    "logo": "34065:6395",
+    "logo-white": "34002:3563",
+    "icon-home": "34065:6368",
+    "icon-search": "34065:6372",
+    "icon-bookmark": "34065:6376",
+    "icon-archive": "34065:6380",
+    "icon-user": "34065:6384",
+    "icon-bell": "34065:6405",
+    "icon-arrow": "32026:3612",
+    "icon-back": "34005:2865",
+    "icon-check-circle": "32002:1010",
+    "icon-minus-circle": "34065:6317",
+    "icon-info": "34065:6181",
+    "icon-close": "34059:3449",
+    "icon-policy": "34065:6292",
+    "icon-coin": "34065:6325",
+    "icon-kakao": "32002:799",
+    "icon-search-mono": "34060:4256",
+    "icon-x-circle": "34002:3856",
+    "icon-check": "34060:4233",
+    "icon-link": "34060:4204",
+    "icon-minus": "34065:11060",
+    "icon-pin": "34065:11146",
+    "icon-repeat": "34065:3676",
+    "icon-document": "34068:6094",
+    "icon-eye-off": "34002:3762",
+    "icon-bookmark-mono": "34065:11461",
+    "icon-setting": "34065:14380"
+  },
+  "illustration_nodes": {
+    "student-enrolled": [
+      "34003:2747",
+      "ef7efe8ffcc34fc8d313b0b5c3f0f16ea213567a"
+    ],
+    "student-leave": [
+      "34003:2753",
+      "1d74d83a9e7c4b8e5e837f5f68403527bf0c94ff"
+    ],
+    "student-graduated": [
+      "34003:2767",
+      "ff355e1e752e442be524ba38e216b139362949a8"
+    ],
+    "student-none": [
+      "34003:2775",
+      "447d1981997b9a627825e92db500270533deaffb"
+    ],
+    "gift": [
+      "34065:6184",
+      "7689ec461874a9f54cfbd465eef84c144f0c57f6"
+    ],
+    "scholarship": [
+      "34065:6202",
+      "ff355e1e752e442be524ba38e216b139362949a8"
+    ],
+    "benefit": [
+      "34065:6214",
+      "7b354c34d76d19eeee31bc65821d79eeb94485d6"
+    ],
+    "search-empty": [
+      "34061:3121",
+      "daa78a3847cc25f2bbb667bb9a45c541faa4c075",
+      {
+        "greyscale": true
+      }
+    ],
+    "welcome": [
+      "28023:1829",
+      "80d984af49a9461ca92af208952c5e582776b1ec"
+    ]
+  },
+  "native_background": "#34BB84",
+  "login_background": "#30AC7A",
+  "export_command": "npm ci --prefix tools/design && npm run export --prefix tools/design"
+}

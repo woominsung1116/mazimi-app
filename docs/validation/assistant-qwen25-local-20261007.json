@@ -1,0 +1,1237 @@
+{
+  "historical": true,
+  "note": "Historical 2026-10-07 Mac measurement of qwen2.5:7b-instruct on the dev corpus. Not the configured model (qwen3.5:4b), not the production host, not the independent holdout. See docs/mazimi-ai-assistant-v1-contract.md.",
+  "cases": 100,
+  "corpus": "assistant_intents_v1",
+  "environment": "local_not_oracle",
+  "errors": 0,
+  "exact_match_rate": 0.89,
+  "exact_matches": 89,
+  "model": "qwen2.5:7b-instruct",
+  "p50_ms": 422,
+  "p95_ms": 519,
+  "results": [
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 1,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 268
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 2,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 244
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 3,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 303
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 4,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 417
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 5,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 461
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 6,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 475
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 7,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 471
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 8,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 451
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 9,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 457
+    },
+    {
+      "actual": [
+        "summary"
+      ],
+      "case": 10,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "summary"
+      ],
+      "latency_ms": 461
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 11,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 464
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 12,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 487
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 13,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 475
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 14,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 519
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 15,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 508
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 16,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 488
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 17,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 488
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 18,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 484
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 19,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 538
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 20,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 484
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 21,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 505
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 22,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 497
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 23,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 506
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 24,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 555
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 25,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility"
+      ],
+      "latency_ms": 511
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 26,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 425
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 27,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 456
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 28,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 450
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 29,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 448
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 30,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 445
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 31,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 444
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 32,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 432
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 33,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 456
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 34,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 419
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 35,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 401
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 36,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 425
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 37,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 409
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 38,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 468
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 39,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 378
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 40,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents"
+      ],
+      "latency_ms": 406
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 41,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 415
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 42,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 404
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 43,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 408
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 44,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 414
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 45,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 420
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 46,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 356
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 47,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 415
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 48,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 391
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 49,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 439
+    },
+    {
+      "actual": [
+        "deadline"
+      ],
+      "case": 50,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "deadline"
+      ],
+      "latency_ms": 392
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 51,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 424
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 52,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 398
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 53,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 411
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 54,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 407
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 55,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 410
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 56,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 422
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 57,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 432
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 58,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 398
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 59,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 401
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 60,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "steps"
+      ],
+      "latency_ms": 408
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 61,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 416
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 62,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 404
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 63,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 406
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 64,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 400
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 65,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 408
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 66,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 488
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 67,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 296
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 68,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 413
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 69,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 414
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 70,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "alerts"
+      ],
+      "latency_ms": 416
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 71,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 416
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 72,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 432
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 73,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 406
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 74,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 429
+    },
+    {
+      "actual": [
+        "alerts"
+      ],
+      "case": 75,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 392
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 76,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 407
+    },
+    {
+      "actual": [
+        "documents"
+      ],
+      "case": 77,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 370
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 78,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 396
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 79,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 395
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 80,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 411
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 81,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 383
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 82,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 397
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 83,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 400
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 84,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 396
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 85,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 428
+    },
+    {
+      "actual": [
+        "eligibility"
+      ],
+      "case": 86,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 443
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 87,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 417
+    },
+    {
+      "actual": [
+        "unsupported"
+      ],
+      "case": 88,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 400
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 89,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 389
+    },
+    {
+      "actual": [
+        "steps"
+      ],
+      "case": 90,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "unsupported"
+      ],
+      "latency_ms": 426
+    },
+    {
+      "actual": [
+        "documents",
+        "deadline"
+      ],
+      "case": 91,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents",
+        "deadline"
+      ],
+      "latency_ms": 488
+    },
+    {
+      "actual": [
+        "documents",
+        "deadline"
+      ],
+      "case": 92,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents",
+        "deadline"
+      ],
+      "latency_ms": 498
+    },
+    {
+      "actual": [
+        "documents",
+        "deadline"
+      ],
+      "case": 93,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents",
+        "deadline"
+      ],
+      "latency_ms": 503
+    },
+    {
+      "actual": [
+        "deadline",
+        "steps"
+      ],
+      "case": 94,
+      "error": null,
+      "exact": false,
+      "expected": [
+        "documents",
+        "deadline"
+      ],
+      "latency_ms": 476
+    },
+    {
+      "actual": [
+        "documents",
+        "deadline"
+      ],
+      "case": 95,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "documents",
+        "deadline"
+      ],
+      "latency_ms": 501
+    },
+    {
+      "actual": [
+        "eligibility",
+        "steps"
+      ],
+      "case": 96,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility",
+        "steps"
+      ],
+      "latency_ms": 513
+    },
+    {
+      "actual": [
+        "eligibility",
+        "steps"
+      ],
+      "case": 97,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility",
+        "steps"
+      ],
+      "latency_ms": 543
+    },
+    {
+      "actual": [
+        "eligibility",
+        "steps"
+      ],
+      "case": 98,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility",
+        "steps"
+      ],
+      "latency_ms": 515
+    },
+    {
+      "actual": [
+        "eligibility",
+        "steps"
+      ],
+      "case": 99,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility",
+        "steps"
+      ],
+      "latency_ms": 538
+    },
+    {
+      "actual": [
+        "eligibility",
+        "steps"
+      ],
+      "case": 100,
+      "error": null,
+      "exact": true,
+      "expected": [
+        "eligibility",
+        "steps"
+      ],
+      "latency_ms": 549
+    }
+  ],
+  "synthetic_only": true,
+  "timeout_seconds": 15
+}

@@ -1,0 +1,16 @@
+# Reviewed successors of retired 시·군·구 codes that the official 법정동코드
+# file (data.go.kr 15123287, current rows only) does not list. Read by
+# scripts/gen-district-codes.mjs into mazimi_core::districts::SUCCESSORS.
+# Columns: retired<TAB>successor<TAB>relation<TAB>source
+#   same  the retired district is the successor, whole (resolved as it)
+#   into  the retired district became part of the successor (user side only)
+#   part  part of the retired district became the successor (split)
+# Only `same` rows resolve a code; the others record why a code stays
+# unresolved. Sources are the statutes named; before adding a row, check it
+# against the 법정동코드 file's 폐지 history (변경이력) for the same date.
+47720	27720	same	경상북도 군위군의 대구광역시 편입 (2023-07-01 시행, 「경상북도 군위군 대구광역시 편입에 관한 법률」)
+28110	28125	part	인천 중구 내륙 → 제물포구 (2026-07-01 시행, 「인천광역시 제물포구·영종구 및 검단구 설치 등에 관한 법률」)
+28110	28155	part	인천 중구 영종·용유 → 영종구 (같은 법률)
+28140	28125	into	인천 동구 → 제물포구 (같은 법률)
+28260	28275	part	인천 서구 → 서해구 (같은 법률)
+28260	28290	part	인천 서구 검단 → 검단구 (같은 법률)

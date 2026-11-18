@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /poc/
+Allow: /web/
+
+<!-- URL 정리 규칙 바탕으로 작업 진행 --!>
+Disallow : */join*
+Disallow : *login*
+DisAllow : /poc/html/common/error/
+Disallow : /poc/html/myt/
+Disallow : /poc/html/common/popup/center/pc/
+Disallow : /poc/html/product/NA
+Disallow : /poc/html/product/TS1.1.2
+Disallow : /web/product/plan/set/
+Disallow : /web/product/addon/set/
+Disallow : /web/myt*
+Disallow : /web/member/withdrawal
+Disallow : /web/common/certificate/popup*
+Disallow : /poc/html/purchase/
+Disallow : /poc/html/util/common/
+Disallow : */en/*
+Disallow : /web/product/wire/addon/
+Disallow : /web/terms/view/
+Disallow : /web/product/addon/term/
+Disallow : /web/product/mobileonly/coloring/
+Disallow : /web/support/service/usim-guide/
+Disallow : /web/support/customer/
+Disallow : /web/support/inquiry
+Disallow : /web/support/faq/iframe/
+Disallow : /web/sms-send/
+Disallow : /web/bpcp/*
+Disallow : /web/product/addon/benefit/t-high5/
+Disallow : /web/product/tapps/
+Disallow : /web/product/wire/plan/reservation/
+<!-- tg링크 크롤링 제거 처리 --!>
+Disallow : /tglink.jsp*
+<!-- .do로 끝나는 구 URL 리스트 차단 --!>
+Disallow : /*.do
+
+Sitemap: https://tworld.co.kr/o_sitemap.xml
+Sitemap: https://www.tworld.co.kr/o_sitemap.xml

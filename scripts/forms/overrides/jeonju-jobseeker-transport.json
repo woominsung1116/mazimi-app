@@ -1,0 +1,18 @@
+{
+ "reviewed": true,
+ "note": "HWPX bundle (notice + 서식1/2), templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). Only 서식1 신청서 (page 5).",
+ "set": [
+  {"match": {"page": 4, "label": "신청자정보 주소 (주민등록기준)"}, "fields": {"label": "신청자 주소 (등본상)", "mapping": "address"}},
+  {"match": {"page": 4, "label": "신청자정보 성명"}, "fields": {"label": "신청자 성명"}},
+  {"match": {"page": 4, "label": "신청자정보 휴대폰번호"}, "fields": {"label": "신청자 휴대폰번호"}},
+  {"match": {"page": 4, "label": "취업상태확인: 미취업"}, "fields": {"label": "취업상태: 미취업"}},
+  {"match": {"page": 4, "label": "취업상태확인: 주 30시간 미만 근로 * 취업자·자영업자 신청 불가"}, "fields": {"label": "취업상태: 주 30시간 미만 근로"}},
+  {"match": {"page": 4, "label": "학력사항확인: 졸업(예정"}, "fields": {"label": "학력사항: 졸업(예정)"}},
+  {"match": {"page": 4, "label": "학력사항확인: 중퇴"}, "fields": {"label": "학력사항: 중퇴"}}
+ ],
+ "add": [
+  {"id": "x1", "page": 4, "rect": {"x": 0.548, "y": 0.572, "w": 0.052, "h": 0.021}, "type": "text", "label": "작성일 일", "mapping": null, "required": true},
+  {"id": "x2", "page": 4, "rect": {"x": 0.370, "y": 0.631, "w": 0.200, "h": 0.021}, "type": "text", "label": "신청자 성명 (하단)", "mapping": "name", "required": true},
+  {"id": "x3", "page": 4, "rect": {"x": 0.577, "y": 0.627, "w": 0.180, "h": 0.029}, "type": "signature", "label": "신청자 자필서명", "mapping": "signature", "required": true}
+ ]
+}

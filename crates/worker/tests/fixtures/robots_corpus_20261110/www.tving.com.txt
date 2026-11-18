@@ -1,0 +1,31 @@
+# robots.txt for https://www.tving.com/
+
+User-agent: *
+Allow: /
+# 웹뷰·모웹 뉴스 경로. 다른 /service/* 는 검색 노출.
+Disallow: /service/news
+
+# AI 학습·RAG 크롤러 차단. CP 계약상 뉴스 기사는 AI 활용 금지.
+# 크롤러는 일치하는 그룹 하나만 따르고 * 그룹을 상속하지 않으므로 /service/news 를 다시 적는다.
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: Meta-ExternalAgent
+User-agent: cohere-ai
+Disallow: /news
+Disallow: /service/news
+
+# 병행 선언 (TVG-7484) — 레거시 배치와 신규 생성기를 2~4주 같이 돌려 색인 지표를 비교한다.
+# 비교가 끝나면 레거시 줄을 걷어낸다 (ADR-263403 6단계).
+Sitemap: https://notice.tving.com/sitemap/sitemap_index.xml
+Sitemap: https://www.tving.com/sitemap.xml

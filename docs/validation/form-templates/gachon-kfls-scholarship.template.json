@@ -1,0 +1,770 @@
+{
+  "version": 1,
+  "content_hash": "e8b4a09655ffdf391d66fe3b92fc5d662d85a8a1b89752c845bff8820c815647",
+  "page_count": 4,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.2233,
+        "y": 0.203,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "지원분야: 등록금 지원",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.4249,
+        "y": 0.203,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "지원분야: 학업지원금(생활비) 지원",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.2033,
+        "y": 0.2254,
+        "w": 0.1613,
+        "h": 0.0331
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.4172,
+        "y": 0.2254,
+        "w": 0.0433,
+        "h": 0.0331
+      },
+      "type": "text",
+      "label": "성별",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.5577,
+        "y": 0.2254,
+        "w": 0.0577,
+        "h": 0.0331
+      },
+      "type": "text",
+      "label": "생년월일 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.6388,
+        "y": 0.2254,
+        "w": 0.037,
+        "h": 0.0331
+      },
+      "type": "text",
+      "label": "생년월일 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.6993,
+        "y": 0.2254,
+        "w": 0.037,
+        "h": 0.0331
+      },
+      "type": "text",
+      "label": "생년월일 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.2033,
+        "y": 0.262,
+        "w": 0.564,
+        "h": 0.0279
+      },
+      "type": "text",
+      "label": "주 소 (거 주 지)",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.2565,
+        "y": 0.325,
+        "w": 0.1742,
+        "h": 0.0362
+      },
+      "type": "text",
+      "label": "연락처 휴대폰",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.5327,
+        "y": 0.325,
+        "w": 0.2346,
+        "h": 0.0362
+      },
+      "type": "text",
+      "label": "e-mail",
+      "mapping": "email",
+      "required": false
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.2033,
+        "y": 0.3648,
+        "w": 0.2274,
+        "h": 0.0339
+      },
+      "type": "text",
+      "label": "연락처 자택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.5327,
+        "y": 0.3648,
+        "w": 0.204,
+        "h": 0.0339
+      },
+      "type": "text",
+      "label": "비상연락처",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.8915,
+        "y": 0.3735,
+        "w": 0.037,
+        "h": 0.0178
+      },
+      "type": "text",
+      "label": "비상연락인 본인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.2033,
+        "y": 0.4023,
+        "w": 0.1173,
+        "h": 0.0288
+      },
+      "type": "text",
+      "label": "학적사항 (26년도1학기 기준) 학교명",
+      "mapping": "school",
+      "required": false
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.3845,
+        "y": 0.4023,
+        "w": 0.1833,
+        "h": 0.0288
+      },
+      "type": "text",
+      "label": "학적사항 (26년도1학기 기준) 학과",
+      "mapping": "major",
+      "required": false
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.6114,
+        "y": 0.4023,
+        "w": 0.0408,
+        "h": 0.0288
+      },
+      "type": "text",
+      "label": "학적사항 (26년도1학기 기준) 학년",
+      "mapping": "grade",
+      "required": false
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.7532,
+        "y": 0.4023,
+        "w": 0.184,
+        "h": 0.0288
+      },
+      "type": "text",
+      "label": "학번",
+      "mapping": "student_id",
+      "required": false
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.8145,
+        "y": 0.4406,
+        "w": 0.1145,
+        "h": 0.0182
+      },
+      "type": "text",
+      "label": "전공 계열 기타 내용",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f19",
+      "page": 0,
+      "rect": {
+        "x": 0.2133,
+        "y": 0.4426,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "전공 계열: 인문",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f20",
+      "page": 0,
+      "rect": {
+        "x": 0.2903,
+        "y": 0.4426,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "전공 계열: 사회",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f21",
+      "page": 0,
+      "rect": {
+        "x": 0.3675,
+        "y": 0.4426,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "전공 계열: 자연",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f22",
+      "page": 0,
+      "rect": {
+        "x": 0.4445,
+        "y": 0.4426,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "전공 계열: 공학",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f23",
+      "page": 0,
+      "rect": {
+        "x": 0.5215,
+        "y": 0.4426,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "전공 계열: 보건의학",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f24",
+      "page": 0,
+      "rect": {
+        "x": 0.6422,
+        "y": 0.4426,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "전공 계열: 예체능",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f25",
+      "page": 0,
+      "rect": {
+        "x": 0.741,
+        "y": 0.4426,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "전공 계열: 기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f26",
+      "page": 0,
+      "rect": {
+        "x": 0.2133,
+        "y": 0.4783,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "학년제: 2 년제",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f27",
+      "page": 0,
+      "rect": {
+        "x": 0.3654,
+        "y": 0.4783,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "학년제: 3 년제",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f28",
+      "page": 0,
+      "rect": {
+        "x": 0.5176,
+        "y": 0.4783,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "학년제: 4 년제",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f29",
+      "page": 0,
+      "rect": {
+        "x": 0.6698,
+        "y": 0.4783,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "학년제: 5 년제",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f30",
+      "page": 0,
+      "rect": {
+        "x": 0.822,
+        "y": 0.4783,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "학년제: 6 년제",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f31",
+      "page": 0,
+      "rect": {
+        "x": 0.7612,
+        "y": 0.5157,
+        "w": 0.1668,
+        "h": 0.0182
+      },
+      "type": "text",
+      "label": "25년도 2학기 학적상태 기타 내용",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f32",
+      "page": 0,
+      "rect": {
+        "x": 0.3802,
+        "y": 0.5177,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "25년도 2학기: 재학",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f33",
+      "page": 0,
+      "rect": {
+        "x": 0.4507,
+        "y": 0.5177,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "25년도 2학기: 일반휴학",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f34",
+      "page": 0,
+      "rect": {
+        "x": 0.5616,
+        "y": 0.5177,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "25년도 2학기: 군입대휴학",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f35",
+      "page": 0,
+      "rect": {
+        "x": 0.6926,
+        "y": 0.5177,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "25년도 2학기: 기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f36",
+      "page": 0,
+      "rect": {
+        "x": 0.474,
+        "y": 0.552,
+        "w": 0.086,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "성적 백분율 환산점수",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f37",
+      "page": 0,
+      "rect": {
+        "x": 0.783,
+        "y": 0.552,
+        "w": 0.057,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "성적 총 이수학점",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f38",
+      "page": 0,
+      "rect": {
+        "x": 0.2133,
+        "y": 0.5919,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "가 산 점 제출항목 (총 건): 대한민국인재상 수상자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f39",
+      "page": 0,
+      "rect": {
+        "x": 0.5559,
+        "y": 0.5919,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "가 산 점 제출항목 (총 건): 대통령 · 국무총리 수상자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f40",
+      "page": 0,
+      "rect": {
+        "x": 0.2133,
+        "y": 0.6147,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "가 산 점 제출항목 (총 건): 장관 및 광역단체장 이상 수상자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f41",
+      "page": 0,
+      "rect": {
+        "x": 0.5559,
+        "y": 0.6147,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "가 산 점 제출항목 (총 건): 총학생회장 · 부회장 당선/역임자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f42",
+      "page": 0,
+      "rect": {
+        "x": 0.2133,
+        "y": 0.6375,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "가 산 점 제출항목 (총 건): 전국규모 이상의 학술 · 논문 공모전 입상자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f43",
+      "page": 0,
+      "rect": {
+        "x": 0.7192,
+        "y": 0.8127,
+        "w": 0.0639,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p1-f44",
+      "page": 0,
+      "rect": {
+        "x": 0.8082,
+        "y": 0.8127,
+        "w": 0.0293,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f45",
+      "page": 0,
+      "rect": {
+        "x": 0.8626,
+        "y": 0.8127,
+        "w": 0.0293,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f46",
+      "page": 0,
+      "rect": {
+        "x": 0.6799,
+        "y": 0.8522,
+        "w": 0.1195,
+        "h": 0.0262
+      },
+      "type": "text",
+      "label": "지원자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f47",
+      "page": 0,
+      "rect": {
+        "x": 0.801,
+        "y": 0.8483,
+        "w": 0.1205,
+        "h": 0.0339
+      },
+      "type": "signature",
+      "label": "지원자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f01",
+      "page": 2,
+      "rect": {
+        "x": 0.2005,
+        "y": 0.1868,
+        "w": 0.3159,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "전공(학과)",
+      "mapping": "major",
+      "required": false
+    },
+    {
+      "id": "p3-f02",
+      "page": 2,
+      "rect": {
+        "x": 0.6023,
+        "y": 0.1868,
+        "w": 0.3236,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p3-f03",
+      "page": 2,
+      "rect": {
+        "x": 0.0784,
+        "y": 0.2404,
+        "w": 0.8475,
+        "h": 0.0763
+      },
+      "type": "multiline",
+      "label": "본인의 성장과정과 인생관을 기술하시오.",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f04",
+      "page": 2,
+      "rect": {
+        "x": 0.0784,
+        "y": 0.3648,
+        "w": 0.8475,
+        "h": 0.0649
+      },
+      "type": "multiline",
+      "label": "현재의 전공(계열)을 선택하게 된 동기와 지금까지 이루어 온 학업성과와 향후계획에 대해 기술하시오.",
+      "mapping": "major",
+      "required": false
+    },
+    {
+      "id": "p3-f05",
+      "page": 2,
+      "rect": {
+        "x": 0.0784,
+        "y": 0.4777,
+        "w": 0.8475,
+        "h": 0.0649
+      },
+      "type": "multiline",
+      "label": "대학교 재학 중 참여한 교내 ․외 활동을 통틀어 가장 성취감이 컸던 특별한 경험이나 실적에 대해 기술하시오.",
+      "mapping": "school",
+      "required": false
+    },
+    {
+      "id": "p3-f06",
+      "page": 2,
+      "rect": {
+        "x": 0.0784,
+        "y": 0.5709,
+        "w": 0.8475,
+        "h": 0.078
+      },
+      "type": "multiline",
+      "label": "가장 존경하는 인물은 누구이며, 그 인물의 어떤 점이 훌륭한지를 기술하시오.",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f07",
+      "page": 2,
+      "rect": {
+        "x": 0.0784,
+        "y": 0.6771,
+        "w": 0.8475,
+        "h": 0.0748
+      },
+      "type": "multiline",
+      "label": "대학교 졸업 이후 자신의 진로 분야를 포함한 장래 계획에 대해 기술하시오.",
+      "mapping": "school",
+      "required": false
+    }
+  ]
+}

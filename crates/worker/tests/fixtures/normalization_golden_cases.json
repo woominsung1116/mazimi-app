@@ -1,0 +1,1624 @@
+[
+  {
+    "name": "youth_center_employment",
+    "source_name": "youth_center",
+    "source_id": "R202600001",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "R202600001",
+      "plcyNm": "부산 청년 일자리 도약",
+      "plcySprtCn": "청년 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "부산광역시",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=1",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20260101 ~ 20261231",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사",
+      "zipCd": "26110,26140"
+    },
+    "expected": {
+      "program_type": "employment",
+      "title": "부산 청년 일자리 도약",
+      "summary": "청년 취업 교육과 수당을 지원합니다.",
+      "provider_name": "부산광역시",
+      "company_name": null,
+      "benefit_category": "employment",
+      "provider_kind": null,
+      "official_url": "https://young.busan.go.kr/program/apply?id=1",
+      "application_start_at": "2025-12-31T15:00:00Z",
+      "application_end_at": "2026-12-31T14:59:59Z",
+      "min_age": 19,
+      "max_age": 34,
+      "regions": [
+        "busan"
+      ],
+      "application_method": "온라인 신청",
+      "submission_documents": "신분증",
+      "screening_method": "서류 심사",
+      "region_districts": [
+        "26110",
+        "26140"
+      ]
+    }
+  },
+  {
+    "name": "government_housing",
+    "source_name": "gov_benefits",
+    "source_id": "GOV-1",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스명": "청년 전세 지원",
+      "서비스목적요약": "무주택 청년의 전세 비용을 지원합니다.",
+      "소관기관명": "국토교통부",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "지원대상": "청년",
+      "서비스분야": "주거·임대",
+      "신청방법": "온라인 신청 또는 주민센터 방문",
+      "소관기관유형": "중앙행정기관",
+      "detail": {
+        "구비서류": "신청서, 재학증명서"
+      }
+    },
+    "expected": {
+      "program_type": "housing",
+      "title": "청년 전세 지원",
+      "summary": "무주택 청년의 전세 비용을 지원합니다.",
+      "provider_name": "국토교통부",
+      "company_name": null,
+      "benefit_category": "housing",
+      "provider_kind": "government",
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": null,
+      "max_age": null,
+      "regions": [],
+      "application_method": "온라인 신청 또는 주민센터 방문",
+      "submission_documents": "신청서, 재학증명서",
+      "screening_method": null
+    }
+  },
+  {
+    "name": "private_scholarship",
+    "source_name": "scholarship",
+    "source_id": "KOSAF-1",
+    "normalizer_version": 5,
+    "raw": {
+      "상품명": "미래인재 장학금",
+      "지원내역 상세내용": "학기당 200만원",
+      "운영기관명": "미래장학재단",
+      "운영기관구분": "민간 장학재단",
+      "홈페이지 주소": "https://future.example.org/scholarship",
+      "모집시작일": "2026-03-01",
+      "모집종료일": "2026-03-31",
+      "지역거주여부 상세내용": "지역 제한 없음",
+      "제출서류 상세내용": "○ 장학금 신청서○ 재학증명서"
+    },
+    "expected": {
+      "program_type": "scholarship",
+      "title": "미래인재 장학금",
+      "summary": "학기당 200만원",
+      "provider_name": "미래장학재단",
+      "company_name": null,
+      "benefit_category": "scholarship",
+      "provider_kind": "private_foundation",
+      "official_url": "https://future.example.org/scholarship",
+      "application_start_at": "2026-02-28T15:00:00Z",
+      "application_end_at": "2026-03-31T14:59:59Z",
+      "min_age": null,
+      "max_age": null,
+      "regions": [],
+      "application_method": null,
+      "submission_documents": "○ 장학금 신청서○ 재학증명서",
+      "screening_method": null
+    }
+  },
+  {
+    "name": "local_scraper_deadline",
+    "source_name": "local_scraper",
+    "source_id": "LOCAL-1",
+    "normalizer_version": 2,
+    "raw": {
+      "source_portal": "부산청년센터",
+      "region": "busan",
+      "title": "청년 창업 교육",
+      "description": "예비 창업자를 위한 교육입니다.",
+      "deadline_text": "2026년 8월 31일까지",
+      "link": "https://young.busan.go.kr/notice/1"
+    },
+    "expected": {
+      "program_type": "employment",
+      "title": "청년 창업 교육",
+      "summary": "예비 창업자를 위한 교육입니다.",
+      "provider_name": "부산청년센터",
+      "company_name": null,
+      "benefit_category": "employment",
+      "provider_kind": null,
+      "official_url": "https://young.busan.go.kr/notice/1",
+      "application_start_at": null,
+      "application_end_at": "2026-08-31T14:59:59Z",
+      "min_age": null,
+      "max_age": null,
+      "regions": [
+        "busan"
+      ],
+      "application_method": null,
+      "submission_documents": null,
+      "screening_method": null
+    }
+  },
+  {
+    "name": "fss_youth_saving",
+    "source_name": "fss_financial",
+    "source_id": "fss_saving_001_YOUTH",
+    "normalizer_version": 8,
+    "raw": {
+      "_fss_kind": "적금",
+      "kor_co_nm": "마지미은행",
+      "fin_prdt_nm": "청년도약 적금",
+      "join_member": "만 19~34세 청년",
+      "etc_note": "월 최대 50만원",
+      "dcls_strt_day": "20260101",
+      "dcls_end_day": "20991231",
+      "join_way": "영업점, 인터넷, 스마트폰"
+    },
+    "expected": {
+      "program_type": "financial_product",
+      "title": "마지미은행 - 청년도약 적금 (적금)",
+      "summary": "만 19~34세 청년",
+      "provider_name": "마지미은행",
+      "company_name": "마지미은행",
+      "benefit_category": "finance",
+      "provider_kind": "corporate",
+      "official_url": "https://finlife.fss.or.kr/main/main.do",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": 19,
+      "max_age": 34,
+      "regions": [],
+      "application_method": "영업점, 인터넷, 스마트폰",
+      "submission_documents": null,
+      "screening_method": null
+    }
+  },
+  {
+    "name": "fss_bank_rent_loan_20261110_without_end_day",
+    "source_name": "fss_financial",
+    "source_id": "fss_rent_loan_0010019_LN11010001072",
+    "normalizer_version": 8,
+    "raw": {
+      "dcls_month": "202610",
+      "fin_co_no": "0010019",
+      "fin_prdt_cd": "LN11010001072",
+      "kor_co_nm": "광주은행",
+      "fin_prdt_nm": "청년맞춤형 전월세보증금 대출",
+      "join_way": "영업점",
+      "loan_inci_expn": "1. 인지대 : 50%\n2. 한국주택금융공사 보증료",
+      "erly_rpay_fee": "면제",
+      "dly_rate": "적용금리 + 3% (최고 15%)",
+      "loan_lmt": "2억원",
+      "dcls_strt_day": "20261020",
+      "fin_co_subm_day": "202610191059",
+      "_fss_kind": "전월세대출",
+      "_source_prefix": "fss_rent_loan",
+      "_fss_sector": "은행",
+      "_fss_sector_code": "020000",
+      "_fss_options": [
+        {
+          "dcls_month": "202610",
+          "fin_co_no": "0010019",
+          "fin_prdt_cd": "LN11010001072",
+          "rpay_type": "S",
+          "rpay_type_nm": "만기일시상환방식",
+          "lend_rate_type": "C",
+          "lend_rate_type_nm": "변동금리",
+          "lend_rate_min": 4.16,
+          "lend_rate_max": 4.36,
+          "lend_rate_avg": 3.81
+        }
+      ],
+      "_fss_youth_basis": "term"
+    },
+    "expected": {
+      "program_type": "financial_product",
+      "title": "광주은행 - 청년맞춤형 전월세보증금 대출 (전월세대출)",
+      "summary": "대출한도 2억원 · 금리 연 4.16~4.36% (변동금리, 만기일시상환방식)",
+      "provider_name": "광주은행",
+      "company_name": "광주은행",
+      "benefit_category": "finance",
+      "provider_kind": "corporate",
+      "official_url": "https://finlife.fss.or.kr/main/main.do",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": null,
+      "max_age": null,
+      "regions": [],
+      "application_method": "영업점",
+      "submission_documents": null,
+      "screening_method": null
+    }
+  },
+  {
+    "name": "national_welfare",
+    "source_name": "national_welfare",
+    "source_id": "NW-1",
+    "normalizer_version": 3,
+    "raw": {
+      "servNm": "청년 월세 지원",
+      "servDgst": "청년의 월세 부담을 낮춥니다.",
+      "jurMnofNm": "국토교통부",
+      "servDtlLink": "https://www.bokjiro.go.kr/ssis-tbu/twatxa/wlfareInfo/moveTWAT52011M.do?wrfId=NW-1",
+      "intrsThemaArray": "주거",
+      "trgterIndvdlArray": "청년",
+      "srvPvsnNm": "현금"
+    },
+    "expected": {
+      "program_type": "housing",
+      "title": "청년 월세 지원",
+      "summary": "청년의 월세 부담을 낮춥니다.",
+      "provider_name": "국토교통부",
+      "company_name": null,
+      "benefit_category": "housing",
+      "provider_kind": "government",
+      "official_url": "https://www.bokjiro.go.kr/ssis-tbu/twatxa/wlfareInfo/moveTWAT52011M.do?wrfId=NW-1",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": null,
+      "max_age": null,
+      "regions": [],
+      "application_method": null,
+      "submission_documents": null,
+      "screening_method": null
+    }
+  },
+  {
+    "name": "local_welfare_region_code",
+    "source_name": "local_welfare",
+    "source_id": "LW-1",
+    "normalizer_version": 5,
+    "raw": {
+      "servNm": "부산 청년 자격시험 응시료 지원",
+      "servDgst": "미취업 청년의 시험 응시료를 지원합니다.",
+      "bizChrDeptNm": "청년정책과",
+      "servDtlLink": "https://www.bokjiro.go.kr/local/LW-1",
+      "ctpvNm": "부산광역시",
+      "sggNm": "해운대구",
+      "intrsThemaNmArray": "취업",
+      "trgterIndvdlNmArray": "청년",
+      "srvPvsnNm": "현금",
+      "aplyMtdNm": "방문, 우편"
+    },
+    "expected": {
+      "program_type": "employment",
+      "title": "부산 청년 자격시험 응시료 지원",
+      "summary": "미취업 청년의 시험 응시료를 지원합니다.",
+      "provider_name": "청년정책과",
+      "company_name": null,
+      "benefit_category": "employment",
+      "provider_kind": "municipality",
+      "official_url": "https://www.bokjiro.go.kr/local/LW-1",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": null,
+      "max_age": null,
+      "regions": [
+        "busan"
+      ],
+      "application_method": "방문, 우편",
+      "submission_documents": null,
+      "screening_method": null,
+      "region_districts": [
+        "26350"
+      ]
+    }
+  },
+  {
+    "name": "youth_yongin_must_not_reach_busan",
+    "source_name": "youth_center",
+    "source_id": "20260313005400212152",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "20260313005400212152",
+      "plcyNm": "용인 청년 일자리 지원",
+      "plcySprtCn": "청년 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "경기도 용인시",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=1",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20260101 ~ 20261231",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사",
+      "zipCd": "41461,41463,41465"
+    },
+    "expected": {
+      "program_type": "employment",
+      "title": "용인 청년 일자리 지원",
+      "summary": "청년 취업 교육과 수당을 지원합니다.",
+      "provider_name": "경기도 용인시",
+      "company_name": null,
+      "benefit_category": "employment",
+      "provider_kind": null,
+      "official_url": "https://young.busan.go.kr/program/apply?id=1",
+      "application_start_at": "2025-12-31T15:00:00Z",
+      "application_end_at": "2026-12-31T14:59:59Z",
+      "min_age": 19,
+      "max_age": 34,
+      "regions": [
+        "gyeonggi"
+      ],
+      "application_method": "온라인 신청",
+      "submission_documents": "신분증",
+      "screening_method": "서류 심사",
+      "region_districts": [
+        "41461",
+        "41463",
+        "41465"
+      ]
+    }
+  },
+  {
+    "name": "government_yongin_must_not_reach_busan",
+    "source_name": "gov_benefits",
+    "source_id": "region-replay-yongin",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스명": "청년 전세 지원",
+      "서비스목적요약": "무주택 청년의 전세 비용을 지원합니다.",
+      "소관기관명": "경기도 용인시",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "지원대상": "청년",
+      "서비스분야": "주거·임대",
+      "신청방법": "온라인 신청 또는 주민센터 방문",
+      "소관기관유형": "시군구",
+      "detail": {
+        "구비서류": "신청서, 재학증명서"
+      }
+    },
+    "expected": {
+      "program_type": "housing",
+      "title": "청년 전세 지원",
+      "summary": "무주택 청년의 전세 비용을 지원합니다.",
+      "provider_name": "경기도 용인시",
+      "company_name": null,
+      "benefit_category": "housing",
+      "provider_kind": "government",
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": null,
+      "max_age": null,
+      "regions": [
+        "gyeonggi"
+      ],
+      "application_method": "온라인 신청 또는 주민센터 방문",
+      "submission_documents": "신청서, 재학증명서",
+      "screening_method": null,
+      "region_districts": [
+        "41460",
+        "41461",
+        "41463",
+        "41465"
+      ]
+    }
+  },
+  {
+    "name": "missing_youth_region_is_unknown_not_nationwide",
+    "source_name": "youth_center",
+    "source_id": "region-replay-unknown",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "R202600001",
+      "plcyNm": "부산 청년 일자리 도약",
+      "plcySprtCn": "청년 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "부산광역시",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=1",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20260101 ~ 20261231",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사"
+    },
+    "expected": {
+      "program_type": "employment",
+      "title": "부산 청년 일자리 도약",
+      "summary": "청년 취업 교육과 수당을 지원합니다.",
+      "provider_name": "부산광역시",
+      "company_name": null,
+      "benefit_category": "employment",
+      "provider_kind": null,
+      "official_url": "https://young.busan.go.kr/program/apply?id=1",
+      "application_start_at": "2025-12-31T15:00:00Z",
+      "application_end_at": "2026-12-31T14:59:59Z",
+      "min_age": 19,
+      "max_age": 34,
+      "regions": [
+        "unknown"
+      ],
+      "application_method": "온라인 신청",
+      "submission_documents": "신분증",
+      "screening_method": "서류 심사"
+    }
+  },
+  {
+    "name": "youth_source_closed_code_0057003",
+    "source_name": "youth_center",
+    "source_id": "20231102005400200004",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "20231102005400200004",
+      "plcyNm": "강원 고성군 청년 취업수당 지원",
+      "plcySprtCn": "청년이 관내 업체 취업 시 매월 30만원씩 12개월간 지원(생애 1회 지원)",
+      "sprvsnInstCdNm": "고성군 경제체육과",
+      "lclsfNm": "일자리",
+      "mclsfNm": "취업",
+      "aplyPrdSeCd": "0057003",
+      "aplyYmd": "",
+      "bizPrdSeCd": "0056002",
+      "bizPrdBgngYmd": "        ",
+      "bizPrdEndYmd": "        ",
+      "aplyUrlAddr": "",
+      "refUrlAddr1": "https://gwgs.go.kr/prog/saeolGosi/GOSI/kor/sub04_030401/list.do",
+      "refUrlAddr2": "",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "39",
+      "zipCd": "51820",
+      "plcyAplyMthdCn": "서류지참 후 군청 방문 - 적격여부 심사 후 선정 여부 통보",
+      "srngMthdCn": "상시"
+    },
+    "expected": {
+      "program_type": "employment",
+      "title": "강원 고성군 청년 취업수당 지원",
+      "summary": "청년이 관내 업체 취업 시 매월 30만원씩 12개월간 지원(생애 1회 지원)",
+      "provider_name": "고성군 경제체육과",
+      "company_name": null,
+      "benefit_category": "employment",
+      "provider_kind": null,
+      "official_url": "https://gwgs.go.kr/prog/saeolGosi/GOSI/kor/sub04_030401/list.do",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": 19,
+      "max_age": 39,
+      "regions": [
+        "gangwon"
+      ],
+      "application_method": "서류지참 후 군청 방문 - 적격여부 심사 후 선정 여부 통보",
+      "submission_documents": null,
+      "screening_method": "상시",
+      "source_status": "closed",
+      "region_districts": [
+        "42820",
+        "51820"
+      ]
+    }
+  },
+  {
+    "name": "government_stated_window",
+    "source_name": "gov_benefits",
+    "source_id": "GOV-1",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스명": "청년 전세 지원",
+      "서비스목적요약": "무주택 청년의 전세 비용을 지원합니다.",
+      "소관기관명": "국토교통부",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "지원대상": "청년",
+      "서비스분야": "주거·임대",
+      "신청방법": "온라인 신청 또는 주민센터 방문",
+      "소관기관유형": "중앙행정기관",
+      "신청기한": "2026. 3. 9.(월) 09:00 ~ 3. 23.(월) 18:00",
+      "detail": {
+        "구비서류": "신청서, 재학증명서"
+      }
+    },
+    "expected": {
+      "program_type": "housing",
+      "title": "청년 전세 지원",
+      "summary": "무주택 청년의 전세 비용을 지원합니다.",
+      "provider_name": "국토교통부",
+      "company_name": null,
+      "benefit_category": "housing",
+      "provider_kind": "government",
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "application_start_at": "2026-03-08T15:00:00Z",
+      "application_end_at": "2026-03-23T14:59:59Z",
+      "min_age": null,
+      "max_age": null,
+      "regions": [],
+      "application_method": "온라인 신청 또는 주민센터 방문",
+      "submission_documents": "신청서, 재학증명서",
+      "screening_method": null
+    }
+  },
+  {
+    "name": "youth_center_coded_conditions",
+    "source_name": "youth_center",
+    "source_id": "R202600002",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "R202600002",
+      "plcyNm": "금정구 청년 일자리 도약",
+      "plcySprtCn": "미취업 장애 청년의 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "부산광역시 금정구",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=2",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20260101 ~ 20261231",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사",
+      "zipCd": "26410",
+      "jobCd": "0013003",
+      "schoolCd": "0049005,0049006",
+      "sbizCd": "0014005",
+      "mrgSttsCd": "0055003",
+      "plcyMajorCd": "0011009",
+      "earnCndSeCd": "0043002",
+      "earnMinAmt": "0",
+      "earnMaxAmt": "5000"
+    },
+    "expected": {
+      "program_type": "employment",
+      "title": "금정구 청년 일자리 도약",
+      "summary": "미취업 장애 청년의 취업 교육과 수당을 지원합니다.",
+      "provider_name": "부산광역시 금정구",
+      "company_name": null,
+      "benefit_category": "employment",
+      "provider_kind": null,
+      "official_url": "https://young.busan.go.kr/program/apply?id=2",
+      "application_start_at": "2025-12-31T15:00:00Z",
+      "application_end_at": "2026-12-31T14:59:59Z",
+      "min_age": 19,
+      "max_age": 34,
+      "regions": [
+        "busan"
+      ],
+      "application_method": "온라인 신청",
+      "submission_documents": "신분증",
+      "screening_method": "서류 심사",
+      "region_districts": [
+        "26410"
+      ],
+      "target_groups": [
+        "disabled"
+      ],
+      "enrollment_statuses": [
+        "enrolled",
+        "on_leave"
+      ],
+      "youth_conditions": {
+        "employment_requirements": [
+          "미취업자"
+        ],
+        "employment_statuses": [
+          "preparing",
+          "student",
+          "unemployed"
+        ],
+        "education_requirements": [
+          "대학 재학",
+          "대졸 예정"
+        ],
+        "enrollment_statuses": [
+          "enrolled",
+          "on_leave"
+        ],
+        "education_stages": [
+          "univ_enrolled",
+          "univ_expected",
+          "postgrad"
+        ],
+        "target_groups": [
+          "disabled"
+        ],
+        "income_annual_max_manwon": 5000
+      }
+    },
+    "expected_source_rules": [
+      {
+        "field": "employment_status",
+        "op": "in",
+        "origin": "source_codes",
+        "value": [
+          "preparing",
+          "student",
+          "unemployed"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "education_stage",
+        "op": "in",
+        "origin": "source_codes",
+        "value": [
+          "univ_enrolled",
+          "univ_expected",
+          "postgrad"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "has_disability",
+        "op": "is_true",
+        "origin": "source_codes",
+        "value": null,
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "name": "government_support_conditions_and_district",
+    "source_name": "gov_benefits",
+    "source_id": "GOV-SUYEONG-1",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스ID": "GOV-SUYEONG-1",
+      "서비스명": "수영구 장애청년 주거 지원",
+      "서비스목적요약": "장애가 있는 청년의 주거비를 지원합니다.",
+      "소관기관명": "부산광역시 수영구",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-SUYEONG-1",
+      "지원대상": "청년",
+      "서비스분야": "주거·임대",
+      "신청방법": "주민센터 방문",
+      "소관기관유형": "시군구",
+      "사용자구분": "개인",
+      "supportConditions": {
+        "JA0101": "Y",
+        "JA0102": "Y",
+        "JA0201": "Y",
+        "JA0202": "Y",
+        "JA0203": "Y",
+        "JA0204": null,
+        "JA0205": null,
+        "JA0301": null,
+        "JA0302": null,
+        "JA0303": null,
+        "JA0313": null,
+        "JA0314": null,
+        "JA0315": null,
+        "JA0316": null,
+        "JA0317": null,
+        "JA0318": null,
+        "JA0319": null,
+        "JA0320": null,
+        "JA0322": null,
+        "JA0326": null,
+        "JA0327": null,
+        "JA0328": "Y",
+        "JA0329": null,
+        "JA0330": null,
+        "JA0401": null,
+        "JA0402": null,
+        "JA0403": null,
+        "JA0404": null,
+        "JA0410": "Y",
+        "JA0411": null,
+        "JA0412": null,
+        "JA0413": null,
+        "JA0414": null,
+        "JA0110": 19,
+        "JA0111": 39,
+        "서비스ID": "GOV-SUYEONG-1",
+        "서비스명": "수영구 장애청년 주거 지원"
+      },
+      "detail": {
+        "구비서류": "신청서"
+      }
+    },
+    "expected": {
+      "program_type": "housing",
+      "title": "수영구 장애청년 주거 지원",
+      "summary": "장애가 있는 청년의 주거비를 지원합니다.",
+      "provider_name": "부산광역시 수영구",
+      "company_name": null,
+      "benefit_category": "housing",
+      "provider_kind": "government",
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-SUYEONG-1",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": 19,
+      "max_age": 39,
+      "regions": [
+        "busan"
+      ],
+      "application_method": "주민센터 방문",
+      "submission_documents": "신청서",
+      "screening_method": null,
+      "region_districts": [
+        "26500"
+      ],
+      "applicant_types": [
+        "individual"
+      ],
+      "target_groups": [
+        "disabled"
+      ],
+      "income_median_bands": [
+        "0-50",
+        "51-75",
+        "76-100"
+      ]
+    }
+  },
+  {
+    "name": "government_new_applications_closed",
+    "source_name": "gov_benefits",
+    "source_id": "GOV-CLOSED-1",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스명": "장수수당",
+      "서비스목적요약": "장수 어르신께 수당을 지급합니다.",
+      "소관기관명": "보건복지부",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-CLOSED-1",
+      "지원대상": "기존 수급자",
+      "서비스분야": "보건·의료",
+      "신청방법": "주민센터 방문",
+      "소관기관유형": "중앙행정기관",
+      "사용자구분": "법인/시설/단체",
+      "신청기한": "신규신청불가",
+      "detail": {
+        "구비서류": "신청서"
+      }
+    },
+    "expected": {
+      "program_type": "benefit",
+      "title": "장수수당",
+      "summary": "장수 어르신께 수당을 지급합니다.",
+      "provider_name": "보건복지부",
+      "company_name": null,
+      "benefit_category": "benefit",
+      "provider_kind": "government",
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-CLOSED-1",
+      "application_start_at": null,
+      "application_end_at": null,
+      "min_age": null,
+      "max_age": null,
+      "regions": [],
+      "application_method": "주민센터 방문",
+      "submission_documents": "신청서",
+      "screening_method": null,
+      "source_status": "closed",
+      "applicant_types": [
+        "organization"
+      ]
+    }
+  },
+  {
+    "name": "youth_center_graduate_code_admits_graduating",
+    "source_name": "youth_center",
+    "source_id": "R202600002G",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "R202600002",
+      "plcyNm": "금정구 청년 일자리 도약",
+      "plcySprtCn": "미취업 장애 청년의 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "부산광역시 금정구",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=2",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20260101 ~ 20261231",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사",
+      "zipCd": "26410",
+      "jobCd": "0013003",
+      "schoolCd": "0049007,0049008",
+      "sbizCd": "0014005",
+      "mrgSttsCd": "0055003",
+      "plcyMajorCd": "0011009",
+      "earnCndSeCd": "0043002",
+      "earnMinAmt": "0",
+      "earnMaxAmt": "5000"
+    },
+    "expected": {
+      "application_end_at": "2026-12-31T14:59:59Z",
+      "application_method": "온라인 신청",
+      "application_start_at": "2025-12-31T15:00:00Z",
+      "benefit_category": "employment",
+      "company_name": null,
+      "enrollment_statuses": [
+        "enrolled",
+        "graduated",
+        "on_leave",
+        "research_student"
+      ],
+      "max_age": 34,
+      "min_age": 19,
+      "official_url": "https://young.busan.go.kr/program/apply?id=2",
+      "program_type": "employment",
+      "provider_kind": null,
+      "provider_name": "부산광역시 금정구",
+      "region_districts": [
+        "26410"
+      ],
+      "regions": [
+        "busan"
+      ],
+      "screening_method": "서류 심사",
+      "submission_documents": "신분증",
+      "summary": "미취업 장애 청년의 취업 교육과 수당을 지원합니다.",
+      "target_groups": [
+        "disabled"
+      ],
+      "title": "금정구 청년 일자리 도약",
+      "youth_conditions": {
+        "education_requirements": [
+          "대학 졸업",
+          "석·박사"
+        ],
+        "education_stages": [
+          "univ_expected",
+          "univ_graduate",
+          "postgrad"
+        ],
+        "employment_requirements": [
+          "미취업자"
+        ],
+        "employment_statuses": [
+          "preparing",
+          "student",
+          "unemployed"
+        ],
+        "enrollment_statuses": [
+          "enrolled",
+          "graduated",
+          "on_leave",
+          "research_student"
+        ],
+        "income_annual_max_manwon": 5000,
+        "target_groups": [
+          "disabled"
+        ]
+      }
+    },
+    "expected_source_rules": [
+      {
+        "field": "employment_status",
+        "op": "in",
+        "origin": "source_codes",
+        "value": [
+          "preparing",
+          "student",
+          "unemployed"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "education_stage",
+        "op": "in",
+        "origin": "source_codes",
+        "value": [
+          "univ_expected",
+          "univ_graduate",
+          "postgrad"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "has_disability",
+        "op": "is_true",
+        "origin": "source_codes",
+        "value": null,
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "name": "youth_center_coded_groups_and_marital_status",
+    "source_name": "youth_center",
+    "source_id": "R202600010",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "R202600010",
+      "plcyNm": "군 장병 신혼부부 지원",
+      "plcySprtCn": "미취업 장애 청년의 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "부산광역시 금정구",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=2",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20260101 ~ 20261231",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사",
+      "zipCd": "26410",
+      "jobCd": "0013010",
+      "schoolCd": "0049010",
+      "sbizCd": "0014007",
+      "mrgSttsCd": "0055001",
+      "plcyMajorCd": "0011009",
+      "earnCndSeCd": "0043002",
+      "earnMinAmt": "0",
+      "earnMaxAmt": "5000"
+    },
+    "expected": {
+      "application_end_at": "2026-12-31T14:59:59Z",
+      "application_method": "온라인 신청",
+      "application_start_at": "2025-12-31T15:00:00Z",
+      "benefit_category": "employment",
+      "company_name": null,
+      "max_age": 34,
+      "min_age": 19,
+      "official_url": "https://young.busan.go.kr/program/apply?id=2",
+      "program_type": "employment",
+      "provider_kind": null,
+      "provider_name": "부산광역시 금정구",
+      "region_districts": [
+        "26410"
+      ],
+      "regions": [
+        "busan"
+      ],
+      "screening_method": "서류 심사",
+      "submission_documents": "신분증",
+      "summary": "미취업 장애 청년의 취업 교육과 수당을 지원합니다.",
+      "target_groups": [
+        "soldier"
+      ],
+      "title": "군 장병 신혼부부 지원",
+      "youth_conditions": {
+        "income_annual_max_manwon": 5000,
+        "marital_status": "married",
+        "target_groups": [
+          "soldier"
+        ]
+      }
+    },
+    "expected_source_rules": [
+      {
+        "field": "target_group",
+        "op": "in",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": [
+          "soldier"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "marital_status",
+        "op": "eq",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": "married",
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "name": "government_one_gender_and_unanswered_group",
+    "source_name": "gov_benefits",
+    "source_id": "GOV-SUYEONG-2",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스ID": "GOV-SUYEONG-2",
+      "서비스명": "수영구 여성농업인 지원",
+      "서비스목적요약": "장애가 있는 청년의 주거비를 지원합니다.",
+      "소관기관명": "부산광역시 수영구",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-SUYEONG-1",
+      "지원대상": "청년",
+      "서비스분야": "주거·임대",
+      "신청방법": "주민센터 방문",
+      "소관기관유형": "시군구",
+      "사용자구분": "개인",
+      "supportConditions": {
+        "JA0101": null,
+        "JA0102": "Y",
+        "JA0201": "Y",
+        "JA0202": "Y",
+        "JA0203": "Y",
+        "JA0204": null,
+        "JA0205": null,
+        "JA0301": null,
+        "JA0302": null,
+        "JA0303": null,
+        "JA0313": "Y",
+        "JA0314": null,
+        "JA0315": null,
+        "JA0316": null,
+        "JA0317": null,
+        "JA0318": null,
+        "JA0319": null,
+        "JA0320": null,
+        "JA0322": null,
+        "JA0326": null,
+        "JA0327": null,
+        "JA0328": null,
+        "JA0329": null,
+        "JA0330": null,
+        "JA0401": null,
+        "JA0402": null,
+        "JA0403": null,
+        "JA0404": null,
+        "JA0410": null,
+        "JA0411": null,
+        "JA0412": null,
+        "JA0413": null,
+        "JA0414": null,
+        "JA0110": 19,
+        "JA0111": 39,
+        "서비스ID": "GOV-SUYEONG-1",
+        "서비스명": "수영구 장애청년 주거 지원"
+      },
+      "detail": {
+        "구비서류": "신청서"
+      }
+    },
+    "expected": {
+      "applicant_types": [
+        "individual"
+      ],
+      "application_end_at": null,
+      "application_method": "주민센터 방문",
+      "application_start_at": null,
+      "benefit_category": "housing",
+      "company_name": null,
+      "income_median_bands": [
+        "0-50",
+        "51-75",
+        "76-100"
+      ],
+      "max_age": 39,
+      "min_age": 19,
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-SUYEONG-1",
+      "program_type": "housing",
+      "provider_kind": "government",
+      "provider_name": "부산광역시 수영구",
+      "region_districts": [
+        "26500"
+      ],
+      "regions": [
+        "busan"
+      ],
+      "screening_method": null,
+      "submission_documents": "신청서",
+      "summary": "장애가 있는 청년의 주거비를 지원합니다.",
+      "target_gender": "female",
+      "target_groups": [
+        "farmer"
+      ],
+      "title": "수영구 여성농업인 지원"
+    },
+    "expected_source_rules": [
+      {
+        "field": "target_group",
+        "op": "in",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": [
+          "farmer"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "gender",
+        "op": "eq",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": "female",
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "name": "scholarship_school_and_year_conditions",
+    "source_name": "scholarship",
+    "source_id": "광주남구장학회_행복나눔 장학생",
+    "normalizer_version": 5,
+    "raw": {
+      "상품명": "행복나눔 장학생",
+      "지원내역 상세내용": "1인당 100만원",
+      "운영기관명": "광주남구장학회",
+      "운영기관구분": "지자체(출연기관)",
+      "홈페이지 주소": "https://future.example.org/scholarship",
+      "모집시작일": "2026-03-01",
+      "모집종료일": "2026-03-31",
+      "지역거주여부 상세내용": "지역 제한 없음",
+      "제출서류 상세내용": "○ 장학금 신청서○ 재학증명서",
+      "상품구분": "장학금",
+      "대학구분": "4년제",
+      "학과구분": "제한없음",
+      "학년구분": "대학2학기,대학3학기",
+      "학자금유형구분": "지역연고"
+    },
+    "expected": {
+      "application_end_at": "2026-03-31T14:59:59Z",
+      "application_method": null,
+      "application_start_at": "2026-02-28T15:00:00Z",
+      "benefit_category": "scholarship",
+      "company_name": null,
+      "max_age": null,
+      "min_age": null,
+      "official_url": "https://future.example.org/scholarship",
+      "program_type": "scholarship",
+      "provider_kind": "municipality",
+      "provider_name": "광주남구장학회",
+      "regions": [],
+      "screening_method": null,
+      "submission_documents": "○ 장학금 신청서○ 재학증명서",
+      "summary": "1인당 100만원",
+      "title": "행복나눔 장학생"
+    },
+    "expected_source_rules": [
+      {
+        "field": "school_type",
+        "op": "in",
+        "origin": "source_codes",
+        "value": [
+          "university"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "education_stage",
+        "op": "in",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": [
+          "univ_enrolled",
+          "univ_expected",
+          "postgrad"
+        ],
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "name": "scholarship_loan_is_a_financial_product",
+    "source_name": "scholarship",
+    "source_id": "미래장학재단_생활비 대출",
+    "normalizer_version": 5,
+    "raw": {
+      "상품명": "생활비 대출",
+      "지원내역 상세내용": "학기당 200만원",
+      "운영기관명": "미래장학재단",
+      "운영기관구분": "민간 장학재단",
+      "홈페이지 주소": "https://future.example.org/scholarship",
+      "모집시작일": "2026-03-01",
+      "모집종료일": "2026-03-31",
+      "지역거주여부 상세내용": "지역 제한 없음",
+      "제출서류 상세내용": "○ 장학금 신청서○ 재학증명서",
+      "상품구분": "학자금대출",
+      "대학구분": "제한없음",
+      "학년구분": "제한없음"
+    },
+    "expected": {
+      "application_end_at": "2026-03-31T14:59:59Z",
+      "application_method": null,
+      "application_start_at": "2026-02-28T15:00:00Z",
+      "benefit_category": "financial_product",
+      "company_name": null,
+      "max_age": null,
+      "min_age": null,
+      "official_url": "https://future.example.org/scholarship",
+      "program_type": "financial_product",
+      "provider_kind": "private_foundation",
+      "provider_name": "미래장학재단",
+      "regions": [],
+      "screening_method": null,
+      "submission_documents": "○ 장학금 신청서○ 재학증명서",
+      "summary": "학기당 200만원",
+      "title": "생활비 대출"
+    },
+    "expected_source_rules": []
+  },
+  {
+    "name": "scholarship_free_text_residence_stays_unknown",
+    "source_name": "scholarship",
+    "source_id": "영천시장학회_영천인재",
+    "normalizer_version": 5,
+    "raw": {
+      "상품명": "영천인재 장학금",
+      "지원내역 상세내용": "학기당 200만원",
+      "운영기관명": "영천시장학회",
+      "운영기관구분": "지자체(출연기관)",
+      "홈페이지 주소": "https://future.example.org/scholarship",
+      "모집시작일": "2026-03-01",
+      "모집종료일": "2026-03-31",
+      "지역거주여부 상세내용": "○ 장학생 선발계획 공고일 현재 1년 이상 영천시에 주소를 두고 있는 자(본인 또는 보호자)",
+      "제출서류 상세내용": "○ 장학금 신청서○ 재학증명서"
+    },
+    "expected": {
+      "application_end_at": "2026-03-31T14:59:59Z",
+      "application_method": null,
+      "application_start_at": "2026-02-28T15:00:00Z",
+      "benefit_category": "scholarship",
+      "company_name": null,
+      "max_age": null,
+      "min_age": null,
+      "official_url": "https://future.example.org/scholarship",
+      "program_type": "scholarship",
+      "provider_kind": "municipality",
+      "provider_name": "영천시장학회",
+      "regions": [
+        "unknown"
+      ],
+      "screening_method": null,
+      "submission_documents": "○ 장학금 신청서○ 재학증명서",
+      "summary": "학기당 200만원",
+      "title": "영천인재 장학금"
+    },
+    "expected_source_rules": []
+  },
+  {
+    "name": "scholarship_guardian_residence_stays_unknown",
+    "source_name": "scholarship",
+    "source_id": "영천시장학회_영천인재",
+    "normalizer_version": 5,
+    "raw": {
+      "상품명": "영천인재 장학금",
+      "지원내역 상세내용": "학기당 200만원",
+      "운영기관명": "영천시장학회",
+      "운영기관구분": "지자체(출연기관)",
+      "홈페이지 주소": "https://future.example.org/scholarship",
+      "모집시작일": "2026-03-01",
+      "모집종료일": "2026-03-31",
+      "지역거주여부 상세내용": "○ 수상 기준일 본인 또는 보호자가 남원시에 3년 이상 주민등록상 주소지를 두고 있는 대학교 학생",
+      "제출서류 상세내용": "○ 장학금 신청서○ 재학증명서"
+    },
+    "expected": {
+      "application_end_at": "2026-03-31T14:59:59Z",
+      "application_method": null,
+      "application_start_at": "2026-02-28T15:00:00Z",
+      "benefit_category": "scholarship",
+      "company_name": null,
+      "max_age": null,
+      "min_age": null,
+      "official_url": "https://future.example.org/scholarship",
+      "program_type": "scholarship",
+      "provider_kind": "municipality",
+      "provider_name": "영천시장학회",
+      "regions": [
+        "unknown"
+      ],
+      "screening_method": null,
+      "submission_documents": "○ 장학금 신청서○ 재학증명서",
+      "summary": "학기당 200만원",
+      "title": "영천인재 장학금"
+    },
+    "expected_source_rules": []
+  },
+  {
+    "name": "government_rounds_store_the_current_one",
+    "source_name": "gov_benefits",
+    "source_id": "GOV-ROUNDS-1",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스명": "청년 전세 지원",
+      "서비스목적요약": "무주택 청년의 전세 비용을 지원합니다.",
+      "소관기관명": "국토교통부",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "지원대상": "청년",
+      "서비스분야": "주거·임대",
+      "신청방법": "온라인 신청 또는 주민센터 방문",
+      "소관기관유형": "중앙행정기관",
+      "신청기한": "2099. 3. 3. ~ 3. 20. / 2099. 5. 1. ~ 5. 22. (추가 모집 시 별도 공고)",
+      "detail": {
+        "구비서류": "신청서, 재학증명서"
+      },
+      "서비스ID": "GOV-ROUNDS-1"
+    },
+    "expected": {
+      "application_end_at": "2099-03-20T14:59:59Z",
+      "application_method": "온라인 신청 또는 주민센터 방문",
+      "application_rounds": [
+        {
+          "end": "2099-03-20T14:59:59Z",
+          "start": "2099-03-02T15:00:00Z"
+        },
+        {
+          "end": "2099-05-22T14:59:59Z",
+          "start": "2099-04-30T15:00:00Z"
+        }
+      ],
+      "application_start_at": "2099-03-02T15:00:00Z",
+      "benefit_category": "housing",
+      "company_name": null,
+      "max_age": null,
+      "min_age": null,
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-1",
+      "program_type": "housing",
+      "provider_kind": "government",
+      "provider_name": "국토교통부",
+      "regions": [],
+      "screening_method": null,
+      "submission_documents": "신청서, 재학증명서",
+      "summary": "무주택 청년의 전세 비용을 지원합니다.",
+      "title": "청년 전세 지원"
+    },
+    "expected_source_rules": []
+  },
+  {
+    "name": "youth_center_application_rounds",
+    "source_name": "youth_center",
+    "source_id": "R202600011",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "R202600011",
+      "plcyNm": "부산 청년 일자리 도약",
+      "plcySprtCn": "청년 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "부산광역시",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=1",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20990301 ~ 20990331\\N20990901 ~ 20990930",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사",
+      "zipCd": "26110,26140"
+    },
+    "expected": {
+      "application_end_at": "2099-03-31T14:59:59Z",
+      "application_method": "온라인 신청",
+      "application_rounds": [
+        {
+          "end": "2099-03-31T14:59:59Z",
+          "start": "2099-02-28T15:00:00Z"
+        },
+        {
+          "end": "2099-09-30T14:59:59Z",
+          "start": "2099-08-31T15:00:00Z"
+        }
+      ],
+      "application_start_at": "2099-02-28T15:00:00Z",
+      "benefit_category": "employment",
+      "company_name": null,
+      "max_age": 34,
+      "min_age": 19,
+      "official_url": "https://young.busan.go.kr/program/apply?id=1",
+      "program_type": "employment",
+      "provider_kind": null,
+      "provider_name": "부산광역시",
+      "region_districts": [
+        "26110",
+        "26140"
+      ],
+      "regions": [
+        "busan"
+      ],
+      "screening_method": "서류 심사",
+      "submission_documents": "신분증",
+      "summary": "청년 취업 교육과 수당을 지원합니다.",
+      "title": "부산 청년 일자리 도약"
+    },
+    "expected_source_rules": []
+  },
+  {
+    "name": "youth_center_military_age_extension",
+    "source_name": "youth_center",
+    "source_id": "R202600012",
+    "normalizer_version": 10,
+    "raw": {
+      "plcyNo": "R202600012",
+      "plcyNm": "부산 청년 일자리 도약",
+      "plcySprtCn": "청년 취업 교육과 수당을 지원합니다.",
+      "sprvsnInstCdNm": "부산광역시",
+      "aplyUrlAddr": "https://young.busan.go.kr/program/apply?id=1",
+      "refUrlAddr1": "https://young.busan.go.kr",
+      "sprtTrgtMinAge": "19",
+      "sprtTrgtMaxAge": "34",
+      "aplyYmd": "20260101 ~ 20261231",
+      "lclsfNm": "일자리",
+      "plcyKywdNm": "취업,교육",
+      "plcyAplyMthdCn": "온라인 신청",
+      "sbmsnDcmntCn": "신분증",
+      "srngMthdCn": "서류 심사",
+      "zipCd": "26110,26140",
+      "addAplyQlfcCndCn": "제대군인 지원법에 따라 군 복무자는 신청가능 연령 연장"
+    },
+    "expected": {
+      "application_end_at": "2026-12-31T14:59:59Z",
+      "application_method": "온라인 신청",
+      "application_start_at": "2025-12-31T15:00:00Z",
+      "benefit_category": "employment",
+      "company_name": null,
+      "max_age": 40,
+      "min_age": 19,
+      "official_url": "https://young.busan.go.kr/program/apply?id=1",
+      "program_type": "employment",
+      "provider_kind": null,
+      "provider_name": "부산광역시",
+      "region_districts": [
+        "26110",
+        "26140"
+      ],
+      "regions": [
+        "busan"
+      ],
+      "screening_method": "서류 심사",
+      "submission_documents": "신분증",
+      "summary": "청년 취업 교육과 수당을 지원합니다.",
+      "title": "부산 청년 일자리 도약"
+    },
+    "expected_source_rules": [
+      {
+        "field": "age",
+        "op": "lte",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": 34,
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "name": "government_birth_years_and_year_age",
+    "source_name": "gov_benefits",
+    "source_id": "GOV-DONGGU-1",
+    "normalizer_version": 9,
+    "raw": {
+      "서비스ID": "GOV-DONGGU-1",
+      "서비스명": "동구 여성청소년 생리용품 지원",
+      "서비스목적요약": "장애가 있는 청년의 주거비를 지원합니다.",
+      "소관기관명": "부산광역시 수영구",
+      "상세조회URL": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-SUYEONG-1",
+      "지원대상": "○ 주민등록 주소지가 부산광역시 동구인 연 나이 11세~18세 여성청소년\r\n  - 2026년 사업 기준 2008년~2015년생(생일 상관없음)",
+      "서비스분야": "주거·임대",
+      "신청방법": "주민센터 방문",
+      "소관기관유형": "시군구",
+      "사용자구분": "개인",
+      "supportConditions": {
+        "JA0101": null,
+        "JA0102": "Y",
+        "JA0201": "Y",
+        "JA0202": "Y",
+        "JA0203": "Y",
+        "JA0204": null,
+        "JA0205": null,
+        "JA0301": null,
+        "JA0302": null,
+        "JA0303": null,
+        "JA0313": null,
+        "JA0314": null,
+        "JA0315": null,
+        "JA0316": null,
+        "JA0317": null,
+        "JA0318": null,
+        "JA0319": null,
+        "JA0320": null,
+        "JA0322": null,
+        "JA0326": null,
+        "JA0327": null,
+        "JA0328": null,
+        "JA0329": null,
+        "JA0330": null,
+        "JA0401": null,
+        "JA0402": null,
+        "JA0403": null,
+        "JA0404": null,
+        "JA0410": null,
+        "JA0411": null,
+        "JA0412": null,
+        "JA0413": null,
+        "JA0414": null,
+        "JA0110": 11,
+        "JA0111": 18,
+        "서비스ID": "GOV-SUYEONG-1",
+        "서비스명": "수영구 장애청년 주거 지원"
+      },
+      "detail": {
+        "구비서류": "신청서"
+      }
+    },
+    "expected": {
+      "age_basis": "year_end",
+      "applicant_types": [
+        "individual"
+      ],
+      "application_end_at": null,
+      "application_method": "주민센터 방문",
+      "application_start_at": null,
+      "benefit_category": "housing",
+      "company_name": null,
+      "income_median_bands": [
+        "0-50",
+        "51-75",
+        "76-100"
+      ],
+      "max_age": null,
+      "min_age": null,
+      "official_url": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/GOV-SUYEONG-1",
+      "program_type": "housing",
+      "provider_kind": "government",
+      "provider_name": "부산광역시 수영구",
+      "region_districts": [
+        "26500"
+      ],
+      "regions": [
+        "busan"
+      ],
+      "screening_method": null,
+      "submission_documents": "신청서",
+      "summary": "장애가 있는 청년의 주거비를 지원합니다.",
+      "target_gender": "female",
+      "title": "동구 여성청소년 생리용품 지원"
+    },
+    "expected_source_rules": [
+      {
+        "field": "gender",
+        "op": "eq",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": "female",
+        "weight": 20
+      },
+      {
+        "field": "birth_year",
+        "op": "between",
+        "origin": "source_codes",
+        "value": [
+          2008,
+          2015
+        ],
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "name": "fss_alternative_bounds_union",
+    "source_name": "fss_financial",
+    "source_id": "fss_saving_001_YOUTH",
+    "normalizer_version": 8,
+    "raw": {
+      "_fss_kind": "적금",
+      "kor_co_nm": "마지미은행",
+      "fin_prdt_nm": "청년 재직자 적금",
+      "join_member": "만 39세 이하 재직자 또는 만 34세 이하 청년",
+      "etc_note": "월 최대 50만원",
+      "dcls_strt_day": "20260101",
+      "dcls_end_day": "20991231",
+      "join_way": "영업점, 인터넷, 스마트폰"
+    },
+    "expected": {
+      "application_end_at": null,
+      "application_method": "영업점, 인터넷, 스마트폰",
+      "application_start_at": null,
+      "benefit_category": "finance",
+      "company_name": "마지미은행",
+      "max_age": 39,
+      "min_age": null,
+      "official_url": "https://finlife.fss.or.kr/main/main.do",
+      "program_type": "financial_product",
+      "provider_kind": "corporate",
+      "provider_name": "마지미은행",
+      "regions": [],
+      "screening_method": null,
+      "submission_documents": null,
+      "summary": "만 39세 이하 재직자 또는 만 34세 이하 청년",
+      "title": "마지미은행 - 청년 재직자 적금 (적금)"
+    },
+    "expected_source_rules": [
+      {
+        "field": "age",
+        "op": "lte",
+        "origin": "source_codes",
+        "severity": "label",
+        "value": 34,
+        "weight": 20
+      }
+    ]
+  }
+]

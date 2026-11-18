@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>JEJUAIR ERROR OCCURED</title>
+	<link rel="stylesheet" href="https://sysinfo.jejuair.net/ErrorPage/resources/css/global.css">
+	<link rel="stylesheet" href="https://sysinfo.jejuair.net/ErrorPage/resources/css/component_test.css">
+	<link rel="stylesheet" href="https://sysinfo.jejuair.net/ErrorPage/resources/css/page.css">
+	<link rel="stylesheet" href="https://sysinfo.jejuair.net/ErrorPage/resources/css/responsive.css">
+</head>
+
+<body>
+	<div id="header" class="header">
+		<header class="header__inner mobile-only">
+			<div class="header__logo">
+			</div>
+		</header>
+		<div class="header--login pc-only">
+			<header class="header__inner">
+				<div class="header__logo">
+					<img src="https://sysinfo.jejuair.net/ErrorPage/resources/images/upload/logo_jeju_org_error.png" alt="JEJU air">
+				</div>
+			</header>
+		</div>
+	</div>
+	<div id="body">
+		<div class="wrap wrap--button">
+			<div class="content" id="content">
+				<main id="main" class="main error_gp">
+					<div class="finish-item-wrap pc-100">
+						<div class="finish-item no-data error">
+							<div aria-hidden="true" class="finish-item__img"></div>
+							<p class="finish-item__title">페이지에 오류가 발생했습니다.</p>
+							<p class="finish-item__title">An error occurred on the page.</p>
+							<p class="finish-item__text">서비스 이용에 불편을 드려 죄송합니다.</p>
+							<p class="finish-item__text">We're sorry for any inconvenience.</p>
+							<br>
+							<p class="finish-item__text">Error Code: 0.fda2317.1794320454.e08b463c</p>
+							<p class="finish-item__text">자세한 내용은 제주항공 고객센터(1599-1500) 또는 홈페이지 내 1:1 채팅 상담을 통해 문의해 주시기 바랍니다.(운영 시간: 09:00~19:00)</p>
+						</div>
+						<div class="container--large pc-40">
+							<div class="button-wrap button-wrap--center">
+								<button type="button" class="button button--secondary button--active" onclick="goMain();">
+									<span class="button__text">OK</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://sysinfo.jejuair.net/ErrorPage/resources/js/lib/lib.min.js"></script>
+	<script src="https://sysinfo.jejuair.net/ErrorPage/resources/js/plugin.js"></script>
+	<script src="https://sysinfo.jejuair.net/ErrorPage/resources/js/common.js"></script>
+    <script>
+		var infos = getMobileDevice(navigator.userAgent);
+        function goMain() {
+				location.href="https://www.jejuair.net/";	 
+		}
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+ "passed": false,
+ "reasons": [
+  "a 200-notice dry run (2026-10-31) passed held-out item B (labelled fail: missing, wrong_person, mislabelled, misplaced) once its programme title was the real one: the deterministic layer did not catch B's defects. Judge mode stays off until the structural field invariants pass the labelled set."
+ ],
+ "false_passes": 0,
+ "heldout_unlabelled": 0,
+ "heldout_n": 30,
+ "model": "qwen3:1.7b",
+ "model_digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+ "prompt": "judge-30b199cc985210d7",
+ "decided_at": "2026-10-27T06:07:49.770310+00:00",
+ "rescored_from": {
+  "prompt": "judge-b3d5707d6892b339",
+  "model_calls": 0
+ },
+ "note": "Re-gated after the review fixes (trust boundary, lexicon removal, blank_owner, shape filter). Past batches: every question re-asked with this code (23, local, dev data): 0 false passes. Held-out not scored again: A and B, recomputed with this code and an adversarial judge that answers every question with its passing answer, still fail (programme question refused by the shape filter), so 0 false passes holds for any model answer. selftest 16/16 in the job image.",
+ "revoked_at": "2026-10-31"
+}

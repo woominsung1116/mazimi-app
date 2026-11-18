@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Disallow: /api/
+
+# Host
+Host: https://www.kakaopay.com
+
+# Sitemaps
+Sitemap: https://www.kakaopay.com/sitemap.xml
+Sitemap: https://www.kakaopay.com/sitemap/service-sitemap.xml

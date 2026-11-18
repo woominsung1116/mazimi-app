@@ -1,0 +1,37 @@
+# https://www.okcashbag.com/robots.txt
+
+# ── 기본 : 아래에 지정되지 않은 봇은 전체 차단 (현행 유지) ──
+User-agent: *
+Disallow: /
+
+# ── 검색엔진 (현행 유지) ──
+User-agent: Googlebot
+User-agent: Googlebot-Mobile
+User-agent: Googlebot-image
+User-agent: Bingbot
+User-agent: Yeti
+User-agent: NaverBot
+User-agent: Daumoa
+Allow: /
+
+# ── 광고 (현행 유지) ──
+User-agent: Mediapartners-Google
+User-agent: Google-Display-Ads-Bot
+Allow: /
+
+# ── 자동 검색·답변용 AI 크롤러 : 브랜드관만 허용 (신규) ──
+# ※ 경로는 브랜드관 URL 구조 확정 후 최종 반영 (현재 /about/brand 기준)
+User-agent: OAI-SearchBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+Disallow: /
+Allow: /about/brand
+
+# ── AI 학습·데이터셋 수집 봇 : 별도 승인 전 차단 (신규) ──
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://www.okcashbag.com/sitemap.xml

@@ -1,0 +1,5 @@
+{
+  "reviewed": true,
+  "drop": [{"page": 0, "label": "개인정보 수집 및 이용에 관한 사항"}],
+  "add": [{"id": "x", "page": 0, "rect": {"x": 0.245, "y": 0.214, "w": 0.148, "h": 0.026}, "type": "text", "label": "신청금액", "mapping": null, "required": true}]
+}

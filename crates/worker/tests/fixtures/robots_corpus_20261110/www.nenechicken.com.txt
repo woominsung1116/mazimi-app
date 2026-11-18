@@ -1,0 +1,8 @@
+User-Agent : *
+User-Agent : Googlebot
+User-Agent : AdsBot-Google
+User-Agent : Yeti
+User-Agent : Daumoa
+Allow : /
+Disallow: /manager/
+Disallow: /Program/

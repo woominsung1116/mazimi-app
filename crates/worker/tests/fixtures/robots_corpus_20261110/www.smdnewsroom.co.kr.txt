@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /trackback/
+Disallow: /*?s=
+Disallow: /*?replytocom=
+ 
+User-agent: GPTBot
+Allow: /
+ 
+User-agent: PerplexityBot
+Allow: /
+ 
+User-agent: ClaudeBot
+Allow: /
+ 
+User-agent: Google-Extended
+Allow: /
+ 
+Sitemap: https://www.smdnewsroom.co.kr/sitemap.xml

@@ -1,0 +1,27 @@
+# 기본 정책
+User-agent: *
+
+Allow: /ai-data/
+
+# 검색·색인 봇 (필수)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# 사용자 조회 봇 (권장)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+Sitemap: https://pc.wooricard.com/sitemap.xml
+Sitemap: https://m.wooricard.com/sitemap.xml

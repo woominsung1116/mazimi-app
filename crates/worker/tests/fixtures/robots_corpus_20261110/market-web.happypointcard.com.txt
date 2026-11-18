@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /happy-deal
+Disallow: /best
+Disallow: /categories/*
+Disallow: /products/*

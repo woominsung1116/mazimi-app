@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "content_hash": "9335040faa4aa5979c057f1c9028e31eebabbe8860696d0f14b6d9e2b1f38b40",
+  "page_count": 2,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.779,
+        "y": 0.187,
+        "w": 0.037,
+        "h": 0.022
+      },
+      "type": "text",
+      "label": "신청 학기 연도",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.84,
+        "y": 0.187,
+        "w": 0.046,
+        "h": 0.022
+      },
+      "type": "text",
+      "label": "신청 학기",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.2184,
+        "y": 0.2415,
+        "w": 0.2782,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "전공명",
+      "mapping": "major",
+      "required": false
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.6423,
+        "y": 0.2415,
+        "w": 0.2794,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "학번",
+      "mapping": "student_id",
+      "required": false
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.2184,
+        "y": 0.2747,
+        "w": 0.2782,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.6423,
+        "y": 0.2747,
+        "w": 0.2794,
+        "h": 0.0296
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.219,
+        "y": 0.309,
+        "w": 0.277,
+        "h": 0.027
+      },
+      "type": "text",
+      "label": "장학금명",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.6423,
+        "y": 0.3079,
+        "w": 0.2794,
+        "h": 0.0295
+      },
+      "type": "text",
+      "label": "연락처",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.2184,
+        "y": 0.6249,
+        "w": 0.2782,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "은행명",
+      "mapping": "bank",
+      "required": false
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.6423,
+        "y": 0.6249,
+        "w": 0.2794,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "계좌번호",
+      "mapping": "account",
+      "required": false
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.5753,
+        "y": 0.6939,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "장학금별 제출해야하는 증빙서류를 확인하였습니다.",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.712,
+        "y": 0.7142,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "감면장학은 장학금 적용 후 수강료를 납부해야함을 확인하였습니다.",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.8692,
+        "y": 0.7343,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "수강과목이 5과목 이하가 될 경우 장학금 지급이 취소됨(* 과목 제외)을 확인하였습니다.",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.4109,
+        "y": 0.8124,
+        "w": 0.0293,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year2"
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.4653,
+        "y": 0.8124,
+        "w": 0.0511,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.5415,
+        "y": 0.8124,
+        "w": 0.0511,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.846,
+        "y": 0.8543,
+        "w": 0.0483,
+        "h": 0.0339
+      },
+      "type": "stamp",
+      "label": "신청자 (인)",
+      "mapping": "stamp",
+      "required": true
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.68,
+        "y": 0.8589,
+        "w": 0.1643,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "신청자",
+      "mapping": "name",
+      "required": true
+    }
+  ]
+}

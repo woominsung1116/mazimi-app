@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "labeler": "draft-by-agent, needs human review",
+    "created_at": "2026-10-08",
+    "schema_version": 1,
+    "human_verified": false,
+    "note": "SAMPLE only (12 programs) to exercise the harness and lint labels. Texts are seed data from infra/migrations (summaries, the 20260321000006 document checklists joined into a submission_documents line, seed application dates written as a raw field) plus one pipeline test record. Not a quality measurement: the release set is 100 human-verified programs exported with docs/validation/ai-extraction/export-label-candidates.sql."
+  },
+  "programs": [
+    {
+      "id": "seed-busan-rent",
+      "origin": "20260320000002_seed.sql #1 summary",
+      "source": {
+        "title": "부산 청년 월세 지원",
+        "summary": "부산 거주 만 19~34세 청년에게 월 최대 20만원 월세를 지원합니다."
+      },
+      "expected": [
+        {"fact": {"type": "age", "min_age": 19, "max_age": 34, "basis": "man_age"}, "quote": "만 19~34세"},
+        {"fact": {"type": "region", "codes": ["busan"]}, "quote": "부산 거주"}
+      ]
+    },
+    {
+      "id": "seed-daegu-living",
+      "origin": "20260320000002_seed.sql 대구 청년 생활비 지원 summary",
+      "source": {
+        "title": "대구 청년 생활비 지원",
+        "summary": "대구 거주 만 19~34세 취업 준비 청년에게 월 최대 30만원 생활비를 지원합니다."
+      },
+      "expected": [
+        {"fact": {"type": "age", "min_age": 19, "max_age": 34, "basis": "man_age"}, "quote": "만 19~34세"},
+        {"fact": {"type": "region", "codes": ["daegu"]}, "quote": "대구 거주"},
+        {"fact": {"type": "employment", "statuses": ["preparing"]}, "quote": "취업 준비 청년"}
+      ]
+    },
+    {
+      "id": "seed-basic-livelihood",
+      "origin": "seed 기초생활보장 summary",
+      "label_note": "30~50% is a per-benefit range; labeled as the widest bound (50% 이하). A reviewer may prefer no single income fact.",
+      "source": {
+        "title": "기초생활보장",
+        "summary": "소득인정액이 기준 중위소득 30~50% 이하인 가구에게 생계·의료·주거·교육 급여를 지원하는 공공부조 제도입니다."
+      },
+      "expected": [
+        {"fact": {"type": "income", "criterion": "median_income_percent", "comparator": "lte", "value": 50}, "quote": "기준 중위소득 30~50% 이하"}
+      ]
+    },
+    {
+      "id": "seed-near-poverty",
+      "origin": "seed 차상위계층 지원 summary",
+      "source": {
+        "title": "차상위계층 지원",
+        "summary": "기준 중위소득 50% 이하 차상위계층에게 의료비 본인부담 경감, 전기료 감면, 문화누리카드 등 복합 지원 서비스를 제공합니다."
+      },
+      "expected": [
+        {"fact": {"type": "income", "criterion": "median_income_percent", "comparator": "lte", "value": 50}, "quote": "기준 중위소득 50% 이하"}
+      ]
+    },
+    {
+      "id": "seed-campus-income",
+      "origin": "seed 교내 소득연계 summary",
+      "source": {
+        "title": "교내 소득연계",
+        "summary": "소득 4분위 이하 재학생에게 학기당 최대 200만원을 지원하는 소득 연계형 교내 장학금입니다."
+      },
+      "expected": [
+        {"fact": {"type": "income", "criterion": "income_decile", "comparator": "lte", "value": 4}, "quote": "소득 4분위 이하"},
+        {"fact": {"type": "enrollment", "statuses": ["enrolled"]}, "quote": "재학생"}
+      ]
+    },
+    {
+      "id": "seed-national-scholarship-1",
+      "origin": "seed 국가장학금 1유형 summary + 20260321000006 checklist (is_required=false written as (선택))",
+      "label_note": "'소득 구간에 따라' sets the amount, not a threshold: no income fact. '대학생 대상' is not labeled as an enrollment status.",
+      "source": {
+        "title": "국가장학금 1유형",
+        "summary": "소득 연계형 국가장학금으로, 소득 구간에 따라 학기당 최대 350만원을 지원합니다. 대한민국 국적 대학생 대상.",
+        "submission_documents": "재학증명서, 성적증명서, 소득금액증명원, 주민등록등본, 가족관계증명서(선택)"
+      },
+      "expected": [
+        {"fact": {"type": "document", "name": "재학증명서", "required": true, "notes": null}, "quote": "재학증명서"},
+        {"fact": {"type": "document", "name": "성적증명서", "required": true, "notes": null}, "quote": "성적증명서"},
+        {"fact": {"type": "document", "name": "소득금액증명원", "required": true, "notes": null}, "quote": "소득금액증명원"},
+        {"fact": {"type": "document", "name": "주민등록등본", "required": true, "notes": null}, "quote": "주민등록등본"},
+        {"fact": {"type": "document", "name": "가족관계증명서", "required": false, "notes": "선택"}, "quote": "가족관계증명서(선택)"}
+      ]
+    },
+    {
+      "id": "seed-busan-talent",
+      "origin": "seed 부산 인재육성 장학금 summary + 20260321000006 checklist",
+      "label_note": "'성적 및 소득 기준 충족 필요' names no threshold: no income fact.",
+      "source": {
+        "title": "부산 인재육성 장학금",
+        "summary": "부산 거주 대학생에게 학기당 최대 200만원 장학금을 지원합니다. 성적 및 소득 기준 충족 필요.",
+        "submission_documents": "재학증명서, 성적증명서, 소득금액증명원, 주민등록등본, 통장 사본"
+      },
+      "expected": [
+        {"fact": {"type": "region", "codes": ["busan"]}, "quote": "부산 거주"},
+        {"fact": {"type": "document", "name": "재학증명서", "required": true, "notes": null}, "quote": "재학증명서"},
+        {"fact": {"type": "document", "name": "성적증명서", "required": true, "notes": null}, "quote": "성적증명서"},
+        {"fact": {"type": "document", "name": "소득금액증명원", "required": true, "notes": null}, "quote": "소득금액증명원"},
+        {"fact": {"type": "document", "name": "주민등록등본", "required": true, "notes": null}, "quote": "주민등록등본"},
+        {"fact": {"type": "document", "name": "통장 사본", "required": true, "notes": null}, "quote": "통장 사본"}
+      ]
+    },
+    {
+      "id": "seed-job-seeking-allowance",
+      "origin": "seed 청년구직활동지원금 summary",
+      "label_note": "'졸업·중퇴 후 2년 이내' mixes graduates and dropouts: no enrollment fact.",
+      "source": {
+        "title": "청년구직활동지원금",
+        "summary": "졸업·중퇴 후 2년 이내 만 18~34세 미취업 청년에게 월 50만원씩 최대 6개월간 구직 활동 비용을 지원합니다."
+      },
+      "expected": [
+        {"fact": {"type": "age", "min_age": 18, "max_age": 34, "basis": "man_age"}, "quote": "만 18~34세"},
+        {"fact": {"type": "employment", "statuses": ["unemployed"]}, "quote": "미취업 청년"}
+      ]
+    },
+    {
+      "id": "seed-daegu-job-voucher",
+      "origin": "seed 대구 청년 직무교육 바우처 summary",
+      "source": {
+        "title": "대구 청년 직무교육 바우처",
+        "summary": "대구 거주 만 18~34세 미취업 청년 및 재직 청년에게 직무 역량 향상 교육비를 최대 100만원 범위에서 바우처로 지원하는 대구광역시의 교육 지원 사업입니다. IT·경영·어학·디자인 등 분야 민간 교육기관의 강의를 자유롭게 선택하여 수강할 수 있습니다."
+      },
+      "expected": [
+        {"fact": {"type": "age", "min_age": 18, "max_age": 34, "basis": "man_age"}, "quote": "만 18~34세"},
+        {"fact": {"type": "region", "codes": ["daegu"]}, "quote": "대구 거주"},
+        {"fact": {"type": "employment", "statuses": ["unemployed", "employed"]}, "quote": "미취업 청년 및 재직 청년"}
+      ]
+    },
+    {
+      "id": "seed-busan-startup",
+      "origin": "20260320000002_seed.sql #3 summary; seed application window written as a raw 신청기간 field",
+      "label_note": "'창업 준비 청년' is not labeled as an employment status.",
+      "source": {
+        "title": "부산 청년 창업 지원금",
+        "summary": "부산 거주 만 19~39세 창업 준비 청년에게 최대 300만원 창업 자금을 지원합니다.",
+        "raw_payload": {"신청기간": "2026.03.01 ~ 2026.04.15"}
+      },
+      "expected": [
+        {"fact": {"type": "age", "min_age": 19, "max_age": 39, "basis": "man_age"}, "quote": "만 19~39세"},
+        {"fact": {"type": "region", "codes": ["busan"]}, "quote": "부산 거주"},
+        {"fact": {"type": "application_window", "kind": "dated", "start_date": "2026-03-01", "end_date": "2026-04-15"}, "quote": "2026.03.01 ~ 2026.04.15"}
+      ]
+    },
+    {
+      "id": "seed-k-digital",
+      "origin": "seed K-디지털 트레이닝 summary",
+      "label_note": "'구직자' could be preparing or unemployed; left unlabeled.",
+      "source": {
+        "title": "K-디지털 트레이닝",
+        "summary": "만 15세 이상 구직자를 대상으로 AI·SW·데이터 분야 6개월 집중 부트캠프를 교육비 전액 무료로 운영하고 훈련수당을 지급하는 고용노동부의 디지털 역량 강화 사업입니다. 대기업·중견기업과의 취업 연계 프로그램이 함께 운영됩니다."
+      },
+      "expected": [
+        {"fact": {"type": "age", "min_age": 15, "max_age": null, "basis": "man_age"}, "quote": "만 15세 이상"}
+      ]
+    },
+    {
+      "id": "pipeline-always-open-scholarship",
+      "origin": "crates/worker/src/pipeline.rs scholarship test record (상시모집)",
+      "source": {
+        "title": "상시 장학",
+        "raw_payload": {"상품명": "상시 장학", "모집시작일": "상시모집", "모집종료일": "상시모집"}
+      },
+      "expected": [
+        {"fact": {"type": "application_window", "kind": "always_open", "start_date": null, "end_date": null}, "quote": "상시모집"}
+      ]
+    }
+  ]
+}

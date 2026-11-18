@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "content_hash": "c0d78e37a05236daa9cc058dee161d85170338627934f0d3c4b52e69abf7b92c",
+  "page_count": 1,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.2412,
+        "y": 0.1044,
+        "w": 0.2296,
+        "h": 0.0208
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.6145,
+        "y": 0.1044,
+        "w": 0.278,
+        "h": 0.0208
+      },
+      "type": "text",
+      "label": "주민등록번호",
+      "mapping": "rrn",
+      "required": true
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.4048,
+        "y": 0.1288,
+        "w": 0.4876,
+        "h": 0.0211
+      },
+      "type": "text",
+      "label": "주소(도로명)",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.2885,
+        "y": 0.1534,
+        "w": 0.1823,
+        "h": 0.0208
+      },
+      "type": "text",
+      "label": "핸드폰번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.6145,
+        "y": 0.1534,
+        "w": 0.278,
+        "h": 0.0208
+      },
+      "type": "text",
+      "label": "이메일",
+      "mapping": "email",
+      "required": false
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.2412,
+        "y": 0.1778,
+        "w": 0.2296,
+        "h": 0.0209
+      },
+      "type": "text",
+      "label": "자격종목명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.6145,
+        "y": 0.1778,
+        "w": 0.278,
+        "h": 0.0209
+      },
+      "type": "text",
+      "label": "응시일자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.245,
+        "y": 0.214,
+        "w": 0.148,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "신청금액",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.7322,
+        "y": 0.2199,
+        "w": 0.136,
+        "h": 0.0141
+      },
+      "type": "text",
+      "label": "지출내역 응시료 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.7322,
+        "y": 0.2375,
+        "w": 0.136,
+        "h": 0.014
+      },
+      "type": "text",
+      "label": "지출내역 교재비 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.7322,
+        "y": 0.2551,
+        "w": 0.136,
+        "h": 0.0141
+      },
+      "type": "text",
+      "label": "지출내역 수강료 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.7322,
+        "y": 0.2727,
+        "w": 0.136,
+        "h": 0.014
+      },
+      "type": "text",
+      "label": "지출내역 기타 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.6,
+        "y": 0.53,
+        "w": 0.0218,
+        "h": 0.0154
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집 및 이용에 대한 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.7964,
+        "y": 0.53,
+        "w": 0.0218,
+        "h": 0.0154
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집 및 이용에 대한 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.5831,
+        "y": 0.5902,
+        "w": 0.0218,
+        "h": 0.0154
+      },
+      "type": "checkbox",
+      "label": "동대문구 구정소식 문자알림서비스: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.7597,
+        "y": 0.5902,
+        "w": 0.0218,
+        "h": 0.0154
+      },
+      "type": "checkbox",
+      "label": "동대문구 구정소식 문자알림서비스: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.4464,
+        "y": 0.7008,
+        "w": 0.0436,
+        "h": 0.0267
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.517,
+        "y": 0.7008,
+        "w": 0.0553,
+        "h": 0.0267
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f19",
+      "page": 0,
+      "rect": {
+        "x": 0.6528,
+        "y": 0.7317,
+        "w": 0.1377,
+        "h": 0.0304
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f20",
+      "page": 0,
+      "rect": {
+        "x": 0.7922,
+        "y": 0.7312,
+        "w": 0.0784,
+        "h": 0.0339
+      },
+      "type": "signature",
+      "label": "성명 서명",
+      "mapping": "signature",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source": "마지미 wordmark (assets/figma/vectors/logo-white.svg) on a #34BB84 to #239969 gradient, option A3, 2026-10-23",
+  "original_file": "app-icon-original.png",
+  "original_sha256": "a38e9b990be320afb9f8916a0bdf576e3f4b6c2813f64af9901a8903ae1cbf9a",
+  "background": "#34BB84",
+  "gradient": [
+    "#34BB84",
+    "#239969"
+  ],
+  "logo_share": {
+    "icon": 0.78,
+    "adaptive": 0.52,
+    "favicon": 0.82
+  },
+  "canvas_size": 1024,
+  "output_sha256": {
+    "icon": "a38e9b990be320afb9f8916a0bdf576e3f4b6c2813f64af9901a8903ae1cbf9a",
+    "adaptive-icon": "97f31bc3ca41c89484c2a3a3d9850594fc2bcb673872d4953b1d076bf4a4067d",
+    "favicon": "0818af14a8e50eb19d7f6de37cf4a54ff620ba8eafd3b5e6b48a95caebc8a883"
+  },
+  "export_command": "node tools/design/export-app-icon.mjs",
+  "splash": "Separate original Figma wordmark; not replaced by the app icon"
+}

@@ -1,0 +1,2770 @@
+{
+  "version": 1,
+  "content_hash": "6526147be0095eb3f2306335842ae2c20e824856eb24b7f06ef9a8c10c4fe6e9",
+  "page_count": 12,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.6611,
+        "y": 0.1518,
+        "w": 0.0252,
+        "h": 0.0178
+      },
+      "type": "checkbox",
+      "label": "신청 구분: 신청",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.7745,
+        "y": 0.1518,
+        "w": 0.0252,
+        "h": 0.0178
+      },
+      "type": "checkbox",
+      "label": "신청 구분: 변경",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.2065,
+        "y": 0.2221,
+        "w": 0.0961,
+        "h": 0.0286
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.421,
+        "y": 0.2221,
+        "w": 0.0877,
+        "h": 0.0286
+      },
+      "type": "text",
+      "label": "주민등록번호 (외국인등록번호)",
+      "mapping": "rrn",
+      "required": true
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.6209,
+        "y": 0.2221,
+        "w": 0.0673,
+        "h": 0.0286
+      },
+      "type": "text",
+      "label": "세대주와의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.7655,
+        "y": 0.2221,
+        "w": 0.1595,
+        "h": 0.0333
+      },
+      "type": "text",
+      "label": "전화번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.2065,
+        "y": 0.2543,
+        "w": 0.4818,
+        "h": 0.0214
+      },
+      "type": "text",
+      "label": "신청인 주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.7655,
+        "y": 0.2591,
+        "w": 0.1595,
+        "h": 0.0314
+      },
+      "type": "text",
+      "label": "휴대전화",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.6016,
+        "y": 0.2793,
+        "w": 0.0867,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "보장기관 (시․군․구)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.2577,
+        "y": 0.2872,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주거급여 중복신청 여부: ○(예)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.2914,
+        "y": 0.2872,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주거급여 중복신청 여부: ×(아니오)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.4385,
+        "y": 0.2872,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주거급여 수급여부: ○(예)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.4721,
+        "y": 0.2872,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주거급여 수급여부: ×(아니오)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.7655,
+        "y": 0.294,
+        "w": 0.1595,
+        "h": 0.045
+      },
+      "type": "text",
+      "label": "전자우편",
+      "mapping": "email",
+      "required": false
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.5199,
+        "y": 0.3113,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "지자체 또는 국토부 월세지원사업 수혜 중 여부: ○(예)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.5536,
+        "y": 0.3113,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "지자체 또는 국토부 월세지원사업 수혜 중 여부: ×(아니오)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.1493,
+        "y": 0.3771,
+        "w": 0.0739,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "청년독립가구 1행 신청인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.2272,
+        "y": 0.3771,
+        "w": 0.1092,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "청년독립가구 1행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f19",
+      "page": 0,
+      "rect": {
+        "x": 0.3404,
+        "y": 0.3771,
+        "w": 0.1601,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "청년독립가구 1행 주민등록번호",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p1-f20",
+      "page": 0,
+      "rect": {
+        "x": 0.5045,
+        "y": 0.3771,
+        "w": 0.1622,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "청년독립가구 1행 세대주와 동거여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f21",
+      "page": 0,
+      "rect": {
+        "x": 0.6707,
+        "y": 0.3771,
+        "w": 0.1378,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "청년독립가구 1행 학력·재학여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f22",
+      "page": 0,
+      "rect": {
+        "x": 0.8125,
+        "y": 0.3771,
+        "w": 0.1131,
+        "h": 0.018
+      },
+      "type": "text",
+      "label": "청년독립가구 1행 직업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f23",
+      "page": 0,
+      "rect": {
+        "x": 0.1493,
+        "y": 0.3991,
+        "w": 0.0739,
+        "h": 0.0179
+      },
+      "type": "text",
+      "label": "청년독립가구 2행 신청인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f24",
+      "page": 0,
+      "rect": {
+        "x": 0.2272,
+        "y": 0.3991,
+        "w": 0.1092,
+        "h": 0.0179
+      },
+      "type": "text",
+      "label": "청년독립가구 2행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f25",
+      "page": 0,
+      "rect": {
+        "x": 0.3404,
+        "y": 0.3991,
+        "w": 0.1601,
+        "h": 0.0179
+      },
+      "type": "text",
+      "label": "청년독립가구 2행 주민등록번호",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p1-f26",
+      "page": 0,
+      "rect": {
+        "x": 0.5045,
+        "y": 0.3991,
+        "w": 0.1622,
+        "h": 0.0179
+      },
+      "type": "text",
+      "label": "청년독립가구 2행 세대주와 동거여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f27",
+      "page": 0,
+      "rect": {
+        "x": 0.6707,
+        "y": 0.3991,
+        "w": 0.1378,
+        "h": 0.0179
+      },
+      "type": "text",
+      "label": "청년독립가구 2행 학력·재학여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f28",
+      "page": 0,
+      "rect": {
+        "x": 0.8125,
+        "y": 0.3991,
+        "w": 0.1131,
+        "h": 0.0179
+      },
+      "type": "text",
+      "label": "청년독립가구 2행 직업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f29",
+      "page": 0,
+      "rect": {
+        "x": 0.2763,
+        "y": 0.421,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "배우자 관계2): 법률혼",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f30",
+      "page": 0,
+      "rect": {
+        "x": 0.357,
+        "y": 0.421,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "배우자 관계2): 사실혼",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f31",
+      "page": 0,
+      "rect": {
+        "x": 0.4376,
+        "y": 0.421,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "배우자 관계2): 사실상 이혼",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f32",
+      "page": 0,
+      "rect": {
+        "x": 0.1493,
+        "y": 0.4474,
+        "w": 0.0739,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 1행 신청인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f33",
+      "page": 0,
+      "rect": {
+        "x": 0.2272,
+        "y": 0.4474,
+        "w": 0.1092,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 1행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f34",
+      "page": 0,
+      "rect": {
+        "x": 0.3404,
+        "y": 0.4474,
+        "w": 0.1601,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 1행 주민등록번호",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p1-f35",
+      "page": 0,
+      "rect": {
+        "x": 0.5045,
+        "y": 0.4474,
+        "w": 0.1622,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 1행 세대주와 동거여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f36",
+      "page": 0,
+      "rect": {
+        "x": 0.6707,
+        "y": 0.4474,
+        "w": 0.1378,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 1행 학력·재학여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f37",
+      "page": 0,
+      "rect": {
+        "x": 0.8125,
+        "y": 0.4474,
+        "w": 0.1131,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 1행 직업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f38",
+      "page": 0,
+      "rect": {
+        "x": 0.1493,
+        "y": 0.4682,
+        "w": 0.0739,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 2행 신청인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f39",
+      "page": 0,
+      "rect": {
+        "x": 0.2272,
+        "y": 0.4682,
+        "w": 0.1092,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 2행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f40",
+      "page": 0,
+      "rect": {
+        "x": 0.3404,
+        "y": 0.4682,
+        "w": 0.1601,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 2행 주민등록번호",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p1-f41",
+      "page": 0,
+      "rect": {
+        "x": 0.5045,
+        "y": 0.4682,
+        "w": 0.1622,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 2행 세대주와 동거여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f42",
+      "page": 0,
+      "rect": {
+        "x": 0.6707,
+        "y": 0.4682,
+        "w": 0.1378,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 2행 학력·재학여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f43",
+      "page": 0,
+      "rect": {
+        "x": 0.8125,
+        "y": 0.4682,
+        "w": 0.1131,
+        "h": 0.0129
+      },
+      "type": "text",
+      "label": "원가구 2행 직업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f44",
+      "page": 0,
+      "rect": {
+        "x": 0.1493,
+        "y": 0.489,
+        "w": 0.0739,
+        "h": 0.0147
+      },
+      "type": "text",
+      "label": "원가구 3행 신청인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f45",
+      "page": 0,
+      "rect": {
+        "x": 0.2272,
+        "y": 0.489,
+        "w": 0.1092,
+        "h": 0.0147
+      },
+      "type": "text",
+      "label": "원가구 3행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f46",
+      "page": 0,
+      "rect": {
+        "x": 0.3404,
+        "y": 0.489,
+        "w": 0.1601,
+        "h": 0.0147
+      },
+      "type": "text",
+      "label": "원가구 3행 주민등록번호",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p1-f47",
+      "page": 0,
+      "rect": {
+        "x": 0.5045,
+        "y": 0.489,
+        "w": 0.1622,
+        "h": 0.0147
+      },
+      "type": "text",
+      "label": "원가구 3행 세대주와 동거여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f48",
+      "page": 0,
+      "rect": {
+        "x": 0.6707,
+        "y": 0.489,
+        "w": 0.1378,
+        "h": 0.0147
+      },
+      "type": "text",
+      "label": "원가구 3행 학력·재학여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f49",
+      "page": 0,
+      "rect": {
+        "x": 0.8125,
+        "y": 0.489,
+        "w": 0.1131,
+        "h": 0.0147
+      },
+      "type": "text",
+      "label": "원가구 3행 직업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f50",
+      "page": 0,
+      "rect": {
+        "x": 0.1493,
+        "y": 0.5077,
+        "w": 0.0739,
+        "h": 0.0152
+      },
+      "type": "text",
+      "label": "원가구 4행 신청인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f51",
+      "page": 0,
+      "rect": {
+        "x": 0.2272,
+        "y": 0.5077,
+        "w": 0.1092,
+        "h": 0.0152
+      },
+      "type": "text",
+      "label": "원가구 4행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f52",
+      "page": 0,
+      "rect": {
+        "x": 0.3404,
+        "y": 0.5077,
+        "w": 0.1601,
+        "h": 0.0152
+      },
+      "type": "text",
+      "label": "원가구 4행 주민등록번호",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p1-f53",
+      "page": 0,
+      "rect": {
+        "x": 0.5045,
+        "y": 0.5077,
+        "w": 0.1622,
+        "h": 0.0152
+      },
+      "type": "text",
+      "label": "원가구 4행 세대주와 동거여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f54",
+      "page": 0,
+      "rect": {
+        "x": 0.6707,
+        "y": 0.5077,
+        "w": 0.1378,
+        "h": 0.0152
+      },
+      "type": "text",
+      "label": "원가구 4행 학력·재학여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f55",
+      "page": 0,
+      "rect": {
+        "x": 0.8125,
+        "y": 0.5077,
+        "w": 0.1131,
+        "h": 0.0152
+      },
+      "type": "text",
+      "label": "원가구 4행 직업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f56",
+      "page": 0,
+      "rect": {
+        "x": 0.2136,
+        "y": 0.5464,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주택: 단독주택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f57",
+      "page": 0,
+      "rect": {
+        "x": 0.3059,
+        "y": 0.5464,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주택: 다가구주택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f58",
+      "page": 0,
+      "rect": {
+        "x": 0.4623,
+        "y": 0.5461,
+        "w": 0.088,
+        "h": 0.0425
+      },
+      "type": "text",
+      "label": "임차보증금 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f59",
+      "page": 0,
+      "rect": {
+        "x": 0.5792,
+        "y": 0.5461,
+        "w": 0.0881,
+        "h": 0.0425
+      },
+      "type": "text",
+      "label": "월세 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f60",
+      "page": 0,
+      "rect": {
+        "x": 0.6933,
+        "y": 0.5461,
+        "w": 0.091,
+        "h": 0.0425
+      },
+      "type": "text",
+      "label": "임차면적(㎡)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f61",
+      "page": 0,
+      "rect": {
+        "x": 0.2136,
+        "y": 0.5619,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주택: 영업겸용 단독주택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f62",
+      "page": 0,
+      "rect": {
+        "x": 0.3751,
+        "y": 0.5619,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주택: 다중주택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f63",
+      "page": 0,
+      "rect": {
+        "x": 0.2136,
+        "y": 0.5774,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "주택: 파트",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f64",
+      "page": 0,
+      "rect": {
+        "x": 0.2813,
+        "y": 0.5774,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "아파트",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f65",
+      "page": 0,
+      "rect": {
+        "x": 0.3644,
+        "y": 0.5774,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "연립주택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f66",
+      "page": 0,
+      "rect": {
+        "x": 0.5574,
+        "y": 0.5921,
+        "w": 0.0407,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "임대차기간 시작 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p1-f67",
+      "page": 0,
+      "rect": {
+        "x": 0.6098,
+        "y": 0.5921,
+        "w": 0.0205,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "임대차기간 시작 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f68",
+      "page": 0,
+      "rect": {
+        "x": 0.6421,
+        "y": 0.5921,
+        "w": 0.0207,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "임대차기간 시작 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f69",
+      "page": 0,
+      "rect": {
+        "x": 0.6914,
+        "y": 0.5921,
+        "w": 0.0366,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "임대차기간 종료 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p1-f70",
+      "page": 0,
+      "rect": {
+        "x": 0.7397,
+        "y": 0.5921,
+        "w": 0.0207,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "임대차기간 종료 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f71",
+      "page": 0,
+      "rect": {
+        "x": 0.7722,
+        "y": 0.5921,
+        "w": 0.0207,
+        "h": 0.0271
+      },
+      "type": "text",
+      "label": "임대차기간 종료 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f72",
+      "page": 0,
+      "rect": {
+        "x": 0.2136,
+        "y": 0.5927,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "준주택: 오피스텔",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f73",
+      "page": 0,
+      "rect": {
+        "x": 0.3059,
+        "y": 0.5927,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "준주택: 고시원",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f74",
+      "page": 0,
+      "rect": {
+        "x": 0.3816,
+        "y": 0.5927,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "준주택: 기숙사",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f75",
+      "page": 0,
+      "rect": {
+        "x": 0.2136,
+        "y": 0.6081,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "준주택: 노인복지주택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f76",
+      "page": 0,
+      "rect": {
+        "x": 0.2136,
+        "y": 0.6234,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "기타: 쪽방",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f77",
+      "page": 0,
+      "rect": {
+        "x": 0.2723,
+        "y": 0.6234,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "기타: 여관·여인숙",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f78",
+      "page": 0,
+      "rect": {
+        "x": 0.5574,
+        "y": 0.6228,
+        "w": 0.0334,
+        "h": 0.0289
+      },
+      "type": "text",
+      "label": "계약일자 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p1-f79",
+      "page": 0,
+      "rect": {
+        "x": 0.6026,
+        "y": 0.6228,
+        "w": 0.0135,
+        "h": 0.0289
+      },
+      "type": "text",
+      "label": "계약일자 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f80",
+      "page": 0,
+      "rect": {
+        "x": 0.6278,
+        "y": 0.6228,
+        "w": 0.0135,
+        "h": 0.0289
+      },
+      "type": "text",
+      "label": "계약일자 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f81",
+      "page": 0,
+      "rect": {
+        "x": 0.7432,
+        "y": 0.6311,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "전대차 여부: ○(예)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f82",
+      "page": 0,
+      "rect": {
+        "x": 0.7767,
+        "y": 0.6311,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "전대차 여부: ×(아니오)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f83",
+      "page": 0,
+      "rect": {
+        "x": 0.2744,
+        "y": 0.6368,
+        "w": 0.1724,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "주택유형 기타 내용",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f84",
+      "page": 0,
+      "rect": {
+        "x": 0.2136,
+        "y": 0.6388,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f85",
+      "page": 0,
+      "rect": {
+        "x": 0.1493,
+        "y": 0.6867,
+        "w": 0.0739,
+        "h": 0.0175
+      },
+      "type": "text",
+      "label": "수령인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f86",
+      "page": 0,
+      "rect": {
+        "x": 0.2272,
+        "y": 0.6867,
+        "w": 0.076,
+        "h": 0.0175
+      },
+      "type": "text",
+      "label": "예금주(성명)",
+      "mapping": "account_holder",
+      "required": false
+    },
+    {
+      "id": "p1-f87",
+      "page": 0,
+      "rect": {
+        "x": 0.3072,
+        "y": 0.6867,
+        "w": 0.1218,
+        "h": 0.0175
+      },
+      "type": "text",
+      "label": "금융기관명",
+      "mapping": "bank",
+      "required": false
+    },
+    {
+      "id": "p1-f88",
+      "page": 0,
+      "rect": {
+        "x": 0.433,
+        "y": 0.6867,
+        "w": 0.2558,
+        "h": 0.0175
+      },
+      "type": "text",
+      "label": "계좌번호",
+      "mapping": "account",
+      "required": false
+    },
+    {
+      "id": "p1-f89",
+      "page": 0,
+      "rect": {
+        "x": 0.6928,
+        "y": 0.6867,
+        "w": 0.2328,
+        "h": 0.0175
+      },
+      "type": "text",
+      "label": "지급 비고(사유)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f90",
+      "page": 0,
+      "rect": {
+        "x": 0.2352,
+        "y": 0.7085,
+        "w": 0.0302,
+        "h": 0.0213
+      },
+      "type": "checkbox",
+      "label": "통지방법: 서면",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f91",
+      "page": 0,
+      "rect": {
+        "x": 0.3257,
+        "y": 0.7085,
+        "w": 0.0302,
+        "h": 0.0213
+      },
+      "type": "checkbox",
+      "label": "통지방법: 전자우편(E-mail",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f92",
+      "page": 0,
+      "rect": {
+        "x": 0.5074,
+        "y": 0.7085,
+        "w": 0.0302,
+        "h": 0.0213
+      },
+      "type": "checkbox",
+      "label": "통지방법: 문자메시지서비스(SMS",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f93",
+      "page": 0,
+      "rect": {
+        "x": 0.7267,
+        "y": 0.7084,
+        "w": 0.0304,
+        "h": 0.0215
+      },
+      "type": "checkbox",
+      "label": "통지방법: 기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f94",
+      "page": 0,
+      "rect": {
+        "x": 0.8118,
+        "y": 0.7113,
+        "w": 0.0939,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "통지방법 기타 내용",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f01",
+      "page": 1,
+      "rect": {
+        "x": 0.8473,
+        "y": 0.6591,
+        "w": 0.0404,
+        "h": 0.0286
+      },
+      "type": "checkbox",
+      "label": "유의사항 확인(√ 체크)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p2-f02",
+      "page": 1,
+      "rect": {
+        "x": 0.6984,
+        "y": 0.8103,
+        "w": 0.0639,
+        "h": 0.0171
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p2-f03",
+      "page": 1,
+      "rect": {
+        "x": 0.7808,
+        "y": 0.8103,
+        "w": 0.0418,
+        "h": 0.0171
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f04",
+      "page": 1,
+      "rect": {
+        "x": 0.8411,
+        "y": 0.8103,
+        "w": 0.0344,
+        "h": 0.0171
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f05",
+      "page": 1,
+      "rect": {
+        "x": 0.6585,
+        "y": 0.8273,
+        "w": 0.1161,
+        "h": 0.0201
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f06",
+      "page": 1,
+      "rect": {
+        "x": 0.7763,
+        "y": 0.8276,
+        "w": 0.1042,
+        "h": 0.021
+      },
+      "type": "signature",
+      "label": "신청인 성명 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p4-f01",
+      "page": 3,
+      "rect": {
+        "x": 0.5274,
+        "y": 0.1389,
+        "w": 0.0268,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "소득ㆍ재산 신고서: 신규",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f02",
+      "page": 3,
+      "rect": {
+        "x": 0.6256,
+        "y": 0.1389,
+        "w": 0.0268,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "소득ㆍ재산 신고서: 변경",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f03",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.1738,
+        "w": 0.1546,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "가구원 성명1) (1)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f04",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.1738,
+        "w": 0.1544,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "가구원 성명1) (2)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f05",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.1738,
+        "w": 0.1546,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "가구원 성명1) (3)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f06",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.1738,
+        "w": 0.1546,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "가구원 성명1) (4)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f07",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.1992,
+        "w": 0.1546,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "신청인과의 관계 (1)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f08",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.1992,
+        "w": 0.1544,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "신청인과의 관계 (2)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f09",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.1992,
+        "w": 0.1546,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "신청인과의 관계 (3)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f10",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.1992,
+        "w": 0.1546,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "신청인과의 관계 (4)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f11",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.2244,
+        "w": 0.1309,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "상시근로 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f12",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.2244,
+        "w": 0.131,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "상시근로 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f13",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.2244,
+        "w": 0.1312,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "상시근로 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f14",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.2244,
+        "w": 0.1311,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "상시근로 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f15",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.2516,
+        "w": 0.1309,
+        "h": 0.0235
+      },
+      "type": "text",
+      "label": "기타(자영업) (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f16",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.2516,
+        "w": 0.131,
+        "h": 0.0235
+      },
+      "type": "text",
+      "label": "기타(자영업) (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f17",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.2516,
+        "w": 0.1312,
+        "h": 0.0235
+      },
+      "type": "text",
+      "label": "기타(자영업) (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f18",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.2516,
+        "w": 0.1311,
+        "h": 0.0235
+      },
+      "type": "text",
+      "label": "기타(자영업) (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f19",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.2787,
+        "w": 0.1309,
+        "h": 0.0184
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 임대소득 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f20",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.2787,
+        "w": 0.131,
+        "h": 0.0184
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 임대소득 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f21",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.2787,
+        "w": 0.1312,
+        "h": 0.0184
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 임대소득 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f22",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.2787,
+        "w": 0.1311,
+        "h": 0.0184
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 임대소득 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f23",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.3007,
+        "w": 0.1309,
+        "h": 0.0185
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 이자소득 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f24",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.3007,
+        "w": 0.131,
+        "h": 0.0185
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 이자소득 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f25",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.3007,
+        "w": 0.1312,
+        "h": 0.0185
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 이자소득 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f26",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.3007,
+        "w": 0.1311,
+        "h": 0.0185
+      },
+      "type": "text",
+      "label": "소득사항 재산 소득 이자소득 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f27",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.3228,
+        "w": 0.1309,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "공적이전소득2) (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f28",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.3228,
+        "w": 0.131,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "공적이전소득2) (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f29",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.3228,
+        "w": 0.1312,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "공적이전소득2) (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f30",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.3228,
+        "w": 0.1311,
+        "h": 0.0237
+      },
+      "type": "text",
+      "label": "공적이전소득2) (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f31",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.35,
+        "w": 0.1309,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "재산사항 건축물 (주택, 건물, 시설물) (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f32",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.35,
+        "w": 0.131,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "재산사항 건축물 (주택, 건물, 시설물) (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f33",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.35,
+        "w": 0.1312,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "재산사항 건축물 (주택, 건물, 시설물) (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f34",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.35,
+        "w": 0.1311,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "재산사항 건축물 (주택, 건물, 시설물) (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f35",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.3832,
+        "w": 0.1309,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 선박 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f36",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.3832,
+        "w": 0.131,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 선박 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f37",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.3832,
+        "w": 0.1312,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 선박 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f38",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.3832,
+        "w": 0.1311,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 선박 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f39",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.4086,
+        "w": 0.1309,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "재산사항 토지 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f40",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.4086,
+        "w": 0.131,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "재산사항 토지 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f41",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.4086,
+        "w": 0.1312,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "재산사항 토지 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f42",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.4086,
+        "w": 0.1311,
+        "h": 0.0217
+      },
+      "type": "text",
+      "label": "재산사항 토지 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f43",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.4338,
+        "w": 0.1309,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 항공기 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f44",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.4338,
+        "w": 0.131,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 항공기 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f45",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.4338,
+        "w": 0.1312,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 항공기 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f46",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.4338,
+        "w": 0.1311,
+        "h": 0.0218
+      },
+      "type": "text",
+      "label": "재산사항 항공기 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f47",
+      "page": 3,
+      "rect": {
+        "x": 0.2708,
+        "y": 0.4671,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "자동차: 차량명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f48",
+      "page": 3,
+      "rect": {
+        "x": 0.3444,
+        "y": 0.4651,
+        "w": 0.066,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "재산사항 자동차 차량명 (1)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f49",
+      "page": 3,
+      "rect": {
+        "x": 0.4303,
+        "y": 0.4671,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "□ 차량명( ): 차량명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f50",
+      "page": 3,
+      "rect": {
+        "x": 0.5041,
+        "y": 0.4651,
+        "w": 0.066,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "재산사항 자동차 차량명 (2)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f51",
+      "page": 3,
+      "rect": {
+        "x": 0.59,
+        "y": 0.4671,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "□ 차량명( ): 차량명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f52",
+      "page": 3,
+      "rect": {
+        "x": 0.6639,
+        "y": 0.4651,
+        "w": 0.066,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "재산사항 자동차 차량명 (3)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f53",
+      "page": 3,
+      "rect": {
+        "x": 0.7498,
+        "y": 0.4671,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "□ 차량명( ): 차량명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f54",
+      "page": 3,
+      "rect": {
+        "x": 0.8234,
+        "y": 0.4651,
+        "w": 0.066,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "재산사항 자동차 차량명 (4)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f55",
+      "page": 3,
+      "rect": {
+        "x": 0.2708,
+        "y": 0.4934,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "임차보증금: 전ㆍ월세보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f56",
+      "page": 3,
+      "rect": {
+        "x": 0.4303,
+        "y": 0.4934,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "전ㆍ월세보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f57",
+      "page": 3,
+      "rect": {
+        "x": 0.59,
+        "y": 0.4934,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "전ㆍ월세보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f58",
+      "page": 3,
+      "rect": {
+        "x": 0.7498,
+        "y": 0.4934,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "전ㆍ월세보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f59",
+      "page": 3,
+      "rect": {
+        "x": 0.2708,
+        "y": 0.5172,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "임차보증금: 상가보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f60",
+      "page": 3,
+      "rect": {
+        "x": 0.4303,
+        "y": 0.5172,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "상가보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f61",
+      "page": 3,
+      "rect": {
+        "x": 0.59,
+        "y": 0.5172,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "상가보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f62",
+      "page": 3,
+      "rect": {
+        "x": 0.7498,
+        "y": 0.5172,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "상가보증금",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f63",
+      "page": 3,
+      "rect": {
+        "x": 0.2708,
+        "y": 0.5409,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "임차보증금: 기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f64",
+      "page": 3,
+      "rect": {
+        "x": 0.4303,
+        "y": 0.5409,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f65",
+      "page": 3,
+      "rect": {
+        "x": 0.59,
+        "y": 0.5409,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f66",
+      "page": 3,
+      "rect": {
+        "x": 0.7498,
+        "y": 0.5409,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "기타",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f67",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.5591,
+        "w": 0.1309,
+        "h": 0.0222
+      },
+      "type": "text",
+      "label": "재산사항 분양권 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f68",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.5591,
+        "w": 0.131,
+        "h": 0.0222
+      },
+      "type": "text",
+      "label": "재산사항 분양권 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f69",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.5591,
+        "w": 0.1312,
+        "h": 0.0222
+      },
+      "type": "text",
+      "label": "재산사항 분양권 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f70",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.5591,
+        "w": 0.1311,
+        "h": 0.0222
+      },
+      "type": "text",
+      "label": "재산사항 분양권 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f71",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.5849,
+        "w": 0.1309,
+        "h": 0.0221
+      },
+      "type": "text",
+      "label": "재산사항 조합원 입주권 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f72",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.5849,
+        "w": 0.131,
+        "h": 0.0221
+      },
+      "type": "text",
+      "label": "재산사항 조합원 입주권 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f73",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.5849,
+        "w": 0.1312,
+        "h": 0.0221
+      },
+      "type": "text",
+      "label": "재산사항 조합원 입주권 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f74",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.5849,
+        "w": 0.1311,
+        "h": 0.0221
+      },
+      "type": "text",
+      "label": "재산사항 조합원 입주권 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f75",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.6105,
+        "w": 0.1309,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "재산사항 회원권 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f76",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.6105,
+        "w": 0.131,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "재산사항 회원권 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f77",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.6105,
+        "w": 0.1312,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "재산사항 회원권 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f78",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.6105,
+        "w": 0.1311,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "재산사항 회원권 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f79",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.641,
+        "w": 0.1309,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관 대출금 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f80",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.641,
+        "w": 0.131,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관 대출금 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f81",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.641,
+        "w": 0.1312,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관 대출금 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f82",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.641,
+        "w": 0.1311,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관 대출금 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f83",
+      "page": 3,
+      "rect": {
+        "x": 0.2668,
+        "y": 0.6715,
+        "w": 0.1309,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관외 기관 대출금 (1) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f84",
+      "page": 3,
+      "rect": {
+        "x": 0.4264,
+        "y": 0.6715,
+        "w": 0.131,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관외 기관 대출금 (2) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f85",
+      "page": 3,
+      "rect": {
+        "x": 0.5859,
+        "y": 0.6715,
+        "w": 0.1312,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관외 기관 대출금 (3) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f86",
+      "page": 3,
+      "rect": {
+        "x": 0.7455,
+        "y": 0.6715,
+        "w": 0.1311,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "부채 금융기관외 기관 대출금 (4) 금액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f87",
+      "page": 3,
+      "rect": {
+        "x": 0.7115,
+        "y": 0.7376,
+        "w": 0.0639,
+        "h": 0.0171
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p4-f88",
+      "page": 3,
+      "rect": {
+        "x": 0.7939,
+        "y": 0.7376,
+        "w": 0.0311,
+        "h": 0.0171
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p4-f89",
+      "page": 3,
+      "rect": {
+        "x": 0.8435,
+        "y": 0.7376,
+        "w": 0.0309,
+        "h": 0.0171
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p4-f90",
+      "page": 3,
+      "rect": {
+        "x": 0.6837,
+        "y": 0.7623,
+        "w": 0.1153,
+        "h": 0.0201
+      },
+      "type": "text",
+      "label": "신청인(대리신청인)",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p4-f91",
+      "page": 3,
+      "rect": {
+        "x": 0.8007,
+        "y": 0.7627,
+        "w": 0.0989,
+        "h": 0.021
+      },
+      "type": "signature",
+      "label": "신청인(대리신청인) 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p5-f01",
+      "page": 4,
+      "rect": {
+        "x": 0.3921,
+        "y": 0.7471,
+        "w": 0.0739,
+        "h": 0.0401
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p5-f02",
+      "page": 4,
+      "rect": {
+        "x": 0.4775,
+        "y": 0.7471,
+        "w": 0.0294,
+        "h": 0.0401
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p5-f03",
+      "page": 4,
+      "rect": {
+        "x": 0.5185,
+        "y": 0.7471,
+        "w": 0.0292,
+        "h": 0.0401
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p5-f04",
+      "page": 4,
+      "rect": {
+        "x": 0.7815,
+        "y": 0.7995,
+        "w": 0.0701,
+        "h": 0.0339
+      },
+      "type": "signature",
+      "label": "성명 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p5-f05",
+      "page": 4,
+      "rect": {
+        "x": 0.6465,
+        "y": 0.8042,
+        "w": 0.1333,
+        "h": 0.0247
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    }
+  ]
+}

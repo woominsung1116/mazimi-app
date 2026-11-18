@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "content_hash": "45201f0663f4808bc96c549206fb24c19fefdeb9fad41dcf02b0eb9099010d3a",
+  "page_count": 6,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p5-f01",
+      "page": 4,
+      "rect": {
+        "x": 0.3098,
+        "y": 0.1464,
+        "w": 0.2088,
+        "h": 0.0336
+      },
+      "type": "text",
+      "label": "신청자 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p5-f02",
+      "page": 4,
+      "rect": {
+        "x": 0.6526,
+        "y": 0.1464,
+        "w": 0.2597,
+        "h": 0.0336
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p5-f03",
+      "page": 4,
+      "rect": {
+        "x": 0.3098,
+        "y": 0.1836,
+        "w": 0.6024,
+        "h": 0.0391
+      },
+      "type": "text",
+      "label": "신청자 주소 (등본상)",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p5-f04",
+      "page": 4,
+      "rect": {
+        "x": 0.3098,
+        "y": 0.2262,
+        "w": 0.2088,
+        "h": 0.0336
+      },
+      "type": "text",
+      "label": "신청자 휴대폰번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p5-f05",
+      "page": 4,
+      "rect": {
+        "x": 0.6526,
+        "y": 0.2262,
+        "w": 0.2597,
+        "h": 0.0336
+      },
+      "type": "text",
+      "label": "e-mail",
+      "mapping": "email",
+      "required": false
+    },
+    {
+      "id": "p5-f06",
+      "page": 4,
+      "rect": {
+        "x": 0.2178,
+        "y": 0.2759,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "취업상태: 미취업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p5-f07",
+      "page": 4,
+      "rect": {
+        "x": 0.3854,
+        "y": 0.2759,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "취업상태: 주 30시간 미만 근로",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p5-f08",
+      "page": 4,
+      "rect": {
+        "x": 0.2128,
+        "y": 0.3459,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "학력사항: 졸업(예정)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p5-f09",
+      "page": 4,
+      "rect": {
+        "x": 0.3828,
+        "y": 0.3459,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "학력사항: 중퇴",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p5-f10",
+      "page": 4,
+      "rect": {
+        "x": 0.548,
+        "y": 0.572,
+        "w": 0.052,
+        "h": 0.021
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p5-f11",
+      "page": 4,
+      "rect": {
+        "x": 0.577,
+        "y": 0.627,
+        "w": 0.18,
+        "h": 0.029
+      },
+      "type": "signature",
+      "label": "신청자 자필서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p5-f12",
+      "page": 4,
+      "rect": {
+        "x": 0.37,
+        "y": 0.631,
+        "w": 0.2,
+        "h": 0.021
+      },
+      "type": "text",
+      "label": "신청자 성명 (하단)",
+      "mapping": "name",
+      "required": true
+    }
+  ],
+  "derived": {
+    "source_sha256": "a94cbd9b6dab4cde313984c18b87b72fe6d11f502abdc71a4202363990f61a6f",
+    "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b"
+  }
+}

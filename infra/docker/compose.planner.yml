@@ -1,0 +1,72 @@
+# OPTIONAL overlay: the agent's fine-tuned model planner (docs/mazimi-ai-agent.md
+# §7, handoff router-tuning). Not part of the default stack: the service sits
+# behind the `planner` profile and the API keeps ASSISTANT_AGENT_PLANNER_ENABLED
+# unset (off). Answers stay template-only; the planner only picks tools.
+#
+# One-time model install (the GGUF is built by scripts/ai/planner-finetune/
+# export.sh and copied to PLANNER_MODEL_DIR with its Modelfile; check its
+# sha256 against the handoff before creating):
+#   docker compose -f compose.yml -f infra/docker/compose.planner.yml --profile planner up -d planner
+#   docker compose exec planner ollama create mazimi-planner-q17-v2 -f /models/Modelfile
+#   # then in .env.production: ASSISTANT_AGENT_PLANNER_ENABLED=true,
+#   # ASSISTANT_AGENT_PLANNER_PROMPT=tuned and ASSISTANT_AGENT_PLANNER_DIGEST
+#   # (the Ollama digest from the handoff; a mismatch at warm-up turns the
+#   # planner off) (api restart)
+#
+# Rollback: ASSISTANT_AGENT_PLANNER_ENABLED=false (api restart); routing is the
+# guard, the classifier and the rules again. Then `... --profile planner rm -sf planner`.
+x-logging: &planner-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  planner:
+    profiles: ["planner"]
+    image: "${PLANNER_OLLAMA_IMAGE:?pin an ollama/ollama tag (measured: 0.40.3)}"
+    restart: unless-stopped
+    logging: *planner-logging
+    # Only the internal `planner` network: the API reaches it as
+    # http://planner:11434; no ports, no egress (the model is created from the
+    # mounted GGUF, never pulled).
+    networks: [planner]
+    environment:
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_MAX_LOADED_MODELS=1
+      # The API's warm keeper refreshes it before this runs out.
+      - OLLAMA_KEEP_ALIVE=30m
+      # OLLAMA_DEBUG stays unset so goals are not logged.
+    volumes:
+      - planner_models:/root/.ollama
+      - ${PLANNER_MODEL_DIR:-/opt/mazimi/planner}:/models:ro
+    # Disjoint from the API's classifier cpuset (compose.classifier.yml, 0-1).
+    # Ollama sizes its pool by host cores, so the API sends num_thread =
+    # ASSISTANT_AGENT_PLANNER_NUM_THREADS: keep it equal to this CPU count.
+    cpuset: "${PLANNER_CPUSET:-2,3}"
+    security_opt:
+      - no-new-privileges:true
+    # Security review F5: no capabilities, a read-only root; the model store
+    # volume is the only writable mount, scratch in tmpfs.
+    cap_drop: [ALL]
+    read_only: true
+    tmpfs:
+      - /tmp
+    deploy:
+      resources:
+        limits:
+          cpus: "${PLANNER_CPUS:-2}"
+          memory: ${PLANNER_MEMORY:-3g}
+          pids: 256
+
+  api:
+    networks: [default, planner]
+    environment:
+      - ASSISTANT_AGENT_PLANNER_URL=http://planner:11434
+
+networks:
+  planner:
+    internal: true
+
+volumes:
+  planner_models:

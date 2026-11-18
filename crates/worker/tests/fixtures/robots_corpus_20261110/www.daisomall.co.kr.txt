@@ -1,0 +1,92 @@
+# 검색엔진
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Yeti
+Allow: /
+Crawl-delay: 10
+
+User-agent: Daum
+Allow: /
+Crawl-delay: 10
+
+# 소셜 미디어
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: kakaotalk-scrap
+Allow: /
+
+# AI 크롤러 (AEO)
+User-agent: OAI-SearchBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 10
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 10
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Claude-SearchBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 10
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Applebot-Extended
+Allow: /
+Crawl-delay: 10
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 10
+
+# 기타 봇 - 공개 페이지만 허용
+User-agent: *
+Allow: /ds/
+Allow: /pd/pdr/
+Allow: /ev/evc/
+Allow: /cs/csi/
+Allow: /cs/csl/
+Allow: /ug/ugm/
+Allow: /ug/ugl/
+Allow: /bp/
+Disallow: /or/
+Disallow: /ms/
+Disallow: /mb/
+Disallow: /py/
+Disallow: /appAdapter
+Disallow: /openapp
+Disallow: /openurl
+Disallow: /closeWebview
+Disallow: /blank
+Disallow: /guide/
+Crawl-delay: 30
+
+Sitemap: https://www.daisomall.co.kr/sitemap.xml
+

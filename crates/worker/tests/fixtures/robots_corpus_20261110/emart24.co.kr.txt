@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /founded/brief/req
+Disallow: /founded/recommend

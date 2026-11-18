@@ -1,0 +1,365 @@
+{
+ "23509378-7c00-4f2b-bdc9-7e5717187be3": {
+  "id": "23509378-7c00-4f2b-bdc9-7e5717187be3",
+  "program_type": "employment",
+  "source_type": "gov_benefits",
+  "title": "기장군 청년 면접수당 지원",
+  "summary": "1인당 최대 10만원 면접수당 지원(1회당 5만원, 최대 2회)",
+  "provider_name": "부산광역시 기장군",
+  "official_url": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2128527&bnefType=all&svcId=340000000130",
+  "program_status": "active",
+  "application_start_at": "2026-02-01T15:00:00+00:00",
+  "application_end_at": "2026-12-10T14:59:59+00:00",
+  "deadline_at": null,
+  "benefit_valid_until": null,
+  "min_age": 19,
+  "max_age": 39,
+  "regions": [
+   "busan"
+  ],
+  "region_districts": [
+   "26710"
+  ],
+  "application_method": "기타 온라인신청",
+  "submission_documents": "1. [행정정보 공동이용 사전동의서] 또는 [주민등록표 등초본, 건강보험자격득실확인서] 중 선택\r\n2. 사실증명(사업자등록사실여부)\r\n3. 채용공고\r\n4. 면접확인서 및 증빙자료\r\n5. 통장사본 등",
+  "screening_method": null,
+  "benefit_amount_once": null,
+  "benefit_amount_monthly": null,
+  "benefit_amount_semester": null,
+  "is_active": true,
+  "created_at": "2026-09-23T02:56:24.451399+00:00",
+  "updated_at": "2026-10-28T15:26:04.602531+00:00",
+  "application_procedure": {
+   "intro": null,
+   "lines": [
+    {
+     "label": "전화 문의",
+     "source": "전화문의",
+     "url": null,
+     "value": "기장군청 일자리경제과 051-709-4395"
+    },
+    {
+     "label": "온라인 신청",
+     "source": "온라인신청사이트URL",
+     "url": null,
+     "value": "gijang.go.kr"
+    },
+    {
+     "label": "신청 기간",
+     "source": "application_period",
+     "url": null,
+     "value": "2026.02.02 ~ 2026.12.10"
+    }
+   ],
+   "ordered": false,
+   "organization": null,
+   "steps": []
+  },
+  "application_progress": [
+   {
+    "stage": "discover",
+    "label": "발견",
+    "state": "current"
+   },
+   {
+    "stage": "eligibility",
+    "label": "자격 확인",
+    "state": "upcoming"
+   },
+   {
+    "stage": "documents",
+    "label": "서류 준비",
+    "state": "upcoming"
+   },
+   {
+    "stage": "apply",
+    "label": "신청",
+    "state": "upcoming"
+   }
+  ],
+  "required_documents": [],
+  "required_document_notes": [],
+  "eligibility_rules": [],
+  "brands": [],
+  "effective_deadline": "2026-12-10T14:59:59+00:00",
+  "application_policy": {
+   "mode": "assisted",
+   "can_prepare": true,
+   "can_autofill": false,
+   "can_submit": false,
+   "reason": "",
+   "official_origin": null,
+   "destination": null,
+   "notice_destination": null,
+   "resources": {
+    "notice": null,
+    "application": null,
+    "templates": [],
+    "status": "unverified"
+   },
+   "workflow": {
+    "version": 1,
+    "channels": [
+     {
+      "id": "online",
+      "label": "온라인 접수",
+      "evidence": ""
+     }
+    ],
+    "no_application_required": false,
+    "needs_confirmation": false,
+    "method_text": "기타 온라인신청"
+   }
+  }
+ },
+ "33670fe4-2b6f-4ac1-879f-7f90850a86ae": {
+  "id": "33670fe4-2b6f-4ac1-879f-7f90850a86ae",
+  "program_type": "welfare",
+  "source_type": "local_welfare",
+  "title": "난임시술비지원사업(전환)",
+  "summary": "체외수정시술 및 인공수정시술등 특정치료를 요하는 난임부부에게 시술비 일부를 지원하여 경제적 부담을 경감시킴으로써 난임부부가 희망하는 자녀를 갖도록 지원하기 위함",
+  "provider_name": "부산광역시 시민건강국 건강정책과",
+  "official_url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002785&wlfareInfoReldBztpCd=02",
+  "program_status": "active",
+  "application_start_at": null,
+  "application_end_at": null,
+  "deadline_at": null,
+  "benefit_valid_until": null,
+  "min_age": null,
+  "max_age": null,
+  "regions": [
+   "busan"
+  ],
+  "region_districts": null,
+  "application_method": "방문, 인터넷",
+  "submission_documents": null,
+  "screening_method": null,
+  "benefit_amount_once": null,
+  "benefit_amount_monthly": null,
+  "benefit_amount_semester": null,
+  "is_active": true,
+  "created_at": "2026-09-23T05:08:50.932411+00:00",
+  "updated_at": "2026-10-20T15:47:59.169587+00:00",
+  "application_procedure": {
+   "intro": null,
+   "lines": [
+    {
+     "label": "방문 신청",
+     "source": "application_method",
+     "url": null,
+     "value": null
+    },
+    {
+     "label": "온라인 신청",
+     "source": "destination",
+     "url": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00002785&wlfareInfoReldBztpCd=02",
+     "value": "복지로"
+    }
+   ],
+   "ordered": false,
+   "organization": "부산광역시 시민건강국 건강정책과",
+   "steps": []
+  },
+  "application_progress": [
+   {
+    "stage": "discover",
+    "label": "발견",
+    "state": "current"
+   },
+   {
+    "stage": "eligibility",
+    "label": "자격 확인",
+    "state": "upcoming"
+   },
+   {
+    "stage": "documents",
+    "label": "서류 준비",
+    "state": "upcoming"
+   },
+   {
+    "stage": "apply",
+    "label": "신청",
+    "state": "upcoming"
+   }
+  ],
+  "required_documents": [],
+  "required_document_notes": [],
+  "eligibility_rules": [],
+  "brands": [],
+  "effective_deadline": null,
+  "application_policy": {
+   "mode": "assisted",
+   "can_prepare": true,
+   "can_autofill": false,
+   "can_submit": false,
+   "reason": "",
+   "official_origin": null,
+   "destination": null,
+   "notice_destination": null,
+   "resources": {
+    "notice": null,
+    "application": null,
+    "templates": [],
+    "status": "unverified"
+   },
+   "workflow": {
+    "version": 1,
+    "channels": [
+     {
+      "id": "visit",
+      "label": "방문 접수",
+      "evidence": ""
+     },
+     {
+      "id": "online",
+      "label": "온라인 접수",
+      "evidence": ""
+     }
+    ],
+    "no_application_required": false,
+    "needs_confirmation": false,
+    "method_text": "방문, 인터넷"
+   }
+  }
+ },
+ "9d65f110-3ab4-47a4-9d25-fca4d2342adb": {
+  "id": "9d65f110-3ab4-47a4-9d25-fca4d2342adb",
+  "program_type": "housing",
+  "source_type": "youth_center",
+  "title": "부산 전세피해 임차인 주거안정지원금 지원",
+  "summary": "ㅇ전세피해임차인 주거안정지원금 지원\r\n- 지원대상: 특별법에 따른 전세사기피해자(등) 결정자 (*이주비 지원사업  수혜자 제외)\r\n- 지원금액: 155만원(생애1회)",
+  "provider_name": "부산광역시 주택건축국 주택정책과",
+  "official_url": "https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/20260430005400212958",
+  "program_status": "always_open",
+  "application_start_at": null,
+  "application_end_at": null,
+  "deadline_at": null,
+  "benefit_valid_until": null,
+  "min_age": null,
+  "max_age": null,
+  "regions": [
+   "busan"
+  ],
+  "region_districts": [
+   "26110",
+   "26140",
+   "26170",
+   "26200",
+   "26230",
+   "26260",
+   "26290",
+   "26320",
+   "26350",
+   "26380",
+   "26410",
+   "26440",
+   "26470",
+   "26500",
+   "26530",
+   "26710"
+  ],
+  "application_method": "\r\n① 신청대상자 안내 문자\r\n② 주거안정지원금 신청\r\n③ 적합여부 및 서류 검토\r\n④ 지급결정 통보\r\n⑤ 계좌 입금\r\n",
+  "submission_documents": "ㅇ(공통) ①신청서, ②개인정보 수집‧이용등 동의서, ③전세사기피해자등 결정통지서, 결정문 사본, ④주민등록등본(과거 주소 변동사항 포함, 주민등록번호 뒷자리 공개, 신청일로부터 30일 이내 발급분), ⑤신분증, ⑥통장사본(피해자 명의 계좌)\r\nㅇ(대리인 신청) ※ 피해자 본인 신청 원칙, 부득이한 경우 가족에 한하여 대리신청 가능\r\n①공통서류 + ②위임장(위임자 도장 날인), ③신청인 및 대리인 신분증,\r\n④가족관계증명서 상세(등본으로 가족확인 불가한 경우에 한함. 피해자 기준으로 발급)",
+  "screening_method": "- 지원금 지급대상자로 결정 시, 결정 통보 및 지급 안내 문자 발송",
+  "benefit_amount_once": null,
+  "benefit_amount_monthly": null,
+  "benefit_amount_semester": null,
+  "is_active": true,
+  "created_at": "2026-09-23T02:45:48.352125+00:00",
+  "updated_at": "2026-10-30T15:14:11.469299+00:00",
+  "application_procedure": {
+   "intro": null,
+   "lines": [],
+   "ordered": true,
+   "organization": null,
+   "steps": [
+    {
+     "detail": null,
+     "source": "plcyAplyMthdCn",
+     "title": "신청대상자 안내 문자"
+    },
+    {
+     "detail": null,
+     "source": "plcyAplyMthdCn",
+     "title": "주거안정지원금 신청"
+    },
+    {
+     "detail": null,
+     "source": "plcyAplyMthdCn",
+     "title": "적합여부 및 서류 검토"
+    },
+    {
+     "detail": null,
+     "source": "plcyAplyMthdCn",
+     "title": "지급결정 통보"
+    },
+    {
+     "detail": null,
+     "source": "plcyAplyMthdCn",
+     "title": "계좌 입금"
+    },
+    {
+     "detail": null,
+     "source": "srngMthdCn",
+     "title": "지원금 지급대상자로 결정 시, 결정 통보 및 지급 안내 문자 발송"
+    }
+   ]
+  },
+  "application_progress": [
+   {
+    "stage": "discover",
+    "label": "발견",
+    "state": "current"
+   },
+   {
+    "stage": "eligibility",
+    "label": "자격 확인",
+    "state": "upcoming"
+   },
+   {
+    "stage": "documents",
+    "label": "서류 준비",
+    "state": "upcoming"
+   },
+   {
+    "stage": "apply",
+    "label": "신청",
+    "state": "upcoming"
+   }
+  ],
+  "required_documents": [],
+  "required_document_notes": [],
+  "eligibility_rules": [],
+  "brands": [],
+  "effective_deadline": null,
+  "application_policy": {
+   "mode": "assisted",
+   "can_prepare": true,
+   "can_autofill": false,
+   "can_submit": false,
+   "reason": "",
+   "official_origin": null,
+   "destination": null,
+   "notice_destination": null,
+   "resources": {
+    "notice": null,
+    "application": null,
+    "templates": [],
+    "status": "unverified"
+   },
+   "workflow": {
+    "version": 1,
+    "channels": [
+     {
+      "id": "unknown",
+      "label": "접수 방식 확인",
+      "evidence": ""
+     }
+    ],
+    "no_application_required": false,
+    "needs_confirmation": false,
+    "method_text": "\r\n① 신청대상자 안내 문자\r\n② 주거안정지원금 신청\r\n③ 적합여부 및 서류 검토\r\n④ 지급결정 통보\r\n⑤ 계좌 입금\r\n"
+   }
+  }
+ }
+}

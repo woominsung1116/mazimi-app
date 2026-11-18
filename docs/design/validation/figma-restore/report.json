@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-25T18:51:06.571Z",
+  "source_sha256": "c4c0914b1b3d378b989341841415cc672128ac255d5aac58936d3204e6dbc310",
+  "environment": "Chromium 390px, local Expo web export, fixed API fixtures; no production requests",
+  "results": [
+    "탐색: card 34065:2930, selected tab 34065:3116, filter pill 34065:3283 and header 34065:3106 render with their Figma values.",
+    "홈: tab bar 34065:6364 (11/16 labels, White 98%, GrayF1 line, 12px corners) and hero 34065:6169 match.",
+    "탭 바: 홈, 탐색, 관심 혜택, 서류 보관함, 마이페이지 only.",
+    "홈 carousel: four slides for a member (비서 on or off) and a guest; with 비서 off, /agent still shows 다음 할 일.",
+    "상세: the stepper's current step is Primary and later steps GrayE1, as 34065:10997.",
+    "온보딩: input 34002:3818 and disabled button 34002:3961 match.",
+    "상세 404: the back arrow draws in #15D688 on white, not the photo-hero white.",
+    "마이페이지: settings rows are 44px targets; alert toggles are the 36x20 Figma toggle.",
+    "15 Figma screens (with compare-*.png next to the frame) and 10 frameless screens render at 390px without overflow."
+  ],
+  "errors": []
+}

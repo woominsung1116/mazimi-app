@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-02T02:43:10.339966+00:00",
+  "expo_project": "@mazimi/majimi",
+  "build_id": "5e8f433c-be71-48ff-91ed-4f3d95ce4cfa",
+  "source_commit": "8a508c68d06732a83958db2541c766e3019ac7db",
+  "status": "FINISHED",
+  "app_version": "1.0.0",
+  "android_version_code": "2",
+  "artifact_url": "https://expo.dev/artifacts/eas/ZgVgskAaQr44t1Ovs2pX1IGs0UkEnPCd6sWnrt91cfU.apk",
+  "artifact_bytes": 88995754,
+  "artifact_sha256": "83d30b59e7deb1d6a2ba5f0d6bf93450750bcabff3b38967f7aed4fa3e4b072f",
+  "artifact_checks": {
+    "zip_crc_valid": true,
+    "manifest_present": true,
+    "dex_present": true,
+    "production_api_in_bundle": true
+  },
+  "physical_device_tested": false,
+  "notes": [
+    "Figma design build. Region/session audit corrections will be in the subsequent build."
+  ]
+}

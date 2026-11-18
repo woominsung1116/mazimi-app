@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /_common/
+Disallow: /design/
+Disallow: /sample/
+Disallow: /webhook/
+Disallow: /wellconn/
+
+Sitemap: https://www.toeic.co.kr/sitemap.xml

@@ -1,0 +1,40 @@
+User-agent: Googlebot
+User-agent: Googlebot-image
+User-agent: Yeti
+User-agent: bingbot
+User-agent: Daum
+User-agent: Daumoa
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: GoogleAgent-Mariner
+User-agent: Gemini-Deep-Research
+User-agent: Microsoft-Copilot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: GPTBot
+User-agent: Google-Extended
+User-agent: ClaudeBot
+Disallow: /po
+Disallow: /mo
+Disallow: /md/shortUrl
+Disallow: /md/ai/
+Disallow: /md/coe/rcntShpg
+
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: Meta-ExternalAgent
+User-agent: cohere-ai
+User-agent: Diffbot
+User-agent: Omgilibot
+User-agent: Omgili
+User-agent: PetalBot
+User-agent: Timpibot
+Disallow: /
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.hmall.com/sitemap.xml

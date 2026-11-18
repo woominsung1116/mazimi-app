@@ -1,0 +1,23 @@
+[
+ {
+  "baseline": "d77ca111.html",
+  "file": "d77ca111.html",
+  "url": "https://education.github.com/pack",
+  "fetched_at": "2026-10-21T04:03:00Z",
+  "sha256": "532647ec1c659e3be92600ec28ece4c67f3e50e5a1eabd61eebb9cb728eb7d8d"
+ },
+ {
+  "baseline": "5b2045d2.html",
+  "file": "5b2045d2.html",
+  "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students",
+  "fetched_at": "2026-10-21T04:03:00Z",
+  "sha256": "5a21d3ecc8649d31efda202c92cb00adcebd0ecf559a67d9f274803969429026"
+ },
+ {
+  "baseline": "5fa3af29.html",
+  "file": "5fa3af29.html",
+  "url": "https://www.nike.com/kr/membership/student-discount-program",
+  "fetched_at": "2026-10-21T04:03:00Z",
+  "sha256": "b52f620d682ff1ce65a4e8b08ee2c0d561a220d767c12eb137749b469258397f"
+ }
+]

@@ -1,0 +1,409 @@
+{
+ "reviewed": true,
+ "note": "HWPX form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). Pages 2 (신혼부부) and 3 (미혼청년) are alternatives: the applicant fills one.",
+ "drop": [
+  {
+   "page": 1,
+   "label": "신청자격 등에 대한 서약"
+  },
+  {
+   "page": 1,
+   "label": "해당란에 본인 자필서명"
+  },
+  {
+   "page": 2,
+   "label": "신청자격 등에 대한 서약"
+  },
+  {
+   "page": 2,
+   "label": "본인은 주택을 소유하고 있지 않음"
+  },
+  {
+   "page": 3,
+   "label": "미혼청년 전세자금 대출이자 지원"
+  },
+  {
+   "page": 3,
+   "label": "개인정보 수집· 이용에 관"
+  },
+  {
+   "page": 3,
+   "label": "고유식별정보 처리 내역"
+  },
+  {
+   "page": 3,
+   "label": "주민등록"
+  },
+  {
+   "page": 3,
+   "label": "번호 등 고유식별정보"
+  },
+  {
+   "page": 3,
+   "label": "개인정보의 제공· 조회에"
+  }
+ ],
+ "set": [
+  {
+   "match": {
+    "page": 0,
+    "label": "신청인 주소"
+   },
+   "fields": {
+    "rect": {
+     "x": 0.355,
+     "y": 0.167,
+     "w": 0.57,
+     "h": 0.025
+    }
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "신청구분 내용기재 혼인신고일"
+   },
+   "fields": {
+    "label": "혼인신고일",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "신청구분 내용기재 자녀수"
+   },
+   "fields": {
+    "label": "자녀수"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "임차주택 현황 임차금액"
+   },
+   "fields": {
+    "label": "임차금액 (원)",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "대출잔액(원) 금액"
+   },
+   "fields": {
+    "label": "대출잔액 (원)",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "대출기관"
+   },
+   "fields": {
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "지급계좌 (신청인명의) 금융기관"
+   },
+   "fields": {
+    "label": "지급계좌 금융기관 (신청인 명의)",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "계좌번호"
+   },
+   "fields": {
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "서약자 (동의자) 성 명"
+   },
+   "fields": {
+    "label": "신혼부부 서약자 성명"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "서약자 (동의자) 성 명 서명"
+   },
+   "fields": {
+    "label": "신혼부부 서약자 서명"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "서약자 (동의자) 성 명"
+   },
+   "fields": {
+    "label": "미혼청년 서약자 성명"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "서약자 (동의자) 성 명 서명"
+   },
+   "fields": {
+    "label": "미혼청년 서약자 서명"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "선택",
+    "near_y": 0.369
+   },
+   "fields": {
+    "label": "개인정보 수집·이용: 동의"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "미동의"
+   },
+   "fields": {
+    "label": "개인정보 수집·이용: 미동의"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "보호법 제24조: 동의"
+   },
+   "fields": {
+    "label": "고유식별정보 처리: 동의"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "보호법 제24조: 미동의"
+   },
+   "fields": {
+    "label": "고유식별정보 처리: 미동의"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "선택",
+    "near_y": 0.811
+   },
+   "fields": {
+    "label": "제3자 제공·조회: 동의"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "[ 전주시장 귀하: 미동의"
+   },
+   "fields": {
+    "label": "제3자 제공·조회: 미동의"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "신청인"
+   },
+   "fields": {
+    "label": "동의서 신청인 성명"
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "대리인"
+   },
+   "fields": {
+    "label": "대리인 성명"
+   }
+  }
+ ],
+ "add": [
+  {
+   "id": "x1",
+   "page": 0,
+   "rect": {
+    "x": 0.355,
+    "y": 0.138,
+    "w": 0.21,
+    "h": 0.026
+   },
+   "type": "text",
+   "label": "성명",
+   "mapping": "name",
+   "required": true
+  },
+  {
+   "id": "x2",
+   "page": 0,
+   "rect": {
+    "x": 0.46,
+    "y": 0.192,
+    "w": 0.25,
+    "h": 0.019
+   },
+   "type": "text",
+   "label": "신청인 연락처",
+   "mapping": "phone",
+   "required": true
+  },
+  {
+   "id": "x3",
+   "page": 0,
+   "rect": {
+    "x": 0.36,
+    "y": 0.414,
+    "w": 0.158,
+    "h": 0.02
+   },
+   "type": "text",
+   "label": "신청금액 (천원)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x4",
+   "page": 1,
+   "rect": {
+    "x": 0.778,
+    "y": 0.344,
+    "w": 0.134,
+    "h": 0.046
+   },
+   "type": "signature",
+   "label": "신혼부부 서약 자필서명: 혼인기간",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x5",
+   "page": 1,
+   "rect": {
+    "x": 0.778,
+    "y": 0.396,
+    "w": 0.134,
+    "h": 0.047
+   },
+   "type": "signature",
+   "label": "신혼부부 서약 자필서명: 무주택 여부",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x6",
+   "page": 1,
+   "rect": {
+    "x": 0.778,
+    "y": 0.449,
+    "w": 0.134,
+    "h": 0.047
+   },
+   "type": "signature",
+   "label": "신혼부부 서약 자필서명: 주택전세자금 대출 여부",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x7",
+   "page": 1,
+   "rect": {
+    "x": 0.778,
+    "y": 0.502,
+    "w": 0.134,
+    "h": 0.047
+   },
+   "type": "signature",
+   "label": "신혼부부 서약 자필서명: 대상주택 전세 여부",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x8",
+   "page": 1,
+   "rect": {
+    "x": 0.778,
+    "y": 0.555,
+    "w": 0.134,
+    "h": 0.047
+   },
+   "type": "signature",
+   "label": "신혼부부 서약 자필서명: 반납",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x9",
+   "page": 2,
+   "rect": {
+    "x": 0.778,
+    "y": 0.376,
+    "w": 0.134,
+    "h": 0.046
+   },
+   "type": "signature",
+   "label": "미혼청년 서약 자필서명: 무주택 여부",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x10",
+   "page": 2,
+   "rect": {
+    "x": 0.778,
+    "y": 0.428,
+    "w": 0.134,
+    "h": 0.047
+   },
+   "type": "signature",
+   "label": "미혼청년 서약 자필서명: 주택전세자금 대출 여부",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x11",
+   "page": 2,
+   "rect": {
+    "x": 0.778,
+    "y": 0.481,
+    "w": 0.134,
+    "h": 0.047
+   },
+   "type": "signature",
+   "label": "미혼청년 서약 자필서명: 대상주택 전세 여부",
+   "mapping": "signature",
+   "required": true
+  },
+  {
+   "id": "x12",
+   "page": 2,
+   "rect": {
+    "x": 0.778,
+    "y": 0.534,
+    "w": 0.134,
+    "h": 0.047
+   },
+   "type": "signature",
+   "label": "미혼청년 서약 자필서명: 반납",
+   "mapping": "signature",
+   "required": true
+  }
+ ]
+}

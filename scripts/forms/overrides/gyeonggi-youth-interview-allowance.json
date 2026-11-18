@@ -1,0 +1,315 @@
+{
+ "pages": [
+  12,
+  13,
+  14
+ ],
+ "reviewed": true,
+ "note": "붙임1 면접확인서(10~11쪽)는 기업 담당자가 작성하는 양식이라 제외. 서식의 연도는 2025로 인쇄됨(2025년 제2차 공고 서식)",
+ "drop": [
+  {
+   "page": 14,
+   "label": "권리 수당"
+  }
+ ],
+ "set": [
+  {
+   "match": {
+    "page": 12,
+    "label": "회사명"
+   },
+   "fields": {
+    "label": "면접시행 회사 회사명",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 12,
+    "label": "연락처"
+   },
+   "fields": {
+    "label": "면접시행 회사 연락처",
+    "mapping": null,
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 12,
+    "label": "서약자명"
+   },
+   "fields": {
+    "label": "서약자 성명",
+    "mapping": "name",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 12,
+    "pattern": "^서 명 란"
+   },
+   "fields": {
+    "label": "서약자 서명",
+    "type": "signature",
+    "mapping": "signature",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "label": "성명",
+    "near_y": 0.294
+   },
+   "fields": {
+    "label": "신청인 성명"
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "label": "성별",
+    "near_y": 0.294
+   },
+   "fields": {
+    "label": "신청인 성별"
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "label": "생년월일",
+    "near_y": 0.329
+   },
+   "fields": {
+    "label": "신청인 생년월일"
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "label": "휴대폰번호",
+    "near_y": 0.329
+   },
+   "fields": {
+    "label": "신청인 휴대폰번호"
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "pattern": "^성명$",
+    "near_y": 0.454
+   },
+   "fields": {
+    "label": "타인 명의 수급자 성명",
+    "mapping": null,
+    "required": false
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "pattern": "^성별$",
+    "near_y": 0.454
+   },
+   "fields": {
+    "label": "타인 명의 수급자 성별",
+    "mapping": null,
+    "required": false
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "pattern": "^생년월일$",
+    "near_y": 0.488
+   },
+   "fields": {
+    "label": "타인 명의 수급자 생년월일",
+    "mapping": null,
+    "required": false,
+    "type": "text"
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "pattern": "^휴대폰번호$",
+    "near_y": 0.488
+   },
+   "fields": {
+    "label": "타인 명의 수급자 휴대폰번호",
+    "mapping": null,
+    "required": false
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "label": "지역화폐이용지역"
+   },
+   "fields": {
+    "label": "타인 명의 수급자 지역화폐 이용지역"
+   }
+  },
+  {
+   "match": {
+    "page": 13,
+    "label": "신청인과의관계"
+   },
+   "fields": {
+    "label": "타인 명의 수급자 신청인과의 관계"
+   }
+  },
+  {
+   "match": {
+    "page": 14,
+    "label": "동의하지 않음",
+    "near_y": 0.36
+   },
+   "fields": {
+    "label": "개인정보 수집·이용 동의: 동의하지 않음"
+   }
+  },
+  {
+   "match": {
+    "page": 14,
+    "label": "동의함",
+    "near_y": 0.36
+   },
+   "fields": {
+    "label": "개인정보 수집·이용 동의: 동의함"
+   }
+  },
+  {
+   "match": {
+    "page": 14,
+    "label": "동의하지 않음",
+    "near_y": 0.633
+   },
+   "fields": {
+    "label": "개인정보 위탁 제공 동의: 동의하지 않음"
+   }
+  },
+  {
+   "match": {
+    "page": 14,
+    "label": "동의함",
+    "near_y": 0.633
+   },
+   "fields": {
+    "label": "개인정보 위탁 제공 동의: 동의함"
+   }
+  },
+  {
+   "match": {
+    "page": 14,
+    "pattern": "급자 \\(인\\)$"
+   },
+   "fields": {
+    "label": "타인 명의 수급자 (인)",
+    "required": false
+   }
+  },
+  {
+   "match": {
+    "page": 14,
+    "pattern": "^동의함 동의하지 않음 급자$"
+   },
+   "fields": {
+    "label": "타인 명의 수급자 성명",
+    "mapping": null,
+    "required": false
+   }
+  }
+ ],
+ "add": [
+  {
+   "id": "x",
+   "page": 12,
+   "rect": {
+    "x": 0.634,
+    "y": 0.404,
+    "w": 0.077,
+    "h": 0.028
+   },
+   "type": "text",
+   "label": "면접 응시 월",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 12,
+   "rect": {
+    "x": 0.748,
+    "y": 0.404,
+    "w": 0.059,
+    "h": 0.028
+   },
+   "type": "text",
+   "label": "면접 응시 일",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 12,
+   "rect": {
+    "x": 0.506,
+    "y": 0.748,
+    "w": 0.135,
+    "h": 0.036
+   },
+   "type": "text",
+   "label": "작성일 월",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 12,
+   "rect": {
+    "x": 0.678,
+    "y": 0.748,
+    "w": 0.135,
+    "h": 0.036
+   },
+   "type": "text",
+   "label": "작성일 일",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 13,
+   "rect": {
+    "x": 0.327,
+    "y": 0.3625,
+    "w": 0.517,
+    "h": 0.022
+   },
+   "type": "text",
+   "label": "신청 사유",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 13,
+   "rect": {
+    "x": 0.327,
+    "y": 0.522,
+    "w": 0.517,
+    "h": 0.022
+   },
+   "type": "text",
+   "label": "타인 명의 수급자 배송지 주소",
+   "mapping": null,
+   "required": true
+  }
+ ]
+}

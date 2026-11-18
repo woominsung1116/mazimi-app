@@ -1,0 +1,12 @@
+Sitemap: https://www.ringleplus.com/sitemap.xml
+
+User-agent: *
+Disallow: /admin/
+Disallow: /key/
+Disallow: /*/landing/team
+Disallow: /*/student/portal/
+Disallow: /*/tutor/portal/
+Disallow: /*/student/policy/
+Disallow: /*/tutor/policy/
+Disallow: /*/tutor/landing/home?friend
+Disallow: /*/portal/

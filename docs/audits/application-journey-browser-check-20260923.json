@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-23T07:57:12.136Z",
+  "environment": "isolated local DB and API; external page is a fixture",
+  "results": [
+    "Selected channel and checklist survive a full page reload",
+    "Official page handoff does not mark submitted; unknown receipt persists after reopening",
+    "Application history resumes the same saved journey",
+    "Expired notice still allows user-confirmed receipt; original title and history remain",
+    "No-application benefits show two eligibility checks and never create a submission journey",
+    "Offline preparation works even without an official web URL",
+    "Guest application intent resumes after a simulated successful Kakao callback; stored target is consumed"
+  ],
+  "errors": []
+}

@@ -1,0 +1,316 @@
+{
+ "version": 1,
+ "about": "Re-import of reviewed templates after the 2026-10-26 slot-check fixes (date parts, added blanks). Not applied. Apply per slug with scripts/forms/import-templates.mjs --only <slug> --apply against the admin API: the resource must still be verified with exactly expected_content_hash (the official file the boxes are bound to); otherwise the script stops for that form.",
+ "forms": [
+  {
+   "slug": "gachon-kfls-scholarship",
+   "template": "gachon-kfls-scholarship.template.json",
+   "template_sha256": "37896245a4b82d0386d39f3f066e21bc66a24b74ed8e0cb268a62228f09c8810",
+   "expected_content_hash": "e8b4a09655ffdf391d66fe3b92fc5d662d85a8a1b89752c845bff8820c815647",
+   "fields": {
+    "before": 51,
+    "after": 54
+   },
+   "date_parts": 6,
+   "gates": {
+    "before": {
+     "overflow": 2
+    },
+    "after": "pass"
+   }
+  },
+  {
+   "slug": "gyeonggi-youth-interview-allowance",
+   "template": "gyeonggi-youth-interview-allowance.template.json",
+   "template_sha256": "689bba76a60ae51ae771cd9eafd582e4c13af5cfad2c16c4b8f6eb26fa0c49a6",
+   "expected_content_hash": "30994a1f431951abd35afcb01f026a51d0a4325c81b5663038c4034b4ff0507f",
+   "fields": {
+    "before": 31,
+    "after": 31
+   },
+   "date_parts": 2,
+   "gates": {
+    "before": {
+     "overlap": 1
+    },
+    "after": {
+     "overlap": 1
+    }
+   }
+  },
+  {
+   "slug": "incheon-youth-rent",
+   "template": "incheon-youth-rent.template.json",
+   "template_sha256": "eebee08c71b9e3ff4b160b230a28d2c91137a37072ff201e519b49340f6c0562",
+   "expected_content_hash": "6526147be0095eb3f2306335842ae2c20e824856eb24b7f06ef9a8c10c4fe6e9",
+   "fields": {
+    "before": 190,
+    "after": 196
+   },
+   "date_parts": 18,
+   "gates": {
+    "before": "pass",
+    "after": "pass"
+   }
+  },
+  {
+   "slug": "jeju-youth-public-work",
+   "template": "jeju-youth-public-work.template.json",
+   "template_sha256": "9c9418384066f0503a015b1c5e7d029d83e7e1f1a5ab346bd5fd91a141f5d9ec",
+   "expected_content_hash": "6b55a2957af7a82a4ea0ffbd30486ac4d7b887555adecde1fb15b7f6726ff5c6",
+   "fields": {
+    "before": 43,
+    "after": 46
+   },
+   "date_parts": 5,
+   "gates": {
+    "before": {
+     "overflow": 1
+    },
+    "after": "pass"
+   }
+  },
+  {
+   "slug": "jeonju-youth-jeonse-loan-interest",
+   "template": "jeonju-youth-jeonse-loan-interest.template.json",
+   "template_sha256": "9d36ae21b3f25fd79945870085827a87f9cd15f3c72a463cb5e048fff61136b4",
+   "expected_content_hash": "ef0a5933066c20771532840df8f21b55c4e949b15ff4954089ef767581cae66a",
+   "derived_pdf_sha256": "909ef15e29ba2a13c61cd6af13646a436e9cd5435f4c67e1984461eec5d5a8f3",
+   "fields": {
+    "before": 53,
+    "after": 53
+   },
+   "date_parts": 8,
+   "gates": {
+    "before": {
+     "sensitive": 1,
+     "overlap": 1,
+     "over_print": 6
+    },
+    "after": {
+     "sensitive": 1,
+     "overlap": 1,
+     "over_print": 6
+    }
+   }
+  },
+  {
+   "slug": "jeonju-youth-public-rental-deposit",
+   "template": "jeonju-youth-public-rental-deposit.template.json",
+   "template_sha256": "21d11a801b0f461f8e28d54d648a2eca807c9f8e99d1e38cd6edf520e09d05c4",
+   "expected_content_hash": "5afc9a7f67ae8eeaa5148d206ba02dc21a6835812c06c6ccdcf0ce8880bb9b12",
+   "fields": {
+    "before": 78,
+    "after": 78
+   },
+   "date_parts": 12,
+   "gates": {
+    "before": {
+     "overlap": 3
+    },
+    "after": {
+     "overlap": 3
+    }
+   }
+  },
+  {
+   "slug": "jeonju-youth-rent",
+   "template": "jeonju-youth-rent.template.json",
+   "template_sha256": "d0ba3ca7d824ccbe66f22a0c9b5e8f60b3f2f7417ad4448e8b365afb2259bc86",
+   "expected_content_hash": "c11e0f36007f7ed7239c70de2c540400bafcc96266ac8894cd0113eb99dbe0ce",
+   "fields": {
+    "before": 190,
+    "after": 196
+   },
+   "date_parts": 18,
+   "gates": {
+    "before": {
+     "over_print": 3
+    },
+    "after": {
+     "over_print": 3
+    }
+   }
+  },
+  {
+   "slug": "keimyung-gs-scholarship",
+   "template": "keimyung-gs-scholarship.template.json",
+   "template_sha256": "092e88324c4cea84e5b36ccf099b10469534e9450b24393b503df31531375779",
+   "expected_content_hash": "e21b3ec2fafb9d605301e5c9d6d6f04867d05a9812c6649b2f882e66fe7f9f92",
+   "derived_pdf_sha256": "95cced44c470e01fdfbbcaf792648aa57b18cfd80fd969eed306bd7c05d0b85e",
+   "fields": {
+    "before": 61,
+    "after": 61
+   },
+   "date_parts": 3,
+   "gates": {
+    "before": {
+     "overflow": 3,
+     "overlap": 4,
+     "over_print": 19,
+     "collision": 1
+    },
+    "after": {
+     "overflow": 2,
+     "overlap": 4,
+     "over_print": 19,
+     "collision": 1
+    }
+   }
+  },
+  {
+   "slug": "konkuk-beauty-scholarship",
+   "template": "konkuk-beauty-scholarship.template.json",
+   "template_sha256": "547ac39fc6cd55bd955d50d02f4cf0716df8a20d0736ff6020cb8930184b297f",
+   "expected_content_hash": "9335040faa4aa5979c057f1c9028e31eebabbe8860696d0f14b6d9e2b1f38b40",
+   "fields": {
+    "before": 18,
+    "after": 18
+   },
+   "date_parts": 3,
+   "gates": {
+    "before": "pass",
+    "after": "pass"
+   }
+  },
+  {
+   "slug": "mju-academic-activity-scholarship",
+   "template": "mju-academic-activity-scholarship.template.json",
+   "template_sha256": "f7d0546ab4b8cb487d4014bd884285fe0fcdb5b2c2ea12e0245e256588ae897b",
+   "expected_content_hash": "fdc2a9542ce5b40bab06349284fd1c1d03dee91639409a81161a73b98189c1d5",
+   "derived_pdf_sha256": "f4232230bb7139b6fabf45a12e7d4d61d8ce3d0b33b651cb4b3df10b5c2ccf1d",
+   "fields": {
+    "before": 25,
+    "after": 27
+   },
+   "date_parts": 6,
+   "gates": {
+    "before": {
+     "overflow": 2
+    },
+    "after": {
+     "overflow": 1
+    }
+   }
+  },
+  {
+   "slug": "sangju-youth-certificate-fee",
+   "template": "sangju-youth-certificate-fee.template.json",
+   "template_sha256": "ba3b3dc711e4bdf502273fef6b25d10df3564897dae0bc9ce48a457cc039cd2a",
+   "expected_content_hash": "f2031804e8c1628e0225cfc15d4ea235501135fa62d893f095a5cd328bd58f06",
+   "fields": {
+    "before": 46,
+    "after": 46
+   },
+   "date_parts": 6,
+   "gates": {
+    "before": {
+     "overflow": 3,
+     "overlap": 5
+    },
+    "after": {
+     "overflow": 3,
+     "overlap": 5
+    }
+   }
+  },
+  {
+   "slug": "seoul-youth-rent-forms",
+   "template": "seoul-youth-rent-forms.template.json",
+   "template_sha256": "5e978da144dab07682435e21e89a229c81753976a2e55e69acf88a229596de72",
+   "expected_content_hash": "add84b574be2f2ad82c4ef379a6393843eb1f72d699c35e07cfdcf757b7c1a02",
+   "fields": {
+    "before": 58,
+    "after": 58
+   },
+   "date_parts": 20,
+   "gates": {
+    "before": {
+     "overflow": 3,
+     "overlap": 2
+    },
+    "after": {
+     "overlap": 2
+    }
+   }
+  },
+  {
+   "slug": "shingu-family-scholarship",
+   "template": "shingu-family-scholarship.template.json",
+   "template_sha256": "22fad12128689d4a8a2ec4dc1ee34d5cee07aad3dd6e11f1d62c03b2d28cd323",
+   "expected_content_hash": "cd7f55bd71afc71ff4db3452655714c7c622daa521b6a4ff2ad1707d9af4169c",
+   "fields": {
+    "before": 21,
+    "after": 21
+   },
+   "date_parts": 2,
+   "gates": {
+    "before": "pass",
+    "after": "pass"
+   }
+  },
+  {
+   "slug": "sontaehee-scholarship",
+   "template": "sontaehee-scholarship.template.json",
+   "template_sha256": "ad800364dc356d225a536d3106fa84d761327086433b4cd17b3f6dee4cfc22c1",
+   "expected_content_hash": "3240a264c54c418f2a3ea57bf0722e8f3fc0df3277ae610212c2109faa27849e",
+   "derived_pdf_sha256": "32f70e5896d0f363a459b0909c83b7229ea1ba180426b2a39f2dd2f98b2389e8",
+   "fields": {
+    "before": 57,
+    "after": 57
+   },
+   "date_parts": 3,
+   "gates": {
+    "before": {
+     "overflow": 1,
+     "over_print": 3,
+     "collision": 2
+    },
+    "after": {
+     "over_print": 3,
+     "collision": 2
+    }
+   }
+  },
+  {
+   "slug": "yangpyeong-merit-scholarship",
+   "template": "yangpyeong-merit-scholarship.template.json",
+   "template_sha256": "3d940ec9c7b53cca3107ebe8be12cf13db6c73bd90cf8eed6ff8d4157770ad90",
+   "expected_content_hash": "c190aac0b0052ac6bd2a53c9f4b65e08e96da675470a7588c826e791d99f3f7d",
+   "derived_pdf_sha256": "bb71794f6078bb42a40a6fb895a8768a778ffaae089348049c282e4f91727659",
+   "fields": {
+    "before": 29,
+    "after": 29
+   },
+   "date_parts": 2,
+   "gates": {
+    "before": {
+     "over_print": 2
+    },
+    "after": {
+     "over_print": 2
+    }
+   }
+  },
+  {
+   "slug": "yeongju-student-loan-interest",
+   "template": "yeongju-student-loan-interest.template.json",
+   "template_sha256": "20e443c6027686952c316afddeaeb3f8941558d5e31445550893f2b75b59209d",
+   "expected_content_hash": "c94350cd1f24545974d34d6a9adebc35213e34573a5df6d706eb1b54005b4fe4",
+   "derived_pdf_sha256": "fa8767dc8a6ab31986190117e2f04e46114b4688b16e3fbe50cef542d20e8537",
+   "fields": {
+    "before": 20,
+    "after": 20
+   },
+   "date_parts": 2,
+   "gates": {
+    "before": {
+     "overlap": 1
+    },
+    "after": {
+     "overlap": 1
+    }
+   }
+  }
+ ]
+}

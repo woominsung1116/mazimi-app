@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Mazimi benefit source revalidation every six hours
+
+[Timer]
+OnCalendar=*-*-* 00,06,12,18:15:00 UTC
+Persistent=true
+RandomizedDelaySec=300
+Unit=mazimi-revalidate.service
+
+[Install]
+WantedBy=timers.target

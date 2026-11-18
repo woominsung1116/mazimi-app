@@ -1,0 +1,56 @@
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /markets/*/info
+Disallow: /goods/*/measurement
+Disallow: /api/*
+
+# Yeti
+User-agent: Yeti
+Allow: /
+Disallow: /markets/*/info
+Disallow: /goods/*/measurement
+Disallow: /api/*
+
+# Daumoa
+User-agent: Daumoa
+Allow: /
+Disallow: /markets/*/info
+Disallow: /goods/*/measurement
+Disallow: /api/*
+
+# facebookexternalhit
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /markets/*/info
+Disallow: /goods/*/measurement
+Disallow: /api/*
+Crawl-delay: 5
+
+# facebookbot
+User-agent: facebookbot
+Allow: /
+Disallow: /markets/*/info
+Disallow: /goods/*/measurement
+Disallow: /api/*
+
+# Twitterbot
+User-agent: Twitterbot
+Allow: /
+Disallow: /markets/*/info
+Disallow: /goods/*/measurement
+Disallow: /api/*
+
+# All other bots
+User-agent: *
+Allow: /
+Disallow: /markets/*/info
+Disallow: /goods/*/measurement
+Disallow: /api/*
+
+# Host
+Host: https://m.a-bly.com
+
+# Sitemaps
+Sitemap: https://m.a-bly.com/content/sitemap-content.xml
+Sitemap: https://m.a-bly.com/sitemap-index.xml

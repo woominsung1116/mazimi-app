@@ -1,0 +1,11 @@
+field                  tp   fp   fn precision  recall
+age                     0    0    6         -   0.000
+application_window      2    0    0     1.000   1.000
+document                4    0    6     1.000   0.400
+employment              2    0    1     1.000   0.667
+enrollment              0    0    1         -   0.000
+income                  2    1    1     0.667   0.667
+region                  3    0    2     1.000   0.600
+overall                13    1   17     0.929   0.433
+evidence_validity=0.816 valid_rate=0.368 provider_failures=0 latency_ms={"max":98845,"p50":66423,"p95":98845}
+WARNING: fixture labels are not human-verified (draft-by-agent, needs human review); numbers are not a release measurement.

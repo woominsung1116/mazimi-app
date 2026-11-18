@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script type="text/javascript" language="javascript" src="../js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="header">
+		<div class="header-wrapper">
+			<h1 class="title logo"><span class="logo"></span></h1>		
+		</div>
+	</div>
+	<div class="content">
+		<div class="no-data">
+			<i class="ico"></i>
+			<p class="txt">죄송합니다<br>시스템 에러입니다.</p>
+		</div>
+		
+	</div>
+
+	<div class="footer ">
+		<div class="btn-box-wrap">
+			<a href="javascript:void(0);" class="btn-type2 c-type1">확인</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

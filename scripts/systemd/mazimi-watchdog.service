@@ -1,0 +1,8 @@
+[Unit]
+Description=Recover unhealthy Mazimi API and collection worker
+After=docker.service
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mazimi
+ExecStart=/bin/sh /opt/mazimi/scripts/worker-watchdog.sh
+TimeoutStartSec=120

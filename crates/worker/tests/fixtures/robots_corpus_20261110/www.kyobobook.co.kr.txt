@@ -1,0 +1,77 @@
+User-Agent: *
+Allow: /
+Disallow: /api/gw
+
+User-Agent: Bingbot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Perplexity-User
+Allow: /
+
+User-Agent: Claude-SearchBot
+Allow: /
+
+User-Agent: Claude-User
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: Applebot
+Allow: /
+Disallow: /private/
+
+User-Agent: Claude-Web
+Allow: /
+Disallow: /wp-admin/
+Disallow: /private/
+
+User-Agent: AhrefsBot
+Disallow: /
+
+User-Agent: MJ12bot
+Disallow: /
+
+User-Agent: SemrushBot
+Disallow: /
+
+User-Agent: Baiduspider
+Disallow: /
+
+User-Agent: Ezooms
+Disallow: /
+
+User-Agent: YandexBot
+Disallow: /
+
+User-Agent: ltx71
+Disallow: /
+
+User-Agent: PetalBot
+Disallow: /
+
+User-Agent: Castlebot
+Disallow: /
+
+User-Agent: YisouSpider
+Disallow: /
+
+User-Agent: de/bot
+Disallow: /
+
+User-Agent: Pinterestbot
+Disallow: /
+
+User-Agent: BLEXBot
+Disallow: /
+
+User-Agent: Yellowbrandprotectionbot
+Disallow: /
+
+User-Agent: DotBot
+Disallow: /
+
+Sitemap: https://www.kyobobook.co.kr/sitemap.xml

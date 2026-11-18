@@ -1,0 +1,843 @@
+{
+  "version": 1,
+  "content_hash": "add84b574be2f2ad82c4ef379a6393843eb1f72d699c35e07cfdcf757b7c1a02",
+  "page_count": 4,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.2301,
+        "y": 0.1804,
+        "w": 0.4138,
+        "h": 0.0318
+      },
+      "type": "text",
+      "label": "소재지",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.725,
+        "y": 0.186,
+        "w": 0.055,
+        "h": 0.021
+      },
+      "type": "text",
+      "label": "면적(㎡)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.4119,
+        "y": 0.2157,
+        "w": 0.4957,
+        "h": 0.0295
+      },
+      "type": "text",
+      "label": "임차인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.4119,
+        "y": 0.2488,
+        "w": 0.4957,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "임차인 주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.4119,
+        "y": 0.282,
+        "w": 0.4957,
+        "h": 0.0295
+      },
+      "type": "date",
+      "label": "임차인 생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.4119,
+        "y": 0.3151,
+        "w": 0.4957,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "임차인 연락처",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.2679,
+        "y": 0.3483,
+        "w": 0.0219,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "거주기간 시작 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year2"
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.3002,
+        "y": 0.3483,
+        "w": 0.0311,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "거주기간 시작 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.3418,
+        "y": 0.3483,
+        "w": 0.0397,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "거주기간 시작 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.4607,
+        "y": 0.3483,
+        "w": 0.0132,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "거주기간 종료 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year2"
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.4844,
+        "y": 0.3483,
+        "w": 0.0309,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "거주기간 종료 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.5257,
+        "y": 0.3483,
+        "w": 0.0311,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "거주기간 종료 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.268,
+        "y": 0.398,
+        "w": 0.14,
+        "h": 0.023
+      },
+      "type": "text",
+      "label": "임대료 월세(원)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.512,
+        "y": 0.398,
+        "w": 0.112,
+        "h": 0.023
+      },
+      "type": "text",
+      "label": "임대료 보증금(원)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.4246,
+        "y": 0.518,
+        "w": 0.0221,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year2"
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.469,
+        "y": 0.518,
+        "w": 0.0475,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.5388,
+        "y": 0.518,
+        "w": 0.0563,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.2954,
+        "y": 0.602,
+        "w": 0.6275,
+        "h": 0.0243
+      },
+      "type": "text",
+      "label": "임대인(확인) 상호",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f19",
+      "page": 0,
+      "rect": {
+        "x": 0.518,
+        "y": 0.6305,
+        "w": 0.0444,
+        "h": 0.0314
+      },
+      "type": "signature",
+      "label": "임대인(확인) 성명 서명(또는 날인)",
+      "mapping": "signature",
+      "required": false
+    },
+    {
+      "id": "p1-f20",
+      "page": 0,
+      "rect": {
+        "x": 0.2954,
+        "y": 0.6341,
+        "w": 0.2209,
+        "h": 0.0243
+      },
+      "type": "text",
+      "label": "임대인(확인) 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f21",
+      "page": 0,
+      "rect": {
+        "x": 0.2954,
+        "y": 0.6661,
+        "w": 0.6275,
+        "h": 0.0243
+      },
+      "type": "text",
+      "label": "임대인(확인) 주소",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f22",
+      "page": 0,
+      "rect": {
+        "x": 0.2976,
+        "y": 0.694,
+        "w": 0.6253,
+        "h": 0.0243
+      },
+      "type": "text",
+      "label": "임대인(확인) 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f23",
+      "page": 0,
+      "rect": {
+        "x": 0.2954,
+        "y": 0.7448,
+        "w": 0.6275,
+        "h": 0.0243
+      },
+      "type": "text",
+      "label": "임대인(확인) 연락처",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f01",
+      "page": 2,
+      "rect": {
+        "x": 0.45,
+        "y": 0.1687,
+        "w": 0.0959,
+        "h": 0.0336
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p3-f02",
+      "page": 2,
+      "rect": {
+        "x": 0.6709,
+        "y": 0.1687,
+        "w": 0.2489,
+        "h": 0.0336
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p3-f03",
+      "page": 2,
+      "rect": {
+        "x": 0.45,
+        "y": 0.2059,
+        "w": 0.4699,
+        "h": 0.0336
+      },
+      "type": "text",
+      "label": "신청인 주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p3-f04",
+      "page": 2,
+      "rect": {
+        "x": 0.45,
+        "y": 0.2431,
+        "w": 0.4699,
+        "h": 0.0462
+      },
+      "type": "text",
+      "label": "근로(사업) 상태 직장(사업장)명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f05",
+      "page": 2,
+      "rect": {
+        "x": 0.45,
+        "y": 0.2928,
+        "w": 0.306,
+        "h": 0.0389
+      },
+      "type": "text",
+      "label": "근로(사업) 상태 직장(사업장)주소",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f06",
+      "page": 2,
+      "rect": {
+        "x": 0.45,
+        "y": 0.3353,
+        "w": 0.0467,
+        "h": 0.0373
+      },
+      "type": "text",
+      "label": "구분 (1) 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p3-f07",
+      "page": 2,
+      "rect": {
+        "x": 0.519,
+        "y": 0.3353,
+        "w": 0.0388,
+        "h": 0.0373
+      },
+      "type": "text",
+      "label": "구분 (1) 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p3-f08",
+      "page": 2,
+      "rect": {
+        "x": 0.6048,
+        "y": 0.3353,
+        "w": 0.0449,
+        "h": 0.0373
+      },
+      "type": "text",
+      "label": "구분 (2) 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p3-f09",
+      "page": 2,
+      "rect": {
+        "x": 0.6721,
+        "y": 0.3353,
+        "w": 0.0388,
+        "h": 0.0373
+      },
+      "type": "text",
+      "label": "구분 (2) 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p3-f10",
+      "page": 2,
+      "rect": {
+        "x": 0.7645,
+        "y": 0.3353,
+        "w": 0.0361,
+        "h": 0.0373
+      },
+      "type": "text",
+      "label": "구분 (3) 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p3-f11",
+      "page": 2,
+      "rect": {
+        "x": 0.8229,
+        "y": 0.3353,
+        "w": 0.0388,
+        "h": 0.0373
+      },
+      "type": "text",
+      "label": "구분 (3) 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p3-f12",
+      "page": 2,
+      "rect": {
+        "x": 0.45,
+        "y": 0.3762,
+        "w": 0.1498,
+        "h": 0.0408
+      },
+      "type": "text",
+      "label": "월 근로 (사업)일수 (일) (1)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f13",
+      "page": 2,
+      "rect": {
+        "x": 0.6048,
+        "y": 0.3762,
+        "w": 0.1546,
+        "h": 0.0408
+      },
+      "type": "text",
+      "label": "월 근로 (사업)일수 (일) (2)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f14",
+      "page": 2,
+      "rect": {
+        "x": 0.7645,
+        "y": 0.3762,
+        "w": 0.1554,
+        "h": 0.0408
+      },
+      "type": "text",
+      "label": "월 근로 (사업)일수 (일) (3)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f15",
+      "page": 2,
+      "rect": {
+        "x": 0.45,
+        "y": 0.4205,
+        "w": 0.1498,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "월소득(원) (1)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f16",
+      "page": 2,
+      "rect": {
+        "x": 0.6048,
+        "y": 0.4205,
+        "w": 0.1546,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "월소득(원) (2)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f17",
+      "page": 2,
+      "rect": {
+        "x": 0.7645,
+        "y": 0.4205,
+        "w": 0.1554,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "월소득(원) (3)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f18",
+      "page": 2,
+      "rect": {
+        "x": 0.4505,
+        "y": 0.4633,
+        "w": 0.469,
+        "h": 0.0385
+      },
+      "type": "text",
+      "label": "3개월 간 평균 근로(사업)일수",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f19",
+      "page": 2,
+      "rect": {
+        "x": 0.4505,
+        "y": 0.5078,
+        "w": 0.469,
+        "h": 0.035
+      },
+      "type": "text",
+      "label": "3개월 간 월 평균 소득액",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f20",
+      "page": 2,
+      "rect": {
+        "x": 0.4257,
+        "y": 0.5847,
+        "w": 0.0639,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p3-f21",
+      "page": 2,
+      "rect": {
+        "x": 0.5119,
+        "y": 0.5847,
+        "w": 0.065,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p3-f22",
+      "page": 2,
+      "rect": {
+        "x": 0.5993,
+        "y": 0.5847,
+        "w": 0.0561,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p3-f23",
+      "page": 2,
+      "rect": {
+        "x": 0.6175,
+        "y": 0.6375,
+        "w": 0.1299,
+        "h": 0.0314
+      },
+      "type": "signature",
+      "label": "신고자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f24",
+      "page": 2,
+      "rect": {
+        "x": 0.4955,
+        "y": 0.6411,
+        "w": 0.1204,
+        "h": 0.0243
+      },
+      "type": "text",
+      "label": "신고자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f01",
+      "page": 3,
+      "rect": {
+        "x": 0.29,
+        "y": 0.643,
+        "w": 0.087,
+        "h": 0.023
+      },
+      "type": "text",
+      "label": "신청인 주민등록번호 앞자리",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p4-f02",
+      "page": 3,
+      "rect": {
+        "x": 0.391,
+        "y": 0.643,
+        "w": 0.087,
+        "h": 0.023
+      },
+      "type": "text",
+      "label": "신청인 주민등록번호 뒷자리",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p4-f03",
+      "page": 3,
+      "rect": {
+        "x": 0.7755,
+        "y": 0.6862,
+        "w": 0.0473,
+        "h": 0.021
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p4-f04",
+      "page": 3,
+      "rect": {
+        "x": 0.8429,
+        "y": 0.6862,
+        "w": 0.0555,
+        "h": 0.021
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p4-f05",
+      "page": 3,
+      "rect": {
+        "x": 0.6584,
+        "y": 0.7078,
+        "w": 0.1373,
+        "h": 0.0223
+      },
+      "type": "text",
+      "label": "대상자(본인) 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p4-f06",
+      "page": 3,
+      "rect": {
+        "x": 0.7974,
+        "y": 0.7081,
+        "w": 0.1159,
+        "h": 0.0235
+      },
+      "type": "signature",
+      "label": "대상자(본인) 성명 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p4-f07",
+      "page": 3,
+      "rect": {
+        "x": 0.6582,
+        "y": 0.7301,
+        "w": 0.266,
+        "h": 0.0223
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p4-f08",
+      "page": 3,
+      "rect": {
+        "x": 0.6582,
+        "y": 0.7524,
+        "w": 0.266,
+        "h": 0.0223
+      },
+      "type": "text",
+      "label": "전화번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p4-f09",
+      "page": 3,
+      "rect": {
+        "x": 0.6582,
+        "y": 0.8191,
+        "w": 0.1373,
+        "h": 0.0223
+      },
+      "type": "text",
+      "label": "부양자 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f10",
+      "page": 3,
+      "rect": {
+        "x": 0.7972,
+        "y": 0.8194,
+        "w": 0.1159,
+        "h": 0.0235
+      },
+      "type": "signature",
+      "label": "부양자성명 서명",
+      "mapping": "signature",
+      "required": false
+    },
+    {
+      "id": "p4-f11",
+      "page": 3,
+      "rect": {
+        "x": 0.6582,
+        "y": 0.8414,
+        "w": 0.266,
+        "h": 0.0223
+      },
+      "type": "text",
+      "label": "부양자 주민등록번호",
+      "mapping": "rrn",
+      "required": false
+    }
+  ]
+}

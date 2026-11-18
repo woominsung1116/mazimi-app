@@ -1,0 +1,234 @@
+{
+ "version": 1,
+ "about": "Few-shot examples for judge.py, built by judge_data.py shots from human-reviewed templates of the SHOT agencies.",
+ "shots": [
+  {
+   "kind": "owner",
+   "question": {
+    "id": "owner-p1-f10",
+    "kind": "owner",
+    "page": 1,
+    "box": 10,
+    "header": "연락처",
+    "label": "e-mail",
+    "mapping": "email"
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "applicant",
+   "source": "gachon-kfls-scholarship: human mapping"
+  },
+  {
+   "kind": "owner",
+   "question": {
+    "id": "owner-p1-f84",
+    "kind": "owner",
+    "page": 1,
+    "box": 84,
+    "header": "지급계좌",
+    "label": "수령인과의 관계",
+    "mapping": "name"
+   },
+   "context": {
+    "programme": "청년월세 지원사업(국토부 청년월세 지원, 인천시)"
+   },
+   "answer": "other_person",
+   "source": "incheon-youth-rent: human left another person's box unlinked"
+  },
+  {
+   "kind": "owner",
+   "question": {
+    "id": "owner-p1-f06",
+    "kind": "owner",
+    "page": 1,
+    "box": 6,
+    "header": "신청인",
+    "label": "전화번호",
+    "mapping": "phone"
+   },
+   "context": {
+    "programme": "청년월세 지원사업(국토부 청년월세 지원, 인천시)"
+   },
+   "answer": "applicant",
+   "source": "incheon-youth-rent: human mapping"
+  },
+  {
+   "kind": "owner",
+   "question": {
+    "id": "owner-p1-f84",
+    "kind": "owner",
+    "page": 1,
+    "box": 84,
+    "header": "지급계좌",
+    "label": "수령인과의 관계",
+    "mapping": "name"
+   },
+   "context": {
+    "programme": "청년월세 지원사업 (국토부·전주시)"
+   },
+   "answer": "other_person",
+   "source": "jeonju-youth-rent: human left another person's box unlinked"
+  },
+  {
+   "kind": "page_role",
+   "question": {
+    "id": "page-2",
+    "kind": "page_role",
+    "page": 2,
+    "title": "지도교수추천서【서식2】※관리번호2026-전공(학과)성명추천대상지원분야□등록금지원□학업지원금(생활비)지원",
+    "page_kind": "other",
+    "blanks": 5,
+    "sample": [
+     "(인)",
+     "등록금지원",
+     "성명",
+     "전공(학과)"
+    ]
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "optional_or_conditional",
+   "source": "gachon-kfls-scholarship: human left the page out of the reviewed template"
+  },
+  {
+   "kind": "page_role",
+   "question": {
+    "id": "page-1",
+    "kind": "page_role",
+    "page": 1,
+    "title": "장 학 생 지 원 서 【서식1】 ※ 관리번호 2026- 지원분야 □ 등록금 지원 □ 학업지원금(생활비) 지원 성 명 성별 생년월일 년 월 일 증",
+    "blanks": 8,
+    "sample": [
+     "(인/서명)",
+     "2년제",
+     "3년제",
+     "4년제"
+    ]
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "applicant_must",
+   "source": "gachon-kfls-scholarship: human templated the page"
+  },
+  {
+   "kind": "page_role",
+   "question": {
+    "id": "page-10",
+    "kind": "page_role",
+    "page": 10,
+    "title": "붙임1[원칙]면접확인서(양식)※면접확인서는회사담당자가작성하는서류입니다.-신청자본인이작성및날인(서명)하면안됩니",
+    "page_kind": "form",
+    "blanks": 2,
+    "sample": [
+     "(서명)"
+    ]
+   },
+   "context": {
+    "programme": "경기도 청년 면접수당 (2025년 제2차)"
+   },
+   "answer": "optional_or_conditional",
+   "source": "gyeonggi-youth-interview-allowance: human left the page out of the reviewed template"
+  },
+  {
+   "kind": "label_match",
+   "question": {
+    "id": "match-p1-f03",
+    "kind": "label_match",
+    "page": 1,
+    "box": 3,
+    "printed": "성명",
+    "header": "",
+    "label": "성명"
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "same",
+   "source": "gachon-kfls-scholarship: human label on the printed label"
+  },
+  {
+   "kind": "label_match",
+   "question": {
+    "id": "swap-p1-f11",
+    "kind": "label_match",
+    "page": 1,
+    "box": 11,
+    "printed": "성명",
+    "header": "",
+    "label": "연락처 자택"
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "different",
+   "source": "gachon-kfls-scholarship: another box's human label"
+  },
+  {
+   "kind": "label_match",
+   "question": {
+    "id": "match-p1-f11",
+    "kind": "label_match",
+    "page": 1,
+    "box": 11,
+    "printed": "자택",
+    "header": "",
+    "label": "연락처 자택"
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "same",
+   "source": "gachon-kfls-scholarship: human label on the printed label"
+  },
+  {
+   "kind": "label_match",
+   "question": {
+    "id": "swap-p1-f03",
+    "kind": "label_match",
+    "page": 1,
+    "box": 3,
+    "printed": "자택",
+    "header": "",
+    "label": "성명"
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "different",
+   "source": "gachon-kfls-scholarship: another box's human label"
+  },
+  {
+   "kind": "programme",
+   "question": {
+    "id": "programme",
+    "kind": "programme",
+    "page": null,
+    "title": "장 학 생 지 원 서 【서식1】 ※ 관리번호 2026- 지원분야 □ 등록금 지원 □ 학업지원금(생활비) 지원 성 명 성별 생년월일 년 월 일 증",
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "context": {
+    "programme": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)"
+   },
+   "answer": "yes",
+   "source": "gachon-kfls-scholarship: its own programme"
+  },
+  {
+   "kind": "programme",
+   "question": {
+    "id": "programme-other",
+    "kind": "programme",
+    "page": null,
+    "title": "장 학 생 지 원 서 【서식1】 ※ 관리번호 2026- 지원분야 □ 등록금 지원 □ 학업지원금(생활비) 지원 성 명 성별 생년월일 년 월 일 증",
+    "programme": "경기도 청년 면접수당 (2025년 제2차)"
+   },
+   "context": {
+    "programme": "경기도 청년 면접수당 (2025년 제2차)"
+   },
+   "answer": "no",
+   "source": "gachon-kfls-scholarship: another template's programme"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{"set": "adv", "id": 0, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하인 자. 단, 기초생활수급자 제외"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 1, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 150% 이하 가구를 제외한 청년"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 2, "source_type": "gov_benefits", "texts": {"지원대상": "무주택 세대구성원 이외의 자"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 3, "source_type": "gov_benefits", "texts": {"지원대상": "무주택 세대구성원에 해당하지 않는 자"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 4, "source_type": "gov_benefits", "texts": {"지원대상": "만 19세 이상 39세 이하인 자 다만 대학 재학생은 신청 불가"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 5, "source_type": "gov_benefits", "texts": {"지원대상": "미혼인 자를 제외한 청년"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 6, "source_type": "gov_benefits", "texts": {"지원대상": "신혼부부(혼인 7년 이내)는 지원대상에서 제외"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 7, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 120% 이하 무주택세대구성원, 단 공공임대주택 거주자는 제외"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 8, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~34세 (단, 군복무 기간은 최대 3세까지 연장)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 9, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 50% 이하인 자는 신청할 수 없음"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 10, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 (기초생활수급자는 해당하지 않음)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 11, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 150% 초과"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 12, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 50% 초과 100% 이하"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 13, "source_type": "gov_benefits", "texts": {"지원대상": "만 19세 이상 39세 이하(단, 군복무 기간만큼 연장)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 14, "source_type": "gov_benefits", "texts": {"지원대상": "중위소득 150% 이상인 가구"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 15, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100분의 120 이하"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 16, "source_type": "gov_benefits", "texts": {"지원대상": "만 19세 이상 34세 이하 (병역의무 이행자는 최대 39세)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 17, "source_type": "gov_benefits", "texts": {"지원대상": "19세~39세 (2명 이상)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 18, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하인 자 (2인 이상)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 19, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하인 자 3명 이상"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 20, "source_type": "gov_benefits", "texts": {"지원대상": "만 18~39세 1인 이상"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 21, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 혹은 무주택세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 22, "source_type": "gov_benefits", "texts": {"지원대상": "무주택세대구성원 및 신혼부부"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 23, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 미혼 또는 기혼"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 24, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 120% 이하이면서 무주택 세대구성원인 자 중 1인"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 25, "source_type": "gov_benefits", "texts": {"지원대상": "무주택세대구성원\n기준 중위소득 100% 이하"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 26, "source_type": "gov_benefits", "texts": {"지원대상": "아래 요건을 모두 충족하는 자\n- 무주택세대구성원\n- 기준 중위소득 100% 이하"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 27, "source_type": "gov_benefits", "texts": {"지원대상": "다음 중 하나에 해당하는 자\n- 무주택세대구성원\n- 기준 중위소득 100% 이하"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 28, "source_type": "gov_benefits", "texts": {"지원대상": "(소득) 기준 중위소득 100% 이하\n(주택) 무주택세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 29, "source_type": "gov_benefits", "texts": {"지원대상": "(소득) 기준 중위소득 100% 이하\n(연령) 만 19~39세 또는 신혼부부"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 30, "source_type": "gov_benefits", "texts": {"지원대상": "무주택자"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 31, "source_type": "gov_benefits", "texts": {"지원대상": "본인 무주택자"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 32, "source_type": "gov_benefits", "texts": {"지원대상": "세대원 전원이 무주택인 자"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 33, "source_type": "gov_benefits", "texts": {"지원대상": "세대주 및 세대원 전원 무주택"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 34, "source_type": "gov_benefits", "texts": {"지원대상": "무주택 세대주"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 35, "source_type": "gov_benefits", "texts": {"지원대상": "부모 무주택 세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 36, "source_type": "gov_benefits", "texts": {"지원대상": "본인 및 배우자 무주택자"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 37, "source_type": "gov_benefits", "texts": {"지원대상": "무주택 가구"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 38, "source_type": "gov_benefits", "texts": {"지원대상": "무주택기간 2년 이상"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 39, "source_type": "gov_benefits", "texts": {"지원대상": "무주택 청년"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 40, "source_type": "gov_benefits", "texts": {"지원대상": "혼인 7년 이내 신혼부부"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 41, "source_type": "gov_benefits", "texts": {"지원대상": "혼인기간 5년 이내 신혼부부"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 42, "source_type": "gov_benefits", "texts": {"지원대상": "혼인신고일로부터 7년 이내"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 43, "source_type": "gov_benefits", "texts": {"지원대상": "결혼 3년차 이내 부부"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 44, "source_type": "gov_benefits", "texts": {"지원대상": "혼인 기간 10년 이내"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 45, "source_type": "gov_benefits", "texts": {"지원대상": "신혼부부(혼인 7년 이내, 예비신혼부부 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 46, "source_type": "gov_benefits", "texts": {"지원대상": "혼인 7년 이내이며 만 6세 이하 자녀를 둔 가구"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 47, "source_type": "gov_benefits", "texts": {"지원대상": "신혼부부"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 48, "source_type": "gov_benefits", "texts": {"지원대상": "미혼 청년"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 49, "source_type": "gov_benefits", "texts": {"지원대상": "기혼자"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 50, "source_type": "gov_benefits", "texts": {"지원대상": "혼인 7년 이내 신혼부부 (재혼 제외)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 51, "source_type": "gov_benefits", "texts": {"지원대상": "혼인 7년 이하"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 52, "source_type": "gov_benefits", "texts": {"지원대상": "7년 이내 신혼부부"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 53, "source_type": "gov_benefits", "texts": {"지원대상": "미혼자 (이혼자 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 54, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 미혼 청년"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 55, "source_type": "gov_benefits", "texts": {"지원대상": "혼인 후 7년 이내 신혼부부 또는 6세 이하 자녀"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 56, "source_type": "gov_benefits", "texts": {"지원대상": "학자금 지원구간 8구간 이하"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 57, "source_type": "gov_benefits", "texts": {"지원대상": "만 19세 이상 39세 이하인 청년"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 58, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 대한민국 국민"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 59, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 청년(외국인 제외)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 60, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 (연 나이 기준)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 61, "source_type": "gov_benefits", "texts": {"지원대상": "기준중위소득 120% 이하 (우선 선정)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv", "id": 62, "source_type": "gov_benefits", "texts": {"지원대상": "무주택세대구성원 (기준중위소득 50% 이하 우선)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 63, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 60% 이하 (단, 장애인 가구는 70% 이하)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 64, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 무주택자 (주택 소유 시 제외)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 65, "source_type": "gov_benefits", "texts": {"지원대상": "만 65세 이상 노인"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv", "id": 66, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 1회 한정"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 0, "source_type": "gov_benefits", "texts": {"지원대상": "무주택세대구성원 (혼인 7년 이내 신혼부부 우선)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 1, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 (무주택자 우선)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 2, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 (재산 환산액 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 3, "source_type": "gov_benefits", "texts": {"지원대상": "무주택세대구성원 (자산 기준 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 4, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 (3인 이하)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 5, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 120% 이하인 자 중 1인"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 6, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 무주택세대구성원 (세대원 중 1명 이상)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 7, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 이하인 자 2명"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 8, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하인 자 (단 1명)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 9, "source_type": "gov_benefits", "texts": {"지원대상": "만 19세 이상 39세 이하 (1인 1회)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 10, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 150% 이하 (외국인 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 11, "source_type": "gov_benefits", "texts": {"지원대상": "무주택자 (주택 소유자 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 12, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 (2025년 기준)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv2", "id": 13, "source_type": "gov_benefits", "texts": {"지원대상": "무주택세대구성원 (기준 중위소득 100% 이하 가구 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 14, "source_type": "gov_benefits", "texts": {"지원대상": "만 19~39세 (만 40세 이상 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 15, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 180% 이하인 자 (우선순위: 중위소득 100% 이하)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 16, "source_type": "gov_benefits", "texts": {"지원대상": "혼인 7년 이내 신혼부부 (6세 이하 자녀 가구 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 17, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하이고 무주택 세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv2", "id": 18, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하이거나 무주택 세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 19, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하, 무주택 세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv2", "id": 20, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하/무주택 세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 21, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 내지 무주택 세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 22, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 등"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 23, "source_type": "gov_benefits", "texts": {"지원대상": "기준 중위소득 100% 이하 본인"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv2", "id": 24, "source_type": "gov_benefits", "texts": {"지원대상": "공고일 현재 무주택세대구성원"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv2", "id": 25, "source_type": "gov_benefits", "texts": {"지원대상": "신청일 기준 혼인 7년 이내"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}
+{"set": "adv2", "id": 26, "source_type": "gov_benefits", "texts": {"지원대상": "기혼자 (사실혼 포함)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": false}
+{"set": "adv2", "id": 27, "source_type": "gov_benefits", "texts": {"지원대상": "미혼 (만 19~39세)"}, "context": {"사용자구분": "개인"}, "may_be_evaluable": true}

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:/bbs/
+Disallow:/data/
+
+
+Sitemap: https://sulbing.com/sitemap.xml

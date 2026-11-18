@@ -1,0 +1,10 @@
+{
+  "name": "mazimi-forms-kordoc",
+  "private": true,
+  "description": "Read-only table IR of official HWP/HWPX blanks (kordoc parse only; no fill, no MCP).",
+  "type": "module",
+  "engines": { "node": ">=22 <23" },
+  "dependencies": {
+    "kordoc": "4.24.7"
+  }
+}

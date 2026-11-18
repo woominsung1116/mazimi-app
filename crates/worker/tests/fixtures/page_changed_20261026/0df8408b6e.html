@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Contact us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:url" content="http://bootstrapstudio.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:url" content="http://bootstrapstudio.io/">
+
+    <meta property="og:image" content="https://bootstrapstudio.io/assets/img/og.jpg">
+    <meta property="og:title" content="Contact us" />
+    <meta property="og:description" content="Powerful Web Development Tool For The Bootstrap Framework.">
+
+    <meta name="twitter:title" content="Contact us" />
+    <meta name="twitter:image" content="https://bootstrapstudio.io/assets/img/og.jpg">
+    <meta name="twitter:creator" content="@BootstrapStudio" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@BootstrapStudio">
+    <meta name="twitter:description" content="Powerful Web Development Tool For The Bootstrap Framework.">
+    
+    <meta name="description" content="A powerful web design tool for creating responsive websites using the Bootstrap framework.">
+
+    <meta name="csrf-token" content="ywneg0BcOYkyAr6Dr9vFNTFvFwWHuxeAVmtebxGG">
+    <meta name="sessid" content="eyJpdiI6Ik1DY0lJNU5TQThseUhLVEI4eW9GUEE9PSIsInZhbHVlIjoid29UR3FKREVGcWxNbHZiYU5QaStaRTBzSG44b3d2YmhDQ3ArNXNmbGQrND0iLCJtYWMiOiIwMWU1ZTIxM2IzMTFhN2NiNmVmYmNiYzBjMGNmM2NlMDE2MTkxMjZlOWE3YjRiMWEyNDgzNTc3ZTk5Y2UwNDZlIiwidGFnIjoiIn0=">
+
+</head>
+
+<body  >
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid container-md">
+        <a class="navbar-brand notranslate text-white" href="/"><img src="/assets/img/logo/logo.svg" width="32" height="40" alt="" id="logo" /><b>Bootstrap Studio</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol-1" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/#features">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/templates">Templates</a></li>
+                        <li><a class="dropdown-item" href="/sites">Sites Platform</a></li>
+                        <li><a class="dropdown-item" href="/forms">Smart Forms</a></li>
+                        <li><a class="dropdown-item" href="/ecommerce">Ecommerce</a></li>
+                        <li><a class="dropdown-item" href="/assistant">AI Assistant</a></li>
+                        <li><a class="dropdown-item" href="/apps">App Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="/academy/">Academy</a></li>
+                        <li><a class="dropdown-item" href="/docs/">Docs</a></li>
+                        <li><a class="dropdown-item" href="https://forum.bootstrapstudio.io/">Forum</a></li>
+                    </ul>
+                </li>
+                <li>
+                    
+                                        <a class="btn-main mt-2 mt-md-0 ms-md-3 smooth-scroll" role="button" href="/#purchase">Purchase</a>
+                                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <section id="contact-us-page" class="textual">
+    <h2 class="text-center mt-6"><strong>Contact us</strong></h2>
+    <p class="text-center lead">You've run into an issue with Bootstrap Studio or have something to ask? <br><b>Read our FAQ below</b>, or <a id="form-toggle-link" href="#form">click here</a> to write to us.</p>
+
+    <div id="form">
+        <p class="lead text-center">Email us at <strong>email</strong> or write below.
+
+                            <span class="text-warning">We are offline <br class="d-none d-sm-inline">at the moment. We'll get back to you in a few hours.</span>
+                
+        </p>
+
+        <form action="/contact-us-handler" method="post" class="bootstrap-form-with-validation auto-submit">
+            <div class="mb-3">
+                <label class="form-label" for="email-input">Email</label>
+                <input class="form-control" type="email" name="email" required id="email-input">
+            </div>
+            <div class="mb-3 suggestion-container">
+                <label class="form-label" for="subject-input">Subject</label>
+                <input class="form-control" type="text" name="subject" required minlength="2" id="subject-input">
+                <div class="suggestions">
+                    <div class="heading">Common Questions <span>(click to scroll the page)</span></div>
+                    <ul class="faq-list"></ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="textarea-input">Message</label>
+                <textarea class="form-control" rows="4" name="message" required minlength="5" id="textarea-input"></textarea>
+            </div>
+            <div class="alert alert-danger d-none" role="alert"><span>The alert message</span></div>
+            <div class="mb-3 has-success">
+                <button class="btn-main" type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+<section id="faq" class="textual">
+    <div class="faq-section mt-5">
+        <h3><span>Common Issues</span></h3>
+        <div class="faq-item">
+            <h4>I haven't received my license.</h4>
+            <p>It can take up to 15 minutes for your license to arrive. We need to validate your payment first. If the key is still missing, and it is not in your spam folder or Promotions tab, it might indicate that you have had a typo in your email address when purchasing. Write to us and we will resolve it. <strong>Please include an alternative email address in your message</strong>, in case your server is blocking us.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>I am seeing a blank screen when I start Bootstrap Studio for the first time.</h4>
+            <p>If you see an empty black or white screen when you start the app, make sure that you have an active internet connection the first time you start the program. It needs to connect to our servers so the license key is checked. After this, you can go offline for as long as you wish. Some firewalls may
+                block the app from accessing the network. Make sure that https traffic is allowed. If you need to configure a proxy, see <a href="https://forum.bootstrapstudio.io/t/proxy-server-configuration-for-windows/1999">here</a>.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Bootstrap Studio doesn't start after I click the icon.</h4>
+            <p>If you are using Windows and Bootstrap Studio refuses to start, make sure that your antivirus system isn't blocking the app by mistake.</p>
+        </div>
+        <div class="faq-item">
+            <h4>I have lost my license key. Can you send it to me again?</h4>
+            <p>If you've purchased Bootstrap Studio in the past, but can't remember your license key, don't worry! We can resend it to you. Use our <a href="/pages/license-key-restore">license key restore form</a>. Enter the email address you used
+                to purchase the app, and we will send you your key.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Where can I find the download link?</h4>
+            <p>The download link for the app is included in your license email, just below your key. If you don't have it, see the above question how to restore it.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Where can I find my invoice?</h4>
+            <p>We use a separate service for payment processing and invoicing - Paddle.com. They have sent you an email with your invoice and company/tax information right after you bought the app. If you can't find your receipt in your inbox/spam, you can <a href="/pages/license-key-restore">request it here</a>.</p>
+        </div>
+    </div>
+    <div class="faq-section">
+        <h3><span>General</span></h3>
+        <div class="faq-item">
+            <h4>Which operating systems are supported?</h4>
+            <p>Bootstrap Studio works on Windows (10 and 11), macOS (11 and up) and many Linux distributions (including Ubuntu, Debian and Fedora). Chrome OS is not supported.<br><br>Note that if you are running an older operating system - Windows 7, Windows 8, OSX 10.13 or macOS 10.14 - you can get Bootstrap Studio 6.4.5 from our download page. And if you have macOS 10.15 you need to get Bootstrap Studio 7.1.2. These are the last versions of our app which supports them.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Do you support Windows 32bit?</h4>
+            <p>Unfortunately 32bit Windows is quickly losing relevance and we can't afford the resources to build and test the app there. All computers from 2010 onward are 64bit, so it's likely just a matter of choosing to install Windows 64bit the next time you reinstall your computer. Until then, you can continue using our last version with 32 bit support - Bootstrap Studio 4.5.8 - which is available on our download page and will continue to work indefinitely.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Which language is Bootstrap Studio in?</h4>
+            <p>The interface of our program is only available in English at the moment. No other languages are supported for the interface. But you can create websites in any language. If you need to enter special symbols with umlauts or characters with IME (like in Chinese, Japanese, Korean etc) you can use the "Character Input" dialog. You can access it by clicking the "Char Input" button when you edit the text of an element.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How can I edit HTML?</h4>
+            <p>Bootstrap Studio shines as a drag and drop builder, but it also gives you the ability to <a href="/tutorials/writing-html">edit HTML when you need to</a>. There are two ways to do it. The first is to drag the <strong>"Custom Code"</strong> component from the library and
+                place it into your page. Then double click it. This will open a code editor in which you can write HTML.</p>
+            <p>The second way is to convert any part of your page, which you've built using our drag and drop builder, into HTML. Just right click a component and choose the <strong>"Convert to HTML"</strong> option. This will allow you to do advanced
+                changes to components which are not possible with the drag and drop functionality.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can Bootstrap Studio export for CMS like WordPress?</h4>
+            <p>When you export a design created in Bootstrap Studio, you get a static website complete with CSS, HTML and JS. But no CMS features are available - it is up to you to turn the static website into a WordPress, Drupal or Magento theme.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Are React, Angular or Vue supported?</h4>
+            <p>Our app is focused on creating designs with Bootstrap, and it doesn't support React, Angular or Vue.js.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How can I make my contact forms work?</h4>
+            <p>We have a feature called <a href="/forms">Smart Forms</a>. This is an automatic backend for your forms. When designing your contact form in the app, switch Smart Forms on and specify an email address where you wish to receive form submissions. Smart Forms works on any hosting provider, so you can upload your site anywhere.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How can I make my login forms work?</h4>
+            <p>Login forms are very different from contact forms. For a login form you will need to have a database with user records and code in a language like PHP, Python, Ruby, Node.js or other, to handle logins. You will have to write this by yourself after you export your site from Bootstrap Studio.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Is PHP supported?</h4>
+            <p>Bootstrap Studio is a design and protyping tool and it doesn't support PHP. When you export your design, you get HTML, CSS and JS files. To write PHP, you need to then edit your exported site in a code editor or IDE.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can I connect to a database?</h4>
+            <p>Bootstrap Studio handles the front end of your website. This is the HTML, CSS and JS. For connecting to a database, you will need to write code in a backend language like PHP, Python, Ruby, Java, C# etc. You can do this after exporting your design from the app.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Where can I find premium templates?</h4>
+            <p>Our application comes with a number of premium templates you can choose from. You can find them in the <a href="/templates">Templates</a> section of our website, and in the New Design dialog inside Bootstrap Studio.</p>
+            <p>Buying a template unlocks it in all your Bootstrap Studio copies, activated with the same license key. You can use each template to build an unlimited number of websites. Consult our <a href="/pages/license">license terms</a> for more.</p>
+        </div>
+        <div id="template-credits" class="faq-item">
+            <h4>What are template credits?</h4>
+            <p>When you buy a copy of Bootstrap Studio, you get one or more credits which you can use to unlock premium templates within the New Design dialog in the app. Unlocking a premium template is equivalent to purchasing it.</p>
+            <p>After you spend all your credits, you can buy templates through our website, or by clicking the Buy button inside the New Design dialog. It is not possible to add more credits to your account.</p>
+        </div>
+        <div class="faq-item">
+            <h4>I have found a bug. What do I do?</h4>
+            <p><a href="/bug-report">Report it</a> and we will fix it! Thanks to our advanced update system all bug fixes are delivered within minutes to all users. We got Bootstrap Studio from zero to where it is now, and we won't stop improving
+                it.</p>
+        </div>
+    </div>
+    <div class="faq-section">
+        <h3><span>Bootstrap</span></h3>
+        <div class="faq-item">
+            <h4>Is Bootstrap 5 supported?</h4>
+            <p>Yes, Bootstrap 5 is supported, alongside Bootstrap 3 and Bootstrap 4.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Which version of Bootstrap does Bootstrap Studio use?</h4>
+            <p>At the moment, Bootstrap Studio supports Bootstrap 3.4, Bootstrap 4.6 and Bootstrap 5.3. You can create new designs in either, and the app can even convert designs made in an older framework to the newer.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can I import an existing website?</h4>
+            <p>If your website is made with Bootstrap, you can import the images, CSS, JS and HTML files into the app. Just drag and drop them in, or choose the File &gt; Import option.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can I import a theme that I've purchased?</h4>
+            <p>Yes, if you've purchased a Bootstrap theme from a marketplace you can import it in Bootstrap Studio. Just drag and drop the images, CSS, JS and HTML, or choose the File &gt; Import option. Pages are imported as HTML code by default, but you can right click the Custom Code in the page and convert it to components to enable visual editing.</p>
+        </div>
+    </div>
+    <div class="faq-section">
+        <h3><span>Bootstrap Studio Sites</span></h3>
+        <div class="faq-item">
+            <h4>How many websites can I host?</h4>
+            <p>With your license key, you get room for 5 websites on the freely provided Bootstrap Studio Sites service, but you can export your design as HTML and upload it to any hosting provider via SFTP. In that case there are no limits - you can design an unlimited number of websites and upload them to any hosting provider.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How can I get additional websites?</h4>
+            <p>You can create an unlimited number of websites with Bootstrap Studio. But the freely provided hosting service - Bootstrap Studio Sites - has a 5 website limit. This limit can't be increased at this time. However you can export your designs as a static HTML+CSS websites and upload them to any hosting provider via SFTP without limits.</p>
+            <p>Alternatively you can get additional hosting slots for our platform by purchasing an additional Bootstrap Studio license. The extra 5 websites will be available only for the new license though, your current one will still have the original 5.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can I use Bootstrap Studio Sites for client websites?</h4>
+            <p>The Bootstrap Studio application can be used for any type of website, both personal and commercial, and also for sites that you build for your clients. The bundled hosting service, Bootstrap Studio Sites, also has no limits to what it can be used for. There are no problems in dedicating one of your website slots for a client website. But we don't offer features for your client to manage their own website, we don't have CPanel or CMS. If your client is happy with this arrangement, everything is good.</p>
+
+            <p>If they need to manage their site, the only way to do it is to hand them the HTML by exporting the design from Bootstrap Studio. They can then upload it to some other hosting provider.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How do I make WWW work on my website?</h4>
+            <p>The www subdomain is a separate website from the non-www version. You can redirect one to the other in Cloudflare. See <a href="https://forum.bootstrapstudio.io/t/www-subdomain-and-dns-problem/5395">this forum thread</a> for more information on this.</p>
+        </div>
+        <div class="faq-item">
+            <h4>My website doesn't show up. How do I fix it?</h4>
+            <p>Make sure that you've followed all the steps in the <a href="/tutorials/custom-domains">custom domains guide</a>, and that there are no typos in <code>sites.bootstrapstudio.io</code>. Also, due to DNS caching, in some cases it can take a few hours for the website to to be detected when you click the Check button in Bootstrap Studio.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How do I setup HTTPS on Bootstrap Studio Sites?</h4>
+            <p>The built-in hosting service, Bootstrap Studio Sites, doesn't support adding certificates directly (so no crt, pem or csr files can be uploaded). Instead this is handled automatically by Cloudflare, you don't need to do anything. In some cases it can take a few hours after setting up your domain on Cloudflare for your certificate to be generated during which time HTTPS will not work.</p>
+        </div>
+
+    </div>
+    <div id="licensing" class="faq-section pb-4">
+        <h3><span>Licensing</span></h3>
+        <div class="faq-item">
+            <h4>How does the licensing work?</h4>
+            <p>There are two editions - Standard and Lifetime. When you purchase Bootstrap Studio Standard, you get one year of free updates. This includes all new features, major releases and bugfixes that we create during this period. When this year expires, you can continue using the last version of Bootstrap Studio that was released while your license was active, but you won't get any new features or bugfixes. You can renew your license and continue receiving updates at any time by choosing the "Renew License Key" option in the Help menu.</p>
+            <p>If you instead purchase Bootstrap Studio Lifetime, no renewals are needed, you get all new versions without limits.</p>
+        </div>
+        <div class="faq-item">
+            <h4>What is the Lifetime version?</h4>
+            <p>The <em>Lifetime</em> version of Bootstrap Studio is a special release of our app that comes with free upgrades forever. You don't need to renew your license when you have this version. It has the same powerful feature set as the standard
+                edition.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Do you have a trial version?</h4>
+            <p>We don't have a trial, but you can get a copy and try the app risk-free. If it doesn't work for you, write to us within 30 days for a full refund.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Do you offer refunds?</h4>
+            <p>Of course. If Bootstrap Studio doesn't work for you, write to us within 30 days of your purchase to get your money back.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How does the 3 computer limit work?</h4>
+            <p>When you buy Bootstrap Studio, you get a license key that can be used on up to three computers that you own. You can at any time deregister a computer and free up a slot for another, by choosing the "Delete License" option from the Help menu. You can also <a href="/tutorials/activating-and-managing-devices#managing-devices">deregister a computer</a> that you don't have access to, by using the Help &gt; Manage Devices dialog.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can 3 people use one license?</h4>
+            <p>No, every user should have their own license. You can read our <a href="/pages/license">license terms here</a> for more information on this.</p>
+        </div>
+        <div class="faq-item">
+            <h4>What happens if I format my computer?</h4>
+            <p>If you format your computer, lose it, or your hard drive is destroyed, you can deactivate the copy of Bootstrap Studio that has been installed on it at any time. Just open the "<strong>Manage Devices</strong>" dialog in another copy of Bootstrap Studio that has been installed with your key. This dialog shows all your currently active installations. You can remove the ones that you don't use and free up slots for other installs. <a href="/tutorials/activating-and-managing-devices#managing-devices">Read more here</a>.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can I convert from Standard to Lifetime?</h4>
+            <p>Yes, you can convert to Lifetime at any time. You can do it by choosing the "Renew License" option in the application menu, and then choosing "Lifetime" on the renewal page. The upgrade costs $50, so it is cheaper to buy the Lifetime release outright.</p>
+        </div>
+        <div class="faq-item">
+            <h4>How are updates delivered?</h4>
+            <p>We have built an advanced update system into Bootstrap Studio. It checks for updates periodically when you are online and downloads them in the background. Then, the next time you start the program, you will be running the latest version
+                automatically. Even though you need to be online to receive updates, Bootstrap Studio doesn't require an internet connection to function and can be used completely offline.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Is there a student license?</h4>
+            <p>If you are a student we have a special non-commercial license for you, which is free for the duration of your study. You can apply with the GitHub Student Developer Pack or a student email address. Learn more on our <a href="/students">student portal</a>.</p>
+        </div>
+        <div id="lab-edition" class="faq-item">
+            <h4>Do you have a classroom or lab version?</h4>
+            <p>Yes, we have a special edition of Bootstrap Studio, which educational institutions (schools, universities, bootcamps etc) can install on their lab computers for free. It works fully offline and is the perfect tool for students to learn web development. <a href="#form">Contact us to apply</a>.</p>
+        </div>
+    </div>
+</section>
+ 
+</div>
+
+    <footer>
+    <h3>The Revolutionary Web Design Tool.</h3>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/academy/">Academy</a></li>
+        <li class="list-inline-item"><a href="https://forum.bootstrapstudio.io/">Forum</a></li>
+        <li class="list-inline-item"><a href="/pages/license">License</a></li>
+        <li class="list-inline-item"><a href="/pages/terms">Terms</a></li>
+        <li class="list-inline-item"><a href="/pages/privacy">Privacy</a></li>
+        <li class="list-inline-item"><a href="/bug-report">Bug Report</a></li>
+        <li class="list-inline-item"><a href="/pages/license-key-restore">Download</a></li>
+        <li class="list-inline-item"><a href="/contact-us#faq">FAQ</a></li>
+        <li class="list-inline-item"><a href="/contact-us">Contact Us</a></li>
+    </ul>
+    <p class="copyright">Copyright © 2026 <a href="https://zine.bg/" target="_blank">Zine EOOD</a>. All Rights Reserved.</p>
+    <div style="padding-top: 20px;" class="footer-icons">
+
+        <a href="https://www.youtube.com/c/BootstrapStudioApp" target="_blank" title="YouTube Channel">
+        </a>
+
+        <a href="https://twitter.com/BootstrapStudio" target="_blank" title="Twitter Feed">
+            
+        </a>
+
+        <a href="https://www.facebook.com/bootstrapstudio" target="_blank" title="Facebook Page">
+        </a>
+
+    </div>
+</footer>
+
+        <div role="dialog" tabindex="-1" class="modal fade" id="video-modal" style="padding-top: 30px;">
+            <div class="modal-dialog" role="document" style="max-width:1200px;width:90%">
+                <div class="modal-content" style="background: transparent;border: none;border-radius:10px">
+                    <button type="button" class="close-dialog" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="modal-body" style="padding: 0;">
+                        <div class="ratio ratio-16x9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto toast-title"></strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+            </div>
+        </div>
+
+        <div data-react="true" id="paddle-checkout-dialog-root"></div>
+
+    </body>
+
+</html>

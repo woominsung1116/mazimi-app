@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-09-23T07:18:18.423156+00:00",
+  "schema_version": 20260923000016,
+  "replayed": {
+    "gov_benefits": 10933,
+    "local_welfare": 1264,
+    "fss_financial": 0,
+    "failed": 0
+  },
+  "public_programs": 14169,
+  "with_application_method": 12902,
+  "corporate_offers": 32,
+  "school_offers": 10,
+  "schools_with_own_offers": 8,
+  "common_student_offers": 28,
+  "university_choices": 46,
+  "automatic_submission_enabled": false,
+  "google_configured": false,
+  "services": {
+    "api": "healthy",
+    "worker": "healthy",
+    "watchdog_timer": "active",
+    "backup_timer": "active"
+  }
+}

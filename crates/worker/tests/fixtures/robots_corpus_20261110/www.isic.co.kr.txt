@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /*.*
+Disallow: /*/
+Allow: /index.*
+Allow: /myid
+Allow: /home
+Allow: /sitemap.xml
+Allow: /rss.xml
+Allow: /isic_form/*App*
+Allow: /isic_form/myid*
+Sitemap: https://www.isic.co.kr/sitemap.xml

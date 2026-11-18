@@ -1,0 +1,75 @@
+{
+ "version": 1,
+ "generated_by": "scripts/forms/propose_fields.py batch",
+ "notes": "Import-now variant for apps without form-date-parts-v1: the full revisions (../) with date parts unlinked, exactly what the server sends old clients. Delete once the date-parts route is deployed and the full revisions are imported.",
+ "forms": [
+  {
+   "slug": "wonju-ai-interview-experience",
+   "program": "AI 면접 및 역량 검사 체험 지원",
+   "agency": "강원특별자치도 원주시(청년지원센터)",
+   "notice_url": "https://www.wonju.go.kr/wjyouth/selectBbsNttView.do?key=5882&bbsNo=1190&nttNo=478867&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=",
+   "file_url": "https://www.wonju.go.kr/wjyouth/downloadBbsFile.do?key=5882&atchmnflNo=409363",
+   "retrieved_at": "2026-10-16T03:26:57Z",
+   "format": "hwp",
+   "sha256": "94fa249ba3b256aba4e52dfb034370f67509d79e386ae31c06080714db8425ca",
+   "byte_size": 41472,
+   "notes": "HWP form, templated on the rhwp-converted PDF (pages 1-2).",
+   "derived_pdf": {
+    "sha256": "c4eae9d4be622a86da175d070f491cd6c8c0723eee56da7bf6a5c6acc1f21003",
+    "byte_size": 82712,
+    "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+    "fidelity": {
+     "1": "preview",
+     "2": "two_engines"
+    }
+   },
+   "status": "template_ready",
+   "reason": null,
+   "template": "wonju-ai-interview-experience.template.json",
+   "pages": 2,
+   "templated_pages": [
+    1,
+    2
+   ],
+   "field_count": 29,
+   "sensitive_fields": [],
+   "overlay_checked_by_preparer": true,
+   "human_review": "pending"
+  },
+  {
+   "slug": "wonju-study-cafe",
+   "program": "스터디카페·독서실 이용료 지원",
+   "agency": "강원특별자치도 원주시(청년지원센터)",
+   "notice_url": "https://www.wonju.go.kr/wjyouth/selectBbsNttView.do?key=5882&bbsNo=1190&nttNo=476869&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=",
+   "file_url": "https://www.wonju.go.kr/wjyouth/downloadBbsFile.do?key=5882&atchmnflNo=407003",
+   "retrieved_at": "2026-10-16T03:26:57Z",
+   "format": "hwp",
+   "sha256": "bca761c4e039c2223c8036726da38e972bea5ce0171cef417cd655f5943f3a4b",
+   "byte_size": 45568,
+   "notes": "HWP form, templated on the rhwp-converted PDF (pages 1, 3, 4). Page 4 is only for applicants who did not enter higher education, so its boxes are optional.",
+   "derived_pdf": {
+    "sha256": "ba18e7799beec7769d1e6ebd9db9d9c347f34d30b17337016086645f7df5ca8c",
+    "byte_size": 156160,
+    "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+    "fidelity": {
+     "1": "preview",
+     "3": "two_engines",
+     "4": "two_engines"
+    }
+   },
+   "status": "template_ready",
+   "reason": null,
+   "template": "wonju-study-cafe.template.json",
+   "pages": 4,
+   "templated_pages": [
+    1,
+    3,
+    4
+   ],
+   "field_count": 30,
+   "sensitive_fields": [],
+   "overlay_checked_by_preparer": true,
+   "human_review": "pending"
+  }
+ ]
+}

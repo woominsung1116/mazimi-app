@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-02T03:17:55.546530+00:00",
+  "expo_project": "@mazimi/majimi",
+  "build_id": "c9ef9091-f547-4ef3-b09a-443041be9163",
+  "source_commit": "66cb68f5ab64d85c8783fd2f2de9ccd61f016672",
+  "status": "FINISHED",
+  "app_version": "1.0.0",
+  "android_version_code": "3",
+  "artifact_url": "https://expo.dev/artifacts/eas/by9_Ephixz4baMqKEvR8wo-802vTZqfWSbqIOzFTR-Y.apk",
+  "artifact_bytes": 88998482,
+  "artifact_sha256": "8391af28ce5adde7b370fa114b413935fad316bb77a7d442196725be428468ff",
+  "artifact_checks": {
+    "zip_crc_valid": true,
+    "manifest_present": true,
+    "dex_present": true,
+    "production_api_in_bundle": true
+  },
+  "native_asset_report": "mobile-native-assets-20261001.json",
+  "physical_device_tested": false,
+  "notes": [
+    "Original Figma assets, region/profile filtering and mobile session regression fixes included. API/worker regional corrections deployed independently."
+  ]
+}

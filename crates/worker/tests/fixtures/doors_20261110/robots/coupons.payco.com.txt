@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /b2bcouponad/*
+
+Sitemap: https://coupons.payco.com/sitemap.xml

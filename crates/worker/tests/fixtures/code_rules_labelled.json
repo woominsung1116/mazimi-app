@@ -1,0 +1,2762 @@
+{
+ "about": "8 probe personas x top-20 rows of probes/reco-accuracy/runs/prod-20261015 with their labels; payload = the coded fields of the prod source_snapshots raw_payload (2026-10-15). Rebuild with export_fixture.py (see .omc/handoff-20261008/code-rules.md).",
+ "personas": {
+  "P1": {
+   "birth_year": 2005,
+   "city_code": "26410",
+   "employment_status": "student",
+   "enrollment_status": "enrolled",
+   "has_disability": false,
+   "household_size": 4,
+   "housing_type": "parents",
+   "income_bracket": 4,
+   "is_low_income_household": false,
+   "is_multicultural_family": false,
+   "kosaf_support_bracket": 4,
+   "major_group": "engineering",
+   "region_code": "busan",
+   "school_name": "부산대학교",
+   "school_type": "university",
+   "school_year": 2,
+   "veteran_family": false
+  },
+  "P2": {
+   "birth_year": 1999,
+   "city_code": "11620",
+   "employment_status": "unemployed",
+   "enrollment_status": "graduated",
+   "has_disability": false,
+   "household_size": 1,
+   "housing_type": "monthly_rent",
+   "income_bracket": 5,
+   "is_low_income_household": false,
+   "is_multicultural_family": false,
+   "major_group": "humanities",
+   "region_code": "seoul",
+   "school_type": "university",
+   "veteran_family": false
+  },
+  "P3": {
+   "birth_year": 1995,
+   "city_code": "41117",
+   "employment_status": "employed",
+   "enrollment_status": "graduated",
+   "has_disability": false,
+   "household_size": 1,
+   "housing_type": "jeonse",
+   "income_bracket": 6,
+   "is_low_income_household": false,
+   "is_multicultural_family": false,
+   "major_group": "business",
+   "region_code": "gyeonggi",
+   "school_type": "university",
+   "veteran_family": false
+  },
+  "P4": {
+   "birth_year": 2003,
+   "city_code": "27230",
+   "employment_status": "preparing",
+   "enrollment_status": "on_leave",
+   "has_disability": false,
+   "household_size": 4,
+   "housing_type": "monthly_rent",
+   "income_bracket": 3,
+   "is_low_income_household": false,
+   "is_multicultural_family": false,
+   "kosaf_support_bracket": 3,
+   "major_group": "natural_science",
+   "region_code": "daegu",
+   "school_name": "경북대학교",
+   "school_type": "university",
+   "school_year": 3,
+   "veteran_family": false
+  },
+  "P5": {
+   "birth_year": 2007,
+   "city_code": "46150",
+   "employment_status": "preparing",
+   "has_disability": false,
+   "household_size": 4,
+   "housing_type": "parents",
+   "income_bracket": 3,
+   "is_low_income_household": false,
+   "is_multicultural_family": false,
+   "region_code": "jeonnam",
+   "school_type": "high_school",
+   "veteran_family": false
+  },
+  "P6": {
+   "birth_year": 2000,
+   "city_code": "28185",
+   "employment_status": "student",
+   "enrollment_status": "enrolled",
+   "has_disability": false,
+   "household_size": 1,
+   "housing_type": "monthly_rent",
+   "income_bracket": 6,
+   "is_low_income_household": false,
+   "is_multicultural_family": false,
+   "kosaf_support_bracket": 6,
+   "major_group": "engineering",
+   "region_code": "incheon",
+   "school_name": "인하대학교",
+   "school_type": "graduate",
+   "veteran_family": false
+  },
+  "P7": {
+   "birth_year": 1991,
+   "city_code": "48121",
+   "employment_status": "employed",
+   "enrollment_status": "graduated",
+   "has_disability": false,
+   "household_size": 1,
+   "housing_type": "monthly_rent",
+   "income_bracket": 5,
+   "is_low_income_household": false,
+   "is_multicultural_family": false,
+   "major_group": "engineering",
+   "region_code": "gyeongnam",
+   "school_type": "university",
+   "veteran_family": false
+  },
+  "P8": {
+   "birth_year": 2002,
+   "city_code": "29170",
+   "employment_status": "unemployed",
+   "enrollment_status": "graduated",
+   "has_disability": false,
+   "household_size": 2,
+   "housing_type": "monthly_rent",
+   "income_bracket": 1,
+   "is_low_income_household": true,
+   "is_multicultural_family": false,
+   "kosaf_support_bracket": 1,
+   "region_code": "gwangju",
+   "school_type": "college",
+   "veteran_family": false
+  }
+ },
+ "programmes": {
+  "011f9cc2-d01e-4759-931d-02e3473eb967": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260929005400113667",
+   "source_type": "youth_center"
+  },
+  "01e3a99c-11a5-4439-a3aa-71d3a12f907e": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260406005400212511",
+   "source_type": "youth_center"
+  },
+  "03163bd8-613b-422e-b32a-f364dfc8deca": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20250122005400110346",
+   "source_type": "youth_center"
+  },
+  "0409b1db-3da5-4bb6-a481-89375eb39768": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260513005400213203",
+   "source_type": "youth_center"
+  },
+  "046e79e3-0495-4d6e-aa77-361c7de03ceb": {
+   "payload": null,
+   "source_id": "local_welfare_WLF00002637",
+   "source_type": "local_welfare"
+  },
+  "0562fb97-974c-4073-aba6-f844285ef887": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 39,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": "Y",
+     "JA0302": "Y",
+     "JA0303": "Y",
+     "JA0313": "Y",
+     "JA0314": "Y",
+     "JA0315": "Y",
+     "JA0316": "Y",
+     "JA0317": "Y",
+     "JA0318": "Y",
+     "JA0319": "Y",
+     "JA0320": "Y",
+     "JA0322": "Y",
+     "JA0326": "Y",
+     "JA0327": "Y",
+     "JA0328": "Y",
+     "JA0329": "Y",
+     "JA0330": "Y",
+     "JA0401": "Y",
+     "JA0402": "Y",
+     "JA0403": "Y",
+     "JA0404": "Y",
+     "JA0410": "Y",
+     "JA0411": "Y",
+     "JA0412": "Y",
+     "JA0413": "Y",
+     "JA0414": "Y",
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": "Y",
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": "Y",
+     "JA2202": "Y",
+     "JA2203": "Y",
+     "JA2299": "Y",
+     "서비스ID": "641000000669",
+     "서비스명": "경기청년 일자리 매치업 플러스"
+    },
+    "사용자구분": "개인||법인/시설/단체"
+   },
+   "source_id": "641000000669",
+   "source_type": "gov_benefits"
+  },
+  "05f5d915-a22b-4e39-ba94-fb1b970499d0": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 120,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": null,
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": null,
+     "JA0322": "Y",
+     "JA0326": null,
+     "JA0327": null,
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": "Y",
+     "JA0411": null,
+     "JA0412": null,
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "567000000108",
+     "서비스명": "청년기술창업수당 지원"
+    },
+    "사용자구분": "개인||법인/시설/단체"
+   },
+   "source_id": "567000000108",
+   "source_type": "gov_benefits"
+  },
+  "07ccfde9-7b7f-4085-a534-c0355b4e6e47": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 120,
+     "JA0201": "Y",
+     "JA0202": null,
+     "JA0203": null,
+     "JA0204": null,
+     "JA0205": null,
+     "JA0301": "Y",
+     "JA0302": "Y",
+     "JA0303": "Y",
+     "JA0313": "Y",
+     "JA0314": "Y",
+     "JA0315": "Y",
+     "JA0316": "Y",
+     "JA0317": "Y",
+     "JA0318": "Y",
+     "JA0319": "Y",
+     "JA0320": "Y",
+     "JA0322": "Y",
+     "JA0326": "Y",
+     "JA0327": "Y",
+     "JA0328": "Y",
+     "JA0329": "Y",
+     "JA0330": "Y",
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": null,
+     "JA0411": null,
+     "JA0412": "Y",
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "641000000124",
+     "서비스명": "경기도 부동산 중개보수 지원"
+    },
+    "사용자구분": "가구"
+   },
+   "source_id": "641000000124",
+   "source_type": "gov_benefits"
+  },
+  "09a6378a-dbeb-4b82-bf4b-98aa92c0a7d1": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013001,0013003,0013006",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014001,0014008",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260908005400213380",
+   "source_type": "youth_center"
+  },
+  "0be26b0d-c43c-4742-b1de-fdef7e0471e4": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 34,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": null,
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": null,
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": null,
+     "JA0322": null,
+     "JA0326": null,
+     "JA0327": "Y",
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": "Y",
+     "JA0402": "Y",
+     "JA0403": "Y",
+     "JA0404": "Y",
+     "JA0410": "Y",
+     "JA0411": "Y",
+     "JA0412": "Y",
+     "JA0413": "Y",
+     "JA0414": "Y",
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "611000000126",
+     "서비스명": "서울 청년수당 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "611000000126",
+   "source_type": "gov_benefits"
+  },
+  "10414bbb-c6cf-4d62-82a1-f4468271700a": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011004,0011005",
+    "sbizCd": "0014010",
+    "schoolCd": "0049008,0049009"
+   },
+   "source_id": "20260921005400113484",
+   "source_type": "youth_center"
+  },
+  "1170a3a9-1fba-42ca-823b-cf217a2fd06c": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260917005400113424",
+   "source_type": "youth_center"
+  },
+  "18209b5f-bfed-4d3c-8e2d-7d63fa85d943": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013001,0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014001",
+    "schoolCd": "0049003,0049004"
+   },
+   "source_id": "20260311005400112111",
+   "source_type": "youth_center"
+  },
+  "1cfd88dd-7040-463b-8e06-972bed8dd3cd": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260915005400213416",
+   "source_type": "youth_center"
+  },
+  "1e8eec2b-778c-4c43-b6ee-a9a62c430f89": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260930005400113704",
+   "source_type": "youth_center"
+  },
+  "252800af-7432-46e0-95be-0664da811171": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260918005400113429",
+   "source_type": "youth_center"
+  },
+  "26d0f51e-21b4-4abb-b22c-da5a0752003f": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013001",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260408005400212585",
+   "source_type": "youth_center"
+  },
+  "2a73c8b0-5e65-42ce-83c6-c55b5b4db3ad": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011001,0011002,0011003,0011004,0011005,0011006,0011007,0011008",
+    "sbizCd": "0014008",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260918005400113437",
+   "source_type": "youth_center"
+  },
+  "2a83333d-ad6c-4130-aa62-b02194a24501": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260722005400213273",
+   "source_type": "youth_center"
+  },
+  "2f64d779-805e-4378-b466-93fa82754b25": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260506005400213140",
+   "source_type": "youth_center"
+  },
+  "32f4dee2-da80-4791-8ad5-304bf42ef1ac": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20261006005400213905",
+   "source_type": "youth_center"
+  },
+  "34194340-050a-4d97-97da-5c0f70687d2d": {
+   "payload": {
+    "earnCndSeCd": "0043003",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013008",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20261002005400213811",
+   "source_type": "youth_center"
+  },
+  "36e6d717-40ae-414f-b1f8-0d85cdaf1d5a": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013001",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014001,0014009",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260921005400113480",
+   "source_type": "youth_center"
+  },
+  "388f5e56-0df2-4195-bdd3-0b0aea8c4e91": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260429005400212947",
+   "source_type": "youth_center"
+  },
+  "3b04e2c4-7141-492d-97e1-2380c760ef35": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049003,0049004,0049006,0049007"
+   },
+   "source_id": "20260429005400212909",
+   "source_type": "youth_center"
+  },
+  "40333fa2-4c2c-4ceb-aec6-f38bce8628cd": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 0,
+     "JA0111": 39,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": null,
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": "Y",
+     "JA0322": null,
+     "JA0326": null,
+     "JA0327": null,
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": "Y",
+     "JA0402": "Y",
+     "JA0403": "Y",
+     "JA0404": "Y",
+     "JA0410": "Y",
+     "JA0411": "Y",
+     "JA0412": "Y",
+     "JA0413": "Y",
+     "JA0414": "Y",
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "627000000134",
+     "서비스명": "대학생 학자금 대출 부담경감 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "627000000134",
+   "source_type": "gov_benefits"
+  },
+  "40c3e1dc-1a6e-4e2a-95ee-db40cabaaf7d": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260922005400213509",
+   "source_type": "youth_center"
+  },
+  "42081548-5c42-4968-ac48-9039f76ec858": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 39,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": null,
+     "JA0301": "Y",
+     "JA0302": "Y",
+     "JA0303": "Y",
+     "JA0313": "Y",
+     "JA0314": "Y",
+     "JA0315": "Y",
+     "JA0316": "Y",
+     "JA0317": "Y",
+     "JA0318": "Y",
+     "JA0319": "Y",
+     "JA0320": "Y",
+     "JA0322": "Y",
+     "JA0326": "Y",
+     "JA0327": "Y",
+     "JA0328": "Y",
+     "JA0329": "Y",
+     "JA0330": "Y",
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": null,
+     "JA0411": null,
+     "JA0412": "Y",
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "648000001072",
+     "서비스명": "청년주택 임차보증금 이자지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "648000001072",
+   "source_type": "gov_benefits"
+  },
+  "47f457ec-8401-42d7-ba48-9e05b5811d5b": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20250109005400110123",
+   "source_type": "youth_center"
+  },
+  "480c6f75-3b3e-4a74-ae9d-f7096b06a2b9": {
+   "payload": {
+    "earnCndSeCd": "0043003",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013008",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260408005400212643",
+   "source_type": "youth_center"
+  },
+  "49445500-64c9-4795-8c7a-1929f270dffc": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260716005400113260",
+   "source_type": "youth_center"
+  },
+  "54da4ba0-a286-4b19-b7cc-5dbd34a8c88d": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260513005400213202",
+   "source_type": "youth_center"
+  },
+  "5565d2c7-1fb4-4e10-8575-366eef93ce5d": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049003,0049004,0049006,0049007"
+   },
+   "source_id": "20260429005400212908",
+   "source_type": "youth_center"
+  },
+  "59b89356-0c7a-46f7-9056-25c160bfb314": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260903005400213367",
+   "source_type": "youth_center"
+  },
+  "5eec1af3-78cd-42a4-a880-c4bffda254fb": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260714005400113258",
+   "source_type": "youth_center"
+  },
+  "62df1caa-480b-4541-9808-4e51d8dd8b5a": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014001",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260922005400113543",
+   "source_type": "youth_center"
+  },
+  "6562dba7-cdb7-4509-a96b-e4978aee9c3d": {
+   "payload": {
+    "earnCndSeCd": "0043003",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260923005400113565",
+   "source_type": "youth_center"
+  },
+  "65b57369-596f-4c23-8e78-d5bd837ec47a": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260914005400213412",
+   "source_type": "youth_center"
+  },
+  "6b4d7bbd-d8ec-4d16-9e59-f75bf8b5917e": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20261001005400113794",
+   "source_type": "youth_center"
+  },
+  "6c82d3da-03c3-4e85-9a43-387ef75f9982": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013001",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20250617005400110950",
+   "source_type": "youth_center"
+  },
+  "6f642beb-6a79-4b60-b4dd-19509e2135f3": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260922005400113529",
+   "source_type": "youth_center"
+  },
+  "71dc724f-f3ec-4277-aad1-df54c488b3ce": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011005",
+    "sbizCd": "0014010",
+    "schoolCd": "0049005,0049006,0049007"
+   },
+   "source_id": "20261002005400213813",
+   "source_type": "youth_center"
+  },
+  "7279b8df-4aa3-46f1-a276-fb3a20b6af23": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260406005400212441",
+   "source_type": "youth_center"
+  },
+  "72f3f03a-a7de-4d17-bcdd-36d88af0118d": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20261002005400213810",
+   "source_type": "youth_center"
+  },
+  "770b2f40-1920-4e33-bab2-4fbf6877d1ec": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260917005400213418",
+   "source_type": "youth_center"
+  },
+  "79ec2de7-b989-4c46-80ce-870da039a65b": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260506005400213153",
+   "source_type": "youth_center"
+  },
+  "7d4167f0-d9b5-4ac2-a825-de08bf86cff2": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 18,
+     "JA0111": 39,
+     "JA0201": null,
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": null,
+     "JA0301": "Y",
+     "JA0302": "Y",
+     "JA0303": "Y",
+     "JA0313": "Y",
+     "JA0314": "Y",
+     "JA0315": "Y",
+     "JA0316": "Y",
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": "Y",
+     "JA0320": "Y",
+     "JA0322": "Y",
+     "JA0326": "Y",
+     "JA0327": "Y",
+     "JA0328": "Y",
+     "JA0329": "Y",
+     "JA0330": "Y",
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": null,
+     "JA0411": null,
+     "JA0412": "Y",
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "648000001055",
+     "서비스명": "경상남도 청년 월세 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "648000001055",
+   "source_type": "gov_benefits"
+  },
+  "7fe1309d-1051-4d22-9a35-558a8b2e6756": {
+   "payload": {
+    "earnCndSeCd": "0043003",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260710005400113256",
+   "source_type": "youth_center"
+  },
+  "7fe56804-40e6-4a34-838c-703189a6a445": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 18,
+     "JA0111": 44,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": "Y",
+     "JA0302": "Y",
+     "JA0303": "Y",
+     "JA0313": "Y",
+     "JA0314": "Y",
+     "JA0315": "Y",
+     "JA0316": "Y",
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": "Y",
+     "JA0322": "Y",
+     "JA0326": "Y",
+     "JA0327": "Y",
+     "JA0328": "Y",
+     "JA0329": "Y",
+     "JA0330": "Y",
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": "Y",
+     "JA0411": null,
+     "JA0412": null,
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "648000001097",
+     "서비스명": "신혼부부 및 출산가구 주택구입 대출이자 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "648000001097",
+   "source_type": "gov_benefits"
+  },
+  "8cff27e2-2205-4669-899e-97c060a6fec2": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 18,
+     "JA0111": 34,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": null,
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": "Y",
+     "JA0322": null,
+     "JA0326": null,
+     "JA0327": null,
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": "Y",
+     "JA0411": null,
+     "JA0412": null,
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "567000000751",
+     "서비스명": "창원 새내기 지원금 신청"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "567000000751",
+   "source_type": "gov_benefits"
+  },
+  "96dfb698-d6fd-448b-a162-7621702c6f12": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 39,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": null,
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": null,
+     "JA0322": null,
+     "JA0326": null,
+     "JA0327": "Y",
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": "Y",
+     "JA0402": "Y",
+     "JA0403": "Y",
+     "JA0404": "Y",
+     "JA0410": "Y",
+     "JA0411": "Y",
+     "JA0412": "Y",
+     "JA0413": "Y",
+     "JA0414": "Y",
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "374000000595",
+     "서비스명": "(수원시) 어학·자격시험 응시료 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "374000000595",
+   "source_type": "gov_benefits"
+  },
+  "998eb706-ae2e-4100-844b-cf3157e623c8": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 39,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": null,
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": null,
+     "JA0322": null,
+     "JA0326": null,
+     "JA0327": "Y",
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": "Y",
+     "JA0402": "Y",
+     "JA0403": "Y",
+     "JA0404": "Y",
+     "JA0410": "Y",
+     "JA0411": "Y",
+     "JA0412": "Y",
+     "JA0413": "Y",
+     "JA0414": "Y",
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "567000000758",
+     "서비스명": "청년 면접수당 지원사업"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "567000000758",
+   "source_type": "gov_benefits"
+  },
+  "a0771571-adde-4600-ac26-871536be3f9f": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260710005400213254",
+   "source_type": "youth_center"
+  },
+  "a6d558ed-28b4-4f79-bb8a-10517a515652": {
+   "payload": {
+    "earnCndSeCd": "0043003",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055002",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260922005400113506",
+   "source_type": "youth_center"
+  },
+  "a86a1b98-5161-4480-b81e-ce1f9d3407cf": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049003,0049004,0049006,0049007"
+   },
+   "source_id": "20260429005400212912",
+   "source_type": "youth_center"
+  },
+  "a9864b8a-edd6-4639-abdc-bb093bbf50b1": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260406005400212445",
+   "source_type": "youth_center"
+  },
+  "b6527c00-40a5-4a1c-a44e-38de9d81795b": {
+   "payload": {
+    "earnCndSeCd": "0043003",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011004,0011005,0011007",
+    "sbizCd": "0014010",
+    "schoolCd": "0049006,0049007,0049008"
+   },
+   "source_id": "20260928005400113623",
+   "source_type": "youth_center"
+  },
+  "bad6cdfe-932a-4824-9aeb-142ac429dfa9": {
+   "payload": null,
+   "source_id": "local_welfare_WLF00005405",
+   "source_type": "local_welfare"
+  },
+  "cfdfb2c6-d625-41da-926c-47c62e91fe83": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260918005400113430",
+   "source_type": "youth_center"
+  },
+  "d13cceb2-ab9d-43a9-a0af-9fb3c6b70325": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260930005400113725",
+   "source_type": "youth_center"
+  },
+  "d2656e3d-953c-48b0-8987-7289a7e80664": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013010",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260831005400213363",
+   "source_type": "youth_center"
+  },
+  "da1f0d68-c924-491e-871e-f68aef249253": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 120,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": "Y",
+     "JA0302": "Y",
+     "JA0303": "Y",
+     "JA0313": "Y",
+     "JA0314": "Y",
+     "JA0315": "Y",
+     "JA0316": "Y",
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": "Y",
+     "JA0322": "Y",
+     "JA0326": "Y",
+     "JA0327": "Y",
+     "JA0328": "Y",
+     "JA0329": "Y",
+     "JA0330": "Y",
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": null,
+     "JA0411": null,
+     "JA0412": "Y",
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "567000000116",
+     "서비스명": "전세보증금반환보증 보증료 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "567000000116",
+   "source_type": "gov_benefits"
+  },
+  "e1a13bb2-3422-4bc5-9924-23704f2a1084": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049009"
+   },
+   "source_id": "20260513005400213201",
+   "source_type": "youth_center"
+  },
+  "e547de15-27c3-44d3-a762-2fc3eb4b98e4": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013001,0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260320005400112237",
+   "source_type": "youth_center"
+  },
+  "e67df565-e214-4f0f-8d95-40e597cbca7a": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049003,0049004,0049006,0049007"
+   },
+   "source_id": "20260429005400212911",
+   "source_type": "youth_center"
+  },
+  "e983346b-032d-4d07-b8d7-bf0ba18c4ef5": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049004"
+   },
+   "source_id": "20260923005400113574",
+   "source_type": "youth_center"
+  },
+  "edf66727-2101-4910-824f-ea1b5e148f22": {
+   "payload": {
+    "earnCndSeCd": "0043003",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260923005400113567",
+   "source_type": "youth_center"
+  },
+  "f2b478fa-9039-4d71-92fc-28a6c115dc9d": {
+   "payload": {
+    "earnCndSeCd": "0043001",
+    "earnMaxAmt": "0",
+    "earnMinAmt": "0",
+    "jobCd": "0013003",
+    "mrgSttsCd": "0055003",
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014010",
+    "schoolCd": "0049010"
+   },
+   "source_id": "20260914005400213411",
+   "source_type": "youth_center"
+  },
+  "f3e9f422-49c1-4091-92f7-f020fe1c492e": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 19,
+     "JA0111": 39,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": null,
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": null,
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": null,
+     "JA0322": null,
+     "JA0326": "Y",
+     "JA0327": null,
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": "Y",
+     "JA0402": "Y",
+     "JA0403": "Y",
+     "JA0404": "Y",
+     "JA0410": "Y",
+     "JA0411": "Y",
+     "JA0412": "Y",
+     "JA0413": "Y",
+     "JA0414": "Y",
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "641000000192",
+     "서비스명": "경기도 청년 노동자 통장"
+    },
+    "사용자구분": "가구"
+   },
+   "source_id": "641000000192",
+   "source_type": "gov_benefits"
+  },
+  "f4715b11-12fa-4af1-9133-93f00ad8d2dc": {
+   "payload": {
+    "plcyMajorCd": "0011009",
+    "sbizCd": "0014003"
+   },
+   "source_id": "20250903005400211608",
+   "source_type": "youth_center"
+  },
+  "f76fe053-eac3-485d-a09c-8b9d24292b81": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 18,
+     "JA0111": 44,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": null,
+     "JA0205": null,
+     "JA0301": "Y",
+     "JA0302": "Y",
+     "JA0303": "Y",
+     "JA0313": "Y",
+     "JA0314": "Y",
+     "JA0315": "Y",
+     "JA0316": "Y",
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": "Y",
+     "JA0322": "Y",
+     "JA0326": "Y",
+     "JA0327": "Y",
+     "JA0328": "Y",
+     "JA0329": "Y",
+     "JA0330": "Y",
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": null,
+     "JA0411": null,
+     "JA0412": "Y",
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "567000000123",
+     "서비스명": "무주택 신혼부부 전세자금 대출이자 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "567000000123",
+   "source_type": "gov_benefits"
+  },
+  "fbb40a73-829c-4bec-ba14-d357e88bd2a6": {
+   "payload": {
+    "supportConditions": {
+     "JA0101": "Y",
+     "JA0102": "Y",
+     "JA0110": 18,
+     "JA0111": 50,
+     "JA0201": "Y",
+     "JA0202": "Y",
+     "JA0203": "Y",
+     "JA0204": "Y",
+     "JA0205": "Y",
+     "JA0301": null,
+     "JA0302": null,
+     "JA0303": null,
+     "JA0313": "Y",
+     "JA0314": null,
+     "JA0315": null,
+     "JA0316": null,
+     "JA0317": null,
+     "JA0318": null,
+     "JA0319": null,
+     "JA0320": null,
+     "JA0322": null,
+     "JA0326": null,
+     "JA0327": null,
+     "JA0328": null,
+     "JA0329": null,
+     "JA0330": null,
+     "JA0401": null,
+     "JA0402": null,
+     "JA0403": null,
+     "JA0404": null,
+     "JA0410": "Y",
+     "JA0411": null,
+     "JA0412": null,
+     "JA0413": null,
+     "JA0414": null,
+     "JA1101": null,
+     "JA1102": null,
+     "JA1103": null,
+     "JA1201": null,
+     "JA1202": null,
+     "JA1299": null,
+     "JA2101": null,
+     "JA2102": null,
+     "JA2103": null,
+     "JA2201": null,
+     "JA2202": null,
+     "JA2203": null,
+     "JA2299": null,
+     "서비스ID": "648000001118",
+     "서비스명": "청년후계농 농지 임대료 지원"
+    },
+    "사용자구분": "개인"
+   },
+   "source_id": "648000001118",
+   "source_type": "gov_benefits"
+  }
+ },
+ "rows": [
+  {
+   "label": "other:not-individual",
+   "persona": "P1",
+   "program_id": "5565d2c7-1fb4-4e10-8575-366eef93ce5d",
+   "rank": 1
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P1",
+   "program_id": "a86a1b98-5161-4480-b81e-ce1f9d3407cf",
+   "rank": 2
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P1",
+   "program_id": "e67df565-e214-4f0f-8d95-40e597cbca7a",
+   "rank": 3
+  },
+  {
+   "label": "correct",
+   "persona": "P1",
+   "program_id": "f2b478fa-9039-4d71-92fc-28a6c115dc9d",
+   "rank": 4
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P1",
+   "program_id": "3b04e2c4-7141-492d-97e1-2380c760ef35",
+   "rank": 5
+  },
+  {
+   "label": "correct",
+   "persona": "P1",
+   "program_id": "54da4ba0-a286-4b19-b7cc-5dbd34a8c88d",
+   "rank": 6
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P1",
+   "program_id": "e1a13bb2-3422-4bc5-9924-23704f2a1084",
+   "rank": 7
+  },
+  {
+   "label": "correct",
+   "persona": "P1",
+   "program_id": "0409b1db-3da5-4bb6-a481-89375eb39768",
+   "rank": 8
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P1",
+   "program_id": "03163bd8-613b-422e-b32a-f364dfc8deca",
+   "rank": 9
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P1",
+   "program_id": "1e8eec2b-778c-4c43-b6ee-a9a62c430f89",
+   "rank": 10
+  },
+  {
+   "label": "correct",
+   "persona": "P1",
+   "program_id": "252800af-7432-46e0-95be-0664da811171",
+   "rank": 11
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P1",
+   "program_id": "49445500-64c9-4795-8c7a-1929f270dffc",
+   "rank": 12
+  },
+  {
+   "label": "closed",
+   "persona": "P1",
+   "program_id": "62df1caa-480b-4541-9808-4e51d8dd8b5a",
+   "rank": 13
+  },
+  {
+   "label": "correct",
+   "persona": "P1",
+   "program_id": "72f3f03a-a7de-4d17-bcdd-36d88af0118d",
+   "rank": 14
+  },
+  {
+   "label": "unknowable",
+   "persona": "P1",
+   "program_id": "edf66727-2101-4910-824f-ea1b5e148f22",
+   "rank": 15
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P1",
+   "program_id": "6b4d7bbd-d8ec-4d16-9e59-f75bf8b5917e",
+   "rank": 16
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P1",
+   "program_id": "10414bbb-c6cf-4d62-82a1-f4468271700a",
+   "rank": 17
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P1",
+   "program_id": "47f457ec-8401-42d7-ba48-9e05b5811d5b",
+   "rank": 18
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P1",
+   "program_id": "71dc724f-f3ec-4277-aad1-df54c488b3ce",
+   "rank": 19
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P1",
+   "program_id": "7fe1309d-1051-4d22-9a35-558a8b2e6756",
+   "rank": 20
+  },
+  {
+   "label": "unknowable",
+   "persona": "P2",
+   "program_id": "03163bd8-613b-422e-b32a-f364dfc8deca",
+   "rank": 1
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P2",
+   "program_id": "1e8eec2b-778c-4c43-b6ee-a9a62c430f89",
+   "rank": 2
+  },
+  {
+   "label": "correct",
+   "persona": "P2",
+   "program_id": "252800af-7432-46e0-95be-0664da811171",
+   "rank": 3
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P2",
+   "program_id": "49445500-64c9-4795-8c7a-1929f270dffc",
+   "rank": 4
+  },
+  {
+   "label": "closed",
+   "persona": "P2",
+   "program_id": "62df1caa-480b-4541-9808-4e51d8dd8b5a",
+   "rank": 5
+  },
+  {
+   "label": "correct",
+   "persona": "P2",
+   "program_id": "72f3f03a-a7de-4d17-bcdd-36d88af0118d",
+   "rank": 6
+  },
+  {
+   "label": "correct",
+   "persona": "P2",
+   "program_id": "7fe1309d-1051-4d22-9a35-558a8b2e6756",
+   "rank": 7
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P2",
+   "program_id": "b6527c00-40a5-4a1c-a44e-38de9d81795b",
+   "rank": 8
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P2",
+   "program_id": "e983346b-032d-4d07-b8d7-bf0ba18c4ef5",
+   "rank": 9
+  },
+  {
+   "label": "unknowable",
+   "persona": "P2",
+   "program_id": "edf66727-2101-4910-824f-ea1b5e148f22",
+   "rank": 10
+  },
+  {
+   "label": "correct",
+   "persona": "P2",
+   "program_id": "5eec1af3-78cd-42a4-a880-c4bffda254fb",
+   "rank": 11
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P2",
+   "program_id": "6b4d7bbd-d8ec-4d16-9e59-f75bf8b5917e",
+   "rank": 12
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P2",
+   "program_id": "10414bbb-c6cf-4d62-82a1-f4468271700a",
+   "rank": 13
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P2",
+   "program_id": "47f457ec-8401-42d7-ba48-9e05b5811d5b",
+   "rank": 14
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P2",
+   "program_id": "71dc724f-f3ec-4277-aad1-df54c488b3ce",
+   "rank": 15
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P2",
+   "program_id": "011f9cc2-d01e-4759-931d-02e3473eb967",
+   "rank": 16
+  },
+  {
+   "label": "unknowable",
+   "persona": "P2",
+   "program_id": "a6d558ed-28b4-4f79-bb8a-10517a515652",
+   "rank": 17
+  },
+  {
+   "label": "correct",
+   "persona": "P2",
+   "program_id": "046e79e3-0495-4d6e-aa77-361c7de03ceb",
+   "rank": 18
+  },
+  {
+   "label": "closed",
+   "persona": "P2",
+   "program_id": "0be26b0d-c43c-4742-b1de-fdef7e0471e4",
+   "rank": 19
+  },
+  {
+   "label": "unknowable",
+   "persona": "P2",
+   "program_id": "2a73c8b0-5e65-42ce-83c6-c55b5b4db3ad",
+   "rank": 20
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P3",
+   "program_id": "34194340-050a-4d97-97da-5c0f70687d2d",
+   "rank": 1
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P3",
+   "program_id": "36e6d717-40ae-414f-b1f8-0d85cdaf1d5a",
+   "rank": 2
+  },
+  {
+   "label": "correct",
+   "persona": "P3",
+   "program_id": "6c82d3da-03c3-4e85-9a43-387ef75f9982",
+   "rank": 3
+  },
+  {
+   "label": "correct",
+   "persona": "P3",
+   "program_id": "e547de15-27c3-44d3-a762-2fc3eb4b98e4",
+   "rank": 4
+  },
+  {
+   "label": "wrong-income",
+   "persona": "P3",
+   "program_id": "a6d558ed-28b4-4f79-bb8a-10517a515652",
+   "rank": 5
+  },
+  {
+   "label": "correct",
+   "persona": "P3",
+   "program_id": "40c3e1dc-1a6e-4e2a-95ee-db40cabaaf7d",
+   "rank": 6
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P3",
+   "program_id": "65b57369-596f-4c23-8e78-d5bd837ec47a",
+   "rank": 7
+  },
+  {
+   "label": "wrong-income",
+   "persona": "P3",
+   "program_id": "f3e9f422-49c1-4091-92f7-f020fe1c492e",
+   "rank": 8
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P3",
+   "program_id": "96dfb698-d6fd-448b-a162-7621702c6f12",
+   "rank": 9
+  },
+  {
+   "label": "wrong-income",
+   "persona": "P3",
+   "program_id": "07ccfde9-7b7f-4085-a534-c0355b4e6e47",
+   "rank": 10
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P3",
+   "program_id": "1170a3a9-1fba-42ca-823b-cf217a2fd06c",
+   "rank": 11
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P3",
+   "program_id": "1cfd88dd-7040-463b-8e06-972bed8dd3cd",
+   "rank": 12
+  },
+  {
+   "label": "correct",
+   "persona": "P3",
+   "program_id": "388f5e56-0df2-4195-bdd3-0b0aea8c4e91",
+   "rank": 13
+  },
+  {
+   "label": "closed",
+   "persona": "P3",
+   "program_id": "770b2f40-1920-4e33-bab2-4fbf6877d1ec",
+   "rank": 14
+  },
+  {
+   "label": "wrong-age",
+   "persona": "P3",
+   "program_id": "bad6cdfe-932a-4824-9aeb-142ac429dfa9",
+   "rank": 15
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P3",
+   "program_id": "cfdfb2c6-d625-41da-926c-47c62e91fe83",
+   "rank": 16
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P3",
+   "program_id": "d13cceb2-ab9d-43a9-a0af-9fb3c6b70325",
+   "rank": 17
+  },
+  {
+   "label": "correct",
+   "persona": "P3",
+   "program_id": "6562dba7-cdb7-4509-a96b-e4978aee9c3d",
+   "rank": 18
+  },
+  {
+   "label": "closed",
+   "persona": "P3",
+   "program_id": "0562fb97-974c-4073-aba6-f844285ef887",
+   "rank": 19
+  },
+  {
+   "label": "unknowable",
+   "persona": "P3",
+   "program_id": "09a6378a-dbeb-4b82-bf4b-98aa92c0a7d1",
+   "rank": 20
+  },
+  {
+   "label": "unknowable",
+   "persona": "P4",
+   "program_id": "03163bd8-613b-422e-b32a-f364dfc8deca",
+   "rank": 1
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "1e8eec2b-778c-4c43-b6ee-a9a62c430f89",
+   "rank": 2
+  },
+  {
+   "label": "correct",
+   "persona": "P4",
+   "program_id": "252800af-7432-46e0-95be-0664da811171",
+   "rank": 3
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "49445500-64c9-4795-8c7a-1929f270dffc",
+   "rank": 4
+  },
+  {
+   "label": "closed",
+   "persona": "P4",
+   "program_id": "62df1caa-480b-4541-9808-4e51d8dd8b5a",
+   "rank": 5
+  },
+  {
+   "label": "correct",
+   "persona": "P4",
+   "program_id": "72f3f03a-a7de-4d17-bcdd-36d88af0118d",
+   "rank": 6
+  },
+  {
+   "label": "correct",
+   "persona": "P4",
+   "program_id": "7fe1309d-1051-4d22-9a35-558a8b2e6756",
+   "rank": 7
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P4",
+   "program_id": "b6527c00-40a5-4a1c-a44e-38de9d81795b",
+   "rank": 8
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P4",
+   "program_id": "e983346b-032d-4d07-b8d7-bf0ba18c4ef5",
+   "rank": 9
+  },
+  {
+   "label": "unknowable",
+   "persona": "P4",
+   "program_id": "edf66727-2101-4910-824f-ea1b5e148f22",
+   "rank": 10
+  },
+  {
+   "label": "unknowable",
+   "persona": "P4",
+   "program_id": "5eec1af3-78cd-42a4-a880-c4bffda254fb",
+   "rank": 11
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "6b4d7bbd-d8ec-4d16-9e59-f75bf8b5917e",
+   "rank": 12
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "10414bbb-c6cf-4d62-82a1-f4468271700a",
+   "rank": 13
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "47f457ec-8401-42d7-ba48-9e05b5811d5b",
+   "rank": 14
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "71dc724f-f3ec-4277-aad1-df54c488b3ce",
+   "rank": 15
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "011f9cc2-d01e-4759-931d-02e3473eb967",
+   "rank": 16
+  },
+  {
+   "label": "unknowable",
+   "persona": "P4",
+   "program_id": "a6d558ed-28b4-4f79-bb8a-10517a515652",
+   "rank": 17
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P4",
+   "program_id": "2a73c8b0-5e65-42ce-83c6-c55b5b4db3ad",
+   "rank": 18
+  },
+  {
+   "label": "closed",
+   "persona": "P4",
+   "program_id": "40333fa2-4c2c-4ceb-aec6-f38bce8628cd",
+   "rank": 19
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P4",
+   "program_id": "6f642beb-6a79-4b60-b4dd-19509e2135f3",
+   "rank": 20
+  },
+  {
+   "label": "unknowable",
+   "persona": "P5",
+   "program_id": "03163bd8-613b-422e-b32a-f364dfc8deca",
+   "rank": 1
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "1e8eec2b-778c-4c43-b6ee-a9a62c430f89",
+   "rank": 2
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "49445500-64c9-4795-8c7a-1929f270dffc",
+   "rank": 3
+  },
+  {
+   "label": "correct",
+   "persona": "P5",
+   "program_id": "72f3f03a-a7de-4d17-bcdd-36d88af0118d",
+   "rank": 4
+  },
+  {
+   "label": "correct",
+   "persona": "P5",
+   "program_id": "7fe1309d-1051-4d22-9a35-558a8b2e6756",
+   "rank": 5
+  },
+  {
+   "label": "unknowable",
+   "persona": "P5",
+   "program_id": "e983346b-032d-4d07-b8d7-bf0ba18c4ef5",
+   "rank": 6
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P5",
+   "program_id": "18209b5f-bfed-4d3c-8e2d-7d63fa85d943",
+   "rank": 7
+  },
+  {
+   "label": "correct",
+   "persona": "P5",
+   "program_id": "5eec1af3-78cd-42a4-a880-c4bffda254fb",
+   "rank": 8
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "10414bbb-c6cf-4d62-82a1-f4468271700a",
+   "rank": 9
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "47f457ec-8401-42d7-ba48-9e05b5811d5b",
+   "rank": 10
+  },
+  {
+   "label": "correct",
+   "persona": "P5",
+   "program_id": "252800af-7432-46e0-95be-0664da811171",
+   "rank": 11
+  },
+  {
+   "label": "closed",
+   "persona": "P5",
+   "program_id": "62df1caa-480b-4541-9808-4e51d8dd8b5a",
+   "rank": 12
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P5",
+   "program_id": "b6527c00-40a5-4a1c-a44e-38de9d81795b",
+   "rank": 13
+  },
+  {
+   "label": "unknowable",
+   "persona": "P5",
+   "program_id": "edf66727-2101-4910-824f-ea1b5e148f22",
+   "rank": 14
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "6b4d7bbd-d8ec-4d16-9e59-f75bf8b5917e",
+   "rank": 15
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "71dc724f-f3ec-4277-aad1-df54c488b3ce",
+   "rank": 16
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "32f4dee2-da80-4791-8ad5-304bf42ef1ac",
+   "rank": 17
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P5",
+   "program_id": "011f9cc2-d01e-4759-931d-02e3473eb967",
+   "rank": 18
+  },
+  {
+   "label": "closed",
+   "persona": "P5",
+   "program_id": "59b89356-0c7a-46f7-9056-25c160bfb314",
+   "rank": 19
+  },
+  {
+   "label": "closed",
+   "persona": "P5",
+   "program_id": "d2656e3d-953c-48b0-8987-7289a7e80664",
+   "rank": 20
+  },
+  {
+   "label": "closed",
+   "persona": "P6",
+   "program_id": "79ec2de7-b989-4c46-80ce-870da039a65b",
+   "rank": 1
+  },
+  {
+   "label": "correct",
+   "persona": "P6",
+   "program_id": "7279b8df-4aa3-46f1-a276-fb3a20b6af23",
+   "rank": 2
+  },
+  {
+   "label": "correct",
+   "persona": "P6",
+   "program_id": "a9864b8a-edd6-4639-abdc-bb093bbf50b1",
+   "rank": 3
+  },
+  {
+   "label": "correct",
+   "persona": "P6",
+   "program_id": "2f64d779-805e-4378-b466-93fa82754b25",
+   "rank": 4
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P6",
+   "program_id": "03163bd8-613b-422e-b32a-f364dfc8deca",
+   "rank": 5
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P6",
+   "program_id": "1e8eec2b-778c-4c43-b6ee-a9a62c430f89",
+   "rank": 6
+  },
+  {
+   "label": "correct",
+   "persona": "P6",
+   "program_id": "252800af-7432-46e0-95be-0664da811171",
+   "rank": 7
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P6",
+   "program_id": "49445500-64c9-4795-8c7a-1929f270dffc",
+   "rank": 8
+  },
+  {
+   "label": "closed",
+   "persona": "P6",
+   "program_id": "62df1caa-480b-4541-9808-4e51d8dd8b5a",
+   "rank": 9
+  },
+  {
+   "label": "correct",
+   "persona": "P6",
+   "program_id": "72f3f03a-a7de-4d17-bcdd-36d88af0118d",
+   "rank": 10
+  },
+  {
+   "label": "unknowable",
+   "persona": "P6",
+   "program_id": "edf66727-2101-4910-824f-ea1b5e148f22",
+   "rank": 11
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P6",
+   "program_id": "6b4d7bbd-d8ec-4d16-9e59-f75bf8b5917e",
+   "rank": 12
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P6",
+   "program_id": "10414bbb-c6cf-4d62-82a1-f4468271700a",
+   "rank": 13
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P6",
+   "program_id": "47f457ec-8401-42d7-ba48-9e05b5811d5b",
+   "rank": 14
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P6",
+   "program_id": "71dc724f-f3ec-4277-aad1-df54c488b3ce",
+   "rank": 15
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P6",
+   "program_id": "7fe1309d-1051-4d22-9a35-558a8b2e6756",
+   "rank": 16
+  },
+  {
+   "label": "correct",
+   "persona": "P6",
+   "program_id": "b6527c00-40a5-4a1c-a44e-38de9d81795b",
+   "rank": 17
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P6",
+   "program_id": "e983346b-032d-4d07-b8d7-bf0ba18c4ef5",
+   "rank": 18
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P6",
+   "program_id": "5eec1af3-78cd-42a4-a880-c4bffda254fb",
+   "rank": 19
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P6",
+   "program_id": "01e3a99c-11a5-4439-a3aa-71d3a12f907e",
+   "rank": 20
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P7",
+   "program_id": "480c6f75-3b3e-4a74-ae9d-f7096b06a2b9",
+   "rank": 1
+  },
+  {
+   "label": "unknowable",
+   "persona": "P7",
+   "program_id": "26d0f51e-21b4-4abb-b22c-da5a0752003f",
+   "rank": 2
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P7",
+   "program_id": "34194340-050a-4d97-97da-5c0f70687d2d",
+   "rank": 3
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P7",
+   "program_id": "36e6d717-40ae-414f-b1f8-0d85cdaf1d5a",
+   "rank": 4
+  },
+  {
+   "label": "correct",
+   "persona": "P7",
+   "program_id": "6c82d3da-03c3-4e85-9a43-387ef75f9982",
+   "rank": 5
+  },
+  {
+   "label": "correct",
+   "persona": "P7",
+   "program_id": "e547de15-27c3-44d3-a762-2fc3eb4b98e4",
+   "rank": 6
+  },
+  {
+   "label": "closed",
+   "persona": "P7",
+   "program_id": "42081548-5c42-4968-ac48-9039f76ec858",
+   "rank": 7
+  },
+  {
+   "label": "correct",
+   "persona": "P7",
+   "program_id": "7d4167f0-d9b5-4ac2-a825-de08bf86cff2",
+   "rank": 8
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P7",
+   "program_id": "da1f0d68-c924-491e-871e-f68aef249253",
+   "rank": 9
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P7",
+   "program_id": "f76fe053-eac3-485d-a09c-8b9d24292b81",
+   "rank": 10
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P7",
+   "program_id": "fbb40a73-829c-4bec-ba14-d357e88bd2a6",
+   "rank": 11
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P7",
+   "program_id": "8cff27e2-2205-4669-899e-97c060a6fec2",
+   "rank": 12
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P7",
+   "program_id": "011f9cc2-d01e-4759-931d-02e3473eb967",
+   "rank": 13
+  },
+  {
+   "label": "closed",
+   "persona": "P7",
+   "program_id": "05f5d915-a22b-4e39-ba94-fb1b970499d0",
+   "rank": 14
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P7",
+   "program_id": "1170a3a9-1fba-42ca-823b-cf217a2fd06c",
+   "rank": 15
+  },
+  {
+   "label": "closed",
+   "persona": "P7",
+   "program_id": "7fe56804-40e6-4a34-838c-703189a6a445",
+   "rank": 16
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P7",
+   "program_id": "998eb706-ae2e-4100-844b-cf3157e623c8",
+   "rank": 17
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P7",
+   "program_id": "cfdfb2c6-d625-41da-926c-47c62e91fe83",
+   "rank": 18
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P7",
+   "program_id": "d13cceb2-ab9d-43a9-a0af-9fb3c6b70325",
+   "rank": 19
+  },
+  {
+   "label": "correct",
+   "persona": "P7",
+   "program_id": "6562dba7-cdb7-4509-a96b-e4978aee9c3d",
+   "rank": 20
+  },
+  {
+   "label": "unknowable",
+   "persona": "P8",
+   "program_id": "03163bd8-613b-422e-b32a-f364dfc8deca",
+   "rank": 1
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "1e8eec2b-778c-4c43-b6ee-a9a62c430f89",
+   "rank": 2
+  },
+  {
+   "label": "correct",
+   "persona": "P8",
+   "program_id": "252800af-7432-46e0-95be-0664da811171",
+   "rank": 3
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "49445500-64c9-4795-8c7a-1929f270dffc",
+   "rank": 4
+  },
+  {
+   "label": "closed",
+   "persona": "P8",
+   "program_id": "62df1caa-480b-4541-9808-4e51d8dd8b5a",
+   "rank": 5
+  },
+  {
+   "label": "correct",
+   "persona": "P8",
+   "program_id": "72f3f03a-a7de-4d17-bcdd-36d88af0118d",
+   "rank": 6
+  },
+  {
+   "label": "unknowable",
+   "persona": "P8",
+   "program_id": "f4715b11-12fa-4af1-9133-93f00ad8d2dc",
+   "rank": 7
+  },
+  {
+   "label": "correct",
+   "persona": "P8",
+   "program_id": "7fe1309d-1051-4d22-9a35-558a8b2e6756",
+   "rank": 8
+  },
+  {
+   "label": "unknowable",
+   "persona": "P8",
+   "program_id": "b6527c00-40a5-4a1c-a44e-38de9d81795b",
+   "rank": 9
+  },
+  {
+   "label": "wrong-status",
+   "persona": "P8",
+   "program_id": "e983346b-032d-4d07-b8d7-bf0ba18c4ef5",
+   "rank": 10
+  },
+  {
+   "label": "unknowable",
+   "persona": "P8",
+   "program_id": "edf66727-2101-4910-824f-ea1b5e148f22",
+   "rank": 11
+  },
+  {
+   "label": "correct",
+   "persona": "P8",
+   "program_id": "5eec1af3-78cd-42a4-a880-c4bffda254fb",
+   "rank": 12
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "6b4d7bbd-d8ec-4d16-9e59-f75bf8b5917e",
+   "rank": 13
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "10414bbb-c6cf-4d62-82a1-f4468271700a",
+   "rank": 14
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "47f457ec-8401-42d7-ba48-9e05b5811d5b",
+   "rank": 15
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "71dc724f-f3ec-4277-aad1-df54c488b3ce",
+   "rank": 16
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "32f4dee2-da80-4791-8ad5-304bf42ef1ac",
+   "rank": 17
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P8",
+   "program_id": "2a83333d-ad6c-4130-aa62-b02194a24501",
+   "rank": 18
+  },
+  {
+   "label": "other:wrong-group",
+   "persona": "P8",
+   "program_id": "a0771571-adde-4600-ac26-871536be3f9f",
+   "rank": 19
+  },
+  {
+   "label": "other:not-individual",
+   "persona": "P8",
+   "program_id": "011f9cc2-d01e-4759-931d-02e3473eb967",
+   "rank": 20
+  }
+ ]
+}

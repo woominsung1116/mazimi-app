@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "content_hash": "cd7f55bd71afc71ff4db3452655714c7c622daa521b6a4ff2ad1707d9af4169c",
+  "page_count": 1,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.0864,
+        "y": 0.241,
+        "w": 0.2389,
+        "h": 0.0335
+      },
+      "type": "text",
+      "label": "학과",
+      "mapping": "major",
+      "required": false
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.3303,
+        "y": 0.241,
+        "w": 0.1387,
+        "h": 0.0335
+      },
+      "type": "text",
+      "label": "학년",
+      "mapping": "grade",
+      "required": false
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.474,
+        "y": 0.241,
+        "w": 0.2272,
+        "h": 0.0335
+      },
+      "type": "text",
+      "label": "학번",
+      "mapping": "student_id",
+      "required": false
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.7062,
+        "y": 0.241,
+        "w": 0.2076,
+        "h": 0.0335
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.3303,
+        "y": 0.278,
+        "w": 0.2515,
+        "h": 0.0335
+      },
+      "type": "text",
+      "label": "자택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.7062,
+        "y": 0.278,
+        "w": 0.2076,
+        "h": 0.0335
+      },
+      "type": "text",
+      "label": "휴대폰",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.2444,
+        "y": 0.3151,
+        "w": 0.6694,
+        "h": 0.0335
+      },
+      "type": "text",
+      "label": "신청사유",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.3232,
+        "y": 0.357,
+        "w": 0.2586,
+        "h": 0.0257
+      },
+      "type": "text",
+      "label": "관계인 학과",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.7843,
+        "y": 0.3694,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "관계인 가족장학 기 수혜 여부 체크: 수혜",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.3232,
+        "y": 0.3827,
+        "w": 0.2586,
+        "h": 0.0257
+      },
+      "type": "text",
+      "label": "관계인 학번",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.7843,
+        "y": 0.3922,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "관계인 가족장학 기 수혜 여부 체크: 미수혜",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.3232,
+        "y": 0.4084,
+        "w": 0.2586,
+        "h": 0.0257
+      },
+      "type": "text",
+      "label": "관계인 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.3232,
+        "y": 0.434,
+        "w": 0.2586,
+        "h": 0.0257
+      },
+      "type": "text",
+      "label": "관계인 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.7843,
+        "y": 0.4398,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "2026-2학기 동시 신청 여부 체크: 예",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.7843,
+        "y": 0.4626,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "2026-2학기 동시 신청 여부 체크: 아니오",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.5657,
+        "y": 0.6552,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집 및 이용에 동의하십니까?: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.7254,
+        "y": 0.6552,
+        "w": 0.0167,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집 및 이용에 동의하십니까?: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.4801,
+        "y": 0.8174,
+        "w": 0.0295,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f19",
+      "page": 0,
+      "rect": {
+        "x": 0.5347,
+        "y": 0.8174,
+        "w": 0.0402,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f20",
+      "page": 0,
+      "rect": {
+        "x": 0.8792,
+        "y": 0.8667,
+        "w": 0.047,
+        "h": 0.0332
+      },
+      "type": "stamp",
+      "label": "신청인 (인)",
+      "mapping": "stamp",
+      "required": true
+    },
+    {
+      "id": "p1-f21",
+      "page": 0,
+      "rect": {
+        "x": 0.6775,
+        "y": 0.8705,
+        "w": 0.2,
+        "h": 0.0257
+      },
+      "type": "text",
+      "label": "신청인",
+      "mapping": "name",
+      "required": true
+    }
+  ]
+}

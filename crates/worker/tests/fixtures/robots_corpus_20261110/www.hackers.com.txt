@@ -1,0 +1,10 @@
+ User-agent: *
+
+ Sitemap: https://www.hackers.com/hackersdotcom_pc.xml
+
+ Disallow: /_core/
+ Disallow: /_install/
+ Disallow: /_system_/
+ Disallow: /_tmp/
+ Disallow: /_var/
+ Disallow: /ADmin/

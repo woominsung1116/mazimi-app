@@ -1,0 +1,590 @@
+[
+  {
+    "id": "kit",
+    "name": "경남정보대학교",
+    "official_url": "https://www.kit.ac.kr",
+    "robots_url": "https://www.kit.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "41b47a464bd578b68b3df417eb5cb31a4b2ed61bd362689e68220dad4b25d5f8",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "ks",
+    "name": "경성대학교",
+    "official_url": "https://www.ks.ac.kr",
+    "robots_url": "https://www.ks.ac.kr/robots.txt",
+    "robots_http": 302,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.ks.ac.kr/kor",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kosin",
+    "name": "고신대학교",
+    "official_url": "https://www.kosin.ac.kr",
+    "robots_url": "https://www.kosin.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "09c337956a2b1710f28dee2c7cdc953e5a41e784abb4bbfff0895a5a569022ab",
+    "robots_root_allowed": false,
+    "homepage_http": 301,
+    "homepage_final": "https://www.kosin.ac.kr/kr",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "pknu",
+    "name": "국립부경대학교",
+    "official_url": "https://www.pknu.ac.kr",
+    "robots_url": "https://www.pknu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "7a7d2634f820aa48a24eacc8879b7897bde9cbb29ce770920b2232b584d6d925",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kmou",
+    "name": "국립한국해양대학교",
+    "official_url": "https://www.kmou.ac.kr",
+    "robots_url": "https://www.kmou.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "fa10d3bd5efb799e1eb11ff27b0c45cfa10813c4895d582e0467fa661d822423",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "daedong",
+    "name": "대동대학교",
+    "official_url": "https://www.daedong.ac.kr",
+    "robots_url": "https://www.daedong.ac.kr/robots.txt",
+    "robots_http": 302,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.daedong.ac.kr/www",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "tu",
+    "name": "동명대학교",
+    "official_url": "https://www.tu.ac.kr",
+    "robots_url": "https://www.tu.ac.kr/robots.txt",
+    "robots_http": 404,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.tu.ac.kr/index.do",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "dongseo",
+    "name": "동서대학교",
+    "official_url": "https://www.dongseo.ac.kr",
+    "robots_url": "https://www.dongseo.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "4dc122f023d4d9c2148447917df35a9e4b82c04383f2e252a9baba30e4a834e4",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "donga",
+    "name": "동아대학교",
+    "official_url": "https://www.donga.ac.kr",
+    "robots_url": "https://www.donga.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "7a0b3c0432ddf6c85fdf8ea7f14db829c23df37cbd39a08771e2ec3bf8028a93",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "dit",
+    "name": "동의과학대학교",
+    "official_url": "https://www.dit.ac.kr",
+    "robots_url": "https://www.dit.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "3b4326e68b986e2c3342bc96aa692e20211d94f1876187e1154be90a714a5a99",
+    "robots_root_allowed": true,
+    "homepage_http": 301,
+    "homepage_final": "https://www.dit.ac.kr/kr",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "deu",
+    "name": "동의대학교",
+    "official_url": "https://www.deu.ac.kr",
+    "error": "URLError"
+  },
+  {
+    "id": "cup",
+    "name": "부산가톨릭대학교",
+    "official_url": "https://www.cup.ac.kr",
+    "robots_url": "https://www.cup.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "eb7dab95df555e877adabd227439c351fe6a5fc1b0b23992386987e4fa0c4070",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.cup.ac.kr/main.do",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "bsks",
+    "name": "부산경상대학교",
+    "official_url": "https://www.bsks.ac.kr",
+    "robots_url": "https://www.bsks.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "f2a338ec708a3c98ba12403905f0e1df4c6bfbe6d3e648b01e8f21e2f57266a2",
+    "robots_root_allowed": false,
+    "homepage_http": 302,
+    "homepage_final": "https://www.bsks.ac.kr/intro_new/index.html",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "bist",
+    "name": "부산과학기술대학교",
+    "official_url": "https://www.bist.ac.kr",
+    "robots_url": "https://www.bist.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "52508992ca39a8b120b1d7573e3e1802800e321f0e4b5c27628c9c056872a7be",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "bnue",
+    "name": "부산교육대학교",
+    "official_url": "https://www.bnue.ac.kr",
+    "robots_url": "https://www.bnue.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "51ed46e2d50f28a694907a69ef633a49900d59e927c28d4ccc62448365aa74cc",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.bnue.ac.kr/intro;jsessionid=748526528A8AC0E754F99377A8F5F18F.tomcat1",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "pusan",
+    "name": "부산대학교",
+    "official_url": "https://www.pusan.ac.kr",
+    "robots_url": "https://www.pusan.ac.kr/robots.txt",
+    "robots_http": 404,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.pusan.ac.kr/index.jsp",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "bdu",
+    "name": "부산디지털대학교",
+    "official_url": "https://www.bdu.ac.kr",
+    "robots_url": "https://www.bdu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "44f3f8eafdf064cf69acb05f23ee4dfc9ab5b3d67d81c64246bc29f7e438789a",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "bhu",
+    "name": "부산보건대학교",
+    "official_url": "https://www.bhu.ac.kr",
+    "robots_url": "https://www.bhu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "1fe46dd3012b93f8eb7579660cbb960434b9094c0f6c502a8549d8a754b7fb02",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.bhu.ac.kr/intro/default.aspx",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "bwc",
+    "name": "부산여자대학교",
+    "official_url": "https://www.bwc.ac.kr",
+    "robots_url": "https://www.bwc.ac.kr/robots.txt",
+    "robots_http": 404,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.bwc.ac.kr/sch/index.asp",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "busanarts",
+    "name": "부산예술대학교",
+    "official_url": "https://www.busanarts.ac.kr",
+    "robots_url": "https://www.busanarts.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "218e943d329d7e42e804ddb0b9601defce2f5adc84c537550d21dbff1e0185e2",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "bufs",
+    "name": "부산외국어대학교",
+    "official_url": "https://www.bufs.ac.kr",
+    "robots_url": "https://www.bufs.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "eeafa7f809d253e02d3b8405dc2098e22b5a66c18149c65436f36c6e78f93d55",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "silla",
+    "name": "신라대학교",
+    "official_url": "https://www.silla.ac.kr",
+    "robots_url": "https://www.silla.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "959a30d9df72059f0b34f0273546fcbb30c889a0ba06697f716d246560d347a0",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "ysu-haeundae",
+    "name": "영산대학교 해운대캠퍼스",
+    "official_url": "https://www.ysu.ac.kr",
+    "robots_url": "https://www.ysu.ac.kr/robots.txt",
+    "robots_http": 302,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.ysu.ac.kr/kor",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "knou-busan",
+    "name": "한국방송통신대학교 부산지역대학",
+    "official_url": "https://wbusan.knou.ac.kr",
+    "robots_url": "https://wbusan.knou.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "eaeaa8d3511d1622227d89707d995b8b1f0902f5b86fdbe58882d1cef260d4d7",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kopo-dongbusan",
+    "name": "한국폴리텍대학 동부산캠퍼스",
+    "official_url": "https://www.kopo.ac.kr/dongbusan/",
+    "robots_url": "https://www.kopo.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "fe86c8c159bbdeabb721d5e43eac5b1094873eceb36eb4db8a6c18a6fd8f7109",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.kopo.ac.kr/dongbusan/./index.do",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kopo-busan",
+    "name": "한국폴리텍대학 부산캠퍼스",
+    "official_url": "https://www.kopo.ac.kr/busan/",
+    "robots_url": "https://www.kopo.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "fe86c8c159bbdeabb721d5e43eac5b1094873eceb36eb4db8a6c18a6fd8f7109",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.kopo.ac.kr/busan/./index.do",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "hscu",
+    "name": "화신사이버대학교",
+    "official_url": "https://www.hscu.ac.kr",
+    "robots_url": "https://www.hscu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "fd12cc243772b8a0c358d45e51c20ed33e1f0fc406aea773e7f1f2444d425acc",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "knu",
+    "name": "경북대학교",
+    "official_url": "https://www.knu.ac.kr",
+    "robots_url": "https://www.knu.ac.kr/robots.txt",
+    "robots_http": 404,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 301,
+    "homepage_final": "https://www.knu.ac.kr/wbbs",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kmu",
+    "name": "계명대학교",
+    "official_url": "https://www.kmu.ac.kr",
+    "robots_url": "https://www.kmu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "45042b27bcc87d81bfb1a9a6eca2a1ff8b25b041f2a25739bdc1ac1c08e0a6df",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [
+      {
+        "url": "https://www.kmu.ac.kr/uni/main/page.jsp?mnu_uid=3361&amp;",
+        "label": "저작권정책"
+      },
+      {
+        "url": "https://www.kmu.ac.kr/uni/main/page.jsp?mnu_uid=3364&amp;",
+        "label": "RSS서비스"
+      },
+      {
+        "url": "https://www.kmu.ac.kr/uni/main/page.jsp?mnu_uid=3361&amp;",
+        "label": "저작권정책"
+      },
+      {
+        "url": "https://www.kmu.ac.kr/uni/main/page.jsp?mnu_uid=3364&amp;",
+        "label": "RSS서비스"
+      },
+      {
+        "url": "https://www.kmu.ac.kr/page.jsp?mnu_uid=3361",
+        "label": "저작권보호정책"
+      },
+      {
+        "url": "https://www.kmu.ac.kr/page.jsp?mnu_uid=3364",
+        "label": "RSS 서비스"
+      }
+    ],
+    "policies": [
+      {
+        "url": "https://www.kmu.ac.kr/uni/main/page.jsp?mnu_uid=3361&amp;",
+        "status": 200,
+        "hash": "4486aaaf73d632ad11287864c3f651e12c8faaca5b9f5c9fe1a73fb0c5a79078",
+        "signals": [
+          "학교 홈페이지에 게재된 자료들은 저작권법에 의하여 보호받는 저작물로 그 저작권은 계명대학교에 있습니다. 따라서 계명대학교 홈페이지 자료에 대한 무단 복제 및 배포를 원칙적으로 금합니다. 본 홈페이지 자료에 대해 영리를 목적으로 하지 아니하고 개인적으로 이용하거나 가정 및 이에 준하는 범위안에서는 복제가 가능합니다. 다만 회사를 포함한 기타의 단체에서 내부적으로 이용하기 위해 복제하는 경우에는 그 회사",
+          "가 영리회사가 아니더라도 복제가 허용되지 않습니다. 우리대학 홈페이지 자료들을 무단 복제, 배포하는 경우에는 저작권법 제97조의 5 권리의 침해죄에 해당하여 5년이하의 징역 또는 5천만원 이하의 벌금에 처해질 수 있습니다. 자료 담당자 연락처 최종수정일 2022-05-23 --> 무엇이 궁금 하신가요? 검색입력창 검색 슬로건 미술대학 학"
+        ]
+      },
+      {
+        "url": "https://www.kmu.ac.kr/uni/main/page.jsp?mnu_uid=3364&amp;",
+        "status": 200,
+        "hash": "e0dd16fc23e5e73ea99955e419f7205ed2f19810aefdad1c33bcef6d193f0e5a",
+        "signals": []
+      }
+    ]
+  },
+  {
+    "id": "kmcu",
+    "name": "계명문화대학교",
+    "official_url": "https://www.kmcu.ac.kr",
+    "robots_url": "https://www.kmcu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "860cffe86b303eaf3802e4929fd199005ffc4b59aa2f36638d3946a6e1d97dfa",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "dcu-daegu",
+    "name": "대구가톨릭대학교 루가·유스티노캠퍼스",
+    "official_url": "https://www.cu.ac.kr",
+    "robots_url": "https://www.cu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "4a61d1fcd8396d80fafe22ec9e80a1a04fda0031db2c52f2164b9bf6aed4d80d",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.cu.ac.kr/index.php",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "dgist",
+    "name": "대구경북과학기술원",
+    "official_url": "https://www.dgist.ac.kr",
+    "error": "URLError"
+  },
+  {
+    "id": "ttc",
+    "name": "대구공업대학교",
+    "official_url": "https://www.ttc.ac.kr",
+    "error": "URLError"
+  },
+  {
+    "id": "tsu",
+    "name": "대구과학대학교",
+    "official_url": "https://www.tsu.ac.kr",
+    "robots_url": "https://www.tsu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "7c06ba64c963ef120e6eb7897832f59cc7ebfc0904d50a99407b964acf3ea6ff",
+    "robots_root_allowed": false,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "dnue",
+    "name": "대구교육대학교",
+    "official_url": "https://www.dnue.ac.kr",
+    "robots_url": "https://www.dnue.ac.kr/robots.txt",
+    "robots_http": 302,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.dnue.ac.kr/kor;jsessionid=A62C22F72D5CE9EF70BAB0285F6B2548.tomcat2",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "daegu-daegu",
+    "name": "대구대학교 대구캠퍼스",
+    "official_url": "https://www.daegu.ac.kr",
+    "robots_url": "https://www.daegu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "3de304e88fc9e83e43a367b41a07ced21a1f31d1a07bffcf436b67238f24287c",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.daegu.ac.kr/main",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "dhc",
+    "name": "대구보건대학교",
+    "official_url": "https://www.dhc.ac.kr",
+    "robots_url": "https://www.dhc.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "3b5bdedbf877110c9e0403f983178c0660fefc496dfbf0688a5d1a6ab18dd088",
+    "robots_root_allowed": false,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "sc",
+    "name": "수성대학교",
+    "official_url": "https://www.sc.ac.kr",
+    "robots_url": "https://www.sc.ac.kr/robots.txt",
+    "robots_http": 404,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "yu-daegu",
+    "name": "영남대학교 대구캠퍼스",
+    "official_url": "https://www.yu.ac.kr",
+    "robots_url": "https://www.yu.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "b7bd8e233d10436a6c7daec8c6bfa8634cb974e95505cc0af6a447333d381060",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.yu.ac.kr/english-test/index.do",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "ync",
+    "name": "영남이공대학교",
+    "official_url": "https://www.ync.ac.kr",
+    "robots_url": "https://www.ync.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "3fda1727a518b6cafb361f0979646300836738b7e34936964001e3a029d98952",
+    "robots_root_allowed": false,
+    "homepage_http": 302,
+    "homepage_final": "https://www.ync.ac.kr/kor",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "ycc",
+    "name": "영진사이버대학교",
+    "official_url": "https://www.ycc.ac.kr",
+    "robots_url": "https://www.ycc.ac.kr/robots.txt",
+    "robots_http": 302,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homepage_http": 302,
+    "homepage_final": "https://www.ycc.ac.kr/kor",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "yju",
+    "name": "영진전문대학교",
+    "official_url": "https://www.yju.ac.kr",
+    "robots_url": "https://www.yju.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+    "robots_root_allowed": false,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "knou-daegu",
+    "name": "한국방송통신대학교 대구경북지역대학",
+    "official_url": "https://wdaegu.knou.ac.kr",
+    "robots_url": "https://wdaegu.knou.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "eaeaa8d3511d1622227d89707d995b8b1f0902f5b86fdbe58882d1cef260d4d7",
+    "robots_root_allowed": true,
+    "homepage_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kopo-namdaegu",
+    "name": "한국폴리텍대학 남대구캠퍼스",
+    "official_url": "https://www.kopo.ac.kr/namdaegu/",
+    "robots_url": "https://www.kopo.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "fe86c8c159bbdeabb721d5e43eac5b1094873eceb36eb4db8a6c18a6fd8f7109",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.kopo.ac.kr/namdaegu/./index.do",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kopo-daegu",
+    "name": "한국폴리텍대학 대구캠퍼스",
+    "official_url": "https://www.kopo.ac.kr/daegu/",
+    "robots_url": "https://www.kopo.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "fe86c8c159bbdeabb721d5e43eac5b1094873eceb36eb4db8a6c18a6fd8f7109",
+    "robots_root_allowed": true,
+    "homepage_http": 302,
+    "homepage_final": "https://www.kopo.ac.kr/daegu/./index.do",
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "id": "kopo-ict",
+    "name": "한국폴리텍대학 영남융합기술캠퍼스",
+    "official_url": "https://www.kopo.ac.kr/ict/",
+    "robots_url": "https://www.kopo.ac.kr/robots.txt",
+    "robots_http": 200,
+    "robots_hash": "fe86c8c159bbdeabb721d5e43eac5b1094873eceb36eb4db8a6c18a6fd8f7109",
+    "robots_root_allowed": true,
+    "homepage_http": 404,
+    "policy_links": [],
+    "policies": []
+  }
+]

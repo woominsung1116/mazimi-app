@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "labeler": "draft-by-agent, needs human review",
+    "created_at": "2026-10-12",
+    "status": "draft",
+    "note": "Labels were written by the same agent session that wrote the retriever and the set was run during development, so it is a regression gate, not a measurement. A human-verified set decides release. `expect` lists passage ids that answer the question (any one in the top 3 is a hit); `not_found: true` means the stored text does not answer it. Program text is copied verbatim from the cited seed migration or test fixture."
+  },
+  "programs": {
+    "busan_rent": {
+      "source": "infra/migrations/20260320000002_seed.sql #1",
+      "fields": {
+        "program_type": "policy", "source_type": "manual", "title": "부산 청년 월세 지원",
+        "summary": "부산 거주 만 19~34세 청년에게 월 최대 20만원 월세를 지원합니다.",
+        "official_url": "https://www.busan.go.kr/youth/rent", "benefit_amount_monthly": 200000,
+        "min_age": 19, "max_age": 34, "regions": ["busan"],
+        "application_start_at": "2026-02-28T15:00:00Z", "application_end_at": "2026-04-30T14:59:59Z",
+        "deadline_at": "2026-04-30T14:59:59Z"
+      }
+    },
+    "busan_talent": {
+      "source": "infra/migrations/20260320000002_seed.sql #10",
+      "fields": {
+        "program_type": "scholarship", "source_type": "manual", "title": "부산 인재육성 장학금",
+        "summary": "부산 거주 대학생에게 학기당 최대 200만원 장학금을 지원합니다. 성적 및 소득 기준 충족 필요.",
+        "official_url": "https://www.bile.or.kr/scholarship", "benefit_amount_semester": 2000000,
+        "min_age": 18, "max_age": 30, "regions": ["busan"],
+        "application_start_at": "2026-02-28T15:00:00Z", "application_end_at": "2026-04-10T14:59:59Z",
+        "deadline_at": "2026-04-10T14:59:59Z"
+      }
+    },
+    "pnu_google_ai": {
+      "source": "infra/migrations/20260923000006_verified_corporate_and_campus_benefits.sql pnu_google_ai",
+      "fields": {
+        "program_type": "campus_benefit", "source_type": "university_official", "title": "부산대 Google AI Pro for Education",
+        "summary": "부산대학교는 학교 Google 계정을 통해 Gemini·NotebookLM 등 교육용 AI와 Google Workspace for Education Plus를 제공합니다. 현재 공지상 2027년 6월 23일까지 제공 예정이며 휴학생·졸업생은 제외됩니다.",
+        "application_method": "재학생은 기존 학교 Gmail 계정으로 로그인하여 이용합니다. 계정이 없으면 학교 웹메일 서비스에서 발급합니다.",
+        "normalized_payload": {"conditions": "부산대 학부·대학원 재학생, 등록된 수료 후 연구생 등. 휴학생·졸업생 제외. 학교 @pusan.ac.kr 계정 필요.", "enrollment_statuses": ["enrolled", "재학", "research_student", "수료후연구생"]},
+        "application_end_at": "2027-06-23T14:59:59Z"
+      }
+    },
+    "pnu_microsoft365": {
+      "source": "infra/migrations/20260923000006_verified_corporate_and_campus_benefits.sql pnu_microsoft365",
+      "fields": {
+        "program_type": "campus_benefit", "source_type": "university_official", "title": "부산대 Microsoft 365",
+        "summary": "부산대학교 재적생은 학교 계정을 통해 Microsoft 365를 이용할 수 있습니다. 현재 공식 안내상 OneDrive는 5GB이며, 졸업·일반 수료·제적자는 대상에서 제외됩니다.",
+        "application_method": "학생지원시스템 로그인 → Quick Menu → Microsoft365에서 가입·이용합니다.",
+        "normalized_payload": {"conditions": "부산대 재적생(재학·휴학·수료 후 연구생 등). @pusan.ac.kr 계정 필요. @pnu.kr·@pnu.edu 계정 사용 불가.", "enrollment_statuses": ["enrolled", "재학", "on_leave", "휴학", "research_student", "수료후연구생"]}
+      }
+    },
+    "pnu_sanjini_ai": {
+      "source": "infra/migrations/20260923000006_verified_corporate_and_campus_benefits.sql pnu_sanjini_ai",
+      "fields": {
+        "program_type": "campus_benefit", "source_type": "university_official", "title": "부산대 산지니 AI",
+        "summary": "부산대 교직원과 재학·휴학 중인 학생은 산지니 AI에서 여러 생성형 AI 모델과 교내 안내 기능을 이용할 수 있습니다. 모델 구성과 제공 기능은 학교 운영 정책에 따라 달라질 수 있습니다.",
+        "application_method": "공식 안내의 산지니 AI 이용 매뉴얼에 따라 학교 계정으로 접속합니다.",
+        "normalized_payload": {"conditions": "부산대학교 재학·휴학 중인 학생. 학교 계정 로그인 필요.", "enrollment_statuses": ["enrolled", "재학", "on_leave", "휴학"]}
+      }
+    },
+    "tower": {
+      "source": "infra/migrations/20260923000015_expand_student_benefits.sql tower",
+      "fields": {
+        "program_type": "corporate_benefit", "source_type": "corporate_official", "title": "Tower Pro 학생 12개월 무료",
+        "summary": "공인 대학 재학생은 학생 인증 후 Tower Pro를 12개월 무료로 이용할 수 있습니다. 학생 자격을 다시 확인하면 연장할 수 있으며 결제 정보는 필요하지 않습니다.",
+        "application_method": "GitHub 학생 계정으로 로그인하거나 학교 이메일을 입력한 뒤 받은 확인 안내에 따라 라이선스를 신청합니다.",
+        "normalized_payload": {"conditions": "공인 대학 재학. 학교 이메일 또는 GitHub 학생 인증. 학교 이메일에 따라 날짜가 포함된 학생증 추가 제출", "enrollment_statuses": ["enrolled", "재학"]}
+      }
+    },
+    "framer": {
+      "source": "infra/migrations/20260923000015_expand_student_benefits.sql framer",
+      "fields": {
+        "program_type": "corporate_benefit", "source_type": "corporate_official", "title": "Framer 학생 포트폴리오 Basic 무료",
+        "summary": "학생은 개인 포트폴리오·수업 프로젝트·이력서 사이트용 Basic 플랜 할인 코드를 신청할 수 있습니다. 재학 중 재신청할 수 있으며 공식 FAQ상 코드 적용은 신규 고객 대상입니다.",
+        "application_method": "공식 학생 페이지에서 학교·졸업예정일과 이름·학교 로고가 보이는 학생증을 제출하고 승인된 코드를 적용합니다.",
+        "normalized_payload": {"conditions": "공인 대면·온라인 교육과정 재학, 학교 이메일과 학생증, 개인 학생 사이트 용도, 코드 공유·재판매 금지", "enrollment_statuses": ["enrolled", "재학"]}
+      }
+    },
+    "onepassword": {
+      "source": "infra/migrations/20260923000006_verified_corporate_and_campus_benefits.sql 1password",
+      "fields": {
+        "program_type": "corporate_benefit", "source_type": "corporate_official", "title": "1Password 학생 개인 플랜 1년",
+        "summary": "GitHub 학생 자격 인증을 완료한 고등교육기관 학생은 1Password 개인 플랜 1년 혜택을 이용할 수 있습니다. 1회성 혜택이며 가족 플랜은 대상이 아닙니다.",
+        "application_method": "공식 학생 혜택 페이지에서 GitHub 학생 인증 계정으로 이용 자격을 확인합니다.",
+        "normalized_payload": {"conditions": "GitHub 학생 자격 인증, 고등교육기관 학생, 개인 플랜·1회 한정"}
+      }
+    },
+    "obsidian": {
+      "source": "infra/migrations/20260923000006_verified_corporate_and_campus_benefits.sql obsidian",
+      "fields": {
+        "program_type": "corporate_benefit", "source_type": "corporate_official", "title": "Obsidian 교육 할인",
+        "summary": "인증 대상 학생과 교직원은 Obsidian Sync 및 Publish 교육 할인을 신청할 수 있습니다. 할인율은 40%이며 상업용 라이선스 할인에는 적용되지 않습니다.",
+        "application_method": "공식 교육 할인 안내에 따라 학교 소속을 확인합니다.",
+        "normalized_payload": {"conditions": "학생 또는 교직원 인증, Sync·Publish 대상"}
+      }
+    },
+    "youth_rent": {
+      "source": "crates/api/tests/grounded_cases/mod.rs collected_program (test fixture, not a seed)",
+      "fields": {
+        "program_type": "policy", "source_type": "youth_center", "title": "근거 인용 검증 공고",
+        "summary": "부산광역시 거주 만 19세~34세 청년 월세 지원",
+        "application_method": "온라인 신청 (신청기간: 2026.10.01 ~ 2027.12.31)",
+        "submission_documents": "신분증, 주민등록 등본",
+        "raw_payload": {"sprtTrgtCn": "소득분위 8분위 이하, 미취업 청년"}
+      }
+    }
+  },
+  "cases": [
+    {"program": "busan_rent", "question": "얼마 받을 수 있어?", "expect": ["summary.0", "record.amount"]},
+    {"program": "busan_rent", "question": "언제까지 신청해야 돼?", "expect": ["record.window"]},
+    {"program": "busan_rent", "question": "부산 살아야 돼?", "expect": ["summary.0"]},
+    {"program": "busan_rent", "question": "나이 제한 있어?", "expect": ["summary.0"]},
+    {"program": "busan_rent", "question": "서류 뭐 필요해?", "not_found": true},
+    {"program": "busan_rent", "question": "외국인도 신청 가능해?", "not_found": true},
+
+    {"program": "busan_talent", "question": "성적 기준 있어?", "expect": ["summary.1"]},
+    {"program": "busan_talent", "question": "소득 조건 있어?", "expect": ["summary.1"]},
+    {"program": "busan_talent", "question": "장학금 얼마야?", "expect": ["summary.0", "record.amount"]},
+    {"program": "busan_talent", "question": "마감 언제야?", "expect": ["record.window"]},
+    {"program": "busan_talent", "question": "대학원생도 돼?", "not_found": true},
+
+    {"program": "pnu_google_ai", "question": "휴학생도 쓸 수 있어?", "expect": ["summary.1", "conditions.1"]},
+    {"program": "pnu_google_ai", "question": "졸업하면 못 써?", "expect": ["summary.1", "conditions.1"]},
+    {"program": "pnu_google_ai", "question": "계정이 없으면 어떻게 해?", "expect": ["method.1"]},
+    {"program": "pnu_google_ai", "question": "언제까지 쓸 수 있어?", "expect": ["summary.1", "record.window"]},
+    {"program": "pnu_google_ai", "question": "Gemini도 쓸 수 있어?", "expect": ["summary.0"]},
+    {"program": "pnu_google_ai", "question": "로그인은 어떻게 해?", "expect": ["method.0"]},
+    {"program": "pnu_google_ai", "question": "대학원생도 돼?", "expect": ["conditions.0"]},
+    {"program": "pnu_google_ai", "question": "외부인도 이용할 수 있어?", "not_found": true},
+
+    {"program": "pnu_microsoft365", "question": "원드라이브 용량은?", "expect": ["summary.1"]},
+    {"program": "pnu_microsoft365", "question": "OneDrive 용량 얼마야?", "expect": ["summary.1"]},
+    {"program": "pnu_microsoft365", "question": "휴학생도 쓸 수 있어?", "expect": ["conditions.0"]},
+    {"program": "pnu_microsoft365", "question": "졸업하면 못 써?", "expect": ["summary.1"]},
+    {"program": "pnu_microsoft365", "question": "가입은 어디서 해?", "expect": ["method.0"]},
+    {"program": "pnu_microsoft365", "question": "pnu.kr 계정도 돼?", "expect": ["conditions.2"]},
+    {"program": "pnu_microsoft365", "question": "서류 필요해?", "not_found": true},
+
+    {"program": "pnu_sanjini_ai", "question": "휴학 중이어도 쓸 수 있어?", "expect": ["conditions.0", "summary.0"]},
+    {"program": "pnu_sanjini_ai", "question": "교직원도 쓸 수 있어?", "expect": ["summary.0"]},
+    {"program": "pnu_sanjini_ai", "question": "어떤 AI 모델 쓸 수 있어?", "expect": ["summary.0", "summary.1"]},
+    {"program": "pnu_sanjini_ai", "question": "접속 방법 알려줘", "expect": ["method.0"]},
+    {"program": "pnu_sanjini_ai", "question": "졸업생도 돼?", "not_found": true},
+
+    {"program": "tower", "question": "몇 개월 무료야?", "expect": ["summary.0"]},
+    {"program": "tower", "question": "결제 정보 필요해?", "expect": ["summary.1"]},
+    {"program": "tower", "question": "연장 가능해?", "expect": ["summary.1"]},
+    {"program": "tower", "question": "학생증 내야 해?", "expect": ["conditions.2"]},
+    {"program": "tower", "question": "GitHub 없으면 못 해?", "expect": ["conditions.1", "method.0"]},
+    {"program": "tower", "question": "어떻게 신청해?", "expect": ["method.0"]},
+
+    {"program": "framer", "question": "기존 고객도 할인 돼?", "expect": ["summary.1"]},
+    {"program": "framer", "question": "코드 친구한테 줘도 돼?", "expect": ["conditions.0"]},
+    {"program": "framer", "question": "학생증 제출해야 해?", "expect": ["method.0", "conditions.0"]},
+    {"program": "framer", "question": "온라인 강의 수강생도 돼?", "expect": ["conditions.0"]},
+
+    {"program": "onepassword", "question": "가족 플랜도 돼?", "expect": ["summary.1"]},
+    {"program": "onepassword", "question": "몇 년 무료야?", "expect": ["summary.0"]},
+    {"program": "onepassword", "question": "두 번 받을 수 있어?", "expect": ["summary.1", "conditions.0"]},
+
+    {"program": "obsidian", "question": "할인율 몇 퍼센트야?", "expect": ["summary.1"]},
+    {"program": "obsidian", "question": "회사 업무용으로 써도 할인돼?", "expect": ["summary.1"]},
+    {"program": "obsidian", "question": "교직원도 돼?", "expect": ["summary.0", "conditions.0"]},
+
+    {"program": "youth_rent", "question": "필요한 서류는?", "expect": ["documents.0"]},
+    {"program": "youth_rent", "question": "등본 떼야 돼?", "expect": ["documents.0"]},
+    {"program": "youth_rent", "question": "소득 기준은?", "expect": ["raw.sprtTrgtCn.0"]},
+    {"program": "youth_rent", "question": "직장 다니면 못 받아?", "expect": ["raw.sprtTrgtCn.0"]},
+    {"program": "youth_rent", "question": "신청 기간 언제야?", "expect": ["method.0"]},
+    {"program": "youth_rent", "question": "방문 신청도 돼?", "not_found": true},
+    {"program": "youth_rent", "question": "통장 사본 필요해?", "not_found": true}
+  ]
+}

@@ -1,0 +1,113 @@
+# Dependencies
+node_modules/
+target/
+
+# Build
+.next/
+out/
+dist/
+releases/
+*.tsbuildinfo
+
+# Environment — never commit secrets
+.env
+.env.*
+.env.local
+.env.dev
+.env.production
+.env.staging
+.env.test
+!.env.production.example
+!.env.example
+
+# Cryptographic keys and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*-service-account.json
+google-services.json
+GoogleService-Info.plist
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Docker volumes
+pgdata*/
+redisdata*/
+
+# Misc
+*.log
+**/.omc/
+**/.omx/
+apps/*/.expo/
+.mcp.json
+
+# Personal / working files (not for repo)
+*.pdf
+# Official blank forms and ordinances the PDF form check is tested on.
+!crates/worker/tests/fixtures/download_forms/*.pdf
+KakaoTalk_*
+magimi_psst_*
+구현*.md
+웰로*.md
+docs/*.md
+!docs/form-fill-assistant.md
+!docs/mazimi-ai-agent.md
+!docs/mazimi-ai-assistant-v1-contract.md
+!docs/ops-env.md
+!docs/deployment-guide.md
+!docs/oracle-runbook.md
+!docs/mazimi-gabia-domain-setup.md
+!docs/mazimi-temporary-domain-console-setup.md
+!docs/mazimi-ai-assistant-technical-spec.md
+!docs/mazimi-ai-extraction.md
+
+# Database dumps and checksums may contain production data.
+backups/
+
+# OpenDID 홀더 지갑앱(did-ca-ios 클론, 별도 네이티브 앱 — 저장소에 포함 안 함)
+farm/opendid-wallet-ios/
+
+!docs/mazimi-google-login-setup.md
+!docs/mazimi-testing-and-store-readiness-20260927.md
+!docs/mazimi-team-guide.md
+
+# Separate projects sharing the parent workspace, not part of Mazimi.
+/farm/
+/farmfi/
+/foxstar/
+/mdtohwp/
+/pnuai-b-01-b301/
+/marketing/
+/apps/web/src/app/minifarm/
+/docs/stitch-designs/minifarm.html
+
+# Local document deliverables
+/output/
+
+# Synthetic form fixtures (not real forms) for scripts/forms tests
+!scripts/forms/tests/fixtures/*.pdf
+__pycache__/
+.pytest_cache/
+
+# Internal working material: agent instructions and state, plans, research,
+# business and production records. Kept on disk for local use, never tracked.
+/.harness/
+/.claude/
+**/CLAUDE.md
+**/AGENTS.md
+/docs/audits/production-*
+/docs/benefit-source-compliance.md
+/docs/mazimi-corporate-brand-catalog.md
+/docs/mazimi-ai-competitor-research-*.md
+/docs/mazimi-application-automation-plan.md
+/docs/mazimi-ai-assistant-product-plan.md
+/docs/mazimi-product-audit-*.md
+/docs/ir-*

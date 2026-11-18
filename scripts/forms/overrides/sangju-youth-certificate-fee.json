@@ -1,0 +1,188 @@
+{
+ "pages": [
+  5,
+  6,
+  7
+ ],
+ "reviewed": true,
+ "set": [
+  {
+   "match": {
+    "page": 6,
+    "label": "여"
+   },
+   "fields": {
+    "label": "선택사항 수집·이용 동의: 여"
+   }
+  },
+  {
+   "match": {
+    "page": 6,
+    "label": "부"
+   },
+   "fields": {
+    "label": "선택사항 수집·이용 동의: 부"
+   }
+  },
+  {
+   "match": {
+    "page": 6,
+    "label": "동의하지않음"
+   },
+   "fields": {
+    "label": "개인정보 수집·이용 동의: 동의하지 않음"
+   }
+  },
+  {
+   "match": {
+    "page": 6,
+    "label": "동의함"
+   },
+   "fields": {
+    "label": "개인정보 수집·이용 동의: 동의함"
+   }
+  }
+ ],
+ "add": [
+  {
+   "id": "x",
+   "page": 5,
+   "rect": {
+    "x": 0.583,
+    "y": 0.372,
+    "w": 0.135,
+    "h": 0.026
+   },
+   "type": "text",
+   "label": "소요비용(응시료) 금액(한글)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 5,
+   "rect": {
+    "x": 0.773,
+    "y": 0.372,
+    "w": 0.115,
+    "h": 0.026
+   },
+   "type": "text",
+   "label": "소요비용(응시료) 금액(숫자)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 5,
+   "rect": {
+    "x": 0.695,
+    "y": 0.638,
+    "w": 0.049,
+    "h": 0.025
+   },
+   "type": "text",
+   "label": "생년월일 연도",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 5,
+   "rect": {
+    "x": 0.754,
+    "y": 0.638,
+    "w": 0.05,
+    "h": 0.025
+   },
+   "type": "text",
+   "label": "생년월일 월",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 5,
+   "rect": {
+    "x": 0.814,
+    "y": 0.638,
+    "w": 0.046,
+    "h": 0.025
+   },
+   "type": "text",
+   "label": "생년월일 일",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 7,
+   "rect": {
+    "x": 0.607,
+    "y": 0.365,
+    "w": 0.135,
+    "h": 0.026
+   },
+   "type": "text",
+   "label": "신청금액(합격수당) 금액(한글)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 7,
+   "rect": {
+    "x": 0.797,
+    "y": 0.365,
+    "w": 0.115,
+    "h": 0.026
+   },
+   "type": "text",
+   "label": "신청금액(합격수당) 금액(숫자)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 7,
+   "rect": {
+    "x": 0.695,
+    "y": 0.656,
+    "w": 0.049,
+    "h": 0.025
+   },
+   "type": "text",
+   "label": "생년월일 연도",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 7,
+   "rect": {
+    "x": 0.754,
+    "y": 0.656,
+    "w": 0.05,
+    "h": 0.025
+   },
+   "type": "text",
+   "label": "생년월일 월",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x",
+   "page": 7,
+   "rect": {
+    "x": 0.814,
+    "y": 0.656,
+    "w": 0.046,
+    "h": 0.025
+   },
+   "type": "text",
+   "label": "생년월일 일",
+   "mapping": null,
+   "required": true
+  }
+ ]
+}

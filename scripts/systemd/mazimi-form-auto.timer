@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Mazimi automatic form templates daily
+[Timer]
+# 01:30 KST, low traffic; done before the 18:30 UTC AI-extraction window that shares Ollama.
+OnCalendar=*-*-* 16:30:00 UTC
+Persistent=true
+RandomizedDelaySec=600
+Unit=mazimi-form-auto.service
+[Install]
+WantedBy=timers.target

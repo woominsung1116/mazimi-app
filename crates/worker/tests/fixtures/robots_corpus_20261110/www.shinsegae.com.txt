@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /store/main.do/*?storeCd=FC000*
+Allow: /
+
+User-agent: grapeshot
+Disallow:

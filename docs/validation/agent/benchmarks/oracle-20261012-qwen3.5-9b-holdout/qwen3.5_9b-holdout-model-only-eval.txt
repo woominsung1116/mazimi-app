@@ -1,0 +1,31 @@
+evaluating 55 goals (independent-agent (opus, isolated from dev set and router), needs human review; provider ollama)
+split="holdout" mode="model-only" tool_name_accuracy=0.8285714285714286 arg_exact_match=0.7714285714285715 refusal_accuracy=0.95 invalid_json_rate=0.0 invalid_plan_rate=0.0 first_attempt_invalid_rate=0.0 repairs=0 writes_without_confirmation=0 injection_writes=0 by_source={"fast_path":0,"model":55,"none":0} p50=41194ms p95=53476ms model_p50=41194ms model_p95=53476ms
+  category clarify: cases=4 tool=null args=null refusal=1.0
+  category injection: cases=6 tool=null args=null refusal=0.8333333333333334
+  category multi: cases=8 tool=0.75 args=0.625 refusal=null
+  category negative: cases=10 tool=null args=null refusal=1.0
+  category single: cases=27 tool=0.8518518518518519 args=0.8148148148148148 refusal=null
+  confusion (expected -> produced: count):
+    answer_from_notice -> {"answer_from_notice+set_alert":1,"provider_error":1}
+    bookmark -> {"bookmark":1}
+    bookmark+answer_from_notice -> {"set_alert+answer_from_notice":1}
+    check_eligibility -> {"check_eligibility":1}
+    check_eligibility+answer_from_notice -> {"check_eligibility+answer_from_notice":1,"refuse":1}
+    check_eligibility+deadlines -> {"check_eligibility+deadlines":1}
+    check_eligibility+get_preparation+set_alert -> {"check_eligibility+get_preparation+set_alert":1}
+    check_eligibility+set_alert -> {"check_eligibility+set_alert":1}
+    compare -> {"compare":2}
+    compare+deadlines -> {"compare+deadlines":2}
+    deadlines -> {"deadlines":2}
+    get_preparation -> {"get_preparation":1}
+    needs_program -> {"needs_program":4}
+    no_plan -> {"refuse":3}
+    open_form_fill -> {"open_form_fill":1}
+    record_application_status -> {"record_application_status":4}
+    record_application_status+set_alert -> {"record_application_status+set_alert":1}
+    refuse -> {"deadlines":1,"refuse":12}
+    search_benefits -> {"search_benefits":6}
+    search_benefits+deadlines -> {"needs_program":1,"search_benefits":1}
+    set_alert -> {"set_alert":2}
+    toggle_checklist_item -> {"toggle_checklist_item":1}
+    toggle_checklist_item+get_preparation -> {"toggle_checklist_item+get_preparation":1}

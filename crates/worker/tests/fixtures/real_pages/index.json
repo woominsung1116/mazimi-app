@@ -1,0 +1,749 @@
+[
+  {
+    "program_id": "0050cce5-c432-45b8-9d9e-21206b2d682f",
+    "title": "경성대 학내 AI Chat",
+    "url": "https://kscms.ks.ac.kr/aiguide/CMS/Contents/Contents.do?mCode=MN021",
+    "final_url": "https://kscms.ks.ac.kr/aiguide/CMS/Contents/Contents.do?mCode=MN021",
+    "fetched_at": "2026-10-18T12:18:01.693569Z",
+    "status": null,
+    "outcome": "robots_http_error",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "OpenAI GPT와 GeminiPro API, Anthropic Claude를 통한 다양한 LLMS 모델을 연계한 채팅 서비스를 제공합니다."
+    ]
+  },
+  {
+    "program_id": "ba341b81-0f30-4e48-b421-b6c6bfb2301c",
+    "title": "부경대 Office 365",
+    "url": "https://icc.pknu.ac.kr/main/43?action=view&no=9524",
+    "final_url": "https://icc.pknu.ac.kr/main/43?action=view&no=9524",
+    "fetched_at": "2026-10-18T12:18:01.885730Z",
+    "status": null,
+    "outcome": "robots_http_error",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "교내 구성원(교직원, 재학생, 휴학생)은 첨부파일을 참고하여 Office365 가입 후 관련 제품군(예: 엑셀, 파워포인트등)을 사용 할 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "1155cb5d-cb12-4ac8-8a7a-18136ef062b5",
+    "title": "동명대 Microsoft 365·Google 클라우드",
+    "url": "https://www.tu.ac.kr/help/sub03_03.do",
+    "final_url": "https://www.tu.ac.kr/help/sub03_03.do",
+    "fetched_at": "2026-10-18T12:18:02.050022Z",
+    "status": null,
+    "outcome": "robots_not_text",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "이용대상 : 대학 구성원(재학생, 재직 교직원)",
+      "이용장소 : 교내외"
+    ]
+  },
+  {
+    "program_id": "18987f71-5e5a-487c-b2b9-84fae28ebe53",
+    "title": "1Password 학생 개인 플랜 2년",
+    "url": "https://1password.com/developers/students",
+    "final_url": "https://1password.com/developers/students",
+    "fetched_at": "2026-10-18T12:18:32.865308Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "18987f71.html",
+    "sha256": "66e1446742b77b42c173ee214420851545e0b885bfe9f6cf413e2d9317d44a10",
+    "fragments": [
+      "Get two years of 1Password for free with the GitHub Student Developer Pack."
+    ]
+  },
+  {
+    "program_id": "eeef56dc-b725-4b9f-bf5d-7ad94cfa761d",
+    "title": "AWS Educate 무료 클라우드 학습",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "final_url": "https://aws.amazon.com/ko/education/awseducate/",
+    "fetched_at": "2026-10-18T12:19:33.887938Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "eeef56dc.html",
+    "sha256": "fd3bb692b9fc5614a59887a3d53550992984ac7aa2872694cc1d64b000d0dd24",
+    "fragments": [
+      "open to any individual, regardless of where they are in their education",
+      "as young as 13"
+    ]
+  },
+  {
+    "program_id": "f944afc6-cecd-4f12-a589-b3b88b5300f1",
+    "title": "Axure RP 학생 1년 무료",
+    "url": "https://www.axure.com/edu",
+    "final_url": "https://www.axure.com/edu",
+    "fetched_at": "2026-10-18T12:20:04.994914Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "f944afc6.html",
+    "sha256": "e3b28666cd5e332dd9ec6a3e10385fc79ff62b0049e06ad4c54c41d46aefb72c",
+    "fragments": [
+      "Students will receive a one-year subscription that they can renew each year of study."
+    ]
+  },
+  {
+    "program_id": "76add9b9-cb4d-4d0d-a090-fb46bfc0949b",
+    "title": "Bootstrap Studio 학생 무료 라이선스",
+    "url": "https://bootstrapstudio.io/contact-us",
+    "final_url": "https://bootstrapstudio.io/contact-us",
+    "fetched_at": "2026-10-18T12:20:37.073798Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "76add9b9.html",
+    "sha256": "160b1b219bfea66c3a5e5170df8fa93578c31f28ab13b9d4768578a92529784d",
+    "fragments": [
+      "If you are a student we have a special non-commercial license for you, which is free for the duration of your study."
+    ]
+  },
+  {
+    "program_id": "9e5cf09a-1812-41a6-a04f-fbcd1b79e6fa",
+    "title": "Figma for Education 무료 플랜",
+    "url": "https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education",
+    "final_url": "https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education",
+    "fetched_at": "2026-10-18T12:21:09.137520Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "9e5cf09a.html",
+    "sha256": "9293895b00bfd6eb462460bf03096b9c4a24e6023a540f7b4033978a776e8c27",
+    "fragments": [
+      "Figma for Education provides free Figma access to students and educators."
+    ]
+  },
+  {
+    "program_id": "047bcaf2-2fac-4e6c-a559-b55fae767b6f",
+    "title": "Framer 학생 포트폴리오 Basic 무료",
+    "url": "https://www.framer.com/education/students/",
+    "final_url": "https://www.framer.com/education/students/",
+    "fetched_at": "2026-10-18T12:21:39.344696Z",
+    "status": null,
+    "outcome": "failed: body exceeds the size limit",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "You can re-apply for a new Student discount every 11 months for as long as you are a student."
+    ]
+  },
+  {
+    "program_id": "9b51c95f-29d9-47e6-ad08-d8d4a7a8b88c",
+    "title": "Master.dev(구 Frontend Masters) 학생 강의 6개월 무료",
+    "url": "https://frontendmasters.com/welcome/github-student-developers/",
+    "final_url": "https://frontendmasters.com/welcome/github-student-developers/",
+    "fetched_at": "2026-10-18T12:21:40.124317Z",
+    "status": null,
+    "outcome": "robots_http_error",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "For 6 months after you sign up as part of this program, you'll get complete access to all of the Master.dev library of courses."
+    ]
+  },
+  {
+    "program_id": "5b2045d2-4a65-4719-be9e-f3e2a9786c49",
+    "title": "GitHub Copilot 학생 무료 이용",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students",
+    "final_url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students",
+    "fetched_at": "2026-10-18T12:22:10.811851Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "5b2045d2.html",
+    "sha256": "5a21d3ecc8649d31efda202c92cb00adcebd0ecf559a67d9f274803969429026",
+    "fragments": [
+      "Verified students on GitHub Education get free access to Copilot's features."
+    ]
+  },
+  {
+    "program_id": "d77ca111-47b9-4f5b-82d2-ad7ffedfd536",
+    "title": "GitHub Student Developer Pack",
+    "url": "https://education.github.com/pack",
+    "final_url": "https://education.github.com/pack",
+    "fetched_at": "2026-10-18T12:22:45.529583Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "d77ca111.html",
+    "sha256": "cc6ce04e063e7ed63c4dac6e7644f1ae541d7ca14ef59ff168e0109dfd9f572f",
+    "fragments": [
+      "Free GitHub Pro while you are a student."
+    ]
+  },
+  {
+    "program_id": "6956a13b-9bec-4f0f-8817-7a8df29e6872",
+    "title": "GitKraken Student Pack 6개월",
+    "url": "https://help.gitkraken.com/gk-dev/gk-dev-student-pack/",
+    "final_url": "https://help.gitkraken.com/gk-dev/gk-dev-student-pack/",
+    "fetched_at": "2026-10-18T12:22:45.659584Z",
+    "status": null,
+    "outcome": "robots_unreachable",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "This plan is a 6 month free trial of Pro features for students who are verified on GitHub Student Developer Pack."
+    ]
+  },
+  {
+    "program_id": "0d2d2070-893c-4fa5-95b1-db5c1cecc0e1",
+    "title": "IKEA Family 멤버십 혜택",
+    "url": "https://www.ikea.com/kr/ko/ikea-family/benefits/",
+    "final_url": "https://www.ikea.com/kr/ko/ikea-family/benefits/",
+    "fetched_at": "2026-10-18T12:23:16.301419Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "0d2d2070.html",
+    "sha256": "c3f39cc927e9986913f5a612e5a27d6779c86ec991ab36fb60659a21fe954eb0",
+    "fragments": [
+      "평일 레스토랑 따뜻한 차 혹은 커피 제공"
+    ]
+  },
+  {
+    "program_id": "a35a0e9b-b010-4129-bc1b-281817ee919d",
+    "title": "JetBrains 학생·교사용 무료 라이선스",
+    "url": "https://sales.jetbrains.com/hc/en-gb/articles/207241195-Do-you-offer-free-educational-licenses-for-students-and-teachers",
+    "final_url": "https://sales.jetbrains.com/hc/en-gb/articles/207241195-Do-you-offer-free-educational-licenses-for-students-and-teachers",
+    "fetched_at": "2026-10-18T12:23:47.762461Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "a35a0e9b.html",
+    "sha256": "ee5cb8419a9ab8b6fb00e036c27b044787a105d7076551f2bfb0b3faa3782c5c",
+    "fragments": [
+      "Students and teachers can get the JetBrains Student or Teacher Pack for free."
+    ]
+  },
+  {
+    "program_id": "362363cc-06cb-4f95-ad8c-7970db0b1557",
+    "title": "LG전자 아카데미 스토어",
+    "url": "https://www.lge.co.kr/benefits/exhibitions/detail-PE00518001",
+    "final_url": "https://www.lge.co.kr/benefits/exhibitions/detail-PE00518001",
+    "fetched_at": "2026-10-18T12:24:19.308212Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "362363cc.html",
+    "sha256": "899872bfe7bff09de850ca9e52b273df2e446471e64c34c566eba8d14f135bdc",
+    "fragments": [
+      "LG전자 학생 할인 스토어는 국내외 대학/대학원에 재학 및 재직 중인 대학/대학원생/교직원만 가입할 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "5cc5dd4a-1c76-4a0c-955a-94168515f132",
+    "title": "Linear 학생 단체 무료 1년",
+    "url": "https://linear.app/docs/billing-and-plans",
+    "final_url": "https://linear.app/docs/billing-and-plans",
+    "fetched_at": "2026-10-18T12:24:50.826120Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "5cc5dd4a.html",
+    "sha256": "87d6c03fd610cbfb59bedadda3541a316a8e27613cb540328643527bd80de02f",
+    "fragments": [
+      "free access for one year for student-led programs, clubs, and other educational activities"
+    ]
+  },
+  {
+    "program_id": "4067fb7a-25eb-4561-bfe9-cf59ed8f920a",
+    "title": "학생·교육자용 Office 365 A1 무료",
+    "url": "https://www.microsoft.com/ko-kr/education/products/office",
+    "final_url": "https://www.microsoft.com/ko-kr/education/products/office",
+    "fetched_at": "2026-10-18T12:25:21.875993Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "4067fb7a.html",
+    "sha256": "54e6f6dea079913bfae685e731865c81d001da8a09016a3614c6da89b7b8f2dd",
+    "fragments": [
+      "적격한 교육용 전자 메일 주소가 있는 교육자와 학생은 Office 365 A1을 무료로 이용할 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "f02a666a-5b92-45e3-bdc3-89c2a2aafbdd",
+    "title": "Azure for Students 무료 크레딧",
+    "url": "https://azure.microsoft.com/en-us/free/students/",
+    "final_url": "https://azure.microsoft.com/en-us/free/students/",
+    "fetched_at": "2026-10-18T12:25:53.558356Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "f02a666a.html",
+    "sha256": "47d3e7dd032ac0c3fa9e27cc254ac0f1c7b218095e374ffb997167edb70fa1eb",
+    "fragments": [
+      "Available only to full-time university students."
+    ]
+  },
+  {
+    "program_id": "4501ce12-e536-41ac-a69b-1c74c25f52c9",
+    "title": "Notion 학생·교육자용 Education 플랜 무료",
+    "url": "https://www.notion.com/help/notion-for-education",
+    "final_url": "https://www.notion.com/help/notion-for-education",
+    "fetched_at": "2026-10-18T12:26:24.893024Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "4501ce12.html",
+    "sha256": "9bfe9926627d79d17ad4d166f8e994a9644f07a5e391e2d53f388da350839604",
+    "fragments": [
+      "Your school is an accredited institution recognized by and listed in the World Higher Education Database."
+    ]
+  },
+  {
+    "program_id": "56d6729d-622c-4e05-8762-194589a6ac60",
+    "title": "Obsidian 교육 할인",
+    "url": "https://obsidian.md/help/discounts",
+    "final_url": "https://obsidian.md/help/discounts",
+    "fetched_at": "2026-10-18T12:26:55.912188Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "56d6729d.html",
+    "sha256": "63632420adc4116b9bef2e0a251852e294f1579d34135621145a1a436a770588",
+    "fragments": [
+      "40% off our add-on services"
+    ]
+  },
+  {
+    "program_id": "901772a5-08cf-4f45-afdc-d3b3c4e48ef0",
+    "title": "Polypane 학생 1년 무료",
+    "url": "https://polypane.app/special-offers/",
+    "final_url": "https://polypane.app/special-offers/",
+    "fetched_at": "2026-10-18T12:27:30.425025Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "901772a5.html",
+    "sha256": "2d09faa42c67c2742d95045443df2e16a69068e5d04628936d62e97931ea9d8c",
+    "fragments": [
+      "The GitHub Student Developer Pack includes a full year of Polypane, free."
+    ]
+  },
+  {
+    "program_id": "1249aeda-db5b-46a5-b89e-3dc1005f9be8",
+    "title": "Sketch Education 무료 워크스페이스",
+    "url": "https://www.sketch.com/education/",
+    "final_url": "https://www.sketch.com/education/",
+    "fetched_at": "2026-10-18T12:28:01.999888Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "1249aeda.html",
+    "sha256": "7c542fb984de055eaf67cbd1365ab1c6963dbcf17d3191fa4f30cabe9eaa4b33",
+    "fragments": [
+      "you need to be 16 years of age or older"
+    ]
+  },
+  {
+    "program_id": "0daf688b-691c-44d6-9e5a-f3ea9f481a34",
+    "title": "Spotify Premium 학생 요금제",
+    "url": "https://www.spotify.com/kr-ko/student/",
+    "final_url": "https://www.spotify.com/kr-ko/student/",
+    "fetched_at": "2026-10-18T12:28:32.407628Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "0daf688b.html",
+    "sha256": "f043b4ef839980e697c43f5c49883ad75becd9e31845ec887425cc6fa7d06785",
+    "fragments": [
+      "이 혜택은 혜택 제공 대상에 포함되어 있는 승인된 대학 교육 기관에 등록된 학생에게만 제공됩니다. 이미 Premium을 체험해본 사용자는 이 혜택을 이용할 수 없습니다."
+    ]
+  },
+  {
+    "program_id": "c79c74a5-3721-48ce-86fa-5aafb414d33f",
+    "title": "Termius 학생 Pro·Team 무료",
+    "url": "https://termius.com/education",
+    "final_url": "https://termius.com/education",
+    "fetched_at": "2026-10-18T12:29:02.790925Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "c79c74a5.html",
+    "sha256": "169786c76e8c07a5e08e13a2318b9326a84a69fe21a0ba32405dab9b445ea415",
+    "fragments": [
+      "Anyone with an active GitHub Student Developer Pack can get Termius for free."
+    ]
+  },
+  {
+    "program_id": "785fd0b2-3c90-487d-a325-61922140c882",
+    "title": "Tower Pro 학생 12개월 무료",
+    "url": "https://www.git-tower.com/students",
+    "final_url": "https://www.git-tower.com/students",
+    "fetched_at": "2026-10-18T12:29:35.332040Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "785fd0b2.html",
+    "sha256": "e735e7374af9bfae29ac174fde7cf2da2a5b37ff8f2f417467bb74f6aa50ba85",
+    "fragments": [
+      "You will receive 12 months of Tower for free."
+    ]
+  },
+  {
+    "program_id": "01480f51-5b1a-4a92-837e-8d5fea3994d9",
+    "title": "Unity Student 무료 플랜",
+    "url": "https://unity.com/products/unity-student",
+    "final_url": "https://unity.com/products/unity-student",
+    "fetched_at": "2026-10-18T12:29:35.429320Z",
+    "status": null,
+    "outcome": "robots_http_error",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "Students 16 years and older who are enrolled in an accredited educational institution."
+    ]
+  },
+  {
+    "program_id": "5fa3af29-0c99-489b-8ebd-1ef063bf25b4",
+    "title": "나이키 학생 10% 할인",
+    "url": "https://www.nike.com/kr/membership/student-discount-program",
+    "final_url": "https://www.nike.com/kr/membership/student-discount-program",
+    "fetched_at": "2026-10-18T12:30:07.245604Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "5fa3af29.html",
+    "sha256": "c9f6e48a0fde9fcb05e0151abc33f35bb5b206bf75d231627a23c62780106b2e",
+    "fragments": [
+      "학생 인증 후 10% 할인 혜택을 제공해 드립니다.",
+      "30일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다."
+    ]
+  },
+  {
+    "program_id": "9810c58d-1a30-4ed8-99f4-6bef26ee168d",
+    "title": "Samsung 갤럭시 캠퍼스 교육 할인",
+    "url": "https://www.samsungebiz.com/event/galaxycampus/about/?anc=condition",
+    "final_url": "https://www.samsungebiz.com/event/galaxycampus/about/?anc=condition",
+    "fetched_at": "2026-10-18T12:30:38.188390Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "9810c58d.html",
+    "sha256": "8c20f07f46110d0e7b1efa10108a18d73486cbfc55501e34d18e1d11b48080c1",
+    "fragments": [
+      "국내ㆍ외 소재 대학(원) 재학생이라면 누구나!"
+    ]
+  },
+  {
+    "program_id": "911fa814-da34-424d-97ac-ba181bd2f6c3",
+    "title": "대구대 재학생 Office 365",
+    "url": "https://daegu.ac.kr/page/154",
+    "final_url": "https://daegu.ac.kr/page/154",
+    "fetched_at": "2026-10-18T12:31:08.574764Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "911fa814.html",
+    "sha256": "fc986d4237e95122984e42f4d75d39efca0fb25612c599d8fdc121947261882a",
+    "fragments": [
+      "자퇴/휴학/제적/수료/졸업생"
+    ]
+  },
+  {
+    "program_id": "25e5b9a6-3aff-4609-8a64-6b475d41c093",
+    "title": "영남대 재학생 Office 365",
+    "url": "https://office.yu.ac.kr/Asp2/ServiceInfo.aspx",
+    "final_url": "https://office.yu.ac.kr/Asp2/ServiceInfo.aspx",
+    "fetched_at": "2026-10-18T12:31:08.673939Z",
+    "status": null,
+    "outcome": "robots_disallow",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "재학생은 Office 365 서비스를 통해 최상위 버전의 정품 오피스를 설치 사용할 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "4ceae1e0-3aa8-450d-918a-ad05404ec98a",
+    "title": "DGIST MATLAB 캠퍼스 라이선스",
+    "url": "https://easyit.dgist.ac.kr/HOME/easyiten/sub.htm?nav_code=eas1670908603",
+    "final_url": "https://easyit.dgist.ac.kr/HOME/easyiten/sub.htm?nav_code=eas1670908603",
+    "fetched_at": "2026-10-18T12:31:08.740206Z",
+    "status": null,
+    "outcome": "robots_unreachable",
+    "file": null,
+    "sha256": null,
+    "fragments": []
+  },
+  {
+    "program_id": "ca61db4c-a896-4014-b082-63dd0b8d33f0",
+    "title": "동아대 학생메일·Office 365",
+    "url": "https://www.donga.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN196",
+    "final_url": "https://www.donga.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN196",
+    "fetched_at": "2026-10-18T12:31:08.867738Z",
+    "status": null,
+    "outcome": "robots_disallow",
+    "file": null,
+    "sha256": null,
+    "fragments": []
+  },
+  {
+    "program_id": "ae07f4c8-67c6-431b-919e-399cb5179d91",
+    "title": "Adobe Creative Cloud 학생·교사 할인",
+    "url": "https://www.adobe.com/kr/education/students/creativecloud.html",
+    "final_url": "https://www.adobe.com/kr/education/students/creativecloud.html",
+    "fetched_at": "2026-10-18T12:31:39.152517Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "ae07f4c8.html",
+    "sha256": "399de2c735b5933c59560407ddf01d2e443a6d86c4317a138c132cf11b8ec222",
+    "fragments": []
+  },
+  {
+    "program_id": "7d66fe55-3ef1-4962-8dcc-85ebc7637bbc",
+    "title": "Apple 교육 할인",
+    "url": "https://www.apple.com/kr-edu/store",
+    "final_url": "https://www.apple.com/kr-edu/store",
+    "fetched_at": "2026-10-18T12:32:10.006872Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "7d66fe55.html",
+    "sha256": "ef2b73202418a146f0e69d27bcc3196909962d0ec02aa565097f0fdfe61a9238",
+    "fragments": []
+  },
+  {
+    "program_id": "f293930c-d28b-433b-8ec1-27ea4e6ae1e4",
+    "title": "Autodesk 학생·교육자 교육용 액세스",
+    "url": "https://www.autodesk.com/education/home",
+    "final_url": "https://www.autodesk.com/education/home",
+    "fetched_at": "2026-10-18T12:32:10.133594Z",
+    "status": null,
+    "outcome": "robots_forbidden",
+    "file": null,
+    "sha256": null,
+    "fragments": []
+  },
+  {
+    "program_id": "17ef92b6-d906-43af-a843-f764c1dc7098",
+    "title": "Canva for Education 무료 이용",
+    "url": "https://www.canva.com/education/",
+    "final_url": "https://www.canva.com/education/",
+    "fetched_at": "2026-10-18T12:32:40.621427Z",
+    "status": 403,
+    "outcome": "botwall",
+    "file": null,
+    "sha256": null,
+    "fragments": []
+  },
+  {
+    "program_id": "b2fbd760-a129-4f0f-80e2-a1faeeaf6f93",
+    "title": "Miro Education 플랜 무료",
+    "url": "https://help.miro.com/hc/en-us/articles/360017730473-Education-plan",
+    "final_url": "https://help.miro.com/hc/en-us/articles/360017730473-Education-plan",
+    "fetched_at": "2026-10-18T12:33:11.519229Z",
+    "status": 403,
+    "outcome": "botwall",
+    "file": null,
+    "sha256": null,
+    "fragments": []
+  },
+  {
+    "program_id": "cd9a62bc-37e1-4e3d-9295-409e5d8f90df",
+    "title": "Tableau for Students 무료 학습 도구",
+    "url": "https://www.tableau.com/academic/students",
+    "final_url": "https://www.tableau.com/academic/students",
+    "fetched_at": "2026-10-18T12:33:11.678155Z",
+    "status": null,
+    "outcome": "robots_forbidden",
+    "file": null,
+    "sha256": null,
+    "fragments": []
+  },
+  {
+    "program_id": "7187b439-4117-4e73-b844-c8dd25dbd64d",
+    "title": "부산대 Google AI Pro for Education",
+    "url": "https://www.pusan.ac.kr/kor/CMS/Board/PopupBoard.do?board_seq=1509799&mgr_seq=3&mode=view",
+    "final_url": "https://www.pusan.ac.kr/kor/CMS/Board/PopupBoard.do?board_seq=1509799&mgr_seq=3&mode=view",
+    "fetched_at": "2026-10-18T12:33:11.844886Z",
+    "status": null,
+    "outcome": "robots_disallow",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "휴학생 및 졸업생은 제공 대상에서 제외됩니다.",
+      "서비스 제공 기간: 2027년 6월 23일까지"
+    ]
+  },
+  {
+    "program_id": "464053fb-e605-493a-b37e-ecb94e473328",
+    "title": "부산대 Microsoft 365",
+    "url": "https://onestop.pusan.ac.kr/page?menuCD=000000000000385&mode=DETAIL&seq=243",
+    "final_url": "https://onestop.pusan.ac.kr/page?menuCD=000000000000385&mode=DETAIL&seq=243",
+    "fetched_at": "2026-10-18T12:33:11.967413Z",
+    "status": null,
+    "outcome": "robots_disallow",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "사용대상자 : 부산대학교 재적생(재학, 휴학 ,수료후연구생 등) 및 재직자 ※ 졸업,수료, 제적 및 퇴직자는 사용 불가함"
+    ]
+  },
+  {
+    "program_id": "45fe3831-3e72-499c-a633-29abca39a706",
+    "title": "부산대 산지니 AI",
+    "url": "https://stat.pusan.ac.kr/bbs/stat/502/968595/artclView.do",
+    "final_url": "https://stat.pusan.ac.kr/bbs/stat/502/968595/artclView.do",
+    "fetched_at": "2026-10-18T12:33:12.089400Z",
+    "status": null,
+    "outcome": "robots_disallow",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "이용대상 : 교직원 ( 재직 · 휴직 ), 학생 ( 재학 · 휴학 ), 일반사용자"
+    ]
+  },
+  {
+    "program_id": "edd444f8-cc15-45c6-b491-0e4b9ce82acb",
+    "title": "Apple Music 학생 구독 할인",
+    "url": "https://support.apple.com/ko-kr/106008",
+    "final_url": "https://support.apple.com/ko-kr/106008",
+    "fetched_at": "2026-10-18T12:33:42.601604Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "edd444f8.html",
+    "sha256": "d78ae230ccf9780ff67b821cb466aa5a717b472bf6e0892ff0df01b4dc2b287c",
+    "fragments": [
+      "최대 48개월 동안 할인된 월정액으로 Apple Music을 구독할 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "8ca80ec0-4f6b-4b71-8fa5-c1fd72770b18",
+    "title": "L.POINT 통합 멤버십 적립·사용",
+    "url": "https://m.lpoint.com/app/card/LWCA100200.do?cdId=11001&desId=11001002",
+    "final_url": "https://m.lpoint.com/app/card/LWCA100200.do?cdId=11001&desId=11001002",
+    "fetched_at": "2026-10-18T12:34:02.654108Z",
+    "status": null,
+    "outcome": "robots_unreachable",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "L.POINT 정회원이 되어 모든 서비스를 이용하고, 다양한 혜택을 받아보세요!"
+    ]
+  },
+  {
+    "program_id": "1c22f838-5b12-47f4-ac2a-f638d16b963c",
+    "title": "LG유플러스 유쓰 청년 멤버십 혜택",
+    "url": "https://www.lguplus.com/benefit-membership/rank-info",
+    "final_url": "https://www.lguplus.com/benefit-membership/rank-info",
+    "fetched_at": "2026-10-18T12:34:33.428280Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "1c22f838.html",
+    "sha256": "e5b98a87104c83e0a1f92668cb48b4b5f7f2170dfa86db44f16bdd40556b2cd9",
+    "fragments": [
+      "U+모바일을 사용하는 만19~29세 고객이라면 누구나 받을 수 있는 혜택이에요. 20대가 좋아하는 혜택을 매달 받을 수 있어요."
+    ]
+  },
+  {
+    "program_id": "0247bfc3-d6d2-404b-a43b-2da5fd54b4be",
+    "title": "SKT 라이트 59 청년 추가 혜택",
+    "url": "https://m.tworld.co.kr/product/callplan?prod_id=NA00009785",
+    "final_url": "https://m.tworld.co.kr/product/callplan?prod_id=NA00009785",
+    "fetched_at": "2026-10-18T12:35:03.901871Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "0247bfc3.html",
+    "sha256": "e621ab60b7329199b23dd2aa35f41c80403081a593d6ceb0513917ab0eafd7cf",
+    "fragments": [
+      "커피 월 1잔, 영화 월 1회, 로밍 연 2회 할인 혜택을 받을 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "7af27e95-3a01-41f6-8639-6a9585cec9b9",
+    "title": "Spotify Premium 학생 요금제",
+    "url": "https://www.spotify.com/kr-ko/student/",
+    "final_url": "https://www.spotify.com/kr-ko/student/",
+    "fetched_at": "2026-10-18T12:35:04.124978Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "7af27e95.html",
+    "sha256": "9bf13c795e4ce368f4a4d903e4a745f83d0e91116ea511b67e0a16d2503c9f1f",
+    "fragments": [
+      "승인된 대학 교육 기관에 등록된 학생이며 18세 이상인 경우 혜택 제공 대상이며, 최대 4년간 Premium 학생 요금제를 이용하실 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "435bcc1e-61c7-47d1-8492-c05951f62e61",
+    "title": "다이소 멤버십 포인트 적립·사용",
+    "url": "https://www.daiso.co.kr/cs/faq?cid=21",
+    "final_url": "https://www.daiso.co.kr/cs/faq?cid=21",
+    "fetched_at": "2026-10-18T12:35:34.458411Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "435bcc1e.html",
+    "sha256": "b0a79c9698c7a533f5e20d8f4328686409de32f19bb72cb7c71aa940f442c800",
+    "fragments": [
+      "500원 이하 구매 시 포인트는 적립되지 않습니다."
+    ]
+  },
+  {
+    "program_id": "f5a9c323-beb4-4e1b-8dfc-12436b4693d6",
+    "title": "스타벅스 리워드 등급별 혜택",
+    "url": "https://www.starbucks.co.kr/msr/msreward/level_benefit.do",
+    "final_url": "https://www.starbucks.co.kr/msr/msreward/level_benefit.do",
+    "fetched_at": "2026-10-18T12:36:04.848596Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "f5a9c323.html",
+    "sha256": "28fa37a6207071946f84c25dfa127a131bd358cbfb3c5df187d5df69b93cc6bb",
+    "fragments": [
+      "Welcome 등급 진입 후 첫 구매시, 익일 카페 아메리카노 무료 쿠폰 발행!"
+    ]
+  },
+  {
+    "program_id": "cb304aab-8c3d-4f78-8086-d0d81921ab27",
+    "title": "예스24 YES포인트·YES머니 혜택",
+    "url": "https://www.yes24.com/notice/FirstClass/infoYESPoint.aspx",
+    "final_url": "https://www.yes24.com/notice/FirstClass/infoYESPoint.aspx",
+    "fetched_at": "2026-10-18T12:36:35.254892Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "cb304aab.html",
+    "sha256": "5fede18f8fc91ad42c68e2c05731ddd8a9f8eb3fc918218fed3f522ffcda7fbe",
+    "fragments": [
+      "YES포인트는 5천원 이상 모이면, YES머니로 전환하여 현금과 동일하게 사용할 수 있습니다."
+    ]
+  },
+  {
+    "program_id": "b06db54b-b298-4de6-a744-da1b446f5275",
+    "title": "이디야멤버스 스탬프·등급 혜택",
+    "url": "https://members.ediya.com/guide/membership",
+    "final_url": "https://members.ediya.com/guide/membership",
+    "fetched_at": "2026-10-18T12:36:35.430545Z",
+    "status": null,
+    "outcome": "robots_disallow",
+    "file": null,
+    "sha256": null,
+    "fragments": [
+      "WHITE 쿠폰팩 증정 (최초 1회)",
+      "BLUE 쿠폰팩 증정 (연 1회)",
+      "스탬프 유효기간은 스탬프별 1년입니다."
+    ]
+  },
+  {
+    "program_id": "247e7e73-fda1-4443-85be-1752a9adb182",
+    "title": "커피빈 멤버스클럽 콩·등급 혜택",
+    "url": "https://www.coffeebeankorea.com/card/about.asp",
+    "final_url": "https://www.coffeebeankorea.com/card/about.asp",
+    "fetched_at": "2026-10-18T12:37:05.835069Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "247e7e73.html",
+    "sha256": "8c24eb08f62269ad8a557ea79f68b1269b8da16d7312843771e74c436d17611b",
+    "fragments": [
+      "커피빈 카드 최초 등록시 무료음료 쿠폰 (3만원 이상 충전 시에만 지급)"
+    ]
+  },
+  {
+    "program_id": "40693033-cdd6-4867-901f-23115b4a2865",
+    "title": "폴 바셋 Society 크라운·무료음료 혜택",
+    "url": "https://www.baristapaulbassett.co.kr/society/Introduction.pb",
+    "final_url": "https://www.baristapaulbassett.co.kr/society/Introduction.pb",
+    "fetched_at": "2026-10-18T12:37:36.076408Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "40693033.html",
+    "sha256": "dbf7002b00b013eb21fcab4a47c18162ba9f1909bdc393459c2783178ee24f99",
+    "fragments": [
+      "크라운 12개 적립 시 다음 날 무료음료쿠폰 발급",
+      "적립된 크라운은 1년간 유지되며 1년 경과 시 순차적 소멸"
+    ]
+  },
+  {
+    "program_id": "2ce025e1-f3ea-47b2-a02c-8cf5e664d882",
+    "title": "할리스 멤버십 크라운·등급 혜택",
+    "url": "https://m.hollys.co.kr/customer/faq.do",
+    "final_url": "https://m.hollys.co.kr/customer/faq.do",
+    "fetched_at": "2026-10-18T12:38:06.425075Z",
+    "status": 200,
+    "outcome": "stored",
+    "file": "2ce025e1.html",
+    "sha256": "133d38768b64088e0a78a381666b713a8cd376231a423f7c69aa8866b3a12edb",
+    "fragments": [
+      "1만원 이상부터 5천원 단위로 크라운 1개씩 추가 적립되고 있습니다."
+    ]
+  }
+]

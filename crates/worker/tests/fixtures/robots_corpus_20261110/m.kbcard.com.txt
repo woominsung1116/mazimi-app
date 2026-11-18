@@ -1,0 +1,17 @@
+# User Agent
+User-agent: *
+Allow: /CMN/
+Allow: /BON/
+Allow: /CRD/
+Allow: /SVC/
+Allow: /FNC/
+
+Allow: /home
+Allow: /cards
+
+Disallow: /MKB/
+Disallow: /CMN/DVIEW/MOBMCXHIAMBC0001
+Disallow: /SVC/DVIEW/HSGMCXPPPSVC0800
+
+# Sitemap
+Sitemap: https://m.kbcard.com/CMN/sitemap-mobile.xml

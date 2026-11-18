@@ -1,0 +1,25 @@
+User-agent: Yeti
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Daum
+User-agent: Applebot
+User-agent: OAI-SearchBot
+User-agent: Claude-SearchBot
+User-agent: Claude-user
+User-agent: PerplexityBot
+User-agent: GPTBot
+User-agent: ClaudeBot
+Allow: /
+Allow: /cpc/ma/CPCMA0101_01.hc
+Allow: /cpb/ma/CPBMA0101_00.hc
+Allow: /cpf/ma/CPFMA0101_01.hc
+Allow: /cpl/ma/CPLMA0101_01.hc
+Allow: /cpu/ma/CPUMA0101_01.hc
+Allow: /cpu/ug/CPUUG4001_01.hc
+Allow: /cpc/cr/*
+Allow: /cpa/pc/*
+Disallow: /cpa/*
+Disallow: /coa/mp/*
+
+Sitemap: https://www.hyundaicard.com/sitemap.xml
+

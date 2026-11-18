@@ -1,0 +1,13 @@
+User-Agent: *
+Allow: /
+Disallow: /search/
+Disallow: /discovery/
+Disallow: /visitorlogin/
+Disallow: /visitorlogin?
+Disallow: /member/
+Disallow: /mypage/
+Disallow: /order/
+Disallow: /recent-product/
+Disallow: /reviews/
+
+Sitemap: https://nol.yanolja.com/sitemap-index.xml

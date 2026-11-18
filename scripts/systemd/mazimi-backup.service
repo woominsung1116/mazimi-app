@@ -1,0 +1,8 @@
+[Unit]
+Description=Daily Mazimi Supabase database backup
+After=docker.service network-online.target
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mazimi
+ExecStart=/bin/bash /opt/mazimi/scripts/backup.sh
+TimeoutStartSec=15m

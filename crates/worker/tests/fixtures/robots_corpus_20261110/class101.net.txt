@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /101
+Disallow: /me
+Disallow: /me/
+Disallow: /request-reset-password
+Disallow: /products
+Disallow: /products/koreagrandma
+Disallow: /products/uHMGNVjOppKCNUdnHiZB
+Disallow: /products/sihyeon
+Disallow: /products/1lang1lang-paperflower
+Disallow: /products/axc0RunsivXKByZQyKCN
+Disallow: /products/EfXmopDsRxsI3VzTKSJx
+Disallow: /products/5TN5eLHCxncJHmICQZYb
+Disallow: /events/5dd3ffacb3c7c33238af47f5
+Disallow: /papers/
+Disallow: /classic
+Disallow: /classic/
+Disallow: /ko/creators/@6revoo8k
+Disallow: /ko/products/620458d456de01000e7a7718
+Allow: /
+Allow: /products/
+
+Sitemap: https://class101.net/sitemap/sitemap_index.xml

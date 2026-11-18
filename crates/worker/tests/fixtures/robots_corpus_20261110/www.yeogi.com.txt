@@ -1,0 +1,169 @@
+User-agent: GPTBot
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+User-agent: Applebot
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+
+User-agent: CCBot
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+
+User-agent: Bytespider
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+
+User-agent: Google-HotelAdsVerifier/2.0
+Allow: /
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+User-agent: Google-HotelAdsVerifier
+Allow: /
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+
+User-agent: *
+Allow: /
+Disallow: /share/
+Disallow: /_next/data/
+Disallow: /*?keyword=
+Disallow: /*&keyword=
+Disallow: /api/gateway/web-product-api/search/autocomplete/
+Disallow: /api/gateway/web-product-api/coupons/
+Disallow: /api/gateway/web-product-api/calendars
+Disallow: /api/gateway/web-product-api/places/
+Disallow: /api/gateway/overseas-product-web-api/coupons/
+Disallow: /api/gateway/overseas-product-web-api/properties/
+
+Sitemap: https://www.yeogi.com/sitemap.xml
+Sitemap: https://sitemap.yeogi.com/content-web/sitemap-index.xml

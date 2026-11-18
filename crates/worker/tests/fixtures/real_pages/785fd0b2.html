@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tower for Students | Tower Git Client</title>
+
+  <noscript></noscript>
+
+  <noscript></noscript>
+
+  <meta name="description" content="Tower - the most powerful Git client for Mac and Windows" />
+<meta name="keywords" content="git, mac, client, gui, git client, git app, git gui, vcs, version control, windows" />
+
+<meta property="og:title" content="Tower Git Client - Tower for Students" />
+<meta property="og:image" content="https://www.git-tower.com/assets/img/tower-git-client_sharing-image.1791973285.png" />
+<meta property="og:description" content="Tower - the most powerful Git client for Mac and Windows" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@fournova" />
+<meta name="twitter:title" content="Tower Git Client - Tower for Students" />
+<meta name="twitter:description" content="Tower - the most powerful Git client for Mac and Windows" />
+<meta name="twitter:image:src" content="https://www.git-tower.com/assets/img/tower-git-client_sharing-image.1791973285.png" />
+
+</head>
+
+<body class="body--default color-scheme-royal current-os-mac" id="page--students">
+
+  <noscript></noscript>
+
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+
+  <nav class="nav-top-common" aria-label="Main navigation">
+  <div class="nav-top-logo">
+    <a href="https://www.git-tower.com">Tower</a>
+  </div>
+
+  <button class="nav-top-show" aria-expanded="false" aria-controls="nav-top-primary" aria-label="Open navigation menu">Navigation</button>
+
+  <ul class="nav-top-primary" id="nav-top-primary">
+    <li>
+      <a href="https://www.git-tower.com/features/easy">Features</a>
+      <ul id="nav-top-features" class="nav-top-secondary">
+        <li>
+          <a id="nav-top-undo" href="https://www.git-tower.com/features/undo">
+            <span class="nav-top-secondary-title">Undo Anything</span>
+            <span class="nav-top-secondary-subline">Just press Cmd+Z</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-dragndrop" href="https://www.git-tower.com/features/drag-and-drop">
+            <span class="nav-top-secondary-title">Drag and Drop</span>
+            <span class="nav-top-secondary-subline">Make the complex effortless</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-integrations" href="https://www.git-tower.com/features/integrations">
+            <span class="nav-top-secondary-title">Integrations</span>
+            <span class="nav-top-secondary-subline">Use your favorite tools</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-tower-workflows" href="https://www.git-tower.com/features/workflows">
+            <span class="nav-top-secondary-title">
+              Tower Workflows
+            </span>
+            <span class="nav-top-secondary-subline">Branching Configurations</span>
+          </a>
+        </li>
+        <li class="nav-top-secondary-seperator" aria-hidden="true"></li>
+        <li>
+          <a href="https://www.git-tower.com/features/all-features">All Features</a>
+        </li>
+        <li>
+          <a href="https://www.git-tower.com/release-notes">Release Notes</a>
+        </li>
+        <li>
+          <a href="https://www.git-tower.com/beta">Join Beta Channel</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="https://www.git-tower.com/pro">Tower Pro</a>
+      <ul class="nav-top-secondary">
+        <li>
+          <a id="nav-top-stacked-branches" href="https://www.git-tower.com/pro/stacked-branches">
+            <span class="nav-top-secondary-title">
+              Stacked Branches
+              <span class="nav-top-secondary-pro-label" role="img" aria-label="Pro"></span>
+            </span>
+            <span class="nav-top-secondary-subline">Supercharged workflows</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-custom-workflows" href="https://www.git-tower.com/pro/advanced-custom-workflows">
+            <span class="nav-top-secondary-title">
+              Custom Workflows
+              <span class="nav-top-secondary-pro-label" role="img" aria-label="Pro"></span>
+            </span>
+            <span class="nav-top-secondary-subline">Start and finish instantly</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-graphite" href="https://www.git-tower.com/pro/graphite-workflow">
+            <span class="nav-top-secondary-title">
+              Graphite Support
+              <span class="nav-top-secondary-pro-label" role="img" aria-label="Pro"></span>
+            </span>
+            <span class="nav-top-secondary-subline">Code review at scale</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-branch-management" href="https://www.git-tower.com/pro/automatic-branch-management">
+            <span class="nav-top-secondary-title">
+              Branch Cleanup
+              <span class="nav-top-secondary-pro-label" role="img" aria-label="Pro"></span>
+            </span>
+            <span class="nav-top-secondary-subline">Cut through the branch noise</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-self-hosted" href="https://www.git-tower.com/pro/enterprise-services">
+            <span class="nav-top-secondary-title">
+              Self-Hosted Repos
+              <span class="nav-top-secondary-pro-label" role="img" aria-label="Pro"></span>
+            </span>
+            <span class="nav-top-secondary-subline">Connect your own server</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-top-merge-detection" href="https://www.git-tower.com/pro/pr-merged-detection">
+            <span class="nav-top-secondary-title">
+              Merge Detection
+              <span class="nav-top-secondary-pro-label" role="img" aria-label="Pro"></span>
+            </span>
+            <span class="nav-top-secondary-subline">Catch merges Git can't see</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="https://www.git-tower.com/pricing">Pricing</a>
+    </li>
+    <li class="nav-top-primary-spacer"></li>
+    <li>
+      <a href="https://www.git-tower.com/support/help-center">Support</a>
+      <ul class="nav-top-secondary">
+        <li class="nav-top-tertiary-parent">
+          <a href="https://www.git-tower.com/learn" aria-haspopup="true">Learn Git</a>
+          <ul class="nav-top-tertiary">
+            <li>
+              <a id="nav-top-videos" href="https://www.git-tower.com/learn/git/videos">
+                <span class="nav-top-secondary-title">Video Course</span>
+                <span class="nav-top-secondary-subline">24 episodes</span>
+              </a>
+            </li>
+            <li>
+              <a id="nav-top-book" href="https://www.git-tower.com/learn/git/ebook">
+                <span class="nav-top-secondary-title">Online Book</span>
+                <span class="nav-top-secondary-subline">From novice to master</span>
+              </a>
+            </li>
+            <li class="nav-top-secondary-seperator" aria-hidden="true"></li>
+            <li>
+              <a id="nav-top-cheatsheets" href="https://www.git-tower.com/learn/cheat-sheets">
+                <span class="nav-top-secondary-title">Cheat Sheets</span>
+                <span class="nav-top-secondary-subline">For quick lookup</span>
+              </a>
+            </li>
+            <li>
+              <a id="nav-top-webinar" href="https://www.git-tower.com/learn/git/webinar">
+                <span class="nav-top-secondary-title">Webinar</span>
+                <span class="nav-top-secondary-subline">Learn from a Git professional</span>
+              </a>
+            </li>
+            <li class="nav-top-secondary-seperator" aria-hidden="true"></li>
+            <li>
+              <a id="nav-top-firstaid" href="https://www.git-tower.com/learn/git/first-aid-kit">
+                <span class="nav-top-secondary-title">First Aid Kit</span>
+                <span class="nav-top-secondary-subline">Recover from mistakes</span>
+              </a>
+            </li>
+            <li>
+              <a id="nav-top-advanced" href="https://www.git-tower.com/learn/git/advanced-git-kit">
+                <span class="nav-top-secondary-title">Advanced Git Kit</span>
+                <span class="nav-top-secondary-subline">Dive deeper</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-top-secondary-seperator" aria-hidden="true"></li>
+        <li>
+          <a href="https://www.git-tower.com/help/home">Documentation</a>
+        </li>
+        <li>
+          <a href="https://www.git-tower.com/support/contact">Contact Us</a>
+        </li>
+        <li class="nav-top-secondary-seperator" aria-hidden="true"></li>
+        <li>
+          <a href="https://account.git-tower.com" target="_blank">Account Login</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="https://www.git-tower.com/blog">Blog</a>
+    </li>
+    <li class="nav-top-download">
+      <span class="visible-on--mac">
+        <a href="https://www.git-tower.com/download/mac" class="button--start-trial analytics--click">Download</a>
+      </span>
+      <span class="visible-on--windows">
+        <a href="https://www.git-tower.com/download/windows" class="button--start-trial analytics--click" data-architecture-adaptive-link="true" data-default-href="https://www.git-tower.com/download/windows" data-arm-href="https://www.git-tower.com/download/windows?arch=arm64">Download</a>
+      </span>
+    </li>
+  </ul>
+</nav>
+
+<main id="main-content" tabindex="-1">
+      <section class="announcement-bar ">
+	<div class="inner-container hidden">
+    <span class="announcement-bar__text visible-on--mac"><a class="analytics--click" href="https://www.git-tower.com/blog/tower-mac-18">Tower 18 for Mac – A Better Command Line Experience</a></span>
+    <span class="announcement-bar__button visible-on--mac"><a class="button analytics--click" href="https://www.git-tower.com/blog/tower-mac-18">Learn More</a></span>
+
+    <span class="announcement-bar__text visible-on--windows"><a class="analytics--click" href="https://www.git-tower.com/blog/tower-windows-14">Tower 14 for Windows – Branches Review</a></span>
+    <span class="announcement-bar__button visible-on--windows"><a class="button analytics--click" href="https://www.git-tower.com/blog/tower-windows-14">Learn More</a></span>
+  </div>
+</section>
+    
+<header class="outer-container theme--09">
+  <div class="inner-container inner-container--maxwidth">
+    <div class="header__claim">
+      <h1 class="headline">Tower for Students</h1>      <h3 class="subline">Get free access to Tower "Pro" as a student.</h3>                                        </div>
+          <div class="header__visual">
+         <img class="tower-icon" src="https://www.git-tower.com/assets/img/illustrations/tower-icon.1791973285.png" alt="Tower Git Client icon">      </div>
+      </div>
+</header>
+
+<section class="outer-container outer-container--padding theme--06" id="students_apply-with-email">
+  <div class="inner-container inner-container--maxwidth">
+    <div class="github-and-tower__text">
+      <h2 class="text--centered">Tower is Free for Students</h2>
+      <p class="subheader">We've partnered with GitHub Education to offer <span class="font--highlight">Tower "Pro" for free</span> to all students enrolled in the GitHub Student Developer Pack.</p>
+    </div>
+    <hr style="clear: both; visibility: hidden;" />
+    <div class="github-and-tower-button">
+      <a class="button button--outlined button--primary" href="https://account.git-tower.com/education_packs/github/student/authorization">Sign In with GitHub</a>
+    </div>
+    <hr style="clear: both; visibility: hidden;" />
+    <hr style="clear: both; visibility: hidden;" />
+    <div class="apply-with-email__text">
+      <p class="subheader">Or simply apply with your school email address.</p>
+    </div>
+    <hr style="clear: both; visibility: hidden;" />
+    <div class="apply-with-email__form">
+      <form action="" id="education-offer-form" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+        <input type="text" name="email" placeholder="Enter your school email..." value="">
+        <input type="hidden" name="type" value="student">
+
+        <div class="contact-form__honeypot" id="form-honeypot">
+          <label>
+            Please don't enter anything into this field, it's used to stop bots and shouldn't be visible to normal users.
+            <input name="hp_consent" id="field-hp_consent">
+          </label>
+        </div>
+
+        <input type="submit" class="button button--outlined button--primary" value="Get a Free License">
+      </form>
+      <div id="education-offer-form__request-notice" class="request-notice"><u>No</u> credit card / payment information required.</div>
+    </div>
+  </div>
+</section>
+
+<section class="outer-container outer-container--padding theme--10" id="education_tower-pitch">
+  <div class="inner-container inner-container--maxwidth">
+
+    <h2 class="text--centered">The Best Git Client for Mac & Windows</h2>
+    <p class="subheader">Tower is the tool of choice for over 100,000 developers in companies like Apple, Google, Amazon, and Shopify.</p>
+
+    <div class="details-container">
+      <div class="details-item">
+        <h3>Easy</h3>
+        <p>Tower makes many advanced actions as easy as drag and drop. <a href="https://www.git-tower.com/features/easy">Learn more...</a></p>
+      </div>
+      <div class="details-item">
+        <h3>Powerful</h3>
+        <p>Get access to all of Git's powerful feature set - easily and effectively. <a href="https://www.git-tower.com/features/powerful">Learn more...</a></p>
+      </div>
+      <div class="details-item">
+        <h3>Productive</h3>
+        <p>Put less time into version control - and have more time for your projects. <a href="https://www.git-tower.com/features/productive">Learn more...</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="outer-container outer-container--padding theme--08" id="education-faqs">
+  <div class="inner-container inner-container--maxwidth">
+    
+    <h2 class="text--centered">Questions & Answers</h2>
+
+        <div class="education-faqs__item">
+      <h5>Do I qualify for this free offer?</h5>
+      <ul>
+        <li><strong>College / University:</strong> You qualify if you're a student at an accredited college or university.</li>
+        <li><strong>Bootcamp / Codecamp:</strong> Students are asked to contact their instructors so they can <a href="https://www.git-tower.com/education">apply for our "Tower for Education" program</a> - and receive free licenses for their students.</li>
+      </ul>
+    </div>
+    
+        <div class="education-faqs__item">
+      <h5>How can I apply?</h5>
+      <p>1. Enter your school email address in the form above.</p>
+      <p>2. We'll send you a confirmation email where you can request your free Tower license. If your school email is <strong>not</strong> a ".edu" address, we will ask you to provide a <strong>dated student ID</strong> as proof of enrollment.</p>
+    </div>
+
+    <div class="education-faqs__item">
+      <h5>Do I need a credit card to redeem the offer?</h5>
+      <p>No, you will <strong>NOT</strong> need to enter any payment information.</p>
+    </div>
+
+    <div class="education-faqs__item">
+      <h5>How long can I use Tower?</h5>
+      <p>You will receive 12 months of Tower for free. We will notify you via email before these 12 months end: if you can re-confirm your student status, you can extend your free account. If you're not a student anymore, your license will expire and you can choose to start a paid Tower subscription.</p>
+    </div>
+
+    <div class="education-faqs__item">
+      <h5>I already have a paid account. Can I still get a free license?</h5>
+      <p>We do <strong>not</strong> refund already paid subscriptions. However, you can cancel your paid account at any time and apply for a free student account.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="outer-container button-bar theme--05" id="content_try-pro">
+  <div class="inner-container inner-container--maxwidth">
+    
+        <h2><p>Haven't tried Tower yet?</p></h2>
+
+    <div class="button-bar__buttons">
+      <div class="button__wrap">
+  <span class="visible-on--mac">
+    <a class="button button--outlined button--start-trial button--start-trial--content analytics--click" href="https://www.git-tower.com/download/mac">
+      Try Pro - 30 Days for Free    </a>
+    <br />
+    <span class="note"><div class="os-selection os-selection--single"><a class="visible-on--mac os-switch os-switch--windows selectable" href="javascript:void(0);"><span class="os-switch__prefix">Also available for </span><span class="os-switch__os-string">Windows</span></a><a class="visible-on--windows os-switch os-switch--mac selectable" href="javascript:void(0);"><span class="os-switch__prefix">Also available for </span><span class="os-switch__os-string">macOS</span></a></div></span>
+  </span>
+  <span class="visible-on--windows">
+        <div class="button--split-dropdown" data-architecture-adaptive="true" data-arm-url="https://www.git-tower.com/download/windows?arch=arm64">
+      <a class="button button--outlined button--start-trial button--start-trial--content button__main analytics--click" href="https://www.git-tower.com/download/windows" data-default-href="https://www.git-tower.com/download/windows">
+        <span class="button-text" data-default-text="Try Pro - 30 Days for Free (x64)">Try Pro - 30 Days for Free (x64)</span>
+      </a>
+      <button class="button__dropdown-trigger" aria-expanded="false" aria-haspopup="true" aria-label="More download options">
+      </button>
+      <div class="download-dropdown" role="menu">
+        <a href="https://www.git-tower.com/download/windows?arch=arm64" class="download-dropdown__item analytics--click" role="menuitem" data-track="alternative">
+          <span class="dropdown-item-text" data-default-text="Try Pro - 30 Days for Free (ARM)">Try Pro - 30 Days for Free (ARM)</span>
+        </a>
+      </div>
+    </div>
+    <br />
+        <span class="note"><div class="os-selection os-selection--single"><a class="visible-on--mac os-switch os-switch--windows selectable" href="javascript:void(0);"><span class="os-switch__prefix">Also available for </span><span class="os-switch__os-string">Windows</span></a><a class="visible-on--windows os-switch os-switch--mac selectable" href="javascript:void(0);"><span class="os-switch__prefix">Also available for </span><span class="os-switch__os-string">macOS</span></a></div></span>
+  </span>
+</div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="outer-container testimonials testimonials--content-slider" id="content_testimonial-slider"><div class="inner-container inner-container--maxwidth"><div class="content-slider" data-autorotate="5000"><div class="content-slider__item">  <div class="testimonial">    <div class="testimonial__image"><img src="https://www.git-tower.com/assets/img/testimonials/ed-blankenship@224w.1791973285.jpg" width="224" height="224" alt="Ed Blankenship"/></div>    <p class="testimonial__person"><span class="testimonial__name">Ed Blankenship</span><span class="testimonial__company">formerly at Microsoft</span></p>    <p class="testimonial__text">We're so glad that Tower has brought their awesome Git client from Mac to Windows. It's for any serious developer using Windows or Mac.</p>  </div></div><div class="content-slider__item">  <div class="testimonial">    <div class="testimonial__image"><img src="https://www.git-tower.com/assets/img/testimonials/jesse-bilsten@224w.1791973285.jpg" width="224" height="224" alt="Jesse Bilsten"/></div>    <p class="testimonial__person"><span class="testimonial__name">Jesse Bilsten</span><span class="testimonial__company">Principal Designer at GoDaddy</span></p>    <p class="testimonial__text">I utilize Git in both design and development environments - and Tower is the only tool that empowers me in both.</p>  </div></div></div></div></section>
+</main>
+
+<footer class="outer-container theme--10">
+  <div class="inner-container inner-container--maxwidth">
+
+          <nav class="navi-footer" aria-label="Footer">
+
+  <div class="navi-footer__col">
+    <div class="navi-footer__group">
+      <h2 class="footer-group__heading">
+        <button class="footer-group__label" aria-expanded="true" aria-controls="footer-list__tower">Tower Git Client</button>
+      </h2>
+      <ul id="footer-list__tower">
+        <li><a href="https://www.git-tower.com/download/mac">Download for macOS</a></li>
+        <li><a href="https://www.git-tower.com/download/windows">Download for Windows</a></li>
+        <li><a href="https://www.git-tower.com/release-notes">Releases</a></li>
+        <li><a href="https://www.git-tower.com/pricing">Pricing</a></li>
+        <li><a href="https://www.git-tower.com/beta">Beta Channel</a></li>
+      </ul>
+    </div>
+    <div class="navi-footer__group">
+      <h2 class="footer-group__heading">
+        <button class="footer-group__label" aria-expanded="false" aria-controls="footer-list__usecases">Use Cases</button>
+      </h2>
+      <ul id="footer-list__usecases" class="footer-group__list--collapsed">
+        <li><a href="https://www.git-tower.com/use-cases/developers">Developers</a></li>
+        <li><a href="https://www.git-tower.com/features/cli-vs-gui">CLI vs GUI</a></li>
+        <li><a href="https://www.git-tower.com/use-cases/designers">Designers</a></li>
+        <li><a href="https://www.git-tower.com/use-cases/teams">Teams</a></li>
+        <li><a href="https://www.git-tower.com/use-cases/enterprise">Enterprise</a></li>
+        <li><a href="https://www.git-tower.com/students">Students</a></li>
+        <li><a href="https://www.git-tower.com/education">Teachers & Universities</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navi-footer__col">
+    <div class="navi-footer__group">
+      <h2 class="footer-group__heading">
+        <button class="footer-group__label" aria-expanded="false" aria-controls="footer-list__features">Features</button>
+      </h2>
+      <ul id="footer-list__features" class="footer-group__list--collapsed">
+        <li><a href="https://www.git-tower.com/features/undo">Undo Anything</a></li>
+        <li><a href="https://www.git-tower.com/features/drag-and-drop">Drag and Drop</a></li>
+        <li><a href="https://www.git-tower.com/features/integrations">Integrations</a></li>
+        <li><a href="https://www.git-tower.com/features/workflows">Custom Workflows</a></li>
+        <li>&nbsp;</li>
+        <li><a href="https://www.git-tower.com/pro/advanced-custom-workflows">Advanced Custom Workflows <span class="pro-badge">Pro</span></a></li>
+        <li><a href="https://www.git-tower.com/pro/graphite-workflow">Graphite Workflow <span class="pro-badge">Pro</span></a></li>
+        <li><a href="https://www.git-tower.com/pro/stacked-branches">Stacked Branches <span class="pro-badge">Pro</span></a></li>
+        <li><a href="https://www.git-tower.com/pro/automatic-branch-management">Automatic Branch Management <span class="pro-badge">Pro</span></a></li>
+        <li><a href="https://www.git-tower.com/pro/enterprise-services">Self-Hosted Repositories <span class="pro-badge">Pro</span></a></li>
+        <li><a href="https://www.git-tower.com/pro/pr-merged-detection">PR-Based Merge Detection <span class="pro-badge">Pro</span></a></li>
+        <li>&nbsp;</li>
+        <li><a href="https://www.git-tower.com/features/new-features">New Features</a></li>
+        <li><a href="https://www.git-tower.com/features/all-features">All Features</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navi-footer__col">
+    <div class="navi-footer__group">
+      <h2 class="footer-group__heading">
+        <button class="footer-group__label" aria-expanded="false" aria-controls="footer-list__free-tools">Free Tools</button>
+      </h2>
+      <ul id="footer-list__free-tools" class="footer-group__list--collapsed">
+        <li><a href="https://www.git-tower.com/free-tools/code-diff">Code Diff Tool</a></li>
+        <li><a href="https://www.git-tower.com/free-tools/gitignore">.gitignore Generator</a></li>
+        <li><a href="https://www.git-tower.com/free-tools/git-config-generator">Git Config Generator</a></li>
+        <li><a href="https://www.git-tower.com/git-hooks">Git Hooks Library</a></li>
+        <li><a href="https://www.git-tower.com/commit-templates">Commit Templates Library</a></li>
+      </ul>
+    </div>
+    <div class="navi-footer__group">
+      <h2 class="footer-group__heading">
+        <button class="footer-group__label" aria-expanded="false" aria-controls="footer-list__support">Support</button>
+      </h2>
+      <ul id="footer-list__support" class="footer-group__list--collapsed">
+        <li><a href="https://www.git-tower.com/support/help-center">Help Center</a></li>
+        <li><a href="https://www.git-tower.com/help/home">Documentation</a></li>
+        <li><a href="https://www.git-tower.com/learn">Learn Git</a></li>
+        <li><a href="https://www.git-tower.com/newsletter">Newsletter</a></li>
+        <li><a href="https://www.git-tower.com/support/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navi-footer__col">
+    <div class="navi-footer__group">
+      <h2 class="footer-group__heading">
+        <button class="footer-group__label" aria-expanded="false" aria-controls="footer-list__company">Company</button>
+      </h2>
+      <ul id="footer-list__company" class="footer-group__list--collapsed">
+        <li><a href="https://www.git-tower.com/about-us">About</a></li>
+        <li><a href="https://www.git-tower.com/blog" target="_blank">Blog</a></li>
+        <li><a href="https://www.git-tower.com/company/press">Press</a></li>
+        <li><a href="https://www.git-tower.com/company/jobs">Jobs</a></li>
+        <li><a href="https://stuff.git-tower.com/" target="_blank">Merch</a></li>
+      </ul>
+    </div>
+    <div class="navi-footer__group">
+      <h2 class="footer-group__heading">
+        <button class="footer-group__label" aria-expanded="false" aria-controls="footer-list__legal">Legal</button>
+      </h2>
+      <ul id="footer-list__legal" class="footer-group__list--collapsed">
+        <li><a href="https://www.git-tower.com/legal/eula">License Agreement</a></li>
+        <li><a href="https://www.git-tower.com/legal/privacy-policy">Privacy Policy</a></li>
+        <li><button type="button" class="footer-privacy-settings-btn" onclick="UC_UI.showSecondLayer();">Privacy Settings</button></li>
+        <li><a href="https://www.git-tower.com/legal/imprint">Imprint</a></li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+    
+    <div class="social-media-icons">
+  <ul class="social-media-icons-list">
+    <li><a href="https://www.facebook.com/gittower/" rel="noopener noreferrer" target="_blank" aria-label="Facebook" title="Facebook" class="social-media-icon">
+        
+      </a></li>
+    <li><a href="https://www.x.com/gittower/" rel="noopener noreferrer" target="_blank" aria-label="X / Twitter" title="X / Twitter" class="social-media-icon">
+      
+      </a></li>
+    <li><a href="https://bsky.app/profile/git-tower.com" rel="noopener noreferrer" target="_blank" aria-label="Bluesky" title="Bluesky" class="social-media-icon">
+      
+    </a></li>
+    <li><a href="https://www.instagram.com/gittower/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" title="Instagram" class="social-media-icon">
+      
+      </a></li>
+    <li><a href="https://www.linkedin.com/company/gittower/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" title="LinkedIn" class="social-media-icon">
+      
+      </a></li>
+    <li><a href="https://www.youtube.com/@gittower" rel="noopener noreferrer" target="_blank" aria-label="YouTube" title="YouTube" class="social-media-icon">
+      
+      </a></li>
+  </ul>
+</div>
+
+    <div class="copyright">
+      <p>© 2010-2026 <a href="https://www.git-tower.com" rel="noopener noreferrer" target="_blank">Tower</a> - Mentioned product names and logos are property of their respective owners.</p>    </div>
+
+  </div>
+</footer>
+
+<div class="overlay__container overlay__container--download" role="dialog" aria-modal="true" aria-labelledby="overlay-download-title">
+	<div class="overlay__wrapper">
+	  
+		<div class="overlay__content overlay__content--1">
+		  <div class="content__header">
+        <div class="header__icon"></div>
+	      <div class="header__text">
+          <h2 id="overlay-download-title">Your trial is downloading…</h2>
+          <h4>Try Tower "Pro" for 30 days without limitations!</h4>
+        </div>
+	      <button class="overlay__button--close" aria-label="Close dialog"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+	    </div>
+	    <div class="content__body">
+		    <h2>Updates, Courses &amp; Content via Email</h2>
+	      <div class="visible-on--mac">
+	        <form class="newsletter-form analytics--submit"  id="signup-after-download-form"  autocomplete="off">
+          <input type="hidden" name="lists[]" value="tower-newsletter" />
+  
+    <div class="newsletter-form__groups">
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_newsletter"  id="signup-tag__tower_newsletter" />Updates about <b>Tower, discounts, and giveaways</b> as well as new content from the Tower blog.</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_learngit"  id="signup-tag__tower_learngit" />Free email course "<b>Learn Git with Tower</b>" (8 emails)</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_tipstricks-mac"  id="signup-tag__tower_tipstricks-mac" />Free email course "<b>Tips &amp; Tricks for Tower</b>" (10 emails)</label>
+    </div>
+      </div>
+  
+    <div class="newsletter-form__consent">
+        <label><input type="checkbox" id="consent--legal" class="consent__item consent__text" data-required="1" />I have read and accept the <a href="https://www.git-tower.com/legal/privacy-policy" target="_blank">Privacy Policy</a>. I understand that I can unsubscribe at any time by clicking on the unsubscribe link in any email.</label>
+      </div>
+  
+  <div class="newsletter-form__signup">
+    <label for="newsletter-email-signup-after-download-form" class="sr-only">Email address</label>
+    <input type="email" name="email" id="newsletter-email-signup-after-download-form" placeholder="Your email address" aria-required="true" />
+    <input type="submit" value="Subscribe for Free" class="newsletter-form__signup-button button--outlined" />
+  </div>
+
+    <input type="hidden" name="signup[medium]" value="tower-website" />
+      <input type="hidden" name="signup[URI]" value="students/download-trial" />
+      <input type="hidden" name="signup[OS]" value="" />
+    <div class="request-notice"></div>
+</form>
+	      </div>
+	      <div class="visible-on--windows">
+	        <form class="newsletter-form analytics--submit"  id="signup-after-download-form"  autocomplete="off">
+          <input type="hidden" name="lists[]" value="tower-newsletter" />
+  
+    <div class="newsletter-form__groups">
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_newsletter"  id="signup-tag__tower_newsletter" />Updates about <b>Tower, discounts, and giveaways</b> as well as new content from the Tower blog.</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_learngit"  id="signup-tag__tower_learngit" />Free email course "<b>Learn Git with Tower</b>" (8 emails)</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_tipstricks-windows"  id="signup-tag__tower_tipstricks-windows" />Free email course "<b>Tips &amp; Tricks for Tower"</b> (8 emails)</label>
+    </div>
+      </div>
+  
+    <div class="newsletter-form__consent">
+        <label><input type="checkbox" id="consent--legal" class="consent__item consent__text" data-required="1" />I have read and accept the <a href="https://www.git-tower.com/legal/privacy-policy" target="_blank">Privacy Policy</a>. I understand that I can unsubscribe at any time by clicking on the unsubscribe link in any email.</label>
+      </div>
+  
+  <div class="newsletter-form__signup">
+    <label for="newsletter-email-signup-after-download-form" class="sr-only">Email address</label>
+    <input type="email" name="email" id="newsletter-email-signup-after-download-form" placeholder="Your email address" aria-required="true" />
+    <input type="submit" value="Subscribe for Free" class="newsletter-form__signup-button button--outlined" />
+  </div>
+
+    <input type="hidden" name="signup[medium]" value="tower-website" />
+      <input type="hidden" name="signup[URI]" value="students/download-trial" />
+      <input type="hidden" name="signup[OS]" value="" />
+    <div class="request-notice"></div>
+</form>
+	      </div>
+	    </div>
+		</div>
+
+		<div class="overlay__content overlay__content--2 hidden">
+		  <div class="content__header">
+	      <div class="header__text">
+  	      <h2>Thank you for subscribing.</h2>
+  	      <h4>Please check your email to confirm.</h4>
+        </div>
+	      <button class="overlay__button--close" aria-label="Close dialog"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+	    </div>
+		  <div class="content__body">
+	      <h3>Want to win one of our awesome Tower shirts?<br/><b>Tell your friends about Tower!</b></h3>
+	      <span><button class="button button--secondary button--twitter analytics--click" onclick="FN.socialShare('twitter', 'https://www.git-tower.com', 'The all-new Tower is finally here! The best Git client on Mac and Windows now with Pull Requests, Interactive Rebase, Quick Actions, and so much more. Try it free for 30 days. #gittower');">Share on Twitter</button></span>
+	      <p class="hint">We'll pick 4 winners every month who share this tweet!<br />Follow <a href="https://x.com/gittower" target="_blank">@gittower</a> to be notified if you win!</p>
+		  </div>
+		</div>
+
+	</div>
+</div>
+
+<div class="overlay__container--screencast" role="dialog" aria-modal="true" aria-label="Screencast viewer">
+
+	<div class="screencast__wrapper">
+		<button class="overlay__button--close" aria-label="Close screencast"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+	</div>
+</div>
+
+<div class="overlay__container overlay__container--trial-via-email" role="dialog" aria-modal="true" aria-labelledby="overlay-trial-title">
+	<div class="overlay__wrapper">
+	  
+		<div class="overlay__content overlay__content--1">
+		  <div class="content__header">
+	      <div class="header__text">
+  	      <h2 id="overlay-trial-title">Try Tower for Free</h2>
+  	      <h6>Sign up below and use Tower "Pro" for 30 days without limitations!</h6>
+        </div>
+	      <button class="overlay__button--close" aria-label="Close dialog"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+	    </div>
+	    <div class="content__body">
+	        <form class="newsletter-form analytics--submit"  id="signup-trial-via-email"  autocomplete="off">
+          <input type="hidden" name="lists[]" value="tower-newsletter" />
+  
+    <div class="newsletter-form__groups">
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_trial"  id="signup-tag__tower_trial" />Yes, send me instructions on <b>how to get started</b> with Tower.</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_newsletter"  id="signup-tag__tower_newsletter" />Yes, I want to hear about new <b>Tower updates, discounts and giveaways</b> as well as new content from the Tower blog.</label>
+    </div>
+      </div>
+  
+    <div class="newsletter-form__consent">
+        <label><input type="checkbox" id="consent--legal" class="consent__item consent__text" data-required="1" />I have read and accept the <a href="https://www.git-tower.com/legal/privacy-policy" target="_blank">Privacy Policy</a>. I understand that I can unsubscribe at any time.</label>
+      </div>
+  
+  <div class="newsletter-form__signup">
+    <label for="newsletter-email-signup-trial-via-email" class="sr-only">Email address</label>
+    <input type="email" name="email" id="newsletter-email-signup-trial-via-email" placeholder="Your email address" aria-required="true" />
+    <input type="submit" value="Go" class="newsletter-form__signup-button button--outlined" />
+  </div>
+
+    <input type="hidden" name="signup[medium]" value="tower-website" />
+      <input type="hidden" name="signup[URI]" value="students/trial-via-email" />
+      <input type="hidden" name="signup[OS]" value="" />
+    <div class="request-notice"></div>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<dialog class="modal-view" id="after-download-modal" aria-modal="true" aria-labelledby="after-download-modal-title">
+  <header class="modal-big-header">
+    <h2 class="modal-title" id="after-download-modal-title">Your trial is downloading…</h2>
+    <p class="modal-description">Try Tower "Pro" for 30 days without limitations!</p>
+    <div class="modal-app-icon">
+      <picture>
+        <source type="image/avif" srcset="https://www.git-tower.com/assets/img/icons/downloads-modal-app-icon.1791973285.avif">
+        <img src="https://www.git-tower.com/assets/img/icons/downloads-modal-app-icon.1791973285.png" width="170" height="170" alt="Tower Icon" />
+      </picture>
+      <span class="modal-app-icon-name">Tower</span>
+    </div>
+    <button class="modal-close">Close</button>
+  </header>
+	<section class="modal-content after-download">
+    <h2>Updates, Courses &amp; Content via Email</h2>
+    <div class="visible-on--mac">
+      <form class="newsletter-form analytics--submit"  id="signup-after-download-form"  autocomplete="off">
+          <input type="hidden" name="lists[]" value="tower-newsletter" />
+  
+    <div class="newsletter-form__groups">
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_newsletter"  id="signup-tag__tower_newsletter" />Updates about <b>Tower, discounts, and giveaways</b> as well as new content from the Tower blog.</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_learngit"  id="signup-tag__tower_learngit" />Free email course "<b>Learn Git with Tower</b>" (8 emails)</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_tipstricks-mac"  id="signup-tag__tower_tipstricks-mac" />Free email course "<b>Tips &amp; Tricks for Tower</b>" (10 emails)</label>
+    </div>
+      </div>
+  
+    <div class="newsletter-form__consent">
+        <label><input type="checkbox" id="consent--legal" class="consent__item consent__text" data-required="1" />I have read and accept the <a href="https://www.git-tower.com/legal/privacy-policy" target="_blank">Privacy Policy</a>. I understand that I can unsubscribe at any time by clicking on the unsubscribe link in any email.</label>
+      </div>
+  
+  <div class="newsletter-form__signup">
+    <label for="newsletter-email-signup-after-download-form" class="sr-only">Email address</label>
+    <input type="email" name="email" id="newsletter-email-signup-after-download-form" placeholder="Your email address" aria-required="true" />
+    <input type="submit" value="Subscribe for Free" class="newsletter-form__signup-button button--outlined" />
+  </div>
+
+    <input type="hidden" name="signup[medium]" value="tower-website" />
+      <input type="hidden" name="signup[URI]" value="students/download-trial" />
+      <input type="hidden" name="signup[OS]" value="" />
+    <div class="request-notice"></div>
+</form>
+    </div>
+    <div class="visible-on--windows">
+      <form class="newsletter-form analytics--submit"  id="signup-after-download-form"  autocomplete="off">
+          <input type="hidden" name="lists[]" value="tower-newsletter" />
+  
+    <div class="newsletter-form__groups">
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_newsletter"  id="signup-tag__tower_newsletter" />Updates about <b>Tower, discounts, and giveaways</b> as well as new content from the Tower blog.</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_learngit"  id="signup-tag__tower_learngit" />Free email course "<b>Learn Git with Tower</b>" (8 emails)</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_tipstricks-windows"  id="signup-tag__tower_tipstricks-windows" />Free email course "<b>Tips &amp; Tricks for Tower"</b> (10 emails)</label>
+    </div>
+      </div>
+  
+    <div class="newsletter-form__consent">
+        <label><input type="checkbox" id="consent--legal" class="consent__item consent__text" data-required="1" />I have read and accept the <a href="https://www.git-tower.com/legal/privacy-policy" target="_blank">Privacy Policy</a>. I understand that I can unsubscribe at any time by clicking on the unsubscribe link in any email.</label>
+      </div>
+  
+  <div class="newsletter-form__signup">
+    <label for="newsletter-email-signup-after-download-form" class="sr-only">Email address</label>
+    <input type="email" name="email" id="newsletter-email-signup-after-download-form" placeholder="Your email address" aria-required="true" />
+    <input type="submit" value="Subscribe for Free" class="newsletter-form__signup-button button--outlined" />
+  </div>
+
+    <input type="hidden" name="signup[medium]" value="tower-website" />
+      <input type="hidden" name="signup[URI]" value="students/download-trial" />
+      <input type="hidden" name="signup[OS]" value="" />
+    <div class="request-notice"></div>
+</form>
+    </div>
+  </section>
+</dialog>
+
+<dialog class="modal-view" id="after-subscribe-modal" aria-modal="true" aria-labelledby="after-subscribe-modal-title">
+  <header class="modal-big-header">
+    <h2 class="modal-title" id="after-subscribe-modal-title">Thank you for subscribing</h2>
+    <p class="modal-description">Please check your email to confirm</p>
+    <button class="modal-close">Close</button>
+  </header>
+	<section class="modal-content after-subscribe">
+    <h2>
+      Want to win one of our awesome Tower shirts?<br />
+      <strong>Tell your friends about Tower!</strong>
+    </h2>
+    <div class="after-subscribe-share">
+      <button class="button button--secondary button--twitter analytics--click" onclick="FN.socialShare('twitter', 'https://www.git-tower.com', 'The all-new Tower is finally here! The best Git client on Mac and Windows now with Pull Requests, Interactive Rebase, Quick Actions, and so much more. Try it free for 30 days. #gittower')">Share on Twitter</button>
+    </div>
+    <p class="after-subscribe-winners">
+      We'll pick 4 winners every month who share this tweet!<br />
+      Follow <a href="https://x.com/gittower" target="_blank">@gittower</a> to be notified if you win!
+    </p>
+  </section>
+</dialog>
+
+<dialog class="modal-view" id="trial-via-email" aria-modal="true" aria-labelledby="trial-via-email-title">
+  <header class="modal-big-header">
+    <h2 class="modal-title" id="trial-via-email-title">Try Tower for Free</h2>
+    <p class="modal-description">Sign up below and use Tower "Pro" for 30 days without limitations!</p>
+    <button class="modal-close">Close</button>
+  </header>
+	<section class="modal-content trial-via-email">
+    <form class="newsletter-form analytics--submit"  id="signup-trial-via-email"  autocomplete="off">
+          <input type="hidden" name="lists[]" value="tower-newsletter" />
+  
+    <div class="newsletter-form__groups">
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_trial"  id="signup-tag__tower_trial" />Yes, send me instructions on <b>how to get started</b> with Tower.</label>
+    </div>
+        <div class="row" >
+      <label><input class="signup-tag__item consent__text" name="tags[]" type="checkbox" value="tower_newsletter"  id="signup-tag__tower_newsletter" />Yes, I want to hear about new <b>Tower updates, discounts and giveaways</b> as well as new content from the Tower blog.</label>
+    </div>
+      </div>
+  
+    <div class="newsletter-form__consent">
+        <label><input type="checkbox" id="consent--legal" class="consent__item consent__text" data-required="1" />I have read and accept the <a href="https://www.git-tower.com/legal/privacy-policy" target="_blank">Privacy Policy</a>. I understand that I can unsubscribe at any time.</label>
+      </div>
+  
+  <div class="newsletter-form__signup">
+    <label for="newsletter-email-signup-trial-via-email" class="sr-only">Email address</label>
+    <input type="email" name="email" id="newsletter-email-signup-trial-via-email" placeholder="Your email address" aria-required="true" />
+    <input type="submit" value="Go" class="newsletter-form__signup-button button--outlined" />
+  </div>
+
+    <input type="hidden" name="signup[medium]" value="tower-website" />
+      <input type="hidden" name="signup[URI]" value="students/trial-via-email" />
+      <input type="hidden" name="signup[OS]" value="" />
+    <div class="request-notice"></div>
+</form>
+  </section>
+</dialog>
+
+	</body>
+</html>

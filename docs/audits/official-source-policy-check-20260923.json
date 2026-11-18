@@ -1,0 +1,134 @@
+[
+  {
+    "url": "https://www.pusan.ac.kr/kor/CMS/Board/PopupBoard.do?board_seq=1509799&mgr_seq=3&mode=view",
+    "robots_http": 404,
+    "allowed": true,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final_url": "https://www.pusan.ac.kr/kor/CMS/Board/PopupBoard.do?board_seq=1509799&mgr_seq=3&mode=view",
+    "page_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "url": "https://stat.pusan.ac.kr/bbs/stat/502/968595/artclView.do",
+    "robots_http": 404,
+    "allowed": true,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final_url": "https://stat.pusan.ac.kr/bbs/stat/502/968595/artclView.do",
+    "page_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "url": "https://onestop.pusan.ac.kr/page?menuCD=000000000000385&mode=DETAIL&seq=243",
+    "robots_http": 404,
+    "allowed": true,
+    "robots_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final_url": "https://onestop.pusan.ac.kr/page?menuCD=000000000000385&mode=DETAIL&seq=243",
+    "page_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "url": "https://obsidian.md/help/discounts",
+    "robots_http": 200,
+    "allowed": true,
+    "robots_hash": "eaeaa8d3511d1622227d89707d995b8b1f0902f5b86fdbe58882d1cef260d4d7",
+    "final_url": "https://obsidian.md/help/discounts",
+    "page_http": 200,
+    "policy_links": [],
+    "policies": []
+  },
+  {
+    "url": "https://unity.com/products/unity-student",
+    "robots_http": 200,
+    "allowed": true,
+    "robots_hash": "1a90eb94d80776f80da593d687c6d1e61cd6c479568fc00b8bbb3b941eaa0c80",
+    "final_url": "https://unity.com/products/unity-student",
+    "page_http": 200,
+    "policy_links": [
+      {
+        "url": "https://unity.com/glossary",
+        "title": "GlossaryLibrary of technical terms"
+      },
+      {
+        "url": "https://unity.com/legal/editor-terms-of-service/software",
+        "title": "Unity Editor Terms &amp; Conditions"
+      },
+      {
+        "url": "https://unity.com/legal",
+        "title": "Legal"
+      }
+    ],
+    "policies": [
+      {
+        "url": "https://unity.com/glossary",
+        "signals": [
+          "process by allowing customers to configure complex products, generate accurate pricing, and receive automated quotes based on their specific requirements. Learn more Central Processing Unit (CPU) A central processing unit (CPU) is the central brain of computing devices, executing program ",
+          "evelopers get paid to show ads to their users. Learn more In-App Bidding In-App Bidding (IAP) is an automated monetization solution in which ad sources bid for impressions in real-time. Learn more In-App Marketing The term “In-app marketing” refers to any kind of marketing campaign that i",
+          "o a skeletal hierarchy of bones and controls enables you to pose and animate characters. Learn more Robot Simulation Robot Simulation allows engineers to model and test robotic systems in virtual environments with accurate physics and sensor simulation, enabling safe validation of con",
+          "trol systems and behavior patterns before physical deployment. Learn more Robotics simulation Robotics Simulation provides virtual environments for designing, testing, and training robotic systems before physical deployment, significantly reducing development costs and risks whi",
+          "y The uncanny valley describes the psychological discomfort people feel when a digital character or robot looks almost, but not quite, human. Learn more Unified Auction Unified Auction is an ad monetization approach that allows multiple advertising buyers to compete simultaneously for",
+          "could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"al",
+          "process by allowing customers to configure complex products, generate accurate pricing, and receive automated quotes based on their specific requirements.\\\",\\\"slug\\\":\\\"/glossary/cpq\\\"},{\\\"title\\\":\\\"Central Processing Unit (CPU) \\\",\\\"summary\\\":\\\"A central processing unit (CPU) is the centr",
+          "ossary/in-app-advertising\\\"},{\\\"title\\\":\\\"In-App Bidding\\\",\\\"summary\\\":\\\"In-App Bidding (IAP) is an automated monetization solution in which ad sources bid for impressions in real-time.\\\",\\\"slug\\\":\\\"/glossary/in-app-bidding\\\"},{\\\"title\\\":\\\"In-App Marketing\\\",\\\"summary\\\":\\\"The term “In-app",
+          "les you to pose and animate characters.\\\",\\\"slug\\\":\\\"/glossary/rigging-in-animation\\\"},{\\\"title\\\":\\\"Robot Simulation\\\",\\\"summary\\\":\\\"Robot Simulation allows engineers to model and test robotic systems in virtual environments with accurate physics and sensor simulation, enabling safe v",
+          "idation of control systems and behavior patterns before physical deployment.\\\",\\\"slug\\\":\\\"/glossary/robot-simulation\\\"},{\\\"title\\\":\\\"Robotics simulation\\\",\\\"summary\\\":\\\"Robotics Simulation provides virtual environments for designing, testing, and training robotic systems before physic",
+          "ks while accelerating iteration cycles through realistic physics simulation.\\\",\\\"slug\\\":\\\"/glossary/robotics-simulation\\\"}],\\\"s\\\":[{\\\"title\\\":\\\"Scene Graph\\\",\\\"summary\\\":\\\"Scene Graph is a hierarchical data structure that organizes all objects in a 3D environment, defining spatial rel",
+          "\\\"The uncanny valley describes the psychological discomfort people feel when a digital character or robot looks almost, but not quite, human. \\\",\\\"slug\\\":\\\"/glossary/uncanny-valley\\\"},{\\\"title\\\":\\\"Unified Auction\\\",\\\"summary\\\":\\\"Unified Auction is an ad monetization approach that allo",
+          "meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Glossary\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"2\\\",{\\\"name\\\":\\\"robots\\\",\\\"content\\\":\\\"index, follow\\\"}],[\\\"$\\\",\\\"link\\\",\\\"3\\\",{\\\"rel\\\":\\\"canonical\\\",\\\"href\\\":\\\"https://unity.com/glossary\\\"}],[\\\"$\\\",\\\"link\\\",\\\"4\\\",{\\\"rel\\\":\\\"alternate\\\",\\\"hrefLang\\\""
+        ],
+        "hash": "de0ff7f54fba58622f462d573cd5269ab69638fb2ca1cc021dc377fcdb54d4ec"
+      },
+      {
+        "url": "https://unity.com/legal/editor-terms-of-service/software",
+        "signals": [
+          " sole purpose of such platform, including the offering, enabling or facilitating (including via any automated, AI-enabled or agentic conversion, transpilation, porting or repackaging service) the preparation of Projects or the Unity Runtime for distribution on, or operation through, such ",
+          "could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"al",
+          " sole purpose of such platform, including the offering, enabling or facilitating (including via any automated, AI-enabled or agentic conversion, transpilation, porting or repackaging service) the preparation of Projects or the Unity Runtime for distribution on, or operation through, such ",
+          "plement and are incorporated into the Unity Terms of Service.\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"2\\\",{\\\"name\\\":\\\"robots\\\",\\\"content\\\":\\\"index, follow\\\"}],[\\\"$\\\",\\\"link\\\",\\\"3\\\",{\\\"rel\\\":\\\"canonical\\\",\\\"href\\\":\\\"https://unity.com/legal/editor-terms-of-service/software\\\"}],[\\\"$\\\",\\\"link\\\",\\\"4\\\",{\\\"re"
+        ],
+        "hash": "df554f622ac1c7494e4db8d2cc0041179efe2f9d5de8194d76cad8831c9cd53c"
+      },
+      {
+        "url": "https://unity.com/legal",
+        "signals": [
+          "er and bringing them up to date with how people build with Unity today: Clearer pathways for AI and automated tools As AI agents, assistants, and automated tools become more common, we&#x27;ve spelled out how they can interact with Unity. AI and machine learning systems can access the pla",
+          "tform through an authorized framework. Additionally, you&#x27;re responsible for any automated tools acting on your behalf or through your account. A clearer picture of how data and content is handled We&#x27;ve added clarity to the definitions that describe the different t",
+          "could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"al",
+          "\":\\\"7b48a8273ccc\\\",\\\"_type\\\":\\\"span\\\",\\\"marks\\\":[\\\"strong\\\"],\\\"text\\\":\\\"Clearer pathways for AI and automated tools\\\"},{\\\"_key\\\":\\\"8cdede1749cb\\\",\\\"_type\\\":\\\"span\\\",\\\"marks\\\":[],\\\"text\\\":\\\" As AI agents, assistants, and automated tools become more common, we've spelled out how they can in",
+          "s can access the platform through an authorized framework. Additionally, you're responsible for any automated tools acting on your behalf or through your account.\\\"}],\\\"file\\\":null,\\\"markDefs\\\":[],\\\"style\\\":\\\"normal\\\"},{\\\"_key\\\":\\\"49529ac9d4de\\\",\\\"_type\\\":\\\"block\\\",\\\"children\\\":[{\\\"_key\\\""
+        ],
+        "hash": "5accb5a4d5efab0ec3e2b00d7988fa05358551728142260c906d6699eb6879b5"
+      }
+    ]
+  },
+  {
+    "url": "https://1password.com/developers/students",
+    "robots_http": 200,
+    "allowed": true,
+    "robots_hash": "a41694aad1aa0a3e1e45e00dece780aa1aba52b8accc6b881cf7b7ea6e020f29",
+    "final_url": "https://1password.com/developers/students",
+    "page_http": 200,
+    "policy_links": [
+      {
+        "url": "https://1password.com/legal-center",
+        "title": "Legal Center"
+      },
+      {
+        "url": "https://1password.com/legal/terms-of-service",
+        "title": "Terms of Service"
+      }
+    ],
+    "policies": [
+      {
+        "url": "https://1password.com/legal-center",
+        "error": "HTTPError"
+      },
+      {
+        "url": "https://1password.com/legal/terms-of-service",
+        "error": "HTTPError"
+      }
+    ]
+  }
+]

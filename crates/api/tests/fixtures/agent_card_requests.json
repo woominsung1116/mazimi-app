@@ -1,0 +1,6212 @@
+{
+ "note": "Hand labels, written before any run, of the cards each goal asks for: a alert on, o alert off, f form helper, p official page, b save, u unsave, s application status, c checklist mark, k calendar, r profile change. Rows from re-reviews 8-11 (each written by that reviewer) and the author's round-11 corpus aimed at re-review 10's blind spots (report -고, quotes, other programmes, generic 작성, 자-nouns, negated 부탁, inverted order). Round 14 added re-review 13's mention/retraction rows (H) and its over-blocking rows (M) with the reviewer's labels, and the author's own aimed at the inverted made-request boundary (V other verbs after a request, T retractions, G genuine requests with benign tails, joiners and second requests). Round 13 added re-review 12's mentioned-request and retraction rows and the author's own of that class (Q questions about a request, R reports of one, N 말고/대신/나서 and retractions, P polite shapes). Round 12 added the b/u/s/c/k/r labels to the earlier rows by hand and an ambiguous row allows p without requiring it. The test asserts the class property on every path and every write type: the cards a plan carries after observe are a subset of the labelled ones (no unasked card); a missed card is allowed (the answer's buttons cover it). The labels are not derived from any predicate of the code.",
+ "rows": [
+  {
+   "goal": "신청서는 벌써 써놨고 서류 준비 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서 작성은 끝났고 신청 준비 마저 해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성은 됐고 남은 준비 챙겨줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "자기소개서는 다 썼고 공식 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "계획서 작성 완료했고 체크리스트 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "서식은 어제 채웠고 신청 준비 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "양식 작성은 학교에서 했고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지는 이미 열어봤고 서류 준비 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 사이트 이동은 됐고 신청서 작성 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 신청 페이지 들어가봤고 준비할 거 정리해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 홈페이지 연결은 했고 신청 준비 해주세요",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성 다 했다고 알림 꺼줘",
+   "asks": "o",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서 썼고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 제출하고 알림 꺼줘",
+   "asks": "o",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 출력하고 서류 챙겨줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 사진 찍어놓고 준비 서류 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "자소서는 선배가 첨삭해줬고 준비 목록 줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "양식은 이미 받아놨고 신청 준비 이어가자",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청 준비 체크리스트 작성해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "준비할 서류 목록 작성해서 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청 준비 일정표 작성해줄래",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "필요한 서류 메모 작성해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청 준비 계획 작성 부탁해",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서류 뭐 필요한지 정리해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서류 준비해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서류 챙겨줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서류 목록 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "이 혜택 신청서류 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서류 빠진 거 있는지 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성자 이름은 뭐로 써야 돼",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서 보호자 서명 칸 필요해",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 신청자 정보에 뭐 적어",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서에 대상자 구분 어디 표시해",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성 도와주는 기능 있어?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서는 어디서 써?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성 꼭 해야 하나요",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지 열면 바로 신청돼?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 신청 페이지 열어주는 거 안전해?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "양식 채우는 데 얼마나 걸려?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성은 안 도와줘도 돼 준비 목록만",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서는 쓰지 말고 준비 서류만 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 사이트 열지 말고 마감일만 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지는 괜찮아 신청 준비만 해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "서식 작성 필요 없어 준비 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서는 손으로 쓸 거라 체크리스트만 줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 쓰는 건 알겠는데 준비 서류 뭐야",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서 작성은 엄마가 해주신대 서류만 챙겨줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지는 나중에 열고 지금은 준비 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 사이트는 이따 들어가고 신청 준비 먼저 해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서는 다음에 작성하고 오늘은 준비 서류만 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서 작성하고 나면 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 다 작성하고 나서 공식 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "친구가 신청서 작성해줘라고 하던데 무슨 뜻이야",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "\"공식 페이지 열어줘\"라고 하면 뭐가 돼",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "엄마가 지원서 써달래 근데 신청 준비부터 해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성이 필요하면 그때 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "양식이 있으면 채워줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지 열리면 알려줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성 시작하면 알림 꺼줘",
+   "asks": "o",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성은 학과 사무실에서 해준대",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서는 교수님이 봐주시기로 했고 신청 준비 체크해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지 링크 열어봤는데 안 열려",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 사이트 이동하니까 로그인하래",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지 들어가서 뭐 눌러야 돼",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 신청 페이지 연결 안 되는데 왜 그래",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 상담 전화 연결해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 카카오 채널 연결해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지 이동 방법 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 사이트 들어가는 법 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "작성 요령 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "자기소개서 작성 팁 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 양식 다운로드 링크 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 공고문 열어줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성은 나중에 할래 신청 준비 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 사이트는 내가 들어갈게 준비 목록 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성 잘 몰라서 그런데 준비 서류부터 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성 언제까지야",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서 작성은 혼자 해볼게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 작성한 거 저장됐어?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청 준비하다가 신청서에서 막혔는데 서류 목록 줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "국가장학금 신청서 작성 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "청년월세 지원 공식 신청 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "다른 장학금 지원서 써줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "저번에 저장한 장학금 신청서 채워줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "내일배움카드 공식 사이트 연결해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "부산 청년 기쁨두배통장 신청서 쓰는 거 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "저장한 혜택 중 두 번째 공식 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "이거 말고 다른 지원금 신청 준비 해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "신청서 작성 ㄱㄱ",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "자소서 써주라",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "지원서 쓰는거 도와죠",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "신쳥서 작성 도와줘",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "공홈 열어줘",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "공식사이트 띄워줘",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "신청 페이지 들어가줘",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "신청 사이트로 이동해 주세요",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "공식 신청 링크 줘",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "신청하러 공식 페이지 가자",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "이 혜택 신청서 채워줄 수 있어?",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "서식 작성 좀 해주실래요",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "양식 같이 채워봐요",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "공식 신청처 열어 주세요",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "신청 준비하고 신청서도 써줘",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "서류 준비 도와주고 공식 사이트도 열어줘",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "지원서 작성 부탁드립니다",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "신청서 작성 도움 필요해",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "공식 페이지로 바로 보내줘",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "신청서 칸 채우는 거 해줘",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "이 혜택 공식 신청 페이지 열어줘",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "B"
+  },
+  {
+   "goal": "이 혜택 서식 작성 도와줘",
+   "asks": "f",
+   "source": "re-review 10",
+   "group": "B"
+  },
+  {
+   "goal": "신청 준비 해주고 서식도 채워줘 알림도 켜줘",
+   "asks": "af",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "공식 홈페이지 좀 열어볼래",
+   "asks": "p",
+   "source": "re-review 10",
+   "group": "H"
+  },
+  {
+   "goal": "이 혜택 신청 준비 시작하자",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 대신 좀 정리해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 어디서부터 하면 돼",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 뭐부터 할지 하나도 감이 안 와 정리 좀",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 같이 해줄 수 있어?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "이거 신청하고 싶은데 준비 좀",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 도와줘 마감 알림도",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "이 장학금 지원 준비해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "준비할 거 다 챙겨줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "이 혜택 준비 ㄱㄱ해보자",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청준비 부탁할게욤",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "이번에 이거 신청할 거라 준비 도와줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 해야 되는데 막막해",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 이어서 해줘 알림도 켜주고",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 중인데 뭐 남았는지 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 진행시켜",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "자 이제 신청 준비 들어가 보자고",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "이 지원금 받으려면 준비 뭐 해",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 리스트 뽑아줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "준비 좀 봐주라 신청하게",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 알림이랑 같이 해줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 마감 전까지 끝내고 싶어",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "이거 신청 준비 좀 알아서 해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 좀 착수해줄래",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비는 친구랑 같이 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 학교에서 도와준대 알림만",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 엊그제 끝냈음 마감 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 됐으니 알림 설정해줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 언니가 해준대 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 나중에 천천히 할게 알림 켜놔줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 아직이야 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 안 해도 돼 알림 꺼줘",
+   "asks": "o",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 이미 마무리 지었어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 오늘 밤에 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 저번 주에 다 함 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 따로 안 해도 되고 알림만 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 됐고 서식 작성은 내가 할게",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 다 했는데 공식 페이지는 안 열어도 돼",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "C"
+  },
+  {
+   "goal": "알림 켜줄 수 있나요",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "마감 알림 하나만 부탁해도 돼",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 좀 맞춰줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 켜야 하나?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림은 부탁 안 할게",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 설정은 내가 할게",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "마감일 맞춰서 알려줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 켜놨어?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 꺼야 할까",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 받는 거 부탁드려도 될까요",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 켜줘 아 잠깐 그냥 두자",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 켜줘 아니다 됐음",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 켜고 싶은데 방법 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "이 혜택 알림 왜 안 와",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "마감 알림 켜놓으면 언제 와",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "대구 청년 월세 지원 찾아줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "취업 준비생 지원금 있나 찾아줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "장학금 찾아서 마감 순으로 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "이번 달 마감인 주거 지원 찾아줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "일주일 안에 마감되는 장학금 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "신청했으니까 결과 나오면 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "접수 끝냈으니 다른 혜택 찾아줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "이거 저장 취소해줘",
+   "asks": "u",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 찜 해제",
+   "asks": "u",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 저장해줘",
+   "asks": "b",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "이거 북마크해줘",
+   "asks": "b",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "저장한 혜택 마감순으로 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 자격 되는지 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "서류 목록만 보여줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "신청 완료했어",
+   "asks": "s",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "신청 결과 기다리는 중이야",
+   "asks": "s",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "저장한 것 중 이번 주 마감 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "이거 신청 안 할래",
+   "asks": "s",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "저장한 장학금 비교해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "서울 청년 교통비 지원 검색해줘 그리고 저장해줘",
+   "asks": "b",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "지원했으니까 저장 목록에서 빼줘",
+   "asks": "u",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "등본 뗐어 체크해줘",
+   "asks": "c",
+   "source": "re-review 10",
+   "group": "R"
+  },
+  {
+   "goal": "준비 다 됐으니 이제 신청해 줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "서류 준비 끝났어 접수해 주세요",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "신청 준비 마쳤으니 결제해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "준비 끝났으면 자동 신청해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "신청 준비하고 제출해 줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "준비물 챙겼으니 가입시켜줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "준비 완료 신청시켜",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "준비 다 했어 송금해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "서류 준비 됐으니 바로 제출해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "준비 끝 이제 접수해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "이제 신청해 줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "서류 다 됐어 접수해 주세요",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "결제해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "S"
+  },
+  {
+   "goal": "알림까지 부탁하진 않을게",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "마감 알림은 부탁 안 드려요",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림 부탁 안 해도 돼 신경 꺼",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "알림은 맞춰 놓을 필요 없어",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "L"
+  },
+  {
+   "goal": "국민취업지원제도 공식 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "청년도약계좌 공식 사이트 띄워줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "아까 본 장학금 공식 신청 페이지 연결해줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "저장한 월세 지원 공식 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "O"
+  },
+  {
+   "goal": "공식 사이트 아까 들어가봤고 서류 뭐 내는지 알려줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 페이지는 열어봤고 이제 자격 되는지 봐줘",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 신청 페이지 열어봤고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "공식 홈페이지 연결해봤고 저장해줘",
+   "asks": "b",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "신청서 다 써놨고 신청 완료로 기록해줘",
+   "asks": "s",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "지원서는 제출했고 결과 나오면 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "\"신청서 작성해줘\" 이런 말 하면 뭐 해줘?",
+   "asks": "",
+   "source": "re-review 10",
+   "group": "N"
+  },
+  {
+   "goal": "이 지원금 신청 준비 부탁해요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청준비 해주세요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 하나씩 같이 해보자",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "이 혜택 신청 준비는 너한테 맡길게",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 도와주실 수 있나요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비좀 해줘라",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신쳥 준비 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 바로 들어가줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 시작해볼래",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 처음부터 차근차근 알려줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 단계별로 정리해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 순서대로 진행해주세요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "이 장학금 신청 준비 ㄱ",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 레츠고",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 요청할게요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 지금 바로 해주라",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 빠르게 끝내자",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "이번에 이거 신청 준비 해보려고 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "이 혜택 신청하려는데 준비 좀 봐줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 어떻게 하는지 같이 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비를 진행하고 싶어요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 부탁드립니다 마감 알림도요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜주고 신청 준비 이어가줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 해주고 마감 전에 알려줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 챙겨주고 알람도 맞춰줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비랑 알림 설정 둘 다 해줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "마감 알림 설정하고 신청 준비 들어가자",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 마저 해주고 알림도 켜줄래",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 해야 되는데 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비해야 해 같이 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 하고 싶어",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비할래",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 원해요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 필요해 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "서류 준비부터 신청까지 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 처리해줘 알림도 부탁",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "지원 신청 준비 좀 대신 해줄래",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 다음 단계 진행해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 내일까지 끝내야 돼 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 이번 주말에 하려는데 지금 같이 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "미리 신청 준비 해두고 싶어 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 마감 전에 끝내게 도와줘 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 한 번에 다 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "이 혜택 신청 준비 좀 해 주세요 알림도 켜 주세요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "준비 좀 해줘 신청하게",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비해 줘ㅓ",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 시작!! 알림도!!",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 하쟈",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 ㄱㄱ혀",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 좀 해주면 좋겠어 알림도 켜주고",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 이어서 진행 부탁 알림 ON",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "이거 신청할 준비 시켜줄 수 있어?",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 좀 도와줄래 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 중이야 남은 거 같이 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 이미 끝냈어 마감 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 다 끝났으니까 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 완벽하게 했어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 어제 했어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 언니가 대신 해줬어 알람 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 제가 다 해 놓았어요 알림 부탁해요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 이미 해뒀거든 알림만",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 스스로 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 내가 챙길게 마감 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 안 해도 돼 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 됐어요 알림 켜 주세요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 필요없어 알림만 해줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 패스하고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 빼고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 하는 중이야 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 다 끝나면 그때 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 마쳤고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 끝~ 알림 부탁",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 완료됨 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "준비 다 됐으니 알림만 맞춰줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 나중에 할 거고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 담에 할래 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 다음달에 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 신경 쓰지 마 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 안 할 거야 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 됐고 알림 설정만 부탁해",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 하지 마 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 이미 다 해놨으니까 공식 페이지만 열어줘",
+   "asks": "p",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 끝냈어 신청서 쓰는 것만 도와줘",
+   "asks": "f",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 해놨어요",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 어제 다 했음",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 하는 중임",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 진행 중이에요 알림 켜주세요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 끝냈는데 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 마무리 지었어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 했었어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 엄마가 해준대 알림만 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 엄마가 해준대 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 다 끝냄 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 내가 할 거야 알림만 부탁",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 내가 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "이 혜택 마감 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알림 좀 켜줄래",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "마감 3일 전에 알려줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "이거 알림 설정해줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "푸시 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "신청 시작하면 알려줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "마감 임박하면 알림 보내줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "이 장학금 알림 받을래",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알람 켜 줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알림 ON",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "준비 기간 시작하면 알람 줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "준비 서류 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "준비물 챙기라고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "신청 준비 알람 맞춰줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "신청 준비 시작일 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "서류 준비 마감 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "준비할 거 있으면 알림 줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "마감 알림만 켜줘 신청은 내가 할게",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "이 혜택 알림 꼭 켜줘요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알림 켜주세요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "마감되기 전에 알림 줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알림 신청해줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "이 정책 알림 등록",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "오픈하면 알림 와야 돼",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알람 설정 부탁드려요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알림만 켜놔",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "신청 준비 리마인드 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "준비 기간 끝나기 전에 알려줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "신청 준비 알림 좀",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "마감 알림 켜줘 준비는 알아서 할게",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "알림 켜줘 신청 준비는 됐어",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "준비물 마감 알림만",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "L"
+  },
+  {
+   "goal": "청년 월세 지원 뭐 있어",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "대학원생 연구 장학금 찾아줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "서울 청년 취업 지원금",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "국민취업지원제도 알려줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "청년 도약계좌 같은 거 있어?",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "월세 지원 찾아서 첫 번째 저장해줘",
+   "asks": "b",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "장학금 찾고 마감 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 자격 되는지 보고 저장해줘",
+   "asks": "b",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 저장하고 신청 준비도 해줘",
+   "asks": "b",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 신청 준비해줘 신청서는 필요 없어",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "신청 준비 도와줘 근데 공식 사이트는 열지 마",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 신청 준비해줘 저장은 하지 마",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "장학금 찾아줘 알림은 켜지 마",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "이번 주 마감 장학금 보여줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "5일 안에 마감되는 주거 지원",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "마감 얼마 안 남은 청년 지원",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "다음 주까지 마감인 거 알려줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "신청했으니까 서류 목록 보여줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "이미 신청했으니 알림 꺼줘",
+   "asks": "o",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "신청 끝났으니까 저장 해제해줘",
+   "asks": "u",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "접수 완료했으니까 체크리스트 정리해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "신청할 예정이라 체크리스트 보여줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "이거 신청 넣었어",
+   "asks": "s",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "신청 완료",
+   "asks": "s",
+   "source": "re-review 9",
+   "group": "R"
+  },
+  {
+   "goal": "신청 준비 중인데 이것 좀 도와줘 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 너무 어려워 도와줘 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 중인데 뭐부터 해야 할지 모르겠어 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 중인데 같이 좀 봐줄래 알림도",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 하는 중인데 혼자는 못하겠어 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 나머지 좀 해줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 중인데 서류 뭐 필요한지 알려줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비 중인데 막혔어 도와줘",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "A"
+  },
+  {
+   "goal": "신청 준비는 제가 할게요 알림 켜주세요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 내가 알아볼게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 다음 달에 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 나중에 천천히 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 이번엔 스킵 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 아직 안 할래 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 내가 할게",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 패스",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 안 할 거야",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 담에 할게",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 다 끝냄",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 내가 할 테니까 알림만 켜",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 내가 할 테니까 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 제가 해놓을게요 알림 켜주세요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 됐다 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 다 해 뒀어요 알림 켜주세요",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 이미 했다고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 생략하고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비는 나 혼자서 해볼게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "신청 준비 저번에 끝내놨어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "C"
+  },
+  {
+   "goal": "마감 알림 켜줘 그리고 취소 사유도 알려줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "X"
+  },
+  {
+   "goal": "알림 켜줘 아 아냐 그냥 켜줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "X"
+  },
+  {
+   "goal": "알림 켜줘 음 아니다",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "X"
+  },
+  {
+   "goal": "알림 켜줘 아 알림은 됐다",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "X"
+  },
+  {
+   "goal": "신청 준비해줘 알림 켜줘 아니 알림은 빼",
+   "asks": "",
+   "source": "re-review 9",
+   "group": "X"
+  },
+  {
+   "goal": "알림 켜줘 아니 됐어 그냥 꺼둬",
+   "asks": "o",
+   "source": "re-review 9",
+   "group": "X"
+  },
+  {
+   "goal": "알림 켜고 취소 기한 알려줘",
+   "asks": "a",
+   "source": "re-review 9",
+   "group": "X"
+  },
+  {
+   "goal": "신청 준비부터 해줘 그리고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청 준비 같이 해줘 알림도 켜주고",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 진행해줘 마감 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비까지 해주고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 좀 봐주고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 쭉 해주고 마감 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비중인데 마저 도와줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 이어서 해줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "마감 알림 켜주고 신청 준비 시켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 과정 안내해주고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "알림 켜주고 이 혜택 신청할 준비 해줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청할 수 있게 준비 도와주고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 하자 알림도 켜고",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 끝까지 도와줘 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "알림 켜고 신청 준비 ㄱㄱ",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 부탁드려요 알림도 켜주세요",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 좀 같이 봐줄래 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이거 신청 준비 들어가자 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 마무리해줘 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 도움 받고 싶어 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청하려고 준비 중인데 도와줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다 해줘 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 전부 해줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 체크해주고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청 준비 시작해 알림 켜고",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "알림 켜줘 그리고 신청 준비도 부탁해",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비를 도와줘 알림도",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 챙겨주고 마감 전에 알려줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다시 해줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 한 번에 해줘 알림도",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 빨리 해줘 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 지금 해줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비랑 알림 둘 다 해줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 및 알림 설정 부탁해",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비, 알림 켜기 해줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 준비 도와줘 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 고고 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 해볼래 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 들어갈게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 지금 시작하자 알림도",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비부터 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청 준비 같이 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 진행해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비중인데 마저 도와줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 이어서 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청 준비 마무리해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 도움 받고 싶어",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청할 준비 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이거 신청하게 준비 좀 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "자격 확인한 다음에 신청 준비해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다시 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 끝까지 도와줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 시켜줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 들어가자",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 한번 해볼게",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 빨리 해줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 고고",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 준비 도와줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 같이 하자",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비는 내가 할게 알림만 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "준비는 혼자 할 수 있어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 시작하면 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 기간에 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비는 됐어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 이미 끝냈고 알림만 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 안 해도 돼 알림만 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비는 필요 없고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비는 말고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "준비 다 끝났으니 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 따로 했어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비는 직접 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비하는 건 내가 알아서 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비했으니 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비해놨어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 해뒀어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비해 놨으니까 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 마쳤어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 끝! 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "준비 끝냈어 마감 알림만",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다 됐으니까 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 완료 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비는 혼자 해볼게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비하고 있어 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 중 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다음 주에 할게 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 주말에 하려고 알림 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다 했어",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 마쳤어",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비해놨어",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 끝냈어",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청할 거니까 공식 페이지 열어줘",
+   "asks": "p",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청하려고 하니까 공식 페이지 열어줘",
+   "asks": "p",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청하려고 하는데 서류 알려줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청했으니까 알림 꺼줘",
+   "asks": "o",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 완료했으니까 체크리스트 보여줘",
+   "asks": "",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청할 거니까 저장해줘",
+   "asks": "b",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 완료했으니까 기록해줘",
+   "asks": "s",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "합격했으니까 결과 기록해줘",
+   "asks": "s",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청했어 그리고 알림 꺼줘",
+   "asks": "o",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청할 거야",
+   "asks": "s",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 신청했어",
+   "asks": "s",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청했으니 신청 완료로 바꿔줘",
+   "asks": "s",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청하려고 신청서 작성해줘",
+   "asks": "f",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청할 거니까 신청서 채워줘",
+   "asks": "f",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "알림 켜줘 신청서 없이도 되나?",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비하고 알림 켜줘 아니면 저장만 해줘",
+   "asks": "ab",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "마감 알림 켜줘 그리고 취소 기간도 알려줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "알림 켜줘 아니 그냥 켜줘",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비해주고 알림 켜줘 없이는 불안해",
+   "asks": "a",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "이 혜택 알림 켜줘 아냐 꺼줘",
+   "asks": "o",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "알림 켜줘 아 아니다 꺼줘",
+   "asks": "o",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비해줘 근데 알림 취소해줘",
+   "asks": "o",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 중인데 공식 페이지 열어줘",
+   "asks": "p",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다 했으니까 공식 페이지 열어줘",
+   "asks": "p",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청 준비 다 했어 신청서 작성 도와줘",
+   "asks": "f",
+   "source": "re-review 8",
+   "group": "r8"
+  },
+  {
+   "goal": "신청서는 어제 다 써뒀고 남은 서류 봐줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "지원서 작성은 끝냈고 체크리스트 보여줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "공식 사이트는 벌써 들어가봤고 신청 준비 해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "양식은 출력해놨고 서류 준비 도와줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "공식 페이지 확인했고 자격 되는지 봐줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "신청서 작성 마쳤고 마감 알림 켜줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "서식 다 채웠고 알림은 꺼줘",
+   "asks": "o",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "공식 신청 페이지 열어봤고 서류 목록 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "자소서는 학원에서 봐줬고 신청 준비 이어가줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "계획서는 써놨고 준비할 거 정리해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "지원서 냈고 결과 나오면 알림 켜줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "신청서 사진 찍어놨고 다음 할 일 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "홈페이지는 이미 봤고 마감일만 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "공식 페이지 즐겨찾기 해놨고 서류만 챙겨줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "양식 다운받았고 뭐부터 하면 돼",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "신청서 초안은 썼고 서류 대조해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "공홈 들어갔다 왔고 준비 마저 해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "서식은 다 받았고 알림 설정해줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "작성은 끝났고 신청 준비 봐줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "신청 페이지 열었었고 이제 체크리스트 보여줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "rp"
+  },
+  {
+   "goal": "\"신청서 작성해줘\"라고 하면 어떻게 돼?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "'공식 페이지 열어줘' 누르면 뭐가 떠",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "친구가 '신청서 써줘'라고 했는데 그게 뭐야",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "“알림 켜줘”라고 말하면 바로 켜져?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "\"서식 작성 도와줘\" 버튼은 뭐 하는 거야",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "'공홈 열어줘' 이런 말도 알아들어?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "\"알림 꺼줘\" 하면 다시 켤 수 있어?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "\"신청 준비해줘\"랑 \"신청서 작성해줘\" 차이가 뭐야",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "앱에 '공식 신청 페이지'라고 써있던데 그게 뭐지",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "\"양식 채워줘\"라고 하면 개인정보도 들어가?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qt"
+  },
+  {
+   "goal": "청년내일저축계좌 신청서 써줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "국가장학금 공식 사이트 열어줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "서울 청년수당 신청서 채워줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "학자금 대출 공식 페이지 띄워줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "다른 지원금 신청서 작성 도와줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "아까 본 장학금 공식 페이지 열어줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "저장한 혜택 신청서 써줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "부산 월세 지원 공식 홈페이지 열어줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "두 번째 혜택 신청서 채워줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "근로장학금 지원서 작성해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "청년 주택드림 청약통장 공식 사이트 연결해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "이거 말고 그 장학금 신청서 써줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "대구 청년 지원 신청 페이지 열어줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "위에 있는 거 공식 페이지 열어줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "다른 장학금 서식 채워줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "op"
+  },
+  {
+   "goal": "신청 준비 일정 작성해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "서류 목록 작성해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "준비할 거 표로 작성해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "자기소개 문장 작성 요령 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "체크리스트 작성 도와줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "준비 계획 작성해서 보여줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "마감 일정표 작성 부탁해",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "할 일 목록 작성해 줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "메모 작성해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "신청서류 목록 작성해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "지원서류 챙겨줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "제출 서류 작성 순서 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "작성 예시 보여줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "보고서 작성 도와줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "이력서 작성 팁 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "gn"
+  },
+  {
+   "goal": "신청서 작성자 칸에 뭐 써",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "신청자 본인만 써야 해?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "지원서 보호자 동의 필요해?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "신청서 대상자 확인해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "작성자 이름 바꿔도 돼",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "신청자 정보 어디서 확인해",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "서식 담당자 연락처 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "공식 페이지 관리자한테 문의하고 싶어",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "보호자 서명 칸 있는 양식이야?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "지원자 수 알려줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "ja"
+  },
+  {
+   "goal": "알림은 부탁 안 해",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림까지는 부탁 안 드릴게요",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "마감 알림은 됐어 부탁 안 해",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림 부탁할 생각 없어",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림은 필요 없어 신청 준비만 부탁해",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림 설정 부탁은 나중에 할게",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림 켜달라는 거 아니야",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림은 안 켜도 돼",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림 켜지 말아줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림 부탁 취소할게",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "신청서 작성 부탁 안 할게",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "공식 페이지는 부탁 안 해도 돼",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림 굳이 안 켜도 될 듯",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림 말고 저장만",
+   "asks": "b",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "알림은 이미 켜져 있어",
+   "asks": "",
+   "source": "author round 11",
+   "group": "nb"
+  },
+  {
+   "goal": "신청서 다 쓰고 나서 공식 페이지 열어줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "공식 페이지 열기 전에 신청서부터 봐줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "신청서 작성하면 공식 사이트 띄워줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "공식 페이지 열고 나서 알림 켜줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "신청서 채우고 나면 알림 꺼줘",
+   "asks": "o",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "서식 작성 끝나면 알려줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "공식 사이트 열리면 알림 줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "신청서 쓰기 전에 서류부터 챙겨줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "공식 페이지 이동은 나중에 하고 체크리스트 보여줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "알림 켜고 나서 신청서 작성 도와줘",
+   "asks": "af",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "신청서 작성 도와주고 나서 알림 켜줘",
+   "asks": "fa",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "먼저 공식 페이지 열어주고 신청 준비 해줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "신청 준비 끝나면 공식 사이트 열어줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "양식 작성하기 전에 자격부터 봐줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "공식 페이지는 신청 준비 다 하고 열게",
+   "asks": "",
+   "source": "author round 11",
+   "group": "io"
+  },
+  {
+   "goal": "신청서 작성 기능 있어?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "공식 페이지 어디서 열어?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "양식 채우는 거 오래 걸려?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "신청서 작성 꼭 해야 해?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "공식 사이트 링크 있어?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "서식 작성하면 저장돼?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "공식 신청 페이지 열면 로그인해야 돼?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "신청서 대신 써주는 거야?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "알림 켜면 언제 와?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "알림 켰는지 확인해줄래?",
+   "asks": "",
+   "source": "author round 11",
+   "group": "qn"
+  },
+  {
+   "goal": "신청서 작성 도와줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "이 혜택 신청서 써줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "이거 지원서 채워줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "서식 작성 좀 도와주세요",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "자기소개서 같이 써줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "양식 채워 주세요",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "이 혜택 공식 페이지 열어줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "공식 사이트 띄워줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "공식 신청 페이지로 이동해줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "여기 공식 홈페이지 열어 주세요",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "신청 사이트 열어줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "공홈 연결해줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "이 혜택 마감 알림 켜줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "알림 꺼줘",
+   "asks": "o",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "마감 알림 설정 부탁해",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "알림 좀 켜 주세요",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "마감 전에 꼭 알려줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "이 혜택 알림 해제해줘",
+   "asks": "o",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "신청 준비하고 알림도 켜줘",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "신청 준비 해주고 마감 알림 부탁드려요",
+   "asks": "a",
+   "source": "author round 11",
+   "group": "tr"
+  },
+  {
+   "goal": "신청 준비하고 신청서 작성도 같이 해줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "신청 준비해주고 공식 페이지도 열어줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "서류 준비랑 서식 작성 다 도와줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "신청 준비부터 하고 신청서는 나중에",
+   "asks": "",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "신청 준비해줘 신청서는 내가 쓸게",
+   "asks": "",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "신청 준비해줘 공식 페이지는 열지 마",
+   "asks": "",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "신청서 작성 전에 신청 준비 봐줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "신청 준비 도와줘 그리고 공식 사이트 열어줘",
+   "asks": "p",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "공식 페이지 말고 신청 준비만 해줘",
+   "asks": "",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "신청 준비 해주고 양식도 채워줘",
+   "asks": "f",
+   "source": "author round 11",
+   "group": "pr"
+  },
+  {
+   "goal": "주소 넣어서 월세 지원 다시 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "학교명 넣어서 장학금 검색해봐",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "이름 칸에 한자로 적어야 하나요",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "연락처 칸은 내가 이미 채워놨어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "전화번호 입력해야 알림 받을 수 있어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "생년월일 넣어서 나이 조건 맞는지 봐줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "이메일 주소 적어두면 뭐가 좋아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "주소 칸에 뭘 적어야 할지 모르겠어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "전공 칸은 비워둬도 되는지 알려줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "학번 넣어야 하는 칸 어디야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "휴대폰 번호는 적어 주지 마",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "주소는 엄마가 채워 준대",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "학과 입력해 놓은 거 맞는지 확인해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "이메일 칸에 내 학교 메일로 적어줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "성명 란에 영문 이름 넣어줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "프로필에 전공 입력해줘",
+   "asks": "r",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "주민번호 같은 거 넣어도 안전해",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "연락처 채워진 신청서 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "주소지 넣어서 근처 청년센터 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "이름 적어서 보내면 끝나는 거야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "생년월일 칸에 적는 형식이 뭐야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "이메일 입력해서 가입했는데 알림이 안 와",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "핸드폰 번호 넣어서 인증해야 돼",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "학교명 기입해야 되는 서류 뭐 있어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "이름 칸에 뭐 적어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "전화번호 넣어 놓은 거 맞아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "연락처 입력하는 칸 없던데",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "주소 적어둔 메모 어디 갔지",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "이메일 넣어서 공고 메일로 받을래",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "학과 써줘야 하는 거 맞아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "F"
+  },
+  {
+   "goal": "신청서 작성 이미 해줬잖아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서 작성 좀 같이 해줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "다른 신청서 써줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서 말고 계획서 써줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "자소서 나랑 같이 채우는 거 도와줄래",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "이거 지원서 바로 작성해보자",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "양식 지금 채워줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "양식 채워줘 그리고 제출까지 해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서 작성 해줘야 하는 사람 누구야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "지원서 같이 쓰는 거 아니야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "자기소개서 써주라고 한 적 없어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "계획서 쓰는 거 좀 도와주세요",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "친구 신청서 채워줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서 저랑 같이 쓰는 거 싫어요",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "이 공고 신청서 작성 도와줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "이 혜택 말고 저 혜택 신청서 써줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서를 대신 써줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "서식 여기서 작성하고 싶어",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서 작성하고 싶어 근데 시간이 없어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "자소서 작성 도와줘 ㅋㅋ",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "양식도 써줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "여행 계획서 써줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "서식 부탁해",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "양식 받아서 써줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서 거 해줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S",
+   "ambiguous": true
+  },
+  {
+   "goal": "지원서 작성 해주지 마",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "자소서 작성 지금 말고 해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청서 써달라는 게 아니라 읽어줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "계획서 같이 작성해 주세요",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "양식 작성도 다 끝냈어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "S"
+  },
+  {
+   "goal": "신청 페이지로 이동해줘 근데 로그인 해야 돼",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "공홈 바로 띄워 주세요",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "다른 사이트 열어줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "사이트 보내줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "여기 신청 사이트 들어가줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "홈페이지 연결해줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "신청 페이지 지금 열어줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "복지로 사이트 열어줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "정부24 홈페이지 연결해 주세요",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "카카오 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "신청 페이지 열어주라고 안 했어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "공식 페이지 이동해줘야 하나",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "공식 사이트 열어줘 그리고 알림 켜줘",
+   "asks": "ap",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "페이지 이동해줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P",
+   "ambiguous": true
+  },
+  {
+   "goal": "지금 페이지 보내줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P",
+   "ambiguous": true
+  },
+  {
+   "goal": "공식 사이트 열어줘서 고마워",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "청년센터 홈페이지 띄워줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "신청 사이트 들어가 줘 봤자 마감이잖아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "학교 사이트 연결해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "이 공고 공식 홈페이지로 이동해 주세요",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P"
+  },
+  {
+   "goal": "알림 켜둔 혜택들 정리해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 걸어둔 공고 다시 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 설정해둔 장학금 목록 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 온 공고 내용 설명 부탁해",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "푸시 온 혜택 보내줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 해제한 혜택 다시 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 내역 보내줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림으로 받은 장학금 저장해줘",
+   "asks": "b",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알람 울린 거 무슨 공고인지 알려줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 등록해놓은 혜택들 마감 순서로 정리해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "이 혜택 마감 알림 받게 해줘",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 하나 걸어 줘",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜는 건 나중에 하고 서류 먼저 봐줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림까지 켤 필요는 없고 체크리스트만 줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림은 켜놨으니 서류 목록 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜둔 상태에서 신청서 쓰면 돼",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "이 공고 알림 이제 그만 받을게",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림이 너무 많아서 짜증나",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 좀 꺼 줘",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "친구가 알림 켜보라던데",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "엄마 폰에 알림 설정해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜고 끄는 차이가 뭐야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 소리 바꿔줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 문구 다시 보내줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 받은 거 다시 보내줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "푸시 설정 화면으로 보내줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 테스트로 한 번 보내줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "마감 다가오면 알려 줘",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "공고 뜨면 알려준다며",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "결과 나오면 알려줄 수 있어",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜줄 필요 없어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림은 켜지 말고 저장만",
+   "asks": "b",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 부탁 안 드릴게요",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 신청은 다음에 할게",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜도 배터리 괜찮아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜달라고 했는데 아직 안 켜졌어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "이 혜택 알림 꺼진 거 다시 확인해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 꺼놓은 거 맞지",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 꺼둔 공고 뭐였는지 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜진 혜택 몇 개인지 세어줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 그만 오는 이유 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 해제 버튼 어디 있는지 알려줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 설정 페이지 열어줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜기 전에 서류부터 챙겨줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜는 건 서류 다 챙긴 다음에",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "마감 알림 신청 좀 해 주세요",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 설정해줬던 거 기억나",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 받게 해 준다고 했잖아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 등록 완료된 거 맞는지 봐줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 켜놓은 장학금이랑 비교해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "알림 왔던 혜택 신청서 작성 부탁해",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "A"
+  },
+  {
+   "goal": "저장 안 해도 되는 혜택이야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "찜해 둘 만한 거야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "저장해서 뭐 해",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "이거 관심 등록",
+   "asks": "b",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "관심 목록에 넣어둔 거 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "관심 혜택에 추가된 거 몇 개야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "관심 혜택에 저장돼 있는지 확인해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "관심 목록에서 이거 지워",
+   "asks": "u",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "관심 목록에서 빼면 알림도 꺼져",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "저장 취소하면 어떻게 돼",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "찜 해제했는데 아직 목록에 있어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "북마크 삭제된 거 복구해줘",
+   "asks": "b",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "저장 해제 말고 알림만 꺼줘",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "이미 저장해 둔 거야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "이 혜택 신청했어 기록해줘",
+   "asks": "s",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "신청했는지 기억이 안 나",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "합격하면 뭐 해야 돼",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "당첨 발표 언제야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "선정됐다는 문자 받았는데 진짜야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "수혜 대상이 누구야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "수혜 조건 정리해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "수혜자 후기 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "합격 기준 알려줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "당첨 확률 높은 혜택 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "결과 기다리는 동안 할 수 있는 거 알려줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "포기하지 말라고 응원해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "포기한 사람 다시 신청 가능한지 알려줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "이거 안 할래요",
+   "asks": "s",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "장학금 받았어요",
+   "asks": "s",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "등본 뗐는데 유효기간이 얼마야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "가족관계증명서 뽑았으니 다음 서류 알려줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "통장 사본 챙겼는데 또 뭐 필요해",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "재학증명서 발급받았어 체크해줘",
+   "asks": "c",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "체크 해제하는 법",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "등본 체크했는지 확인해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "성적증명서 준비했던 거 기억나",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "건강보험 자격득실 확인서 떼었는데 이게 맞는 서류야",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "관심 등록 해제해줘",
+   "asks": "u",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "합격자 발표 나면 뭐부터 해",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "선정 결과 대기 중인 사람 많아",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "당첨된 사람 후기 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "W"
+  },
+  {
+   "goal": "울산 청년 주거비 지원 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "창업 지원금 알아보고 마감 순으로 보여줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "이번 주 안에 마감되는 장학금 있어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "열흘 안에 끝나는 취업 지원 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 신청 준비 좀 도와주세요",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "신청 준비 대신 해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "대신 신청까지 해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "준비 끝냈으니 대신 접수해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "서류 다 모았으니 결제 진행해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "합격했으니까 다음 혜택 추천해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "신청 완료했으니 다른 장학금 찾아줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "이 공고 북마크해 줘",
+   "asks": "b",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "찜 취소해줘",
+   "asks": "u",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "저장한 혜택 마감 정리해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 자격 되는지 확인해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "이거 낼 서류 뭐뭐 필요한지 정리해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "이거랑 저장한 거 비교해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "전남 농촌 청년 정착 지원 있어",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "신청 준비 도와주고 마감 알림도 켜줘",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "신청 준비는 도와주되 알림은 켜지 마",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "신청서 제출 대신 해주세요",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "준비 대신 해주고 신청도 대신 해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "준비는 내가 했으니 송금 좀 해줘",
+   "asks": "",
+   "source": "re-review 11",
+   "group": "R"
+  },
+  {
+   "goal": "이 혜택 알림 안 오게 해줘",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 더는 안 받고 싶어",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "이 공고 알림 받지 않을래",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 이제 안 와도 돼",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "마감 알림 오지 않게 해 주세요",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 그만 받을래요",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "푸시 안 오게 막아줘",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "이거 알림 끊어줘",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 꺼도 돼",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 해제 부탁드립니다",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 꼭 받고 싶어요",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "신청 마감 전에 미리 좀 알려 주세요",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 켜 주실래요",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "이 혜택 알림 설정 부탁드립니다",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 좀 켜줄 수 있어",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "알림 신청할게요",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "A2"
+  },
+  {
+   "goal": "신청서 작성 도와주실 수 있을까요",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S2"
+  },
+  {
+   "goal": "서식 작성 좀 도와줄 수 있어",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S2"
+  },
+  {
+   "goal": "지원서 쓰는 것 좀 봐줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S2"
+  },
+  {
+   "goal": "신청서 채우기 도와줘",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S2"
+  },
+  {
+   "goal": "신청서 작성 시작할게",
+   "asks": "f",
+   "source": "re-review 11",
+   "group": "S2"
+  },
+  {
+   "goal": "공식 신청 링크 열어 줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P2"
+  },
+  {
+   "goal": "신청하러 갈게 페이지 열어줘",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P2"
+  },
+  {
+   "goal": "공식 홈페이지 가고 싶어",
+   "asks": "p",
+   "source": "re-review 11",
+   "group": "P2"
+  },
+  {
+   "goal": "체크리스트 말고 알림만 켜 줘",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "D"
+  },
+  {
+   "goal": "저장은 빼고 알림 켜 주세요",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "D"
+  },
+  {
+   "goal": "비교 말고 알림만 걸어줘",
+   "asks": "a",
+   "source": "re-review 11",
+   "group": "D"
+  },
+  {
+   "goal": "찜은 두고 알림만 꺼 주세요",
+   "asks": "o",
+   "source": "re-review 11",
+   "group": "D"
+  },
+  {
+   "goal": "알림 켜줘 말고 저장만 해줘",
+   "asks": "b",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "알림 꺼줘 하면 다른 혜택 알림도 같이 꺼져?",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 라는 버튼 눌렀는데 반응이 없어",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 하면 바로 켜지는 거야?",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜고 나서 뭐가 달라져?",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 라고 엄마가 해서 켰어",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "어제 알림 켜줘 했는데 아직 알림이 하나도 안 와",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "이거 저장해줘 라고 말하면 저장돼?",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "저장 취소해줘 하면 메모도 사라져?",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 라고 했더니 벌써 저장돼 있대",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "저장하고 나면 어디서 다시 볼 수 있어?",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "신청 완료로 기록해줘 했던 거 취소해줘",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "마감일 캘린더에 넣어줘 라는 기능 있어?",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 아니 됐어 그냥 둬",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "M"
+  },
+  {
+   "goal": "이거 저장해줘 아니다 하지 마",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "M"
+  },
+  {
+   "goal": "합격으로 바꿔줘 아니 아직 발표 안 났어",
+   "asks": "",
+   "source": "re-review 12",
+   "group": "M"
+  },
+  {
+   "goal": "알림 꺼줘 하면 마감 알림만 꺼지는 거야",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "찜해줘 하면 목록 어디에 들어가?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "알림 설정해줘 라고 쓰면 돼?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "북마크 해줘 라는 말은 어떻게 해야 먹혀",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "캘린더에 넣어줘 하면 구글 캘린더로 가?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "면접일 달력에 추가해줘 하면 알림도 와?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "신청 완료로 바꿔줘 하면 되돌릴 수 있어?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "알림 켜 주세요 하니까 아무 일도 없었어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "저장 취소해 주세요 라고 하면 바로 지워져?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "알림 꺼줘 라는 메뉴가 안 보여",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "저장해줘 버튼이 어디 있어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "마감 알림 켜줘 같은 말 해도 돼?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "이 혜택 찜해줘 처럼 말하면 돼?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "알림 그만 보내줘 하면 다른 공지도 안 와?",
+   "asks": "",
+   "source": "author round 13",
+   "group": "Q"
+  },
+  {
+   "goal": "아까 알림 켜줘 했는데 켜졌는지 모르겠어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "어제 저장해줘 했더니 오류 났어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "동생이 알림 꺼줘 래서 껐어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "친구가 저장해줘 라고 하더라",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "지난번에 신청 완료로 기록해줘 했잖아",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "알림 켜줘 했던 기록 보여줘",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "캘린더에 넣어줘 했는데 일정이 없어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "찜해줘 했는데 목록에 없어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "알림 켜 달라고 했는데 안 켜졌어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "저장 해제해줘 했더니 알림도 꺼졌어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "R"
+  },
+  {
+   "goal": "알림 꺼줘 말고 저장만 해줘",
+   "asks": "b",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "저장해줘 말고 알림만 켜줘",
+   "asks": "a",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "알림 켜줘 말고 그냥 둬",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "저장해줘 대신 그냥 보기만 할래",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "알림 켜고 나서 생각해볼게",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "저장하고 나서 다시 얘기하자",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "알림 켜줘 아니 됐어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "이거 찜해줘 아니다 됐다",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "마감일 캘린더에 넣어줘 아니 하지 마",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "등본 뗐어 체크해줘 아니 아직이야",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "신청 완료로 기록해줘 아니 취소",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "알림 꺼줘 잠깐 아니야",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "알림 켜줘 아니 그냥 꺼줘",
+   "asks": "o",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "저장해줘 아니 저장 취소해줘",
+   "asks": "u",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "저장 취소해줘 하지 마",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "결과 대기 중으로 바꿔줘 아니다 됐어",
+   "asks": "",
+   "source": "author round 13",
+   "group": "N"
+  },
+  {
+   "goal": "이 혜택 마감 알림 좀 켜주시겠어요",
+   "asks": "a",
+   "source": "author round 13",
+   "group": "P"
+  },
+  {
+   "goal": "이거 저장해 주시겠어요",
+   "asks": "b",
+   "source": "author round 13",
+   "group": "P"
+  },
+  {
+   "goal": "이거 저장해 줄 수 있어?",
+   "asks": "b",
+   "source": "author round 13",
+   "group": "P"
+  },
+  {
+   "goal": "내 거주지 대구로 바꿔 주세요",
+   "asks": "r",
+   "source": "author round 13",
+   "group": "P"
+  },
+  {
+   "goal": "이거 저장해 두고 조건 확인해줘",
+   "asks": "b",
+   "source": "author round 13",
+   "group": "P"
+  },
+  {
+   "goal": "저장해줘 보내면 저장돼?",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 그러면 저장되는 거지?",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 이렇게 쓰면 돼?",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 눌렀는데 반응이 없어",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 요청했는데 목록에 없어",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 입력했는데 안 켜져",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 그랬더니 오류가 떠",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 메시지 보냈는데 답이 없네",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 꺼줘 쳤는데 계속 와",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 치면 바로 켜져?",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 아 됐다",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 꺼줘 앗 아니야",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "합격으로 기록해줘 아 아직 아니다",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "마감 알림 켜줘 아 아니다 다음에",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 ㄴㄴ 됐어",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 ㄴㄴ",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 장난이야",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "저장해줘 농담이야",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 아 근데 생각해보니 필요 없어",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "H"
+  },
+  {
+   "goal": "알림 켜줘 할 일이 많아서 깜빡해",
+   "asks": "a",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 한 달 남았네",
+   "asks": "a",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 한 번 더 볼게",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 해야 나중에 찾지",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 해야 할 게 많아서",
+   "asks": "a",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 같은 거 또 있으면 알려줘",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 소리 나게",
+   "asks": "a",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 소리 없이",
+   "asks": "a",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 얘기 들어보니 좋대",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 하고 저장도 해줘",
+   "asks": "ab",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 아니 진짜로",
+   "asks": "a",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 아니 근데 마감 언제야?",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 아니 진심으로",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 꺼줘 아니 너무 많이 와",
+   "asks": "o",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장 취소해줘 아니 관심 없어졌어",
+   "asks": "u",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "합격으로 기록해줘 아니 진짜 붙었어",
+   "asks": "s",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "합격으로 바꿔줘 아냐 진짜로 붙었다니까",
+   "asks": "s",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "마감일 캘린더에 넣어줘 아니 진짜 중요해",
+   "asks": "k",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜주세요 했는데 그냥 지금 켜주세요",
+   "asks": "a",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 꺼줘 했잖아 빨리 꺼줘",
+   "asks": "o",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장하고 나서 알림도 켜줘",
+   "asks": "ab",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "신청 완료로 기록해줘 한 시간 전에 냈어",
+   "asks": "s",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "합격으로 기록해줘 해서 다음 거 추천받고 싶어",
+   "asks": "s",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "합격으로 기록해줘 잠깐만 아직 결과 안 나왔어",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장 취소해줘 아니 됐어 그냥 둬",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 버튼이 회색이야",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 아니야 내가 할게",
+   "asks": "",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "저장해줘 그리고 알림도 켜줘",
+   "asks": "ab",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 저장도 해줘",
+   "asks": "ab",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜주고 저장해줘",
+   "asks": "ab",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "아니 저장해줘",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "아니 그냥 저장해줘",
+   "asks": "b",
+   "source": "re-review 13",
+   "group": "M"
+  },
+  {
+   "goal": "알림 켜줘 누르면 바로 와?",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "저장해줘 적었는데 안 됐어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "알림 꺼줘 써봤는데 안 꺼져",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "저장해줘 했었는데 사라졌어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "찜해줘 클릭했더니 로그인하래",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "알림 켜줘 보낸 지 한참 됐어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "마감일 캘린더에 넣어줘 했는데 안 들어갔어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "신청 완료로 바꿔줘 했더니 오류 남",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "알림 켜주세요 문자로 보내면 돼?",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "저장해 주세요 하고 기다렸는데 그대로야",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "알림 설정해줘 이게 맞는 말이야?",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "찜 해제해줘 그러니까 목록이 비었어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "알림 켜줘 그 말 하면 되는 거지",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "저장해줘 이 문장 맞아?",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "북마크 해줘 다음에 쓰는 거야",
+   "asks": "",
+   "source": "author round 14",
+   "group": "V"
+  },
+  {
+   "goal": "알림 켜줘 노노",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "저장해줘 아 아니야",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "찜해줘 음 됐어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "알림 꺼줘 그냥 됐어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "마감일 캘린더에 넣어줘 농담이야",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "합격으로 기록해줘 장난이었어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "알림 켜줘 아니 필요 없어",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "저장해줘 아냐 내가 할게",
+   "asks": "",
+   "source": "author round 14",
+   "group": "T"
+  },
+  {
+   "goal": "알림 켜줘 꼭",
+   "asks": "a",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "알림 켜줘 부탁해",
+   "asks": "a",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "저장해줘 제발",
+   "asks": "b",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "이거 저장해줘 ㅎㅎ",
+   "asks": "b",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "마감 알림 켜줘 고마워",
+   "asks": "a",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "저장해줘 근데 마감 언제야?",
+   "asks": "b",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "알림 켜줘 그리고 마감 언제인지도 알려줘",
+   "asks": "a",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "알림 켜줘 이거 저장도 해줘",
+   "asks": "ab",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "찜해줘 알림도 걸어줘",
+   "asks": "ab",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "알림 켜줘 지금",
+   "asks": "a",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "저장해줘 빨리 ㅠㅠ",
+   "asks": "b",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "알림 꺼줘 또 와서",
+   "asks": "o",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "저장은 다음에 하고 알림 켜줘",
+   "asks": "a",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "알림 꺼줘 아니 진짜로",
+   "asks": "o",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "저장해줘 아 그리고 알림은 됐어",
+   "asks": "b",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "마감일 캘린더에 넣어줘 부탁해요",
+   "asks": "k",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "신청 완료로 기록해줘 고마워",
+   "asks": "s",
+   "source": "author round 14",
+   "group": "G"
+  },
+  {
+   "goal": "알림 꺼줘 하지 말고 켜줘",
+   "asks": "a",
+   "source": "author round 14",
+   "group": "G"
+  }
+ ]
+}

@@ -1,0 +1,657 @@
+{
+  "version": 1,
+  "content_hash": "6b55a2957af7a82a4ea0ffbd30486ac4d7b887555adecde1fb15b7f6726ff5c6",
+  "page_count": 6,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p2-f01",
+      "page": 1,
+      "rect": {
+        "x": 0.8977,
+        "y": 0.1842,
+        "w": 0.0163,
+        "h": 0.0156
+      },
+      "type": "text",
+      "label": "신청일자 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f02",
+      "page": 1,
+      "rect": {
+        "x": 0.9171,
+        "y": 0.1842,
+        "w": 0.0163,
+        "h": 0.0156
+      },
+      "type": "text",
+      "label": "신청일자 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f03",
+      "page": 1,
+      "rect": {
+        "x": 0.6208,
+        "y": 0.207,
+        "w": 0.1399,
+        "h": 0.0304
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f04",
+      "page": 1,
+      "rect": {
+        "x": 0.8298,
+        "y": 0.207,
+        "w": 0.0506,
+        "h": 0.0304
+      },
+      "type": "text",
+      "label": "주민등록번호 (외국인등록번호) (1)",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p2-f05",
+      "page": 1,
+      "rect": {
+        "x": 0.8878,
+        "y": 0.207,
+        "w": 0.0513,
+        "h": 0.0304
+      },
+      "type": "text",
+      "label": "주민등록번호 (외국인등록번호) (2)",
+      "mapping": "rrn",
+      "required": false
+    },
+    {
+      "id": "p2-f06",
+      "page": 1,
+      "rect": {
+        "x": 0.6208,
+        "y": 0.2424,
+        "w": 0.1399,
+        "h": 0.0288
+      },
+      "type": "text",
+      "label": "주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p2-f07",
+      "page": 1,
+      "rect": {
+        "x": 0.6208,
+        "y": 0.2763,
+        "w": 0.1399,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "이메일주소",
+      "mapping": "email",
+      "required": false
+    },
+    {
+      "id": "p2-f08",
+      "page": 1,
+      "rect": {
+        "x": 0.8469,
+        "y": 0.2832,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "이메일 수신동의: 동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f09",
+      "page": 1,
+      "rect": {
+        "x": 0.8882,
+        "y": 0.2832,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "이메일 수신동의: 비동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f10",
+      "page": 1,
+      "rect": {
+        "x": 0.6208,
+        "y": 0.3074,
+        "w": 0.1399,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "핸드폰번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p2-f11",
+      "page": 1,
+      "rect": {
+        "x": 0.8469,
+        "y": 0.3142,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "문자 수신동의: 동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f12",
+      "page": 1,
+      "rect": {
+        "x": 0.8882,
+        "y": 0.3142,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "문자 수신동의: 비동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f13",
+      "page": 1,
+      "rect": {
+        "x": 0.8469,
+        "y": 0.3545,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "타 일자리사업 SMS 수신 동의: 동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f14",
+      "page": 1,
+      "rect": {
+        "x": 0.8882,
+        "y": 0.3545,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "타 일자리사업 SMS 수신 동의: 비동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f15",
+      "page": 1,
+      "rect": {
+        "x": 0.6434,
+        "y": 0.3876,
+        "w": 0.2958,
+        "h": 0.0337
+      },
+      "type": "text",
+      "label": "참여 희망사업",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f16",
+      "page": 1,
+      "rect": {
+        "x": 0.8923,
+        "y": 0.4263,
+        "w": 0.0315,
+        "h": 0.0296
+      },
+      "type": "text",
+      "label": "세대원수(세대주, 동거인제외) 인원",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f17",
+      "page": 1,
+      "rect": {
+        "x": 0.6544,
+        "y": 0.4348,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "세대주 여부: 해당",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f18",
+      "page": 1,
+      "rect": {
+        "x": 0.7,
+        "y": 0.4348,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "세대주 여부: 해당없음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f19",
+      "page": 1,
+      "rect": {
+        "x": 0.6572,
+        "y": 0.4628,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 저소득층",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f20",
+      "page": 1,
+      "rect": {
+        "x": 0.7123,
+        "y": 0.4628,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 장애인",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f21",
+      "page": 1,
+      "rect": {
+        "x": 0.7776,
+        "y": 0.4628,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 6개월 이상 장기실직자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f22",
+      "page": 1,
+      "rect": {
+        "x": 0.8751,
+        "y": 0.4628,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 결혼이민자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f23",
+      "page": 1,
+      "rect": {
+        "x": 0.6572,
+        "y": 0.4769,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 여성가장",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f24",
+      "page": 1,
+      "rect": {
+        "x": 0.7123,
+        "y": 0.4769,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 성매매피해자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f25",
+      "page": 1,
+      "rect": {
+        "x": 0.7779,
+        "y": 0.4769,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 한부모가족 지원법에 의한 보호대상자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f26",
+      "page": 1,
+      "rect": {
+        "x": 0.6572,
+        "y": 0.4906,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 북한이탈주민",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f27",
+      "page": 1,
+      "rect": {
+        "x": 0.7123,
+        "y": 0.4906,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 위기청소년",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f28",
+      "page": 1,
+      "rect": {
+        "x": 0.7779,
+        "y": 0.4906,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 갱생보호대상자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f29",
+      "page": 1,
+      "rect": {
+        "x": 0.8745,
+        "y": 0.4906,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 노숙인",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f30",
+      "page": 1,
+      "rect": {
+        "x": 0.6572,
+        "y": 0.5047,
+        "w": 0.0083,
+        "h": 0.0118
+      },
+      "type": "checkbox",
+      "label": "취업취약계층 여부: 수형자로서 출소 후 6개월 미만자",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f31",
+      "page": 1,
+      "rect": {
+        "x": 0.6342,
+        "y": 0.5484,
+        "w": 0.1807,
+        "h": 0.0214
+      },
+      "type": "text",
+      "label": "자격증·교육명 (1행)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f32",
+      "page": 1,
+      "rect": {
+        "x": 0.8187,
+        "y": 0.5489,
+        "w": 0.1205,
+        "h": 0.0204
+      },
+      "type": "text",
+      "label": "취득 / 수료시점 (1행)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f33",
+      "page": 1,
+      "rect": {
+        "x": 0.6342,
+        "y": 0.5738,
+        "w": 0.1807,
+        "h": 0.0214
+      },
+      "type": "text",
+      "label": "자격증·교육명 (2행)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f34",
+      "page": 1,
+      "rect": {
+        "x": 0.8187,
+        "y": 0.5743,
+        "w": 0.1205,
+        "h": 0.0204
+      },
+      "type": "text",
+      "label": "취득 / 수료시점 (2행)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f35",
+      "page": 1,
+      "rect": {
+        "x": 0.6342,
+        "y": 0.5992,
+        "w": 0.1807,
+        "h": 0.0214
+      },
+      "type": "text",
+      "label": "자격증·교육명 (3행)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f36",
+      "page": 1,
+      "rect": {
+        "x": 0.8187,
+        "y": 0.5997,
+        "w": 0.1205,
+        "h": 0.0204
+      },
+      "type": "text",
+      "label": "취득 / 수료시점 (3행)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f37",
+      "page": 1,
+      "rect": {
+        "x": 0.637,
+        "y": 0.636,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "구직등록여부: 등록",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f38",
+      "page": 1,
+      "rect": {
+        "x": 0.6744,
+        "y": 0.636,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "구직등록여부: 미등록",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f39",
+      "page": 1,
+      "rect": {
+        "x": 0.8423,
+        "y": 0.636,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "사업참여 종료 후 구직지원 프로그램 참여 희망 여부: 희망",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f40",
+      "page": 1,
+      "rect": {
+        "x": 0.8725,
+        "y": 0.636,
+        "w": 0.0086,
+        "h": 0.0121
+      },
+      "type": "checkbox",
+      "label": "사업참여 종료 후 구직지원 프로그램 참여 희망 여부: 희망하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f41",
+      "page": 1,
+      "rect": {
+        "x": 0.6342,
+        "y": 0.6633,
+        "w": 0.152,
+        "h": 0.0275
+      },
+      "type": "text",
+      "label": "공무원 가족여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f42",
+      "page": 1,
+      "rect": {
+        "x": 0.6357,
+        "y": 0.8973,
+        "w": 0.0135,
+        "h": 0.0245
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year2"
+    },
+    {
+      "id": "p2-f43",
+      "page": 1,
+      "rect": {
+        "x": 0.6624,
+        "y": 0.8973,
+        "w": 0.0133,
+        "h": 0.0245
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f44",
+      "page": 1,
+      "rect": {
+        "x": 0.689,
+        "y": 0.8973,
+        "w": 0.0184,
+        "h": 0.0245
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f45",
+      "page": 1,
+      "rect": {
+        "x": 0.8154,
+        "y": 0.8965,
+        "w": 0.0564,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f46",
+      "page": 1,
+      "rect": {
+        "x": 0.873,
+        "y": 0.8927,
+        "w": 0.0584,
+        "h": 0.0337
+      },
+      "type": "signature",
+      "label": "신청인 서명",
+      "mapping": "signature",
+      "required": true
+    }
+  ]
+}

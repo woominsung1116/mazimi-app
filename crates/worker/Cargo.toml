@@ -1,0 +1,144 @@
+[package]
+name = "mazimi-worker"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "mazimi_worker"
+path = "src/lib.rs"
+
+[[bin]]
+name = "worker"
+path = "src/main.rs"
+
+[[bin]]
+name = "form-auto"
+path = "src/bin/form_auto.rs"
+
+[[bin]]
+name = "revalidate-application-resources"
+path = "src/bin/revalidate_application_resources.rs"
+
+[[bin]]
+name = "reject-application-resource-noise"
+path = "src/bin/reject_application_resource_noise.rs"
+
+[[bin]]
+name = "undo-download-forms"
+path = "src/bin/undo_download_forms.rs"
+
+[[bin]]
+name = "seed-official-candidates"
+path = "src/bin/seed_official_candidates.rs"
+
+[[bin]]
+name = "youth-fit-refresh"
+path = "src/bin/youth_fit_refresh.rs"
+
+[[bin]]
+name = "rule-health"
+path = "src/bin/rule_health.rs"
+
+[[bin]]
+name = "revalidate-benefits"
+path = "src/bin/revalidate_benefits.rs"
+
+[[bin]]
+name = "region-scope-dry-run"
+path = "src/bin/region_scope_dry_run.rs"
+
+[[bin]]
+name = "renormalize-snapshots"
+path = "src/bin/renormalize_snapshots.rs"
+
+[[bin]]
+name = "import-applicant-reviews"
+path = "src/bin/import_applicant_reviews.rs"
+
+[[bin]]
+name = "import-condition-reviews"
+path = "src/bin/import_condition_reviews.rs"
+
+[[bin]]
+name = "confirm-rolling-windows"
+path = "src/bin/confirm_rolling_windows.rs"
+
+[[bin]]
+name = "convert-pilot-condition-reviews"
+path = "src/bin/convert_pilot_condition_reviews.rs"
+
+[[bin]]
+name = "convert-stored-condition-reviews"
+path = "src/bin/convert_stored_condition_reviews.rs"
+
+[[bin]]
+name = "enrich-benefit-candidates"
+path = "src/bin/enrich_benefit_candidates.rs"
+
+[dependencies]
+mazimi-core = { path = "../core" }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+reqwest = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+dotenvy = { workspace = true }
+tokio-cron-scheduler = "0.13"
+quick-xml = { workspace = true }
+scraper = { workspace = true }
+async-trait = { workspace = true }
+encoding_rs = "0.8"
+futures-util = "0.3"
+regex = { workspace = true }
+sha2 = "0.10"
+psl = "2"
+# SMTP for operator alerts (MIT). Pinned; rustls with the ring provider the
+# workspace already uses through sqlx, so no OpenSSL dependency is added.
+lettre = { version = "=0.11.23", default-features = false, features = ["smtp-transport", "tokio1", "tokio1-rustls", "ring", "webpki-roots", "builder", "hostname"] }
+ego-tree = "0.10"
+# NFKC for the one canonical text quotes and pages are compared in
+# (`corporate_auto::evidence::canonical`); already in the lockfile.
+unicode-normalization = "0.1.25"
+# HWP5 (OLE compound file) and HWPX (zip) text for the download-only form check
+# (application_resources::form_check); pure Rust, bounded reads.
+cfb = "0.10"
+zip = { version = "9", default-features = false, features = ["deflate-flate2"] }
+flate2 = "1"
+libc = "0.2"
+
+[[bin]]
+name = "corporate-intake-projection"
+path = "src/bin/corporate_intake_projection.rs"
+
+[[bin]]
+name = "corporate-bootstrap"
+path = "src/bin/corporate_bootstrap.rs"
+
+[[bin]]
+name = "corporate-census"
+path = "src/bin/corporate_census.rs"
+
+[[bin]]
+name = "corporate-snapshot"
+path = "src/bin/corporate_snapshot.rs"
+
+[[bin]]
+name = "text-rules-refresh"
+path = "src/bin/text_rules_refresh.rs"
+
+[[bin]]
+name = "extraction-eval"
+path = "src/bin/extraction_eval.rs"
+
+[dev-dependencies]
+axum = { workspace = true }
+
+[[bin]]
+name = "corporate-doors"
+path = "src/bin/corporate_doors.rs"

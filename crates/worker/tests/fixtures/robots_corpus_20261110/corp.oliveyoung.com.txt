@@ -1,0 +1,14 @@
+# CJ올리브영 기업 홈페이지 robots.txt
+# 배포 경로: https://corp.oliveyoung.com/robots.txt
+# 정책: 기본 허용. 검색 결과·내부 경로만 차단.
+
+User-agent: *
+Disallow: /*/search
+Disallow: /*/newsroom/search
+Disallow: /api/
+Disallow: /admin/
+Disallow: /cms/
+Disallow: /internal/
+
+Sitemap: https://corp.oliveyoung.com/sitemap.xml
+Sitemap: https://corp.oliveyoung.com/sitemap-news.xml

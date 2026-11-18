@@ -1,0 +1,5 @@
+# Empty final TSV columns and the upstream font license retain their bytes.
+*.tsv whitespace=-blank-at-eol
+apps/mobile/assets/fonts/OFL.txt whitespace=-blank-at-eol
+# Applied SQLx migrations are immutable: trailing EOF blanks affect checksums.
+infra/migrations/*.sql whitespace=-blank-at-eof

@@ -1,0 +1,464 @@
+name: mazimi
+
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile.web
+      args:
+        NEXT_PUBLIC_API_BASE_URL: https://${DOMAIN}
+        # Build-time (inlined). Off until a served rule reads the answers.
+        NEXT_PUBLIC_PROFILE_CONDITION_QUESTIONS_ENABLED: ${PROFILE_CONDITION_QUESTIONS_ENABLED:-false}
+        # 소득 구간 question: on unless "false" (matching reads it).
+        NEXT_PUBLIC_INCOME_QUESTION_ENABLED: ${INCOME_QUESTION_ENABLED:-true}
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=https://${DOMAIN}
+      - NEXT_PUBLIC_PROFILE_CONDITION_QUESTIONS_ENABLED=${PROFILE_CONDITION_QUESTIONS_ENABLED:-false}
+      - NEXT_PUBLIC_INCOME_QUESTION_ENABLED=${INCOME_QUESTION_ENABLED:-true}
+      # Server-side token exchange, refresh, logout and the /bff proxy.
+      - API_INTERNAL_URL=http://api:8080
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/ || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+
+  api:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile.api
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 40s
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+    # Least privilege: an explicit allowlist, not the whole .env.production.
+    # Bare names take their value from the --env-file (unset stays unset).
+    # scripts/check-service-env.py fails CI when code reads a name missing here.
+    environment:
+      - APP_ENV=production
+      - APP_PORT=8080
+      - RUST_LOG=info
+      - PUBLIC_API_BASE_URL=https://${DOMAIN}
+      - API_RUN_MIGRATIONS_ON_STARTUP=false
+      - API_DB_MAX_CONNECTIONS=${API_DB_MAX_CONNECTIONS:-8}
+      - DB_CONNECT_ATTEMPTS=${DB_CONNECT_ATTEMPTS:-6}
+      - DB_CONNECT_TIMEOUT_SECS=${DB_CONNECT_TIMEOUT_SECS:-10}
+      - DB_ACQUIRE_TIMEOUT_SECS=${DB_ACQUIRE_TIMEOUT_SECS:-15}
+      - SHUTDOWN_GRACE_SECS=${SHUTDOWN_GRACE_SECS:-30}
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - APP_DOMAIN
+      - ASSISTANT_AGENT_BACKGROUND_AFTER_SECS
+      - ASSISTANT_AGENT_CALENDAR_ENABLED
+      - ASSISTANT_AGENT_DOCUMENT_LINKS_ENABLED
+      - ASSISTANT_AGENT_ENABLED
+      - ASSISTANT_AGENT_MAX_RUNS
+      - ASSISTANT_AGENT_OFFICIAL_PAGE_ENABLED
+      - ASSISTANT_AGENT_PLANNER_ENABLED
+      - ASSISTANT_AGENT_PLANNER_DIGEST
+      - ASSISTANT_AGENT_PLANNER_MODEL
+      - ASSISTANT_AGENT_PLANNER_NUM_THREADS
+      - ASSISTANT_AGENT_PLANNER_PROMPT
+      - ASSISTANT_AGENT_PLANNER_REFUSALS
+      - ANONYMOUS_PREVIEW_ENABLED
+      - ASSISTANT_AGENT_JOURNEY_ENABLED
+      - ASSISTANT_AGENT_PLANNER_URL
+      - ASSISTANT_AGENT_PLAN_TIMEOUT_SECS
+      - ASSISTANT_MODELS_ENABLED
+      - ASSISTANT_AGENT_RUN_TIMEOUT_SECS
+      - ASSISTANT_AGENT_WARMUP
+      - ASSISTANT_AI_ENABLED
+      - ASSISTANT_AI_MODEL
+      - ASSISTANT_AI_NUM_THREADS
+      - ASSISTANT_AI_TIMEOUT_SECS
+      - ASSISTANT_AI_WARMUP
+      - ASSISTANT_CARD_PRODUCER_ENABLED
+      - ASSISTANT_INTENT_CLASSIFIER_DIR
+      - ASSISTANT_INTENT_CLASSIFIER_ENABLED
+      - ASSISTANT_INTENT_CLASSIFIER_THREADS
+      - ASSISTANT_INTENT_CLASSIFIER_THRESHOLD
+      - ASSISTANT_UNDERSTANDING_DIR
+      - ASSISTANT_UNDERSTANDING_ENABLED
+      - ASSISTANT_UNDERSTANDING_THREADS
+      - ASSISTANT_OLLAMA_ALLOW_ANY_PORT
+      - ASSISTANT_OLLAMA_KEEP_ALIVE
+      - ASSISTANT_OLLAMA_URL
+      - ASSISTANT_RETENTION_DAYS
+      - ASSISTANT_SEARCH_RERANK_ENABLED
+      - CALLBACK_HOST
+      - CORPORATE_BOT_CONTACT_URL
+      - CORPORATE_EVIDENCE_WAY_BACK_ENABLED
+      - CORPORATE_DOOR_FLAG_PAYCO=${CORPORATE_DOOR_FLAG_PAYCO:-false}
+      - CORPORATE_DOOR_KINDS_LIVE=${CORPORATE_DOOR_KINDS_LIVE:-}
+      - CORPORATE_DOORS_MODE=${CORPORATE_DOORS_MODE:-off}
+      - CORPORATE_INTAKE_MODE=${CORPORATE_INTAKE_MODE:-shadow}
+      - CORPORATE_WEEKLY_AUDIT_ENABLED
+      - DB_IDLE_TIMEOUT_SECS
+      - DB_MAX_LIFETIME_SECS
+      - DB_MIN_CONNECTIONS
+      - DOMAIN
+      - FORM_AUTO_ACTOR_USER_ID
+      - FORM_AUTO_IMPORT_ENABLED
+      - FORM_AUTO_KEEP_DAYS
+      - FORM_AUTO_KILL_FILE
+      - FORM_AUTO_MAX_FORMS
+      - FORM_AUTO_MIN_FREE_GB
+      - FORM_REVIEW_JUDGE
+      - FSS_API_KEY
+      - FTC_BRAND_API_KEY
+      - FTC_BRAND_BASE_YEAR
+      - FTC_BRAND_PRODUCTION_APPROVED
+      - GOOGLE_CLIENT_ID
+      - GOOGLE_CLIENT_SECRET
+      - GOV_API_KEY
+      - GOV_BENEFITS_API_KEY
+      - JOB_DB_MAX_CONNECTIONS
+      - KAKAO_CLIENT_ID
+      - KAKAO_CLIENT_SECRET
+      - KOSAF_API_KEY
+      - MIGRATION_DB_MAX_CONNECTIONS
+      - OFFICIAL_PAGE_MCP_TOKEN
+      - OFFICIAL_PAGE_MCP_URL
+      - PORTONE_API_KEY
+      - PORTONE_API_SECRET
+      - PUBLISHER_OPTOUT_ENABLED
+      - SCHOLARSHIP_DATASET_AUTO
+      - SOURCE_ALLOW_EMPTY_FSS_FINANCIAL
+      - SOURCE_ALLOW_EMPTY_FTC_BRAND_CATALOG
+      - SOURCE_ALLOW_EMPTY_GOV_BENEFITS
+      - SOURCE_ALLOW_EMPTY_LOCAL_WELFARE
+      - SOURCE_ALLOW_EMPTY_NATIONAL_WELFARE
+      - SOURCE_ALLOW_EMPTY_SCHOLARSHIP
+      - SOURCE_ALLOW_EMPTY_YOUTH_CENTER
+      - VERIFIED_SECTION_ENABLED
+      - WORKER_DB_MAX_CONNECTIONS
+      - YOUTH_CENTER_API_KEY
+    networks:
+      - default
+      # Reaches the official-page fetch service; nothing else is on it.
+      - official-page
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent --show-error --max-time 4 http://localhost:8080/ready >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+          pids: 256
+
+  worker:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile.worker
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 45s
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+    # Least privilege: no JWT, OAuth or session secrets (see the api note).
+    environment:
+      - APP_ENV=production
+      - RUST_LOG=info
+      - WORKER_DB_MAX_CONNECTIONS=${WORKER_DB_MAX_CONNECTIONS:-5}
+      - DB_CONNECT_ATTEMPTS=${DB_CONNECT_ATTEMPTS:-6}
+      - DB_CONNECT_TIMEOUT_SECS=${DB_CONNECT_TIMEOUT_SECS:-10}
+      - DB_ACQUIRE_TIMEOUT_SECS=${DB_ACQUIRE_TIMEOUT_SECS:-15}
+      - DATABASE_URL=${DATABASE_URL}
+      - KAKAO_BIZ_API_KEY=${KAKAO_BIZ_API_KEY:-}
+      - KAKAO_BIZ_SENDER_KEY=${KAKAO_BIZ_SENDER_KEY:-}
+      - API_DB_MAX_CONNECTIONS
+      - APPLICATION_RESOURCES_ENABLED
+      - FORM_AUTO_ENABLED
+      - FORM_AUTO_IMPORT_ENABLED
+      - FORM_AUTO_KEEP_DAYS
+      - FORM_AUTO_MAX_FORMS
+      - FORM_AUTO_MIN_FREE_GB
+      - FORM_AUTO_RUN_ROOT
+      - FORM_REVIEW_JUDGE
+      - APPLICATION_RESOURCES_MAX_CHECKS
+      - APPLICATION_RESOURCES_SEED_LIMIT
+      - APPLICATION_RESOURCES_WELFARE_NATIONAL_PER_RUN
+      - APPLICATION_RESOURCES_WELFARE_LOCAL_PER_RUN
+      - APPLICATION_FORMS_PUBLISH
+      - APPLICATION_FORMS_ACTOR_USER_ID
+      - APPLICATION_FORMS_JUDGE
+      - APPLICATION_FORMS_JUDGE_MODEL
+      - APPLICATION_FORMS_JUDGE_URL
+      - APPLICATION_FORMS_JUDGE_NUM_THREADS
+      - APPLICATION_FORMS_JUDGE_MAX_CALLS
+      - FORM_AUTO_ACTOR_USER_ID
+      - ASSISTANT_AGENT_PROACTIVE_ENABLED
+      - ASSISTANT_RETENTION_DAYS
+      - BENEFIT_CRAWLER_ENABLED
+      - BENEFIT_CRAWLER_MAX_BODY_BYTES
+      - BENEFIT_CRAWLER_MAX_LINKS_PER_PAGE
+      - BENEFIT_CRAWLER_MAX_PAGES
+      - BENEFIT_CRAWLER_TIMEOUT_SECS
+      - BENEFIT_LLM_ENABLED
+      - BENEFIT_LLM_MAX_CANDIDATES
+      - BENEFIT_LLM_MODEL
+      - BENEFIT_LLM_PROVIDER
+      - BENEFIT_LLM_TIMEOUT_SECS
+      - CORPORATE_AUTO_HIDE_REASONS
+      - CORPORATE_AUTO_PUBLISH_ENABLED
+      - CORPORATE_AUTO_REBASELINE_ENABLED
+      - CORPORATE_AUTO_VERIFY_ENABLED
+      - CORPORATE_AUTO_VERIFY_MODE
+      - CORPORATE_BOT_CONTACT_URL
+      - CORPORATE_CENSUS_ENABLED
+      - CORPORATE_EVIDENCE_WAY_BACK_ENABLED
+      - CORPORATE_DOOR_FLAG_PAYCO=${CORPORATE_DOOR_FLAG_PAYCO:-false}
+      - CORPORATE_DOOR_KINDS_LIVE=${CORPORATE_DOOR_KINDS_LIVE:-}
+      - CORPORATE_DOORS_MODE=${CORPORATE_DOORS_MODE:-off}
+      - CORPORATE_INTAKE_MODE=${CORPORATE_INTAKE_MODE:-shadow}
+      - CORPORATE_WEEKLY_AUDIT_ENABLED
+      - DB_IDLE_TIMEOUT_SECS
+      - DB_MAX_LIFETIME_SECS
+      - DB_MIN_CONNECTIONS
+      - DB_SIZE_ERROR_MB
+      - DB_SIZE_LIMIT_MB
+      - DB_SIZE_WARN_MB
+      - DOMAIN_APPROVAL_AUTO_RENEW
+      - DOMAIN_APPROVAL_RENEW_WITHIN_DAYS
+      - EXTRACTION_AI_ALLOW_ANY_PORT
+      - EXTRACTION_AI_ENABLED
+      - EXTRACTION_AI_FAILURE_COOLDOWN_HOURS
+      - EXTRACTION_AI_KEEP_ALIVE
+      - EXTRACTION_AI_MAX_PROGRAMS
+      - EXTRACTION_AI_MODE
+      - EXTRACTION_AI_MODEL
+      - EXTRACTION_AI_NUM_THREADS
+      - EXTRACTION_AI_QUEUE_MAX_PROGRAMS
+      - EXTRACTION_AI_TIMEOUT_SECS
+      - EXTRACTION_AI_TIME_BUDGET_MINUTES
+      - EXTRACTION_AI_URL
+      - EXTRACTION_AUTO_APPLY_ENABLED
+      - EXTRACTION_AUTO_APPLY_MAX_PER_RUN
+      - EXTRACTION_AUTO_APPLY_TYPES
+      - EXTRACTION_AUTO_AUDIT_PERCENT
+      - EXTRACTION_AUTO_AUDIT_SEED
+      - FSS_API_KEY
+      - FTC_BRAND_API_KEY
+      - FTC_BRAND_BASE_YEAR
+      - FTC_BRAND_PRODUCTION_APPROVED
+      - GEMINI_API_KEY
+      - GOV_API_KEY
+      - GOV_BENEFITS_API_KEY
+      - GRAY_GENERIC_TOS_ENABLED
+      - HOST_DISK_ERROR_GB
+      - HOST_DISK_WARN_GB
+      - INGESTION_ITEMS_RETENTION_BATCH
+      - INGESTION_ITEMS_RETENTION_DAYS
+      - INGESTION_ITEMS_RETENTION_ENABLED
+      - JOB_DB_MAX_CONNECTIONS
+      - KAKAO_BIZ_API_URL
+      - KOSAF_API_KEY
+      - APPLY_LINKS_CONFIRM_AFTER_MINUTES
+      - APPLY_LINKS_ENABLED
+      - APPLY_LINKS_JUDGE_ALLOW_ANY_PORT
+      - APPLY_LINKS_JUDGE_MODEL
+      - APPLY_LINKS_JUDGE_NUM_THREADS
+      - APPLY_LINKS_JUDGE_URL
+      - APPLY_LINKS_MAX_PROGRAMMES
+      - LINK_RESOLVER_ENABLED
+      - LINK_RESOLVER_MAX_CHECKS
+      - LINK_RESOLVER_SYNC_LIMIT
+      - LOCAL_WELFARE_API_KEY
+      - MIGRATION_DB_MAX_CONNECTIONS
+      - NATIONAL_WELFARE_API_KEY
+      - OPS_ALERT_DASHBOARD_URL
+      - OPS_ALERT_EMAIL_MAX_BATCH
+      - OPS_ALERT_EMAIL_MIN_SEVERITY
+      - OPS_ALERT_EMAIL_TO
+      - OPS_ALERT_MAX_BATCH
+      - OPS_ALERT_MIN_SEVERITY
+      - OPS_ALERT_WEBHOOK_FORMAT
+      - OPS_ALERT_WEBHOOK_URL
+      - PUBLISHER_OPTOUT_ENABLED
+      - ROLLING_WINDOW_CONFIRMATION_ENABLED
+      - ROLLING_WINDOW_CONFIRMATION_MAX
+      - SCHOLARSHIP_DATASET_AUTO
+      - SMTP_FROM
+      - SMTP_HOST
+      - SMTP_PASSWORD
+      - SMTP_PORT
+      - SMTP_USERNAME
+      - SOURCE_ACTIVE_FLOOR_FSS_FINANCIAL
+      - SOURCE_ACTIVE_FLOOR_FTC_BRAND_CATALOG
+      - SOURCE_ACTIVE_FLOOR_GOV_BENEFITS
+      - SOURCE_ACTIVE_FLOOR_LOCAL_WELFARE
+      - SOURCE_ACTIVE_FLOOR_NATIONAL_WELFARE
+      - SOURCE_ACTIVE_FLOOR_SCHOLARSHIP
+      - SOURCE_ACTIVE_FLOOR_YOUTH_CENTER
+      - SOURCE_ACTIVE_MAX_DROP_PCT
+      - SOURCE_ALLOW_EMPTY_FSS_FINANCIAL
+      - SOURCE_ALLOW_EMPTY_FTC_BRAND_CATALOG
+      - SOURCE_ALLOW_EMPTY_GOV_BENEFITS
+      - SOURCE_ALLOW_EMPTY_LOCAL_WELFARE
+      - SOURCE_ALLOW_EMPTY_NATIONAL_WELFARE
+      - SOURCE_ALLOW_EMPTY_SCHOLARSHIP
+      - SOURCE_ALLOW_EMPTY_YOUTH_CENTER
+      - SOURCE_REVIEW_GRACE_HOURS
+      - SOURCE_REVIEW_SWEEP_LIMIT
+      - YOUTH_CENTER_API_KEY
+    healthcheck:
+      test: ["CMD-SHELL", "test -n \"$$(find /tmp/mazimi-worker.ready -mmin -2 -print -quit 2>/dev/null)\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    deploy:
+      resources:
+        limits:
+          memory: 256m
+          pids: 256
+
+  # Live official-page fetch for the agent's check_official_page (MCP over
+  # Streamable HTTP). Off unless the `official-page` profile is started.
+  # No database credentials, no env_file, no published port: the api reaches
+  # it on the internal network with a shared bearer token.
+  official-page:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile.official-page
+    profiles:
+      - official-page
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 10s
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+    environment:
+      - RUST_LOG=info
+      - OFFICIAL_PAGE_BIND=0.0.0.0:8090
+      - OFFICIAL_PAGE_ALLOWED_HOSTS=official-page,official-page:8090
+      - OFFICIAL_PAGE_MCP_TOKEN=${OFFICIAL_PAGE_MCP_TOKEN:-}
+    # Its own network: it can reach the api's requests and the internet
+    # (official sites), not the database, web or worker.
+    networks:
+      - official-page
+    healthcheck:
+      test: ["CMD", "official-page-mcp", "--health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+          cpus: "0.25"
+          pids: 64
+
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    logging: *default-logging
+    environment:
+      POSTGRES_DB: wello
+      POSTGRES_USER: wello
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wello"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+
+  # Keep database client tooling independent from the optional local database.
+  # PostgreSQL 17 clients can back up both the current Supabase 17 service and
+  # the local PostgreSQL 16 development database.
+  db-tools:
+    image: ${POSTGRES_CLIENT_IMAGE:-postgres:17-alpine}
+    profiles:
+      - tools
+    restart: "no"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    init: true
+    logging: *default-logging
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      - DOMAIN=${DOMAIN}
+      - APP_DOMAIN=${APP_DOMAIN}
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./releases/mobile:/srv/mobile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      web:
+        condition: service_healthy
+      api:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+
+networks:
+  default:
+  official-page:
+
+volumes:
+  pgdata:
+  caddy_data:
+  caddy_config:

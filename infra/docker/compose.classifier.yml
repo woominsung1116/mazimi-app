@@ -1,0 +1,17 @@
+# OPTIONAL overlay for the agent intent classifier (docs/mazimi-ai-agent.md
+# §2, ASSISTANT_INTENT_CLASSIFIER_ENABLED). Not part of the default stack:
+# the API keeps its CPU set until the classifier is turned on.
+#
+# It pins the API to CPUs 0-1, apart from Ollama's default cpuset 2,3
+# (infra/docker/compose.ollama.yml), so the classifier's 2 threads
+# (ASSISTANT_INTENT_CLASSIFIER_THREADS) never share a core with a generating
+# model. Keep API_CPUSET disjoint from OLLAMA_CPUSET when changing either.
+#
+#   # .env.production: ASSISTANT_INTENT_CLASSIFIER_ENABLED=true
+#   docker compose -f compose.yml -f infra/docker/compose.classifier.yml up -d api
+#
+# Rollback: ASSISTANT_INTENT_CLASSIFIER_ENABLED=false and
+#   docker compose -f compose.yml up -d api   (back to the unpinned API)
+services:
+  api:
+    cpuset: "${API_CPUSET:-0,1}"

@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-27T09:19:30.492Z",
+  "environment": "isolated local PostgreSQL/API and browser; real adapter with simulated FormApp, no external institution/Google submission",
+  "results": [
+    "Institution intake fills exact profile fields and requires fresh consent after edits",
+    "Lost client acknowledgement recovers the one queued request without duplicate creation",
+    "Pre-dispatch cancellation deletes the encrypted answers and allows a new reviewed request",
+    "Real adapter code against the local API recovers a simulated FormApp lost reply by receipt lookup with exactly one submit call",
+    "Verified provider receipt and original notice remain available after benefit expiry"
+  ],
+  "errors": []
+}

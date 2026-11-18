@@ -1,0 +1,816 @@
+{
+  "version": 1,
+  "content_hash": "32f70e5896d0f363a459b0909c83b7229ea1ba180426b2a39f2dd2f98b2389e8",
+  "page_count": 7,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.1827,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 1: 장학금 지원 신청서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.2248,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 2: 장학생 추천서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.267,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 3: 자기소개서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.3091,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 4: 장학금 사용계획서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.3512,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 5: 성적증명서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.3933,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 6: 통장사본",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.4354,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 7: 생활기록부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.4776,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 8: 재학증명서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.5197,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 9: 가족관계 증명서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.5618,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 10: 학업장려 증빙서류",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.6056,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 11: 2026-1학기 학자금 지원구간 통지서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.8026,
+        "y": 0.6493,
+        "w": 0.0269,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "제출서류 12: 선수등록 확인서",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.7,
+        "y": 0.853,
+        "w": 0.232,
+        "h": 0.028
+      },
+      "type": "signature",
+      "label": "신청자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f01",
+      "page": 2,
+      "rect": {
+        "x": 0.1985,
+        "y": 0.1416,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "지원분야: 성적우수",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f02",
+      "page": 2,
+      "rect": {
+        "x": 0.442,
+        "y": 0.141,
+        "w": 0.047,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "성적우수 이수학점",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f03",
+      "page": 2,
+      "rect": {
+        "x": 0.563,
+        "y": 0.141,
+        "w": 0.037,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "성적우수 평점",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f04",
+      "page": 2,
+      "rect": {
+        "x": 0.614,
+        "y": 0.141,
+        "w": 0.056,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "성적우수 평점 만점",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f05",
+      "page": 2,
+      "rect": {
+        "x": 0.453,
+        "y": 0.181,
+        "w": 0.046,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "학업장려 이수학점",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f06",
+      "page": 2,
+      "rect": {
+        "x": 0.573,
+        "y": 0.181,
+        "w": 0.037,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "학업장려 평점",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f07",
+      "page": 2,
+      "rect": {
+        "x": 0.624,
+        "y": 0.181,
+        "w": 0.056,
+        "h": 0.016
+      },
+      "type": "text",
+      "label": "학업장려 평점 만점",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f08",
+      "page": 2,
+      "rect": {
+        "x": 0.2086,
+        "y": 0.184,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "지원분야: 학업장려",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f09",
+      "page": 2,
+      "rect": {
+        "x": 0.2489,
+        "y": 0.2236,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "지원 구분: 등록금성",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f10",
+      "page": 2,
+      "rect": {
+        "x": 0.511,
+        "y": 0.2236,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "지원 구분: 생활비성",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f11",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.2693,
+        "w": 0.1139,
+        "h": 0.0508
+      },
+      "type": "text",
+      "label": "신청자 인적사항 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p3-f12",
+      "page": 2,
+      "rect": {
+        "x": 0.5114,
+        "y": 0.2693,
+        "w": 0.1302,
+        "h": 0.0508
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p3-f13",
+      "page": 2,
+      "rect": {
+        "x": 0.757,
+        "y": 0.272,
+        "w": 0.118,
+        "h": 0.045
+      },
+      "type": "text",
+      "label": "손태희 장학금 수혜연도",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f14",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.3237,
+        "w": 0.6407,
+        "h": 0.0444
+      },
+      "type": "text",
+      "label": "신청자 인적사항 현주소 (도로명)",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p3-f15",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.3716,
+        "w": 0.2222,
+        "h": 0.0313
+      },
+      "type": "text",
+      "label": "신청자 인적사항 연락처",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p3-f16",
+      "page": 2,
+      "rect": {
+        "x": 0.6466,
+        "y": 0.3716,
+        "w": 0.2782,
+        "h": 0.0313
+      },
+      "type": "text",
+      "label": "이메일",
+      "mapping": "email",
+      "required": false
+    },
+    {
+      "id": "p3-f17",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.4065,
+        "w": 0.2222,
+        "h": 0.0303
+      },
+      "type": "text",
+      "label": "출신 고등학교",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f18",
+      "page": 2,
+      "rect": {
+        "x": 0.6466,
+        "y": 0.4065,
+        "w": 0.1697,
+        "h": 0.0303
+      },
+      "type": "text",
+      "label": "출신 고등학교 소재지 (도·광역시)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p3-f19",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.4403,
+        "w": 0.2222,
+        "h": 0.0303
+      },
+      "type": "text",
+      "label": "재학 대학교",
+      "mapping": "school",
+      "required": true
+    },
+    {
+      "id": "p3-f20",
+      "page": 2,
+      "rect": {
+        "x": 0.647,
+        "y": 0.44,
+        "w": 0.17,
+        "h": 0.03
+      },
+      "type": "text",
+      "label": "재학 대학교 소재지 (도·광역시)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p3-f21",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.4742,
+        "w": 0.2222,
+        "h": 0.037
+      },
+      "type": "text",
+      "label": "학과(부)",
+      "mapping": "major",
+      "required": true
+    },
+    {
+      "id": "p3-f22",
+      "page": 2,
+      "rect": {
+        "x": 0.6466,
+        "y": 0.4742,
+        "w": 0.2782,
+        "h": 0.037
+      },
+      "type": "text",
+      "label": "학년 (2026년 1학기)",
+      "mapping": "grade",
+      "required": true
+    },
+    {
+      "id": "p3-f23",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.5148,
+        "w": 0.1139,
+        "h": 0.0444
+      },
+      "type": "text",
+      "label": "비상연락망 성명",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p3-f24",
+      "page": 2,
+      "rect": {
+        "x": 0.4841,
+        "y": 0.5148,
+        "w": 0.1575,
+        "h": 0.0444
+      },
+      "type": "text",
+      "label": "비상연락망 연락처",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p3-f25",
+      "page": 2,
+      "rect": {
+        "x": 0.8203,
+        "y": 0.5148,
+        "w": 0.1045,
+        "h": 0.0444
+      },
+      "type": "text",
+      "label": "비상연락망 신청자와의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f26",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.5627,
+        "w": 0.1139,
+        "h": 0.0297
+      },
+      "type": "text",
+      "label": "예금주",
+      "mapping": "account_holder",
+      "required": true
+    },
+    {
+      "id": "p3-f27",
+      "page": 2,
+      "rect": {
+        "x": 0.4841,
+        "y": 0.5627,
+        "w": 0.4407,
+        "h": 0.0297
+      },
+      "type": "text",
+      "label": "은행명",
+      "mapping": "bank",
+      "required": true
+    },
+    {
+      "id": "p3-f28",
+      "page": 2,
+      "rect": {
+        "x": 0.2842,
+        "y": 0.596,
+        "w": 0.6407,
+        "h": 0.0278
+      },
+      "type": "text",
+      "label": "계좌번호",
+      "mapping": "account",
+      "required": true
+    },
+    {
+      "id": "p3-f29",
+      "page": 2,
+      "rect": {
+        "x": 0.4216,
+        "y": 0.7201,
+        "w": 0.0168,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 연도",
+      "mapping": "application_date",
+      "required": false,
+      "part": "year2"
+    },
+    {
+      "id": "p3-f30",
+      "page": 2,
+      "rect": {
+        "x": 0.4603,
+        "y": 0.7201,
+        "w": 0.0486,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p3-f31",
+      "page": 2,
+      "rect": {
+        "x": 0.5309,
+        "y": 0.7201,
+        "w": 0.0486,
+        "h": 0.0228
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p3-f32",
+      "page": 2,
+      "rect": {
+        "x": 0.7604,
+        "y": 0.7607,
+        "w": 0.1629,
+        "h": 0.034
+      },
+      "type": "signature",
+      "label": "신청인(학생) 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p6-f01",
+      "page": 5,
+      "rect": {
+        "x": 0.3528,
+        "y": 0.1297,
+        "w": 0.1746,
+        "h": 0.0376
+      },
+      "type": "text",
+      "label": "지원자 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p6-f02",
+      "page": 5,
+      "rect": {
+        "x": 0.3528,
+        "y": 0.1708,
+        "w": 0.1746,
+        "h": 0.0376
+      },
+      "type": "date",
+      "label": "지원자 생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p6-f03",
+      "page": 5,
+      "rect": {
+        "x": 0.762,
+        "y": 0.18,
+        "w": 0.036,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "자기소개서 성별: 남",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p6-f04",
+      "page": 5,
+      "rect": {
+        "x": 0.833,
+        "y": 0.18,
+        "w": 0.036,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "자기소개서 성별: 여",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p6-f05",
+      "page": 5,
+      "rect": {
+        "x": 0.078,
+        "y": 0.285,
+        "w": 0.84,
+        "h": 0.608
+      },
+      "type": "multiline",
+      "label": "자기소개서 내용",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p6-f06",
+      "page": 5,
+      "rect": {
+        "x": 0.7,
+        "y": 0.91,
+        "w": 0.232,
+        "h": 0.025
+      },
+      "type": "signature",
+      "label": "자기소개서 작성자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p7-f01",
+      "page": 6,
+      "rect": {
+        "x": 0.2882,
+        "y": 0.1297,
+        "w": 0.6355,
+        "h": 0.0318
+      },
+      "type": "text",
+      "label": "지원자 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p7-f02",
+      "page": 6,
+      "rect": {
+        "x": 0.2882,
+        "y": 0.1651,
+        "w": 0.2734,
+        "h": 0.0318
+      },
+      "type": "date",
+      "label": "지원자 생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p7-f03",
+      "page": 6,
+      "rect": {
+        "x": 0.748,
+        "y": 0.171,
+        "w": 0.026,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "사용계획서 성별: 남",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p7-f04",
+      "page": 6,
+      "rect": {
+        "x": 0.809,
+        "y": 0.171,
+        "w": 0.026,
+        "h": 0.019
+      },
+      "type": "checkbox",
+      "label": "사용계획서 성별: 여",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p7-f05",
+      "page": 6,
+      "rect": {
+        "x": 0.078,
+        "y": 0.437,
+        "w": 0.845,
+        "h": 0.458
+      },
+      "type": "multiline",
+      "label": "장학금 사용계획 내용",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p7-f06",
+      "page": 6,
+      "rect": {
+        "x": 0.7,
+        "y": 0.911,
+        "w": 0.232,
+        "h": 0.025
+      },
+      "type": "signature",
+      "label": "사용계획서 작성자 서명",
+      "mapping": "signature",
+      "required": true
+    }
+  ],
+  "derived": {
+    "source_sha256": "3240a264c54c418f2a3ea57bf0722e8f3fc0df3277ae610212c2109faa27849e",
+    "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b"
+  }
+}

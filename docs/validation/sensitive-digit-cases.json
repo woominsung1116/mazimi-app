@@ -1,0 +1,349 @@
+{
+  "about": "rrn/account digit skeleton. One fixture for both ports: crates/core/src/sensitive_digits.rs (cargo test) and apps/mobile/lib/formFill/digits.ts (scripts/check-chat-form-fill.cjs). shapes: the runs found, in order. values: per-kind checks on a whole value (device only, apps/mobile/lib/formFill/digits.ts valueProblem).",
+  "cases": [
+    {
+      "text": "900101-1234567",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "9001011234567",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "900101 1234567",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "900101 - 1******",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "900101-2",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "900101·1234567",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "900101ㅡ1234567",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "900101一1234567",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "900101o1234567",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "９００１０１－１２３４５６７",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "٩٠٠١٠١-١٢٣٤٥٦٧",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "이름은 구공공일공일 일이삼사오육칠 적어줘",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "구공공일공일-일이삼사오육칠",
+      "shapes": [
+        "rrn"
+      ]
+    },
+    {
+      "text": "110-123-456789",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "110ㅡ123ㅡ456789",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "110|123|456789",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "1002 123 456789",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "3333-01-1234567",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "1234567890",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "12345678901",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "821234567890",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "110​-123-456789",
+      "shapes": [
+        "account"
+      ]
+    },
+    {
+      "text": "010-1234-5678",
+      "shapes": []
+    },
+    {
+      "text": "01012345678",
+      "shapes": []
+    },
+    {
+      "text": "+82 10-1234-5678",
+      "shapes": []
+    },
+    {
+      "text": "821012345678",
+      "shapes": []
+    },
+    {
+      "text": "02-123-4567",
+      "shapes": []
+    },
+    {
+      "text": "051-123-4567",
+      "shapes": []
+    },
+    {
+      "text": "070-1234-5678",
+      "shapes": []
+    },
+    {
+      "text": "2000.01.01",
+      "shapes": []
+    },
+    {
+      "text": "000101",
+      "shapes": []
+    },
+    {
+      "text": "202012345",
+      "shapes": []
+    },
+    {
+      "text": "26464",
+      "shapes": []
+    },
+    {
+      "text": "2026년 3월 12일",
+      "shapes": []
+    },
+    {
+      "text": "abc123def456ghi789",
+      "shapes": []
+    },
+    {
+      "text": "이이이 오오",
+      "shapes": []
+    },
+    {
+      "text": "일이삼사오",
+      "shapes": []
+    }
+  ],
+  "values": [
+    {
+      "kind": "address",
+      "value": "서울 11012동 34567호 8901번지",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "원주시 단구로 170 1203호",
+      "problem": null
+    },
+    {
+      "kind": "name",
+      "value": "9공0101-1234567",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "900101--------1234567",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "900101    -    1234567",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "900101 끝 1234567",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "구공공 일공일 일이삼 사오육칠",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "구 공 공 일 공 일 일 이 삼",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "일일공 일이삼 사오육칠팔구",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "九〇〇一〇一-一二三四五六七",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "아홉공공하나공하나",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "address",
+      "value": "110 dash 123 dash 456789",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "name",
+      "value": "⑨⓪⓪①⓪①-①②③④⑤⑥⑦",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "student_id",
+      "value": "900101 1234567",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "name",
+      "value": "900101ㅡ1234567",
+      "problem": "sensitive"
+    },
+    {
+      "kind": "name",
+      "value": "김마지",
+      "problem": null
+    },
+    {
+      "kind": "name",
+      "value": "하은",
+      "problem": null
+    },
+    {
+      "kind": "name",
+      "value": "이은",
+      "problem": null
+    },
+    {
+      "kind": "name",
+      "value": "김마지 이고 우울증",
+      "problem": "shape"
+    },
+    {
+      "kind": "name",
+      "value": "관리자 권한",
+      "problem": null
+    },
+    {
+      "kind": "address",
+      "value": "부산 금정구 부산대학로 63번길 2",
+      "problem": null
+    },
+    {
+      "kind": "address",
+      "value": "101동 1203호",
+      "problem": null
+    },
+    {
+      "kind": "school",
+      "value": "부산대",
+      "problem": null
+    },
+    {
+      "kind": "major",
+      "value": "경영학과",
+      "problem": null
+    },
+    {
+      "kind": "phone",
+      "value": "010-1234-5678",
+      "problem": null
+    },
+    {
+      "kind": "phone",
+      "value": "010-12",
+      "problem": "shape"
+    },
+    {
+      "kind": "email",
+      "value": "maji@example.com",
+      "problem": null
+    },
+    {
+      "kind": "student_id",
+      "value": "202012345",
+      "problem": null
+    },
+    {
+      "kind": "birth_date",
+      "value": "2000.01.01",
+      "problem": null
+    },
+    {
+      "kind": null,
+      "value": "26464",
+      "problem": null
+    }
+  ]
+}

@@ -1,0 +1,658 @@
+{
+  "version": 1,
+  "content_hash": "f2031804e8c1628e0225cfc15d4ea235501135fa62d893f095a5cd328bd58f06",
+  "page_count": 8,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p6-f01",
+      "page": 5,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.2333,
+        "w": 0.1877,
+        "h": 0.0286
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p6-f02",
+      "page": 5,
+      "rect": {
+        "x": 0.7283,
+        "y": 0.2333,
+        "w": 0.2256,
+        "h": 0.0286
+      },
+      "type": "text",
+      "label": "주민등록번호",
+      "mapping": "rrn",
+      "required": true
+    },
+    {
+      "id": "p6-f03",
+      "page": 5,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.2655,
+        "w": 0.6062,
+        "h": 0.0286
+      },
+      "type": "text",
+      "label": "신청인 주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p6-f04",
+      "page": 5,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.2977,
+        "w": 0.1877,
+        "h": 0.0309
+      },
+      "type": "text",
+      "label": "신청인 전화번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p6-f05",
+      "page": 5,
+      "rect": {
+        "x": 0.7283,
+        "y": 0.2977,
+        "w": 0.2256,
+        "h": 0.0309
+      },
+      "type": "text",
+      "label": "핸드폰번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p6-f06",
+      "page": 5,
+      "rect": {
+        "x": 0.5404,
+        "y": 0.3322,
+        "w": 0.4135,
+        "h": 0.0324
+      },
+      "type": "text",
+      "label": "신청내용 자격증 취득지원 신청내용 취득 자격증명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p6-f07",
+      "page": 5,
+      "rect": {
+        "x": 0.583,
+        "y": 0.372,
+        "w": 0.135,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "소요비용(응시료) 금액(한글)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p6-f08",
+      "page": 5,
+      "rect": {
+        "x": 0.773,
+        "y": 0.372,
+        "w": 0.115,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "소요비용(응시료) 금액(숫자)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p6-f09",
+      "page": 5,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.4046,
+        "w": 0.1877,
+        "h": 0.0318
+      },
+      "type": "text",
+      "label": "신청내용 계좌번호",
+      "mapping": "account",
+      "required": false
+    },
+    {
+      "id": "p6-f10",
+      "page": 5,
+      "rect": {
+        "x": 0.6759,
+        "y": 0.4046,
+        "w": 0.1022,
+        "h": 0.0318
+      },
+      "type": "text",
+      "label": "금융기관",
+      "mapping": "bank",
+      "required": false
+    },
+    {
+      "id": "p6-f11",
+      "page": 5,
+      "rect": {
+        "x": 0.8828,
+        "y": 0.4046,
+        "w": 0.0712,
+        "h": 0.0318
+      },
+      "type": "text",
+      "label": "예금주명",
+      "mapping": "account_holder",
+      "required": false
+    },
+    {
+      "id": "p6-f12",
+      "page": 5,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.4399,
+        "w": 0.6062,
+        "h": 0.0338
+      },
+      "type": "text",
+      "label": "신청내용 자격증 취득 후 취·창업계획",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p6-f13",
+      "page": 5,
+      "rect": {
+        "x": 0.5104,
+        "y": 0.5565,
+        "w": 0.0295,
+        "h": 0.04
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p6-f14",
+      "page": 5,
+      "rect": {
+        "x": 0.5491,
+        "y": 0.5565,
+        "w": 0.0404,
+        "h": 0.04
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p6-f15",
+      "page": 5,
+      "rect": {
+        "x": 0.8393,
+        "y": 0.6092,
+        "w": 0.0673,
+        "h": 0.0339
+      },
+      "type": "signature",
+      "label": "신청인성명 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p6-f16",
+      "page": 5,
+      "rect": {
+        "x": 0.6951,
+        "y": 0.6131,
+        "w": 0.1425,
+        "h": 0.0262
+      },
+      "type": "text",
+      "label": "신청인성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p6-f17",
+      "page": 5,
+      "rect": {
+        "x": 0.695,
+        "y": 0.638,
+        "w": 0.049,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "생년월일 연도",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p6-f18",
+      "page": 5,
+      "rect": {
+        "x": 0.754,
+        "y": 0.638,
+        "w": 0.05,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "생년월일 월",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p6-f19",
+      "page": 5,
+      "rect": {
+        "x": 0.814,
+        "y": 0.638,
+        "w": 0.046,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "생년월일 일",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p7-f01",
+      "page": 6,
+      "rect": {
+        "x": 0.819,
+        "y": 0.4056,
+        "w": 0.0185,
+        "h": 0.0131
+      },
+      "type": "checkbox",
+      "label": "선택사항 수집·이용 동의: 여",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p7-f02",
+      "page": 6,
+      "rect": {
+        "x": 0.8927,
+        "y": 0.4056,
+        "w": 0.0185,
+        "h": 0.0131
+      },
+      "type": "checkbox",
+      "label": "선택사항 수집·이용 동의: 부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p7-f03",
+      "page": 6,
+      "rect": {
+        "x": 0.427,
+        "y": 0.6314,
+        "w": 0.0185,
+        "h": 0.0131
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집·이용 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p7-f04",
+      "page": 6,
+      "rect": {
+        "x": 0.6762,
+        "y": 0.6314,
+        "w": 0.0185,
+        "h": 0.0131
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집·이용 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p7-f05",
+      "page": 6,
+      "rect": {
+        "x": 0.4799,
+        "y": 0.8268,
+        "w": 0.0293,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p7-f06",
+      "page": 6,
+      "rect": {
+        "x": 0.5343,
+        "y": 0.8268,
+        "w": 0.0293,
+        "h": 0.0246
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p7-f07",
+      "page": 6,
+      "rect": {
+        "x": 0.8425,
+        "y": 0.8718,
+        "w": 0.0673,
+        "h": 0.0339
+      },
+      "type": "signature",
+      "label": "성명 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p7-f08",
+      "page": 6,
+      "rect": {
+        "x": 0.7419,
+        "y": 0.8756,
+        "w": 0.099,
+        "h": 0.0262
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p8-f01",
+      "page": 7,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.2008,
+        "w": 0.2115,
+        "h": 0.0355
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p8-f02",
+      "page": 7,
+      "rect": {
+        "x": 0.7235,
+        "y": 0.2008,
+        "w": 0.2248,
+        "h": 0.0355
+      },
+      "type": "text",
+      "label": "주민등록번호",
+      "mapping": "rrn",
+      "required": true
+    },
+    {
+      "id": "p8-f03",
+      "page": 7,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.2398,
+        "w": 0.6006,
+        "h": 0.0352
+      },
+      "type": "text",
+      "label": "신청인 주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p8-f04",
+      "page": 7,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.2786,
+        "w": 0.2115,
+        "h": 0.0375
+      },
+      "type": "text",
+      "label": "신청인 전화번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p8-f05",
+      "page": 7,
+      "rect": {
+        "x": 0.7235,
+        "y": 0.2786,
+        "w": 0.2248,
+        "h": 0.0375
+      },
+      "type": "text",
+      "label": "핸드폰번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p8-f06",
+      "page": 7,
+      "rect": {
+        "x": 0.5642,
+        "y": 0.3196,
+        "w": 0.2111,
+        "h": 0.0358
+      },
+      "type": "text",
+      "label": "신청내용 자격증 취득지원 신청내용 취득 자격증명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p8-f07",
+      "page": 7,
+      "rect": {
+        "x": 0.607,
+        "y": 0.365,
+        "w": 0.135,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "신청금액(합격수당) 금액(한글)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p8-f08",
+      "page": 7,
+      "rect": {
+        "x": 0.797,
+        "y": 0.365,
+        "w": 0.115,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "신청금액(합격수당) 금액(숫자)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p8-f09",
+      "page": 7,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.3989,
+        "w": 0.2115,
+        "h": 0.0352
+      },
+      "type": "text",
+      "label": "신청내용 계좌번호",
+      "mapping": "account",
+      "required": false
+    },
+    {
+      "id": "p8-f10",
+      "page": 7,
+      "rect": {
+        "x": 0.6662,
+        "y": 0.3989,
+        "w": 0.0925,
+        "h": 0.0352
+      },
+      "type": "text",
+      "label": "금융기관",
+      "mapping": "bank",
+      "required": false
+    },
+    {
+      "id": "p8-f11",
+      "page": 7,
+      "rect": {
+        "x": 0.8614,
+        "y": 0.3989,
+        "w": 0.0869,
+        "h": 0.0352
+      },
+      "type": "text",
+      "label": "예금주명",
+      "mapping": "account_holder",
+      "required": false
+    },
+    {
+      "id": "p8-f12",
+      "page": 7,
+      "rect": {
+        "x": 0.3477,
+        "y": 0.4376,
+        "w": 0.6006,
+        "h": 0.0406
+      },
+      "type": "multiline",
+      "label": "신청내용 자격증 취득 후 취·창업계획",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p8-f13",
+      "page": 7,
+      "rect": {
+        "x": 0.5083,
+        "y": 0.5745,
+        "w": 0.0295,
+        "h": 0.04
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p8-f14",
+      "page": 7,
+      "rect": {
+        "x": 0.5471,
+        "y": 0.5745,
+        "w": 0.04,
+        "h": 0.04
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p8-f15",
+      "page": 7,
+      "rect": {
+        "x": 0.8393,
+        "y": 0.6269,
+        "w": 0.0673,
+        "h": 0.0339
+      },
+      "type": "signature",
+      "label": "신청인성명 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p8-f16",
+      "page": 7,
+      "rect": {
+        "x": 0.6951,
+        "y": 0.6307,
+        "w": 0.1425,
+        "h": 0.0262
+      },
+      "type": "text",
+      "label": "신청인성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p8-f17",
+      "page": 7,
+      "rect": {
+        "x": 0.695,
+        "y": 0.656,
+        "w": 0.049,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "생년월일 연도",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p8-f18",
+      "page": 7,
+      "rect": {
+        "x": 0.754,
+        "y": 0.656,
+        "w": 0.05,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "생년월일 월",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p8-f19",
+      "page": 7,
+      "rect": {
+        "x": 0.814,
+        "y": 0.656,
+        "w": 0.046,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "생년월일 일",
+      "mapping": null,
+      "required": true
+    }
+  ]
+}

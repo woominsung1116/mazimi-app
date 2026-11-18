@@ -1,0 +1,170 @@
+{
+ "pages": [
+  1
+ ],
+ "reviewed": true,
+ "note": "서식2~4(행정정보 제공 요구서·동의서)는 2쪽 모아찍기 축소 인쇄라 칸 위치 신뢰도가 낮아 제외: 이용자가 직접 작성 2026-10-26: 신청일자 월/일 and 공무원 가족여부 added (slot check); the 신청일자 year blank after the printed '20' is about 5 pt wide, too narrow for any box the app can fill, so it stays for the applicant to write by hand; 전화번호 left without a box: its cell is filled by the printed hint '핸드폰 번호 기재시 선택입력 가능' (optional when 핸드폰번호 is given).",
+ "drop": [
+  {
+   "page": 1,
+   "label": "자격증 또는 관련 교육 이수 여부 자격증 / 교육명"
+  }
+ ],
+ "set": [
+  {
+   "match": {
+    "page": 1,
+    "pattern": "^(수신동의여부: )?동의$",
+    "near_y": 0.283
+   },
+   "fields": {
+    "label": "이메일 수신동의: 동의"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "pattern": "비동의$",
+    "near_y": 0.283
+   },
+   "fields": {
+    "label": "이메일 수신동의: 비동의"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "pattern": "^(수신동의여부: )?동의$",
+    "near_y": 0.314
+   },
+   "fields": {
+    "label": "문자 수신동의: 동의"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "pattern": "비동의$",
+    "near_y": 0.314
+   },
+   "fields": {
+    "label": "문자 수신동의: 비동의"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "pattern": "^(수신동의여부: )?동의$",
+    "near_y": 0.354
+   },
+   "fields": {
+    "label": "타 일자리사업 SMS 수신 동의: 동의"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "pattern": "비동의$",
+    "near_y": 0.354
+   },
+   "fields": {
+    "label": "타 일자리사업 SMS 수신 동의: 비동의"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "pattern": "신청인 성명$"
+   },
+   "fields": {
+    "label": "신청인 성명"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "pattern": "신청인 성명 서명$"
+   },
+   "fields": {
+    "label": "신청인 서명"
+   }
+  }
+ ],
+ "grid": [
+  {
+   "page": 1,
+   "prefix": "자격증·교육명",
+   "self": false,
+   "columns": [
+    [
+     "",
+     0.6322,
+     0.8169
+    ]
+   ],
+   "rows": [
+    [
+     "(1행)",
+     0.5464,
+     0.5718
+    ],
+    [
+     "(2행)",
+     0.5718,
+     0.5972
+    ],
+    [
+     "(3행)",
+     0.5972,
+     0.6226
+    ]
+   ]
+  }
+ ],
+ "add": [
+  {
+   "id": "a",
+   "page": 1,
+   "rect": {
+    "x": 0.8977,
+    "y": 0.1842,
+    "w": 0.0163,
+    "h": 0.0156
+   },
+   "type": "text",
+   "label": "신청일자 월",
+   "mapping": "application_date",
+   "required": false,
+   "part": "month"
+  },
+  {
+   "id": "a",
+   "page": 1,
+   "rect": {
+    "x": 0.9171,
+    "y": 0.1842,
+    "w": 0.0163,
+    "h": 0.0156
+   },
+   "type": "text",
+   "label": "신청일자 일",
+   "mapping": "application_date",
+   "required": false,
+   "part": "day"
+  },
+  {
+   "id": "a",
+   "page": 1,
+   "rect": {
+    "x": 0.6342,
+    "y": 0.6633,
+    "w": 0.152,
+    "h": 0.0275
+   },
+   "type": "text",
+   "label": "공무원 가족여부",
+   "mapping": null,
+   "required": false
+  }
+ ]
+}

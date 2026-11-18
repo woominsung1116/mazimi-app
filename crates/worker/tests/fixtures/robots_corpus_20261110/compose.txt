@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /board_xIbz35/
+Disallow: /qnaw/
+Disallow: /corp_s_w/
+Disallow: /board_cCsv05/
+Disallow: /oversea/
+Disallow: /board_USTY59/
+Disallow: /board_Mcij51/
+Disallow: /board_zqns02/
+Disallow: /AS/
+Allow:/

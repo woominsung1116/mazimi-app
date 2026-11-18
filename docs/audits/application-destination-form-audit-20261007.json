@@ -1,0 +1,99 @@
+{
+  "checked_at": "2026-10-07T07:04:31Z",
+  "mode": "read_only_audit",
+  "production_changes": false,
+  "scope": {
+    "endpoint": "$MAZIMI_API_URL/api/v1/programs",
+    "query": {
+      "program_type": "policy",
+      "status": "open",
+      "per_page": 100
+    },
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "returned_total": 450,
+    "unique_program_ids": 450,
+    "source_type": "youth_center",
+    "scope_excludes": "Other program types (employment, housing, scholarship, welfare, etc.) were not enumerated."
+  },
+  "url_inventory": {
+    "method": "Classified stored URL host/path only; not 450 live page checks.",
+    "youthcenter_domain": 219,
+    "other_domains_root_path": 2,
+    "other_domains_non_root_path": 229,
+    "missing_or_unparseable": 0,
+    "non_empty_application_steps": 0,
+    "root_path_warning": "A root path with query parameters is not necessarily a generic homepage. The UNV donor-filter URL was not live inspected."
+  },
+  "findings": [
+    {
+      "id": "url_shape_is_not_application_destination",
+      "code": "crates/worker/src/pipeline.rs:1223",
+      "detail": "Selects aplyUrlAddr/refUrlAddr1/refUrlAddr2 using URL shape, then falls back to youthcenter detail; does not follow the page to the real form."
+    },
+    {
+      "id": "query_only_homepage_is_specific",
+      "code": "crates/worker/src/pipeline.rs:1343",
+      "detail": "The lang=ko homepage is considered specific by ingestion and unverified_page by the API."
+    },
+    {
+      "id": "specific_official_preempts_steps",
+      "code": "crates/api/src/services/application_destination.rs:61",
+      "detail": "An unverified_page official URL returns immediately, before evaluating any application steps."
+    },
+    {
+      "id": "no_template_prefetch",
+      "code": "crates/api/src/services/application_materials.rs:82",
+      "detail": "Existing material preparation extracts document names and URLs from source text; the inspected path does not download official attachments or fill their fields."
+    }
+  ],
+  "examples": [
+    {
+      "program_id": "d07b1d85-ba16-4436-b424-6c3a1eabb3e8",
+      "title": "AI 면접 및 역량 검사 체험 지원",
+      "production_destination": "https://www.wonju.go.kr/wjyouth/viewTnWjyouthProgrmU.do?progrmNo=56&key=5942",
+      "production_kind": "unverified_page",
+      "official_notice": "https://www.wonju.go.kr/wjyouth/selectBbsNttView.do?bbsNo=1190&nttNo=478867&key=5882",
+      "official_apply_shortlink": "https://naver.me/xJGOB2mS",
+      "resolved_form_url": "https://form.naver.com/response/lkAVE33oMpxF2KKCQ4NQDQ",
+      "browser_result": "Redirects to NAVER login with form URL as return target. No login or submission performed; form contents and availability behind login remain unverified.",
+      "attachment": {
+        "url": "https://www.wonju.go.kr/wjyouth/downloadBbsFile.do?key=5882&atchmnflNo=409363",
+        "filename": "신청서 및 제출서류（서식）.hwp",
+        "http_status": 200,
+        "content_length": 41472,
+        "content_type": "application/octet-stream;charset=utf-8",
+        "result": "Unauthenticated GET succeeded; response body discarded. File internals and fillability not inspected."
+      }
+    },
+    {
+      "program_id": "53b4da1f-7ef2-433e-9499-2303e6bec03d",
+      "title": "울산 마이스 인재양성",
+      "production_destination": "https://www.uctf.or.kr/?lang=ko",
+      "production_kind": "unverified_page",
+      "page_observation": "Ulsan Culture and Tourism Foundation homepage, not a specific application form."
+    },
+    {
+      "program_id": "689f9613-41cc-4947-b95d-78bf47f5a6d8",
+      "title": "광양청년꿈터 하반기 드림클래스 수강생 모집",
+      "production_destination": "https://youth.gwangju.go.kr/www/50?siteId=www&policyId=1458&url=%2Fwww%2Fpolicy%2FgjYgPolicyView",
+      "page_observation": "HTTP GET returned 400 in this audit. Title names Gwangyang while host is Gwangju; identity mismatch is a suspicion, not confirmed from page content."
+    }
+  ],
+  "limitations": [
+    "Not a catalog-wide end-to-end browser audit.",
+    "A youthcenter information URL is not necessarily broken or replaceable by an online form; some benefits have offline or no individual applications.",
+    "No authenticated external application, real user records, deployment, or form submission were performed."
+  ],
+  "proposed_priority": [
+    "Separate official notice URL, evidence-backed application URL, and versioned attachment URLs.",
+    "Verify program identity, year/intake, final destination and authentication requirements before promoting a link.",
+    "Use transparent labels for direct application, login required, offline application, information only, and unverified states.",
+    "Discover public templates through both application and reference notices, subject to source policy and safe-fetch controls."
+  ]
+}

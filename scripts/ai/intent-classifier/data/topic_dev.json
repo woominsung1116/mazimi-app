@@ -1,0 +1,487 @@
+[
+{
+"goal": "집주인한테 낼 돈이 부족해서 걱정이야 도와주는 거 있어?",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "방 빼고 새로 들어갈 때 드는 비용 지원 같은 거",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "혼자 살 집 마련하는 청년한테 주는 거",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "관리비까지 내면 너무 빠듯한데 지원 받을 수 있나",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "학교 근처 하숙비 부담 줄이는 방법",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "공공에서 싸게 빌려주는 집 있다던데",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "계약할 때 목돈 들어가는 거 도와주는 제도",
+"fields": [
+"housing",
+"finance"
+]
+},
+{
+"goal": "셰어하우스 같은 데 들어가는 거 지원돼?",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "일자리 구하는 동안 버틸 수 있게 주는 돈",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "이력서 써도 계속 떨어지는데 도움 받을 데",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "회사 들어가기 전에 직무 경험 쌓게 해주는 거",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "내 사업 해보고 싶은 청년 대상 프로그램",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "첫 출근 전에 정장 사는 비용 지원",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "코딩 부트캠프 같은 거 무료로 들을 수 있나",
+"fields": [
+"employment",
+"education"
+]
+},
+{
+"goal": "기술 배워서 취직하고 싶은데 지원되는 과정",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "중소기업 다니면 목돈 만들어주는 그거",
+"fields": [
+"employment",
+"finance"
+]
+},
+{
+"goal": "시험 볼 때 응시료 부담되는데",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "다음 학기 학교 다닐 돈이 없어",
+"fields": [
+"education"
+]
+},
+{
+"goal": "공부 잘하면 받을 수 있는 돈",
+"fields": [
+"education"
+]
+},
+{
+"goal": "학교에서 일하면서 돈 받는 거",
+"fields": [
+"education"
+]
+},
+{
+"goal": "영어 시험 준비 비용 줄이는 법",
+"fields": [
+"education"
+]
+},
+{
+"goal": "대학원 진학할 때 받을 수 있는 지원",
+"fields": [
+"education"
+]
+},
+{
+"goal": "해외로 공부하러 가는 거 지원",
+"fields": [
+"education"
+]
+},
+{
+"goal": "책값이 너무 많이 나와",
+"fields": [
+"education"
+]
+},
+{
+"goal": "인강 끊는 비용 도와주는 거 있나",
+"fields": [
+"education"
+]
+},
+{
+"goal": "매달 조금씩 저금하면 정부가 보태주는 상품",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "목돈 만들고 싶은 사회초년생",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "급하게 돈 필요할 때 싸게 빌리는 방법",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "빚 때문에 너무 힘든데 정리하는 거 도와주는 곳",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "신용점수 올리는 데 도움되는 프로그램",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "통장 하나 만들면 이자 더 주는 청년용",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "재테크 배울 수 있는 교육",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "학교 갈 때 지하철비가 부담돼",
+"fields": [
+"living"
+]
+},
+{
+"goal": "공연 보러 가고 싶은데 비싸서",
+"fields": [
+"living"
+]
+},
+{
+"goal": "전시회 같은 거 싸게 보는 방법",
+"fields": [
+"living"
+]
+},
+{
+"goal": "한 달 핸드폰 비용 줄이고 싶어",
+"fields": [
+"living"
+]
+},
+{
+"goal": "밥 먹는 데 돈이 너무 많이 나가",
+"fields": [
+"living"
+]
+},
+{
+"goal": "운동하고 싶은데 헬스장 비용 지원",
+"fields": [
+"living"
+]
+},
+{
+"goal": "뮤지컬 할인 받을 수 있는 거",
+"fields": [
+"living"
+]
+},
+{
+"goal": "책 사거나 영화 보는 데 쓸 수 있는 카드",
+"fields": [
+"living"
+]
+},
+{
+"goal": "요즘 마음이 너무 힘들어서 누구랑 얘기하고 싶어",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "병원 다니는 비용이 감당이 안 돼",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "치아 치료 비용 지원",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "혼자 지내면서 사람 안 만나는 청년 돕는 곳",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "아픈 가족 돌보느라 힘든 청년 지원",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "보호시설에서 나와서 자립하는 중이야",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "건강검진 무료로 받을 수 있나",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "스트레스 너무 받아서 상담 받고 싶은데 돈이 없어",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "면접 보러 갈 때 차비 주는 제도",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "공연·전시 관람비 지원",
+"fields": [
+"living"
+]
+},
+{
+"goal": "이사 갈 때 용달비 지원",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "월세 낼 때 조금이라도 보태주는 거",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "등록금 걱정 덜어주는 제도",
+"fields": [
+"education"
+]
+},
+{
+"goal": "적금 들면 나라에서 더 넣어주는 거",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "교통카드 충전 비용 줄이기",
+"fields": [
+"living"
+]
+},
+{
+"goal": "마음 건강 챙기는 바우처",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "구직 중인 청년 생활 안정 지원",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "자격증 시험 비용 돌려주는 거",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "집 계약할 때 대출 이자 줄여주는 거",
+"fields": [
+"housing",
+"finance"
+]
+},
+{
+"goal": "학자금 갚는 거 부담 줄이는 방법",
+"fields": [
+"education",
+"finance"
+]
+},
+{
+"goal": "문화생활 할 여유가 없어",
+"fields": [
+"living"
+]
+},
+{
+"goal": "통신 요금 감면",
+"fields": [
+"living"
+]
+},
+{
+"goal": "주거 안정 지원",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "일 경험 쌓는 인턴 프로그램",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "성적 우수 학생 지원",
+"fields": [
+"education"
+]
+},
+{
+"goal": "청년 저축 계좌",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "버스 요금 할인 카드",
+"fields": [
+"living"
+]
+},
+{
+"goal": "심리 치료 비용",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "자취 시작하는데 받을 수 있는 거",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "취직 준비하면서 받을 수 있는 거",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "학교 다니면서 받을 수 있는 돈",
+"fields": [
+"education"
+]
+},
+{
+"goal": "돈 모으는 거 도와주는 정책",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "생활비 아끼는 혜택",
+"fields": [
+"living"
+]
+},
+{
+"goal": "몸 아플 때 도움 받는 제도",
+"fields": [
+"welfare"
+]
+},
+{
+"goal": "창업 준비 중인데 공간 빌려주는 곳",
+"fields": [
+"employment"
+]
+},
+{
+"goal": "기숙사 못 들어가서 방 구해야 돼",
+"fields": [
+"housing"
+]
+},
+{
+"goal": "어학 점수 따야 되는데 학원비가",
+"fields": [
+"education"
+]
+},
+{
+"goal": "영화관 할인되는 청년 혜택",
+"fields": [
+"living"
+]
+},
+{
+"goal": "빚 독촉 때문에 힘들어",
+"fields": [
+"finance"
+]
+},
+{
+"goal": "우울증 치료 지원",
+"fields": [
+"welfare"
+]
+}
+]

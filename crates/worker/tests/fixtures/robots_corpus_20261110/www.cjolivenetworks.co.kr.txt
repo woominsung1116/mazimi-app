@@ -1,0 +1,97 @@
+## All
+User-agent:*
+Disallow: /
+
+## Google
+User-agent: Googlebot
+Allow: /
+
+## Googlebot-Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+## Googlebot-image
+User-agent: Googlebot-image
+Allow: /
+
+## Naver
+User-agent: NaverBot
+Allow: /
+
+## Naver
+User-agent: Yeti
+Allow: /
+
+## Bing
+User-agent: Bingbot
+Allow: /
+
+## Daum
+User-agent: Daumoa
+Allow: /
+
+## AI - GPT (OpenAI)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+## AI - Claude (Anthropic)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+## AI - Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+## AI - Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+## AI - Apple
+User-agent: Applebot-Extended
+Allow: /
+
+## AI - Google
+User-agent: Google-Extended
+Allow: /
+
+## AI - Amazon
+User-agent: Amazonbot
+Allow: /
+
+## AI - ByteDance
+User-agent: Bytespider
+Allow: /
+
+## AI - Common Crawl
+User-agent: CCBot
+Allow: /
+
+## AI - Cohere
+User-agent: Cohere-ai
+Allow: /
+
+## AI - You.com
+User-agent: YouBot
+Allow: /
+
+## AI - Diffbot
+User-agent: Diffbot
+Allow: /
+
+## AI - ImagesiftBot
+User-agent: ImagesiftBot
+Allow: /
+
+Sitemap: https://www.cjolivenetworks.co.kr/sitemap.xml

@@ -1,0 +1,765 @@
+{
+  "version": 1,
+  "content_hash": "909ef15e29ba2a13c61cd6af13646a436e9cd5435f4c67e1984461eec5d5a8f3",
+  "page_count": 5,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.355,
+        "y": 0.138,
+        "w": 0.21,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.6947,
+        "y": 0.1375,
+        "w": 0.2323,
+        "h": 0.0261
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.355,
+        "y": 0.167,
+        "w": 0.57,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "신청인 주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.46,
+        "y": 0.192,
+        "w": 0.25,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "신청인 연락처",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.3554,
+        "y": 0.2164,
+        "w": 0.3343,
+        "h": 0.042
+      },
+      "type": "text",
+      "label": "혼인신고일",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.8294,
+        "y": 0.2296,
+        "w": 0.0213,
+        "h": 0.0151
+      },
+      "type": "checkbox",
+      "label": "주택소유여부 (√체크): 무주택",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.3554,
+        "y": 0.262,
+        "w": 0.5716,
+        "h": 0.0307
+      },
+      "type": "text",
+      "label": "자녀수",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.3554,
+        "y": 0.2963,
+        "w": 0.3343,
+        "h": 0.0276
+      },
+      "type": "text",
+      "label": "임차주택 현황 소재지",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.8255,
+        "y": 0.2963,
+        "w": 0.1015,
+        "h": 0.0276
+      },
+      "type": "text",
+      "label": "건물용도",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.3554,
+        "y": 0.3275,
+        "w": 0.2648,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "임차금액 (원)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.8255,
+        "y": 0.3275,
+        "w": 0.1015,
+        "h": 0.0269
+      },
+      "type": "text",
+      "label": "임차면적(㎡)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.3554,
+        "y": 0.3579,
+        "w": 0.2088,
+        "h": 0.0245
+      },
+      "type": "text",
+      "label": "대출기관",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.6947,
+        "y": 0.3579,
+        "w": 0.1925,
+        "h": 0.0245
+      },
+      "type": "text",
+      "label": "대출잔액 (원)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.3554,
+        "y": 0.386,
+        "w": 0.2088,
+        "h": 0.0245
+      },
+      "type": "text",
+      "label": "지급계좌 금융기관 (신청인 명의)",
+      "mapping": "bank",
+      "required": true
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.6947,
+        "y": 0.386,
+        "w": 0.2323,
+        "h": 0.0245
+      },
+      "type": "text",
+      "label": "계좌번호",
+      "mapping": "account",
+      "required": true
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.36,
+        "y": 0.414,
+        "w": 0.158,
+        "h": 0.02
+      },
+      "type": "text",
+      "label": "신청금액 (천원)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.5873,
+        "y": 0.4961,
+        "w": 0.0502,
+        "h": 0.0241
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.6599,
+        "y": 0.4961,
+        "w": 0.0605,
+        "h": 0.0241
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f19",
+      "page": 0,
+      "rect": {
+        "x": 0.7971,
+        "y": 0.5322,
+        "w": 0.1299,
+        "h": 0.0306
+      },
+      "type": "signature",
+      "label": "신청인 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p1-f20",
+      "page": 0,
+      "rect": {
+        "x": 0.5976,
+        "y": 0.5342,
+        "w": 0.1979,
+        "h": 0.0256
+      },
+      "type": "text",
+      "label": "신청인",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f01",
+      "page": 1,
+      "rect": {
+        "x": 0.778,
+        "y": 0.344,
+        "w": 0.134,
+        "h": 0.046
+      },
+      "type": "signature",
+      "label": "신혼부부 서약 자필서명: 혼인기간",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p2-f02",
+      "page": 1,
+      "rect": {
+        "x": 0.778,
+        "y": 0.396,
+        "w": 0.134,
+        "h": 0.047
+      },
+      "type": "signature",
+      "label": "신혼부부 서약 자필서명: 무주택 여부",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p2-f03",
+      "page": 1,
+      "rect": {
+        "x": 0.778,
+        "y": 0.449,
+        "w": 0.134,
+        "h": 0.047
+      },
+      "type": "signature",
+      "label": "신혼부부 서약 자필서명: 주택전세자금 대출 여부",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p2-f04",
+      "page": 1,
+      "rect": {
+        "x": 0.778,
+        "y": 0.502,
+        "w": 0.134,
+        "h": 0.047
+      },
+      "type": "signature",
+      "label": "신혼부부 서약 자필서명: 대상주택 전세 여부",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p2-f05",
+      "page": 1,
+      "rect": {
+        "x": 0.778,
+        "y": 0.555,
+        "w": 0.134,
+        "h": 0.047
+      },
+      "type": "signature",
+      "label": "신혼부부 서약 자필서명: 반납",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p2-f06",
+      "page": 1,
+      "rect": {
+        "x": 0.6919,
+        "y": 0.6884,
+        "w": 0.0368,
+        "h": 0.0241
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f07",
+      "page": 1,
+      "rect": {
+        "x": 0.7511,
+        "y": 0.6884,
+        "w": 0.0456,
+        "h": 0.0241
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f08",
+      "page": 1,
+      "rect": {
+        "x": 0.6171,
+        "y": 0.7204,
+        "w": 0.1557,
+        "h": 0.0256
+      },
+      "type": "text",
+      "label": "신혼부부 서약자 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f09",
+      "page": 1,
+      "rect": {
+        "x": 0.7744,
+        "y": 0.7183,
+        "w": 0.1312,
+        "h": 0.0306
+      },
+      "type": "signature",
+      "label": "신혼부부 서약자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p2-f10",
+      "page": 1,
+      "rect": {
+        "x": 0.6171,
+        "y": 0.7486,
+        "w": 0.3003,
+        "h": 0.0256
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p2-f11",
+      "page": 1,
+      "rect": {
+        "x": 0.6171,
+        "y": 0.7752,
+        "w": 0.3003,
+        "h": 0.0256
+      },
+      "type": "text",
+      "label": "주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p3-f01",
+      "page": 2,
+      "rect": {
+        "x": 0.778,
+        "y": 0.376,
+        "w": 0.134,
+        "h": 0.046
+      },
+      "type": "signature",
+      "label": "미혼청년 서약 자필서명: 무주택 여부",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f02",
+      "page": 2,
+      "rect": {
+        "x": 0.778,
+        "y": 0.428,
+        "w": 0.134,
+        "h": 0.047
+      },
+      "type": "signature",
+      "label": "미혼청년 서약 자필서명: 주택전세자금 대출 여부",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f03",
+      "page": 2,
+      "rect": {
+        "x": 0.778,
+        "y": 0.481,
+        "w": 0.134,
+        "h": 0.047
+      },
+      "type": "signature",
+      "label": "미혼청년 서약 자필서명: 대상주택 전세 여부",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f04",
+      "page": 2,
+      "rect": {
+        "x": 0.778,
+        "y": 0.534,
+        "w": 0.134,
+        "h": 0.047
+      },
+      "type": "signature",
+      "label": "미혼청년 서약 자필서명: 반납",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f05",
+      "page": 2,
+      "rect": {
+        "x": 0.6919,
+        "y": 0.6851,
+        "w": 0.0368,
+        "h": 0.0241
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p3-f06",
+      "page": 2,
+      "rect": {
+        "x": 0.7511,
+        "y": 0.6851,
+        "w": 0.0456,
+        "h": 0.0241
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p3-f07",
+      "page": 2,
+      "rect": {
+        "x": 0.6171,
+        "y": 0.717,
+        "w": 0.1557,
+        "h": 0.0256
+      },
+      "type": "text",
+      "label": "미혼청년 서약자 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p3-f08",
+      "page": 2,
+      "rect": {
+        "x": 0.7744,
+        "y": 0.7149,
+        "w": 0.1312,
+        "h": 0.0306
+      },
+      "type": "signature",
+      "label": "미혼청년 서약자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p3-f09",
+      "page": 2,
+      "rect": {
+        "x": 0.6171,
+        "y": 0.7452,
+        "w": 0.3003,
+        "h": 0.0256
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p3-f10",
+      "page": 2,
+      "rect": {
+        "x": 0.6171,
+        "y": 0.7718,
+        "w": 0.3003,
+        "h": 0.0256
+      },
+      "type": "text",
+      "label": "주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p4-f01",
+      "page": 3,
+      "rect": {
+        "x": 0.3771,
+        "y": 0.3694,
+        "w": 0.0309,
+        "h": 0.0218
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집·이용: 동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f02",
+      "page": 3,
+      "rect": {
+        "x": 0.5195,
+        "y": 0.3694,
+        "w": 0.0309,
+        "h": 0.0218
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집·이용: 미동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f03",
+      "page": 3,
+      "rect": {
+        "x": 0.3886,
+        "y": 0.5548,
+        "w": 0.0309,
+        "h": 0.0218
+      },
+      "type": "checkbox",
+      "label": "고유식별정보 처리: 동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f04",
+      "page": 3,
+      "rect": {
+        "x": 0.531,
+        "y": 0.5548,
+        "w": 0.0309,
+        "h": 0.0218
+      },
+      "type": "checkbox",
+      "label": "고유식별정보 처리: 미동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f05",
+      "page": 3,
+      "rect": {
+        "x": 0.3771,
+        "y": 0.8111,
+        "w": 0.0309,
+        "h": 0.0218
+      },
+      "type": "checkbox",
+      "label": "제3자 제공·조회: 동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f06",
+      "page": 3,
+      "rect": {
+        "x": 0.5195,
+        "y": 0.8111,
+        "w": 0.0309,
+        "h": 0.0218
+      },
+      "type": "checkbox",
+      "label": "제3자 제공·조회: 미동의",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f07",
+      "page": 3,
+      "rect": {
+        "x": 0.4838,
+        "y": 0.8387,
+        "w": 0.0232,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p4-f08",
+      "page": 3,
+      "rect": {
+        "x": 0.5258,
+        "y": 0.8387,
+        "w": 0.0232,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p4-f09",
+      "page": 3,
+      "rect": {
+        "x": 0.6628,
+        "y": 0.8624,
+        "w": 0.1336,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "동의서 신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p4-f10",
+      "page": 3,
+      "rect": {
+        "x": 0.7982,
+        "y": 0.8624,
+        "w": 0.1003,
+        "h": 0.0209
+      },
+      "type": "signature",
+      "label": "신청인 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p4-f11",
+      "page": 3,
+      "rect": {
+        "x": 0.6628,
+        "y": 0.8814,
+        "w": 0.1336,
+        "h": 0.019
+      },
+      "type": "text",
+      "label": "대리인 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p4-f12",
+      "page": 3,
+      "rect": {
+        "x": 0.7982,
+        "y": 0.8814,
+        "w": 0.1003,
+        "h": 0.0209
+      },
+      "type": "signature",
+      "label": "대리인 서명",
+      "mapping": "signature",
+      "required": false
+    }
+  ],
+  "derived": {
+    "source_sha256": "ef0a5933066c20771532840df8f21b55c4e949b15ff4954089ef767581cae66a",
+    "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b"
+  }
+}

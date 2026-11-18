@@ -1,0 +1,20 @@
+{
+  "name": "mazimi-design-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export": "node export.mjs",
+    "check:ui": "node check-ui.mjs",
+    "check:native": "node check-native-assets.mjs",
+    "tokens": "node export-tokens.mjs",
+    "check:tokens": "node export-tokens.mjs --check",
+    "category-colors": "node category-colors.mjs",
+    "check:category-colors": "node category-colors.mjs --check",
+    "check:figma": "node check-figma.mjs"
+  },
+  "dependencies": {
+    "@grida/refig": "0.0.7",
+    "playwright": "1.60.0",
+    "sharp": "0.34.5"
+  }
+}

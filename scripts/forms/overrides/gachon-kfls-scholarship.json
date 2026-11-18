@@ -1,0 +1,80 @@
+{
+ "pages": [
+  0,
+  2
+ ],
+ "reviewed": true,
+ "add": [
+  {
+   "id": "x1",
+   "page": 0,
+   "rect": {
+    "x": 0.474,
+    "y": 0.552,
+    "w": 0.086,
+    "h": 0.024
+   },
+   "type": "text",
+   "label": "성적 백분율 환산점수",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x2",
+   "page": 0,
+   "rect": {
+    "x": 0.783,
+    "y": 0.552,
+    "w": 0.057,
+    "h": 0.024
+   },
+   "type": "text",
+   "label": "성적 총 이수학점",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "a",
+   "page": 0,
+   "rect": {
+    "x": 0.8915,
+    "y": 0.3735,
+    "w": 0.037,
+    "h": 0.0178
+   },
+   "type": "text",
+   "label": "비상연락인 본인과의 관계",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "a",
+   "page": 0,
+   "rect": {
+    "x": 0.8145,
+    "y": 0.4406,
+    "w": 0.1145,
+    "h": 0.0182
+   },
+   "type": "text",
+   "label": "전공 계열 기타 내용",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "a",
+   "page": 0,
+   "rect": {
+    "x": 0.7612,
+    "y": 0.5157,
+    "w": 0.1668,
+    "h": 0.0182
+   },
+   "type": "text",
+   "label": "25년도 2학기 학적상태 기타 내용",
+   "mapping": null,
+   "required": false
+  }
+ ],
+ "note": "2026-10-26: 본인과의 관계 and both 기타( ) blanks added (slot check)."
+}

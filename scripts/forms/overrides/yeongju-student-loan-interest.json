@@ -1,0 +1,16 @@
+{
+ "reviewed": true,
+ "note": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json).",
+ "set": [
+  {"match": {"page": 0, "label": "① 학생 본인 주민등록주소"}, "fields": {"label": "① 학생 본인 주소(등본상)", "mapping": "address"}},
+  {"match": {"page": 0, "label": "소재지"}, "fields": {"label": "대학교 소재지", "mapping": null}},
+  {"match": {"page": 0, "label": "연락처", "near_y": 0.466}, "fields": {"label": "② 직계 존속 연락처", "mapping": null, "required": false}},
+  {"match": {"page": 0, "label": "② 직계 존속 성명"}, "fields": {"required": false}},
+  {"match": {"page": 0, "label": "② 직계 존속 주민등록주소"}, "fields": {"label": "② 직계 존속 주소(등본상)", "mapping": null, "required": false}}
+ ],
+ "add": [
+  {"id": "x1", "page": 0, "rect": {"x": 0.345, "y": 0.276, "w": 0.266, "h": 0.033}, "type": "text", "label": "① 학생 본인 한국장학재단 ID", "mapping": null, "required": false},
+  {"id": "x2", "page": 0, "rect": {"x": 0.775, "y": 0.167, "w": 0.027, "h": 0.019}, "type": "checkbox", "label": "성별: 남", "mapping": null, "required": false},
+  {"id": "x3", "page": 0, "rect": {"x": 0.830, "y": 0.167, "w": 0.027, "h": 0.019}, "type": "checkbox", "label": "성별: 여", "mapping": null, "required": false}
+ ]
+}

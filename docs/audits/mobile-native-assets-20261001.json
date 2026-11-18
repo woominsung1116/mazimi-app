@@ -1,0 +1,192 @@
+{
+  "checked_at": "2026-10-23T06:54:55.712Z",
+  "method": "SDK 54 installed Expo native Android splash generator; raw pixel checks for all five density buckets in light and dark mode",
+  "splash": {
+    "image": "./assets/splash.png",
+    "imageWidth": 163,
+    "resizeMode": "contain",
+    "backgroundColor": "#34BB84",
+    "dark": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#34BB84"
+    }
+  },
+  "images": [
+    {
+      "mode": "light",
+      "density": "mdpi",
+      "width": 288,
+      "height": 288,
+      "oldBluePixels": 0,
+      "whitePixels": 5018
+    },
+    {
+      "mode": "light",
+      "density": "hdpi",
+      "width": 432,
+      "height": 432,
+      "oldBluePixels": 0,
+      "whitePixels": 11525
+    },
+    {
+      "mode": "light",
+      "density": "xhdpi",
+      "width": 576,
+      "height": 576,
+      "oldBluePixels": 0,
+      "whitePixels": 21022
+    },
+    {
+      "mode": "light",
+      "density": "xxhdpi",
+      "width": 864,
+      "height": 864,
+      "oldBluePixels": 0,
+      "whitePixels": 47420
+    },
+    {
+      "mode": "light",
+      "density": "xxxhdpi",
+      "width": 1152,
+      "height": 1152,
+      "oldBluePixels": 0,
+      "whitePixels": 86033
+    },
+    {
+      "mode": "dark",
+      "density": "mdpi",
+      "width": 288,
+      "height": 288,
+      "oldBluePixels": 0,
+      "whitePixels": 5018
+    },
+    {
+      "mode": "dark",
+      "density": "hdpi",
+      "width": 432,
+      "height": 432,
+      "oldBluePixels": 0,
+      "whitePixels": 11525
+    },
+    {
+      "mode": "dark",
+      "density": "xhdpi",
+      "width": 576,
+      "height": 576,
+      "oldBluePixels": 0,
+      "whitePixels": 21022
+    },
+    {
+      "mode": "dark",
+      "density": "xxhdpi",
+      "width": 864,
+      "height": 864,
+      "oldBluePixels": 0,
+      "whitePixels": 47420
+    },
+    {
+      "mode": "dark",
+      "density": "xxxhdpi",
+      "width": 1152,
+      "height": 1152,
+      "oldBluePixels": 0,
+      "whitePixels": 86033
+    }
+  ],
+  "native_device_tested": false,
+  "launcher": {
+    "original_sha256": "a38e9b990be320afb9f8916a0bdf576e3f4b6c2813f64af9901a8903ae1cbf9a",
+    "generatedResources": [
+      {
+        "kind": "ic_launcher",
+        "density": "mdpi",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "kind": "ic_launcher_round",
+        "density": "mdpi",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "kind": "ic_launcher_foreground",
+        "density": "mdpi",
+        "width": 108,
+        "height": 108
+      },
+      {
+        "kind": "ic_launcher",
+        "density": "hdpi",
+        "width": 72,
+        "height": 72
+      },
+      {
+        "kind": "ic_launcher_round",
+        "density": "hdpi",
+        "width": 72,
+        "height": 72
+      },
+      {
+        "kind": "ic_launcher_foreground",
+        "density": "hdpi",
+        "width": 162,
+        "height": 162
+      },
+      {
+        "kind": "ic_launcher",
+        "density": "xhdpi",
+        "width": 96,
+        "height": 96
+      },
+      {
+        "kind": "ic_launcher_round",
+        "density": "xhdpi",
+        "width": 96,
+        "height": 96
+      },
+      {
+        "kind": "ic_launcher_foreground",
+        "density": "xhdpi",
+        "width": 216,
+        "height": 216
+      },
+      {
+        "kind": "ic_launcher",
+        "density": "xxhdpi",
+        "width": 144,
+        "height": 144
+      },
+      {
+        "kind": "ic_launcher_round",
+        "density": "xxhdpi",
+        "width": 144,
+        "height": 144
+      },
+      {
+        "kind": "ic_launcher_foreground",
+        "density": "xxhdpi",
+        "width": 324,
+        "height": 324
+      },
+      {
+        "kind": "ic_launcher",
+        "density": "xxxhdpi",
+        "width": 192,
+        "height": 192
+      },
+      {
+        "kind": "ic_launcher_round",
+        "density": "xxxhdpi",
+        "width": 192,
+        "height": 192
+      },
+      {
+        "kind": "ic_launcher_foreground",
+        "density": "xxxhdpi",
+        "width": 432,
+        "height": 432
+      }
+    ]
+  }
+}

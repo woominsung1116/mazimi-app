@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /community/write
+Disallow: /community/*/edit
+Disallow: /career-ai/report/*
+
+Sitemap: https://fastcampus.co.kr/sitemap.xml

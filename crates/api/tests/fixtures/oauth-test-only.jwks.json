@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "n": "wmKq7dup1Q3--dfLUO5rsHGbZuDiS_m_jlvyYJ8S6QmE_qt6HuHJgbLqshNpJG51sLRaQDGvp_qc1QD1RP84dtoQhw54JUILsweNnQpA5dS5Lf1bKKwvGdURlWcsbpFCbozEOY8jdSlfdZNtkDwZaAT-1ntFYZ9kRQmUKx5zZBD18IGtsPZF5rGFLhwE727KgdHKFxsmVn4v0fEpNqdasKl3wQLmhCpLYebfcvZKxQXRbUlV-K5a-B-hHb3ZI7R597DJidTZ9WaOVOkiTpDjlAc_I0HPZ78irdMiMOknhEYmZ3uJzQzUV_GbhAolx9V1zWQhdn1EcioaadDVy0EDYQ",
+      "e": "AQAB",
+      "kid": "mazimi-test-only",
+      "alg": "RS256",
+      "use": "sig"
+    }
+  ]
+}

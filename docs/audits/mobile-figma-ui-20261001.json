@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-02T02:48:59.143Z",
+  "environment": "Chromium, local Expo web export, deterministic API fixtures; no production writes or actual OAuth",
+  "results": [
+    "Fresh install still requires both legal consents; policy links and explicit login/guest choice work.",
+    "Region, valid age, illustrated school state and university selection persist; no university hides the campus tab.",
+    "Main tabs, detail, notifications and account/legal screens render at 375px; key screens also fit 320px.",
+    "Delayed member profile never uses a previous guest draft; home, category and local explore requests use Busan and hide the Yongin fixture.",
+    "Editing conditions starts from the saved member profile, saves nickname, clears old city/school metadata and immediately hides the campus tab; simulator also uses the saved profile.",
+    "A new member with HTTP 404 Profile not found can save onboarding; logout removes the session and personal condition draft."
+  ],
+  "errors": [],
+  "native_device_tested": false
+}

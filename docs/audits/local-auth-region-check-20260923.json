@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-23T07:17:19.659Z",
+  "live": false,
+  "results": [
+    "Fresh consent opens login; unavailable Google is disabled",
+    "All 17 regions + aliases normalize; invalid/ambiguous values clear selection; selection survives reload",
+    "OAuth cancellation returns a recoverable message and clears callback URL",
+    "Simulator preserves canonical current region and accepts editing an existing override",
+    "University tab displays school offers and common student corporate offers separately"
+  ],
+  "errors": []
+}

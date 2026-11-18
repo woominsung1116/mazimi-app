@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /$
+Allow: /app*
+Disallow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /markets/*/info
+Disallow: /api/*
+
+# Mediapartners-Google (Google AdManager/AdSense crawler)
+User-agent: Mediapartners-Google
+Allow: /
+Disallow: /markets/*/info
+Disallow: /api/*

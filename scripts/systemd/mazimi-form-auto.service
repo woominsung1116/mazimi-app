@@ -1,0 +1,27 @@
+[Unit]
+Description=Mazimi automatic form templates (sandboxed containers, reviewed, imported)
+After=docker.service network-online.target
+Wants=docker.service network-online.target
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mazimi
+# The kill file is /var/lib/mazimi/form-auto-control/stop (persistent; `form-auto.sh stop`).
+ExecStart=/bin/bash /opt/mazimi/scripts/forms/server/form-auto.sh run
+# A unit that did not succeed (the timeout below, a crash) is recorded as a failed run.
+ExecStopPost=/bin/bash -c 'test "$SERVICE_RESULT" = success || exec /bin/bash /opt/mazimi/scripts/forms/server/form-auto.sh failed "$SERVICE_RESULT"'
+# Above the sum of the per-step container caps, so a step's own timeout fires first.
+TimeoutStartSec=8h
+Nice=10
+IOSchedulingClass=idle
+# Hardening. The runner needs root only for the Docker socket and for creating root-owned run
+# and state directories; it needs no new privileges, no writable /usr, /boot, /etc or home.
+NoNewPrivileges=yes
+ProtectSystem=full
+ProtectHome=read-only
+PrivateTmp=yes
+UMask=0077
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes

@@ -1,0 +1,405 @@
+[
+ {
+  "title": "Figma for Education 무료 플랜",
+  "program_id": "9e5cf09a-1812-41a6-a04f-fbcd1b79e6fa",
+  "url": "https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education",
+  "file": "9fb65846fd.html",
+  "sha256": "03ecc8497b7c29b0866e60b6148d09bc9d44265f61ed3c6c45088291a9917d4f",
+  "fetched_at": "2026-10-26T04:21:00Z",
+  "quote": "Figma for Education provides free Figma access to students and educators.",
+  "window_signature": null,
+  "shadow_window_signature": "",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "path": [
+     "html",
+     "body",
+     "main",
+     "div",
+     "article",
+     "section",
+     "div",
+     "div"
+    ],
+    "text": "Figma for Education provides free Figma access to students and educators.",
+    "label": "What is Figma for Education?",
+    "classes": [],
+    "heading": "What is Figma for Education?",
+    "position": 2,
+    "siblings": [
+     "section",
+     "h2",
+     "p",
+     "p",
+     "p",
+     "h2",
+     "p",
+     "ul",
+     "p",
+     "p",
+     "p",
+     "ul"
+    ],
+    "attr_keys": [],
+    "parent_tag": "div",
+    "parent_text": "Who can use this feature You need an existing Figma account before applying for education status. Anyone with verified education status can create free Education teams. What is Figma for Education? Fi"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "KT Y덤 청년 데이터 혜택",
+  "program_id": "7d11ca91-bc71-4865-b163-db0d57ac2a23",
+  "url": "https://product.kt.com/benefit/membership/mobile/y-bonus.html",
+  "file": "192a6f4d80.html",
+  "sha256": "7c40c4b998237dc3ee5cf8acbd01f7f7973c5a6ecfd09a4534b6ccc5b1fb9eae",
+  "fetched_at": "2026-10-26T04:22:00Z",
+  "quote": "만 34세 이하 고객 중 아래 요금제 가입 고객",
+  "window_signature": null,
+  "shadow_window_signature": "120000원,130000원,180gb,19세,1회,1회,1회,1회,200gb,34세,34세",
+  "min_age": null,
+  "max_age": 34,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "path": [
+     "html",
+     "body",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "text": "만 34세 이하 고객 중 아래 요금제 가입 고객",
+    "label": "대상고객",
+    "classes": [
+     "txt"
+    ],
+    "heading": "대상고객",
+    "position": 1,
+    "siblings": [
+     "h2",
+     "p",
+     "div",
+     "div"
+    ],
+    "attr_keys": [],
+    "parent_tag": "div",
+    "parent_text": "대상고객 만 34세 이하 고객 중 아래 요금제 가입 고객 ① 5G 일반 요금제 요금제 월정액 (VAT포함) Y덤 혜택 적용 시 데이터혜택 기본데이터 공유데이터 한도 스마트기기 데이터쉐어링 초이스 프리미엄 130,000원 공유 데이터 2배 완전 무제한 200GB 1회선 무료 (요금제 기본 혜택) 1회선 무료 (요금제 기본 혜택) 초이스 더블 120,000원 "
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "LG전자 아카데미 스토어",
+  "program_id": "362363cc-06cb-4f95-ad8c-7970db0b1557",
+  "url": "https://www.lge.co.kr/benefits/exhibitions/detail-PE00518001",
+  "file": "6390dca498.html",
+  "sha256": "b9e36bf54888bbc7941cceabcf3bdfe848cea1869c162ed4d6e07b3c39f246ef",
+  "fetched_at": "2026-10-26T04:22:00Z",
+  "quote": "LG전자 학생 할인 스토어는 국내외 대학/대학원에 재학 및 재직 중인 대학/대학원생/교직원만 가입할 수 있습니다.",
+  "window_signature": null,
+  "shadow_window_signature": "1일,1회",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "li",
+    "path": [
+     "div",
+     "section",
+     "article",
+     "div",
+     "div",
+     "div",
+     "div",
+     "ul"
+    ],
+    "text": "LG전자 학생 할인 스토어는 국내외 대학/대학원에 재학 및 재직 중인 대학/대학원생/교직원만 가입할 수 있습니다.",
+    "label": null,
+    "classes": [
+     "c-list__item"
+    ],
+    "heading": "오디오 10% 할인 쿠폰",
+    "position": 0,
+    "siblings": [
+     "li",
+     "li",
+     "li",
+     "li",
+     "li",
+     "li",
+     "li"
+    ],
+    "attr_keys": [],
+    "parent_tag": "ul",
+    "parent_text": "LG전자 학생 할인 스토어는 국내외 대학/대학원에 재학 및 재직 중인 대학/대학원생/교직원만 가입할 수 있습니다. LG전자 학생 할인 스토어 혜택은 가입자에 한해 제공됩니다. 매년 1월 1일 기준으로 연령 및 조건에 미충족하는 회원들은 자동으로 탈퇴 처리됩니다. 회원가입 시 메일 주소 오기재, 개인 메일함의 용량 초과, 스팸메일 지정 등의 이유로 이메일 인"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "Linear 학생 단체 무료 1년",
+  "program_id": "5cc5dd4a-1c76-4a0c-955a-94168515f132",
+  "url": "https://linear.app/docs/billing-and-plans",
+  "file": "54770b27b0.html",
+  "sha256": "ae2bc0dae33dda8705956e314cf37459d611d566c5d40ffef94cbffd5c983a6c",
+  "fetched_at": "2026-10-26T04:22:00Z",
+  "quote": "free access for one year for student-led programs, clubs, and other educational activities",
+  "window_signature": null,
+  "shadow_window_signature": "75%",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "path": [
+     "div",
+     "div",
+     "main",
+     "div",
+     "div",
+     "div",
+     "article",
+     "div"
+    ],
+    "text": "Linear’s Education Program offers full-time students free access for one year for student-led programs, clubs, and other educational activities.",
+    "label": "Education program ⁠",
+    "classes": [],
+    "heading": "Education program ⁠",
+    "position": 31,
+    "siblings": [
+     "p",
+     "div",
+     "figure",
+     "h2",
+     "h3",
+     "p",
+     "h3",
+     "p",
+     "p",
+     "div",
+     "div",
+     "h3"
+    ],
+    "attr_keys": [],
+    "parent_tag": "div",
+    "parent_text": "We offer a free plan and different paid plans to suit your needs. Please see Pricing for rates and a feature-by-feature comparison by plan. How our plans and billing works ⁠ Plans ⁠ Refer to our prici"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "Samsung 갤럭시 캠퍼스 교육 할인",
+  "program_id": "9810c58d-1a30-4ed8-99f4-6bef26ee168d",
+  "url": "https://www.samsungebiz.com/event/galaxycampus/about/?anc=condition",
+  "file": "6635756b1c.html",
+  "sha256": "8c20f07f46110d0e7b1efa10108a18d73486cbfc55501e34d18e1d11b48080c1",
+  "fetched_at": "2026-10-26T04:22:00Z",
+  "quote": "국내ㆍ외 소재 대학(원) 재학생이라면 누구나!",
+  "window_signature": null,
+  "shadow_window_signature": "2007년",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "div",
+    "path": [
+     "body",
+     "div",
+     "div",
+     "main",
+     "section",
+     "div",
+     "div",
+     "div"
+    ],
+    "text": "국내ㆍ외 소재 대학(원) 재학생이라면 누구나!",
+    "label": null,
+    "classes": [
+     "pt_join__title-box"
+    ],
+    "heading": "회원 조건 및 가입 방법",
+    "position": 0,
+    "siblings": [
+     "div",
+     "div",
+     "dl",
+     "a",
+     "div"
+    ],
+    "attr_keys": [],
+    "parent_tag": "div",
+    "parent_text": "국내ㆍ외 소재 대학(원) 재학생이라면 누구나! 즉시 가입 방법 학교 이메일 인증 가입 대상: 학교 이메일을 보유한 1998~2007년 출생자 이메일 형식: **@**.ac.kr 또는 **@**.edu.kr 카카오 톡학생증 인증 가입 대상: 톡학생증 대학생카드 보유자 (연령 무관) 서류 제출 가입 방법 입학 예정, 해외 대학(원) 재학, 연령 조건 미충족 등"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "부산대 Google AI Pro for Education",
+  "program_id": "7187b439-4117-4e73-b844-c8dd25dbd64d",
+  "url": "https://www.pusan.ac.kr/kor/CMS/Board/PopupBoard.do?board_seq=1509799&mgr_seq=3&mode=view",
+  "file": "02d084818c.html",
+  "sha256": "f8810d78fecb9bb884f6d491fde535df4edab8f0d9986c2540e30f567003ed41",
+  "fetched_at": "2026-10-26T04:23:00Z",
+  "quote": "서비스 제공 기간: 2027년 6월 23일까지",
+  "window_signature": null,
+  "shadow_window_signature": "2027년,23일",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "strong",
+    "path": [
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "text": "서비스 제공 기간: 2027년 6월 23일까지",
+    "label": null,
+    "classes": [],
+    "heading": "이용 기간 안내",
+    "position": 0,
+    "siblings": [
+     "strong",
+     "br"
+    ],
+    "attr_keys": [],
+    "parent_tag": "div",
+    "parent_text": "서비스 제공 기간: 2027년 6월 23일까지 서비스 제공 기간이 정해져 있으므로, 계정 신청 및 활성화가 늦어질수록 실제 이용 가능 기간이 줄어듭니다. 아직 이용하지 않은 대상자는 빠른 시일 내 부산대학교 웹메일 계정을 신청·활성화하여 Google AI 서비스를 활용하시기 바랍니다."
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "부산대 Google AI Pro for Education",
+  "program_id": "7187b439-4117-4e73-b844-c8dd25dbd64d",
+  "url": "https://www.pusan.ac.kr/kor/CMS/Board/PopupBoard.do?board_seq=1509799&mgr_seq=3&mode=view",
+  "file": "02d084818c.html",
+  "sha256": "f8810d78fecb9bb884f6d491fde535df4edab8f0d9986c2540e30f567003ed41",
+  "fetched_at": "2026-10-26T04:23:00Z",
+  "quote": "휴학생 및 졸업생은 제공 대상에서 제외됩니다.",
+  "window_signature": null,
+  "shadow_window_signature": null,
+  "min_age": null,
+  "max_age": null,
+  "anchors": {}
+ },
+ {
+  "title": "부산대 Microsoft 365",
+  "program_id": "464053fb-e605-493a-b37e-ecb94e473328",
+  "url": "https://onestop.pusan.ac.kr/page?menuCD=000000000000385&mode=DETAIL&seq=243",
+  "file": "95627d78bf.html",
+  "sha256": "3990553f68354f914f2c9bcb79244093532034ab3977afc61fb4de3e357e6cff",
+  "fetched_at": "2026-10-26T04:22:00Z",
+  "quote": "사용대상자 : 부산대학교 재적생(재학, 휴학 ,수료후연구생 등) 및 재직자 ※ 졸업,수료, 제적 및 퇴직자는 사용 불가함",
+  "window_signature": null,
+  "shadow_window_signature": "5gb",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "div",
+    "path": [
+     "div",
+     "div",
+     "div",
+     "div",
+     "main",
+     "section",
+     "div",
+     "div"
+    ],
+    "text": "가. 제 품 명 : Microsoft(구. Office) 365(Excel, PowerPoint, Word, OneDrive, OneNote 등 20종) ※ 웹하드(OneDrive) 용량 : 5GB 제공(2024.01.26.시행) ※ 제품 소개 : Office제품군 및 OneDrive, OneNote등 20여종 제품 사용 가능 나. 사용대상자 : 부산대학교 재적생(재학, 휴학 ,수료후연구생 등) 및 재직자 ※ 졸업,수료, 제적 및 퇴직자는 사용 불가함 다. 사용조건 : 부산대학교 이메일 주소(ID@pusan.ac.kr)를 보유 하고",
+    "label": null,
+    "classes": [
+     "board-view-cont"
+    ],
+    "heading": "[기타]Microsoft(구. Office) 365 사용 안내",
+    "position": 1,
+    "siblings": [
+     "div",
+     "div"
+    ],
+    "attr_keys": [],
+    "parent_tag": "div",
+    "parent_text": "[기타]Microsoft(구. Office) 365 사용 안내 관리자 2020-04-28 15:58:39 19248 가. 제 품 명 : Microsoft(구. Office) 365(Excel, PowerPoint, Word, OneDrive, OneNote 등 20종) ※ 웹하드(OneDrive) 용량 : 5GB 제공(2024.01.26.시행) ※ 제품 소"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "할리스 멤버십 크라운·등급 혜택",
+  "program_id": "2ce025e1-f3ea-47b2-a02c-8cf5e664d882",
+  "url": "https://m.hollys.co.kr/customer/faq.do",
+  "file": "a78f7133bd.html",
+  "sha256": "133d38768b64088e0a78a381666b713a8cd376231a423f7c69aa8866b3a12edb",
+  "fetched_at": "2026-10-26T04:22:00Z",
+  "quote": "1만원 이상부터 5천원 단위로 크라운 1개씩 추가 적립되고 있습니다.",
+  "window_signature": null,
+  "shadow_window_signature": "0원,10000원,14999원,15000원,19999원,1개,1개,1개,1개,1만원,1만원,20000원,24999원,2개,3999원,3개,4000원,4개,4천원,5천원,9999원",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "path": [
+     "html",
+     "body",
+     "section",
+     "div",
+     "dl",
+     "dd"
+    ],
+    "text": "4 천원 이상부터 1 만원 미만의 경우 크라운 1 개가 적립되며 , 1 만원 이상부터 5 천원 단위로 크라운 1 개씩 추가 적립되고 있습니다 .",
+    "label": ".",
+    "classes": [],
+    "heading": "자주하는 질문",
+    "position": 7,
+    "siblings": [
+     "p",
+     "span",
+     "span",
+     "span",
+     "span",
+     "span",
+     "span",
+     "p",
+     "p",
+     "p",
+     "p",
+     "p"
+    ],
+    "attr_keys": [],
+    "parent_tag": "dd",
+    "parent_text": "영수증 1 개당 결제 금액에 따라 멤버십 크라운 (CROWN) 이 적립됩니다 . 4 천원 이상부터 1 만원 미만의 경우 크라운 1 개가 적립되며 , 1 만원 이상부터 5 천원 단위로 크라운 1 개씩 추가 적립되고 있습니다 . ※ 영수증 당 결제금액에 따른 크라운 적립 예시 결제금액 0 원 ~3,999 원 → 크라운 적립 無 결제금액 4,000 원 ~9,99"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ }
+]

@@ -1,0 +1,13 @@
+User-Agent: *
+Disallow: /cart
+Disallow: /order/
+Disallow: /order-groups
+Disallow: /payments/
+Disallow: /policy/
+Disallow: /member/
+Disallow: /mypage
+Disallow: /api/
+Disallow: /web/
+Disallow: /social/
+
+Sitemap: https://www.univstore.com/sitemap.xml

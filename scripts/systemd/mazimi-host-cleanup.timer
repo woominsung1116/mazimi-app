@@ -1,0 +1,9 @@
+[Unit]
+Description=Clean Mazimi host images and build cache daily
+[Timer]
+# After the 03:20 UTC backup.
+OnCalendar=*-*-* 04:10:00 UTC
+Persistent=true
+RandomizedDelaySec=300
+[Install]
+WantedBy=timers.target

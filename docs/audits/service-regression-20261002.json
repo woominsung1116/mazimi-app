@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-02T03:52:35.276284+00:00",
+  "independent_audits": [
+    "api-region-recommend-20261002.md",
+    "mobile-state-20261002.md",
+    "service-safety-20261002.md"
+  ],
+  "rust": {
+    "passed": 286,
+    "failed": 0,
+    "ignored": 1,
+    "database": "isolated local PostgreSQL; no production user writes",
+    "check": "passed",
+    "clippy_all_targets_warnings_denied": "passed",
+    "format": "passed"
+  },
+  "mobile": {
+    "typescript": "passed",
+    "session_regressions": 11,
+    "browser_flows": 6,
+    "browser_errors": [],
+    "native_assets_verified": "10 splash density/theme combinations generated; final APK has five pixel-identical splash resources and 15 matching house launcher icon resources",
+    "physical_device_tested": false,
+    "apk_build_id": "4014c6f4-5582-4605-8b90-b68315003817",
+    "android_version_code": 4,
+    "ios_build_created": false
+  },
+  "next_web_build": "passed",
+  "deployment": {
+    "api": "ready, database/schema healthy",
+    "worker": "region-audit-fast-20261002 healthy",
+    "migration": "20261002000019",
+    "mobile_web_bundle": "entry-8f6e07ddb22d538bc66711f40b286d87.js",
+    "production_region_report": "production-region-20261002.json",
+    "next_web": "request-audit-20261002 deployed; local lint/build and four request-race browser regressions passed"
+  },
+  "ci": {
+    "fresh_test_database_migrated_before_all_suites": true,
+    "rust_integration_failure_ignored": false,
+    "web_lint_failure_ignored": false,
+    "mobile_native_assets_and_browser_fixtures_required": true,
+    "github_run": "https://github.com/woominsung1116/mazimi/actions/runs/36961170148",
+    "rust_toolchain": "1.94.0 (matches production Docker compiler)",
+    "status": "success",
+    "code_and_test_jobs": "all passed",
+    "docker_jobs": "all three passed",
+    "validated_commit": "9d8816b35c258a07516b27c19c40ac220e726ac0",
+    "report": "github-ci-20261002.json"
+  },
+  "next_web_browser_regressions": 4
+}

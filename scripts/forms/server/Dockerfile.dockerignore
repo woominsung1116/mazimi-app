@@ -1,0 +1,8 @@
+# Build context of the forms job image: only what it copies.
+*
+!scripts/forms
+scripts/forms/**/node_modules
+scripts/forms/**/__pycache__
+!apps/mobile/package.json
+!apps/mobile/lib/formFill
+!apps/mobile/assets/fonts/NanumGothic-Regular.ttf

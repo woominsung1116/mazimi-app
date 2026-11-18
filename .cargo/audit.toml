@@ -1,0 +1,14 @@
+# cargo audit configuration (CI: .github/workflows/ci.yml, job lint-rust).
+# Every ignore names why the advisory cannot reach a built binary. Remove an
+# entry as soon as its reason stops being true.
+[advisories]
+ignore = [
+    # rsa (Marvin timing attack, no fixed release). Only in Cargo.lock through
+    # sqlx's optional MySQL driver; `cargo tree -i rsa -e all` prints nothing,
+    # so no workspace target compiles it.
+    "RUSTSEC-2023-0071",
+    # libsqlite3-sys (bundled C SQLite CVE). Only in Cargo.lock through sqlx's
+    # optional SQLite driver; the workspace enables `postgres` only and
+    # `cargo tree -i libsqlite3-sys -e all` prints nothing.
+    "RUSTSEC-2026-0459",
+]

@@ -1,0 +1,12 @@
+########################################################
+#
+#    www.ssgdfs.com Robots File
+#    Last Updated on Jun 16, 2021
+#
+########################################################
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ssgdfs.com/kr/sitemap.xml
+Sitemap: https://www.ssgdfs.com/cn/sitemap.xml

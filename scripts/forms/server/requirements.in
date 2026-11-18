@@ -1,0 +1,9 @@
+olefile==0.47
+pypdfium2==4.30.0
+pdfplumber==0.11.9
+# Security floors over pdfplumber's own pins: Pillow 13.0.0 (FlashPix/OLE2, OpenJPEG and TIFF
+# decoder fixes), pdfminer.six 20251230 (no pickle CMap loading). See fidelity.py preview_of.
+pdfminer.six==20251230
+pillow==13.0.0
+numpy==2.5.4
+scipy==1.18.1

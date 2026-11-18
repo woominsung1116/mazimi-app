@@ -1,0 +1,21 @@
+{
+  "about": "Labelled national_welfare -> youth_center pairs for the cross-source duplicate check (audit H3). The repo holds no exported production pair, so the pairs are built from the titles named in the 2026-07 measurement (pipeline.rs section comment), the audit's failing input (청년월세 경남) and real 온통청년 field shapes (sprvsnInstCdNm / rgtrHghrkInstCdNm, every sido listed for a national programme). same=true: one programme, the 복지로 row should be retired.",
+  "pairs": [
+    {"name": "청년월세 national vs 경남", "welfare": {"title": "청년 월세 지원", "ministry": "국토교통부", "regions": []},
+     "youth": {"title": "청년월세지원(2026년)", "provider": "경상남도", "registrar": "경상남도", "regions": ["gyeongnam"]}, "same": false},
+    {"name": "청년내일저축계좌", "welfare": {"title": "청년내일저축계좌", "ministry": "보건복지부", "regions": []},
+     "youth": {"title": "청년내일저축계좌", "provider": "보건복지부", "registrar": "보건복지부", "regions": "ALL"}, "same": true},
+    {"name": "국민취업지원제도 under a sub-unit", "welfare": {"title": "국민취업지원제도", "ministry": "고용노동부", "regions": []},
+     "youth": {"title": "국민취업지원제도", "provider": "고용노동부 청년고용정책관", "registrar": "고용노동부", "regions": "ALL"}, "same": true},
+    {"name": "청년월세 with year and 사업", "welfare": {"title": "청년월세 지원사업", "ministry": "국토교통부", "regions": []},
+     "youth": {"title": "2026년 청년월세 지원사업", "provider": "국토교통부", "registrar": "국토교통부", "regions": "ALL"}, "same": true},
+    {"name": "대중교통비 national vs 인천형", "welfare": {"title": "대중교통비 환급 지원(모두의카드)", "ministry": "국토교통부", "regions": []},
+     "youth": {"title": "인천형 대중교통비 환급 지원(인천 i-패스)", "provider": "인천광역시", "registrar": "인천광역시", "regions": ["incheon"]}, "same": false},
+    {"name": "rounds", "welfare": {"title": "청년 도약 지원 2차", "ministry": "국토교통부", "regions": []},
+     "youth": {"title": "청년 도약 지원 1차", "provider": "국토교통부", "registrar": "국토교통부", "regions": "ALL"}, "same": false},
+    {"name": "national programme registered by a 도", "welfare": {"title": "청년내일저축계좌", "ministry": "보건복지부", "regions": []},
+     "youth": {"title": "청년내일저축계좌", "provider": "경기도", "registrar": "경기도", "regions": ["gyeonggi"]}, "same": false},
+    {"name": "same title, other ministry", "welfare": {"title": "청년 일경험 지원", "ministry": "고용노동부", "regions": []},
+     "youth": {"title": "청년 일경험 지원", "provider": "중소벤처기업부", "registrar": "중소벤처기업부", "regions": "ALL"}, "same": false}
+  ]
+}

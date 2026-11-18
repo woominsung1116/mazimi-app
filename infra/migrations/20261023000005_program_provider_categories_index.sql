@@ -1,0 +1,13 @@
+-- no-transaction
+-- GIN index for the ?provider= catalogue filter (20261023000002), built
+-- without blocking writes; see 20261023000004 for why it is its own file.
+--
+-- Safe to re-run (IF NOT EXISTS). A concurrent build that fails part-way
+-- leaves an INVALID index that IF NOT EXISTS would skip, and the drop-and-
+-- rebuild cannot run inside one statement or a DO block. The worker's
+-- category job (mazimi_worker::categories::repair_indexes) checks
+-- pg_index.indisvalid every tick and rebuilds an invalid or missing
+-- programs_provider_categories with DROP / CREATE INDEX CONCURRENTLY.
+--
+-- Reversible: DROP INDEX CONCURRENTLY programs_provider_categories;
+CREATE INDEX CONCURRENTLY IF NOT EXISTS programs_provider_categories ON programs USING gin (provider_categories)

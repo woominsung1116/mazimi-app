@@ -1,0 +1,25 @@
+{
+ "reviewed": true,
+ "note": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json).",
+ "drop": [
+  {"page": 0, "label": "미산정 (국가장학금 미신청)"}
+ ],
+ "set": [
+  {"match": {"page": 0, "label": "수혜 학기"}, "fields": {"label": "기존 수혜 학기"}},
+  {"match": {"page": 0, "label": "사유"}, "fields": {"label": "기존 수혜 사유"}}
+ ],
+ "add": [
+  {"id": "x1", "page": 0, "rect": {"x": 0.455, "y": 0.352, "w": 0.020, "h": 0.017}, "type": "checkbox", "label": "학자금지원구간: 기초~9구간", "mapping": null, "required": false},
+  {"id": "x2", "page": 0, "rect": {"x": 0.617, "y": 0.352, "w": 0.020, "h": 0.017}, "type": "checkbox", "label": "학자금지원구간: 10구간", "mapping": null, "required": false},
+  {"id": "x3", "page": 0, "rect": {"x": 0.265, "y": 0.462, "w": 0.020, "h": 0.018}, "type": "checkbox", "label": "신청 유형: 부·모 실직/폐업", "mapping": null, "required": false},
+  {"id": "x4", "page": 0, "rect": {"x": 0.477, "y": 0.462, "w": 0.020, "h": 0.018}, "type": "checkbox", "label": "신청 유형: 자립준비청년·보호(연장)아동·쉼터 입퇴소 청소년·청소년 한부모", "mapping": null, "required": false},
+  {"id": "x5", "page": 0, "rect": {"x": 0.699, "y": 0.462, "w": 0.020, "h": 0.018}, "type": "checkbox", "label": "신청 유형: 본인 및 가족의 중대질병, 사고 등", "mapping": null, "required": false},
+  {"id": "x6", "page": 0, "rect": {"x": 0.830, "y": 0.462, "w": 0.020, "h": 0.018}, "type": "checkbox", "label": "신청 유형: 그 외 기타 경제사정곤란", "mapping": null, "required": false},
+  {"id": "x7", "page": 0, "rect": {"x": 0.235, "y": 0.531, "w": 0.080, "h": 0.026}, "type": "text", "label": "기존 수혜 여부 (○ 또는 ×)", "mapping": null, "required": true},
+  {"id": "x8", "page": 0, "rect": {"x": 0.350, "y": 0.700, "w": 0.070, "h": 0.021}, "type": "text", "label": "작성일 연도", "mapping": null, "required": true},
+  {"id": "x9", "page": 0, "rect": {"x": 0.450, "y": 0.700, "w": 0.068, "h": 0.021}, "type": "text", "label": "작성일 월", "mapping": null, "required": true},
+  {"id": "x10", "page": 0, "rect": {"x": 0.550, "y": 0.700, "w": 0.078, "h": 0.021}, "type": "text", "label": "작성일 일", "mapping": null, "required": true},
+  {"id": "x11", "page": 0, "rect": {"x": 0.450, "y": 0.746, "w": 0.195, "h": 0.021}, "type": "text", "label": "작성자 성명", "mapping": "name", "required": true},
+  {"id": "x12", "page": 0, "rect": {"x": 0.648, "y": 0.742, "w": 0.048, "h": 0.028}, "type": "stamp", "label": "작성자 (인)", "mapping": "stamp", "required": true}
+ ]
+}

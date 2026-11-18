@@ -1,0 +1,16 @@
+-- no-transaction
+-- Index for the ?field= catalogue filter (20261023000002), built without
+-- blocking writes to programs. sqlx runs this file outside a transaction,
+-- which CREATE INDEX CONCURRENTLY requires; Postgres runs a multi-statement
+-- string as one implicit transaction, so each concurrent index has its own
+-- file (the GIN index is 20261023000005).
+--
+-- Safe to re-run (IF NOT EXISTS). A concurrent build that fails part-way
+-- leaves an INVALID index that IF NOT EXISTS would skip, and the drop-and-
+-- rebuild cannot run inside one statement or a DO block. The worker's
+-- category job (mazimi_worker::categories::repair_indexes) checks
+-- pg_index.indisvalid every tick and rebuilds an invalid or missing
+-- programs_field_category with DROP / CREATE INDEX CONCURRENTLY.
+--
+-- Reversible: DROP INDEX CONCURRENTLY programs_field_category;
+CREATE INDEX CONCURRENTLY IF NOT EXISTS programs_field_category ON programs (field_category)

@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-09-27T09:24:25.980Z",
+  "scope": "institution-authorized Google Forms intake connector and user submission flow",
+  "tests": {
+    "api_unit": 23,
+    "api_integration": 89,
+    "worker_unit_passed": 116,
+    "worker_unit_ignored": 1,
+    "adapter_scenarios": 6,
+    "browser_scenarios": 5,
+    "typescript": "passed",
+    "expo_web_export": "passed",
+    "production_browser_errors": []
+  },
+  "deployment": {
+    "api": "healthy",
+    "worker": "healthy",
+    "web": "healthy",
+    "db_schema": "20260926000018",
+    "readiness": {
+      "db": true,
+      "schema": true,
+      "status": "ready"
+    },
+    "watchdog_timer": "active",
+    "backup_timer": "active",
+    "pre_migration_backup": "wello_20260927_092248.sql.gz",
+    "backup_size": "28 MB",
+    "backup_restore_exercised": false,
+    "backup_limitation": "Existing data-only backup reports circular benefit_source_candidates FK; verified creation, not full restore in this task."
+  },
+  "production_user_mutations": false,
+  "actual_google_forms_submission": false,
+  "actual_institution_intake_authority_received": false,
+  "automatic_recovery": [
+    "schema reorder via stable IDs",
+    "stale heartbeat disables delivery",
+    "same-schema reconnect restores availability",
+    "receipt reconciliation without resubmission",
+    "expired/cancelled/dispatched answer deletion",
+    "durable deduplicated operational incidents with automatic resolution"
+  ],
+  "remaining_institution_steps": [
+    "actual intake/privacy agreement",
+    "institution-owned Apps Script installation and Google permission",
+    "real Google/institution acceptance test",
+    "indeterminate receipts or unsupported settings require institution verification"
+  ],
+  "ios_release": "configuration present; production API URL pinned; no signed IPA/TestFlight upload or device validation in this task",
+  "guides": [
+    "integrations/google-forms/README.md",
+    "docs/mazimi-testing-and-store-readiness-20260927.md"
+  ]
+}

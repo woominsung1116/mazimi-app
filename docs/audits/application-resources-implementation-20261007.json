@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-07",
+  "scope": "Local implementation of reviewed application destinations and official blank-form evidence",
+  "status": "implemented_and_locally_verified",
+  "production": {
+    "migration_applied": false,
+    "deployed": false,
+    "crawler_enabled": false,
+    "existing_links_bulk_corrected": false,
+    "user_or_institution_submissions_created": false
+  },
+  "migration": {
+    "file": "infra/migrations/20261007000001_application_resources.sql",
+    "applied_to": "isolated disposable PostgreSQL test database only",
+    "required_for_release": true
+  },
+  "architecture": [
+    "Authenticated routes for request and response handling",
+    "Service rules and typed validation/conflict errors",
+    "Repository transactions and optimistic revisions",
+    "Separate worker discovery, bounded external fetch and persistence",
+    "Shared URL, program fingerprint and evidence contracts"
+  ],
+  "verification": {
+    "cargo_check_workspace": "passed",
+    "cargo_test_workspace": {
+      "passed": 314,
+      "failed": 0,
+      "ignored": 1,
+      "database": "isolated PostgreSQL",
+      "test_threads": 1
+    },
+    "cargo_clippy_workspace_all_targets_all_features_deny_warnings": "passed",
+    "next_production_build": "passed",
+    "mobile_typescript_no_emit": "passed",
+    "expo_web_export": "passed",
+    "admin_eslint": "passed",
+    "mobile_session_tests": { "passed": 14 },
+    "application_resource_helper_assertions": { "passed": 11 },
+    "application_resources_browser": {
+      "passed": 8,
+      "script": "apps/mobile/scripts/check-application-resources-web.mjs",
+      "scenarios": [
+        "login_required_cta",
+        "offline_channel_cta",
+        "official_template_open",
+        "stale_template_blocked",
+        "no_runtime_errors",
+        "external_network_blocked",
+        "admin_review_confirmation_gate",
+        "admin_conflict_message"
+      ],
+      "api_and_institution_responses": "mocked; external network blocked",
+      "production_writes": 0
+    },
+    "existing_assistant_browser_scenarios": { "passed": 11 },
+    "git_diff_check": "passed"
+  },
+  "limits": [
+    "Application destinations require explicit administrator review, default 24 hours and at most 7 days; HTTP 200 does not renew that review.",
+    "Only approved public source scopes are fetched; credentials, cookies, authentication bypass and form submission are not used.",
+    "PDF and HWP headers/names are checked and metadata is hashed; downloaded bodies are discarded. This is not malware scanning or semantic form validation.",
+    "HWPX and DOCX are discovered as candidates only and are not verified or published as approved templates.",
+    "Tests do not establish that all existing production links or institution forms work.",
+    "Official file autofill, signing and submission are outside this implementation."
+  ]
+}

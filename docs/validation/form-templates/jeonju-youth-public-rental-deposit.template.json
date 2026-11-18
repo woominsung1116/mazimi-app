@@ -1,0 +1,1114 @@
+{
+  "version": 1,
+  "content_hash": "5afc9a7f67ae8eeaa5148d206ba02dc21a6835812c06c6ccdcf0ce8880bb9b12",
+  "page_count": 3,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p1-f01",
+      "page": 0,
+      "rect": {
+        "x": 0.2528,
+        "y": 0.224,
+        "w": 0.186,
+        "h": 0.0277
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p1-f02",
+      "page": 0,
+      "rect": {
+        "x": 0.5854,
+        "y": 0.224,
+        "w": 0.3168,
+        "h": 0.0277
+      },
+      "type": "date",
+      "label": "신청인 생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p1-f03",
+      "page": 0,
+      "rect": {
+        "x": 0.3331,
+        "y": 0.2471,
+        "w": 0.5691,
+        "h": 0.0277
+      },
+      "type": "text",
+      "label": "신청인 주소(현 거주지)",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p1-f04",
+      "page": 0,
+      "rect": {
+        "x": 0.2639,
+        "y": 0.2704,
+        "w": 0.6382,
+        "h": 0.0277
+      },
+      "type": "text",
+      "label": "신청인 연락처",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p1-f05",
+      "page": 0,
+      "rect": {
+        "x": 0.229,
+        "y": 0.3632,
+        "w": 0.1292,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 본인 이름",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f06",
+      "page": 0,
+      "rect": {
+        "x": 0.3622,
+        "y": 0.3632,
+        "w": 0.1292,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 본인 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f07",
+      "page": 0,
+      "rect": {
+        "x": 0.4954,
+        "y": 0.3632,
+        "w": 0.1295,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 본인 동일주소여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f08",
+      "page": 0,
+      "rect": {
+        "x": 0.6289,
+        "y": 0.3632,
+        "w": 0.1625,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 본인 연락처",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f09",
+      "page": 0,
+      "rect": {
+        "x": 0.7954,
+        "y": 0.3632,
+        "w": 0.0962,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 본인 비고",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f10",
+      "page": 0,
+      "rect": {
+        "x": 0.162,
+        "y": 0.4054,
+        "w": 0.063,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 2행 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f11",
+      "page": 0,
+      "rect": {
+        "x": 0.229,
+        "y": 0.4054,
+        "w": 0.1292,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 2행 이름",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f12",
+      "page": 0,
+      "rect": {
+        "x": 0.3622,
+        "y": 0.4054,
+        "w": 0.1292,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 2행 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f13",
+      "page": 0,
+      "rect": {
+        "x": 0.4954,
+        "y": 0.4054,
+        "w": 0.1295,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 2행 동일주소여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f14",
+      "page": 0,
+      "rect": {
+        "x": 0.6289,
+        "y": 0.4054,
+        "w": 0.1625,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 2행 연락처",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f15",
+      "page": 0,
+      "rect": {
+        "x": 0.7954,
+        "y": 0.4054,
+        "w": 0.0962,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 2행 비고",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f16",
+      "page": 0,
+      "rect": {
+        "x": 0.162,
+        "y": 0.4474,
+        "w": 0.063,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 3행 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f17",
+      "page": 0,
+      "rect": {
+        "x": 0.229,
+        "y": 0.4474,
+        "w": 0.1292,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 3행 이름",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f18",
+      "page": 0,
+      "rect": {
+        "x": 0.3622,
+        "y": 0.4474,
+        "w": 0.1292,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 3행 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f19",
+      "page": 0,
+      "rect": {
+        "x": 0.4954,
+        "y": 0.4474,
+        "w": 0.1295,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 3행 동일주소여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f20",
+      "page": 0,
+      "rect": {
+        "x": 0.6289,
+        "y": 0.4474,
+        "w": 0.1625,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 3행 연락처",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f21",
+      "page": 0,
+      "rect": {
+        "x": 0.7954,
+        "y": 0.4474,
+        "w": 0.0962,
+        "h": 0.0382
+      },
+      "type": "text",
+      "label": "가족사항 3행 비고",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f22",
+      "page": 0,
+      "rect": {
+        "x": 0.162,
+        "y": 0.4896,
+        "w": 0.063,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 4행 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f23",
+      "page": 0,
+      "rect": {
+        "x": 0.229,
+        "y": 0.4896,
+        "w": 0.1292,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 4행 이름",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f24",
+      "page": 0,
+      "rect": {
+        "x": 0.3622,
+        "y": 0.4896,
+        "w": 0.1292,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 4행 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f25",
+      "page": 0,
+      "rect": {
+        "x": 0.4954,
+        "y": 0.4896,
+        "w": 0.1295,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 4행 동일주소여부",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f26",
+      "page": 0,
+      "rect": {
+        "x": 0.6289,
+        "y": 0.4896,
+        "w": 0.1625,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 4행 연락처",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f27",
+      "page": 0,
+      "rect": {
+        "x": 0.7954,
+        "y": 0.4896,
+        "w": 0.0962,
+        "h": 0.038
+      },
+      "type": "text",
+      "label": "가족사항 4행 비고",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f28",
+      "page": 0,
+      "rect": {
+        "x": 0.3841,
+        "y": 0.5829,
+        "w": 0.518,
+        "h": 0.0277
+      },
+      "type": "text",
+      "label": "임대주택 유형 공공임대주택 단지명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f29",
+      "page": 0,
+      "rect": {
+        "x": 0.2748,
+        "y": 0.6153,
+        "w": 0.0696,
+        "h": 0.0278
+      },
+      "type": "text",
+      "label": "임대주택 유형 입주 평형",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p1-f30",
+      "page": 0,
+      "rect": {
+        "x": 0.29,
+        "y": 0.649,
+        "w": 0.13,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "임대보증금(원)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f31",
+      "page": 0,
+      "rect": {
+        "x": 0.715,
+        "y": 0.649,
+        "w": 0.133,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "무이자 지원 신청금액(원)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p1-f32",
+      "page": 0,
+      "rect": {
+        "x": 0.4851,
+        "y": 0.7362,
+        "w": 0.0404,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p1-f33",
+      "page": 0,
+      "rect": {
+        "x": 0.5507,
+        "y": 0.7362,
+        "w": 0.0402,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p1-f34",
+      "page": 0,
+      "rect": {
+        "x": 0.776,
+        "y": 0.764,
+        "w": 0.032,
+        "h": 0.033
+      },
+      "type": "stamp",
+      "label": "신청인 (인)",
+      "mapping": "stamp",
+      "required": true
+    },
+    {
+      "id": "p1-f35",
+      "page": 0,
+      "rect": {
+        "x": 0.625,
+        "y": 0.768,
+        "w": 0.15,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "신청인",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f01",
+      "page": 1,
+      "rect": {
+        "x": 0.2376,
+        "y": 0.2591,
+        "w": 0.3221,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p2-f02",
+      "page": 1,
+      "rect": {
+        "x": 0.6998,
+        "y": 0.2591,
+        "w": 0.1824,
+        "h": 0.0254
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p2-f03",
+      "page": 1,
+      "rect": {
+        "x": 0.2376,
+        "y": 0.288,
+        "w": 0.4231,
+        "h": 0.0252
+      },
+      "type": "text",
+      "label": "주소",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p2-f04",
+      "page": 1,
+      "rect": {
+        "x": 0.3651,
+        "y": 0.3168,
+        "w": 0.517,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "임대보증금 무이자지원 내 용 주택 소재지",
+      "mapping": "address",
+      "required": true
+    },
+    {
+      "id": "p2-f05",
+      "page": 1,
+      "rect": {
+        "x": 0.3651,
+        "y": 0.3457,
+        "w": 0.0962,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "임대보증금 무이자지원 내 용 공급면적",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f06",
+      "page": 1,
+      "rect": {
+        "x": 0.595,
+        "y": 0.347,
+        "w": 0.078,
+        "h": 0.025
+      },
+      "type": "text",
+      "label": "전용면적(㎡)",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p2-f07",
+      "page": 1,
+      "rect": {
+        "x": 0.402,
+        "y": 0.375,
+        "w": 0.146,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "지원금액(한글)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p2-f08",
+      "page": 1,
+      "rect": {
+        "x": 0.605,
+        "y": 0.375,
+        "w": 0.135,
+        "h": 0.026
+      },
+      "type": "text",
+      "label": "지원금액(숫자)",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p2-f09",
+      "page": 1,
+      "rect": {
+        "x": 0.3651,
+        "y": 0.4034,
+        "w": 0.0924,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "지원기간 시작 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p2-f10",
+      "page": 1,
+      "rect": {
+        "x": 0.4827,
+        "y": 0.4034,
+        "w": 0.0293,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "지원기간 시작 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f11",
+      "page": 1,
+      "rect": {
+        "x": 0.5371,
+        "y": 0.4034,
+        "w": 0.0293,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "지원기간 시작 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f12",
+      "page": 1,
+      "rect": {
+        "x": 0.6159,
+        "y": 0.4034,
+        "w": 0.0619,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "지원기간 종료 연도",
+      "mapping": null,
+      "required": false,
+      "part": "year4"
+    },
+    {
+      "id": "p2-f13",
+      "page": 1,
+      "rect": {
+        "x": 0.7029,
+        "y": 0.4034,
+        "w": 0.0295,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "지원기간 종료 월",
+      "mapping": null,
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f14",
+      "page": 1,
+      "rect": {
+        "x": 0.7576,
+        "y": 0.4034,
+        "w": 0.0293,
+        "h": 0.0254
+      },
+      "type": "text",
+      "label": "지원기간 종료 일",
+      "mapping": null,
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f15",
+      "page": 1,
+      "rect": {
+        "x": 0.4633,
+        "y": 0.8027,
+        "w": 0.0404,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p2-f16",
+      "page": 1,
+      "rect": {
+        "x": 0.5289,
+        "y": 0.8027,
+        "w": 0.0402,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p2-f17",
+      "page": 1,
+      "rect": {
+        "x": 0.79,
+        "y": 0.83,
+        "w": 0.032,
+        "h": 0.033
+      },
+      "type": "stamp",
+      "label": "위 확약인 (인)",
+      "mapping": "stamp",
+      "required": true
+    },
+    {
+      "id": "p2-f18",
+      "page": 1,
+      "rect": {
+        "x": 0.636,
+        "y": 0.835,
+        "w": 0.154,
+        "h": 0.024
+      },
+      "type": "text",
+      "label": "위 확약인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p3-f01",
+      "page": 2,
+      "rect": {
+        "x": 0.4354,
+        "y": 0.3586,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "1. 개인정보 수집·이용 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f02",
+      "page": 2,
+      "rect": {
+        "x": 0.8422,
+        "y": 0.3586,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "1. 개인정보 수집·이용 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f03",
+      "page": 2,
+      "rect": {
+        "x": 0.4376,
+        "y": 0.4966,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "2. 고유식별정보 처리 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f04",
+      "page": 2,
+      "rect": {
+        "x": 0.8446,
+        "y": 0.4966,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "2. 고유식별정보 처리 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f05",
+      "page": 2,
+      "rect": {
+        "x": 0.4477,
+        "y": 0.6568,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "3. 제3자 제공 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f06",
+      "page": 2,
+      "rect": {
+        "x": 0.8346,
+        "y": 0.6568,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "3. 제3자 제공 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f07",
+      "page": 2,
+      "rect": {
+        "x": 0.5706,
+        "y": 0.6857,
+        "w": 0.0186,
+        "h": 0.0131
+      },
+      "type": "checkbox",
+      "label": "4. 행정정보 공동이용 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f08",
+      "page": 2,
+      "rect": {
+        "x": 0.8749,
+        "y": 0.6857,
+        "w": 0.0186,
+        "h": 0.0131
+      },
+      "type": "checkbox",
+      "label": "4. 행정정보 공동이용 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f09",
+      "page": 2,
+      "rect": {
+        "x": 0.2665,
+        "y": 0.8186,
+        "w": 0.1606,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 본인 성명",
+      "mapping": "name",
+      "required": false
+    },
+    {
+      "id": "p3-f10",
+      "page": 2,
+      "rect": {
+        "x": 0.4311,
+        "y": 0.8186,
+        "w": 0.2934,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 본인 생년월일",
+      "mapping": "birth_date",
+      "required": false
+    },
+    {
+      "id": "p3-f11",
+      "page": 2,
+      "rect": {
+        "x": 0.7285,
+        "y": 0.8186,
+        "w": 0.1957,
+        "h": 0.0136
+      },
+      "type": "signature",
+      "label": "동의인 본인 서명",
+      "mapping": "signature",
+      "required": false
+    },
+    {
+      "id": "p3-f12",
+      "page": 2,
+      "rect": {
+        "x": 0.0997,
+        "y": 0.8362,
+        "w": 0.1628,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 2행 신청인과 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f13",
+      "page": 2,
+      "rect": {
+        "x": 0.2665,
+        "y": 0.8362,
+        "w": 0.1606,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 2행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f14",
+      "page": 2,
+      "rect": {
+        "x": 0.4311,
+        "y": 0.8362,
+        "w": 0.2934,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 2행 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f15",
+      "page": 2,
+      "rect": {
+        "x": 0.7285,
+        "y": 0.8362,
+        "w": 0.1957,
+        "h": 0.0136
+      },
+      "type": "signature",
+      "label": "동의인 2행 서명",
+      "mapping": "signature",
+      "required": false
+    },
+    {
+      "id": "p3-f16",
+      "page": 2,
+      "rect": {
+        "x": 0.0997,
+        "y": 0.8538,
+        "w": 0.1628,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 3행 신청인과 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f17",
+      "page": 2,
+      "rect": {
+        "x": 0.2665,
+        "y": 0.8538,
+        "w": 0.1606,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 3행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f18",
+      "page": 2,
+      "rect": {
+        "x": 0.4311,
+        "y": 0.8538,
+        "w": 0.2934,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 3행 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f19",
+      "page": 2,
+      "rect": {
+        "x": 0.7285,
+        "y": 0.8538,
+        "w": 0.1957,
+        "h": 0.0136
+      },
+      "type": "signature",
+      "label": "동의인 3행 서명",
+      "mapping": "signature",
+      "required": false
+    },
+    {
+      "id": "p3-f20",
+      "page": 2,
+      "rect": {
+        "x": 0.0997,
+        "y": 0.8714,
+        "w": 0.1628,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 4행 신청인과 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f21",
+      "page": 2,
+      "rect": {
+        "x": 0.2665,
+        "y": 0.8714,
+        "w": 0.1606,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 4행 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f22",
+      "page": 2,
+      "rect": {
+        "x": 0.4311,
+        "y": 0.8714,
+        "w": 0.2934,
+        "h": 0.0136
+      },
+      "type": "text",
+      "label": "동의인 4행 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p3-f23",
+      "page": 2,
+      "rect": {
+        "x": 0.7285,
+        "y": 0.8714,
+        "w": 0.1957,
+        "h": 0.0136
+      },
+      "type": "signature",
+      "label": "동의인 4행 서명",
+      "mapping": "signature",
+      "required": false
+    },
+    {
+      "id": "p3-f24",
+      "page": 2,
+      "rect": {
+        "x": 0.469,
+        "y": 0.8873,
+        "w": 0.0404,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p3-f25",
+      "page": 2,
+      "rect": {
+        "x": 0.5345,
+        "y": 0.8873,
+        "w": 0.0402,
+        "h": 0.0261
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    }
+  ]
+}

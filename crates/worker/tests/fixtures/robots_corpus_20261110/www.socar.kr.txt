@@ -1,0 +1,41 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: Claude-SearchBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+User-Agent: Yeti
+Allow: /
+
+User-Agent: Daum
+Allow: /
+
+User-Agent: Applebot
+Allow: /
+
+User-Agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://www.socar.kr/sitemap.xml

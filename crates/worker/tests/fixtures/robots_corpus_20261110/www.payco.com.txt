@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.payco.com/sitemap.xml
+Sitemap: https://m.payco.com/sitemap.xml
+Sitemap: https://coupons.payco.com/sitemap.xml
+Sitemap: https://litecard.payco.com/sitemap.xml

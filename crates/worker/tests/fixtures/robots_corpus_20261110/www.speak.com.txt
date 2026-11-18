@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: */event/
+
+Allow: /ko/event/24ultimate-excuse-contest/home
+Allow: /ko/event/25sep-t1unlock/home
+Allow: /ko/event/25sep-t1promo/home
+
+Sitemap: https://www.usespeak.com/sitemap.xml
+Sitemap: https://www.speak.com/sitemap.xml
+
+Sitemap: https://www.speak.com/sitemap.xml

@@ -1,0 +1,135 @@
+{
+ "pages": [
+  0,
+  2,
+  3
+ ],
+ "reviewed": true,
+ "drop": [
+  {
+   "page": 3,
+   "label": "에는 해당되는 곳에 √표를 합니다."
+  }
+ ],
+ "add": [
+  {
+   "id": "x1",
+   "page": 0,
+   "rect": {
+    "x": 0.725,
+    "y": 0.186,
+    "w": 0.055,
+    "h": 0.021
+   },
+   "type": "text",
+   "label": "면적(㎡)",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x2",
+   "page": 0,
+   "rect": {
+    "x": 0.268,
+    "y": 0.398,
+    "w": 0.14,
+    "h": 0.023
+   },
+   "type": "text",
+   "label": "임대료 월세(원)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x3",
+   "page": 0,
+   "rect": {
+    "x": 0.512,
+    "y": 0.398,
+    "w": 0.112,
+    "h": 0.023
+   },
+   "type": "text",
+   "label": "임대료 보증금(원)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x7",
+   "page": 2,
+   "rect": {
+    "x": 0.4505,
+    "y": 0.4633,
+    "w": 0.469,
+    "h": 0.0385
+   },
+   "type": "text",
+   "label": "3개월 간 평균 근로(사업)일수",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x8",
+   "page": 2,
+   "rect": {
+    "x": 0.4505,
+    "y": 0.5078,
+    "w": 0.469,
+    "h": 0.035
+   },
+   "type": "text",
+   "label": "3개월 간 월 평균 소득액",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x9",
+   "page": 3,
+   "rect": {
+    "x": 0.29,
+    "y": 0.643,
+    "w": 0.087,
+    "h": 0.023
+   },
+   "type": "text",
+   "label": "신청인 주민등록번호 앞자리",
+   "mapping": "rrn",
+   "required": false
+  },
+  {
+   "id": "x10",
+   "page": 3,
+   "rect": {
+    "x": 0.391,
+    "y": 0.643,
+    "w": 0.087,
+    "h": 0.023
+   },
+   "type": "text",
+   "label": "신청인 주민등록번호 뒷자리",
+   "mapping": "rrn",
+   "required": false
+  }
+ ],
+ "set": [
+  {
+   "match": {
+    "page": 3,
+    "label": "주민등록번호"
+   },
+   "fields": {
+    "label": "부양자 주민등록번호",
+    "required": false
+   }
+  },
+  {
+   "match": {
+    "page": 3,
+    "label": "부양자성명"
+   },
+   "fields": {
+    "label": "부양자 성명"
+   }
+  }
+ ]
+}

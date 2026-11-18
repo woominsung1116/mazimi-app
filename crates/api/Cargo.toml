@@ -1,0 +1,63 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "api"
+path = "src/main.rs"
+
+[[bin]]
+name = "api-migrate"
+path = "src/bin/migrate.rs"
+
+[[bin]]
+name = "form-auto-import"
+path = "src/bin/form_auto_import.rs"
+
+[dependencies]
+mazimi-core = { path = "../core" }
+mazimi-worker = { path = "../worker" }
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tower-http = { workspace = true }
+dotenvy = { workspace = true }
+reqwest = { workspace = true }
+jsonwebtoken = "9"
+tower_governor = "0.8"
+urlencoding = "2"
+base64 = "0.22"
+async-trait = { workspace = true }
+sha2 = "0.10"
+subtle = "2"
+futures-util = "0.3"
+unicode-normalization = "0.1"
+# Already in the tree (sqlx → stringprep); the guard reads bracket categories.
+unicode-properties = { version = "0.1", default-features = false, features = ["general-category"] }
+# MCP client to the isolated official-page fetch service (plain HTTP on the
+# internal network; no TLS backend). Official SDK, Apache-2.0, pinned.
+rmcp = { version = "=3.9.0", default-features = false, features = ["client", "transport-streamable-http-client-reqwest"] }
+# Agent intent classifier (in-process CPU inference, pure Rust: no build
+# script downloads or links a native library). Pinned; see
+# `agent::classifier` and scripts/ai/intent-classifier/.
+ndarray = { version = "=0.17.2", features = ["rayon"] }
+libm = "=0.2.16"
+# The e5 tokenizer's normalizer (the charsmap code `tokenizers` uses).
+spm_precompiled = "=0.1.4"
+rayon = "=1.12.0"
+regex = { workspace = true }
+
+[dev-dependencies]
+mazimi-official-page = { path = "../official-page" }
+tokio = { workspace = true }
+uuid = { workspace = true }
+jsonwebtoken = "9"

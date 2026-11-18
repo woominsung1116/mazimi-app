@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "about": "Human verdicts on HWP/HWPX -> PDF conversions (scripts/forms/hwp). A form is templated only when verdict is 'faithful', and only on the listed pages. Evidence 'preview': page matches the HWP's own embedded preview image (ground truth, page 1 only). Evidence 'two_engines': no ground truth exists for the page; the rhwp and LibreOffice+H2Orestart renderings agree on the table grid and label positions and rhwp shows no clipped or overlapping text.",
+  "converter": {
+    "engine": "rhwp",
+    "identity": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+    "image_id": "sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+    "base_image": "debian:trixie-slim@sha256:a29215f6a35e51e22adffa17f89e9d2ef06214e64a2bad10d765c46aea49f11f",
+    "rhwp": "0.8.6 (linux-aarch64 tarball sha256 1288aa5609a67574a6b1372397bef9a8941fda9ad16b1224342512f915ae016e)",
+    "reference_engine": "LibreOffice 25.2.3.2 + H2Orestart 0.7.14 (oxt sha256 cbea23bc37861361bbc534bc0675e5bc67b36f712072490f82a9bf410d7c04d8)",
+    "reproducible": "rhwp output is byte-identical across runs on the same input (checked on all 11 files)"
+  },
+  "forms": {
+    "yeongju-student-loan-interest": {
+      "verdict": "faithful",
+      "source_sha256": "c94350cd1f24545974d34d6a9adebc35213e34573a5df6d706eb1b54005b4fe4",
+      "pdf_sha256": "fa8767dc8a6ab31986190117e2f04e46114b4688b16e3fbe50cef542d20e8537",
+      "pages": [{ "page": 1, "evidence": "preview" }],
+      "notes": "1 page, all 115 source words present, table grid matches the preview."
+    },
+    "mju-academic-activity-scholarship": {
+      "verdict": "faithful",
+      "source_sha256": "fdc2a9542ce5b40bab06349284fd1c1d03dee91639409a81161a73b98189c1d5",
+      "pdf_sha256": "f4232230bb7139b6fabf45a12e7d4d61d8ce3d0b33b651cb4b3df10b5c2ccf1d",
+      "pages": [{ "page": 1, "evidence": "preview" }],
+      "notes": "1 page like the source (H2Orestart pushed the signature block to a 2nd page)."
+    },
+    "kongju-national-scholarship-ii": {
+      "verdict": "faithful",
+      "source_sha256": "df382d976973360b3f8a54d3d62938f3be446ec928d8050b64a26193d7216180",
+      "pdf_sha256": "91111536a0d6d4fef54d8fda111ae53d80054b82edf49a2bd676ec75136f376c",
+      "pages": [{ "page": 1, "evidence": "preview" }],
+      "notes": "Row heights and the 신청유형 grid match the preview (H2Orestart collapsed them)."
+    },
+    "pnu-hardship-support": {
+      "verdict": "faithful",
+      "source_sha256": "421bb551315876de93c080699c06b707093a880c6a112bf1cad422f78075802a",
+      "pdf_sha256": "d3b335d34172d626d0685a2a7e6925a160cfca511c8a610bb93734df59532d7a",
+      "pages": [{ "page": 1, "evidence": "preview" }],
+      "notes": "Page 2 is the supporting-documents guide (no fields). U+2024 in '부․모' needs DejaVu in the image; without it rhwp drew a box glyph."
+    },
+    "yangpyeong-merit-scholarship": {
+      "verdict": "faithful",
+      "source_sha256": "c190aac0b0052ac6bd2a53c9f4b65e08e96da675470a7588c826e791d99f3f7d",
+      "pdf_sha256": "bb71794f6078bb42a40a6fb895a8768a778ffaae089348049c282e4f91727659",
+      "pages": [{ "page": 1, "evidence": "preview" }],
+      "notes": "Pages 2-3 are the document list and scoring rules (no fields)."
+    },
+    "jeonju-youth-jeonse-loan-interest": {
+      "verdict": "faithful",
+      "source_sha256": "ef0a5933066c20771532840df8f21b55c4e949b15ff4954089ef767581cae66a",
+      "pdf_sha256": "909ef15e29ba2a13c61cd6af13646a436e9cd5435f4c67e1984461eec5d5a8f3",
+      "pages": [
+        { "page": 1, "evidence": "preview" },
+        { "page": 2, "evidence": "two_engines" },
+        { "page": 3, "evidence": "two_engines" },
+        { "page": 4, "evidence": "two_engines" }
+      ],
+      "notes": "Page 5 (위임장, filled by the delegate) not templated. U+2027 after '수집' on page 4 is drawn from DejaVu and touches the next syllable; label text is complete."
+    },
+    "sontaehee-scholarship": {
+      "verdict": "faithful",
+      "source_sha256": "3240a264c54c418f2a3ea57bf0722e8f3fc0df3277ae610212c2109faa27849e",
+      "pdf_sha256": "32f70e5896d0f363a459b0909c83b7229ea1ba180426b2a39f2dd2f98b2389e8",
+      "pages": [
+        { "page": 1, "evidence": "preview" },
+        { "page": 3, "evidence": "two_engines" },
+        { "page": 6, "evidence": "two_engines" },
+        { "page": 7, "evidence": "two_engines" }
+      ],
+      "notes": "University-student forms only: p1 checklist, p3 서식2호 신청서(대학생), p6 서식4호 자기소개서, p7 서식5호 사용계획서. p2 (초중고) and p4-5 (teacher's 추천서) not templated. Every 서식 starts its own page in rhwp; H2Orestart lets each title slide to the previous page."
+    },
+    "jeonju-jobseeker-transport": {
+      "verdict": "faithful",
+      "source_sha256": "a94cbd9b6dab4cde313984c18b87b72fe6d11f502abdc71a4202363990f61a6f",
+      "pdf_sha256": "45201f0663f4808bc96c549206fb24c19fefdeb9fad41dcf02b0eb9099010d3a",
+      "pages": [{ "page": 5, "evidence": "two_engines" }],
+      "notes": "Page 1 (notice) matches the preview; 6 pages = 6 hard page starts in the source. Only 서식1 신청서 templated; 서식2 위임장 is the delegate's."
+    },
+    "keimyung-gs-scholarship": {
+      "verdict": "faithful",
+      "source_sha256": "e21b3ec2fafb9d605301e5c9d6d6f04867d05a9812c6649b2f882e66fe7f9f92",
+      "pdf_sha256": "95cced44c470e01fdfbbcaf792648aa57b18cfd80fd969eed306bd7c05d0b85e",
+      "pages": [{ "page": 2, "evidence": "two_engines" }],
+      "notes": "Page 1 (form list) matches the preview. Only [양식 1] 장학금 신청서 templated. Page 3 (consent) rejected: the two engines place the signature block about 10% of the page apart and there is no ground truth. Pages 14-17 are the professor's recommendation and research forms."
+    },
+    "iksan-love-scholarship": {
+      "verdict": "rejected",
+      "source_sha256": "6a0e1cdbb201a74bc0f61fdb24c98fedf89514faf304b1c9c273a2c3a295b848",
+      "reason": "Text missing in both engines. rhwp drops the consent sentence ('위와 같이 본인의 개인정보를 수집·이용하는 것에 동의합니다') and the '▸장 소' line of the ceremony box; H2Orestart drops the 선발유형 checkbox rows and the 동의함/동의하지 않음 boxes."
+    },
+    "mpva-veterans-scholarship": {
+      "verdict": "rejected",
+      "source_sha256": "0547db68f3326d8cefbf4950d58f698433c4c7da79f6c7d44175d3c15b96dd32",
+      "reason": "The application pages (붙임3/4) have no ground truth and the engines disagree: rhwp draws '. . .(남,여)' over a cell border and spaces rows about 20% taller than H2Orestart. Page 1 also loses the '❶' bullet glyph."
+    },
+    "wonju-ai-interview-experience": {
+      "verdict": "faithful",
+      "source_sha256": "94fa249ba3b256aba4e52dfb034370f67509d79e386ae31c06080714db8425ca",
+      "pdf_sha256": "c4eae9d4be622a86da175d070f491cd6c8c0723eee56da7bf6a5c6acc1f21003",
+      "pages": [{ "page": 1, "evidence": "preview" }, { "page": 2, "evidence": "two_engines" }],
+      "notes": "p1 matches the embedded preview; p2 consent page complete in rhwp (date and signature lines present), H2Orestart shows the same box on its p3 after a blank overflow page."
+    },
+    "wonju-study-cafe": {
+      "verdict": "faithful",
+      "source_sha256": "bca761c4e039c2223c8036726da38e972bea5ce0171cef417cd655f5943f3a4b",
+      "pdf_sha256": "ba18e7799beec7769d1e6ebd9db9d9c347f34d30b17337016086645f7df5ca8c",
+      "pages": [{ "page": 1, "evidence": "preview" }, { "page": 3, "evidence": "two_engines" }, { "page": 4, "evidence": "two_engines" }],
+      "notes": "p1 matches the preview; p3 consent and p4 미진학 확인서 agree between engines; p2 is 작성요령 only."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=Mazimi approved benefit source revalidation
+Wants=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mazimi
+# The one-shot binary uses the same image and environment as the worker.
+# --no-deps prevents starting a second API/web stack from the timer.
+ExecStart=/usr/bin/docker compose run --rm --no-deps worker revalidate-benefits
+TimeoutStartSec=30m

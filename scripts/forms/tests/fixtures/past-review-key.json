@@ -1,0 +1,36 @@
+{
+ "about": "The 25 findings of the three 2026-10-16 reviewer batches (.omc/forms-auto/20261016/review/batch{1,2,3}.verdict.json), with what counts as the deterministic review or the judge catching each one. 'near_y' is the page-fraction band of the spot (read off the review packet image); 'label_re' matches the printed label in a finding's detail. Template verdicts are the reviewer's.",
+ "templates": {
+  "b1A": "fail", "b1B": "fail", "b2A": "pass", "b2B": "pass", "b3A": "fail", "b3B": "pass", "b3C": "fail", "b3D": "fail"
+ },
+ "notes": {
+  "b2B": "The same template (live-cafe) failed in batch 3 (b3D) on a cut-off label and a grouping mode; batch 2 had no groups and passed it."
+ },
+ "findings": [
+  {"item": "b1A", "page": 1, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "세"}},
+  {"item": "b1A", "page": 1, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "우편번호"}},
+  {"item": "b1A", "page": 1, "kind": "misplaced", "box": 3, "match": {"kinds": ["misplaced"], "box": 3}, "same_spot": {"kinds": ["missing"], "label_re": "세"}},
+  {"item": "b1A", "page": 3, "kind": "missing", "match": {"kinds": ["missing"], "near_y": [0.65, 0.68]}},
+  {"item": "b1A", "page": 3, "kind": "missing", "match": {"kinds": ["missing"], "near_y": [0.72, 0.745]}},
+  {"item": "b1A", "page": 3, "kind": "mislabelled", "box": 4, "match": {"kinds": ["mislabelled"], "box": 4}},
+  {"item": "b1A", "page": 3, "kind": "mislabelled", "box": 5, "match": {"kinds": ["mislabelled"], "box": 5}},
+  {"item": "b1A", "page": 4, "kind": "mislabelled", "box": 5, "match": {"kinds": ["mislabelled", "wrong_person"], "box": 5}},
+  {"item": "b1B", "page": 1, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "세"}},
+  {"item": "b1B", "page": 1, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "우편번호"}},
+  {"item": "b1B", "page": 1, "kind": "misplaced", "box": 3, "match": {"kinds": ["misplaced"], "box": 3}, "same_spot": {"kinds": ["missing"], "label_re": "세"}},
+  {"item": "b1B", "page": 1, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "고등학생|대학생|대학원생|일반"}},
+  {"item": "b1B", "page": 1, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "직장인|사업자|기타"}},
+  {"item": "b1B", "page": 2, "kind": "missing", "match": {"kinds": ["missing"], "near_y": [0.65, 0.675]}},
+  {"item": "b1B", "page": 2, "kind": "missing", "match": {"kinds": ["missing"], "near_y": [0.72, 0.745]}},
+  {"item": "b1B", "page": 2, "kind": "mislabelled", "box": 4, "match": {"kinds": ["mislabelled"], "box": 4}},
+  {"item": "b1B", "page": 2, "kind": "mislabelled", "box": 5, "match": {"kinds": ["mislabelled"], "box": 5}},
+  {"item": "b3A", "page": 2, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "전화번호"}},
+  {"item": "b3A", "page": 2, "kind": "missing", "match": {"kinds": ["missing"], "label_re": "공무원"}},
+  {"item": "b3A", "page": 2, "kind": "missing", "match": {"kinds": ["missing"], "near_y": [0.17, 0.2]}},
+  {"item": "b3A", "page": 2, "kind": "wrong_type", "box": 39, "match": {"kinds": ["wrong_type"], "box": 39}},
+  {"item": "b3C", "page": 1, "kind": "mislabelled", "box": 1, "match": {"kinds": ["mislabelled"], "box": 1}},
+  {"item": "b3C", "page": 1, "kind": "grouping", "match": {"kinds": ["grouping"], "label_re": "자립준비청년"}},
+  {"item": "b3D", "page": 1, "kind": "grouping", "match": {"kinds": ["grouping"], "label_re": "신청일 기준|해당사항"}},
+  {"item": "b3D", "page": 1, "kind": "mislabelled", "box": 11, "match": {"kinds": ["mislabelled"], "box": 11}}
+ ]
+}

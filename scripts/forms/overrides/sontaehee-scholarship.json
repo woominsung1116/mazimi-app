@@ -1,0 +1,537 @@
+{
+ "reviewed": true,
+ "note": "HWP bundle, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). University-student pages only: 1 checklist, 3 신청서(대학생), 6 자기소개서, 7 사용계획서. Each signature line prints a red '작성자 서명 필수' note, so it takes a signature box only.",
+ "drop": [
+  {
+   "page": 0,
+   "label": "신청자"
+  },
+  {
+   "page": 2,
+   "label": "신청인(학생)"
+  },
+  {
+   "page": 5,
+   "label": "성별"
+  },
+  {
+   "page": 5,
+   "label": "작성자"
+  },
+  {
+   "page": 6,
+   "label": "성별"
+  },
+  {
+   "page": 6,
+   "label": "작성자"
+  }
+ ],
+ "set": [
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.183
+   },
+   "fields": {
+    "label": "제출서류 1: 장학금 지원 신청서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.225
+   },
+   "fields": {
+    "label": "제출서류 2: 장학생 추천서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.267
+   },
+   "fields": {
+    "label": "제출서류 3: 자기소개서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.309
+   },
+   "fields": {
+    "label": "제출서류 4: 장학금 사용계획서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.351
+   },
+   "fields": {
+    "label": "제출서류 5: 성적증명서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.393
+   },
+   "fields": {
+    "label": "제출서류 6: 통장사본"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.435
+   },
+   "fields": {
+    "label": "제출서류 7: 생활기록부"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.478
+   },
+   "fields": {
+    "label": "제출서류 8: 재학증명서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.52
+   },
+   "fields": {
+    "label": "제출서류 9: 가족관계 증명서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.562
+   },
+   "fields": {
+    "label": "제출서류 10: 학업장려 증빙서류"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.606
+   },
+   "fields": {
+    "label": "제출서류 11: 2026-1학기 학자금 지원구간 통지서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "선택",
+    "near_y": 0.649
+   },
+   "fields": {
+    "label": "제출서류 12: 선수등록 확인서"
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "label": "신청자 서명"
+   },
+   "fields": {
+    "rect": {
+     "x": 0.7,
+     "y": 0.853,
+     "w": 0.232,
+     "h": 0.028
+    }
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "지원분야 (중복지원 불가): 성적우수 (이수학점: / 학점: /"
+   },
+   "fields": {
+    "label": "지원분야: 성적우수"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "지원분야 (중복지원 불가): 학업장려 (이수학점: / 학점: /"
+   },
+   "fields": {
+    "label": "지원분야: 학업장려"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "구분: 등록금성"
+   },
+   "fields": {
+    "label": "지원 구분: 등록금성"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "구분: 생활비성"
+   },
+   "fields": {
+    "label": "지원 구분: 생활비성"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "학교현황 고등학교"
+   },
+   "fields": {
+    "label": "출신 고등학교",
+    "mapping": null
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "소재지"
+   },
+   "fields": {
+    "label": "출신 고등학교 소재지 (도·광역시)",
+    "mapping": null
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "학교현황 대학교"
+   },
+   "fields": {
+    "label": "재학 대학교",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "학교현황 학과(부)"
+   },
+   "fields": {
+    "label": "학과(부)",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "학년 (2026년 1학기)"
+   },
+   "fields": {
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "성명",
+    "near_y": 0.515
+   },
+   "fields": {
+    "label": "비상연락망 성명"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "연락처",
+    "near_y": 0.515
+   },
+   "fields": {
+    "label": "비상연락망 연락처"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "신청자와의 관계"
+   },
+   "fields": {
+    "label": "비상연락망 신청자와의 관계"
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "지급계좌 예금주"
+   },
+   "fields": {
+    "label": "예금주",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "은행명"
+   },
+   "fields": {
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 2,
+    "label": "지급계좌 계좌번호"
+   },
+   "fields": {
+    "label": "계좌번호",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 5,
+    "label": "작성자 서명"
+   },
+   "fields": {
+    "label": "자기소개서 작성자 서명",
+    "rect": {
+     "x": 0.7,
+     "y": 0.91,
+     "w": 0.232,
+     "h": 0.025
+    }
+   }
+  },
+  {
+   "match": {
+    "page": 6,
+    "label": "작성자 서명"
+   },
+   "fields": {
+    "label": "사용계획서 작성자 서명",
+    "rect": {
+     "x": 0.7,
+     "y": 0.911,
+     "w": 0.232,
+     "h": 0.025
+    }
+   }
+  }
+ ],
+ "add": [
+  {
+   "id": "x1",
+   "page": 2,
+   "rect": {
+    "x": 0.442,
+    "y": 0.141,
+    "w": 0.047,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "성적우수 이수학점",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x2",
+   "page": 2,
+   "rect": {
+    "x": 0.563,
+    "y": 0.141,
+    "w": 0.037,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "성적우수 평점",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x3",
+   "page": 2,
+   "rect": {
+    "x": 0.614,
+    "y": 0.141,
+    "w": 0.056,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "성적우수 평점 만점",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x4",
+   "page": 2,
+   "rect": {
+    "x": 0.453,
+    "y": 0.181,
+    "w": 0.046,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "학업장려 이수학점",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x5",
+   "page": 2,
+   "rect": {
+    "x": 0.573,
+    "y": 0.181,
+    "w": 0.037,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "학업장려 평점",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x6",
+   "page": 2,
+   "rect": {
+    "x": 0.624,
+    "y": 0.181,
+    "w": 0.056,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "학업장려 평점 만점",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x7",
+   "page": 2,
+   "rect": {
+    "x": 0.757,
+    "y": 0.272,
+    "w": 0.118,
+    "h": 0.045
+   },
+   "type": "text",
+   "label": "손태희 장학금 수혜연도",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x8",
+   "page": 2,
+   "rect": {
+    "x": 0.647,
+    "y": 0.44,
+    "w": 0.17,
+    "h": 0.03
+   },
+   "type": "text",
+   "label": "재학 대학교 소재지 (도·광역시)",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x9",
+   "page": 5,
+   "rect": {
+    "x": 0.762,
+    "y": 0.18,
+    "w": 0.036,
+    "h": 0.019
+   },
+   "type": "checkbox",
+   "label": "자기소개서 성별: 남",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x10",
+   "page": 5,
+   "rect": {
+    "x": 0.833,
+    "y": 0.18,
+    "w": 0.036,
+    "h": 0.019
+   },
+   "type": "checkbox",
+   "label": "자기소개서 성별: 여",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x11",
+   "page": 5,
+   "rect": {
+    "x": 0.078,
+    "y": 0.285,
+    "w": 0.84,
+    "h": 0.608
+   },
+   "type": "multiline",
+   "label": "자기소개서 내용",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x12",
+   "page": 6,
+   "rect": {
+    "x": 0.748,
+    "y": 0.171,
+    "w": 0.026,
+    "h": 0.019
+   },
+   "type": "checkbox",
+   "label": "사용계획서 성별: 남",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x13",
+   "page": 6,
+   "rect": {
+    "x": 0.809,
+    "y": 0.171,
+    "w": 0.026,
+    "h": 0.019
+   },
+   "type": "checkbox",
+   "label": "사용계획서 성별: 여",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x14",
+   "page": 6,
+   "rect": {
+    "x": 0.078,
+    "y": 0.437,
+    "w": 0.845,
+    "h": 0.458
+   },
+   "type": "multiline",
+   "label": "장학금 사용계획 내용",
+   "mapping": null,
+   "required": true
+  }
+ ]
+}

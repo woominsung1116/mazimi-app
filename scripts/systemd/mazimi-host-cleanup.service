@@ -1,0 +1,10 @@
+[Unit]
+Description=Mazimi host disk cleanup (old rollback image tags, stale build cache)
+After=docker.service
+Wants=docker.service
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mazimi
+# Never touches volumes or images in use; see the script header.
+ExecStart=/bin/bash /opt/mazimi/scripts/host-cleanup.sh --apply
+TimeoutStartSec=30m

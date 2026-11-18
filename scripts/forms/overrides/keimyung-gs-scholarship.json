@@ -1,0 +1,403 @@
+{
+ "reviewed": true,
+ "note": "HWP bundle, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). Only [양식 1] 장학금 신청서 (page 2).",
+ "set": [
+  {
+   "match": {
+    "page": 1,
+    "label": "20 학년도: 1학기"
+   },
+   "fields": {
+    "label": "신청 학기: 1학기"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "20 학년도: 2학기"
+   },
+   "fields": {
+    "label": "신청 학기: 2학기"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "20 학년도: 전기"
+   },
+   "fields": {
+    "label": "신청 학기: 전기"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "20 학년도: 후기) 장학금 신청서"
+   },
+   "fields": {
+    "label": "신청 학기: 후기"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "신청자: 박사"
+   },
+   "fields": {
+    "label": "학위과정: 박사"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "신청자: 석사"
+   },
+   "fields": {
+    "label": "학위과정: 석사"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "신청자: 통합"
+   },
+   "fields": {
+    "label": "학위과정: 통합"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "신청자 수험번호(학번)"
+   },
+   "fields": {
+    "label": "수험번호(학번)",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "수험번호(학번) 성명"
+   },
+   "fields": {
+    "label": "성명",
+    "mapping": "name",
+    "required": true
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "성명 휴대전화"
+   },
+   "fields": {
+    "label": "휴대전화"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "제출서류 (필수): 생활보호대상자(기초생활수급자- 차상위계층"
+   },
+   "fields": {
+    "label": "대상 구분: 생활보호대상자(기초생활수급자·차상위계층)"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "제출서류 (필수): 일반대상자"
+   },
+   "fields": {
+    "label": "대상 구분: 일반대상자"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "건강보험료 납부액: 9분위 이상"
+   },
+   "fields": {
+    "label": "소득분위: 9분위 이상"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "건강보험료 납부액: 8분위 이하"
+   },
+   "fields": {
+    "label": "소득분위: 8분위 이하"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "본인: 직장"
+   },
+   "fields": {
+    "label": "건강보험 본인: 직장"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "본인: 지역"
+   },
+   "fields": {
+    "label": "건강보험 본인: 지역"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "배우자: 직장"
+   },
+   "fields": {
+    "label": "건강보험 배우자: 직장"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "배우자: 지역"
+   },
+   "fields": {
+    "label": "건강보험 배우자: 지역"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "직장",
+    "near_y": 0.758
+   },
+   "fields": {
+    "label": "건강보험 부: 직장"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "지역",
+    "near_y": 0.769
+   },
+   "fields": {
+    "label": "건강보험 부: 지역"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "직장",
+    "near_y": 0.786
+   },
+   "fields": {
+    "label": "건강보험 모: 직장"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "지역",
+    "near_y": 0.797
+   },
+   "fields": {
+    "label": "건강보험 모: 지역"
+   }
+  },
+  {
+   "match": {
+    "page": 1,
+    "label": "신청자"
+   },
+   "fields": {
+    "label": "신청자 성명"
+   }
+  }
+ ],
+ "add": [
+  {
+   "id": "x1",
+   "page": 1,
+   "rect": {
+    "x": 0.09,
+    "y": 0.05,
+    "w": 0.026,
+    "h": 0.02
+   },
+   "type": "text",
+   "label": "신청 학년도",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x2",
+   "page": 1,
+   "rect": {
+    "x": 0.48,
+    "y": 0.089,
+    "w": 0.16,
+    "h": 0.018
+   },
+   "type": "text",
+   "label": "학과",
+   "mapping": "major",
+   "required": true
+  },
+  {
+   "id": "x3",
+   "page": 1,
+   "rect": {
+    "x": 0.687,
+    "y": 0.089,
+    "w": 0.25,
+    "h": 0.018
+   },
+   "type": "text",
+   "label": "전공",
+   "mapping": "major",
+   "required": false
+  },
+  {
+   "id": "x4",
+   "page": 1,
+   "rect": {
+    "x": 0.31,
+    "y": 0.68,
+    "w": 0.04,
+    "h": 0.018
+   },
+   "type": "text",
+   "label": "건강보험료 납부 첫째 달",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x5",
+   "page": 1,
+   "rect": {
+    "x": 0.418,
+    "y": 0.68,
+    "w": 0.04,
+    "h": 0.018
+   },
+   "type": "text",
+   "label": "건강보험료 납부 둘째 달",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x6",
+   "page": 1,
+   "rect": {
+    "x": 0.513,
+    "y": 0.68,
+    "w": 0.038,
+    "h": 0.018
+   },
+   "type": "text",
+   "label": "건강보험료 납부 셋째 달",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x7",
+   "page": 1,
+   "rect": {
+    "x": 0.815,
+    "y": 0.702,
+    "w": 0.128,
+    "h": 0.108
+   },
+   "type": "text",
+   "label": "건강보험료 평균의 합계액",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x8",
+   "page": 1,
+   "rect": {
+    "x": 0.399,
+    "y": 0.849,
+    "w": 0.015,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "본문 신청 학년도",
+   "mapping": null,
+   "required": false
+  },
+  {
+   "id": "x9",
+   "page": 1,
+   "rect": {
+    "x": 0.466,
+    "y": 0.849,
+    "w": 0.015,
+    "h": 0.016
+   },
+   "type": "text",
+   "label": "본문 신청 학기",
+   "mapping": null,
+   "required": false
+  }
+ ],
+ "grid": [
+  {
+   "page": 1,
+   "prefix": "건강보험료",
+   "columns": [
+    [
+     "첫째 달",
+     0.292,
+     0.398
+    ],
+    [
+     "둘째 달",
+     0.398,
+     0.499
+    ],
+    [
+     "셋째 달",
+     0.499,
+     0.595
+    ],
+    [
+     "합계",
+     0.595,
+     0.701
+    ],
+    [
+     "평균",
+     0.701,
+     0.813
+    ]
+   ],
+   "rows": [
+    [
+     "본인",
+     0.7,
+     0.728
+    ],
+    [
+     "배우자",
+     0.728,
+     0.756
+    ],
+    [
+     "부",
+     0.756,
+     0.784
+    ],
+    [
+     "모",
+     0.784,
+     0.812
+    ]
+   ]
+  }
+ ]
+}

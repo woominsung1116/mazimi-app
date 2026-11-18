@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="Description" content="신세계포인트 이용 정보는 물론 쇼핑과 라이프 스타일 혜택까지 볼거리가 풍성한 신세계포인트 앱으로 일상에 신세계를 더해보세요."><meta name="Keywords" content="신세계, 신세계포인트, 신세계백화점, 이마트, 스타필드, 스타벅스, 트레이더스, 포인트, 이마트24, 멤버십, 멤버쉽, 포인트적립"><meta name="google-site-verification" content="k1lILKnwQg0u3_Ty-Vx6NNlLmj0tHyyVbAVFqZwGYSY"><meta name="naver-site-verification" content="70f498d55638e2fb83c585255aa04122be119436"><link rel="icon" href="/favicon.ico"><title>신세계포인트</title><script type="application/ld+json">{
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "신세계포인트",
+          "url": "https://www.shinsegaepoint.com",
+          "sameAs": [
+              "https://play.google.com/store/apps/details?id=com.shinsegaepoint.app",
+              "https://apps.apple.com/kr/app/id1580696737"
+          ]
+      }</script><link href="/css/app.543da42e.css" rel="preload" as="style"><link href="/css/chunk-vendors.7cf7d179.css" rel="preload" as="style"><link href="/js/app.e0301b82.js" rel="preload" as="script"><link href="/js/chunk-vendors.98858f9a.js" rel="preload" as="script"><link rel="shortcut icon" href="/favicon.ico"><link href="/css/chunk-vendors.7cf7d179.css" rel="stylesheet"><link href="/css/app.543da42e.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but 신세계포인트 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.98858f9a.js"></script><script src="/js/app.e0301b82.js"></script></body></html><script>Constants = (function () {
+          var _userAgent = navigator.userAgent;
+          var _isIPHONE = (_userAgent.match('iPhone') != null || _userAgent.match('iPod') != null);
+          var _isIPAD = (_userAgent.match('iPad') != null);
+          var _isANDROID = (_userAgent.match('Android') != null);
+          var _isChrome = (_userAgent.match('Chrome') != null);
+          var _isFirefox = (_userAgent.match('Firefox') != null);
+          var _chromeVer = _isChrome ? parseFloat(_userAgent.toLowerCase().substr(_userAgent.toLowerCase().search(/chrome/), 30).match(/\d+\.+\d+/)[0]) : null;
+          var _iOsVer = (_isIPHONE || _isIPAD) ? parseFloat(_userAgent.toLowerCase().substr(_userAgent.toLowerCase().search(/ipad|iphone/), 30).match(/\d+\_+\d+/)[0].replace('_', '.')) : null;
+          var _isMobile = (/iphone|ipad|ipod|android/i.test(_userAgent.toLowerCase()));
+
+          return {
+              isIPHONE: _isIPHONE,
+              isIPAD: _isIPAD,
+              isANDROID: _isANDROID,
+              isChrome: _isChrome,
+              isFirefox: _isFirefox,
+              chromeVer: _chromeVer,
+              iOsVer: _iOsVer,
+              isMobile: _isMobile
+          }
+        })();
+
+        window.onload = function () {
+          if(Constants.isMobile){
+            window.location.href = "https://m.shinsegaepoint.com"
+          }
+        }</script>

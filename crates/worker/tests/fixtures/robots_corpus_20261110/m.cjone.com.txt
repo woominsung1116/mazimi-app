@@ -1,0 +1,37 @@
+sitemap:https://m.cjone.com/cjmmobile/sitemap.xml
+
+## Disallow all other bots
+User-agent: *
+Disallow: /
+
+## Google
+User-agent: Googlebot
+Allow: /cjmmobile/
+
+## Googlebot-Mobile
+User-agent: Googlebot-Mobile
+Allow: /cjmmobile/
+
+## Daum
+User-agent: Daumoa
+Allow: /cjmmobile/
+
+## Naver
+User-agent: NaverBot
+Allow: /cjmmobile/
+
+## Naver
+User-agent: Yeti
+Allow: /cjmmobile/
+
+## Bing
+User-agent: Bingbot
+Allow: /cjmmobile/
+
+## Googlebot-image
+User-agent: Googlebot-image
+Allow: /cjmmobile/
+
+## FaceBook
+User-agent: facebookexternalhit
+Allow: /cjmmobile/

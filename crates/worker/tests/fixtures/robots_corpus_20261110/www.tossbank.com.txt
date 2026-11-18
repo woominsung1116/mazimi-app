@@ -1,0 +1,16 @@
+# Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+User-agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.tossbank.com
+
+# Sitemaps
+Sitemap: https://www.tossbank.com/sitemap.xml
+Sitemap: https://www.tossbank.com/articles/article-sitemap.xml
+Sitemap: https://www.tossbank.com/product-service/loans/server-side-sitemap.xml
+Sitemap: https://www.tossbank.com/product-service/server-side-sitemap.xml

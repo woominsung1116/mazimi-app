@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expries" content="-1">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="naver-site-verification" content="ef0a372eae91c67e799cfd910168ad29af2efa98" />
+
+  <title>부산대학교 - 학생지원시스템</title>
+
+</head>
+
+	<body>
+
+<div id="skipNavi">
+    <h1 class="blind">스킵네비게이션</h1>
+    <ul>
+    	<li><a href="#skipNavi"  class="skipLink" id="contSkipLink" onclick="fn_contSkipLink(this.href);return false;" role="button">본문바로가기</a></li> 
+        <li><a href="#top_menu" class="skipLink" id="menuSkipLink" onclick="$('#top_menu').find('a:eq(0)').focus();return false;" role="button">주메뉴바로가기</a></li> 
+    </ul>
+</div>
+	   <div id="root">	
+
+<header id="header">
+	<div class="header-sub">
+		<div class="container">
+			<ul class="list list-with-separator">
+				
+				<li><a href="https://international.pusan.ac.kr/" title="새창열림" target="_blank">PNU International</a></li>
+				<li id="divNowIp" style="display:none" ><a href="#divNowIp" onclick="reSession();return false;" title="접속IP,클릭시 세션시간갱신"><span>127.0.0.1</span></a></li>
+				<li id="divFinalLogin" style="display:none" ><a href="#divFinalLogin" onclick="reSession();return false;" title="최종접속일자,클릭시 세션시간갱신"><span>2000-01-01</span></a></li>
+				<li id="divClock" style="display:none" ><a href="#divClock" onclick="reSession();return false;" title="세션시간갱신"><span>00:00:00</span></a></li>
+				<li id="global_login">
+
+				<a href="#global_login" onclick="ssoOpen();return false;" onkeypress="this.onclick;" data-lang>
+
+				로그인</a></li>
+				<li><select id="langGcd" class="form-control" data-bind="selected:langGcd" title="홈페이지언어변경"></select></li>
+				<li><span class="mUrl"></span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="header-main">
+		<div class="container">
+			<div class="header-item">
+			  <h1>
+                <a tabindex="0" href="/main">
+  				  <div class="heading">
+                    <img class="logo" src="/common/images/logo.svg" alt="" />
+                    <div class="title-box">
+                      <span class="title">부산대학교</span> <span class="sub-title">학생지원시스템</span>
+                    </div>
+                  </div>
+                </a>
+			  </h1>
+			</div>
+
+			<div class="header-item">
+				<div class="menu-wrapper">
+					<div class="menu-wrapper-inner" id="menu-wrapper-inner">
+						<ul class="list link-list">
+							<li><a href="https://pusan.ac.kr">부산대학교</a></li>
+							<li><a href="#header" onclick="fn_logout();return false;" onkeypress="this.onclick;">로그아웃</a></li>
+						</ul>
+						
+						<nav id="menu">
+							<header>
+								<h2 class="sec-title">전체메뉴</h2>
+							</header>
+							<div class="sec-body">
+								<ul id="top_menu" class="menubar-main menubar" aria-label="전체메뉴">
+								</ul>
+							</div>
+						</nav>
+						
+						<button class="close-btn" type="button">
+							<img src="/common/images/close_white.svg" alt="메뉴 닫기">
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="header-item">
+				<ul class="list list-no-gutter">
+					<li><a href="#popup" class="btn btn-icon menu-btn " title="사이트맵 레이어팝업 열기"><span class="sr-only">전체메뉴열기</span><img src="/common/images/menu.svg" alt="전체메뉴열기">
+					</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="header-backdrop"></div>
+	
+</header>
+
+<div class="modal fade" id="bookmark-modal" aria-hidden="true">
+	<div class="modal-dialog " >
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" data-lang>자주 찾는메뉴</h5>
+				<button type="button" tabindex="0" class="close" data-dismiss="modal" aria-label="Close" title="닫기">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<div class="mask novisible"></div>
+
+<div class="layer-popup s400 alert_popup" draggable="true">
+	<div class="pop_header" >
+		<img src="/common/images/ico_pop_monitor.png" alt="" /><span data-lang>알림</span>
+		
+        <button type="button" class="popup_close modal_alert_close" aria-label="레이어팝업닫기" tabindex="0">
+            <img src="/common/images/icon_pop_close.png" alt="레이어팝업닫기">
+        </button>
+	</div>
+	<div class="pop_container">
+		<div class="txt_dialog message"></div>
+		<p class="foot_btn" data-lang>
+			<a href="#header" class="btn_n bg_red modal_alert_confirm" data-lang>확인</a> <i class="linkEndAppend" tabindex="0"></i>
+		</p>
+	</div>
+</div>
+
+<div class="layer-popup s400 alert2_popup" draggable="true">
+	<div class="pop_header">
+		<img src="/common/images/ico_pop_monitor.png" alt=""/><span data-lang>알림</span> 
+	</div>
+	<div class="pop_container">
+		<div class="txt_dialog message"></div>
+		<p class="foot_btn">
+			<a href="#header" class="btn_n bg_red modal_alert_confirm" data-lang>확인</a> <i class="linkEndAppend" tabindex="0"></i>
+		</p>
+	</div>
+</div>
+
+<div class="layer-popup s400 confirm_popup" draggable="true">
+	<div class="pop_header">
+		<img src="/common/images/ico_pop_monitor.png" alt=""/><span data-lang>확인</span> 
+        <button type="button" class="popup_close modal_alert_close" aria-label="레이어팝업닫기" tabindex="0">
+            <img src="/common/images/icon_pop_close.png" alt="레이어팝업닫기">
+        </button>
+	</div>
+	<div class="pop_container">
+		<div class="txt_dialog message"></div>
+		<p class="foot_btn">
+			<a href="#header" class="btn_n bg_red modal_alert_confirm" data-lang>확인</a> <a href="#" class="btn_n bg_gray modal_alert_close">취소</a> <i class="linkEndAppend" tabindex="0"></i>
+		</p>
+	</div>
+</div>
+
+<div id="breadcrumb">
+    <div class="container">
+	  <nav aria-label="경로 내비게이션" class="breadcrumb">
+	    <ol>
+	      <li>
+	        <a href="/" title="메인홈 바로가기">
+	          <img src="/common/images/home_white.svg" alt="홈">
+	        </a>
+	      </li>
+	      <li>
+	        <span id="menu_path">_</span>
+	      </li>	      
+	    </ol>
+	  </nav>
+	</div>
+</div>
+
+	       <div class="container container-sub">
+
+<div class="col-side">
+	<div id="side">
+	    
+		<nav class="nav-side">
+		  <header>
+		    <h2 class="sec-title" id="menu_title">수업</h2>
+		  </header>
+		  <div class="sec-body bg-white" id="left_menu">
+		    
+		  </div>
+		</nav>
+		
+	</div>	
+</div>
+
+               <div class="viewpage" id="viewpage" >
+
+<div class="col-main">
+	<main id="main">
+		<section class="sec-1">
+			<header>
+				<div class="header-item">
+					<h2 class="sec-title">게시판 상세</h2>
+				</div>
+				<div class="header-item">
+					<ul class="list list-narrow-gutter">
+						<li>
+							<button class="btn btn-icon share-btn" type="button">
+								<img src="/common/images/share.svg" alt="공유">
+							</button>
+						</li>
+						<li>
+							<button class="btn btn-icon print-btn" type="button">
+								<img src="/common/images/print.svg" alt="프린트">
+							</button>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="sec-body">
+				<div class="board-view">
+					<div class="board-view-title">
+						<h4>[기타]Microsoft(구. Office) 365 사용 안내</h4>
+						<p class="board-info">
+							<span><span class="sr-only">작성자 </span><i class="bi bi-person-fill" ></i> 
+								관리자 
+
+							</span>
+							<span><span class="sr-only">작성일 </span><i class="bi bi-alarm" ></i> 2020-04-28 15:58:39</span>
+							<span><span class="sr-only">조회수 </span><i class="bi bi-eye" ></i> 19284</span>
+
+						</p>
+					</div>
+					
+					<div class="board-view-cont">
+						
+						가. 제 품 명 :<strong>&nbsp;Microsoft(구. Office) 365(Excel, PowerPoint, Word, OneDrive, OneNote 등 20종)</strong><br />
+&nbsp; ※ 웹하드(OneDrive) 용량 : 5GB 제공(2024.01.26.시행)<br />
+&nbsp;&nbsp;※ 제품 소개 : Office제품군 및 OneDrive, OneNote등 20여종 제품 사용 가능<br />
+나. 사용대상자 : <span style="color:#800080;"><strong>부산대학교 재적생(재학, 휴학 ,수료후연구생 등) 및 재직자<br />
+&nbsp; ※ 졸업,수료, 제적 및 퇴직자는 사용 불가함</strong></span><br />
+다. 사용조건 : <u><span style="color:#0000FF;"><strong>부산대학교 이메일 주소(ID@pusan.ac.kr)를 보유</strong></span></u>하고 있어야 함.<br />
+&nbsp; ※ 이메일 주소(ID@pusan.ac.kr는 사용가능, ID@pnu.kr 및 ID@pnu.edu는 사용불가)<br />
+라. 회원가입 및 사용방법<br />
+&nbsp; 1) 회원가입&nbsp;&nbsp; <strong><u>※ 각 시스템에 로그인 해야하며 보이지 않을 경우 <span style="color:#0000ff;">&quot;새로고침&quot;</span></u></strong>
+<p>&nbsp; &nbsp;- (학생)&nbsp;학생지원시스템(onestop.pusan.ac.kr) 접속&nbsp;&rarr; ① Quick Menu &rarr; ② Microsoft365<br />
+&nbsp; &nbsp;-&nbsp;(교직원) 교육정보시스템(one.pusan.ac.kr) 접속&nbsp;&rarr; ① 바로가기 &rarr; ② 유용한 서비스&nbsp;&rarr; ③ Microsoft365<br />
+<span style="font-size: 1rem; letter-spacing: -0.025em;">&nbsp; 2) 사용방법 : 온라인 설명서 참조</span><br />
+<span style="font-size: 1rem; letter-spacing: -0.025em;">&nbsp; &nbsp; ※ 개별 앱에 대한 자세한 설명은 온라인설명서(</span><a href="http://support.office.com" style="font-size: 1rem; letter-spacing: -0.025em;" target="_blank">http://support.office.com</a><span style="font-size: 1rem; letter-spacing: -0.025em;">) 참조</span><br />
+<span style="font-size: 1rem; letter-spacing: -0.025em;">마. 문의사항 : </span><strong style="font-size: 1rem; letter-spacing: -0.025em;">정보화본부 교육연구지원팀 ☎ 051-510-7487</strong></p>
+
+					</div>
+				</div>
+				<div class="pager d-flex justify-content-between">
+					<div class="prev col">
+						
+							<a href="/page?menuCD=000000000000385&mode=DETAIL&seq=244" title="이전 게시물">
+								<span class="pager-navi"><i class="bi bi-chevron-left"></i> 이전글</span>
+								<span class="pager-title">등록금 납부 후에 어떻게 확인하나요?</span>
+							</a>
+						
+					</div>
+					<div class="next col">
+						
+							<a href="/page?menuCD=000000000000385&mode=DETAIL&seq=242" title="다음 게시물">
+								<span class="pager-navi">다음글 <i class="bi bi-chevron-right"></i></span>
+								<span class="pager-title">(코로나19 관련) 2020학년도 1학기 학사일정 운영 안내</span>
+							</a>
+						
+					</div>
+				</div>
+
+				<div class="board-bottom text-right">
+
+					<a href="/page?menuCD=000000000000385" class="btn btn-secondary">목록</a>
+				</div>
+				
+				<div class="modal fade" id="comment-modal" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" data-lang>댓글달기</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="form-group row">
+									<label for="" class="col-form-label col-md-3"><span class="text-danger">＊</span> 이름</label>
+									<div class="col-md-9">
+										<input id="REPLY_USER_NM" type="text" title="이름" class="form-control" value="" readonly>
+									</div>
+								</div>
+								<textarea id="CONTENT" title="내용" class="form-control" rows="5" required></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" id="replyWriteProcBtn" data-index="" onclick="fn_bbsPostReplySave(this,'WRITE_PROC')" style="display:none" data-lang>등록</button>
+								<button type="button" class="btn btn-primary " id="replyModifyProcBtn" data-index=""  onclick="fn_bbsPostReplySave(this,'MODIFY_PROC')" style="display:none" data-lang>수정</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal" data-lang>닫기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</div>
+
+               	</div>
+	       </div>
+	       
+<footer id="footer">
+	<div class="container">
+		<div class="row justify-content-center justify-content-lg-start">
+			<div class="col-lg-6 mb-2">
+				<ul class="list link-list">
+					<li><a href="https://www.pusan.ac.kr" target="_blank" title="새창 바로가기">부산대학교 홈페이지</a></li>
+					<li><a class="focus" href="https://www.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN186" target="_blank" title="새창 바로가기">개인정보처리방침</a></li>
+					<li><a href="#popup" onclick="fn_Sitemap();return false;" onkeypress="this.onclick" title="레이어팝업 열기">사이트맵</a></li>
+					<li><a href="/page?menuCD=000000000000414" title="서식 및 안내 파일 메뉴 이동">서식 및 안내 파일</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-6 text-lg-right">
+				<a title="새창" href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank">
+					<img alt="(사)한국장애인단체총연합회 한국정보접근성인증평가원 웹 접근성
+					우수사이트 인증마크(WA인증마크)" src="/common/images/footer-wa.png" width="80"
+					height="55" />
+				</a>				
+				
+				<select class="family-site" id="family-site" title="패밀리사이트">
+					<option value="">:::: PNU LINK ::::</option>
+					<option value="http://ctl.pusan.ac.kr">교수학습지원센터</option>
+					<option value="http://culedu.pusan.ac.kr">교양교육원</option>
+					<option value="http://cea.pusan.ac.kr">교육인증원</option>
+					<option value="https://lei.pusan.ac.kr">언어교육원</option>
+					<option value="https://dorm.pusan.ac.kr">대학생활원</option>
+					<option value="https://lib.pusan.ac.kr">도서관</option>
+					<option value="http://hrd.pusan.ac.kr">취업전략과</option>
+					<option value="http://health.pusan.ac.kr">보건진료소</option>
+					<option value="http://uitc.pusan.ac.kr">AX·정보화혁신본부</option>
+					<option value="">----------------------</option>
+					
+					<option value="https://cloudpc.pusan.ac.kr">클라우드실습실</option>
+				</select>
+				<button type="button" class="btn btn-modify2 mb-2" title="새창열림" onclick="goFamilySite();">이동</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<small class="copyright">Copyright 2022. Pusan National University All rights reserved.</small>
+			</div>
+		</div>
+	</div>
+</footer>
+	  
+	   </div>     
+    </body>
+</html>

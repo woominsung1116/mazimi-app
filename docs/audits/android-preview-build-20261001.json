@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-01",
+  "expo_project": "@mazimi/majimi",
+  "build_id": "c44558a7-5978-4426-aa1f-f64731320592",
+  "build_url": "https://expo.dev/accounts/mazimi/projects/majimi/builds/c44558a7-5978-4426-aa1f-f64731320592",
+  "artifact_url": "https://expo.dev/artifacts/eas/07Fhpxh3xSrTqYW1FNQzErEsrfiVQQGBG1tRb0BLsNc.apk",
+  "status": "FINISHED",
+  "profile": "preview",
+  "source_commit": "0cde5a48727daadcf10e1d636b51021111b52550",
+  "app_version": "1.0.0",
+  "android_version_code": "1",
+  "completed_at": "2026-10-01T01:48:16.815Z",
+  "artifact_bytes": 88175153,
+  "artifact_sha256": "ccca60979927c626f79f295f33ea0ff614011eab3099818319bf5bfb122fce08",
+  "artifact_checks": {
+    "zip_crc_valid": true,
+    "manifest_present": true,
+    "dex_present": true,
+    "expected_package_marker_present": true,
+    "production_api_in_bundle": true,
+    "bundle_entries": [
+      "assets/index.android.bundle"
+    ],
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ]
+  },
+  "typescript_check": "passed",
+  "production_api_ready": true,
+  "physical_device_tested": false,
+  "notes": [
+    "Android signing key generated and managed by EAS for the organization.",
+    "APK contents verified; installation, login and application flows on an Android device are not yet verified."
+  ]
+}

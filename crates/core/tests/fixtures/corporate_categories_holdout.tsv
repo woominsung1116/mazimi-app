@@ -1,0 +1,38 @@
+# Held-out titles (not production rows, not used to write RULES). Labels written before the first run on 2026-10-26.
+# Accuracy is reported, not asserted to be 100%: misses are listed in the report.
+# program_type	title	provider_name	company_name	benefit_category	expected
+campus_benefit	한국항공대 재학생 Microsoft 365	한국항공대학교		software	dev
+campus_benefit	부산대 Canvas LMS 학생 이용	부산대학교		software	dev
+campus_benefit	한국교통대 Adobe Creative Cloud 학생 무료	한국교통대학교		software	design
+campus_benefit	경희대 Canva for Education 무료	경희대학교		software	design
+corporate_benefit	넷플릭스 광고형 멤버십 학생 할인	넷플릭스	넷플릭스	subscription	culture
+corporate_benefit	YouTube Premium 학생 멤버십	Google	Google	subscription	culture
+corporate_benefit	멜론 대학생 이용권 할인	카카오엔터테인먼트	카카오엔터테인먼트	subscription	culture
+corporate_benefit	교보문고 대학생 교재 할인	교보문고	교보문고	student_discount	culture
+corporate_benefit	CGV 대학생 영화 관람 할인	CGV	CGV	discount	culture
+corporate_benefit	롯데월드 대학생 자유이용권 할인	롯데월드	롯데월드	discount	culture
+corporate_benefit	인터파크 티켓 대학생 공연 할인	인터파크	인터파크	discount	culture
+corporate_benefit	해커스 토익 대학생 수강료 할인	해커스어학원	해커스어학원	education	study
+corporate_benefit	YBM 토익 응시료 할인	YBM	YBM	education	study
+corporate_benefit	에듀윌 자격증 인강 할인	에듀윌	에듀윌	education	study
+corporate_benefit	삼성 드림클래스 대학생 장학금	삼성전자	삼성전자	scholarship	study
+corporate_benefit	대한항공 청소년 항공권 할인	대한항공	대한항공	transport	travel
+corporate_benefit	아시아나항공 대학생 할인	아시아나항공	아시아나항공	discount	travel
+corporate_benefit	고속버스 청년 할인	티머니	티머니	transport	travel
+corporate_benefit	쏘카 대학생 첫 이용 할인	쏘카	쏘카	discount	travel
+corporate_benefit	야놀자 대학생 숙소 할인	야놀자	야놀자	discount	travel
+corporate_benefit	알뜰폰 청년 요금제 할인	헬로모바일	헬로모바일	telecom	telecom
+corporate_benefit	SK텔레콤 0 청년 요금제	SK텔레콤	SK텔레콤	telecom	telecom
+corporate_benefit	맥도날드 앱 쿠폰 혜택	맥도날드	맥도날드	membership	food
+corporate_benefit	버거킹 앱 쿠폰 혜택	버거킹	버거킹	membership	food
+corporate_benefit	도미노피자 대학생 할인	도미노피자	도미노피자	discount	food
+corporate_benefit	빽다방 앱 스탬프 적립	더본코리아	더본코리아	membership	food
+corporate_benefit	쿠팡 와우 대학생 할인	쿠팡	쿠팡	membership	shopping
+corporate_benefit	29CM 첫 구매 쿠폰	29CM	29CM	discount	shopping
+corporate_benefit	삼성전자 갤럭시 북 대학생 특가	삼성전자	삼성전자	student_discount	shopping
+corporate_benefit	Notion AI 학생 할인	Notion	Notion	software	dev
+corporate_benefit	GitHub Codespaces 학생 무료 시간	GitHub	GitHub	software	dev
+corporate_benefit	Procreate 교육용 할인	Savage Interactive	Savage Interactive	software	design
+corporate_benefit	Clip Studio Paint 학생 할인	CELSYS	CELSYS	software	design
+corporate_benefit	디자인 툴 Pixso 학생 무료	Pixso	Pixso	software	design
+financial_product	신한은행 청년 적금	신한은행	신한은행	finance	other

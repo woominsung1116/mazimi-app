@@ -1,0 +1,7919 @@
+{
+"doc": "Blind holdout 10 (final, after the product owner's revisions: org-only rows are demoted before the youth keeps, and disabled-targeted rows get the disability tier): 200 rows never seen by any earlier version, stratified 120 off/business, 40 child, 40 disability (seed 20261031). Labels: W = a young individual without the tier's trait is a real target, B = borderline, P = a youth row demoted on purpose by the org-only policy, R = rightly demoted. Measured: W 4 (all disability rows that also list 한부모 or families), B 7, P 2. Excluding rows that list such other groups from the disability tier only un-demotes rows, so these are upper bounds; with the final rules W 0, B 6, P 2.",
+"rows": [
+{
+"n": 0,
+"id": "063ed444-16eb-42da-943f-21935b8d7acb",
+"source_type": "gov_benefits",
+"title": "양파재배 지원사업(종자 및 멀칭비닐)",
+"summary": "양파 종자 및 멀칭비닐 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "관내 양파 재배희망 농가 및 작목반",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 1,
+"id": "72063936-bfe6-44c2-9ada-5dcc02ce97c0",
+"source_type": "gov_benefits",
+"title": "중소기업 기술보호 정책보험 지원사업",
+"summary": "기술침해 보험료 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 중소기업 기본법 제2조 제1항에 따른 중소기업 중\r\n     보호대상 기술을 보유한 기업",
+"선정기준": "○ 중소기업 기본법 제2조 제1항에 따른 중소기업 중\r\n     보호대상 기술을 보유한 기업",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 2,
+"id": "0d70629d-fb6c-45c9-bb0a-4bd4da0de2f4",
+"source_type": "gov_benefits",
+"title": "한우 정액 및 거세 시술비 지원",
+"summary": "한우농가에 거세 시술비, 정액 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 축산업 등록을 한 한우농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 3,
+"id": "8027681a-a124-4c06-a40a-18dd37df4ebd",
+"source_type": "gov_benefits",
+"title": "친환경 농산물 직거래 지원사업",
+"summary": "친환경농산물 직거래를 위한 구매자금 융자지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 친환경농축산물 직거래사업에 참여를 희망하는 생산자단체, 생협, 전문유통업체, 유기 및 무농약원료 가공식품업체, 전자상거래사업자, 개인사업자 등",
+"선정기준": "○ 전년도 친환경농산물 구매실적, 신용도 등",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 4,
+"id": "fbe688b3-0f1b-47d2-8703-84007f71333b",
+"source_type": "gov_benefits",
+"title": "수산물 포장재 등 지원",
+"summary": "가공업체 등에게 수산물 포장재 디자인 개발 및 포장재 구입 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 사업자등록한 수산물 가공 및 포장판매 개인사업자, 생산자단체 ,  영어조합법인 등",
+"사용자구분": "개인||소상공인||법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0314": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 5,
+"id": "c4e73067-5469-4919-bf42-b26882056c2a",
+"source_type": "gov_benefits",
+"title": "친환경 천적이용 해충구제 지원",
+"summary": "천적 기생벌 삽입제품을 공급하여 깨끗한 축산환경 조성",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 한육우, 젖소, 돼지, 닭, 오리, 메추리, 사슴, 흑염소, 말 사육 축산농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 6,
+"id": "feedf679-61c6-4e94-a42c-121c9d16a4f5",
+"source_type": "gov_benefits",
+"title": "축산농가 톱밥 지원",
+"summary": "가축사육농가에 가축분뇨 수분조절재 톱밥 구입 보조 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 일정규모 이상 가축사육농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 7,
+"id": "a3cd236d-6bc4-4b64-ad5f-55cb52a4c5da",
+"source_type": "gov_benefits",
+"title": "대한민국산업현장교수단 지원사업",
+"summary": "중소기업에 숙련기술인의 기술 전수",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 고용보험법시행령 제12조에 근거한 우선지원대상기업 중 고용보험료를 완납한 사업장\r\n - 상시 근로자 2인 이상 100인 이하 기업, (품질관리분야 상시 근로자 5인 이상 100인 이하)",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA2101": "Y",
+"JA2103": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 8,
+"id": "c8b264f8-d579-44db-a7f8-ae28293f4ce9",
+"source_type": "gov_benefits",
+"title": "벼 생산 농기계 장비 지원",
+"summary": "농업인 등에게 곡물건조기 등 벼 생산 농기계 및 장비 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농업인 및 농업인단체",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 9,
+"id": "feb6b884-dccb-479c-a1f7-94f9d08d6fed",
+"source_type": "gov_benefits",
+"title": "어린이 급식관리 지원",
+"summary": "어린이급식소를 대상으로 위생 및 안전, 영양관리를 위한 교육 등 제공",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 어린이에게 단체급식을 제공하는 어린이 급식소",
+"선정기준": "○ 어린이에게 단체급식을 제공하는 어린이 급식소(유치원, 어린이집 등)",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA2101": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 10,
+"id": "7636b59b-b570-4588-b204-329262503489",
+"source_type": "gov_benefits",
+"title": "연안선박 현대화 지원",
+"summary": "해운법에 따른 내항운송사업자 등에게 연안선박 건조를 위한 대출이자의 2.0~2.5% 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 해운법 제4조에 따른 내항여객운송사업자\r\n\r\n○ 해운법 제24조에 따른 내항 화물 운송사업자\r\n\r\n○ 해운법 제33조에 따른 선박대여업자",
+"선정기준": "○ 연안선박을 신조, 노후선박 대체를 위해 금융 대출하고자 하는 해운법상 내항여객운송사업자, 내항화물운송사업자, 선박대여업자\r\n\r\n○ 연안선박 현대화 이차보전사업 후보자 심사기준에 따라 심사위원회에서 심의",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "행정·안전",
+"supportConditions": {
+"JA2101": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 11,
+"id": "ef60c50e-abd0-4e2d-9ade-24943dacf731",
+"source_type": "gov_benefits",
+"title": "이삭 도열병 공동방제약 지원",
+"summary": "영농 농업인에게 방제약 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "농업경영체등록된 자로서 아산에 거주하면서 아산에 영농(벼) 하는 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 12,
+"id": "4798b698-10a5-4235-a5b3-ccad67bb4265",
+"source_type": "gov_benefits",
+"title": "규제샌드박스 맞춤형 컨설팅, 규제샌드박스 승인기업 사업화 지원",
+"summary": "  ○ 규제샌드박스 맞춤형 컨설팅\r\n  ○ 규제샌드박스 승인기업 사업화 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 규제샌드박스 맞춤형 컨설팅 \r\n   - 대 상 : 도내* 중소기업, 창업‧스타트업 중 규제특례제도** 이용 희망 기업\r\n    * 본사, 사업장, 기업부설연구소 포함 / ** 신속확인, 실증특례, 임시허가, 적극해석\r\n\r\n○ 규제샌드박스 승인기업 사업화 지원\r\n   - 대 상 : 도내* 중소기업, 창업‧스타트업 중 규제특례** 승인 기업\r\n    * 본사, 사업장, 기업부설연구소 포함  /  ** 실증특례, 임시허가, 적극해석",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 13,
+"id": "257bc845-a6a8-469a-a1f6-d5f4f1bd7ea3",
+"source_type": "gov_benefits",
+"title": "소상공인 특례보증",
+"summary": "소기업·소상공인·자영업자에게 대출 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "옛 광주지역 소재 소기업, 소상공인, 자영업자",
+"사용자구분": "소상공인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 14,
+"id": "956ba47d-314e-4d3a-8514-910a233058c3",
+"source_type": "gov_benefits",
+"title": "미곡종합처리장 벼 매입자금 지원",
+"summary": "정부지원 RPC에게 농가벼 매입을 위한 벼 매입자금 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 정부지원 RPC(통합RPC 포함)",
+"선정기준": "○ 농식품사업 시행지침서(농업자금 이차보전-미곡종합처리장 벼 매입자금 지원)의 정부지원RPC 진입기준과 RPC 쌀산업기여도 평가 결과에 따름",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 15,
+"id": "6e9bb16e-d7b3-4139-88c6-e5c4b746f466",
+"source_type": "gov_benefits",
+"title": "양돈농가 지원",
+"summary": "양돈사육농가에 사료첨가제 및 방역울타리 설치 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 축산업에 등록된 양돈 사육농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 16,
+"id": "6c4dd67e-415b-49f7-856e-34aeac2d6c97",
+"source_type": "gov_benefits",
+"title": "여성농업인 바우처 지원",
+"summary": "여성농업인에게 보건·복지·문화 등에서 이용하는 행복바우처 카드 지원",
+"min_age": 20,
+"max_age": 75,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농촌지역(강화군·옹진군)에 거주하고 실제 영농에 종사하는 여성농업인으로서 만 20세 이상~75세 미만인 자",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0102": "Y",
+"JA0110": 20,
+"JA0111": 75,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 17,
+"id": "fce044c4-ca4c-45cf-a3a0-4dc3518975f8",
+"source_type": "gov_benefits",
+"title": "맞춤형비료 지원",
+"summary": "연천군 관내에 주소를 둔 수도작 재배 농가에게 맞춤형 비료 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 사업대상: 연천군 관내에 주소를 둔 수도작 재배 농가 및 밭작물 재배농가 \r\n○ 맞춤형비료 지원 1ha당 20포(포당 6,000원 정액지원)",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 18,
+"id": "88129e35-0c68-43bd-ae18-c684b7f44674",
+"source_type": "gov_benefits",
+"title": "농업인 월급제 지원",
+"summary": "농업인에게 농협 자체수매 약정에 따라 월급을 받을 수 있도록 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 전남광주통합특별시에 주민등록을 두고 거주하며, 농업인 월급제 지원사업을 희망하는 벼 재배면적 3,000㎡이상70,000㎡미만 재배 농업인으로\r\n - 기준치 수매물량 해당농가\r\n - 농협자체 수매출하약정 체결농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 19,
+"id": "7639cb75-71b5-42e1-b86c-e1cf63cd85c7",
+"source_type": "gov_benefits",
+"title": "한우 개량 지원",
+"summary": "한우사육농가에 한우개량사업 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 한우사육농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 20,
+"id": "2fdc410f-71ac-4f16-8861-3b30cf45f7b0",
+"source_type": "gov_benefits",
+"title": "공공비축 벼 매입용 톤백 지원",
+"summary": "벼 재배농가에 매입용 톤백 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 21,
+"id": "e89561e3-6629-4b68-aad6-f618249cb174",
+"source_type": "gov_benefits",
+"title": "효행장려금 지원",
+"summary": "4대이상 가정에 효행장려금 지급",
+"min_age": 70,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 4대이상의 직계존비속이 주민등록상 한세대를 구성하고( 1대가 만 70세이상) 동일한 가정에서 실제 생활하는 가정",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 70,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 22,
+"id": "84546dd4-8b99-4522-a9f0-a3a108a6b392",
+"source_type": "gov_benefits",
+"title": "친환경 농자재 지원",
+"summary": "친환경인증 신규취득 농가에 친환경비료 구입비 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 친환경인증 신규취득 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 23,
+"id": "cca8ce90-2e13-4ebf-9190-434385da92ba",
+"source_type": "gov_benefits",
+"title": "우수모돈 농가보급",
+"summary": "양돈농가에 모돈 교체비용 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 칠곡군 내에 축산업 등록된 양돈농가\r\n     ※ 지원제외 대상농가: 종돈장을 직접 운영하는 농가,\r\n                                           축산관련종사자 교육 미이수자",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 24,
+"id": "1204004e-8031-4560-b928-72f87b6d77b3",
+"source_type": "gov_benefits",
+"title": "플랜트 수주지원센터 운영 지원",
+"summary": "국내 플랜트 기업 등에 입찰프로젝트 발굴, 정보조사 등의 수주업무 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 국내 플랜트, 엔지니어링, 기자재 관련 기업",
+"선정기준": "○ 별도 선정 기준은 없으나 타깃 프로젝트 특성이나 고객사 제품의 시장성에 따라 지원범위가 제한적일 수 있음",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 25,
+"id": "ae43e8ec-9be0-485d-ab59-5a23229a46ed",
+"source_type": "gov_benefits",
+"title": "과수농가 휴대용 전동가위 구입 지원",
+"summary": "과수농업인에게 휴대용 자동전동가위 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 김해시 관내에 주민등록을 두고 과수를 경작하는 농업 경영체",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 26,
+"id": "7e65f5b3-7578-41f1-9a24-d867587d553b",
+"source_type": "gov_benefits",
+"title": "권장품종 수매 장려금 지원",
+"summary": "농협 권장품종 출하 농가에 수매 장려금 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 농협에 매입 권장품종을 출하한 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 27,
+"id": "26a0597c-4601-4ef1-9dda-0eebac690b72",
+"source_type": "gov_benefits",
+"title": "임산물 생산단지 규모화",
+"summary": "관정 및 관수시설, 표고목 등 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "경영체에 등록된 임산물 생산자 및 생산자 단체",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0316": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 28,
+"id": "ea6142c6-0ec8-44c6-a5c8-713971812f77",
+"source_type": "gov_benefits",
+"title": "여성농업인 생생카드 지원사업",
+"summary": "실제 영농에 종사하고 농어촌지역에 거주하는 여성농업인의 건강관리, 문화활동 비용 지원",
+"min_age": 20,
+"max_age": 74,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 신청자격 : 실제 영농에 종사하고 농어촌지역에 거주하는 여성 농어업인으로 사업연도 기준 만20세이상~만75세 미만(1949.1.1.~2003.12.31.)인자\r\n  - 여성농어업인이란 농업‧농촌 및 식품산업 기본법 시행령 제3조, 임업 및 산촌진흥 촉진에 관한 법률 시행령 제2조, 수산업·어촌 발전 기본법 시행령 제3조에 따른 여성 농어업인을 말함\r\n  - 농업외 타산업분야 사업자등록 소지자 및 전업적직업 종사자도 지원대상에 포함(전업농+겸업농)\r\n \r\n※ 제외대상\r\n  - 2022. 1. 1. 이후 농어업경영체등록(농지원부 등록) 농어가(비등록 포함)\r\n  - 다른 법령에 의한 유사 복지서비스 수혜자 제외(신청인 본인이 문화누리카드 및 직장등에서 지원하는 복지서비스 수혜자인 경우)\r\n  - 농어촌 지역 외 거주자(\"농어촌\"이란 「농업‧농촌 및 식품산업 기본법」제3조제5호에 따른 농촌과 「수산업‧어촌 발전 기본법」제3조제6호에 따른 어촌을 말한다)\r\n  - 사업시행 전전년도 농어업 이외 소득이 37백만원 이상 인 자",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0102": "Y",
+"JA0110": 20,
+"JA0111": 74,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0410": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 29,
+"id": "48a89f5b-dcf1-4a4f-a5d8-75ee7d63fba7",
+"source_type": "gov_benefits",
+"title": "이미용업소 시설개선 지원",
+"summary": "관내 이·미용업소의 영업에 필요한 시설개선비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 3년이상 운영중인 이미용업소",
+"사용자구분": "소상공인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA1102": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 30,
+"id": "2780efdc-10de-4523-afb5-1a022340209c",
+"source_type": "gov_benefits",
+"title": "신용보증",
+"summary": "담보력이 미약한 중소기업 등에게 신용보증 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 영리를 목적으로 사업을 영위하는 개인 및 법인\r\n - 다만, 아래의 해당하는 경우 보증금지 또는 제한\r\n ㆍ도박·사행성 게임, 사치, 향락, 부동산 투기 등을 조장할 우려가 있는 업종 영위기업\r\n ㆍ보증기관이 보증채무를 이행한 후 채권을 회수하지 못한 기업 및 채무관계자 등\r\n ㆍ휴업중인 기업, 연체중인 기업 등",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 31,
+"id": "3fdb7f54-8571-4f36-a95e-a7d600cbfbc3",
+"source_type": "gov_benefits",
+"title": "임산물 재배농가 전동운반차 구입비 지원",
+"summary": "임산물 재배농가의 작업 편의 및 생산성 향상을 위해 전동운반차 구입비 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 익산시에 주소를 두고 익산시 소재 임야 또는 농지를 소유하거나 임차하여 임산물을 재배하는 임업인 및 생산자단체\r\n\r\n○ 다음 중 하나에 해당하는 임산물 재배농가\r\n\r\n- 표고버섯 3,000본(1.5kg 기준) 이상 재배하는 자\r\n- 원목표고 2,000본 이상 재배하는 자\r\n- 밤·대추 0.5ha 이상 재배하는 자\r\n- 조경수 1,500㎡ 이상 재배하는 자\r\n\r\n※ 경영체등록확인서에 지원대상 품목 및 재배면적 등이 등록되어 있어야 함",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0316": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 32,
+"id": "d5633bb1-9c5d-4d14-ac61-de77551799ae",
+"source_type": "gov_benefits",
+"title": "밤나무해충 드론방제비 지원",
+"summary": "밤생산농가에 밤나무해충 드론방제비 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 청양군 밤 생산농가 중 임업(농업)경영체 등록 농가 및 친환경 인증농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0316": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 33,
+"id": "571aaa16-5b39-4734-8a95-12f23bc901c9",
+"source_type": "gov_benefits",
+"title": "사립 박물관, 미술관 활성화 사업",
+"summary": "서울시 사립 박물관, 미술관 활성화를 위해 전시 사업비 및 학예 인력 지원비 지원 ",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "ㅇ 서울시 등록 사립 박물관 및 미술관 및 박물관, 미술관 협의회",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "문화·환경",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 34,
+"id": "4945cd81-2433-428d-8db9-d07a1b5eca4c",
+"source_type": "gov_benefits",
+"title": "아동복지시설 보호아동지원금",
+"summary": "아동복지시설 9개소에 보호아동지원금 지급",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 아동복지시설 9개소",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA2102": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 35,
+"id": "f1682e2c-0dfc-42be-8248-a2225ce746d5",
+"source_type": "gov_benefits",
+"title": "임산물 생산기반 지원",
+"summary": "각 임산물별 농가를 대상으로 원목, 배지,  묘목, 종자 등 구입 지원",
+"min_age": 20,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 표고 원목 구입비 지원\r\n - 대상자 : 관내 표고 원목을 이용한 표고 생산자 및 생산자단체\r\n\r\n○ 표고 톱밥배지 구입비 지원\r\n - 대상자 : 관내 표고 톱밥배지를 이용한 표고 생산자 및 생산자단체\r\n\r\n○ 호두 묘목 구입비 지원\r\n - 대상자 : 관내 호두 재배 임가 및 재배 희망 임가\r\n\r\n○ 산양삼 종자·종묘 구입비 지원\r\n - 대상자 : 관내 산양삼 생산자 및 생산자 단체\r\n  * 종자산업법에 따른 종자업 등록업체 제외\r\n   \r\n○ 두릅단지조성 지원\r\n - 대상자 : 관내 두릅 재배임가 및 재배 희망 임가\r\n\r\n○ 음나무 묘목 구입비 지원\r\n - 대상자 : 관내 음나무 재배임가 및 재배 희망 임가\r\n\r\n○ 복분자 묘목 구입비 지원\r\n - 대상자 : 관내 복분자 재배임가 및 재배 희망 임가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 20,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 36,
+"id": "736997f2-557d-4994-b81a-e8bdbcde12bf",
+"source_type": "gov_benefits",
+"title": "지역아동센터 운영 지원",
+"summary": "국시비 보조금의 부족분을 구비로 보전함으로써 더 나은 돌봄환경 조성 및 종사자 사기진작 ",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "종로구 소재 지역아동센터",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "행정·안전",
+"supportConditions": {
+"JA2102": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 37,
+"id": "3400da76-2b92-44ef-9562-e5c66bf6a0d1",
+"source_type": "gov_benefits",
+"title": "섬유기업 맞춤형 신소재 개발 지원",
+"summary": "고부가가치 첨단 산업용 섬유 시제품 제작 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 경기도내 섬유관련 제조기업\r\n   - 사업자등록증 상 업태에 '제조'가 포함되어 있어야 함.",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 38,
+"id": "9e3208bb-fbe5-4288-b7c2-a59985c1de09",
+"source_type": "gov_benefits",
+"title": "축산분뇨 수분조절제(톱밥) 지원",
+"summary": "축산농가에 수분조절제(톱밥) 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내축산농가",
+"사용자구분": "개인||법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 39,
+"id": "79bd6d73-f227-42fa-ac0d-2d86c5d7fcde",
+"source_type": "gov_benefits",
+"title": "열사용기자재 검사",
+"summary": "검사대상기기 제조부터 설치·사용까지 각 단계별 검사 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "검사대상기기 제조업자 및 설치자",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "행정·안전",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 40,
+"id": "01899bcf-d2ce-4072-be66-667e2ad0fa53",
+"source_type": "gov_benefits",
+"title": "저탄소 고품질 쌀 생산지원",
+"summary": "쌀 전업농에게 농자재 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 도내 거주 쌀 전업농",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 41,
+"id": "7e9cf4ab-07f7-4744-9dad-baee46c0d7f7",
+"source_type": "gov_benefits",
+"title": "제주특별자치도 여성어업인 행복이용권 지원",
+"summary": "❍ 1인당 연간 20만원의 문화여가비 지원\r\n",
+"min_age": 21,
+"max_age": 70,
+"curated_youth": false,
+"raw": {
+"지원대상": "❍ 도내 주소를 두고 실제 어업에 종사하는 연나이 21세 이상 ~ 연 나이 70세 이하의 여성어업인\r\n - 여성어업인 : ⌜수산업·어촌발전 기본법」제3조 제3호에 따른 어업인으로써 ⌜농어업경영체 육성 및 지원에 관한 법률」제4조에 따라 어업경영체로 등록되거나 ⌜어업인 확인서 발급규정」에 따라 어업인 확인서를 발급받은 여성어업인\r\n - 연나이 21세 이상 ~ 연나이 70세 이하 : 1956.1.1.~2005.12.31.년생(2026년도 사업 기준)\r\n\r\n❍ 지원제외 \r\n - 도내 주소가 없는 자\r\n - 다른 법령에 의하여 유사한 복지서비스 수혜자(문화누리카드, 여성농업인이용권카드)\r\n -  수산관계법령 위반 행정처분을 받은 자(1년 이내)",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0102": "Y",
+"JA0110": 21,
+"JA0111": 70,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0314": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 42,
+"id": "5116b3a6-cc81-4368-a92b-5fdba6f9cc4d",
+"source_type": "gov_benefits",
+"title": "가축질병 예방 및 소독 시설장비 지원",
+"summary": "축산농가에 가축질병 예방 및 소독을 위한 시설·장비 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 축산업 등록‧허가자(향후 5년 이상 해당 농장을 임대하여 운영하는 농가 포함) \r\n\r\n○ 우선 지원 대상\r\n - 고령농업인 및 영세농가 \r\n - 제1종가축전염병으로 예방백신이 없는 가축질병 사육농가\r\n - 최근년도 지원을 받지 못한 농가  \r\n - 농장 자율방역 등 차단방역에 의지가 있는 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 43,
+"id": "95cf6ad7-f3be-4278-817d-ce027047f33b",
+"source_type": "gov_benefits",
+"title": "경로식당 무료급식 지원",
+"summary": "노인복지관 이용 어르신에게 급식 제공",
+"min_age": 60,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "영동군 거주 만 60세 이상 어르신",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 60,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 44,
+"id": "1bbaa2b9-3fc4-4fd8-a7c7-d69766a38b7f",
+"source_type": "gov_benefits",
+"title": "낙농파출(헬퍼) 지원",
+"summary": "함평축산업협동조합에 컨설팅 인력 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 함평축산업협동조합",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 45,
+"id": "e39b39da-b015-477a-8993-eabdca2a497f",
+"source_type": "gov_benefits",
+"title": "축산농가 퇴비살포기 지원",
+"summary": "축산농가를 대상으로 퇴비살포기 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 축산농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 46,
+"id": "d2ecbd33-3a13-4026-9f65-c4fcaaee5df3",
+"source_type": "gov_benefits",
+"title": "저소득 노인 국민건강보험료 지원",
+"summary": "저소득노인에게 건강보험료 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 부산진구에 주소를 둔 「국민건강보험법」에 따른 지역 가입자로서 보험료가 보건복지부장관이 정하여 고시하는 최저보험료 이하인 노인세대",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 47,
+"id": "bf9d2750-ee1d-4d5a-9f7a-3e97f703cc2a",
+"source_type": "gov_benefits",
+"title": "우리밀 밭곡물 재배 장려 지원",
+"summary": "밭곡물 재배 농업인 등에게 소득보전 및 생산비 일부 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 밀, 밭곡물 재배 농업인 및 농업법인(밀, 보리, 콩, 조, 수수, 옥수수, 기장, 메밀)",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 48,
+"id": "96d8b7a7-9170-4acd-86d3-857ef8b545f3",
+"source_type": "gov_benefits",
+"title": "노인 이미용권 지급",
+"summary": "관내에 주민등록을 둔 기초연금수급자 중 만 70세 이상에게 목욕 및 이미용비 지류 형태지원",
+"min_age": 70,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○목포시에 주민등록을 둔 기초연금 수급자 중 만 70세 이상 노인",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 70,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 49,
+"id": "4a28c449-4f7d-4e30-aa84-515268e216bb",
+"source_type": "gov_benefits",
+"title": "홀로사는노인지원센터 운영지원",
+"summary": "홀로사는 노인을 대상으로 인식개선사업 및 실태조사 등 실시",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 만65세이상의 홀로사는 노인",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA2102": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 50,
+"id": "1866cfa9-9846-409b-9181-e477cd215137",
+"source_type": "gov_benefits",
+"title": "효행수당",
+"summary": "3대 이상 세대에게 효행수당 지원",
+"min_age": 80,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 80세 이상의 직계존속과 직계비속을 포함한 3대가 지급 기준일 현재 3년 이상 계속 옹진군에 주민등록 되어 함께 실거주하는 세대",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 80,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 51,
+"id": "b9a70cb3-526d-4e6a-9104-58d80174c63d",
+"source_type": "gov_benefits",
+"title": "닭 감보로 백신 지원",
+"summary": "축산농가에 닭 감보로 백신 구입 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 가금농가대상 (관내 축산업 등록 농가)",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 52,
+"id": "f92c2ebd-52d1-4fd2-b600-0d5f9498cb23",
+"source_type": "gov_benefits",
+"title": "해외 플랜트 시장개척 지원",
+"summary": "해외 플랜트 관련 기업에게 공정설비, 시장조사 등의 비용 일부를 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 해외 플랜트 수주활동을 하는 EPC사, 엔지니어링사, 설비 제조사 등",
+"선정기준": "○ 프로젝트 실현가능성 및 수주가능성",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 53,
+"id": "221c0e0f-270e-4713-92ed-a2f7e67b7e64",
+"source_type": "gov_benefits",
+"title": "폐렴구균 단백결합 백신 예방접종 지원",
+"summary": "광진구민 65세이상 기초생활수급자 중 미접종자에게 폐렴구균 단백결합 백신  예방접종 지원 ",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 광진구민  65세 이상 기초생활수급자\r\n○ 폐렴구균 단백결합 백신 예방접종 미접종자",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 54,
+"id": "193e753f-8581-434f-a056-62f6288c5b72",
+"source_type": "gov_benefits",
+"title": "농산물 포장재 지원",
+"summary": "농산물 출하 생산자 단체에 포장재 제작비용 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농산물 출하 생산자 단체(작목반, 영농법인 등)",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 55,
+"id": "861656a2-b1a2-4f1e-a188-95690a04c6bc",
+"source_type": "gov_benefits",
+"title": "고추 육묘(공동육묘, 종자대) 지원",
+"summary": "고추재배농가에 고추육묘(공동육묘, 종자대) 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 고추재배농가 중 10a(1,000㎡) 이상 재배하는 농가 지원",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 56,
+"id": "0e00db45-454a-468b-bdf5-02dd2aff7184",
+"source_type": "gov_benefits",
+"title": "축산물 HACCP교육 안내",
+"summary": "축산물 HACCP 법정교육 일정 및 신청절차 등 교육  관련 정보 안내",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 교육대상\r\n - 축산물 안전관리인증작업장·안전관리인증업소·안전관리인증농장의 인증을 받으려는 분\r\n - 축산물 안전관리인증작업장·안전관리인증업소·안전관리인증농장의 인증을 받은 분",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA2101": "Y",
+"JA2103": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 57,
+"id": "85d2ff78-af55-412b-90d3-4c2486fb8d0a",
+"source_type": "gov_benefits",
+"title": "낙농헬퍼 지원",
+"summary": "젖소농가에 착유 도우미 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 젖소 착유농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 58,
+"id": "32f71269-d8a4-499d-9803-89e00c1b5cd3",
+"source_type": "gov_benefits",
+"title": "소상공인 지원",
+"summary": "소상공인에게 대출 수수료, 점포환경개선, 카드수수료 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 사업자등록과 주민등록을 둔 소상공인\r\n\r\n○ 해남사랑카드상품권 가맹점(연매출 3억원 이하)",
+"사용자구분": "소상공인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 59,
+"id": "735d0825-7db2-4d18-8d42-238d6ffe7d86",
+"source_type": "gov_benefits",
+"title": "결식우려노인 식사배달사업 지원",
+"summary": "주1회 밑반찬 배달",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "결식우려가 있는 저소득 노인 120명\r\n (저소득, 장애, 거동불편 독거노인 등)",
+"사용자구분": "가구",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0322": "Y",
+"JA0410": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 60,
+"id": "bef19beb-76e6-4082-96d9-5ba5cc376255",
+"source_type": "gov_benefits",
+"title": "민관협력 오픈이노베이션 지원",
+"summary": "스타트업 성장 촉진을 위한 오픈이노베이션 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "중소기업창업지원법에 따른 창업 7년 이내 기업",
+"선정기준": "중소기업창업지원법에 따른 창업 7년 이내 기업 중 서면 및 발표평가를 통과한 창업기업",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 61,
+"id": "69af08cf-1138-401d-997b-1f2e9959d256",
+"source_type": "gov_benefits",
+"title": "노인 의치(틀니) 시술 비용 지원",
+"summary": "만 65세 이상 수급자 등에게 틀니 및 임플란트 시술비용 본인부담금 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 만65세이상 기초생활 의료급여 수급자 및 차상위본인부담 경감자",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 62,
+"id": "3292ad5c-f6ec-418e-8ccf-a3e3d12c9f3a",
+"source_type": "gov_benefits",
+"title": "반려동물등록 대행수수료 지급",
+"summary": "반려동물 등록 대행처 수수료 지급",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "반려동물등록대행처 등록대행 수수료 지급\r\n- 지급처: 관내 동물병원",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 63,
+"id": "95c48d84-76da-4ca6-8a50-e4777a5edc34",
+"source_type": "gov_benefits",
+"title": "고령농업인 농작업비 지원",
+"summary": "고령농업인에게 농작업비 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 만65세이상 고령농업인",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 64,
+"id": "f1c6f0de-afff-4a8b-a0b7-7e390a9402a8",
+"source_type": "gov_benefits",
+"title": "사료작물 재배 지원",
+"summary": "초식가축 사육농가에 사료작물 재배 장려금 및 작업비 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 초식가축 사육농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 65,
+"id": "cc908654-1ceb-414f-ab89-395ce50f7620",
+"source_type": "gov_benefits",
+"title": "소상공인 고용·산재 보험료 지원",
+"summary": "부산 소상공인 대상 고용·산재보험료 기납부금액 30~50% 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 부산광역시 내 사업자 등록된 소상공인 중\r\n - 고용보험 : 자영업자 고용보험에 가입한 소상공인 중 기준보수 1~7등급인 신규 및 기존가입자\r\n - 산재보험 : 중소기업 사업주 산재보험에 가입한 소상공인 중 신규 및 기존 가입자",
+"사용자구분": "소상공인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 66,
+"id": "e4f1194b-0269-4753-a101-eb4d29b623ae",
+"source_type": "gov_benefits",
+"title": "여성농업인 특수건강검진 지원",
+"summary": "근골격계, 심혈관계질환 등 여성농업인이 취약한 질환에 대한 건강검진 및 예방상담 지원",
+"min_age": 51,
+"max_age": 80,
+"curated_youth": false,
+"raw": {
+"지원대상": "짝수년도에 출생한 51세~80세 여성농업인(26년 1월 1일 기준 46.1.1.~75.12.31.기간 출생자 중 짝수년도 출생자)",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0102": "Y",
+"JA0110": 51,
+"JA0111": 80,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0322": "Y",
+"JA0410": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 67,
+"id": "3a0fc934-3883-4037-ae3b-388e21c865ff",
+"source_type": "gov_benefits",
+"title": "시설원예 농업냉난방시설 지원",
+"summary": "농업인에게 시설원예 농업냉난방시설 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 고정식 재배온실 및 버섯재배시설 면적 330㎡ 이상인 「농어업경영체 육성 및 지원에 관한 법률」제4조에 따라 농업경영정보를 등록한 농업인‧농업법인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 68,
+"id": "18fe18e3-a422-4d1c-b76c-04cdf5f9e24a",
+"source_type": "gov_benefits",
+"title": "광주광역시 청년창업 특례보증 안내",
+"summary": "○보증지원 내용\r\n  -  본 건 기준 최대 5천만원 이내\r\n  -  1년간 3.0% 이자지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 보증신청 접수일 현재 대표자가 만 39세 이하이고, 개인신용평점이 625점 이상이며 업력이 7년 이하인 소기업·소상공인",
+"사용자구분": "소상공인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA1101": "Y",
+"JA1102": "Y",
+"JA1103": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "P",
+"note": "광주 청년창업 특례보증: youth founders, but 사용자구분 is 소상공인 only (demoted by the org-only policy; business tier)",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 69,
+"id": "2de3022d-1e59-4cef-8216-5b4f9c3d964d",
+"source_type": "gov_benefits",
+"title": "원양산업 통계조사",
+"summary": "원양산업 종사자, 기업 등을 대상으로 현황, 경영실태 등에 대한 종합적인 통계조사 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ (특)한국원양산업협회 소속 해외수산협력센터",
+"선정기준": "○ (특)한국원양산업협회 소속 해외수산협력센터",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 70,
+"id": "c4ff7059-73e4-4249-84fc-76b2c1b99aea",
+"source_type": "gov_benefits",
+"title": "양봉농가 화분 구입지원",
+"summary": "양봉농가에 화분구입 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 경영체(양봉)등록농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 71,
+"id": "f041fa6b-2b27-4b99-9756-7b714e6e5f9d",
+"source_type": "gov_benefits",
+"title": "산물벼 건조수수료 지원",
+"summary": "벼 재배농가에 산물벼 건조수수료 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 고령군에 주소를 둔  벼 재배 농가 중 산물벼로 RPC(정미소)에 판매를 한 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 72,
+"id": "890e07d6-a968-4275-ab49-b0f6a14a3c08",
+"source_type": "gov_benefits",
+"title": "인구증가 기여 기업체 및 법인 등 지원",
+"summary": "그 해에 5명 이상 관내로 주민등록 한 실적을 가진 업체에게 산청사랑상품권 지급",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "소속직원 5명 이상인 관내 기업체 또는 법인 등으로 매년 12.31 현재 그 해에 5명 이상 관내로 주민등록 한 실적을 가진 업체에게 산청사랑상품권 지급",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2102": "Y",
+"JA2103": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 73,
+"id": "51da84c8-4bb6-4bd2-aa4e-d6f776f6b128",
+"source_type": "gov_benefits",
+"title": "사과원 고품질 과실생산기술 컨설팅(시범)",
+"summary": "과수재배 작목반 등에게 생산기술 컨설팅 및 친환경자재 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 봉화군 관내에 주민등록(법인주소지)을 두고 실제 거주하고 있는 과수재배 작목반, 영농조합법인 등",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 74,
+"id": "8647b41a-b1fc-4faf-b8df-821c2eb5772d",
+"source_type": "gov_benefits",
+"title": "창업 보육센터 운영 지원",
+"summary": "예비창업자 및 창업자에게 사무공간, 기술·경영 컨설팅 등 제공",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 창업보육센터",
+"선정기준": "1. 기준 시설을 갖출 것 \r\n\r\n가. 창업자가 이용할 수 있는 시험기기나 계측기기 등의 장비\r\n나. 10인 이상의 창업자가 사용할 수 있는 500제곱미터 이상의 시설\r\n\r\n2. 경영학 분야의 박사학위 소지자, 「변호사법」에 따른 변호사, 그 밖에 대통령령으로 정하는 전문인력 중 2명 이상을 확보할 것 \r\n\r\n3. 창업보육센터사업을 수행하기 위한 사업계획 등이 중소벤처기업부령으로 정하는 기준에 맞을 것",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 75,
+"id": "4602e8b0-463c-4629-800c-a7ef144a9416",
+"source_type": "gov_benefits",
+"title": "노인 건강진단 지원",
+"summary": "의료급여수급권자 노인을 대상으로 건강검진 실시 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 65세 이상 의료급여수급권자 중 희망자(전년도 대상자 제한 가능)",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 76,
+"id": "474192ef-a488-452c-b60a-f73de93560bb",
+"source_type": "gov_benefits",
+"title": "첫걸음기업 금융지원 협약보증",
+"summary": "지역신보 보증을 처음 이용하는 소기업·소상공인에 사업안착 및 성장지원을 도모\r\n",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 현재 사업자 등록 후 가동(영업)중으로, 지역 신보 보증 잔액이 없는 소기업·소상공인",
+"선정기준": "○ 현재 사업자 등록 후 가동(영업)중으로, 지역 신보 보증 잔액이 없는 소기업·소상공인",
+"사용자구분": "소상공인||법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y",
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 77,
+"id": "84adf810-48df-4fec-9a2b-26ea42262791",
+"source_type": "gov_benefits",
+"title": "우수 농특산물 인증 경영체 지원",
+"summary": "농특산물 인증경영체에 포장재 제작, 생산자재 구입비용 등 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 안산시 농특산물 인증경영체",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 78,
+"id": "d968ea06-c080-4019-bd4b-8407a1ef22f1",
+"source_type": "gov_benefits",
+"title": "가축 재해보험 지원",
+"summary": "축산농가에 가축재해보험료 일부 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 도내 축산업 허가(등록)농가 중 보험에 가입한 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 79,
+"id": "78b31cb8-85dd-4c57-930a-2bfdf4697506",
+"source_type": "gov_benefits",
+"title": "친환경 어구보급",
+"summary": "자연 분해되는 생분해성 친환경 어구 구입비 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 어업허가를 받은 어업인\r\n\r\n○ 연근해 자망 또는 통발, 연안복합 어업허가를 소지한 어업인으로서 사업 관리 주체가 선정한 자\r\n- 사업 신청서 및 구비서류 등이 관련 규정에 적합하여야 함\r\n- TAC 참여 어업인, 기존 사업 참여 어업인을 우선적으로 선정하여야 하며, 사업 관리 주체는 사업자 선정 우선순위를 별도로 정할 수 있음",
+"선정기준": "○ 연근해 자망 또는 통발, 연안복합 어업허가를 소지한 어업인으로서 사업 관리 주체가 선정한 자\r\n- 사업 신청서 및 구비서류 등이 관련 규정에 적합하여야 함\r\n- TAC 참여 어업인, 기존 사업 참여 어업인을 우선적으로 선정하여야 하며, 사업 관리 주체는 사업자 선정 우선순위를 별도로 정할 수 있음",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0314": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 80,
+"id": "8a523ed3-2dea-44b1-96eb-ff7496469a70",
+"source_type": "gov_benefits",
+"title": "축산물판매업소 기자재 구입비용 지원",
+"summary": "식육판매업소 및 식육즉석판매가공업소에 기자재 구입비용 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 식육판매업소 및 식육즉석판매가공업",
+"사용자구분": "소상공인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA1102": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 81,
+"id": "a7ffc82c-3875-47be-a791-0e9804da1c51",
+"source_type": "gov_benefits",
+"title": "매출채권보험료지원",
+"summary": ":매출채권보험 가입비용의 50%(최대 2백만원) 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "도내 소재 중소기업(매출액 500억 미만)",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 82,
+"id": "f2b0a43c-549e-4952-94b6-5dfc3c4297f8",
+"source_type": "gov_benefits",
+"title": "노인가장세대 지원",
+"summary": "저소득 노인가장세대를 선정하여 냉난방비 지원 ",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "지원대상 : 65세이상 차상위 계층 독거노인 노인부부가구 조손가정 등 노인가장세대\r\n지원제외 대상 : 유사사업 수혜자, 세대원 모두가 「국민기초생활보장법」 제 32조에 따른 보장시설에서 급여를 받는 경우\r\n지원내용 : 저소득 노인가장세대를 선정하여 냉방비(4만원)와 난방비(8만5천원) 지원\r\n※ 본 사업은 예산 범위 내에서 지원되며, 예산 상황에 따라 선정되지 않을 수 있습니다.",
+"사용자구분": "가구",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0322": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 83,
+"id": "9becaf1f-1715-4921-937d-793cadf7a1a6",
+"source_type": "gov_benefits",
+"title": "농산물 최저가격 지원",
+"summary": "농협 등에 공동출하하는 농업인을 대상으로 농산물 최저가격 보전 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 농지에서 지원대상 농산물을 직접 생산하고 농협 등 유통조직을 통해 계통 및 공동출하하는 농업인",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 84,
+"id": "15898f5d-97f5-4cca-a017-20c178b5f858",
+"source_type": "gov_benefits",
+"title": "축산농장 출입인 소독실 및 방역실 설치 지원",
+"summary": "축산농가에 출입인 소독실 및 방역실 설치 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 축산농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 85,
+"id": "5f5fc345-b984-4107-a744-b046dd431438",
+"source_type": "gov_benefits",
+"title": "고령자 주택개조 지원사업",
+"summary": "○ 수급자, 차상위 등에 속한 만 65세 이상 고령자에게 주택 개보수 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 소득인정액이 기준중위소득 50% 이하(수급자, 차상위 등)인 만 65세 이상 고령자",
+"사용자구분": "가구",
+"서비스분야": "주거·자립",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 86,
+"id": "26bb58b6-a133-449f-8122-dd8bc103a15b",
+"source_type": "gov_benefits",
+"title": "서산6쪽마늘 생산장려금 지원",
+"summary": "서산6쪽마늘 계약재배 및 수매 참여 농가에 생산장려금 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 마늘의무 자조금을 납부하여야 하며, 지역농협 및 마늘법인과 계약재배를 체결하고 수매에 참여한 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 87,
+"id": "85a3369b-58c2-43f8-918e-4e3c542a7494",
+"source_type": "gov_benefits",
+"title": "축사 구서방제 지원",
+"summary": "축산농가에 해충, 쥐 등을 방제하는데 필요한 위생관리 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 양돈, 양계농가\r\n*농어업경영체 육성 및 지원에 관한 법률에 따라, 농어업 경영체로 등록한 자",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 88,
+"id": "41f54169-aaeb-47d4-9a65-6235d42c4755",
+"source_type": "gov_benefits",
+"title": "교통약자를 위한 무료셔틀버스 지원(어르신)",
+"summary": "영등포노인종합복지관 무료 셔틀 버스 이용",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "영등포노인종합복지관 이용 어르신(복지관 회원)",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0322": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 89,
+"id": "81665d41-76d7-430c-b9e8-10c8b59c55e6",
+"source_type": "gov_benefits",
+"title": "가축분뇨처리시설 지원",
+"summary": "축산농가에 스키드로더 및 퇴비살포기 장비 구입비 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 축산업 허가·등록한 축산농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 90,
+"id": "c3c0bb5c-6153-4ac1-8d71-523fe7996f16",
+"source_type": "gov_benefits",
+"title": "소상공인 보증지원",
+"summary": "담보가 부족한 소상공인을 대상으로 특례보증을 통한 신용보증서 발급을 지원해 주는 서비스",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "연수구 관내에 소재한 업체(단, 사치,향락 등 인천신용보증재단에서 지정한 보증 제한업종은 제외)",
+"사용자구분": "소상공인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA0110": 0,
+"JA0111": 999,
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 91,
+"id": "c87b37bd-b3d8-466e-adf7-5b134a3151c1",
+"source_type": "gov_benefits",
+"title": "원예작물 재배농가 지원",
+"summary": "원예작물 재배농가에 고추건조기, 세척기, 물탱크 등 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농업경영체정보등록한 관내 원예작물 재배 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 92,
+"id": "e75787e1-b2a0-465e-8dac-5f2290e10a5a",
+"source_type": "gov_benefits",
+"title": "공정거래 자율준수제도 활성화 지원",
+"summary": "CP제도 활성화 지원, 확산 및 홍보를 위한 콘텐츠 및 설명회 지원 등",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "경기도 내 공공기관, 중견·중소기업 등",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "행정·안전",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 93,
+"id": "d7368d22-7b9a-4e18-bb89-a5ba8426344c",
+"source_type": "gov_benefits",
+"title": "단감 생육장애 개선 지원",
+"summary": "단감재배농가에 유기농업자재 구입 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 주소를 두고 있는 단감 재배농가(참여조직에 출하실적이 있거나 김해시조합공동사업법인에 출하실적이 있는 농가)",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 94,
+"id": "ffa1e6f1-38dd-4789-8a07-0f5a2970436d",
+"source_type": "gov_benefits",
+"title": "위탁 육묘농가 상토대 지원",
+"summary": "위탁육묘 농가에 상토재 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 고령군에 주소를 둔 위탁육묘 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 95,
+"id": "c426a07f-81d7-4fe9-9d6b-d5a6aa44c727",
+"source_type": "gov_benefits",
+"title": "코리아 나라장터 엑스포 참가 지원",
+"summary": "경기도관 부스비 지원, 구매·수출상담회, 교육·설명회",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "국내·외 조달시장 진출을 희망하는 경기도 내 중소기업",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 96,
+"id": "e2fe4c5d-023f-4d8d-839b-d4ea59edc41a",
+"source_type": "gov_benefits",
+"title": "장수수당",
+"summary": "1922. 12. 31.이전 출생 어르신에게 장수수당 지급",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 1922. 12. 31. 이전 출생자로 도내 주민등록자(신청일 현재 연령기준과 도내 주민등록 여부를 모두 충족하여야 함)\r\n - 지급여부  \r\n  · 사실조사 결과 지급대상이 실제거주하지 않는 경우 미지급\r\n  · 타시도 전입자의 경우 지급대상 기준 충족 시 지급대상임\r\n  · 지급대상자가 타시도 전출 후 재전입시 지원대상임(신규신청에 해당됨)",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 100,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 97,
+"id": "f6ca7ca2-8d85-4482-9745-470a3e8d97ad",
+"source_type": "gov_benefits",
+"title": "농기계 수리지원",
+"summary": "대전광역시 대덕구 거주 농업인이 소유한 농기계의 수리비용 일부 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 대전 대덕구 관내에 주소를 둔 농업인으로 대덕구 관내 지역농협(신탄진농협, 회덕농협) 조합원",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 98,
+"id": "9d8da0e2-9f69-4e11-8141-77e42d340c7c",
+"source_type": "gov_benefits",
+"title": "소상공인 손실보상금 지원(현장신청 지원)",
+"summary": "코로나시기 어려움을 겪은 소상공인들에게 손실보상 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "코로나시기\r\n집합금지 및 영업시간 제한,\r\n시설인원제한 등 방역조치 이행\r\n해당기간 월별매출액 감소 확인\r\n소상공인 또는 '중소기업기본법'상 소기업 또는 (연매출 30억원 이하인 '중소기업기본법'상 중기업",
+"사용자구분": "소상공인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 99,
+"id": "574e2e86-55a1-4393-8fb0-6b98e4f32359",
+"source_type": "gov_benefits",
+"title": "과수계약재배 활성화 지원",
+"summary": "과수생산 농업인에게 출하비용 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 생산자단체(APC등)와 계약을 통해 공동선별⸱포장⸱규격출하⸱판매 등을 실시하는 도내 과수생산 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 100,
+"id": "8f6de6f9-7c06-4d69-af0c-5a7631413cc7",
+"source_type": "gov_benefits",
+"title": "농기계 구입 지원",
+"summary": "선정된 농가에 농기계 구입비 일부 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 영암군에 주소를 두고 농업경영체를 등록한 농가 중 농기계 구입 희망농가로 읍면에서 대상자 선정심의회를 통해 선정된 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 101,
+"id": "2e6deaa2-4767-45d2-80e6-8b925e3d3b07",
+"source_type": "gov_benefits",
+"title": "종계농가 자동급이급수기 지원",
+"summary": "종계사육농가에 자동급이급수기 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 종계사육농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 102,
+"id": "4f902aec-549f-4fc9-bc75-2e5a2b5c5c15",
+"source_type": "gov_benefits",
+"title": "고령운전자 운전면허 자진반납 지원",
+"summary": "운전면허를 자진반납한 만 70세 이상에게 인센티브 지급",
+"min_age": 70,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 70세 이상 운전면허증 자진반납자",
+"사용자구분": "개인",
+"서비스분야": "행정·안전",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 70,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 103,
+"id": "2b2f5cc9-ff6f-43ff-b7b2-fccbd298ddca",
+"source_type": "gov_benefits",
+"title": "벼 경영안정 지원금 지원",
+"summary": "벼 경영안정 지원금 지원사업",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 104,
+"id": "bfd96189-9099-4d92-9be9-a323cd834169",
+"source_type": "gov_benefits",
+"title": "대상포진 예방접종 지원",
+"summary": "만 65세 이상 기초생활수급자 대상으로 대상포진 예방접종 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "만 65세 이상 기초생활수급자로 신청일 기준 경상북도에 1년이상 거주하고 있는 경우로 한정\r\n(대상포진 예방접종력이 있는 경우 제외)",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S3"
+}
+},
+{
+"n": 105,
+"id": "741e79d8-619e-475c-abcf-d4141d3a8955",
+"source_type": "gov_benefits",
+"title": "축산농가 소독시설 지원",
+"summary": "축산농가에 시설 출입구 차량소독시설 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 축사출입구 차량소독시설 설치 희망농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 106,
+"id": "7a8a2685-f873-46b9-a285-320576d36e4b",
+"source_type": "gov_benefits",
+"title": "축사 CCTV 설치 지원",
+"summary": "소규모 가축사육농가에 축사 내 CCTV 설치비용 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "- 가축사육업 등록·허가된 한우 사육농가\r\n- 축사면적 250㎡ 미만 소규모 가축사육농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 107,
+"id": "47797a01-2057-4dfa-9f6c-7e4d129bbc61",
+"source_type": "gov_benefits",
+"title": "축산물 마이데이터 서비스",
+"summary": "축산농가와 벤처기업 간 마이데이터 연계 지원으로 농가-기업 상호 수익 창출 모델 개발 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "축산분야 벤처창업자 및 창업예정자 중 축산물품질평가원에서 생산, 관리하는 \r\n축산농가 마이데이터가 필요한 기업",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2202": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 108,
+"id": "98fe4d7d-3415-4eb5-a58b-3b10ad40ddef",
+"source_type": "gov_benefits",
+"title": "젖소농가 냉방기 지원",
+"summary": "젖소사육농가에 냉방기 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 젖소사육농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0315": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 109,
+"id": "ebe4c09c-9568-445d-8b24-2b090c79b37a",
+"source_type": "gov_benefits",
+"title": "시설원예 친환경농자재 지원",
+"summary": "농업인에게 시설원예 친환경농자재 구입 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 110,
+"id": "770cc52d-b78c-4b44-bee4-aa5e1d72fd79",
+"source_type": "gov_benefits",
+"title": "청년 소모임 활동 지원",
+"summary": "청년 소모임 활동비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "해남군 내 거주하고 있는 청년 3인 이상으로 이루어진 소모임",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "문화·환경",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "P",
+"note": "청년 소모임 활동 지원: youth groups, 사용자구분 org-only (demoted by the org-only policy)",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 111,
+"id": "5a11a8ce-f60d-45e8-8323-2f88d008309e",
+"source_type": "gov_benefits",
+"title": "일자리창출 소상공인 사회보험료 지원",
+"summary": "정부 두루누리 사회보험료 지원 사업 참여하고 있는 근로자 10인 미만기업 사회보험료 지원 ",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "정부 두루누리 사회보험료 지원사업에 참여하고 있는 제주특별자치도 소재 근로자 10인 미만 기업",
+"사용자구분": "소상공인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 112,
+"id": "b1dfa73b-33d5-4392-a7c4-40871386f176",
+"source_type": "gov_benefits",
+"title": "국가기술자격 검정시설 및 장비 구입자금 지원",
+"summary": "국가기술자격 검정시설 사용기관에게 장비 구입비용 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 국가기술자격 검정시설 사용기관",
+"선정기준": "지원대상과 동일",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2103": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 113,
+"id": "0bd32855-f52b-46ae-9377-adbcb9ac501a",
+"source_type": "gov_benefits",
+"title": "벼 수매 운송비 지원",
+"summary": "수매 참여 농업인에게 벼 수매 운송비 일부 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 수매 참여 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 114,
+"id": "55865275-9897-45c0-84af-6352afa7a3b8",
+"source_type": "gov_benefits",
+"title": "복숭아 영농자재 지원",
+"summary": "복숭아 농가에 봉지 및 기타자재 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 복숭아 생산자단체(작목반) 소속농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 115,
+"id": "30ce9c8d-3a0a-46ef-95d9-73781ba36696",
+"source_type": "gov_benefits",
+"title": "기후환경보증",
+"summary": "기후기술기업 대상으로 보증 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 기후변화대응 기술을 개발 또는 사업화하는 기업\r\n○ 녹색산업 영위기업 및 신재생에너지 발전기업\r\n○ 우수환경기업, 미세먼지 저감기업, 물산업 영위기업",
+"사용자구분": "법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA2101": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S1"
+}
+},
+{
+"n": 116,
+"id": "0ea8ffea-4df2-4c3e-9928-406df2e2f930",
+"source_type": "gov_benefits",
+"title": "소상공인 무료법률구조",
+"summary": "소상공인에 대한 법률상담 및 소송비용 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "기준 중위소득 125% 이하 소상공인 또는 최근 1년 연 매출액 2억원 이하 소상공인",
+"사용자구분": "소상공인",
+"서비스분야": "행정·안전",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 117,
+"id": "e23e8ff9-dc96-4e7b-88a3-66a9c26c4f4b",
+"source_type": "gov_benefits",
+"title": "무사마귀병 약제 지원",
+"summary": "농업인에게 고랭지 채소용 무사마귀병 방재약제 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 농업인",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 118,
+"id": "2da4e25c-ce3f-4517-ae7b-04d8661d5e15",
+"source_type": "gov_benefits",
+"title": "쪽파 특화작목 활성화 지원",
+"summary": "쪽파 농가 하우스(내재해형,일반) 및 농기자재 지원",
+"min_age": 18,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 예천군 관내 원예작물 재배 농가",
+"사용자구분": "개인",
+"서비스분야": "농림축산어업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0313": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "off_target",
+"rule": "S2"
+}
+},
+{
+"n": 119,
+"id": "7b1fb767-1b6a-4ffe-9964-72acd69f3265",
+"source_type": "gov_benefits",
+"title": "서울특별시 자영업자 고용보험료 지원",
+"summary": "납부보험료 지원으로 '자영업자 고용보험' 가입 활성화 및 소상공인 사회안전망 확대",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "'자영업자 고용보험'에 가입한 서울시 소재 소상공인",
+"사용자구분": "소상공인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA1102": "Y",
+"JA1201": "Y",
+"JA1202": "Y",
+"JA1299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "business_only",
+"rule": "S1b"
+}
+},
+{
+"n": 120,
+"id": "fb43de6a-1313-4d43-8321-5563a2c56b70",
+"source_type": "gov_benefits",
+"title": "어린이집 입학준비금 지원",
+"summary": "생애최초 관내 어린이집에 입학한 영유아에게 입학준비금 지원(12개월 이내 사용)",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "입소일 기준으로 관내에 주민등록을 6개월 이상 두고 관내 어린이집에 최초 입소하는 영유아",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 5,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 121,
+"id": "3253458c-157d-4088-94d4-7a4a234be731",
+"source_type": "gov_benefits",
+"title": "아동 공동생활가정(그룹홈) 보호",
+"summary": "공동생활가정 보호아동에게 용돈, 교통비, 문화야외체험활동비 등 6종 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "공동생활가정 입소아동",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 18,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0322": "Y",
+"JA0410": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 122,
+"id": "3439de82-5414-4d2a-88db-8c168ca84190",
+"source_type": "gov_benefits",
+"title": "학대피해아동 의료비 등 지원",
+"summary": "학대피해아동에게 건강진단검사, 진료비, 긴급 생필품 등 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 학대피해아동",
+"사용자구분": "개인",
+"서비스분야": "행정·안전",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 12,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 123,
+"id": "942443b9-b6ad-41c4-886e-1adc66c7d9b0",
+"source_type": "gov_benefits",
+"title": "경주시 초등학교 입학축하금 지원",
+"summary": "경주시 초등학교 입학생에 입학축하금 10만원 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "입학일(2026.3.3.) 기준 경주시에 주민등록이 되어 있는 초등학교 입학생\r\n (등록지가 경주시인 외국인 포함)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 6,
+"JA0111": 13,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 124,
+"id": "3ed537f2-32ce-454c-8016-541139dc0edc",
+"source_type": "gov_benefits",
+"title": "고난도 보호대상아동 맞춤형 사례관리서비스",
+"summary": "아동복지시설 보호아동 대상 선별비(종합심리검사비) 및 맞춤형 사례관리서비스 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 지원대상 : 아동복지시설(아동양육시설, 공동생활가정, 아동보호치료시설(나형))보호아동 중 경계선지능 의심 또는 진단아동\r\n  - (의심아동) : 선별체크리스트 평균1.18점 이상으로 경계선지능이 의심되는 아동으로 선별비(종합심리검사비) 지원\r\n  - (진단아동) : 최근2 년 이내종합심리검사*결과 경계선지능범주**에 해당하는 아동으로 사례관리비 지원\r\n      * K-WPPSI(미취학), K-WISC-Ⅳ,Ⅴ\r\n   ** 경계선지능 범주 :  지능지수 오차범위71-84( ±5, 66-89)",
+"선정기준": "○ 지원대상 : 아동복지시설(아동양육시설, 공동생활가정, 아동보호치료시설(나형))보호아동 중 경계선지능 의심 또는 진단아동\r\n  - (의심아동) : 선별체크리스트 평균1.18점 이상으로 경계선지능이 의심되는 아동으로 선별비(종합심리검사비) 지원\r\n  - (진단아동) : 최근2 년 이내종합심리검사*결과 경계선지능범주**에 해당하는 아동으로 사례관리비 지원\r\n      * K-WPPSI(미취학), K-WISC-Ⅳ,Ⅴ\r\n   ** 경계선지능 범주 :  지능지수 오차범위71-84( ±5, 66-89)\r\n○ 담당자: 아동복지시설 종사자\r\n ",
+"사용자구분": "개인||법인/시설/단체",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 6,
+"JA0111": 12,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0322": "Y",
+"JA0410": "Y",
+"JA2102": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 125,
+"id": "a6f583cd-c3d4-4363-8dca-ae64a44d8877",
+"source_type": "gov_benefits",
+"title": "중·고등학생 특기 장학금",
+"summary": "특기가 있는 중·고등학생에게 장학금 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "문화․ 예술․ 체육․ 과학․ 기능분야에서 우수자 중 중앙정부기관 및 광역지방자치단체 주최 전국대회 3위 이내 입상자. 단,전국체육대회 및 전국소년체육대회3위이내 입상자를 포함.(단체전 입상은 학교에 지급)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 126,
+"id": "8e200a89-1c1a-4cce-9292-fed13433cbd8",
+"source_type": "gov_benefits",
+"title": "아동 입원진료비 지원",
+"summary": "15세 이하 아동 입원 진료비 국가책임제 및 건강보험 보장강화",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 만 15세 이하 아동",
+"선정기준": "○ 만 15세 이하 아동",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 15,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0322": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 127,
+"id": "6ff56b17-f33e-4d78-b55d-c893a302eb81",
+"source_type": "gov_benefits",
+"title": "아동발달지원계좌(디딤씨앗통장) 지원",
+"summary": "아동이 통장에 일정 금액 적립 시 국가가 월 10만 원 내에서 2배 금액 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 보호대상 아동 : 만 18세 미만의 아동양육시설, 가정위탁, 공동생활가정, 소년소녀가정, 장애인 생활시설 아동\r\n\r\n○ 기초수급가구 아동 : 만 18세 미만의 생계,의료,주거,교육 급여 수급가구 아동\r\n\r\n○ 차상위계층 아동 : 만 18세 미만의 차상위계층, 한부모가족 아동\r\n * 차상위계층: 차상위장애인, 차상위자활, 차상위본인부담경감대상자, 차상위계층 확인\r\n * 한부모가정: 모자가족, 조손가족, 부자가족, 청소년한부모모자가족, 청소년한부모부자가족",
+"선정기준": "○ 보호대상 아동 : 만 18세 미만의 아동양육시설, 가정위탁, 공동생활가정, 소년소녀가정, 장애인 생활시설 아동\r\n\r\n○ 기초수급가구 아동 : 만 18세 미만의 생계,의료,주거,교육 급여 수급가구 아동\r\n\r\n○ 차상위계층 아동 : 만 18세 미만의 차상위계층, 한부모가족 아동\r\n * 차상위계층: 차상위장애인, 차상위자활, 차상위본인부담경감대상자, 차상위계층 확인\r\n * 한부모가정: 모자가족, 조손가족, 부자가족, 청소년한부모모자가족, 청소년한부모부자가족",
+"사용자구분": "개인",
+"서비스분야": "주거·자립",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 17,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 128,
+"id": "689fe382-2cc7-4c42-a80a-9fc3e1cce67d",
+"source_type": "gov_benefits",
+"title": "저소득층 초·중·고 학생 학습나눔사업",
+"summary": "관내 저소득층  초‧중‧고 학생을 대상으로 학원 무료 수강 제공",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 아래의 자격 기준을 충족하는 관내 초‧중‧고 학생\r\n    - 국민기초생활보장법 상의 생계‧의료‧주거‧교육 수급자 \r\n    - 국민기초생활보장법 상의 법정 차상위계층\r\n    - 한부모가족지원법 제5조 및 제5조의2에 따른 한부모가정",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 7,
+"JA0111": 18,
+"JA0201": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 129,
+"id": "98b9d6ba-e41f-4bb6-8f07-b0dba7e51959",
+"source_type": "gov_benefits",
+"title": "재능장학금",
+"summary": "예∙체∙기능∙문학 등 다양한 분야의 학생에게 생활비성 장학금 지원(1인당 최대 1백만원)",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 공고일 현재 본인 또는 보호자 울산 거주자\r\n\r\n○ 공고일로 부터 2년 이내 광역시∙도 단위 대회 또는 전국규모 이상 대회 3위 이상 입상자",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 130,
+"id": "12862c4b-325e-4f27-aeb5-1ed7e9b6062e",
+"source_type": "gov_benefits",
+"title": "특수교육학생 통학비 지원",
+"summary": "특수교육대상자에게 통학비 지원 ",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 유·초·중·고·특수학교에 재학 중인 특수교육대상자 중 다음 기준에 해당하는 자\r\n - 버스, 지하철 등 대중 교통수단을 이용하여 통학하는 학생\r\n - 중도의 신체장애, 또는 정서행동장애 등 특별한 사유로 자가용 등 개별적인 교통수단을 이용해야만 등·하교가 가능한 학생\r\n\r\n○ 독립적인 통학이 불가능한 학생의 통학을 보조하는 보호자(1인)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 131,
+"id": "fa8a3a2a-e58a-4740-b3cd-893c9a48669d",
+"source_type": "gov_benefits",
+"title": "사회통합전형대상자 기숙사비 지원",
+"summary": "자기주도학습전형교 사회통합전형대상자에게 기숙사비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "사회통합전형 합격 후 기숙자에 입소한 기회균등전형자 및 재학생 중 기회균등전형자와 동일한 소득 수준의 학생",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 132,
+"id": "7d2332e7-ee87-4963-a9e6-df8f9554ce6d",
+"source_type": "gov_benefits",
+"title": "청소년동호회 호수마당 대관료 면제",
+"summary": "호수마당 고양시 청소년 대상으로 대관료 면제",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "고양시 초,중,고 동아리 활동 중인 청소년 및 고양시 거주 청소년",
+"사용자구분": "개인",
+"서비스분야": "문화·환경",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "B",
+"note": "청소년동호회 대관료 면제: 청소년 includes 19-24 (borderline)",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 133,
+"id": "3499565e-67dd-4416-a312-5d62fcec448a",
+"source_type": "gov_benefits",
+"title": "대구광역시 아동돌봄사업 안내",
+"summary": "지역아동센터, 다함께 돌봄센터, 대구형 방과 후 틈새돌봄 등 각종 돌봄서비스 소개",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "대구시민(초등학생 학부모나 아동이 대다수이며, 특히 맞벌이 부부, 다문화, 조손, 다자녀 가구 등의 학부모나 아동)",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 6,
+"JA0111": 12,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0322": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "B",
+"note": "대구 아동돌봄사업 안내: parents use it too (borderline)",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 134,
+"id": "57bb1375-4dc4-4efa-a32c-6981e637d39c",
+"source_type": "gov_benefits",
+"title": "고등학생 숙박형 체험학습비 지원",
+"summary": "경기도 내 고등학교 1~2학년을 대상으로 숙박형 체험학습 실비 지원",
+"min_age": 17,
+"max_age": 19,
+"curated_youth": false,
+"raw": {
+"지원대상": "경기도 내 공사립 고등학교 1~2학년",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 17,
+"JA0111": 19,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0319": "Y",
+"JA0410": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 135,
+"id": "71c01832-110b-4399-ab73-85b23affb6e0",
+"source_type": "gov_benefits",
+"title": "셋째이후 어린이집 차량운행비 지원",
+"summary": "어린이집을 이용하는 셋째 이상 영유아를 위해 차량운행비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 부 또는 모와 자녀가 청양군에 거주하고, 어린이집을 이용 하는 셋째 이후  0~5세 영·유아",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 5,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0411": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 136,
+"id": "eaf81879-3281-4fe6-bdf2-dadc4b704eda",
+"source_type": "gov_benefits",
+"title": "결식아동 학기중 토·공휴일 중식 지원",
+"summary": "결식이 우려되는 저소득가정 등의 아동에게 중식 지원(시군에서 시행)",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 아래 어느 하나에 해당하는 아동으로서 결식우려가 있는 아동\r\n- 국민기초생활보장법 제2조제2호에 따른 수급자 가구의 아동, 차상위계층 아동\r\n- 한부모가족지원법 제5조 및 제5조의2에 따른 지원대상자가 양육하는 아동\r\n- 긴급복지지원법에 따른 긴급복지 지원대상 가구의 아동\r\n- 보호자가 사망, 가출, 행방불명, 구금시설에 수용되는 등의 사유로 보호가 필요한 아동\r\n- 보호자의 사고, 급성질환, 만성질환 등의 사유로 보호자의 양육능력이 미약한 가구의 아동\r\n- 기준중위소득 52% 이하인 가구의 아동\r\n- 위 각호에는 해당되지 않으나 담임교사, 사회복지사, 이통반장, 시군구 담당공무원 등이 추천하는 아동으로서 아동급식위원회에서 급식지원이 필요하다고 결정한 아동 등",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 12,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 137,
+"id": "3291413f-23a8-438e-b538-ce64f33616f5",
+"source_type": "gov_benefits",
+"title": "저소득층자녀 고교 학비 지원",
+"summary": " 무상교육 제외 고등학교: 1~3학년의 저소득층 학생 학비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "1. 무상교육제외학교: 1~3학년의 저소득층 학생 학비 지원\r\n  - 국민기초생활 보장수급권자, 한부모가족보호 대상자, 법정 차상위대상자, 중위소득 60% 이하자, 학교장 추천자, 조류인플루엔자 및 구제역 발생 지역 피해농가 자녀, 난민 인정자 및 난민 학생",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 138,
+"id": "f9ecae95-4ca5-4578-9dd6-e7de687b4814",
+"source_type": "gov_benefits",
+"title": "수학여행비 지원",
+"summary": "초·중·고 재학중인 수학여행 참여 학생 대상으로 경비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "수학여행 대상 전체학생",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 139,
+"id": "025b1ed9-3375-4611-b339-e51801043bcf",
+"source_type": "gov_benefits",
+"title": "자해잔여흔 치료비 지원",
+"summary": "초·중·고·특수학교 자살(해) 위기학생 자해잔여흔적 치료비\r\n",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "자해 잔여흔(자해흔적) 제거 치료비가 필요한  전북특별자치도 내 초·중·고·특수학교 학생",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 140,
+"id": "ced5cb4a-cf3a-4f3d-b18a-a5bd1d68cee2",
+"source_type": "gov_benefits",
+"title": "은평구 드림스타트",
+"summary": "신체/건강, 인지/언어, 정서/행동, 부모/가족",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "만 12세 이하(초등학생 이하) 취약계층 아동 및 가족, 임산부\r\n * 기초생활보장수급자, 한부모가정, 차상위계층 등",
+"사용자구분": "가구",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0111": 12,
+"JA0317": "Y",
+"JA0403": "Y"
+}
+},
+"label": "B",
+"note": "은평구 드림스타트: pregnant women and families too (borderline)",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 141,
+"id": "4915cf0e-95fa-451a-bbb0-d596c2a2a6ea",
+"source_type": "gov_benefits",
+"title": "자립지원 두드림통장",
+"summary": "저소득한부모가족의 고3학생에게 자립을 위한 두드림통장 지원",
+"min_age": 18,
+"max_age": 19,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 저소득 법정한부모가족 고3학년 재학생(디딤씨앗 및 희망키움통장 등 자산형성지원사업 중복 참여 가구 제외)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 19,
+"JA0201": "Y",
+"JA0319": "Y",
+"JA0403": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 142,
+"id": "e5e668d7-8b57-4097-8322-479a36539b3d",
+"source_type": "gov_benefits",
+"title": "저소득층 아동 체험행사",
+"summary": "관내 저소득층 아동을 대상으로 다양한 체험행사 실시",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○「국민기초생활보장법」에 의한 국민기초생활보장 수급자 및 차상위 계층 가정의 아동(만 6~18세 미만)\r\n\r\n○「한부모복지법」에 의한 저소득 한부모 가정의 아동(만 6~18세 미만)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 6,
+"JA0111": 18,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 143,
+"id": "846bbcb0-f053-4c44-b3bb-aa5272df363f",
+"source_type": "gov_benefits",
+"title": "이주배경학생 진로·직업체험 프로그램",
+"summary": "이주배경학생 대상으로 진로체험 프로그램 지원(8회 40차시)",
+"min_age": 12,
+"max_age": 19,
+"curated_youth": false,
+"raw": {
+"지원대상": "진로체험 프로그램을 희망하는 이주배경 중, 고등학생  50명",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 12,
+"JA0111": 19,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 144,
+"id": "592a8b45-7e26-4fa3-a400-4ada0ab349f6",
+"source_type": "gov_benefits",
+"title": "초·중·고 학생 교육비 지원",
+"summary": "취약계층 학생 대상 학비, 급식비 및 인터넷 통신비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 저소득층 수급 자격자(기초, 한부모, 법정 차상위)인 학생\r\n\r\n○ 가구의 소득인정액이 지원 기준에 해당하는 학생\r\n - 방과후학교자유수강권지원 기준 중위소득 80%\r\n - 인터넷통신비지원 기준 중위소득 60%\r\n\r\n○ 각 학교별 학교장 추천이 결정된 학생\r\n - 고교 학비, 방과후학교자유수강권 지원\r\n\r\n○ 법무부장관이 추천한 난민인정자, 특별기여자 또는 그 자녀인 학생",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 145,
+"id": "71f9e7eb-ba3b-41b9-9a60-f2514580c0f3",
+"source_type": "gov_benefits",
+"title": "가정위탁보호아동 지원",
+"summary": "가정위탁보호아동에게 양육보조금 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 가정위탁보호아동",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 17,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 146,
+"id": "5016f09f-d6b1-4ce4-9f25-84d3381e7d46",
+"source_type": "gov_benefits",
+"title": "취약계층 아동통합서비스 지원(드림스타트)",
+"summary": "12세 이하 취약계층 아동 및 가족에게 가정방문 및 상담, 맞춤형 서비스 지원 및 연계",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ (지원 대상) 0세(임산부)～12세(초등학생 이하)의 취약계층* 아동 및 가족(12세 이상 아동 중 초등학교 재학 아동 포함)\r\n * 국민기초생활보장 수급자 및 차상위계층 등 가구의 0~12세 이하 아동 및 가족",
+"선정기준": "○ (선정 기준) 사업지역에 거주하는 해당 연령 아동과 그 가족, 임산부(0세)를 대상으로 양육환경 및 발달 상태에 대한 사정을 통해 개입이 필요한 아동을 서비스 대상 아동으로 선정",
+"사용자구분": "개인||가구",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 12,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "B",
+"note": "드림스타트: pregnant women and families too (borderline)",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 147,
+"id": "ef09f4c4-f616-43c5-93c5-480015292eec",
+"source_type": "gov_benefits",
+"title": "영유아보육료 지원",
+"summary": "소득수준에 관계없이 0~5세 아동에게 보육료 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "0세에서 5세 아동의 연령기준(26년 1월~'26년 12월까지 적용)\r\n\r\nㅇ 0세 : '25. 1. 1 이후 출생 아동\r\nㅇ 1세 : '24. 1. 1 ~ '24. 12. 31까지의 출생아동\r\nㅇ 2세 : '23. 1. 1 ~ '23. 12. 31까지의 출생아동\r\nㅇ 3세 : '22. 1. 1 ~ '22. 12. 31까지의 출생아동\r\nㅇ 4세 : '21. 1. 1 ~ '21. 12. 31까지의 출생아동\r\nㅇ 5세 : '20. 1. 1 ~ '20. 12. 31까지의 출생아동 (취학유예아동인 경우 '19. 1. 1. ~ '19. 12. 31)\r\nㅇ 취학아동(방과후 보육료) : '19. 1. ~ '13. 12. 31까지의 출생아동\r\n\r\n\r\n※ \"유아교육법\" 제24조 및 동법 시행령 제29조에 따라 유치원과 어린이집 등에서 누리과정을 제공받은 유아에 대한 무상보육 기간은 3년을 초과할수 없음.",
+"선정기준": "0세에서 5세 아동의 연령기준(26년 1월~'26년 12월까지 적용)\r\n\r\nㅇ 0세 : '25. 1. 1 이후 출생 아동\r\nㅇ 1세 : '24. 1. 1 ~ '24. 12. 31까지의 출생아동\r\nㅇ 2세 : '23. 1. 1 ~ '23. 12. 31까지의 출생아동\r\nㅇ 3세 : '22. 1. 1 ~ '22. 12. 31까지의 출생아동\r\nㅇ 4세 : '21. 1. 1 ~ '21. 12. 31까지의 출생아동\r\nㅇ 5세 : '20. 1. 1 ~ '20. 12. 31까지의 출생아동 (취학유예아동인 경우 '19. 1. 1. ~ '19. 12",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 5,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0322": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 148,
+"id": "cb26f4fb-37cc-4fb2-badb-021ff989007e",
+"source_type": "gov_benefits",
+"title": "초·중·고·특수 저소득층 현장체험학습비 지원",
+"summary": "초·중·고·특수학교 저소득층 학생에게 현장체험학습비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "- 국민기초생활수급자, 법정차상위대상자, 한부모가족보호대상자\r\n - 특수교육대상자\r\n - 중위소득 80% 이하\r\n - 학교장 추천 학생(체험학습비 지원 대상의 10% 미만)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 149,
+"id": "d4f6c3c4-201b-436e-a26d-121448f1076f",
+"source_type": "gov_benefits",
+"title": "아동 의료비 지원",
+"summary": "18세 미만 아동에게 의료비 본인부담분(필수 비급여) 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 성남시에 주민등록을 두고 실제 거주하는 18세 미만 아동",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 17,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 150,
+"id": "83140178-a637-4e67-b524-d0375e5bc15f",
+"source_type": "gov_benefits",
+"title": "저소득층 유아학비 추가 지원",
+"summary": "사립유치원 다니는 저소득층 유아에게 추가 학비 지원(월 최대 20만원)",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "유아학비 지원 자격이 있는 사립유치원 재원 법정저소득층 유아",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 3,
+"JA0111": 5,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 151,
+"id": "e1cb55a8-a951-4b28-a6b7-74d1354cdf6f",
+"source_type": "gov_benefits",
+"title": "거제시 유치원생 및 초등학생 입학축하금 지원",
+"summary": "거제시에 주소를 두고 유치원 및 초등학교에 최초 입학하는 아동의 가정에 입학축하금 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "입학일 기준 거제시에 주소를 두고 유치원 및 초등학교에 최초 입학하는 학생",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 8,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0322": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 152,
+"id": "3afb8bfe-e16c-4665-8d38-5de12b170499",
+"source_type": "gov_benefits",
+"title": "가정위탁아동 지원",
+"summary": "가정위탁아동을 위해 심리치료비, 양육보조금 등 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 가정위탁 아동으로 책정된 아동(만18세 미만, 보호연장 가능)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 17,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 153,
+"id": "805904c2-7073-4047-9839-dec7c6b68e80",
+"source_type": "gov_benefits",
+"title": "기초학력 학습지원",
+"summary": "수급자 가정 중학생 자녀에게 장학금 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 전주시 관내 거주 수급자 가정 중학생(2~3학년) 자녀",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 12,
+"JA0111": 15,
+"JA0201": "Y",
+"JA0318": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 154,
+"id": "4a4a16be-6a57-4d02-83eb-12ea6a1a20da",
+"source_type": "gov_benefits",
+"title": "초등학교 무상 우유급식 지원",
+"summary": "충청남도 최초 공주시 관내 초등학교 무상우유 급식 시행",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 공주시 관내 초등학교에 재학중인 학생",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 7,
+"JA0111": 12,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 155,
+"id": "594ab746-0e22-4eed-aba7-1855540f6471",
+"source_type": "gov_benefits",
+"title": "양천형 밤샘 긴급돌봄 어린이집 운영",
+"summary": "야간에도 긴급하게  보육수요 발생시 공백 없는 보육서비스 제공",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "양천구 거주 12개월 ~ 6세 미만 영유아",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 1,
+"JA0111": 6,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0322": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 156,
+"id": "f3277e57-8134-40a7-b9ad-e0834aac8b20",
+"source_type": "gov_benefits",
+"title": "군포시 초등학교 입학축하금 지원",
+"summary": " 입학일로부터 신청일 현재까지 군포시에 거주하는 초등 1학년 신입생 입학축하금 지급",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "입학일(3. 3.)부터 신청일까지 군포시에 주민등록(외국인은 체류지등록)을 둔 초등학교 1학년 입학생(초‧중등교육법 상 학교 및 이와 유사한 초등교육시설, 외국인등록자 포함)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 6,
+"JA0111": 13,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 157,
+"id": "1e8a5cb7-bed7-4e7c-afd9-d1b3d08c80e8",
+"source_type": "gov_benefits",
+"title": "공주시한마음장학회 이통장자녀 장학생 선발",
+"summary": "이통장자녀 학생에게 장학금 지급",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 이통장자녀장학생",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4a"
+}
+},
+{
+"n": 158,
+"id": "e30a6269-9482-473a-b65c-d86d733d01c3",
+"source_type": "gov_benefits",
+"title": "어린이집 입학축하금 지원",
+"summary": "어린이집 입학 영유아를 위해 입학축하금 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 동구에 주민등록을 두고 실제 거주하고 있는 어린이집 입학 영유아",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 5,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 159,
+"id": "e5b88dc3-de7d-4d45-a130-44e2bee9b2c6",
+"source_type": "gov_benefits",
+"title": "법정저소득층아동 어린이집 입학준비금 지원",
+"summary": "법정 저소득층 어린이집 이용아동의 입학준비금 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 법정 저소득층 관내 어린이집 이용 아동\r\n\r\n□ 법정 저소득층 아동\r\n - 국민기초생활보장법 제7조제1항제1호 생계급여 및 제3호 의료급여수급권자 및 그 가구원     (제14조의2에 따른 의료급여 또는 자활급여 특례수급권자 포함)\r\n - 「한부모가족지원법」에 따른 보호대상자로 선정된 한부모 가정 아동\r\n - 아동복지법 제52조에 의한 아동복지시설에서 생활 중인 3~5세 아동\r\n - 여성폭력피해자 보호시설(가정, 성폭력), 성매매피해자 지원시설에 입소한 여성의 동반     자녀(재소 증빙서 징구 필요)\r\n - 모․부자(일시)보호시설 등에 입소한 자의 동반자녀 등\r\n - 미혼모자 공동생활 가정에 입소한 자의 동반 자녀(재소 증빙서 징구 필요)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 3,
+"JA0111": 5,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "child_only",
+"rule": "S4b"
+}
+},
+{
+"n": 160,
+"id": "61d03058-a1f9-4b71-821e-a3e671b510be",
+"source_type": "gov_benefits",
+"title": "시흥시 청각장애인 재활치료",
+"summary": "인공달팽이관수술을 받은 청각장애인에게 3년간 재활치료비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "「경기도 청각장애인 인공달팽이관 수술 및 재활지원사업」을 통해 인공달팽이관 수술지원을 받은 청각장애인",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 161,
+"id": "e29ca9af-ce71-46db-bdc1-737f710d4536",
+"source_type": "gov_benefits",
+"title": "장애인활동지원(서울시추가지원)",
+"summary": "국고 활동 지원이 부족한 장애인에게 활동지원급여 추가 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "장애인활동지원 대상자 중 종합조사 기능제한(X1) 점수 300점(아동260점) 이상인 와상 또는 사지마비 중증장애인, 발달장애인 독거가구(X1 360점 이상), 시설퇴소자",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 162,
+"id": "e6460a75-63ab-4332-ae7b-5d3f9bc3da37",
+"source_type": "gov_benefits",
+"title": "교통약자 이동지원",
+"summary": "장애인, 어르신 등 교통약자에게 장애인 택시 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 경기도 특별교통수단 \r\n\r\n- 장애의정도가 심한 장애인(보행상 중증 장애한정)\r\n\r\n- 일시적 휠체어 이용자(종합병원 이상의 의학적 진단서 제출)\r\n\r\n- 교통약자를 동반하는 가족 또는 보호자(동승)\r\n\r\n○ 대체수단( 바우처택시)\r\n\r\n- 보행상 중증 장애인 비휠체어 이용자(심한장애)\r\n\r\n- 시흥시 조례로 정한 교통약자\r\n  : 요양인정 1~2등급(요양인정서제출)  \r\n  : 병원목적의 안정기임산부 (산모수첩제출)\r\n\r\n- 교통약자를 동반하는 가족 또는 보호자(동승)",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "fit",
+"rule": null
+}
+},
+{
+"n": 163,
+"id": "e38b6815-27fc-4510-89e9-330d509bea64",
+"source_type": "gov_benefits",
+"title": "저소득층 국민건강보험료 지원",
+"summary": "저소득층 노인 및 장애인 세대에게 건강보험료 전액 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 국민건강보험 지역가입자로서 월별 보험료 하한액을 납부하는 노인 및 장애인 세대",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D2"
+}
+},
+{
+"n": 164,
+"id": "cf720a57-1ef9-4a77-b429-9050974a177e",
+"source_type": "gov_benefits",
+"title": "여성장애인 출산비용 지원",
+"summary": "26년 1월1일 출산(유산,사산포함) 시 태아 1인기준 120만원 지원",
+"min_age": 15,
+"max_age": 49,
+"curated_youth": false,
+"raw": {
+"지원대상": "* 장애인복지법 제32조에 따른 등록 여성장애인(외국인 등록장애인 포함)\r\n* 2026년 1월1일 출산한 자 또는 임신기간 4개월 이상의 태아를 유산,사산한 자",
+"사용자구분": "개인",
+"서비스분야": "임신·출산",
+"supportConditions": {
+"JA0102": "Y",
+"JA0110": 15,
+"JA0111": 49,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0303": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 165,
+"id": "76f3b043-c142-4471-8542-72e6351a08ab",
+"source_type": "gov_benefits",
+"title": "차상위계층(노인) 장기요양보험료 지원",
+"summary": " 차상위계층(노인, 장애인세대) 중 10,000원 이하 건강보험료 대상에게 건강보험료 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "차상위계층(노인, 장애인세대) 중 10,000원 이하 건강보험료 대상에게 건강보험료 비용 지원",
+"사용자구분": "개인||가구",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D2"
+}
+},
+{
+"n": 166,
+"id": "73f35c74-25a9-41f5-9c9c-881eed264e98",
+"source_type": "gov_benefits",
+"title": "장애인 온라인 직업심리검사",
+"summary": "직업심리검사 10종에 대한 온라인 검사 제공",
+"min_age": 18,
+"max_age": 64,
+"curated_youth": false,
+"raw": {
+"지원대상": "「장애인복지법」에 의한 장애인복지카드를 소지한 사람",
+"사용자구분": "개인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 64,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 167,
+"id": "17f99592-0423-4744-af78-1e7072bba530",
+"source_type": "gov_benefits",
+"title": "발달장애인 생활일자리",
+"summary": "발달장애인 일자리 참여기회 제공 및 발달장애인 직무 지도원 파견",
+"min_age": 18,
+"max_age": 65,
+"curated_youth": false,
+"raw": {
+"지원대상": "- 발달장애인 : 안양시 거주 중인 18세 이상 지적, 자폐성 등록 장애인으로 일자리 사업 수행이 가능한 자\r\n\r\n- 직무지도원 : 지방공무원법 제31조에 의거 결격사유에 해당하지 않는 자",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 18,
+"JA0111": 65,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 168,
+"id": "55b749bf-9fcf-4234-b03f-d49b8f30cf22",
+"source_type": "gov_benefits",
+"title": "장애인활동보조서비스지원(경상북도 추가지원)",
+"summary": "활동보조, 방문목욕 등을 이용할 수 있는 이용권(바우처) 제공",
+"min_age": 6,
+"max_age": 65,
+"curated_youth": false,
+"raw": {
+"지원대상": "○만 6세 이상부터 만 65세 미만의 「장애인복지법」상 등록 장애인\r\n ※연령은 신청일 기준으로 판정하고, 수급자로 선정 후 65세 도래 시 해당 월의 다음 달까지 수급자격 유지\r\n - 소득과 무관하게 신청 가능\r\n\r\n○다만, 활동지원급여 수급자였다가 만 65세 이후 「노인장기요양보험법」에 따른 장기요양급여를 신청하여 받지 못하게 된 사람(장기요양급여 등급외)으로서 장애 특성상 활동지원급여가 적절하다고 판단되어 활동지원급여를 희망하는 경우 예외적으로 신청 가능\r\n\r\n○65세 미만으로 활동지원급여 수급자 또는 수급자였던 사람이 장기요양급여 수급자가 되었으나 장기요양급여 인정등급을 포기한 경우에는 65세 미만인 경우에 한하여 예외적으로 활동지원급여 신청이 가능하며, 서비스 지원 종합조사 및 수급자격심의위원회 심의를 통해 수급자격 인정 여부 결정\r\n  ※다만, 활동지원급여 수급자로 최초 결정되기 전에 장기요양급여 판정 이력이 존재할 경우 신청불가.",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 6,
+"JA0111": 65,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0410": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 169,
+"id": "18e16d37-816e-4113-81fa-7ccb247233bd",
+"source_type": "gov_benefits",
+"title": "인천형 장애인 가족돌봄 휴식지원",
+"summary": "장애인 및 가족에게 개별가족여행비 또는 단체여행프로그램 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 인천시 등록장애인 및 가족",
+"사용자구분": "가구",
+"서비스분야": "문화·환경",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 170,
+"id": "82978a52-938a-4d7a-be59-abeddd8526d6",
+"source_type": "gov_benefits",
+"title": "장애 체육인 생활지원금 지원",
+"summary": "생활이 어려운 장애국가대표선수 및 지도자에게 생활보조비 지원",
+"min_age": 19,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "전·현직 장애 국가대표 선수, 지도자 중 <국민기초생활보장법>에 따른 수급자 등 경제적으로 어려운 자",
+"선정기준": "예산 범위 내에서 규정 요건에 적합한 사람 중 소득 수준이 낮은 순으로 선정",
+"사용자구분": "개인",
+"서비스분야": "문화·환경",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 171,
+"id": "3daf33d5-1c5a-4822-bd30-29484d8e84d7",
+"source_type": "gov_benefits",
+"title": "장애인 휠체어 수리비용 지원",
+"summary": "중구 관내 주민등록을 둔 전동보장구 이용 장애인들을 대상으로 수리비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 중구 관내 주민등록을 둔 일반휠체어, 전동휠체어, 전동스쿠터 이용 장애인",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 172,
+"id": "56669094-f5f3-4614-826b-7021b39e5151",
+"source_type": "gov_benefits",
+"title": "중증장애인 활동보조 지원",
+"summary": "장애인활동지원 대상자 중에서 활동보조 서비스 추가 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 장애인활동지원 추가지원 필요자 \r\n - 직전 3개월의 국비지원시간 사용률 90% 미만일 경우 선정 제외\r\n - 기존 대상자 재선정 시, 총 생성액 대비 사용률이 70% 미만일 경우 선정 제외\r\n - 기존 시비지원대상자 중 사용률 70%미만인 대상자, 국비대상자 중 사용률 90%미만인 자를 선정 할 경우에는 반드시 수급자격심의위원회의 심의를 통해 선정의 공정성 확보",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 173,
+"id": "ed1481f0-f716-4154-9e5c-6e2a1cd9bda1",
+"source_type": "gov_benefits",
+"title": "시설보호 장애인 입원간호비 지원",
+"summary": "시설거주 장애인에게 입원간호비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 시설장애인 중 입소 장애인(실비입소자 제외)",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 174,
+"id": "0babc1da-bd22-4a11-82d2-1f506a9cb098",
+"source_type": "gov_benefits",
+"title": "중증장애인 자립생활가정(주택) 지원",
+"summary": "자립을 희망하는 장애인에게 임시 주거공간 및 자립생활 기술교육, 역량강화, 동료상담  지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "자립을 희망하는 시설 퇴소예정 장애인 또는 재가 중증장애인",
+"사용자구분": "개인",
+"서비스분야": "주거·자립",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 175,
+"id": "0fc97a04-c0c2-4dcd-b061-a536e5c5f93e",
+"source_type": "gov_benefits",
+"title": "장애인 무료식당 운영 지원",
+"summary": "저소득 장애인에게 무료급식 제공",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 기초생활수급 장애인",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 176,
+"id": "7c086126-49f4-440d-b090-aa9531684754",
+"source_type": "gov_benefits",
+"title": "여성장애인 가사도우미 지원",
+"summary": "‐ 여상장애인의 임신·출산, 자녀양육 및 가사지원을 위한 도우미 파견",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 전남광주통합특별시에 거주하는 장애인복지법상 등록 여성장애인\r\n- 임신·출산 또는 9세미만 자녀 양육중인 여성장애인\r\n- 가족 등 지원체계가 없는 중증 여성장애인",
+"사용자구분": "개인",
+"서비스분야": "임신·출산",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "fit",
+"rule": null
+}
+},
+{
+"n": 177,
+"id": "ced4f2e4-7fab-4d53-8bb7-f6c93dc33074",
+"source_type": "gov_benefits",
+"title": "장애인 비급여 의료비 지원",
+"summary": "등록장애인 중 의료급여 수급자에게 비급여 의료비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 관내 등록 장애인 중 의료급여 수급자에 의료급여 지원액 제외한 본인부담금 중 추가 급여액(정액) 지원",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 178,
+"id": "7c610344-f271-4f2e-a932-bf35d9a4f075",
+"source_type": "gov_benefits",
+"title": "저소득주민 국민건강보험료 지원",
+"summary": "65세 이상, 한부모 가정, 등록 장애인 및 만성질환자가 있는 세대의 건강보험료 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 서울특별시 동작구에 주민등록을 둔 국민건강보험공단 동작지사의 지역가입자로 보험료 부과 금액이 최저보험료 이하인 저소득주민 중 65세 이상, 한부모, 등록 장애인, 만성질환자 중 어느 하나에 해당하는 세대",
+"사용자구분": "개인||가구",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "W",
+"note": "저소득주민 국민건강보험료: 65+, 한부모, 장애인 or 만성질환자 households",
+"reference": {
+"verdict": "fit",
+"rule": null
+}
+},
+{
+"n": 179,
+"id": "008f3f65-87a6-450e-beb7-c3203597e648",
+"source_type": "gov_benefits",
+"title": "저소득 취약계층 국민건강보험료 지원",
+"summary": "저소득 노인, 장애인 세대 등에게 건강보험료 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 독거노인, 한부모, 장애인 세대 중 지역건강보험가입자로 매월보험료 산정금액이 최저보험료 이하인 세대",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "W",
+"note": "저소득 취약계층 건강보험료: 독거노인, 한부모 or 장애인 households",
+"reference": {
+"verdict": "fit",
+"rule": null
+}
+},
+{
+"n": 180,
+"id": "38393262-90e9-4592-a154-74ea73ea3997",
+"source_type": "gov_benefits",
+"title": "장애인 주택주거용 편의시설 설치지원",
+"summary": "장애인을 위해 주거용 편의시설 개선 소요비용을 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 「장애인복지법 」제2조에 해당하는 등록장애인 중 자로서 가구의 소득이 전년도 도시근로자 가구당 월평균소득액 이하인 자",
+"선정기준": "지원대상과 동일\r\n\r\n○ 중복수혜불가 조건\r\n - 지자체 등에서 지원을 받고 3년이 경과하지 아니한 자 또는 금융기관 등에 주택개조 비용융자를 추천하여 개조지원을 받은 자\r\n\r\n -  수급자의 수선유지급여, 유사한 주거환경 등과 관련된 개선사업 지원을 받은 자. 다만, 지원내용이 중복되지 않은 경우 지원 가능\r\n   *  타 법령에 의한 주택개선사업 등 수혜자도 지원내용이 중복되지 않으면 지원 가능",
+"사용자구분": "개인",
+"서비스분야": "주거·자립",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 181,
+"id": "4aae289d-a344-42f7-a08a-ca8c0f34418d",
+"source_type": "gov_benefits",
+"title": "장애인 휠체어 등 수리비 지원",
+"summary": "장애인에게 휠체어 및 전동 스쿠터 수리 비용 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 여수시에 주민등록을 두고 실제 거주하는 장애인",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 182,
+"id": "e38b59cc-a8ee-44a4-b20f-905d6d053df3",
+"source_type": "gov_benefits",
+"title": "중증장애인 부모세대자녀의 학원교육비 지원",
+"summary": "중증장애인의 자녀에게 사설 학원교육비 지원",
+"min_age": 6,
+"max_age": 19,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 남양주시에 주소를 두고 아래 조건을 모두 충족하는 대상자\r\n - 국민기초생활, 차상위계층\r\n - 부 또는 모가 장애의 정도가 심한 등록장애인\r\n - 학령기(초등학생 ~ 고등학교)",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 6,
+"JA0111": 19,
+"JA0201": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 183,
+"id": "9583fef2-c121-460d-bcd9-ad7caabcb4af",
+"source_type": "gov_benefits",
+"title": "의왕시 상하수도 요금 감면(장애인)",
+"summary": "○ 상·하수도 요금 감면 : 장애인",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 장애인복지법에 따른 장애정도가 심한 장애인 세대 (구: 장애등급 1급 ~ 3급에 해당되는 장애인 세대)",
+"사용자구분": "개인||가구",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 184,
+"id": "b5dd0965-6173-466d-a546-02614bdac06f",
+"source_type": "gov_benefits",
+"title": "저소득장애인 보장구 수리비 지원",
+"summary": "장애인에게 보장구 수리비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 화성시에 6개월 이상 거주해 온 등록장애인 중 국민기초생활보장수급자, 차상위계층, 가구건겅보험료 본인부담금 합산액이 기준중위소득 80% 이하인 자",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 185,
+"id": "6b373bcc-6a38-40b5-aa1f-1317acc48505",
+"source_type": "gov_benefits",
+"title": "특수교육대상자 방과후교육활동비 지원(대전동부)",
+"summary": "특수교육대상자에게 월 12만원 이내 방과후교육활동비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 지원대상\r\n    - 특수학교 및 유·초·중·고등학교의 특수교육대상자(단, 사립유치원 제외)\r\n○ 지원제외\r\n    - 사립유치원 특수교육대상자\r\n    - 특수학교(급) 방과후 프로그램에 참여하는 학생\r\n    - 유아교육비 중 방과후과정 및 방과후학급 지원자\r\n    - 치료지원 영역인 물리치료, 작업치료, 언어치료와 중복 지원 불가(단, 치료지원으로 언어치료를 받지 않을 경우 방과후교육활동비로 지원 가능)\r\n    - 보건복지부 발달재활서비스 전자바우처 지원과 중복된 특수교육 관련 서비스 영역\r\n    - 보건복지부 발달재활서비스 전자바우처 승인 기관이 아닌 사설기관 치료실 및 무허가 치료실에서의 치료활동",
+"사용자구분": "개인",
+"서비스분야": "보육·교육",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 18,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 186,
+"id": "72e73aea-d449-47a1-9e2c-8098b8adefab",
+"source_type": "gov_benefits",
+"title": "저소득세대 국민건강보험료 등 지원",
+"summary": "저소득 노인, 장애인 세대 등에게 국민건강보험료 및 장기요양보험료 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 국민건강보험공단 예산군 지역가입자이며 최저 건강보험료 부과세대로서 다음 각 호에 해당하는 자 (1. 노인세대, 2. 장애인세대, 3. 한부모 가족세대, 4. 국가유공자 세대, 5. 18세 미만의 아동으로 구성된 세대, 6. 중증질환 등록세대)",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "W",
+"note": "저소득세대 건강보험료: 노인, 장애인, 한부모, 유공자 or 아동 households",
+"reference": {
+"verdict": "fit",
+"rule": null
+}
+},
+{
+"n": 187,
+"id": "22f777b5-074f-4448-b7af-4aa3e27d5f83",
+"source_type": "gov_benefits",
+"title": "꿈나무종합타운 프로그램 할인(장애인)",
+"summary": "장애인에게 꿈나무종합타운 프로그램 이용요금 50%감면",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "장애인 복지카드 소지자",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 188,
+"id": "d7421321-6439-48f6-a088-b4a9a7e6d0b7",
+"source_type": "gov_benefits",
+"title": "노인 보청기 지원",
+"summary": "나주시 거주 65세 이상 노인 보청기 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 나주시에 주민등록상 주소를 1년이상 두고 거주하고 있는 만 65세 이상인 사람\r\n○ 국민기초생활 보장법 또는 기초연금법에 따른 수급자\r\n○ 한 귀의 청력손실이 40데시벨 이상 80데시벨 미만이고, 다른 귀의 청력손실이 40데시벨 이상 60데시벨 미만으로 이비인후과 전문의의 난청진단을 받은 사람\r\n * 위의 조건 모두 충족 한 경우 보청기 구입비(최대 117.9만원) 지원",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D2"
+}
+},
+{
+"n": 189,
+"id": "4375f481-4b6f-4f0f-91ad-80c3246a568d",
+"source_type": "gov_benefits",
+"title": "장난감나라",
+"summary": "관내 영유아 가정에 연간 회원제로 장난감 및 도서 대여 서비스와 자유놀이실 운영\r\n",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 장난감나라 연회비 면제\r\n  - 기초생활수급자, 장애영유아가정, 2자녀이상, 한부모, 다문화(외국인),국가유공자(유족)\r\n○ 찾아가는 장난감 붕붕이 이용요금 면제\r\n  - 기초생활수급자, 장애영유아, 2자녀이상(둘째임신부포함),한부모, 다문화(외국인),국가유공자(유족)\r\n    면제대상 월2회 배송료면제 (3회째부터 배송료 부담후 추가이용가능",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 5,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "W",
+"note": "장난감나라: families with infants (2자녀, 한부모, ...), not only disabled",
+"reference": {
+"verdict": "fit",
+"rule": null
+}
+},
+{
+"n": 190,
+"id": "9b6912c3-f58b-4aa2-972f-cc353c6fba0f",
+"source_type": "gov_benefits",
+"title": "장애인 생활안정 지원",
+"summary": "장애인에게 교통비, 인공달팽이관 재활치료 등 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 교통비 : 생계·의료급여 수급자 중 중증(장애인 연금법상) 재가 장애인\r\n\r\n○ 목욕료 및 이미용료 : 생계·의료급여 수급자 중 재가 등록장애인\r\n\r\n○ 청각장애인 인공달팽이관 재활치료 지원 : 경기도, (사)사랑의 달팽이, 아주대학교 의료원의 협약에 따른 청각장애인 인공달팽이관 수술비 지원 대상자",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 191,
+"id": "de5c8ffe-dbb9-4dac-8930-f04acdd7644c",
+"source_type": "gov_benefits",
+"title": "보조공학기기 지원",
+"summary": "ㅇ 장애인 1인당 1,500만원(중증 2,000만원 지원)\r\n",
+"min_age": 19,
+"max_age": 64,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 장애인을 고용하거나 고용하려는 사업주, 장애인인 사업주(4인 이하 규모의 1인 장애인 사업주 제외), 장애인 근로자, 장애인 공무원",
+"선정기준": "○ 장애인을 고용하거나 고용하려는 사업주, 장애인인 사업주(4인 이하 규모의 1인 장애인 사업주 제외), 장애인 근로자, 장애인 공무원",
+"사용자구분": "개인||법인/시설/단체",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 19,
+"JA0111": 64,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y",
+"JA2101": "Y",
+"JA2201": "Y",
+"JA2202": "Y",
+"JA2203": "Y",
+"JA2299": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 192,
+"id": "d9afbc06-4019-46ad-be0f-49daff30fdab",
+"source_type": "gov_benefits",
+"title": "저소득 재가노인 식사배달",
+"summary": "저소득 독거노인, 장애인 등에게 밑반찬 배달 지원",
+"min_age": 65,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 독거노인, 장애인, 소녀소년, 부자가정",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 65,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0301": "Y",
+"JA0302": "Y",
+"JA0303": "Y",
+"JA0313": "Y",
+"JA0314": "Y",
+"JA0315": "Y",
+"JA0316": "Y",
+"JA0317": "Y",
+"JA0318": "Y",
+"JA0319": "Y",
+"JA0320": "Y",
+"JA0322": "Y",
+"JA0326": "Y",
+"JA0327": "Y",
+"JA0328": "Y",
+"JA0329": "Y",
+"JA0330": "Y",
+"JA0404": "Y"
+}
+},
+"label": "B",
+"note": "저소득 재가노인 식사배달: 소년소녀가장, 부자가정 too (borderline)",
+"reference": {
+"verdict": "fit",
+"rule": null
+}
+},
+{
+"n": 193,
+"id": "d72360bd-3533-4a32-88ae-9458ff774541",
+"source_type": "gov_benefits",
+"title": "[사회복지]장애인 활동지원(추가)",
+"summary": "장애인 활동지원 서비스 이용권 추가 제공(가구특성별, 사회참여별 유형에 따라 차등지원)",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 장애인활동지원 사업 및 장애인도우미지원 대상자(독거 및 준독거에 한함) 중 3개월 이상 서비스 시간을 모두 소진하고도 서비스 시간이 부족한 자에게 바우처 제공",
+"사용자구분": "개인",
+"서비스분야": "보호·돌봄",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 194,
+"id": "7e3d26b5-4bb1-44cd-99d6-e0cddeed0f69",
+"source_type": "gov_benefits",
+"title": "정신질환자 취업자립촉진비 지원",
+"summary": "취업을 3개월 이상 유지한 정신질환자에게 취업자립촉진비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "- 정신건강복지센터, 중독관리통합지원센터에 등록된 자\r\n- 해당년도 기준 중위 소득 150%이하인 자\r\n- 정신장애인 등급을 받은자, 조현병, 분열 및 망상장애,기분장애를 가진 정신질환자",
+"사용자구분": "개인",
+"서비스분야": "고용·창업",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "B",
+"note": "정신질환자 취업자립촉진비: registered mental-health clients, not only disabled (borderline)",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 195,
+"id": "e500f54f-fd9f-41ef-b9db-0a69a2024e9e",
+"source_type": "gov_benefits",
+"title": "장애인 치과치료비 지원",
+"summary": "관내 장애인 대상 치아우식증 및 치주치료 비용 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 영월군 등록장애인 중\r\n - 국민기초생활보장 수급자\r\n - 기준중위소득 80%이하인 자",
+"사용자구분": "개인",
+"서비스분야": "보건·의료",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 196,
+"id": "d1f682fa-c13a-48b4-9b29-d3b76376b8ff",
+"source_type": "gov_benefits",
+"title": "장애인 교통비 지급",
+"summary": "정도가 심한 장애인에게 교통비 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 정도가 심한 장애인",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 197,
+"id": "1e4b1c75-3170-4584-bd06-a3bb55f7282a",
+"source_type": "gov_benefits",
+"title": "장애인 무료급식 지원",
+"summary": "저소득 장애인 무료급식(식당,배달 등)서비스 제공",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 장애인 복지관 이용자 및 장애인 복지관 사례 관리자 중 결식이 우려되는 저소득(기초생활수급자, 차상위계층) 장애인",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 198,
+"id": "4d58f718-3bd3-433c-808e-6d33b02bcfbb",
+"source_type": "gov_benefits",
+"title": "팔복예술공장 대관 감면",
+"summary": "비영리목적으로 국가 또는 시에서 후원하는 문화예술단체의 공연 및 전시 50% 감면\r\n",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○  비영리목적으로 국가 또는 시에서 후원하는 문화예술단체의 공연 및 전시  50% 감면\r\n○ 전주시 장애인 문화예술 활동 지원 조례 제2호 또는 제3호에 해당하는 자의 공연 및 전시 등 50% 감면",
+"사용자구분": "개인",
+"서비스분야": "문화·환경",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "B",
+"note": "팔복예술공장 대관 감면: arts organisations too (borderline)",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+},
+{
+"n": 199,
+"id": "6deccbde-d7e3-414b-bae2-5f609a4bee26",
+"source_type": "gov_benefits",
+"title": "장애인 휠체어 수리 지원",
+"summary": "장애인을 대상으로 휠체어 수리 지원",
+"min_age": null,
+"max_age": null,
+"curated_youth": false,
+"raw": {
+"지원대상": "○ 용산구 거주 이동기구(수동휠체어, 전동휠체어, 스쿠터) 이용 장애인\r\n - 「국민기초생활 보장법」에 따른 수급자와 차상위계층에 해당하는 장애인 : 연간 30만원 이내\r\n - 일반 장애인 : 연간 20만원 이내",
+"사용자구분": "개인",
+"서비스분야": "생활안정",
+"supportConditions": {
+"JA0101": "Y",
+"JA0102": "Y",
+"JA0110": 0,
+"JA0111": 120,
+"JA0201": "Y",
+"JA0202": "Y",
+"JA0203": "Y",
+"JA0204": "Y",
+"JA0205": "Y",
+"JA0328": "Y",
+"JA0401": "Y",
+"JA0402": "Y",
+"JA0403": "Y",
+"JA0404": "Y",
+"JA0410": "Y",
+"JA0411": "Y",
+"JA0412": "Y",
+"JA0413": "Y",
+"JA0414": "Y"
+}
+},
+"label": "R",
+"note": "",
+"reference": {
+"verdict": "disability_only",
+"rule": "D1"
+}
+}
+]
+}

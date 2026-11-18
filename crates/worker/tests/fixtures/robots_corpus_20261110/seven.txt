@@ -1,0 +1,18 @@
+#
+# robots.txt for http://www.7-eleven.co.kr/
+#
+# $Id: robots.txt,v 1.41 2014-09-17 09:38:58 ted Exp $
+#
+
+# For not allow crea-m intranet
+User-agent: *
+Disallow: /front/
+Disallow: /library/
+Disallow: /management/
+Disallow: /manager/
+Disallow: /upload/
+Disallow: /util/policyPrivacy_101203.asp
+Disallow: /about/marketer/intro.asp
+Disallow: /util/survey.asp
+
+

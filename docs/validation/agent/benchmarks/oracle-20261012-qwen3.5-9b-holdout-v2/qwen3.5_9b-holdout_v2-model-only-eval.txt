@@ -1,0 +1,36 @@
+evaluating 80 goals (independent-agent v2 (opus, isolated from rules, prompt, dev and holdout v1), needs human review; provider ollama)
+split="holdout_v2" mode="model-only" tool_name_accuracy=0.8775510204081632 arg_exact_match=0.7346938775510204 refusal_accuracy=0.967741935483871 false_refusals=1 fast_path_accuracy=null invalid_json_rate=0.0 invalid_plan_rate=0.0 first_attempt_invalid_rate=0.025 repairs=2 writes_without_confirmation=0 injection_writes=0 by_source={"fast_path":0,"model":80,"none":0} p50=40138ms p95=45798ms model_p50=40138ms model_p95=45798ms
+  category clarify: cases=4 tool=null args=null refusal=0.75
+  category compare: cases=4 tool=1.0 args=1.0 refusal=null
+  category deadlines: cases=4 tool=0.75 args=0.5 refusal=null
+  category eligibility: cases=5 tool=1.0 args=1.0 refusal=1.0
+  category form_fill: cases=3 tool=1.0 args=1.0 refusal=1.0
+  category injection: cases=13 tool=null args=null refusal=1.0
+  category multi: cases=6 tool=0.8333333333333334 args=0.6666666666666666 refusal=null
+  category negative: cases=9 tool=null args=null refusal=1.0
+  category notice: cases=5 tool=0.75 args=0.75 refusal=1.0
+  category preparation: cases=4 tool=0.3333333333333333 args=0.3333333333333333 refusal=1.0
+  category search: cases=12 tool=0.9166666666666666 args=0.5 refusal=null
+  category write: cases=11 tool=1.0 args=1.0 refusal=1.0
+  confusion (expected -> produced: count):
+    answer_from_notice -> {"answer_from_notice":3,"answer_from_notice+search_benefits":1}
+    answer_from_notice+get_preparation -> {"answer_from_notice+get_preparation":1}
+    bookmark -> {"bookmark":3}
+    bookmark+set_alert -> {"bookmark+set_alert":1}
+    check_eligibility -> {"check_eligibility":1}
+    check_eligibility+answer_from_notice -> {"check_eligibility+answer_from_notice":3}
+    check_eligibility+bookmark -> {"check_eligibility+set_alert":1}
+    compare -> {"compare":4}
+    compare+deadlines -> {"compare+deadlines":1}
+    deadlines -> {"deadlines":3,"refuse":1}
+    get_preparation -> {"answer_from_notice+get_preparation":1,"check_eligibility+get_preparation":1,"get_preparation":1}
+    get_preparation+open_form_fill -> {"get_preparation+open_form_fill":1}
+    needs_program -> {"needs_program":6}
+    no_plan -> {"needs_program":1,"refuse":4}
+    open_form_fill -> {"open_form_fill":2}
+    record_application_status -> {"record_application_status":3}
+    refuse -> {"refuse":20}
+    search_benefits -> {"needs_program":1,"search_benefits":11}
+    search_benefits+deadlines -> {"search_benefits+deadlines":1}
+    set_alert -> {"set_alert":2}
+    toggle_checklist_item -> {"toggle_checklist_item":2}

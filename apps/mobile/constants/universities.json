@@ -1,0 +1,432 @@
+[
+  {
+    "id": "kit",
+    "name": "경남정보대학교",
+    "region": "busan",
+    "official_url": "https://www.kit.ac.kr",
+    "aliases": [
+      "경남정보대"
+    ]
+  },
+  {
+    "id": "ks",
+    "name": "경성대학교",
+    "region": "busan",
+    "official_url": "https://www.ks.ac.kr",
+    "aliases": [
+      "경성대"
+    ]
+  },
+  {
+    "id": "kosin",
+    "name": "고신대학교",
+    "region": "busan",
+    "official_url": "https://www.kosin.ac.kr",
+    "aliases": [
+      "고신대"
+    ]
+  },
+  {
+    "id": "pknu",
+    "name": "국립부경대학교",
+    "region": "busan",
+    "official_url": "https://www.pknu.ac.kr",
+    "aliases": [
+      "부경대학교",
+      "부경대"
+    ]
+  },
+  {
+    "id": "kmou",
+    "name": "국립한국해양대학교",
+    "region": "busan",
+    "official_url": "https://www.kmou.ac.kr",
+    "aliases": [
+      "한국해양대학교",
+      "한국해양대"
+    ]
+  },
+  {
+    "id": "daedong",
+    "name": "대동대학교",
+    "region": "busan",
+    "official_url": "https://www.daedong.ac.kr",
+    "aliases": [
+      "대동대"
+    ]
+  },
+  {
+    "id": "tu",
+    "name": "동명대학교",
+    "region": "busan",
+    "official_url": "https://www.tu.ac.kr",
+    "aliases": [
+      "동명대"
+    ]
+  },
+  {
+    "id": "dongseo",
+    "name": "동서대학교",
+    "region": "busan",
+    "official_url": "https://www.dongseo.ac.kr",
+    "aliases": [
+      "동서대"
+    ]
+  },
+  {
+    "id": "donga",
+    "name": "동아대학교",
+    "region": "busan",
+    "official_url": "https://www.donga.ac.kr",
+    "aliases": [
+      "동아대"
+    ]
+  },
+  {
+    "id": "dit",
+    "name": "동의과학대학교",
+    "region": "busan",
+    "official_url": "https://www.dit.ac.kr",
+    "aliases": [
+      "동의과학대"
+    ]
+  },
+  {
+    "id": "deu",
+    "name": "동의대학교",
+    "region": "busan",
+    "official_url": "https://www.deu.ac.kr",
+    "aliases": [
+      "동의대"
+    ]
+  },
+  {
+    "id": "cup",
+    "name": "부산가톨릭대학교",
+    "region": "busan",
+    "official_url": "https://www.cup.ac.kr",
+    "aliases": [
+      "부산가톨릭대"
+    ]
+  },
+  {
+    "id": "bsks",
+    "name": "부산경상대학교",
+    "region": "busan",
+    "official_url": "https://www.bsks.ac.kr",
+    "aliases": [
+      "부산경상대"
+    ]
+  },
+  {
+    "id": "bist",
+    "name": "부산과학기술대학교",
+    "region": "busan",
+    "official_url": "https://www.bist.ac.kr",
+    "aliases": [
+      "부산과기대"
+    ]
+  },
+  {
+    "id": "bnue",
+    "name": "부산교육대학교",
+    "region": "busan",
+    "official_url": "https://www.bnue.ac.kr",
+    "aliases": [
+      "부산교대"
+    ]
+  },
+  {
+    "id": "pusan",
+    "name": "부산대학교",
+    "region": "busan",
+    "official_url": "https://www.pusan.ac.kr",
+    "aliases": [
+      "부산대",
+      "PNU",
+      "Pusan National University"
+    ]
+  },
+  {
+    "id": "bdu",
+    "name": "부산디지털대학교",
+    "region": "busan",
+    "official_url": "https://www.bdu.ac.kr",
+    "aliases": [
+      "부산디지털대"
+    ]
+  },
+  {
+    "id": "bhu",
+    "name": "부산보건대학교",
+    "region": "busan",
+    "official_url": "https://www.bhu.ac.kr",
+    "aliases": [
+      "동주대학교",
+      "동주대",
+      "부산보건대"
+    ]
+  },
+  {
+    "id": "bwc",
+    "name": "부산여자대학교",
+    "region": "busan",
+    "official_url": "https://www.bwc.ac.kr",
+    "aliases": [
+      "부산여대"
+    ]
+  },
+  {
+    "id": "busanarts",
+    "name": "부산예술대학교",
+    "region": "busan",
+    "official_url": "https://www.busanarts.ac.kr",
+    "aliases": [
+      "부산예대"
+    ]
+  },
+  {
+    "id": "bufs",
+    "name": "부산외국어대학교",
+    "region": "busan",
+    "official_url": "https://www.bufs.ac.kr",
+    "aliases": [
+      "부산외대"
+    ]
+  },
+  {
+    "id": "silla",
+    "name": "신라대학교",
+    "region": "busan",
+    "official_url": "https://www.silla.ac.kr",
+    "aliases": [
+      "신라대"
+    ]
+  },
+  {
+    "id": "ysu-haeundae",
+    "name": "영산대학교 해운대캠퍼스",
+    "region": "busan",
+    "official_url": "https://www.ysu.ac.kr",
+    "aliases": [
+      "영산대",
+      "영산대학교"
+    ]
+  },
+  {
+    "id": "knou-busan",
+    "name": "한국방송통신대학교 부산지역대학",
+    "region": "busan",
+    "official_url": "https://wbusan.knou.ac.kr",
+    "aliases": [
+      "방송대 부산",
+      "방통대 부산"
+    ]
+  },
+  {
+    "id": "kopo-dongbusan",
+    "name": "한국폴리텍대학 동부산캠퍼스",
+    "region": "busan",
+    "official_url": "https://www.kopo.ac.kr/dongbusan/",
+    "aliases": [
+      "동부산폴리텍"
+    ]
+  },
+  {
+    "id": "kopo-busan",
+    "name": "한국폴리텍대학 부산캠퍼스",
+    "region": "busan",
+    "official_url": "https://www.kopo.ac.kr/busan/",
+    "aliases": [
+      "부산폴리텍"
+    ]
+  },
+  {
+    "id": "hscu",
+    "name": "화신사이버대학교",
+    "region": "busan",
+    "official_url": "https://www.hscu.ac.kr",
+    "aliases": [
+      "화신사이버대"
+    ]
+  },
+  {
+    "id": "knu",
+    "name": "경북대학교",
+    "region": "daegu",
+    "official_url": "https://www.knu.ac.kr",
+    "aliases": [
+      "경북대",
+      "KNU"
+    ]
+  },
+  {
+    "id": "kmu",
+    "name": "계명대학교",
+    "region": "daegu",
+    "official_url": "https://www.kmu.ac.kr",
+    "aliases": [
+      "계명대"
+    ]
+  },
+  {
+    "id": "kmcu",
+    "name": "계명문화대학교",
+    "region": "daegu",
+    "official_url": "https://www.kmcu.ac.kr",
+    "aliases": [
+      "계명문화대"
+    ]
+  },
+  {
+    "id": "dcu-daegu",
+    "name": "대구가톨릭대학교 루가·유스티노캠퍼스",
+    "region": "daegu",
+    "official_url": "https://www.cu.ac.kr",
+    "aliases": [
+      "대구가톨릭대학교",
+      "대구가톨릭대"
+    ]
+  },
+  {
+    "id": "dgist",
+    "name": "대구경북과학기술원",
+    "region": "daegu",
+    "official_url": "https://www.dgist.ac.kr",
+    "aliases": [
+      "DGIST",
+      "디지스트"
+    ]
+  },
+  {
+    "id": "ttc",
+    "name": "대구공업대학교",
+    "region": "daegu",
+    "official_url": "https://www.ttc.ac.kr",
+    "aliases": [
+      "대구공업대"
+    ]
+  },
+  {
+    "id": "tsu",
+    "name": "대구과학대학교",
+    "region": "daegu",
+    "official_url": "https://www.tsu.ac.kr",
+    "aliases": [
+      "대구과학대"
+    ]
+  },
+  {
+    "id": "dnue",
+    "name": "대구교육대학교",
+    "region": "daegu",
+    "official_url": "https://www.dnue.ac.kr",
+    "aliases": [
+      "대구교대"
+    ]
+  },
+  {
+    "id": "daegu-daegu",
+    "name": "대구대학교",
+    "region": "daegu",
+    "official_url": "https://www.daegu.ac.kr",
+    "aliases": [
+      "대구대",
+      "대구대학교 경산캠퍼스",
+      "대구대학교 대구캠퍼스"
+    ]
+  },
+  {
+    "id": "dhc",
+    "name": "대구보건대학교",
+    "region": "daegu",
+    "official_url": "https://www.dhc.ac.kr",
+    "aliases": [
+      "대구보건대"
+    ]
+  },
+  {
+    "id": "sc",
+    "name": "수성대학교",
+    "region": "daegu",
+    "official_url": "https://www.sc.ac.kr",
+    "aliases": [
+      "수성대"
+    ]
+  },
+  {
+    "id": "yu-daegu",
+    "name": "영남대학교",
+    "region": "daegu",
+    "official_url": "https://www.yu.ac.kr",
+    "aliases": [
+      "영남대",
+      "영남대학교 경산캠퍼스",
+      "영남대학교 대구캠퍼스"
+    ]
+  },
+  {
+    "id": "ync",
+    "name": "영남이공대학교",
+    "region": "daegu",
+    "official_url": "https://www.ync.ac.kr",
+    "aliases": [
+      "영남이공대"
+    ]
+  },
+  {
+    "id": "ycc",
+    "name": "영진사이버대학교",
+    "region": "daegu",
+    "official_url": "https://www.ycc.ac.kr",
+    "aliases": [
+      "영진사이버대"
+    ]
+  },
+  {
+    "id": "yju",
+    "name": "영진전문대학교",
+    "region": "daegu",
+    "official_url": "https://www.yju.ac.kr",
+    "aliases": [
+      "영진전문대"
+    ]
+  },
+  {
+    "id": "knou-daegu",
+    "name": "한국방송통신대학교 대구경북지역대학",
+    "region": "daegu",
+    "official_url": "https://wdaegu.knou.ac.kr",
+    "aliases": [
+      "방송대 대구",
+      "방통대 대구"
+    ]
+  },
+  {
+    "id": "kopo-namdaegu",
+    "name": "한국폴리텍대학 남대구캠퍼스",
+    "region": "daegu",
+    "official_url": "https://www.kopo.ac.kr/namdaegu/",
+    "aliases": [
+      "남대구폴리텍"
+    ]
+  },
+  {
+    "id": "kopo-daegu",
+    "name": "한국폴리텍대학 대구캠퍼스",
+    "region": "daegu",
+    "official_url": "https://www.kopo.ac.kr/daegu/",
+    "aliases": [
+      "대구폴리텍"
+    ]
+  },
+  {
+    "id": "kopo-ict",
+    "name": "한국폴리텍대학 영남융합기술캠퍼스",
+    "region": "daegu",
+    "official_url": "https://www.kopo.ac.kr/yct/",
+    "aliases": [
+      "영남융합기술"
+    ]
+  }
+]

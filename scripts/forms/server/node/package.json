@@ -1,0 +1,10 @@
+{
+  "name": "mazimi-forms-job-node",
+  "private": true,
+  "description": "What scripts/forms/auto/fill.cjs needs to run the app's fill code (apps/mobile/lib/formFill) in the forms job image. Versions match apps/mobile/package-lock.json.",
+  "dependencies": {
+    "@pdf-lib/fontkit": "1.1.1",
+    "pdf-lib": "1.17.1",
+    "typescript": "5.9.3"
+  }
+}

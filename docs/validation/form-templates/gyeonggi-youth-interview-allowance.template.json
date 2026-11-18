@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "content_hash": "30994a1f431951abd35afcb01f026a51d0a4325c81b5663038c4034b4ff0507f",
+  "page_count": 18,
+  "source": "admin",
+  "fields": [
+    {
+      "id": "p13-f01",
+      "page": 12,
+      "rect": {
+        "x": 0.3047,
+        "y": 0.272,
+        "w": 0.5401,
+        "h": 0.0365
+      },
+      "type": "text",
+      "label": "면접시행 회사 회사명",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p13-f02",
+      "page": 12,
+      "rect": {
+        "x": 0.3047,
+        "y": 0.3121,
+        "w": 0.5401,
+        "h": 0.0366
+      },
+      "type": "text",
+      "label": "면접시행 회사 연락처",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p13-f03",
+      "page": 12,
+      "rect": {
+        "x": 0.634,
+        "y": 0.404,
+        "w": 0.077,
+        "h": 0.028
+      },
+      "type": "text",
+      "label": "면접 응시 월",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p13-f04",
+      "page": 12,
+      "rect": {
+        "x": 0.748,
+        "y": 0.404,
+        "w": 0.059,
+        "h": 0.028
+      },
+      "type": "text",
+      "label": "면접 응시 일",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p13-f05",
+      "page": 12,
+      "rect": {
+        "x": 0.506,
+        "y": 0.748,
+        "w": 0.135,
+        "h": 0.036
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p13-f06",
+      "page": 12,
+      "rect": {
+        "x": 0.678,
+        "y": 0.748,
+        "w": 0.135,
+        "h": 0.036
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p13-f07",
+      "page": 12,
+      "rect": {
+        "x": 0.3047,
+        "y": 0.8078,
+        "w": 0.1957,
+        "h": 0.0348
+      },
+      "type": "text",
+      "label": "서약자 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p13-f08",
+      "page": 12,
+      "rect": {
+        "x": 0.6776,
+        "y": 0.8078,
+        "w": 0.1672,
+        "h": 0.0733
+      },
+      "type": "signature",
+      "label": "서약자 서명",
+      "mapping": "signature",
+      "required": true
+    },
+    {
+      "id": "p13-f09",
+      "page": 12,
+      "rect": {
+        "x": 0.3047,
+        "y": 0.8461,
+        "w": 0.1957,
+        "h": 0.0349
+      },
+      "type": "date",
+      "label": "생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p14-f01",
+      "page": 13,
+      "rect": {
+        "x": 0.3269,
+        "y": 0.2944,
+        "w": 0.1691,
+        "h": 0.0308
+      },
+      "type": "text",
+      "label": "신청인 성명",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p14-f02",
+      "page": 13,
+      "rect": {
+        "x": 0.675,
+        "y": 0.2944,
+        "w": 0.1688,
+        "h": 0.0308
+      },
+      "type": "text",
+      "label": "신청인 성별",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p14-f03",
+      "page": 13,
+      "rect": {
+        "x": 0.3269,
+        "y": 0.3288,
+        "w": 0.1691,
+        "h": 0.0308
+      },
+      "type": "date",
+      "label": "신청인 생년월일",
+      "mapping": "birth_date",
+      "required": true,
+      "format": "YYYY.MM.DD"
+    },
+    {
+      "id": "p14-f04",
+      "page": 13,
+      "rect": {
+        "x": 0.675,
+        "y": 0.3288,
+        "w": 0.1688,
+        "h": 0.0308
+      },
+      "type": "text",
+      "label": "신청인 휴대폰번호",
+      "mapping": "phone",
+      "required": true
+    },
+    {
+      "id": "p14-f05",
+      "page": 13,
+      "rect": {
+        "x": 0.327,
+        "y": 0.3625,
+        "w": 0.517,
+        "h": 0.022
+      },
+      "type": "text",
+      "label": "신청 사유",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p14-f06",
+      "page": 13,
+      "rect": {
+        "x": 0.3269,
+        "y": 0.4538,
+        "w": 0.1691,
+        "h": 0.0308
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 성명",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p14-f07",
+      "page": 13,
+      "rect": {
+        "x": 0.675,
+        "y": 0.4538,
+        "w": 0.1688,
+        "h": 0.0308
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 성별",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p14-f08",
+      "page": 13,
+      "rect": {
+        "x": 0.3269,
+        "y": 0.4881,
+        "w": 0.1691,
+        "h": 0.0309
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 생년월일",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p14-f09",
+      "page": 13,
+      "rect": {
+        "x": 0.675,
+        "y": 0.4881,
+        "w": 0.1688,
+        "h": 0.0309
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 휴대폰번호",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p14-f10",
+      "page": 13,
+      "rect": {
+        "x": 0.327,
+        "y": 0.522,
+        "w": 0.517,
+        "h": 0.022
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 배송지 주소",
+      "mapping": null,
+      "required": true
+    },
+    {
+      "id": "p14-f11",
+      "page": 13,
+      "rect": {
+        "x": 0.3269,
+        "y": 0.5601,
+        "w": 0.1691,
+        "h": 0.0331
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 지역화폐 이용지역",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p14-f12",
+      "page": 13,
+      "rect": {
+        "x": 0.675,
+        "y": 0.5601,
+        "w": 0.1688,
+        "h": 0.0331
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 신청인과의 관계",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p15-f01",
+      "page": 14,
+      "rect": {
+        "x": 0.6226,
+        "y": 0.3604,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집·이용 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p15-f02",
+      "page": 14,
+      "rect": {
+        "x": 0.7335,
+        "y": 0.3604,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "개인정보 수집·이용 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p15-f03",
+      "page": 14,
+      "rect": {
+        "x": 0.6226,
+        "y": 0.6334,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "개인정보 위탁 제공 동의: 동의함",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p15-f04",
+      "page": 14,
+      "rect": {
+        "x": 0.7335,
+        "y": 0.6334,
+        "w": 0.0202,
+        "h": 0.0143
+      },
+      "type": "checkbox",
+      "label": "개인정보 위탁 제공 동의: 동의하지 않음",
+      "mapping": null,
+      "required": false
+    },
+    {
+      "id": "p15-f05",
+      "page": 14,
+      "rect": {
+        "x": 0.4516,
+        "y": 0.7226,
+        "w": 0.0555,
+        "h": 0.0267
+      },
+      "type": "text",
+      "label": "작성일 월",
+      "mapping": "application_date",
+      "required": false,
+      "part": "month"
+    },
+    {
+      "id": "p15-f06",
+      "page": 14,
+      "rect": {
+        "x": 0.5341,
+        "y": 0.7226,
+        "w": 0.067,
+        "h": 0.0267
+      },
+      "type": "text",
+      "label": "작성일 일",
+      "mapping": "application_date",
+      "required": false,
+      "part": "day"
+    },
+    {
+      "id": "p15-f07",
+      "page": 14,
+      "rect": {
+        "x": 0.8499,
+        "y": 0.7668,
+        "w": 0.0519,
+        "h": 0.0367
+      },
+      "type": "stamp",
+      "label": "신청인 (인)",
+      "mapping": "stamp",
+      "required": true
+    },
+    {
+      "id": "p15-f08",
+      "page": 14,
+      "rect": {
+        "x": 0.672,
+        "y": 0.7718,
+        "w": 0.1762,
+        "h": 0.0267
+      },
+      "type": "text",
+      "label": "신청인",
+      "mapping": "name",
+      "required": true
+    },
+    {
+      "id": "p15-f09",
+      "page": 14,
+      "rect": {
+        "x": 0.8499,
+        "y": 0.7968,
+        "w": 0.0519,
+        "h": 0.0367
+      },
+      "type": "signature",
+      "label": "타인 명의 수급자 서명(또는 날인)",
+      "mapping": "signature",
+      "required": false
+    },
+    {
+      "id": "p15-f10",
+      "page": 14,
+      "rect": {
+        "x": 0.672,
+        "y": 0.801,
+        "w": 0.1762,
+        "h": 0.0284
+      },
+      "type": "text",
+      "label": "타인 명의 수급자 성명",
+      "mapping": null,
+      "required": false
+    }
+  ]
+}

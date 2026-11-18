@@ -1,0 +1,99 @@
+## All
+User-agent:*
+Allow: /
+
+## Google
+User-agent: Googlebot
+Allow: /
+
+## Googlebot-Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+## Googlebot-image
+User-agent: Googlebot-image
+Allow: /
+
+## Naver
+User-agent: NaverBot
+Allow: /
+
+## Naver
+User-agent: Yeti
+Allow: /
+
+## Bing
+User-agent: Bingbot
+Allow: /
+
+## Daum
+User-agent: Daumoa
+Allow: /
+
+## Baidu
+User-agent: Baiduspider
+Allow: /
+Sitemap:https://www.cj.net/sitemap.xml
+
+## OpenAI (ChatGPT training & search)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+## Anthropic (Claude training)
+User-agent: ClaudeBot
+Allow: /
+
+## User-agent: Claude-SearchBot
+User-agent: Claude-SearchBot
+Allow: /
+
+## Perplexity (AI search engine)
+User-agent: PerplexityBot
+Allow: /
+
+## Meta (Meta AI training & SNS)
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+## Apple (Apple Intelligence training)
+User-agent: Applebot-Extended
+Allow: /
+
+## Google AI (Gemini and AI training control)
+User-agent: Google-Extended
+Allow: /
+
+## Amazon (Amazon AI training)
+User-agent: Amazonbot
+Allow: /
+
+## ByteDance (TikTok/AI training)
+User-agent: Bytespider
+Allow: /
+
+## Common Crawl (Open source AI dataset)
+User-agent: CCBot
+Allow: /
+
+## Cohere (Enterprise LLM training)
+User-agent: Cohere-ai
+Allow: /
+
+## Other AI Search & Data Collection Bots
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /

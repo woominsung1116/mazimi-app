@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /memberportal/faq
+Allow: /memberportal/notice
+Allow: /memberportal/login
+Disallow: /

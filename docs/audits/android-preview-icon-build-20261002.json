@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-02T03:52:35.211843+00:00",
+  "expo_project": "@mazimi/majimi",
+  "build_id": "4014c6f4-5582-4605-8b90-b68315003817",
+  "source_commit": "9a214805bea00477b5aa79e8991a25aee005a032",
+  "status": "FINISHED",
+  "app_version": "1.0.0",
+  "android_version_code": "4",
+  "artifact_url": "https://expo.dev/artifacts/eas/cQnXWf4vbd6CgfXeN8a8yE4KFWrSOsXiBw59n4efXhs.apk",
+  "artifact_bytes": 89160178,
+  "artifact_sha256": "a3d24bdf0e9fd45b4071a7ec635283dae9bed4a06840d45c2e2f7b033182b80e",
+  "artifact_checks": {
+    "zip_crc_valid": true,
+    "manifest_present": true,
+    "dex_present": true,
+    "production_api_in_bundle": true
+  },
+  "native_asset_report": "mobile-native-assets-20261001.json",
+  "physical_device_tested": false,
+  "ios_build_created": false,
+  "notes": [
+    "Supplied house app icon, original Figma splash, region/profile/session fixes included.",
+    "Later CI/reporting changes do not change this native application source."
+  ]
+}

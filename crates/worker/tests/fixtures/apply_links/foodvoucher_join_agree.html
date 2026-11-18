@@ -1,0 +1,474 @@
+
+
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="4uWgHmu6AJj1kdnrKKk_XTAkB21R-lYG3Dg-2Ql-AFw" />
+    <meta name="naver-site-verification" content="3c2f03d5c09a515a19e0b1ee3f32bd9d65a4505f" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="취약계층의 식품 접근성을 강화하고 지속가능한 농식품 소비체계를 구축하는 농식품 바우처" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="농식품 바우처 플랫폼" />
+    <meta property="og:url" content="http://www.foodvoucher.go.kr" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	    <title id="tabTitle">농식품 바우처 플랫폼</title>
+
+</head>
+<div class="loading-wrap">
+	<div class="loading">
+		<div class="hourglass"></div>
+	</div>
+</div>
+<body class="sub-page">
+
+	<div id="skipnav">
+        <a href="#container">본문 바로가기</a>
+    </div>
+
+<div id="krds-masthead">
+	<div class="toggle-wrap">
+		<div class="toggle-head">
+			<div class="inner">
+				<span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header>
+	<div class="inner">
+		<h1 class="logo">
+			
+				<a href="/">
+					<img src="/static/images/logo.svg" alt="농식품바우처" />
+				</a>
+
+		</h1>
+
+		<div class="top" id="mainTop">
+			<button type="button" class="btn btn-icon btn_search">
+				<i class="ic-search"></i>
+			</button>
+
+			<h1 class="logo">
+				
+					<a href="/">
+						<img src="/static/images/logo.svg" alt="농식품바우처"/>
+					</a>
+
+			</h1>
+
+			<button type="button" class="btn btn_menu" aria-haspopup="true" title="메뉴열기">
+				<i class="ic-menu"></i>
+			</button>
+		</div>
+
+		<div class="top" id="subTop">
+			<a href="javascript:window.history.back();" class="btn btn-txt" title="이전페이지"></a>
+			<h2 id="spanTitle">사용처 안내</h2>
+			
+			<button type="button" class="btn btn_menu" aria-haspopup="true" title="메뉴열기">
+				<i class="ic-menu"></i>
+			</button>
+		</div>
+
+		<div class="my-state">
+			<ul class="sns">
+				
+				<li>
+					<a href="https://m.blog.naver.com/PostList.naver?blogId=gr22nade" target="_blank" title="새창열림">블로그</a>
+				</li>
+				<li>
+					<a href="http://www.instagram.com/atstory.official" target="_blank" title="새창열림">인스타그램</a>
+				</li>
+				<li>
+					<a href="http://www.youtube.com/atwebtv" target="_blank" title="새창열림">유튜브</a>
+				</li>
+			</ul>
+
+					<button type="button" class="btn btn-line-black" onclick="location.href='/security/signInForm'">
+						<span>로그인</span>
+					</button>
+					<button type="button" class="btn btn-line-primary" onclick="location.href='/security/joinAgree'">
+						<span>회원가입</span>
+					</button>
+
+			<button type="button" class="btn btn-icon btn-primary btn_search" title="통합검색">
+				<i class="ic-search"></i>
+			</button>
+		</div>
+	</div>
+
+		<div class="search-wrap" tabindex="0">
+			<h2 class="title">농식품바우처 <span class="text-sub">통합검색</span></h2>
+			
+			<button type="button" class="btn btn-icon btn_close">
+				<i class="ic-close"></i>
+			</button>
+			<div class="input-wrap">
+				<input type="text" placeholder="검색어를 입력하세요" id="searchWord" title="검색어를 입력하세요."/>
+				<button type="button" class="btn btn-icon" id="totalSrh" title="통합검색">
+					<i class="ic-search"></i>
+				</button>
+			</div>
+		</div>
+
+	<div id="gnb">
+		<div class="my-state-mo">
+			<div class="button-wrap">
+				
+				<a href="/" class="btn btn-icon">
+					<img src="/static/images/icon/ic_home.svg" alt="메인으로">
+				</a>
+
+				<button type="button" class="btn btn-icon btn_close">
+					<i class="ic-close"></i>
+				</button>
+			</div>
+
+			<div class="util-bar">
+
+					<div class="button-wrap">
+						
+							<a href="/security/signInForm" class="btn btn-line-black">
+								<span>로그인</span>
+							</a>
+							<a href="/security/joinAgree" class="btn btn-line-primary">
+								<span>회원가입</span>
+							</a>
+
+					</div>
+
+				<ul class="sns">
+					
+					<li>
+						<a href="https://m.blog.naver.com/PostList.naver?blogId=gr22nade" target="_blank" title="새창열림">블로그</a>
+					</li>
+					<li>
+						<a href="http://www.instagram.com/atstory.official" target="_blank" title="새창열림">인스타그램</a>
+					</li>
+					<li>
+						<a href="http://www.youtube.com/atwebtv" target="_blank" title="새창열림">유튜브</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<ul class="menu-list">
+			
+				<li>
+					<a href="#none">농식품 바우처 소개</a>
+					<ul class="gnb-sub-menu">
+						<li>
+							<a href="/view/fm/vucintro/agriFood">농식품 바우처란?</a>
+						</li>
+						<li>
+							<a href="/view/fm/vucintro/fwdPass">추진경과</a>
+						</li>
+						<li>
+							<a href="/view/fm/vucintro/sprtCn">지원내용</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">사용안내</a>
+					<ul class="gnb-sub-menu">
+						<li>
+							<a href="/view/fm/useguide/vucUseMthd">바우처 사용방법</a>
+						</li>
+						<li>
+							<a href="/view/fm/useguide/vucSprtItem">바우처 구매가능품목</a>
+						</li>
+						<li>
+							사용처 안내
+						</li>
+						<li class="tab">
+							<a href="/view/fm/useguide/ofLnUsedPlc">- 오프라인 사용처</a>
+						</li>
+						<li class="tab">
+							<a href="/view/fm/useguide/onLnUsedPlc">- 온라인 사용처</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="#none">농식품 바우처 신청</a>
+					<ul class="gnb-sub-menu">
+						<li>
+							바우처 신청
+						</li>
+						<li class="tab">
+							<a href="/view/fm/vucaply/vucOfLnAply">- 오프라인 신청</a>
+						</li>
+						<li class="tab">
+
+								<a href="/security/joinAgree">- 온라인 신청</a>
+
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">고객지원</a>
+					<ul class="gnb-sub-menu">
+						<li>
+							<a href="/view/fjo/ntcpoi/ntcPoi">공지사항</a>
+						</li>
+						<li>
+							<a href="/view/fjo/ntcpoi/usageContestPoi">사용처 공모 신청</a>
+						</li>
+						<li>
+							<a href="/view/fm/bbs/promtDataList">홍보자료실</a>
+						</li>
+						<li>
+							<a href="/view/fm/bbs/eduDataList">교육자료실</a>
+						</li>
+						<li>
+							<a href="/view/fin/qustaply/qustMsbo">자주하는질문(FAQ)</a>
+						</li>
+						<li>
+							<a href="/view/fin/rfrcaply/qusgMsbo">1:1문의</a>
+						</li>
+						<li>
+							<a href="/view/fre/carddclr/risuAply">카드 분실신고 및 재발급 신청</a>
+						</li>
+						
+					</ul>
+				</li>
+
+		</ul>
+	</div>
+</header>
+
+<form id="commonForm" name="commonForm" method="post">
+    <input type="hidden" name="ctpvCd" value="" />
+    <input type="hidden" name="ctpvNm" value="공통" />
+    <input type="hidden" name="sggCd" value="" />
+	<input type="hidden" name="guCd" value="" />
+	<input type="hidden" name="emdCd" value="" />
+    <input type="hidden" name="_ctx" value="" />
+</form>
+
+<div id="container">
+	<div class="inner">
+		<div class="top-area">
+			<ul class="bread-crumb">
+				<li>
+					<a href="#">홈</a>
+				</li>
+				<li>
+					<span>회원가입</span>
+				</li>
+			</ul>
+			<ul class="function">
+				<li>
+					<button type="button" class="btn btn-icon" title="공유하기">
+						<i aria-hidden="true" class="ic-share"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" class="btn btn-icon" title="인쇄하기">
+						<i aria-hidden="true" class="ic-print"></i>
+					</button>
+				</li>
+			</ul>
+		</div>
+		<div class="content-header">
+			<h2 class="title">회원가입</h2>
+		</div>
+		<div class="login-wrap">
+			<ul class="join-process">
+				<li class="on" aria-current="step">약관동의</li>
+				<li>본인인증</li>
+				<li>바우처신청</li>
+				<li>정보입력</li>
+				<li>완료</li>
+			</ul>
+
+ 			<ul class="page-notice">
+				<li class="title">(*)표시는 필수 입력 항목입니다.</li>
+ 			</ul>
+			
+			<form id="agree">
+				<div class="agree-area">
+					<div class="select-all">
+						<input type="checkbox" id="agree-all" name="agree">
+						<label for="agree-all">이용약관 전체동의</label>
+					</div>
+					<ul class="list">
+						<li>
+							<input type="checkbox" id="agree1" name="agree1" onchange="fn_checkChange(this)">
+							<label for="agree1">[안내] 서비스이용약관 동의</label>
+							<button type="button" class="btn btn-txt" aria-haspopup="true" data-focus="01" onclick="fn_selectPrvcAgreList('01');">
+								<span>보기</span>
+							</button>
+						</li>
+						<li>
+							<input type="checkbox" id="agree2" name="agree2" onchange="fn_checkChange(this)">
+							<label for="agree2">[안내] 개인정보 수집·이용 안내</label>
+							<button type="button" class="btn btn-txt" aria-haspopup="true" data-focus="02" onclick="fn_selectPrvcAgreList('02');">
+								<span>보기</span>
+							</button>
+						</li>
+						<li>
+							<input type="checkbox" id="agree4" name="agree4" onchange="fn_checkChange(this)">
+							<label for="agree4">[안내] 행정정보 공동이용 안내</label>
+							<button type="button" class="btn btn-txt" aria-haspopup="true" data-focus="04" onclick="fn_selectPrvcAgreList('09');">
+								<span>보기</span>
+							</button>
+						</li>
+						<li>
+							<input type="checkbox" id="agree5" name="agree5" onchange="fn_checkChange(this)">
+							<label for="agree5">[안내] 개인정보 제3자 제공 안내</label>
+							<button type="button" class="btn btn-txt" aria-haspopup="true" data-focus="05" onclick="fn_selectPrvcAgreList('04');">
+								<span>보기</span>
+							</button>
+						</li>
+						<li>
+							<input type="checkbox" id="agree6" name="agree6" onchange="fn_checkChange(this)">
+							<label for="agree6">[안내] 민감정보 수집·이용 안내</label>
+							<button type="button" class="btn btn-txt" aria-haspopup="true" data-focus="06" onclick="fn_selectPrvcAgreList('07');">
+								<span>보기</span>
+							</button>
+						</li>
+						<li>
+							<input type="checkbox" id="agree7" name="agree7" onchange="fn_checkChange(this)">
+							<label for="agree7">[안내] 고유식별정보 수집·이용 안내</label>
+							<button type="button" class="btn btn-txt" aria-haspopup="true" data-focus="07" onclick="fn_selectPrvcAgreList('06');">
+								<span>보기</span>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<ul class="page-notice">
+					<li class="title">외국인 대상자는 온라인 신청이 불가합니다.<br>가까운 주민센터를 통해서 신청/접수하시기 바랍니다.</li>
+					<li class="title">모바일 회원가입이 어려우신 경우 PC로도 진행하실 수 있습니다.</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+
+	<div class="section-footer">
+		<div class="button-wrap">
+			<button type="button" class="btn btn-line-primary" onclick="fn_cancel();">
+				<span>취소</span>
+			</button>
+			<button type="button" id="btnNextStep" class="btn btn-primary" onclick="fn_nextStep();">
+				<span>확인</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="layer-pop" id="prvcAgreModal">
+	<div class="layer-wrap" style="max-width: 1024px;">
+		<div class="layer-header">
+			<h4 class="layer-title" id="prvcDvnm"></h4>
+		</div>
+
+		<div class="layer-body" id="content" tabindex="0">
+		</div>
+		<div class="button-wrap">
+			<button type="button" class="btn btn_close" title="팝업 닫기"></button>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="pc">
+	<div class="terms">
+		<div class="inner">
+			<ul class="contract-list">
+				
+					<li>
+						<a href="#none" onclick="fn_selectPrvcAgreList('01', $(this));" title="이용약관">이용약관</a>
+					</li>
+					<li>
+						<a href="https://www.at.or.kr/sitemap/apko918000/privacy_policy.action" title="새 창 열림" target="_blank">개인정보처리방침</a>
+					</li>
+
+			</ul>
+			<div class="partner-list">
+				<div class="select-wrap">
+					<a href="#none">관련사이트</a>
+					<ul class="list">
+						<li>
+							<a href="https://www.mohw.go.kr/menu.es?mid=a10708010000" target="_blank" title="새창열림">보건복지부(기초생활보장제도)</a>
+						</li>
+						<li>
+							<a href="https://www.bokjiro.go.kr" target="_blank" title="새창열림">복지로</a>
+						</li>
+					</ul>
+				</div>
+				<div class="select-wrap">
+					<a href="#none">유관기관</a>
+					<ul class="list">
+						<li>
+							<a href="https://www.mafra.go.kr" target="_blank" title="새창열림">농림축산식품부</a>
+						</li>
+						<li>
+							<a href="https://www.at.or.kr" target="_blank" title="새창열림">한국농수산식품유통공사</a>
+						</li>
+						<li>
+							<a href="https://www.krei.re.kr" target="_blank" title="새창열림">한국농촌경제연구원</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#TOP" class="btn btn_top" title="페이지 상단으로 이동"></a>
+	<div class="inner">
+		<ul class="logo-list">
+			<li>
+				<img src="/static/images/logo_mafra.svg" alt="농림축산식품부">
+			</li>
+			<li>
+				<img src="/static/images/logo_at.svg" alt="한국농수산식품유통공사">
+			</li>
+			<li>
+				
+				<img src="/static/images/logo_wa_20260625.png" alt="과학기술정보통신부 웹접근성 마크" style="width:70px; height:50px; cursor:pointer;" title="새 창 열림" onclick="openImgPop(2);">
+			</li>
+			<li>
+				<img src="/static/images/logo_act_27001.png" alt="한국농수산식품유통공사 ISO 27001 정보보안경영시스템 인증 마크" style="width:65px; height:65px; cursor:pointer;" title="새 창 열림" onclick="openImgPop(0);">
+			</li>
+			<li>
+				<img src="/static/images/logo_act_27701.png" alt="한국농수산식품유통공사 ISO 27701 개인정보보호 경영시스템 인증 마크" style="width:65px; height:65px; cursor:pointer;" title="새 창 열림" onclick="openImgPop(1);">
+			</li>
+		</ul>
+		<address>(우 58326) 전남광주통합특별시 나주시 문화로 227, 한국농수산식품유통공사</address>
+		<div class="copy">COPYRIGHT 2020 by Korea Agro-Fisheries & Food Trade Corporation ALL RIGHTS RESERVED</div>
+	</div>
+</footer>
+
+<div class="dimmed"></div>
+
+<div class="layer-pop" id="prvcAgreModal">
+	<div class="layer-wrap" style="max-width: 1024px;">
+		<div class="layer-header">
+			<h4 class="layer-title" id="prvcDvnm"></h4>
+		</div>
+
+		<div class="layer-body" id="content" tabindex="0">
+		</div>
+		<div class="button-wrap">
+			<button type="button" class="btn btn_close" title="팝업 닫기"></button>
+		</div>
+	</div>
+</div>
+
+    <div id="loaderBackground" style="display:none;">
+        <div class="loader">
+        Loading...
+        </div>
+    </div>
+    <div class="layer-pop" id="makeAlert"></div>
+
+    <div class="layer-pop" id="makeConfirm"></div>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+User-agent: *
+Disallow:/
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-adstxt
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: bingbot
+Disallow: /

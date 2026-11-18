@@ -1,0 +1,330 @@
+[
+ {
+  "query": "청년 적금",
+  "fields": [
+   "finance"
+  ],
+  "relevant": "적금|저축|도약계좌|희망계좌|내일저축|자산\\s?형성|목돈|통장",
+  "not_relevant": "대출|채무|학자금|이자\\s?지원|보증"
+ },
+ {
+  "query": "목돈 마련 통장",
+  "fields": [
+   "finance"
+  ],
+  "relevant": "적금|저축|도약계좌|희망계좌|내일저축|자산\\s?형성|목돈|통장",
+  "not_relevant": "대출|채무|보증"
+ },
+ {
+  "query": "청년 대출 이자 지원",
+  "fields": [
+   "finance"
+  ],
+  "relevant": "대출|이자|금리|융자",
+  "not_relevant": "적금|저축"
+ },
+ {
+  "query": "빚 갚는 거 도와주는 제도",
+  "fields": [
+   "finance"
+  ],
+  "relevant": "채무|부채|신용\\s?회복|개인\\s?회생|파산|빚|채무조정",
+  "not_relevant": "적금|저축"
+ },
+ {
+  "query": "공연 전시 관람 지원",
+  "fields": [
+   "living"
+  ],
+  "relevant": "공연|전시회|관람|문화\\s?패스|문화누리|예술\\s?관람|박물관|미술관|뮤지컬|연극|영화",
+  "not_relevant": "납북|전시\\s?납|대관|공연장\\s?대관|전시\\s?(생활|상황|피해)|교육\\s?과정|전시회\\s?(참가|참여)|해외\\s?전시|박람회|부스"
+ },
+ {
+  "query": "문화생활 지원",
+  "fields": [
+   "living"
+  ],
+  "relevant": "문화|공연|관람|예술|영화|여가|체육|도서",
+  "not_relevant": "문화관광해설|법문화|해설사|다문화\\s?가족\\s?(상담|교육)"
+ },
+ {
+  "query": "교통비 지원",
+  "fields": [
+   "living"
+  ],
+  "relevant": "교통비|대중교통|버스|지하철|K-?패스|알뜰교통|교통\\s?카드|통학|차비|유류",
+  "not_relevant": "교통\\s?안전|교통\\s?약자|교통\\s?사고|체험|교육"
+ },
+ {
+  "query": "통신비 지원",
+  "fields": [
+   "living"
+  ],
+  "relevant": "통신|휴대폰|휴대전화|요금\\s?감면|데이터",
+  "not_relevant": "교육|센터"
+ },
+ {
+  "query": "식비 지원",
+  "fields": [
+   "living"
+  ],
+  "relevant": "식비|식사|급식|밥|식품|먹거리|천원의\\s?아침",
+  "not_relevant": "교육|위생"
+ },
+ {
+  "query": "헬스장 운동 지원",
+  "fields": [
+   "living"
+  ],
+  "relevant": "체육|운동|헬스|스포츠|생활체육|수영|피트니스",
+  "not_relevant": "선수|지도자|대회\\s?개최"
+ },
+ {
+  "query": "월세 지원",
+  "fields": [
+   "housing"
+  ],
+  "relevant": "월세|임차료|주거비|주거급여",
+  "not_relevant": "교육|대출\\s?보증만"
+ },
+ {
+  "query": "전세 보증금 지원",
+  "fields": [
+   "housing",
+   "finance"
+  ],
+  "relevant": "전세|보증금|임차보증|버팀목",
+  "not_relevant": "월세만"
+ },
+ {
+  "query": "기숙사 지원",
+  "fields": [
+   "housing"
+  ],
+  "relevant": "기숙사|생활관|학사|숙소",
+  "not_relevant": ""
+ },
+ {
+  "query": "이사비 지원",
+  "fields": [
+   "housing"
+  ],
+  "relevant": "이사|이주|중개\\s?수수료|이전비",
+  "not_relevant": ""
+ },
+ {
+  "query": "임대주택",
+  "fields": [
+   "housing"
+  ],
+  "relevant": "임대주택|행복주택|공공임대|매입임대|전세임대|청년주택|공공주택",
+  "not_relevant": ""
+ },
+ {
+  "query": "전세사기 피해 지원",
+  "fields": [
+   "housing"
+  ],
+  "relevant": "전세\\s?사기|피해\\s?(임차인|지원)|보증금\\s?반환|임차인\\s?보호",
+  "not_relevant": ""
+ },
+ {
+  "query": "취업 준비 지원금",
+  "fields": [
+   "employment"
+  ],
+  "relevant": "구직|취업|면접|취업\\s?준비|일자리|수당|국민취업",
+  "not_relevant": "채용\\s?박람회\\s?개최|기업\\s?지원금|사업주"
+ },
+ {
+  "query": "면접 지원",
+  "fields": [
+   "employment"
+  ],
+  "relevant": "면접|정장|이미지\\s?컨설팅|구직\\s?활동",
+  "not_relevant": "사업주"
+ },
+ {
+  "query": "자격증 응시료 지원",
+  "fields": [
+   "employment",
+   "education"
+  ],
+  "relevant": "자격증|응시료|시험\\s?비|검정|토익|어학\\s?시험",
+  "not_relevant": ""
+ },
+ {
+  "query": "창업 지원금",
+  "fields": [
+   "employment"
+  ],
+  "relevant": "창업|스타트업|사업화|창업\\s?공간|예비\\s?창업",
+  "not_relevant": ""
+ },
+ {
+  "query": "인턴 지원",
+  "fields": [
+   "employment"
+  ],
+  "relevant": "인턴|일경험|직무\\s?체험|현장\\s?실습",
+  "not_relevant": ""
+ },
+ {
+  "query": "직업 훈련",
+  "fields": [
+   "employment",
+   "education"
+  ],
+  "relevant": "훈련|직업|교육\\s?과정|국민내일배움|기술|부트캠프|아카데미",
+  "not_relevant": ""
+ },
+ {
+  "query": "장학금",
+  "fields": [
+   "education"
+  ],
+  "relevant": "장학",
+  "not_relevant": "대출"
+ },
+ {
+  "query": "등록금 지원",
+  "fields": [
+   "education"
+  ],
+  "relevant": "등록금|학비|수업료|장학|반값",
+  "not_relevant": "대출"
+ },
+ {
+  "query": "학자금 대출 이자 지원",
+  "fields": [
+   "education",
+   "finance"
+  ],
+  "relevant": "학자금|대출\\s?이자|이자\\s?지원",
+  "not_relevant": ""
+ },
+ {
+  "query": "어학 시험 교육비 지원",
+  "fields": [
+   "education",
+   "employment"
+  ],
+  "relevant": "어학|토익|토플|영어|응시료|외국어",
+  "not_relevant": ""
+ },
+ {
+  "query": "코딩 교육 지원",
+  "fields": [
+   "education",
+   "employment"
+  ],
+  "relevant": "코딩|소프트웨어|SW|IT|개발자|프로그래밍|디지털|AI",
+  "not_relevant": ""
+ },
+ {
+  "query": "교환학생 해외 연수 지원",
+  "fields": [
+   "education"
+  ],
+  "relevant": "해외|교환|연수|글로벌|유학",
+  "not_relevant": ""
+ },
+ {
+  "query": "심리 상담 지원",
+  "fields": [
+   "welfare"
+  ],
+  "relevant": "심리|상담|마음|정신\\s?건강|우울",
+  "not_relevant": "창업\\s?상담|취업\\s?상담|법률\\s?상담|금융\\s?상담"
+ },
+ {
+  "query": "의료비 지원",
+  "fields": [
+   "welfare"
+  ],
+  "relevant": "의료비|병원|치료비|진료|수술|건강검진|약제",
+  "not_relevant": ""
+ },
+ {
+  "query": "건강검진 지원",
+  "fields": [
+   "welfare"
+  ],
+  "relevant": "검진|건강\\s?검사|건강\\s?진단",
+  "not_relevant": ""
+ },
+ {
+  "query": "자립준비청년 지원",
+  "fields": [
+   "welfare"
+  ],
+  "relevant": "자립\\s?준비|보호\\s?종료|자립\\s?수당|아동\\s?복지\\s?시설",
+  "not_relevant": ""
+ },
+ {
+  "query": "고립 은둔 청년 지원",
+  "fields": [
+   "welfare"
+  ],
+  "relevant": "고립|은둔|외로|사회\\s?관계|마음",
+  "not_relevant": ""
+ },
+ {
+  "query": "가족돌봄청년 지원",
+  "fields": [
+   "welfare"
+  ],
+  "relevant": "가족\\s?돌봄|영\\s?케어러|돌봄\\s?청년",
+  "not_relevant": ""
+ },
+ {
+  "query": "치과 치료비 지원",
+  "fields": [
+   "welfare"
+  ],
+  "relevant": "치과|치아|구강|임플란트|스케일링",
+  "not_relevant": ""
+ },
+ {
+  "query": "청년 수당",
+  "fields": [
+   "employment",
+   "welfare"
+  ],
+  "relevant": "수당|활동\\s?지원금|구직\\s?활동",
+  "not_relevant": "보훈|장애|노인|월동|유공"
+ },
+ {
+  "query": "여행 지원",
+  "fields": [
+   "living"
+  ],
+  "relevant": "여행|관광|휴가",
+  "not_relevant": "관광\\s?해설|사업자"
+ },
+ {
+  "query": "도서 구입비 지원",
+  "fields": [
+   "living",
+   "education"
+  ],
+  "relevant": "도서|책|독서|문화누리",
+  "not_relevant": ""
+ },
+ {
+  "query": "영화 할인",
+  "fields": [
+   "living"
+  ],
+  "relevant": "영화|시네마|CGV|메가박스|롯데시네마|문화",
+  "not_relevant": ""
+ },
+ {
+  "query": "버스비 할인",
+  "fields": [
+   "living"
+  ],
+  "relevant": "버스|대중교통|교통비|K-?패스|알뜰교통|교통\\s?카드",
+  "not_relevant": "교통\\s?안전|교통\\s?약자"
+ }
+]

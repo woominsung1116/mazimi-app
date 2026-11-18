@@ -1,0 +1,70 @@
+{
+ "pages": [
+  0
+ ],
+ "reviewed": true,
+ "add": [
+  {
+   "id": "x1",
+   "page": 0,
+   "rect": {
+    "x": 0.779,
+    "y": 0.187,
+    "w": 0.037,
+    "h": 0.022
+   },
+   "type": "text",
+   "label": "신청 학기 연도",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x2",
+   "page": 0,
+   "rect": {
+    "x": 0.84,
+    "y": 0.187,
+    "w": 0.046,
+    "h": 0.022
+   },
+   "type": "text",
+   "label": "신청 학기",
+   "mapping": null,
+   "required": true
+  },
+  {
+   "id": "x3",
+   "page": 0,
+   "rect": {
+    "x": 0.219,
+    "y": 0.309,
+    "w": 0.277,
+    "h": 0.027
+   },
+   "type": "text",
+   "label": "장학금명",
+   "mapping": null,
+   "required": true
+  }
+ ],
+ "set": [
+  {
+   "match": {
+    "page": 0,
+    "pattern": "^감면장학1\\)은"
+   },
+   "fields": {
+    "label": "감면장학은 장학금 적용 후 수강료를 납부해야함을 확인하였습니다."
+   }
+  },
+  {
+   "match": {
+    "page": 0,
+    "pattern": "^과목 제외\\)을"
+   },
+   "fields": {
+    "label": "수강과목이 5과목 이하가 될 경우 장학금 지급이 취소됨(* 과목 제외)을 확인하였습니다."
+   }
+  }
+ ]
+}

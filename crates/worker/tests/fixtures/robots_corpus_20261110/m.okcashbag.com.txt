@@ -1,0 +1,6 @@
+User-agent: * 
+Disallow: /
+Allow: /online/frugalShoppingMall/frugalShoppingMallMain.mocb
+Allow: /life/event/eventMain.mocb
+Allow: /guide/ocbGuide.mocb
+Sitemap: http://m.okcashbag.com/g/s/sitemap.txt

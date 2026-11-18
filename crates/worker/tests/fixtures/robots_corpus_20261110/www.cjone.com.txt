@@ -1,0 +1,37 @@
+sitemap:https://www.cjone.com/cjmweb/sitemap.xml
+
+## Disallow all other bots
+User-agent: *
+Disallow: /
+
+## Google
+User-agent: Googlebot
+Allow: /
+
+## Googlebot-Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+## Daum
+User-agent: Daumoa
+Allow: /
+
+## Naver
+User-agent: NaverBot
+Allow: /
+
+## Naver
+User-agent: Yeti
+Allow: /
+
+## Bing
+User-agent: Bingbot
+Allow: /
+
+## Googlebot-image
+User-agent: Googlebot-image
+Allow: /
+
+## FaceBook
+User-agent: facebookexternalhit
+Allow: /

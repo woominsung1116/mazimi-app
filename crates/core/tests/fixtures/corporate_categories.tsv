@@ -1,0 +1,91 @@
+# Every programme on the 기업혜택 tab (provider_categories @> {corporate}), production 2026-10-26: 88 rows.
+# Titles and provider names only (no user data). The last column is the hand-assigned category the rules must reproduce.
+# program_type	title	provider_name	company_name	benefit_category	expected
+campus_benefit	DGIST MATLAB 캠퍼스 라이선스	대구경북과학기술원		software	dev
+campus_benefit	경성대 학내 AI Chat	경성대학교		software	dev
+campus_benefit	대구대 재학생 Office 365	대구대학교		software	dev
+campus_benefit	동명대 Microsoft 365·Google 클라우드	동명대학교		software	dev
+campus_benefit	동아대 학생메일·Office 365	동아대학교		software	dev
+campus_benefit	부경대 Office 365	국립부경대학교		software	dev
+campus_benefit	부산대 Google AI Pro for Education	부산대학교		software	dev
+campus_benefit	부산대 Microsoft 365	부산대학교		software	dev
+campus_benefit	부산대 산지니 AI	부산대학교		software	dev
+campus_benefit	영남대 재학생 Office 365	영남대학교		software	dev
+corporate_benefit	무신사 신규회원 첫 구매 혜택	무신사	무신사	discount	shopping
+corporate_benefit	올리브영 나라사랑카드 캐시백 혜택	신한카드·하나카드	신한카드·하나카드	discount	shopping
+corporate_benefit	Master.dev(구 Frontend Masters) 학생 강의 6개월 무료	Frontend Masters	Frontend Masters	education	study
+corporate_benefit	CGV CJ ONE 포인트 적립·사용	CGV·CJ ONE	CGV·CJ ONE	membership	culture
+corporate_benefit	CU CJ ONE 포인트 결제	CU·CJ ONE	CU·CJ ONE	membership	shopping
+corporate_benefit	GS25 GS ALL 멤버십 포인트	GS25·GS리테일	GS25·GS리테일	membership	shopping
+corporate_benefit	H.Point 통합 멤버십 적립·사용	H.Point·현대백화점그룹	H.Point·현대백화점그룹	membership	shopping
+corporate_benefit	IKEA Family 멤버십 혜택	IKEA	IKEA	membership	shopping
+corporate_benefit	L.POINT 통합 멤버십 적립·사용	L.POINT	L.POINT	membership	shopping
+corporate_benefit	NOL CJ ONE 포인트 혜택	NOL·CJ ONE	NOL·CJ ONE	membership	travel
+corporate_benefit	OK캐쉬백 포인트 적립·사용 서비스	OK캐쉬백	OK캐쉬백	membership	shopping
+corporate_benefit	공차 멤버십 스탬프 혜택	공차코리아	공차코리아	membership	food
+corporate_benefit	네네치킨 CJ ONE 포인트 혜택	네네치킨·CJ ONE	네네치킨·CJ ONE	membership	food
+corporate_benefit	다이소 멤버십 포인트 적립·사용	다이소	다이소	membership	shopping
+corporate_benefit	던킨 해피포인트 적립·사용	던킨·해피포인트	던킨·해피포인트	membership	food
+corporate_benefit	뚜레쥬르 CJ ONE 포인트 혜택	뚜레쥬르·CJ ONE	뚜레쥬르·CJ ONE	membership	food
+corporate_benefit	롯데리아 LOTTE EATZ 등급·쿠폰 혜택	롯데리아·LOTTE EATZ	롯데리아·LOTTE EATZ	membership	food
+corporate_benefit	롯데시네마 L.POINT 적립·사용	롯데시네마·L.POINT	롯데시네마·L.POINT	membership	culture
+corporate_benefit	메가MGC커피 CJ ONE 포인트 혜택	메가MGC커피·CJ ONE	메가MGC커피·CJ ONE	membership	food
+corporate_benefit	메가박스 멤버십 포인트 혜택	메가박스	메가박스	membership	culture
+corporate_benefit	배스킨라빈스 해피포인트 적립·사용	배스킨라빈스·해피포인트	배스킨라빈스·해피포인트	membership	food
+corporate_benefit	쉐이크쉑 해피포인트 적립·사용	쉐이크쉑·해피포인트	쉐이크쉑·해피포인트	membership	food
+corporate_benefit	스타벅스 리워드 등급별 혜택	스타벅스 코리아	스타벅스 코리아	membership	food
+corporate_benefit	신세계포인트 통합 적립·사용	신세계포인트	신세계포인트	membership	shopping
+corporate_benefit	아쿠아플라넷 CJ ONE 포인트 혜택	아쿠아플라넷·CJ ONE	아쿠아플라넷·CJ ONE	membership	culture
+corporate_benefit	알라딘 멤버십 마일리지 혜택	알라딘	알라딘	membership	culture
+corporate_benefit	엔제리너스 LOTTE EATZ 스탬프·등급 혜택	엔제리너스·LOTTE EATZ	엔제리너스·LOTTE EATZ	membership	food
+corporate_benefit	예스24 YES포인트·YES머니 혜택	예스24	예스24	membership	culture
+corporate_benefit	올리브영 CJ ONE 포인트 적립·사용	올리브영·CJ ONE	올리브영·CJ ONE	membership	shopping
+corporate_benefit	이디야멤버스 스탬프·등급 혜택	이디야커피	이디야커피	membership	food
+corporate_benefit	이마트24 CJ ONE 포인트 혜택	이마트24·CJ ONE	이마트24·CJ ONE	membership	shopping
+corporate_benefit	커피빈 멤버스클럽 콩·등급 혜택	커피빈코리아	커피빈코리아	membership	food
+corporate_benefit	크리스피크림 LOTTE EATZ 스탬프·등급 혜택	크리스피크림도넛·LOTTE EATZ	크리스피크림도넛·LOTTE EATZ	membership	food
+corporate_benefit	투썸하트 멤버십 적립·쿠폰 혜택	투썸플레이스	투썸플레이스	membership	food
+corporate_benefit	파리바게뜨 해피포인트 적립·사용	파리바게뜨·해피포인트	파리바게뜨·해피포인트	membership	food
+corporate_benefit	파스쿠찌 해피포인트 적립·사용	파스쿠찌·해피포인트	파스쿠찌·해피포인트	membership	food
+corporate_benefit	포토이즘 CJ ONE 포인트 혜택	포토이즘·CJ ONE	포토이즘·CJ ONE	membership	culture
+corporate_benefit	폴 바셋 Society 크라운·무료음료 혜택	폴 바셋	폴 바셋	membership	food
+corporate_benefit	할리스 멤버십 크라운·등급 혜택	할리스	할리스	membership	food
+corporate_benefit	1Password 학생 개인 플랜 2년	1Password	1Password	software	dev
+corporate_benefit	Autodesk 학생·교육자 교육용 액세스	Autodesk	Autodesk	software	design
+corporate_benefit	AWS Educate 무료 클라우드 학습	Amazon Web Services	Amazon Web Services	software	dev
+corporate_benefit	Axure RP 학생 1년 무료	Axure	Axure	software	design
+corporate_benefit	Azure for Students 무료 크레딧	Microsoft Azure	Microsoft Azure	software	dev
+corporate_benefit	Bootstrap Studio 학생 무료 라이선스	Bootstrap Studio	Bootstrap Studio	software	dev
+corporate_benefit	Canva for Education 무료 이용	Canva	Canva	software	design
+corporate_benefit	Figma for Education 무료 플랜	Figma	Figma	software	design
+corporate_benefit	Framer 학생 포트폴리오 Basic 무료	Framer	Framer	software	design
+corporate_benefit	GitHub Copilot 학생 무료 이용	GitHub	GitHub	software	dev
+corporate_benefit	GitHub Student Developer Pack	GitHub Education	GitHub Education	software	dev
+corporate_benefit	GitKraken Student Pack 6개월	GitKraken	GitKraken	software	dev
+corporate_benefit	JetBrains 학생·교사용 무료 라이선스	JetBrains	JetBrains	software	dev
+corporate_benefit	Linear 학생 단체 무료 1년	Linear	Linear	software	dev
+corporate_benefit	Miro Education 플랜 무료	Miro	Miro	software	design
+corporate_benefit	Notion 학생·교육자용 Education 플랜 무료	Notion	Notion	software	dev
+corporate_benefit	Obsidian 교육 할인	Obsidian	Obsidian	software	dev
+corporate_benefit	Polypane 학생 1년 무료	Polypane	Polypane	software	dev
+corporate_benefit	Sketch Education 무료 워크스페이스	Sketch	Sketch	software	design
+corporate_benefit	Tableau for Students 무료 학습 도구	Tableau	Tableau	software	dev
+corporate_benefit	Termius 학생 Pro·Team 무료	Termius	Termius	software	dev
+corporate_benefit	Tower Pro 학생 12개월 무료	Tower	Tower	software	dev
+corporate_benefit	Unity Student 무료 플랜	Unity	Unity	software	dev
+corporate_benefit	학생·교육자용 Office 365 A1 무료	Microsoft	Microsoft	software	dev
+corporate_benefit	Adobe Creative Cloud 학생·교사 할인	Adobe	Adobe	student_discount	design
+corporate_benefit	Apple 교육 할인	Apple	Apple	student_discount	shopping
+corporate_benefit	LG전자 아카데미 스토어	LG전자	LG전자	student_discount	shopping
+corporate_benefit	Samsung 갤럭시 캠퍼스 교육 할인	삼성전자	삼성전자	student_discount	shopping
+corporate_benefit	Spotify Premium 학생 요금제	Spotify	Spotify	student_discount	culture
+corporate_benefit	나이키 대학생 10% 할인	나이키	나이키	student_discount	shopping
+corporate_benefit	Apple Music 학생 구독 할인	Apple	Apple	subscription	culture
+corporate_benefit	Spotify Premium 학생 요금제	Spotify	Spotify	subscription	culture
+corporate_benefit	티빙 CJ ONE 포인트 적립·사용	티빙·CJ ONE	티빙·CJ ONE	subscription	culture
+corporate_benefit	KT Y덤 청년 데이터 혜택	KT	KT	telecom	telecom
+corporate_benefit	LG유플러스 유쓰 청년 멤버십 혜택	LG유플러스	LG유플러스	telecom	telecom
+corporate_benefit	SKT 라이트 59 청년 추가 혜택	SK텔레콤	SK텔레콤	telecom	telecom
+corporate_benefit	코레일 청소년 드림 KTX 할인	한국철도공사	한국철도공사	transport	travel
+corporate_benefit	코레일 힘내라 청춘 KTX 할인	한국철도공사	한국철도공사	transport	travel
+financial_product	농협은행주식회사 - NH1934월복리적금 (적금)	농협은행주식회사	농협은행주식회사	finance	other

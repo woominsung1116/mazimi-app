@@ -1,0 +1,7 @@
+User-agent:*
+Disallow:/admin/
+Disallow:/manager/
+Disallow:/member/
+Disallow:/inc/
+Disallow:/checkplus/
+Sitemap: https://ediya.com/sitemap.xml

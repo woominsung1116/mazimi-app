@@ -1,0 +1,5 @@
+user-agent: *
+disallow: /thdadmin/
+disallow: /upload/
+disallow: /html2/
+disallow: /html/

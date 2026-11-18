@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>고속버스통합예매</title>
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/layout.css">
+<link rel="stylesheet" type="text/css" href="/css/content.css">
+<link rel="stylesheet" type="text/css" href="/css/content2.css">
+<script type="text/javascript">
+//쿠키 가져오기
+function getCookie( name ) {
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length ) {
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) { 
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) {
+				endOfCookie = document.cookie.length;
+			}
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 ) {
+			break;
+		}
+	}
+	return ""; 
+}
+var lngCdCookie = getCookie("LNG_CD");
+lngCdCookie = (lngCdCookie != null && lngCdCookie != undefined && lngCdCookie != "") ? lngCdCookie : "";
+var lngCd = (lngCdCookie == "EN" || lngCdCookie == "CN" || lngCdCookie == "JP") ? lngCdCookie : "KO";
+function onload_body() {
+	// 언어별 변경
+	if (lngCd == "EN") {
+		try {document.getElementsByTagName("html")[0].lang = "en";} catch (e) {}
+		document.title = "Integrated Express Bus Website";
+		document.getElementById("goHome1").innerText = "Integrated Express Bus Website";
+		document.getElementById("message1").innerText = "The page you have requested cannot be found.";
+		document.getElementById("message2").innerText = "Please double check whether the page address and path is correct.";
+		document.getElementById("beForePage").innerText = "Previous page";
+		document.getElementById("goHome2").innerText = "home";
+	}else if (lngCd == "CN") {
+		try {document.getElementsByTagName("html")[0].lang = "zh";} catch (e) {}
+		document.title = "高速客车综合网站";
+		document.getElementById("goHome1").innerText = "高速客车综合网站";
+		document.getElementById("message1").innerText = "找不到您要求的网页。";
+		document.getElementById("message2").innerText = "请再次确认网页地址和途径是否正确。";
+		document.getElementById("beForePage").innerText = "前一页";
+		document.getElementById("goHome2").innerText = "转到主页";
+	}else if (lngCd == "JP") {
+		try {document.getElementsByTagName("html")[0].lang = "ja";} catch (e) {}
+		document.title = "高速バス統合ホームページ";
+		document.getElementById("goHome1").innerText = "高速バス統合ホームページ";
+		document.getElementById("message1").innerText = "ご要望のページが見つかりませんでした。";
+		document.getElementById("message2").innerText = "ページのアドレスと経路が正しいかどうかをもう一度確認してください。";
+		document.getElementById("beForePage").innerText = "前のページ";
+		document.getElementById("goHome2").innerText = "ホームへ";
+	}
+	var strHome = (location.href.indexOf("/spexp/") >= 0) ? "/spexp/main.do" : "/main.do";
+	var strHome = (location.href.indexOf("/wchr/") >= 0) ? "/wchr/main.do" : "/main.do";
+	document.getElementById("goHome1").href = strHome;
+	document.getElementById("goHome2").href = strHome;
+	if(document.referrer){
+		document.getElementById("beForePage").href = "javascript:history.back()";
+	}else{
+		document.getElementById("beForePage").href = strHome;
+	}
+	
+	var murl = document.URL;
+	var jspIndexOf = murl.indexOf("in_res.jsp");
+	if(jspIndexOf > 0){
+		document.getElementById("message1").innerText = "죄송합니다.";
+		//document.getElementById("message2").innerHTML = "현재는 모바일에서 사용할 수 없습니다. PC 홈페이지에서 예매/조회하시기 바랍니다. 모바일앱은 6월28일부터 이용 가능합니다. PC 홈페이지에서 예약/예매하신 분은 창구에서 승차권 안내를 받으시기 바랍니다.<br><br>감사합니다.";
+		document.getElementById("message2").innerHTML = "기존 모바일웹에서 예약가능 노선에<br>대해 6/27부터 고속버스 모바일앱을<br>통해 예매서비스를 시행합니다.<br>※업데이트 시에만 사용 가능<br><br>감사합니다.";
+		document.getElementById("hrefBtn").style.display = "none";
+		document.getElementById("homeLogo").innerHTML = "<a id='goHome1'>고속버스통합예매</a>";
+	}
+}
+
+
+</script>
+</head>
+<body onload="onload_body()">
+	<div id="wrap" class="noticeWrap">
+		<h1 class="logo" id="homeLogo">
+			<a href="/main.do" id="goHome1">고속버스통합예매</a>
+		</h1>
+		<div class="notice_cont">
+			<div class="txt_wrap">
+				<h2 id="message1">요청하신 페이지를 찾을 수 없습니다.</h2>
+				<p id="message2" class="desc">페이지 주소와 경로가 정확한지 다시 한번 확인해주세요.</p>
+			</div>
+			<p class="btns col2" id="hrefBtn">
+				<a href="/main.do" id="beForePage" class="btnL btn_cancel">이전 페이지</a>
+				<a href="/main.do" id="goHome2" class="btnL btn_confirm">홈으로</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

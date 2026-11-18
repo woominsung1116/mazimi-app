@@ -1,0 +1,91 @@
+User-agent: Yeti
+User-agent: googlebot
+User-agent: google-extended
+User-agent: GPTbot
+User-agent: ClaudeBot
+
+Allow : /personal/services/UHPPAS0500M1.jsp
+Allow : /personal/services/tax/UHPPPS1200M0.jsp
+Allow : /personal/services/school-pay/UHPPPS1002M0.jsp
+Allow : /personal/services/rglr-stlm/unitu/UHPPPS2601M0.jsp
+Allow : /personal/services/rglr-stlm/UHPPPS2001M0.jsp
+Allow : /personal/services/rglr-stlm/tcgam/UHPPPS2501M0.jsp
+Allow : /personal/services/rglr-stlm/sclinsr/UHPPPS2301M0.jsp
+Allow : /personal/services/rglr-stlm/real-estate/UHPPPS6000M0.jsp
+Allow : /personal/services/rglr-stlm/ntlt/UHPPPS2901M0.jsp
+Allow : /personal/services/rglr-stlm/multiple/UHPPPS3001M0.jsp
+Allow : /personal/services/rglr-stlm/gas/UHPPPS2201M0.jsp
+Allow : /personal/services/rglr-stlm/farm/UHPPPS2911M0.jsp
+Allow : /personal/services/rglr-stlm/aptam/UHPPPS2801M0.jsp
+Allow : /personal/services/merchant/merchant-benefits/UHPPBE2501M0.jsp
+Allow : /personal/services/merchant/free-install/UHPPBE0701M0.jsp
+Allow : /personal/services/merchant/bonus-club/UHPPBE0507M0.jsp
+Allow : /personal/notice/service-change/UHPPCC0249M0.jsp
+Allow : /personal/notice/news/UHPPCC0247M0.jsp
+Allow : /personal/notice/alert/UHPPCC0250M0.jsp
+Allow : /personal/main/UHPPCO0101M0.jsp
+Allow : /personal/event/ing/UHPPBE1401M0.jsp
+Allow : /personal/customer-service/work-out/UHPPCC0349M0.jsp
+Allow : /personal/customer-service/UHPPCC0150M0.jsp
+Allow : /personal/customer-service/protection/UHPPCC0334M0.jsp
+Allow : /personal/customer-service/privacy/UHPPCC0327M0.jsp
+Allow : /personal/customer-service/guide/UHPPCC0381M0.jsp
+Allow : /personal/customer-service/faq/UHPPCC0201M0.jsp
+Allow : /personal/customer-service/fair-trade/UHPPCC0325M0.jsp
+Allow : /personal/customer-service/customer-rights/notice/UHPPCC0332M0.jsp
+Allow : /personal/customer-service/customer-rights/credit-information/UHPPCC0333M0.jsp
+Allow : /personal/customer-service/creditcard-guide/UHPPCC0322M0.jsp
+Allow : /personal/customer-service/conditions/UHPPCC0338M0.jsp
+Allow : /personal/customer-service/collect/UHPPCC0348M0.jsp
+Allow : /personal/card-lounge/UHPPBE3001M0.jsp
+Allow : /personal/card/gift-card/UHPPCA0360M0.jsp
+Allow : /personal/aid/UHPPAS1030M0.jsp
+Allow : /home/finance/primeloan/PGHPPCCFinancePrimeloanInfoPrimeloan001
+Allow : /home/finance/cashadvance/PGHPPCCFinanceCashadvanceInfo001
+Allow : /home/finance/cashadvance/PGHPPCCFinanceCashadvanceFamilyCardApply001
+Allow : /home/finance/cardloan/PGHPPCCFinanceCardloanInfo001
+Allow : /home/card/cardinfo/PGHPPDCCardCardinfoRecommendPC001
+Allow : /home/card/cardinfo/PGHPPCCCardCardinfoRecommend001
+Allow : /home/card/cardinfo/PGHPPCCCardCardinfoPersonalizedBenefit001
+Allow : /home/card/cardinfo/PGHPPCCCardCardinfoIndividualBizcard001
+Allow : /home/card/cardinfo/PGHPPCCCardCardinfoHipasscard001
+Allow : /home/card/cardinfo/PGHPPCCCardCardinfoDetails001
+Allow : /home/card/cardinfo/PGHPPCCCardCardinfoCheckcard001
+Allow : /home/card/apply/PGHPPCPCardApplyYouthcardinfo001
+Allow : /home/card/apply/PGHPPCPCardApplyFamilycardinfo001
+Allow : /personal/services/UHPPAS1800M0.jsp
+Allow : /personal/services/UHPPAS0401M0.jsp
+Allow : /personal/services/UHPPAS0301M0.jsp
+Allow : /personal/services/rglr-stlm/elcam/UHPPPS2401M0.jsp
+Allow : /personal/services/mealkit/UHPPPS5000M0.jsp
+Allow : /personal/services/debt/UHPPAS0701M0.jsp
+Allow : /personal/rental/main/UHPPCO1101M0.jsp
+Allow : /personal/customer-service/UHPPCC1291M0.jsp
+Allow : /personal/customer-service/provention/accident/UHPPCC0354M5.jsp
+Allow : /personal/customer-service/provention/accident/UHPPCC0354M4.jsp
+Allow : /personal/customer-service/provention/accident/UHPPCC0354M3.jsp
+Allow : /personal/customer-service/provention/accident/UHPPCC0354M2.jsp
+Allow : /personal/customer-service/provention/accident/UHPPCC0354M1.jsp
+Allow : /personal/customer-service/procedure/UHPPCC1602M0.jsp
+Allow : /personal/customer-service/procedure/UHPPCC0382M0.jsp
+Allow : /personal/customer-service/procedure/services/UHPPCC1602M3.jsp
+Allow : /personal/customer-service/procedure/services/UHPPCC1602M2.jsp
+Allow : /personal/customer-service/procedure/services/UHPPCC1602M1.jsp
+Allow : /personal/customer-service/procedure/cardissue/UHPPCC0383M0.jsp
+Allow : /personal/customer-service/customer-info/UHPPCC0401M0.jsp
+Allow : /personal/customer-service/customer-info/customer-voice/UHPPCC0402M0.jsp
+Allow : /personal/customer-service/customer-charter/UHPPCC0324M0.jsp
+Allow : /personal/card/gift-card/charge/UHPPCA0362M0.jsp
+Allow : /home/main/benefit/PGHPPCCMainBenefitViewFranchiseStore001
+Allow : /home/customer/faq/PGHPPCCCustomerFaqViewFaq001
+Allow : /home/customer/counsel/PGHPPCCCustomerCounselFinancialFraudInfo001
+Allow : /home/customer/aboard/PGHPPCCCustomerAboardViewPublicTransportInfo001
+Allow : /home/benefit/thetwenty/PGHPPMCBenefitThetwentyInfo001
+Allow : /home/benefit/thetwenty/PGHPPMBenefitThetwentyLounge001
+Allow : /home/benefit/thetwenty/
+Allow : /$
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.samsungcard.com/sitemap.xml

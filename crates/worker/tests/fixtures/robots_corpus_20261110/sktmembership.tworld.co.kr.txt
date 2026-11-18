@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /mps/pc-bff/auth/
+Disallow: /mps/pc-bff/sample/
+Disallow: /mps/pc-bff/common/
+Disallow: /mps/pc-bff/mypage/
+Allow: /mps/pc-bff/mypage/useinfo/
+
+Sitemap: https://sktmembership.tworld.co.kr/sitemap.xml

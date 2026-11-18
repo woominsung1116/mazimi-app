@@ -1,0 +1,11 @@
+User-Agent: *
+
+Disallow: /users
+Disallow: /managers
+Disallow: /cable
+Disallow: /admin
+Disallow: /start_trial
+Disallow: /pr/*
+Allow: /
+
+Sitemap: https://programmers.co.kr/sitemaps/sitemap.xml

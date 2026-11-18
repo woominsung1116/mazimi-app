@@ -1,0 +1,155 @@
+{
+ "source": "prod current_programs, read-only sample 2026-10-23 (summary and normalized_payload.conditions)",
+ "cases": [
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "결혼이민자·귀화허가자 대상으로 민사, 가사사건 등 지원"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "○ 산모건강관리사 이용 시, 비용의 본인부담금 90% 지원(50만원 한도내)"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "고립·은둔형 청소년 원스톱 지원체계 구축‧운영"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "서민·취약계층 등이 금융 소비자로서 적절한 의사결정을 수행할 수 있도록 경제·금융교육 실시"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "○ 시설 퇴소 등 보호에서 종료되는 아동의 사회 정착 초기비용(전월세보증금, 대학등록금 "
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "○ 국1/반찬5/과일및간식1, 총 7가지를 주 1회 배달"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "초·중·고·대학생 대상 장학금 지급(대상별 장학금 상이)"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "고등학생, 대학생 - 성적우수, 저소득, 특정분야별 장학금 지원 \r\n"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "개발제한구역 내 저소득 주민에게 생활비용을 세대별 100만원 한도로 지원"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "조사료 재배 농가에 종자 구입 지원"
+  },
+  {
+   "source_type": "gov_benefits",
+   "kind": "summary",
+   "text": "난임부부시술비 지원 대상자 시술과 직접적 관련 있는 원외약처방 약제비에 대하여 정부지원금액"
+  },
+  {
+   "source_type": "youth_center",
+   "kind": "summary",
+   "text": " ㅇ (사업 기간) 2004년 ~ 계속사업 \n\n ㅇ (사업 대상) 저소득층, 청년, 신혼부부 등 주거취약계층\n\n ㅇ (추진 체계) \n   - (시행 방법) (국토교통부)국비지원, (부산광역시)예산교부, (부산도시공사)사업시행\n   - (추진 절차) 입주대상자가 시·군·구에 신청, 부산도시공사가 기존 다가구 주택을 매입하여 개보수한 후 시·군·구의 추천대상자 입주"
+  },
+  {
+   "source_type": "youth_center",
+   "kind": "summary",
+   "text": "전세보증금 반환보증 가입을 유도하여 전세사기 피해 예방\r\n- (사업기간) 26. 1. 1. ~ 예산 소진 시까지\r\n- (추진기관) 국토교통부, 부산시, 16개 구군\r\n- (사 업 비) 1,238,000천원(국 50%, 시 50%)  \r\n- (지원대상) 지원기준을 모두 충족하는 주민등록상 부산 거주 시민\r\n ▹신청인 기준 보증 효력이 유효한 전세보증금반환보증에 가입\r\n ▹임차보증금 3억원 이하\r\n ▹연소득 (청년) 5천만원, (청년 외) 6천만원, (신혼부부) 7.5천만원 이하\r\n ▹무주택  ※ 본인, 배우자 모두 무주택 / 분양권, 입주권 주택 포함\r\n- (지원내용) 전세보증금 반환보증 보증료 전부 또는 일부 지원(최대 40만원)\r\n- (지원인원) 약 4,000명"
+  },
+  {
+   "source_type": "youth_center",
+   "kind": "summary",
+   "text": "○ 문화학교 : 사전 수요조사(네이버폼 온라인 수요조사)를 통한 장기(1~2개월)프로그램\n- 통기타, 비누공예, 쿠킹 클래스, 아로마 테라피 등\n○ 원데이 : 단기적 운영이 필요한 다양한 분야의 강좌\n- 도마 만들기, 글라스아트 시계, 꽃다발, 오일 파스텔 등\n○ 청년 샘스쿨(최대 6시간) : 강의 경험이 없는 청년 강사에게 강의 경험 기회 제공\n- 그텝박스 댄스 클래스, 강아지 수제간식, 비올라 레슨 등\n○ 소셜다이닝 : 1인 가구의 지역 식자재를 활용한 요리강습 및 네트워킹"
+  },
+  {
+   "source_type": "youth_center",
+   "kind": "summary",
+   "text": "○사업 내용: 대학생·청년·신혼부부 등 젊은 계층의 주거안정을 위한 공공임대 주택 공급\n○지원 규모: 우선공급 60% 중 18%가 청년층 공급(청년 11%, 신혼부부 7%)"
+  },
+  {
+   "source_type": "youth_center",
+   "kind": "summary",
+   "text": "1인가구의 혼밥·식생활 개선 및 사회적 교류 증진을 위한 공동 조리·식사 요리교"
+  },
+  {
+   "source_type": "youth_center",
+   "kind": "summary",
+   "text": "  ○ 사업기간 : ’26. 1. ~ 12. \n  ○ 지원대상 : (울산)39세 이하 청년, 예비 또는 7년 미만 제조 창업자\n  ○ 지원내용 : 소규모 제조공간, 제조설비, 교육‧컨설팅‧마케팅 지원\n  ○ 지원규모 : 6개점 32개실  ※ 입주기간 : 최장 5년(매년 연장심사)"
+  },
+  {
+   "source_type": "youth_center",
+   "kind": "summary",
+   "text": "ㅇ (대상) 용인시 거주 또는 소재학교, 사업장 소속 18~39세 청년\nㅇ (주요내용) 청년의 심리적 안정감 증진을 위한 청년특화 전문 프로그램"
+  },
+  {
+   "source_type": "local_welfare",
+   "kind": "summary",
+   "text": "관외 대학으로 통학하는 청년들의 교통비 부담완화를 통해 학업 지속과 생활안정을 이룰 수 있도록 지원하기 위함."
+  },
+  {
+   "source_type": "local_welfare",
+   "kind": "summary",
+   "text": "❍ 홍천군 거주 청년이 관내 중소기업에 정규직으로 취업 시 인센티브를 지원하여 장기근속을 장려함으로써 기업의 고용안정을 도모하고 청년인구 유출 방지 및 장기적 인구증가 효과 기대\n❍ 지원금을 홍천사랑카드로 지급하여 지역경제 활성화 도모"
+  },
+  {
+   "source_type": "local_welfare",
+   "kind": "summary",
+   "text": "○ 중증장애인들이 일상생활을 영위하는데 필요한 서비스를 적절하게 제공\n    함으로써 기본적인 생활보장 및 사회참여를 제고하고 가족기능 회복에 기여\n"
+  },
+  {
+   "source_type": "local_welfare",
+   "kind": "summary",
+   "text": "어려운 이웃이 따뜻한 명절을 보낼 수 있도록 위문"
+  },
+  {
+   "source_type": "scholarship",
+   "kind": "summary",
+   "text": "○ 500만원"
+  },
+  {
+   "source_type": "scholarship",
+   "kind": "summary",
+   "text": "○ ('26년) 멘토 활동지원금 45.3만 원"
+  },
+  {
+   "source_type": "scholarship",
+   "kind": "summary",
+   "text": "○ 150만원(생활비성 장학금)"
+  },
+  {
+   "source_type": "scholarship",
+   "kind": "summary",
+   "text": "○ 100만원"
+  },
+  {
+   "source_type": "corporate_official",
+   "kind": "conditions",
+   "text": "유효한 GitHub Student Developer Pack 자격"
+  },
+  {
+   "source_type": "corporate_official",
+   "kind": "conditions",
+   "text": "GitHub 학생 인증, GitHub 방식으로 만든 GitKraken 계정, 최초 계정 생성일 기준 체험 기간"
+  },
+  {
+   "source_type": "corporate_official",
+   "kind": "conditions",
+   "text": "유효한 GitHub Student Developer Pack 자격"
+  },
+  {
+   "source_type": "university_official",
+   "kind": "conditions",
+   "text": "부산대학교 재학·휴학 중인 학생. 학교 계정 로그인 필요."
+  }
+ ]
+}

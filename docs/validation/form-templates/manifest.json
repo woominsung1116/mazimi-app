@@ -1,0 +1,712 @@
+{
+  "version": 1,
+  "generated_by": "scripts/forms/propose_fields.py batch",
+  "forms": [
+    {
+      "slug": "incheon-youth-rent",
+      "program": "청년월세 지원사업(국토부 청년월세 지원, 인천시)",
+      "agency": "인천광역시 (인천청년포털)",
+      "notice_url": "https://youth.incheon.go.kr/bbs/bbsMsgDetail.do?bcd=notice&msg_seq=45",
+      "file_url": "https://youth.incheon.go.kr/bbs/bbsMsgFileDown.do?bcd=notice&msg_seq=45&fileno=3",
+      "retrieved_at": "2026-10-12T05:07:15Z",
+      "format": "pdf",
+      "sha256": "6526147be0095eb3f2306335842ae2c20e824856eb24b7f06ef9a8c10c4fe6e9",
+      "byte_size": 327635,
+      "notes": "2026 round. 12-page bundle of blank forms (서식1 월세지원 신청(변경)서 pp.1-3 + consent/supporting forms); youth.incheon.go.kr/robots.txt not served (connection failed), treated as no restriction.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "incheon-youth-rent.template.json",
+      "pages": 12,
+      "templated_pages": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "field_count": 196,
+      "sensitive_fields": [
+        "주민등록번호 (외국인등록번호)",
+        "청년독립가구 1행 주민등록번호",
+        "청년독립가구 2행 주민등록번호",
+        "원가구 1행 주민등록번호",
+        "원가구 2행 주민등록번호",
+        "원가구 3행 주민등록번호",
+        "원가구 4행 주민등록번호",
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "jeonju-youth-rent",
+      "program": "청년월세 지원사업 (국토부·전주시)",
+      "agency": "전주시",
+      "notice_url": "https://jeonju.go.kr/planweb/board/view.9is?boardUid=9be517a7914528ce01930aa3ddc26cf0&contentUid=ff8080818990c349018b041a879f395a&dataUid=8aa6338ae6304106ae88067f231d9b80",
+      "file_url": "https://jeonju.go.kr/planweb/board/download.9is?fileUid=6e79434ef14143d3be3fc3a5d7bf27a6&boardUid=9be517a7914528ce01930aa3ddc26cf0",
+      "retrieved_at": "2026-10-12T05:08:39Z",
+      "format": "pdf",
+      "sha256": "c11e0f36007f7ed7239c70de2c540400bafcc96266ac8894cd0113eb99dbe0ce",
+      "byte_size": 216903,
+      "notes": "2026 round. Same national 서식1 청년월세 지원 신청(변경)서 template as incheon-youth-rent but different layout/rendering; 7 pages (서식1 pp.1-3 + attachments).",
+      "status": "template_ready",
+      "reason": null,
+      "template": "jeonju-youth-rent.template.json",
+      "pages": 7,
+      "templated_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "field_count": 196,
+      "sensitive_fields": [
+        "주민등록번호 (외국인등록번호)",
+        "청년독립가구 1행 주민등록번호",
+        "청년독립가구 2행 주민등록번호",
+        "청년독립가구 3행 주민등록번호",
+        "원가구 1행 주민등록번호",
+        "원가구 2행 주민등록번호",
+        "원가구 3행 주민등록번호",
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "yangpyeong-merit-scholarship",
+      "program": "양평군장학재단 성적우수 장학생(대학생) 선발",
+      "agency": "(재)양평군장학재단",
+      "notice_url": "https://www.ypedc.or.kr/archives/5976",
+      "file_url": "https://www.ypedc.or.kr/wp-content/uploads/2026/04/2.-2026%EB%85%84%EB%8F%84-%EC%84%B1%EC%A0%81%EC%9A%B0%EC%88%98-%EC%9E%A5%ED%95%99%EC%83%9D-%EC%8B%A0%EC%B2%AD%EC%84%9C-%EB%B0%8F-%EA%B5%AC%EB%B9%84%EC%84%9C%EB%A5%98.hwp",
+      "retrieved_at": "2026-10-12T05:09:42Z",
+      "format": "hwp",
+      "sha256": "c190aac0b0052ac6bd2a53c9f4b65e08e96da675470a7588c826e791d99f3f7d",
+      "byte_size": 62976,
+      "notes": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). / 2026 round. HWP 5 (OLE). Blank check via PrvText preview: 〈표 1〉 성적우수 장학생(대학생) 선발신청서 with empty 성명/주민등록번호/연락처/계좌 cells + 구비서류 list. Sibling forms (복지/다자녀/예체능) on same page not downloaded.",
+      "derived_pdf": {
+        "sha256": "bb71794f6078bb42a40a6fb895a8768a778ffaae089348049c282e4f91727659",
+        "byte_size": 160631,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "yangpyeong-merit-scholarship.template.json",
+      "pages": 3,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 29,
+      "sensitive_fields": [
+        "신청학생 주민등록번호",
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "jeju-youth-public-work",
+      "program": "2026년 하반기 청년공공근로사업 참여자 모집",
+      "agency": "제주특별자치도 (농업기술원 게시)",
+      "notice_url": "https://agri.jeju.go.kr/files/board/f6fe955b-f4bc-4502-a2a4-215e0af388ba.pdf",
+      "file_url": "https://agri.jeju.go.kr/files/board/f6fe955b-f4bc-4502-a2a4-215e0af388ba.pdf",
+      "retrieved_at": "2026-10-12T05:11:26Z",
+      "format": "pdf",
+      "sha256": "6b55a2957af7a82a4ea0ffbd30486ac4d7b887555adecde1fb15b7f6726ff5c6",
+      "byte_size": 774983,
+      "notes": "서식2~4(행정정보 제공 요구서·동의서)는 2쪽 모아찍기 축소 인쇄라 칸 위치 신뢰도가 낮아 제외: 이용자가 직접 작성 / PDF is the notice itself (공고 제2026-2281호) bundled with forms; board post page not located, so notice_url = the PDF URL. Landscape 2-up A4 (841x595pt): page 1 + left half of p2 = 공고문; 서식1 청년공공근로사업 참여 신청서(표준서식) on right half of p2; 서식2-5 (행정정보 제공 요구서, 성범죄/아동학대 조회 동의서, 응시서류 반환청구서) pp.3-5; p6 reference. Application round closed 2026-06-29.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "jeju-youth-public-work.template.json",
+      "pages": 6,
+      "templated_pages": [
+        2
+      ],
+      "field_count": 46,
+      "sensitive_fields": [
+        "주민등록번호 (외국인등록번호) (1)",
+        "주민등록번호 (외국인등록번호) (2)"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "gachon-kfls-scholarship",
+      "program": "한국지도자육성장학재단 장학생 지원(2026, 대학 추천)",
+      "agency": "한국지도자육성장학재단 (가천대학교 재무/장학 게시판 배포)",
+      "notice_url": null,
+      "file_url": "https://www.gachon.ac.kr/bbs/finance/801/136679/download.do",
+      "retrieved_at": "2026-10-12T05:13:04Z",
+      "format": "pdf",
+      "sha256": "e8b4a09655ffdf391d66fe3b92fc5d662d85a8a1b89752c845bff8820c815647",
+      "byte_size": 115656,
+      "notes": "File found via search on gachon.ac.kr bbs/finance (file id 136679); the exact board post was not located (artclView for that id returns not-found), so notice_url left empty. 4 pages: 서식1 장학생 지원서 p1 (blank, 관리번호 2026-), 서식2 지도교수 추천서, 서식3 자기소개서. Created with Hwp 2018 -> Hancom PDF.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "gachon-kfls-scholarship.template.json",
+      "pages": 4,
+      "templated_pages": [
+        1,
+        3
+      ],
+      "field_count": 54,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "keimyung-gs-scholarship",
+      "program": "계명대학교 대학원 신입생·재입학생 장학금 신청(수기신청)",
+      "agency": "계명대학교 대학원",
+      "notice_url": "https://gs.kmu.ac.kr/bbs/gs/657/217423/artclView.do?layout=unknown",
+      "file_url": "https://gs.kmu.ac.kr/bbs/gs/657/174479/download.do",
+      "retrieved_at": "2026-10-12T05:14:14Z",
+      "format": "hwp",
+      "sha256": "e21b3ec2fafb9d605301e5c9d6d6f04867d05a9812c6649b2f882e66fe7f9f92",
+      "byte_size": 1118720,
+      "notes": "HWP bundle, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). Only [양식 1] 장학금 신청서 (page 2). / HWP 5 (OLE), 1.1MB. Attachment name (양식)수기신청 서류(신입생, 재입학생)_20251104(신입).hwp. PrvText shows 양식 목록 page then 장학금 신청서[양식 1] with empty 학과/수험번호/성명/휴대전화 cells, plus 이공계 장학지원추천서[양식 2]. Graduate-level, not undergrad.",
+      "derived_pdf": {
+        "sha256": "95cced44c470e01fdfbbcaf792648aa57b18cfd80fd969eed306bd7c05d0b85e",
+        "byte_size": 1281752,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "2": "two_engines"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "keimyung-gs-scholarship.template.json",
+      "pages": 17,
+      "templated_pages": [
+        2
+      ],
+      "field_count": 61,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "konkuk-beauty-scholarship",
+      "program": "건국대학교 미래지식교육원 장학금 신청서",
+      "agency": "건국대학교 미래지식교육원",
+      "notice_url": "https://beauty.konkuk.ac.kr/bbs/beauty/4140/1117696/artclView.do",
+      "file_url": "https://beauty.konkuk.ac.kr/bbs/beauty/4140/1157395/download.do",
+      "retrieved_at": "2026-10-12T05:13:50Z",
+      "format": "pdf",
+      "sha256": "9335040faa4aa5979c057f1c9028e31eebabbe8860696d0f14b6d9e2b1f38b40",
+      "byte_size": 98633,
+      "notes": "OLD: PDF CreationDate 2018-02-05 (not a 2025-26 round). 2 pages: p1 blank 장학금 신청서 (전공명/학번/성명/생년월일/연락처/계좌 cells, 20  년 학기), p2 장학금 종류 table (reference). Lifelong-education institute (학점은행), not regular undergrad.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "konkuk-beauty-scholarship.template.json",
+      "pages": 2,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 18,
+      "sensitive_fields": [
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "seoul-youth-rent-forms",
+      "program": "2026년 서울시 청년월세지원 (공고문 별지 참고서식)",
+      "agency": "서울특별시 (서울주거포털)",
+      "notice_url": "https://housing.seoul.go.kr/site/main/board/notice/12667",
+      "file_url": "https://housing.seoul.go.kr/site/main/file/download/uu/fb3b541bfc93453385e5d43426f0e252",
+      "retrieved_at": "2026-10-12T05:17:32Z",
+      "format": "pdf",
+      "sha256": "add84b574be2f2ad82c4ef379a6393843eb1f72d699c35e07cfdcf757b7c1a02",
+      "byte_size": 92706,
+      "notes": "Supplementary attachment forms, not the main 신청서 (main application is online). 4 pages: [서식1] 실거주 확인서, [서식2] 고용·임금확인서, [서식3] 근로활동 및 소득신고서, + further 서식; all blank cells. CreationDate 2026-04-30, Hwp 2020 export.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "seoul-youth-rent-forms.template.json",
+      "pages": 4,
+      "templated_pages": [
+        1,
+        3,
+        4
+      ],
+      "field_count": 58,
+      "sensitive_fields": [
+        "신청인 주민등록번호 앞자리",
+        "신청인 주민등록번호 뒷자리",
+        "부양자 주민등록번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "sangju-youth-certificate-fee",
+      "program": "청년 구직자 자격증 취득 지원사업 (응시료 지원)",
+      "agency": "경상북도 상주시",
+      "notice_url": "https://www.sangju.go.kr/opencenter/jfile/readFile.tc?fileId=JF00000001510&fileSeq=1",
+      "file_url": "https://www.sangju.go.kr/opencenter/jfile/readFile.tc?fileId=JF00000001510&fileSeq=1",
+      "retrieved_at": "2026-10-12T05:17:44Z",
+      "format": "pdf",
+      "sha256": "f2031804e8c1628e0225cfc15d4ea235501135fa62d893f095a5cd328bd58f06",
+      "byte_size": 430397,
+      "notes": "PDF is 상주시 공고 제2026-79호 itself (board post not located, so notice_url = PDF URL). 8 pages: pp.1-5 공고문 + 붙임1 시험 목록; forms on pp.6-8: 지원금 신청서 (p6, blank), 개인정보 수집·이용 동의서 (p7), 합격수당 신청서 (p8).",
+      "status": "template_ready",
+      "reason": null,
+      "template": "sangju-youth-certificate-fee.template.json",
+      "pages": 8,
+      "templated_pages": [
+        6,
+        7,
+        8
+      ],
+      "field_count": 46,
+      "sensitive_fields": [
+        "주민등록번호",
+        "신청내용 계좌번호",
+        "주민등록번호",
+        "신청내용 계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "jeonju-youth-public-rental-deposit",
+      "program": "신혼부부 및 청년 공공임대주택 임대보증금 무이자 지원(융자)",
+      "agency": "전주시",
+      "notice_url": "https://www.jeonju.go.kr/planweb/board/view.9is?contentUid=ff8080818990c349018b041a879f395a&boardUid=9be517a7914528ce01930aa3ddc26cf0&dataUid=0feb781ccb7d46c0b951f64cc3467ed1",
+      "file_url": "https://www.jeonju.go.kr/planweb/board/download.9is?fileUid=9be517a89b212afa019c40dea70c4d02&boardUid=9be517a7914528ce01930aa3ddc26cf0",
+      "retrieved_at": "2026-10-12T05:19:21Z",
+      "format": "pdf",
+      "sha256": "5afc9a7f67ae8eeaa5148d206ba02dc21a6835812c06c6ccdcf0ce8880bb9b12",
+      "byte_size": 121804,
+      "notes": "2026 round (CreationDate 2026-02-09; applications closed 2026-04-10). 3 pages: 붙임1 신청서 p1 (blank 성명/생년월일/주소/연락처/가족사항), 붙임2 의무이행 확약서, further form. Interest-free deposit loan, not interest subsidy.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "jeonju-youth-public-rental-deposit.template.json",
+      "pages": 3,
+      "templated_pages": [
+        1,
+        2,
+        3
+      ],
+      "field_count": 78,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "mpva-veterans-scholarship",
+      "program": "2026년 2학기 보훈(가족)장학 (대학원장학·특수장학·보훈가족장학)",
+      "agency": "국가보훈부",
+      "notice_url": "https://www.mpva.go.kr/mpva/selectBbsNttView.do?key=142&bbsNo=29&nttNo=274733",
+      "file_url": "https://www.mpva.go.kr/mpva/downloadBbsFile.do?atchmnflNo=171871",
+      "retrieved_at": "2026-10-12T05:19:43Z",
+      "format": "hwpx",
+      "sha256": "0547db68f3326d8cefbf4950d58f698433c4c7da79f6c7d44175d3c15b96dd32",
+      "byte_size": 118132,
+      "notes": "HWPX (mimetype application/hwp+zip). Single file bundles 공고문 + 작성요령 + 붙임3 보훈장학 신청서 + 붙임4 보훈가족장학 신청서 + 개인정보 동의서; form text extracted from Contents/section0.xml shows empty 성명/생년월일/주소/학교명/계좌 cells. Page positions not determined (no renderer). Application period 2026-09-01~09-30 (closed). mpva robots.txt has no wildcard group.",
+      "status": "hwp_unfaithful",
+      "reason": "HWP/HWPX 변환본이 원본과 다름(conversions.json): The application pages (붙임3/4) have no ground truth and the engines disagree: rhwp draws '. . .(남,여)' over a cell border and spaces rows about 20% taller than H2Orestart. Page 1 also loses the '❶' bullet glyph.",
+      "template": null,
+      "field_count": 0,
+      "sensitive_fields": []
+    },
+    {
+      "slug": "iksan-love-scholarship",
+      "program": "익산사랑 장학금 (지급신청서, 2025년도)",
+      "agency": "(재)익산사랑장학재단",
+      "notice_url": "https://ilsaf.or.kr/selection/forms.asp",
+      "file_url": "https://ilsaf.or.kr/CommonFiles/filedownload.asp?SID=2647&varNumber=1",
+      "retrieved_at": "2026-10-12T05:21:11Z",
+      "format": "hwp",
+      "sha256": "6a0e1cdbb201a74bc0f61fdb24c98fedf89514faf304b1c9c273a2c3a295b848",
+      "byte_size": 101888,
+      "notes": "HWP 5 (OLE); server sent Content-Type text/html but bytes are HWP. Download via the site JS fncfiledownload(2647,1) -> plain GET /CommonFiles/filedownload.asp. 2025 form (posted 2025-10-31), payment application for selected scholars (지급신청서) + 개인정보 동의서; PrvText shows blank 성명/성별/생년월일/학교명/주소/계좌 cells.",
+      "status": "hwp_unfaithful",
+      "reason": "HWP/HWPX 변환본이 원본과 다름(conversions.json): Text missing in both engines. rhwp drops the consent sentence ('위와 같이 본인의 개인정보를 수집·이용하는 것에 동의합니다') and the '▸장 소' line of the ceremony box; H2Orestart drops the 선발유형 checkbox rows and the 동의함/동의하지 않음 boxes.",
+      "template": null,
+      "field_count": 0,
+      "sensitive_fields": []
+    },
+    {
+      "slug": "gyeonggi-youth-interview-allowance",
+      "program": "경기도 청년 면접수당 (2025년 제2차)",
+      "agency": "경기도",
+      "notice_url": "https://www.gg.go.kr/uploads/CONTENTS/site/gg/(%EA%B3%B5%EA%B3%A0%EB%AC%B8)%202025%EB%85%84%20%EC%A0%9C2%EC%B0%A8%20%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%B2%AD%EB%85%84%20%EB%A9%B4%EC%A0%91%EC%88%98%EB%8B%B9%20%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0.pdf",
+      "file_url": "https://www.gg.go.kr/uploads/CONTENTS/site/gg/(%EA%B3%B5%EA%B3%A0%EB%AC%B8)%202025%EB%85%84%20%EC%A0%9C2%EC%B0%A8%20%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%B2%AD%EB%85%84%20%EB%A9%B4%EC%A0%91%EC%88%98%EB%8B%B9%20%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0.pdf",
+      "retrieved_at": "2026-10-12T05:22:17Z",
+      "format": "pdf",
+      "sha256": "30994a1f431951abd35afcb01f026a51d0a4325c81b5663038c4034b4ff0507f",
+      "byte_size": 544670,
+      "notes": "붙임1 면접확인서(10~11쪽)는 기업 담당자가 작성하는 양식이라 제외. 서식의 연도는 2025로 인쇄됨(2025년 제2차 공고 서식) / PDF is 공고 제2025-025호 itself (2025 2nd round, not 2026); the current program page www.gg.go.kr/contents/contents.do?ciIdx=987029&menuId=265937 now links only a 2026 hwpx (면접확인서/대체서약서), and the 2026 PDF forms on youth.gg.go.kr sit under /_attach/ which robots.txt disallows. Main 신청서 is online-only. 18 pages: pp.1-9 공고, forms pp.10-15 (붙임1 면접확인서 - filled by employer, 붙임2 대체서약서, 붙임3 수당 타인 명의 수급 신청서 p14-15, all blank), pp.16-18 참고.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "gyeonggi-youth-interview-allowance.template.json",
+      "pages": 18,
+      "templated_pages": [
+        13,
+        14,
+        15
+      ],
+      "field_count": 31,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "shingu-family-scholarship",
+      "program": "신구대학교 2026-2학기 가족장학금 (교내)",
+      "agency": "신구대학교",
+      "notice_url": "https://www.shingu.ac.kr/cms/FR_BBS_CON/BoardView.do?MENU_ID=1410&CONTENTS_NO=1&SITE_NO=2&BOARD_SEQ=5&BBS_SEQ=16227",
+      "file_url": "https://www.shingu.ac.kr/ajaxfile/FR_SVC/FileDown.do?GBN=X01&BOARD_SEQ=5&SITE_NO=2&BBS_SEQ=16227&FILE_SEQ=1",
+      "retrieved_at": "2026-10-12T05:23:28Z",
+      "format": "pdf",
+      "sha256": "cd7f55bd71afc71ff4db3452655714c7c622daa521b6a4ff2ad1707d9af4169c",
+      "byte_size": 56130,
+      "notes": "1-page blank 가족장학금 신청서 (학과/학년/학번/성명/연락처/신청사유/관계인 cells + 개인정보 동의). CreationDate 2026-06-12. Link is a JS fileDown(); equivalent plain GET built from the anchor data-* attributes (/ajaxfile/FR_SVC/FileDown.do). shingu.ac.kr/robots.txt returns 404.",
+      "status": "template_ready",
+      "reason": null,
+      "template": "shingu-family-scholarship.template.json",
+      "pages": 1,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 21,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "kongju-national-scholarship-ii",
+      "program": "2026학년도 1학기 국가장학금 II유형 경제사정곤란 장학금 (교내 선발)",
+      "agency": "국립공주대학교",
+      "notice_url": "https://www.kongju.ac.kr/bbs/KNU/2132/427531/artclView.do",
+      "file_url": "https://www.kongju.ac.kr/bbs/KNU/2132/652356/download.do",
+      "retrieved_at": "2026-10-12T05:23:31Z",
+      "format": "hwp",
+      "sha256": "df382d976973360b3f8a54d3d62938f3be446ec928d8050b64a26193d7216180",
+      "byte_size": 114176,
+      "notes": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). / HWP 5 (OLE). Attachment 장학금 신청서.hwp; PrvText shows 붙임1 경제사정곤란 장학금 신청서 (접수번호 2026-(1)-) with empty 소속/학번/성명/생년월일/연락처/계좌 cells. Sibling 개인정보제공동의서.hwp not downloaded.",
+      "derived_pdf": {
+        "sha256": "91111536a0d6d4fef54d8fda111ae53d80054b82edf49a2bd676ec75136f376c",
+        "byte_size": 42378,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "kongju-national-scholarship-ii.template.json",
+      "pages": 1,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 42,
+      "sensitive_fields": [
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "sontaehee-scholarship",
+      "program": "손태희장학재단 2026년 4기 장학생 선발 (외부장학, 대학 게시)",
+      "agency": "(재)손태희장학재단 (한림대학교 장학 게시판 배포)",
+      "notice_url": "https://www.hallym.ac.kr/bbs/hallym/156/388833/artclView.do",
+      "file_url": "https://www.hallym.ac.kr/bbs/hallym/156/232314/download.do",
+      "retrieved_at": "2026-10-12T05:24:15Z",
+      "format": "hwp",
+      "sha256": "3240a264c54c418f2a3ea57bf0722e8f3fc0df3277ae610212c2109faa27849e",
+      "byte_size": 49152,
+      "notes": "HWP bundle, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). University-student pages only: 1 checklist, 3 신청서(대학생), 6 자기소개서, 7 사용계획서. Each signature line prints a red '작성자 서명 필수' note, so it takes a signature box only. / HWP 5 (OLE). BodyText parse shows: 제출서류 체크리스트, 장학금 지원신청서(초·중·고등학생), 장학금 지원신청서(대학생), 장학생 추천서, 자기소개서 등; 성명/생년월일 cells empty. 2026 round.",
+      "derived_pdf": {
+        "sha256": "32f70e5896d0f363a459b0909c83b7229ea1ba180426b2a39f2dd2f98b2389e8",
+        "byte_size": 242627,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview",
+          "3": "two_engines",
+          "6": "two_engines",
+          "7": "two_engines"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "sontaehee-scholarship.template.json",
+      "pages": 7,
+      "templated_pages": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "field_count": 57,
+      "sensitive_fields": [
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "mju-academic-activity-scholarship",
+      "program": "명지대학교 학술활동장려장학금 (교내)",
+      "agency": "명지대학교 (ICT융합대학 자료실)",
+      "notice_url": "https://www.mju.ac.kr/bbs/scict/1489/219416/artclView.do?layout=unknown",
+      "file_url": "https://www.mju.ac.kr/bbs/scict/1489/166060/download.do",
+      "retrieved_at": "2026-10-12T05:24:17Z",
+      "format": "hwp",
+      "sha256": "fdc2a9542ce5b40bab06349284fd1c1d03dee91639409a81161a73b98189c1d5",
+      "byte_size": 70656,
+      "notes": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). / HWP 5 (OLE). (제1호 서식) 장학금 신청서 with blank 20  학년도/성명/학번/계좌번호 cells and 담임교수·학부(과)장 추천란. Board post dated 2025-03-18 (generic year field). Sibling 세계화장학금 신청서.hwp not downloaded.",
+      "derived_pdf": {
+        "sha256": "f4232230bb7139b6fabf45a12e7d4d61d8ce3d0b33b651cb4b3df10b5c2ccf1d",
+        "byte_size": 61776,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "mju-academic-activity-scholarship.template.json",
+      "pages": 1,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 27,
+      "sensitive_fields": [
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "pnu-hardship-support",
+      "program": "2026년 1학기 경제사정 곤란 대학생 국가장학금II유형 지원",
+      "agency": "부산대학교",
+      "notice_url": "https://www.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN095&mode=view&mgr_seq=3&board_seq=1509245",
+      "file_url": "https://www.pusan.ac.kr/kor/ajx_json/UploadMgr/downloadRun.do?qcode=Qm9hcmQsNDA3ODAyLFk=",
+      "retrieved_at": "2026-10-12T05:25:51Z",
+      "format": "hwp",
+      "sha256": "421bb551315876de93c080699c06b707093a880c6a112bf1cad422f78075802a",
+      "byte_size": 55808,
+      "notes": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). / HWP 5 (OLE). Attachment 경제사정 곤란 대학생 지원 신청서_2026년(서식).hwp; PrvText shows blank 대학/학과/학번/이름 cells, 신청유형 checkboxes, 작성자 (인), 부산대학교총장 귀하. pusan.ac.kr/robots.txt returns 404. Same program family as kongju-national-scholarship-ii but a different school layout.",
+      "derived_pdf": {
+        "sha256": "d3b335d34172d626d0685a2a7e6925a160cfca511c8a610bb93734df59532d7a",
+        "byte_size": 71501,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "pnu-hardship-support.template.json",
+      "pages": 2,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 18,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "yeongju-student-loan-interest",
+      "program": "영주시 대학생 학자금대출 이자지원 (2026)",
+      "agency": "경상북도 영주시",
+      "notice_url": "https://www.yeongju.go.kr/open_content/main/page.do?mnu_uid=10457",
+      "file_url": "https://www.yeongju.go.kr/programs/board/download.do?parm_file_uid=111420",
+      "retrieved_at": "2026-10-12T05:26:57Z",
+      "format": "hwp",
+      "sha256": "c94350cd1f24545974d34d6a9adebc35213e34573a5df6d706eb1b54005b4fe4",
+      "byte_size": 53760,
+      "notes": "HWP form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). / HWP 5 (OLE), server Content-Type application/haansofthwp. Link is JS openDownloadFiles(111420) -> plain GET /programs/board/download.do?parm_file_uid=111420 (from site utility.js). PrvText: [붙임 1] 신청서 with blank 성명/생년월일/주소/연락처/대학교명/학번 cells, 지원 기준일 2026.4.8.",
+      "derived_pdf": {
+        "sha256": "fa8767dc8a6ab31986190117e2f04e46114b4688b16e3fbe50cef542d20e8537",
+        "byte_size": 48339,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "yeongju-student-loan-interest.template.json",
+      "pages": 1,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 20,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "jeonju-youth-jeonse-loan-interest",
+      "program": "2026년 전주시 신혼부부 및 미혼청년 전세자금 대출이자 지원사업",
+      "agency": "전주시 (건축과)",
+      "notice_url": "https://www.jeonju.go.kr/planweb/board/view.9is?contentUid=ff8080818990c349018b041a879f395a&boardUid=9be517a7914528ce01930aa3ddc26cf0&dataUid=b6a4eee8655c481288d63893ed8534c0",
+      "file_url": "https://www.jeonju.go.kr/planweb/board/download.9is?fileUid=a0848e53a74b42e8b5ff922b3c240060&boardUid=9be517a7914528ce01930aa3ddc26cf0",
+      "retrieved_at": "2026-10-12T05:28:27Z",
+      "format": "hwpx",
+      "sha256": "ef0a5933066c20771532840df8f21b55c4e949b15ff4954089ef767581cae66a",
+      "byte_size": 77440,
+      "notes": "HWPX form, templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). Pages 2 (신혼부부) and 3 (미혼청년) are alternatives: the applicant fills one. / HWPX (application/hwp+zip). Attachment 신청 양식 등 일체 각 1부.hwpx (forms only, no notice): [별지 제1호서식] 전세자금 대출이자 지원 신청서 + [별지 제2-1/2-2호서식] 서약서 etc.; section XML text shows empty 성명/생년월일 cells. Posted 2026-09-14 (second-half round). Board offered no PDF version.",
+      "derived_pdf": {
+        "sha256": "909ef15e29ba2a13c61cd6af13646a436e9cd5435f4c67e1984461eec5d5a8f3",
+        "byte_size": 148070,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview",
+          "2": "two_engines",
+          "3": "two_engines",
+          "4": "two_engines"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "jeonju-youth-jeonse-loan-interest.template.json",
+      "pages": 5,
+      "templated_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "field_count": 53,
+      "sensitive_fields": [
+        "계좌번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "jeonju-jobseeker-transport",
+      "program": "2026년 취업준비 청년 교통비 지원사업",
+      "agency": "전주시 (청년활력과)",
+      "notice_url": "https://www.jeonju.go.kr/planweb/board/view.9is?contentUid=ff8080818990c349018b041a879f395a&boardUid=9be517a7914528ce01930aa3ddc26cf0&dataUid=a2a17408799544e78e62ecf0517b9839",
+      "file_url": "https://www.jeonju.go.kr/planweb/board/download.9is?fileUid=dda02864f4cb4326a95f206cb6fdc45d&boardUid=9be517a7914528ce01930aa3ddc26cf0",
+      "retrieved_at": "2026-10-12T05:28:29Z",
+      "format": "hwpx",
+      "sha256": "a94cbd9b6dab4cde313984c18b87b72fe6d11f502abdc71a4202363990f61a6f",
+      "byte_size": 84757,
+      "notes": "HWPX bundle (notice + 서식1/2), templated on the rhwp-converted PDF (scripts/forms/hwp/conversions.json). Only 서식1 신청서 (page 5). / HWPX (application/hwp+zip). Single file = 공고문 + 【서식1】 취업준비 청년 교통비 지원사업 신청서 + 【서식2】 (consent/서약); form paragraphs show empty 성명/생년월일 cells, 전주시장 귀하. Posted 2026-08-21. Only attachment; no PDF version.",
+      "derived_pdf": {
+        "sha256": "45201f0663f4808bc96c549206fb24c19fefdeb9fad41dcf02b0eb9099010d3a",
+        "byte_size": 340856,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "5": "two_engines"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "jeonju-jobseeker-transport.template.json",
+      "pages": 6,
+      "templated_pages": [
+        5
+      ],
+      "field_count": 12,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "dongdaemun-youth-certificate-activity",
+      "program": "청년 취업 자격취득 활동 지원 (동대문구, 2026)",
+      "agency": "서울특별시 동대문구",
+      "notice_url": "https://www.ddm.go.kr/www/selectBbsNttView.do?key=198&bbsNo=38&nttNo=180877",
+      "file_url": "https://www.ddm.go.kr/www/downloadBbsFile.do?atchmnflNo=157673",
+      "retrieved_at": "2026-10-12T05:29:16Z",
+      "format": "pdf",
+      "sha256": "c0d78e37a05236daa9cc058dee161d85170338627934f0d3c4b52e69abf7b92c",
+      "byte_size": 119993,
+      "notes": "1-page blank [붙임2] 신청서 및 개인정보동의서 (성명/주민등록번호/주소/핸드폰/자격종목/신청금액 cells + consent checkboxes). CreationDate 2026-01-15. Same post also offers HWP version and 공고문 PDF. ddm.go.kr/robots.txt redirects to an error page (no robots served).",
+      "status": "template_ready",
+      "reason": null,
+      "template": "dongdaemun-youth-certificate-activity.template.json",
+      "pages": 1,
+      "templated_pages": [
+        1
+      ],
+      "field_count": 20,
+      "sensitive_fields": [
+        "주민등록번호"
+      ],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "wonju-ai-interview-experience",
+      "program": "AI 면접 및 역량 검사 체험 지원",
+      "agency": "강원특별자치도 원주시(청년지원센터)",
+      "notice_url": "https://www.wonju.go.kr/wjyouth/selectBbsNttView.do?key=5882&bbsNo=1190&nttNo=478867&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=",
+      "file_url": "https://www.wonju.go.kr/wjyouth/downloadBbsFile.do?key=5882&atchmnflNo=409363",
+      "retrieved_at": "2026-10-16T03:26:57Z",
+      "format": "hwp",
+      "sha256": "94fa249ba3b256aba4e52dfb034370f67509d79e386ae31c06080714db8425ca",
+      "byte_size": 41472,
+      "notes": "HWP form, templated on the rhwp-converted PDF (pages 1-2).",
+      "derived_pdf": {
+        "sha256": "c4eae9d4be622a86da175d070f491cd6c8c0723eee56da7bf6a5c6acc1f21003",
+        "byte_size": 82712,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview",
+          "2": "two_engines"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "wonju-ai-interview-experience.template.json",
+      "pages": 2,
+      "templated_pages": [
+        1,
+        2
+      ],
+      "field_count": 29,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    },
+    {
+      "slug": "wonju-study-cafe",
+      "program": "스터디카페·독서실 이용료 지원",
+      "agency": "강원특별자치도 원주시(청년지원센터)",
+      "notice_url": "https://www.wonju.go.kr/wjyouth/selectBbsNttView.do?key=5882&bbsNo=1190&nttNo=476869&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=",
+      "file_url": "https://www.wonju.go.kr/wjyouth/downloadBbsFile.do?key=5882&atchmnflNo=407003",
+      "retrieved_at": "2026-10-16T03:26:57Z",
+      "format": "hwp",
+      "sha256": "bca761c4e039c2223c8036726da38e972bea5ce0171cef417cd655f5943f3a4b",
+      "byte_size": 45568,
+      "notes": "HWP form, templated on the rhwp-converted PDF (pages 1, 3, 4). Page 4 is only for applicants who did not enter higher education, so its boxes are optional.",
+      "derived_pdf": {
+        "sha256": "ba18e7799beec7769d1e6ebd9db9d9c347f34d30b17337016086645f7df5ca8c",
+        "byte_size": 156160,
+        "converter": "rhwp 0.8.6 export-pdf svg; image mazimi-hwp2pdf:2 sha256:95b7e1d8d1845dc6a537fb45280395eda7d479fe5528f422465b162822a24f3b",
+        "fidelity": {
+          "1": "preview",
+          "3": "two_engines",
+          "4": "two_engines"
+        }
+      },
+      "status": "template_ready",
+      "reason": null,
+      "template": "wonju-study-cafe.template.json",
+      "pages": 4,
+      "templated_pages": [
+        1,
+        3,
+        4
+      ],
+      "field_count": 30,
+      "sensitive_fields": [],
+      "overlay_checked_by_preparer": true,
+      "human_review": "pending"
+    }
+  ]
+}

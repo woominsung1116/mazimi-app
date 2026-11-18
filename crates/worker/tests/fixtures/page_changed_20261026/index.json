@@ -1,0 +1,731 @@
+[
+ {
+  "title": "1Password 학생 개인 플랜 2년",
+  "program_id": "18987f71-5e5a-487c-b2b9-84fae28ebe53",
+  "url": "https://1password.com/developers/students",
+  "file": "87a89b26bd.html",
+  "sha256": "15e51d3edbb76b27e2230aa38c04a8b0071a7f9eb7b3f21e796c3ce891fc9330",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "Get two years of 1Password for free with the GitHub Student Developer Pack.",
+  "window_signature": "",
+  "shadow_window_signature": null,
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "h1",
+    "page": "v2:199a8717a8be983825000f5e262408c5eed2eabec533167380f369f25e589f41",
+    "path": [
+     "main",
+     "div",
+     "header",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-20",
+    "text": "Get two years of 1Password for free with the GitHub Student Developer Pack",
+    "label": null,
+    "classes": [
+     "font-agile-sans",
+     "font-bold",
+     "leading-[120%]",
+     "lg:leading-[120%]",
+     "lg:text-5xl",
+     "lg:tracking-[-0.06rem]",
+     "max-w-auto",
+     "mb-4",
+     "sm:leading-[120%]",
+     "sm:text-4xl",
+     "sm:tracking-[-0.04rem]",
+     "text-[2rem]",
+     "text-pure-white",
+     "tracking-[-0.04rem]"
+    ],
+    "heading": null,
+    "position": 0,
+    "siblings": [
+     "h1",
+     "div",
+     "div"
+    ],
+    "attr_keys": [],
+    "identities": [
+     {
+      "notes": "d44105d3fc0a871a36a88f744b80ff082135dc34f55d6cec1d2f374eec6a954d",
+      "labels": [],
+      "values": [],
+      "context": "gettwoyearsof1passwordforfreewiththegithubstudentdeveloperpack",
+      "element": "gettwoyearsof1passwordforfreewiththegithubstudentdeveloperpack",
+      "holders": 1,
+      "wording": "a121abac74acb3469c7e03f043e26d5bc9943d908fe01ac4cfd576772b646fdc",
+      "distinct": false,
+      "headings": [],
+      "sentence": null,
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "Get two years of 1Password for free with the GitHub Student Developer Pack Simplify security and secure your workflows with two free years of 1Password, now available to all GitHub-verified students. "
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "Azure for Students 무료 크레딧",
+  "program_id": "f02a666a-5b92-45e3-bdc3-89c2a2aafbdd",
+  "url": "https://azure.microsoft.com/en-us/free/students/",
+  "file": "71be2fea25.html",
+  "sha256": "58a982bb5068f912899e6ffebfdb72a3b404d04a4c7d542b76090f1d1c766e5f",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "Available only to full-time university students.",
+  "window_signature": "12months",
+  "shadow_window_signature": null,
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "li",
+    "page": "v2:c046a993a56db7dc2388cbf350b0cc192785718c1e9f2ea621345baf6d03a6b0",
+    "path": [
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "ul"
+    ],
+    "seen": "2026-10-20",
+    "text": "Available only to full-time university students*",
+    "label": "azureforstudents",
+    "classes": [],
+    "heading": "azureforstudents",
+    "position": 0,
+    "siblings": [
+     "li",
+     "li",
+     "li",
+     "li",
+     "li",
+     "li",
+     "li",
+     "li"
+    ],
+    "attr_keys": [],
+    "identities": [
+     {
+      "notes": "2414c0fef812c4a2be51c95bb6cce542d49721d73c3ad6506c5f8995db076111",
+      "labels": [
+       "azureforstudents"
+      ],
+      "values": [],
+      "context": "availableonlytofulltimeuniversitystudents",
+      "element": "availableonlytofulltimeuniversitystudents",
+      "holders": 1,
+      "wording": "56cef484ab7a2c7220e545d92a42f9ab46963512230e8bd680c76630e7507eb4",
+      "distinct": false,
+      "headings": [
+       "azureforstudents",
+       "choosetheazureaccountthatsrightforyou",
+       "buildinthecloudwithazureforstudentsforfree"
+      ],
+      "sentence": null,
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "ul",
+    "parent_text": "Available only to full-time university students* No credit card required Free monthly amounts of 20+ popular services for 12 months (new Azure customers only) Free monthly amounts of 65+ always-free s"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "Bootstrap Studio 학생 무료 라이선스",
+  "program_id": "76add9b9-cb4d-4d0d-a090-fb46bfc0949b",
+  "url": "https://bootstrapstudio.io/contact-us",
+  "file": "0df8408b6e.html",
+  "sha256": "fc922dcf18f5b33b0f2ed78bcbe588aa72749c475fd38824b21fa62ddcf69316",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "If you are a student we have a special non-commercial license for you, which is free for the duration of your study.",
+  "window_signature": "",
+  "shadow_window_signature": "",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "page": "v2:35de2a29a8479d0478ac9445e3f9bfed629a3cd756d19cad1cd91b43a38b45ab",
+    "path": [
+     "html",
+     "body",
+     "div",
+     "section",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-19",
+    "text": "If you are a student we have a special non-commercial license for you, which is free for the duration of your study. You can apply with the GitHub Student Developer Pack or a student email address. Learn more on our student portal .",
+    "label": null,
+    "blocks": [
+     "rb2:5f2f4d5ae72ddd6966fe567df13a639e.66a00ad49daa76285a8195d2a0f7f8e5"
+    ],
+    "region": "rb2:477f4478ec12922497cc02d5eb0e45cc",
+    "classes": [],
+    "content": "rb2:aaf6d1c689076167744bbf0f32db6a67",
+    "heading": "isthereastudentlicense",
+    "position": 1,
+    "siblings": [
+     "h4",
+     "p"
+    ],
+    "attr_keys": [],
+    "identities": [
+     {
+      "notes": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "labels": [],
+      "values": [],
+      "context": "ifyouareastudentwehaveaspecialnoncommerciallicenseforyouwhichisfreeforthedurationofyourstudy",
+      "element": "ifyouareastudentwehaveaspecialnoncommerciallicenseforyouwhichisfreeforthedurationofyourstudyyoucanapplywiththegithubstudentdeveloperpackorastudentemailaddresslearnmoreonourstudentportal",
+      "holders": 1,
+      "wording": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "distinct": false,
+      "headings": [
+       "isthereastudentlicense",
+       "licensing",
+       "contactus"
+      ],
+      "sentence": null,
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "Is there a student license? If you are a student we have a special non-commercial license for you, which is free for the duration of your study. You can apply with the GitHub Student Developer Pack or"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "GitHub Copilot 학생 무료 이용",
+  "program_id": "5b2045d2-4a65-4719-be9e-f3e2a9786c49",
+  "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students",
+  "file": "b6eb33e081.html",
+  "sha256": "1260d86cf09d51ce0cae159e2f1a27971199c352fab0c77652d04d0faef50176",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "Verified students on GitHub Education get free access to Copilot's features.",
+  "window_signature": null,
+  "shadow_window_signature": "",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "page": "v2:eb7fcedf7dc0ded7b097de86943b89d59f510f6fcd7080d44254c17bc8f39b91",
+    "path": [
+     "div",
+     "div",
+     "main",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-19",
+    "text": "Verified students on GitHub Education get free access to Copilot's features . See Plans for GitHub Copilot .",
+    "label": null,
+    "classes": [],
+    "heading": "aboutcopilotstudentaccess",
+    "position": 1,
+    "siblings": [
+     "h2",
+     "p",
+     "p",
+     "p",
+     "h2",
+     "ol",
+     "h2",
+     "h3",
+     "p",
+     "p",
+     "ul",
+     "p"
+    ],
+    "attr_keys": [],
+    "identities": [
+     {
+      "notes": "db1b14ad864cef729a0faab6718e5809c286968c9170f0f15737b3c4f91a032b",
+      "labels": [],
+      "values": [],
+      "context": "verifiedstudentsongithubeducationgetfreeaccesstocopilotsfeatures",
+      "element": "verifiedstudentsongithubeducationgetfreeaccesstocopilotsfeaturesseeplansforgithubcopilot",
+      "holders": 1,
+      "wording": "8bf91d41e5a0290b1aca3c05097067799ecc40cf700a45b49afeba14c19781bc",
+      "distinct": false,
+      "headings": [
+       "aboutcopilotstudentaccess",
+       "accessgithubcopilotforfreeasastudent"
+      ],
+      "sentence": null,
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "About Copilot Student access Verified students on GitHub Education get free access to Copilot's features . See Plans for GitHub Copilot . To become a verified student, see Apply to GitHub Education as"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "GitHub Student Developer Pack",
+  "program_id": "d77ca111-47b9-4f5b-82d2-ad7ffedfd536",
+  "url": "https://education.github.com/pack",
+  "file": "f7c7013f39.html",
+  "sha256": "8575effd0b12859472467784705b04da830b0eccb990cc962e28cc89860957ba",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "Free GitHub Pro while you are a student.",
+  "window_signature": null,
+  "shadow_window_signature": "1year",
+  "min_age": 13,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "page": "v2:e4dcc43fb3cf089200d5be567f66ee985c29833b188125316d24fef151e0f714",
+    "path": [
+     "body",
+     "div",
+     "main",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-19",
+    "text": "Free GitHub Pro while you are a student.",
+    "label": null,
+    "classes": [],
+    "heading": "offer",
+    "position": 1,
+    "siblings": [
+     "h5",
+     "p",
+     "h6",
+     "ul"
+    ],
+    "attr_keys": [],
+    "identities": [
+     {
+      "notes": "299989d2c86155804ed0f45b70213bf7794f222dfb9ef26d796f84dda7ad0c4d",
+      "labels": [],
+      "values": [],
+      "context": "freegithubprowhileyouareastudent",
+      "element": "freegithubprowhileyouareastudent",
+      "holders": 1,
+      "wording": "b363e3e41f80fe88ceab4c44596144777f442197a5be32812ce07b87518267c1",
+      "distinct": false,
+      "headings": [
+       "offer",
+       "aboutgithub",
+       "alloffers",
+       "mobileappdevelopmentofferstotal6"
+      ],
+      "sentence": null,
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "Offer Free GitHub Pro while you are a student. Tags Developer tools"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "Notion 학생·교육자용 Education 플랜 무료",
+  "program_id": "4501ce12-e536-41ac-a69b-1c74c25f52c9",
+  "url": "https://www.notion.com/help/notion-for-education",
+  "file": "b93a3f1f15.html",
+  "sha256": "be504f13ad6a87eef5659d3cfce7bebe6127095e0e63bd5476d1af7c7d05591d",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "Your school is an accredited institution recognized by and listed in the World Higher Education Database.",
+  "window_signature": "",
+  "shadow_window_signature": null,
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "strong",
+    "page": "v2:247da2f8e90a484215de91e166648c780f335fbe6ad3d27fd22dbc2cbcacf4c4",
+    "path": [
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "ul",
+     "li",
+     "p"
+    ],
+    "seen": "2026-10-20",
+    "text": "Your school is an accredited institution recognized by and listed in the World Higher Education Database",
+    "label": null,
+    "classes": [
+     "blocks-module-scss-module__tRO6MW__bold"
+    ],
+    "heading": "individualstudentsteachers",
+    "position": 0,
+    "siblings": [
+     "strong",
+     "a"
+    ],
+    "attr_keys": [],
+    "identities": [
+     {
+      "notes": "514b852fb836b96763349efceb57f57556e84c92b73087d932157d5f701aa816",
+      "labels": [],
+      "values": [],
+      "context": "yourschoolisanaccreditedinstitutionrecognizedbyandlistedintheworldhighereducationdatabase",
+      "element": "yourschoolisanaccreditedinstitutionrecognizedbyandlistedintheworldhighereducationdatabase",
+      "holders": 1,
+      "wording": "73f8dc8bdbedfc9aa31cc4c5efd94442553ff229b441f3aeec2057e14e1cd741",
+      "distinct": false,
+      "headings": [
+       "individualstudentsteachers",
+       "upgradetotheeducationplan",
+       "gettheeducationplanforstudentsteachers"
+      ],
+      "sentence": null,
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "p",
+    "parent_text": "Your school is an accredited institution recognized by and listed in the World Higher Education Database here →"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "Tower Pro 학생 12개월 무료",
+  "program_id": "785fd0b2-3c90-487d-a325-61922140c882",
+  "url": "https://www.git-tower.com/students",
+  "file": "33b2c968e1.html",
+  "sha256": "153d3fbc2742402a85732a42f4fc8ebfe94d8a3c3d05e1d4a92bc76f2e0f6e3a",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "You will receive 12 months of Tower for free.",
+  "window_signature": "12months,12months",
+  "shadow_window_signature": "12months,12months",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "page": "v2:a5e34c2383f318476de6d869dff1a480665ca778fed79576e89f46016b969185",
+    "path": [
+     "html",
+     "body",
+     "main",
+     "section",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-19",
+    "text": "You will receive 12 months of Tower for free. We will notify you via email before these 12 months end: if you can re-confirm your student status, you can extend your free account. If you're not a student anymore, your license will expire and you can choose to start a paid Tower subscription.",
+    "label": null,
+    "classes": [],
+    "heading": "howlongcaniusetower",
+    "position": 1,
+    "siblings": [
+     "h5",
+     "p"
+    ],
+    "attr_keys": [],
+    "identities": [
+     {
+      "notes": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "labels": [],
+      "values": [],
+      "context": "youwillreceive12monthsoftowerforfree",
+      "element": "youwillreceive12monthsoftowerforfreewewillnotifyyouviaemailbeforethese12monthsendifyoucanreconfirmyourstudentstatusyoucanextendyourfreeaccountifyourenotastudentanymoreyourlicensewillexpireandyoucanchoosetostartapaidtowersubscription",
+      "holders": 1,
+      "wording": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "distinct": true,
+      "headings": [
+       "howlongcaniusetower",
+       "questionsanswers"
+      ],
+      "sentence": "youwillreceive#monthsoftowerforfree",
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "How long can I use Tower? You will receive 12 months of Tower for free. We will notify you via email before these 12 months end: if you can re-confirm your student status, you can extend your free acc"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "나이키 대학생 10% 할인",
+  "program_id": "5fa3af29-0c99-489b-8ebd-1ef063bf25b4",
+  "url": "https://www.nike.com/kr/membership/student-discount-program",
+  "file": "8635b12204.html",
+  "sha256": "563fd3b3a7e3cd5d3811d406862d6fbc377f25cb4076f2ab2e35444a8868bc72",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "학생 인증 후 10% 할인 혜택을 제공해 드립니다.",
+  "window_signature": null,
+  "shadow_window_signature": "10%,10%,30일,30일|10%,10%,30일,30일",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "page": "v2:677b770ad97e2e116aa89d9488526b140105fd5fcef3f7a19ef03c05f0c62d93",
+    "path": [
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-19",
+    "text": "나이키만의 특별한 대학생 할인 혜택을 만나 보세요. 학생 인증 후 10% 할인 혜택을 제공해 드립니다. *30일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다.",
+    "label": null,
+    "classes": [
+     "appearance-body1",
+     "color-primary",
+     "css-e8ra7o",
+     "e1yhcai00",
+     "mt2-sm",
+     "nds-text",
+     "weight-regular"
+    ],
+    "heading": "대학생할인프로그램",
+    "position": 1,
+    "siblings": [
+     "h1",
+     "p",
+     "div"
+    ],
+    "attr_keys": [
+     "data-qa"
+    ],
+    "identities": [
+     {
+      "notes": "6a238a67568e88964b840cc6f28b266001ee978d685a23696a8e58dcd76b4b81",
+      "labels": [],
+      "values": [],
+      "context": "학생인증후10%할인혜택을제공해드립니다",
+      "element": "나이키만의특별한대학생할인혜택을만나보세요학생인증후10%할인혜택을제공해드립니다30일마다인증갱신시할인쿠폰이재발급됩니다",
+      "holders": 1,
+      "wording": "819b9f1357b944142cfe3d8a84ec023681f00b786ce01a7a64732b16f3b1f76b",
+      "distinct": true,
+      "headings": [
+       "대학생할인프로그램"
+      ],
+      "sentence": "학생인증후#%할인혜택을제공해드립니다",
+      "raw_sentence": "학생 인증 후 #% 할인 혜택을 제공해 드립니다."
+     },
+     {
+      "notes": "6a238a67568e88964b840cc6f28b266001ee978d685a23696a8e58dcd76b4b81",
+      "labels": [],
+      "values": [],
+      "context": "학생인증후10%할인혜택을제공해드립니다",
+      "element": "나이키만의특별한대학생할인혜택을만나보세요학생인증후10%할인혜택을제공해드립니다30일마다인증갱신시할인쿠폰이재발급됩니다",
+      "holders": 1,
+      "wording": "819b9f1357b944142cfe3d8a84ec023681f00b786ce01a7a64732b16f3b1f76b",
+      "distinct": true,
+      "headings": [
+       "대학생할인프로그램",
+       "대학생을위한추천제품",
+       "대학생할인프로그램"
+      ],
+      "sentence": "학생인증후#%할인혜택을제공해드립니다",
+      "raw_sentence": "학생 인증 후 #% 할인 혜택을 제공해 드립니다."
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "대학생 할인 프로그램 나이키만의 특별한 대학생 할인 혜택을 만나 보세요. 학생 인증 후 10% 할인 혜택을 제공해 드립니다. *30일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다. 대학생 인증하기 구매하기 유의사항"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "나이키 대학생 10% 할인",
+  "program_id": "5fa3af29-0c99-489b-8ebd-1ef063bf25b4",
+  "url": "https://www.nike.com/kr/membership/student-discount-program",
+  "file": "8635b12204.html",
+  "sha256": "563fd3b3a7e3cd5d3811d406862d6fbc377f25cb4076f2ab2e35444a8868bc72",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "30일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다.",
+  "window_signature": null,
+  "shadow_window_signature": "10%,10%,30일,30일|10%,10%,30일,30일",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "p",
+    "page": "v2:677b770ad97e2e116aa89d9488526b140105fd5fcef3f7a19ef03c05f0c62d93",
+    "path": [
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-19",
+    "text": "나이키만의 특별한 대학생 할인 혜택을 만나 보세요. 학생 인증 후 10% 할인 혜택을 제공해 드립니다. *30일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다.",
+    "label": null,
+    "classes": [
+     "appearance-body1",
+     "color-primary",
+     "css-e8ra7o",
+     "e1yhcai00",
+     "mt2-sm",
+     "nds-text",
+     "weight-regular"
+    ],
+    "heading": "대학생할인프로그램",
+    "position": 1,
+    "siblings": [
+     "h1",
+     "p",
+     "div"
+    ],
+    "attr_keys": [
+     "data-qa"
+    ],
+    "identities": [
+     {
+      "notes": "6a238a67568e88964b840cc6f28b266001ee978d685a23696a8e58dcd76b4b81",
+      "labels": [],
+      "values": [],
+      "context": "30일마다인증갱신시할인쿠폰이재발급됩니다",
+      "element": "나이키만의특별한대학생할인혜택을만나보세요학생인증후10%할인혜택을제공해드립니다30일마다인증갱신시할인쿠폰이재발급됩니다",
+      "holders": 1,
+      "wording": "819b9f1357b944142cfe3d8a84ec023681f00b786ce01a7a64732b16f3b1f76b",
+      "distinct": true,
+      "headings": [
+       "대학생할인프로그램"
+      ],
+      "sentence": "#일마다인증갱신시할인쿠폰이재발급됩니다",
+      "raw_sentence": "*#일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다."
+     },
+     {
+      "notes": "6a238a67568e88964b840cc6f28b266001ee978d685a23696a8e58dcd76b4b81",
+      "labels": [],
+      "values": [],
+      "context": "30일마다인증갱신시할인쿠폰이재발급됩니다",
+      "element": "나이키만의특별한대학생할인혜택을만나보세요학생인증후10%할인혜택을제공해드립니다30일마다인증갱신시할인쿠폰이재발급됩니다",
+      "holders": 1,
+      "wording": "819b9f1357b944142cfe3d8a84ec023681f00b786ce01a7a64732b16f3b1f76b",
+      "distinct": true,
+      "headings": [
+       "대학생할인프로그램",
+       "대학생을위한추천제품",
+       "대학생할인프로그램"
+      ],
+      "sentence": "#일마다인증갱신시할인쿠폰이재발급됩니다",
+      "raw_sentence": "* #일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다."
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "대학생 할인 프로그램 나이키만의 특별한 대학생 할인 혜택을 만나 보세요. 학생 인증 후 10% 할인 혜택을 제공해 드립니다. *30일마다 인증 갱신 시, 할인 쿠폰이 재발급됩니다. 대학생 인증하기 구매하기 유의사항"
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ },
+ {
+  "title": "학생·교육자용 Office 365 A1 무료",
+  "program_id": "4067fb7a-25eb-4561-bfe9-cf59ed8f920a",
+  "url": "https://www.microsoft.com/ko-kr/education/products/office",
+  "file": "cc0aa5970d.html",
+  "sha256": "9c34512ed6f1e0f5b4d95267fbfd8269634a9663824351a312af8f156e43500f",
+  "fetched_at": "2026-10-26T04:46:00Z",
+  "quote": "적격한 교육용 전자 메일 주소가 있는 교육자와 학생은 Office 365 A1을 무료로 이용할 수 있습니다.",
+  "window_signature": "",
+  "shadow_window_signature": "",
+  "min_age": null,
+  "max_age": null,
+  "anchors": {
+   "fingerprint": {
+    "id": null,
+    "tag": "div",
+    "page": "v2:c214d87b9d9936261c624f2d1804b68069a64649246f27057195e86ce1614c5c",
+    "path": [
+     "div",
+     "div",
+     "ul",
+     "li",
+     "div",
+     "div",
+     "div",
+     "div"
+    ],
+    "seen": "2026-10-20",
+    "text": "적격한 교육용 전자 메일 주소가 있는 교육자와 학생은 Office 365 A1을 무료로 이용 할 수 있습니다.",
+    "label": "∅",
+    "classes": [],
+    "heading": "무료microsoftoffice365a1플랜은누가사용할수있나요",
+    "position": 0,
+    "siblings": [
+     "div"
+    ],
+    "attr_keys": [
+     "data-oc-token-text"
+    ],
+    "identities": [
+     {
+      "notes": "44e7b73abeafffc282d3d914b83f191332026118b7217bb83d52ce110278676f",
+      "labels": [
+       "∅"
+      ],
+      "values": [],
+      "context": "적격한교육용전자메일주소가있는교육자와학생은office365a1을무료로이용할수있습니다",
+      "element": "적격한교육용전자메일주소가있는교육자와학생은office365a1을무료로이용할수있습니다|office365a1을무료로이용하세요microsoft가입페이지로이동하여학교와교육자를위한무료a1플랜을시작할수있습니다",
+      "holders": 1,
+      "wording": "4c2c76e66641724cb2e89411644153e5a0fba5367057e941336ed26899f15e88",
+      "distinct": false,
+      "headings": [
+       "무료microsoftoffice365a1플랜은누가사용할수있나요",
+       "자주묻는질문",
+       "office365a5"
+      ],
+      "sentence": null,
+      "raw_sentence": null
+     }
+    ],
+    "parent_tag": "div",
+    "parent_text": "적격한 교육용 전자 메일 주소가 있는 교육자와 학생은 Office 365 A1을 무료로 이용 할 수 있습니다."
+   },
+   "origin_quote": null,
+   "previous_quotes": []
+  }
+ }
+]

@@ -1,0 +1,1411 @@
+{
+ "note": "신청 준비 requests vs. goals that mention 준비 but do not ask for it (re-reviews 8 and 9 and the author's round-9 paraphrases; reviewer-written and author-written, no holdout string). `real`: the 준비 journey (check + checklist; its handoff cards unless a question), or the model. `not_asked`: no card but an alert the goal asked for. Round 10: on every row a handoff card appears exactly when the goal names that handoff with a request (`asks_handoff`); a real 준비 without one gets the read-only journey and the handoffs as buttons. All rows run with a programme on screen.",
+ "real": [
+  {
+   "goal": "신청 준비부터 해줘 그리고 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 신청 준비 같이 해줘 알림도 켜주고",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 진행해줘 마감 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비까지 해주고 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 좀 봐주고 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 쭉 해주고 마감 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비중인데 마저 도와줘 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 이어서 해줘 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "마감 알림 켜주고 신청 준비 시켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 과정 안내해주고 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "알림 켜주고 이 혜택 신청할 준비 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청할 수 있게 준비 도와주고 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 하자 알림도 켜고",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 끝까지 도와줘 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "알림 켜고 신청 준비 ㄱㄱ",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 부탁드려요 알림도 켜주세요",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 좀 같이 봐줄래 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이거 신청 준비 들어가자 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 마무리해줘 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 도움 받고 싶어 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 신청하려고 준비 중인데 도와줘 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 다 해줘 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 전부 해줘 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 체크해주고 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 신청 준비 시작해 알림 켜고",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "알림 켜줘 그리고 신청 준비도 부탁해",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비를 도와줘 알림도",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 챙겨주고 마감 전에 알려줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 다시 해줘 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 한 번에 해줘 알림도",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 빨리 해줘 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 지금 해줘 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비랑 알림 둘 다 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 및 알림 설정 부탁해",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비, 알림 켜기 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 준비 도와줘 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 고고 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 해볼래 알림도 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 들어갈게 알림 켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 지금 시작하자 알림도",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비부터 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 신청 준비 같이 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 진행해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비중인데 마저 도와줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 이어서 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 다 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 신청 준비 마무리해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 도움 받고 싶어",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 신청할 준비 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이거 신청하게 준비 좀 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "자격 확인한 다음에 신청 준비해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 다시 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 끝까지 도와줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 시켜줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 들어가자",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 한번 해볼게",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 빨리 해줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 고고",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 혜택 준비 도와줘",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "신청 준비 같이 하자",
+   "source": "re-review 8 A/B"
+  },
+  {
+   "goal": "이 장학금 신청 준비 좀 맡아줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 대신 정리해줘 알림도 걸어줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 하나씩 같이 챙겨보자",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비를 처음부터 끝까지 해주세요",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 미리 해두게 도와줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "이 혜택 신청 준비 바로 시작해주라",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 순서대로 알려줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 한꺼번에 처리해줘 마감 알림도",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 쫙 정리해 줄래",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 차근차근 도와줄래?",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 서둘러 해줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "오늘 안에 신청 준비 끝내게 도와줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 꼼꼼하게 봐줘 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 얼른 해주라 알림도 설정해줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "이거 신청 준비 맡길게",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 같이 하면 좋겠어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 처리 좀 부탁해 알림도 켜주라",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 대신 해줄 수 있어?",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 쭉 이어가자",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비를 진행시켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 단계별로 안내해줘 알림도 받을래",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 몰아서 해줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "이 혜택 신청 준비랑 알림 같이 부탁",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비부터 챙겨주고 알람도 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 마저 끝내줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 계속 도와줘 알림 켜고",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 대충이라도 해줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 도맡아줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 확인해줘 마감 알림도 켜주세요",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 체크 좀 해주고 푸시도 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 시작해 보자",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "지금 바로 신청 준비 들어가줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 끝내고 싶어 도와줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 함께 해 줘 알림도",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "이 지원금 신청 준비 부탁해요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청준비 해주세요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 하나씩 같이 해보자",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "이 혜택 신청 준비는 너한테 맡길게",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 도와주실 수 있나요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비좀 해줘라",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신쳥 준비 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 바로 들어가줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 시작해볼래",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 처음부터 차근차근 알려줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 단계별로 정리해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 순서대로 진행해주세요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "이 장학금 신청 준비 ㄱ",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 레츠고",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 요청할게요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 지금 바로 해주라",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 빠르게 끝내자",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "이번에 이거 신청 준비 해보려고 도와줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "이 혜택 신청하려는데 준비 좀 봐줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 어떻게 하는지 같이 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비를 진행하고 싶어요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 부탁드립니다 마감 알림도요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "알림 켜주고 신청 준비 이어가줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 해주고 마감 전에 알려줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 챙겨주고 알람도 맞춰줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비랑 알림 설정 둘 다 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "마감 알림 설정하고 신청 준비 들어가자",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 마저 해주고 알림도 켜줄래",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 해야 되는데 도와줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비해야 해 같이 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 하고 싶어",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비할래",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 원해요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 필요해 도와줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "서류 준비부터 신청까지 도와줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 처리해줘 알림도 부탁",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "지원 신청 준비 좀 대신 해줄래",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 다음 단계 진행해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 내일까지 끝내야 돼 도와줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 이번 주말에 하려는데 지금 같이 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "미리 신청 준비 해두고 싶어 도와줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 마감 전에 끝내게 도와줘 알림 켜줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 한 번에 다 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "이 혜택 신청 준비 좀 해 주세요 알림도 켜 주세요",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "준비 좀 해줘 신청하게",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비해 줘ㅓ",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 시작!! 알림도!!",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 하쟈",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 ㄱㄱ혀",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 좀 해주면 좋겠어 알림도 켜주고",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 이어서 진행 부탁 알림 ON",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "이거 신청할 준비 시켜줄 수 있어?",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 좀 도와줄래 알림도 켜줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 중이야 남은 거 같이 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 중인데 이것 좀 도와줘 알림 켜줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 너무 어려워 도와줘 알림 켜줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 중인데 뭐부터 해야 할지 모르겠어 알림도 켜줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 중인데 같이 좀 봐줄래 알림도",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 하는 중인데 혼자는 못하겠어 도와줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 나머지 좀 해줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 중인데 서류 뭐 필요한지 알려줘 알림도 켜줘",
+   "source": "re-review 9 A"
+  },
+  {
+   "goal": "신청 준비 중인데 막혔어 도와줘",
+   "source": "re-review 9 A"
+  }
+ ],
+ "not_asked": [
+  {
+   "goal": "신청 준비는 내가 할게 알림만 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "준비는 혼자 할 수 있어 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 시작하면 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 기간에 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비는 됐어 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 이미 끝냈고 알림만 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 안 해도 돼 알림만 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비는 필요 없고 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비는 말고 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "준비 다 끝났으니 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 따로 했어 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비는 직접 할게 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비하는 건 내가 알아서 할게 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비했으니 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비해놨어 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 해뒀어 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비해 놨으니까 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 마쳤어 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 끝! 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "준비 끝냈어 마감 알림만",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 다 됐으니까 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 완료 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비는 혼자 해볼게 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비하고 있어 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 중 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 다음 주에 할게 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 주말에 하려고 알림 켜줘",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 다 했어",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 마쳤어",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비해놨어",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 끝냈어",
+   "source": "re-review 8 C"
+  },
+  {
+   "goal": "신청 준비 벌써 다 끝냈어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 어제 마쳤어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비는 이미 해 놨으니 알림만",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 거의 다 했어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 따로 다 해뒀어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 친구가 해줬어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 혼자 다 했어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 끝난 상태야 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 해 두었어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 내가 직접 해둠",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 이미 완료했어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 진작 끝냈어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비하고 있는 중이야 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 지금 하는 중이야",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 나중에 할 거야 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 내일 할게 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 다음에 하고 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 이따가 할게 알림만 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 주말에 할 거야 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 알아서 할게",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 혼자 할게 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 직접 할 테니 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 안 해도 되고 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 필요 없어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 됐고 마감 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 다 됐어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 끝! 마감 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 완료했으니 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 마무리했어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 끝났으니까 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 해놓았어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 끝냈으니 알림 꺼줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 이미 해뒀으니까 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 다 마쳤어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비는 내가 했어 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알림만 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비물 알림 켜줘 마감 전에",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 기간 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알람 설정해줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 시작하면 알려줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 끝나면 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 기간에 맞춰 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비물 챙길 때 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 시작되면 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "알림만 켜줘 준비는 됐어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "마감 알림만 켜줘 신청 준비는 나중에",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알림 꺼줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 푸시 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비 기간 알림 받게 해줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "알람만 켜줘 신청 준비는 혼자 할게",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "알림만 설정해줘 준비는 알아서",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 말고 알림만 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비물 알람 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비되면 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알림 설정해 줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비 알람 꺼줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "알림만 켜줘 신청 준비는 다 했어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 기간 알람 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "마감 알림만 걸어줘 준비는 했어",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비물 알림만 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비하면 알림 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "알림만 켜주세요 준비는 제가 할게요",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알림 좀 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알람 꺼 줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "알림만 받을래 신청 준비는 다음에",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알림 켜 주세요",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "준비물 푸시 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 알림 다시 켜줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 끝나면 알람 줘",
+   "source": "author (round 9)"
+  },
+  {
+   "goal": "신청 준비 이미 끝냈어 마감 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 다 끝났으니까 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 완벽하게 했어 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 어제 했어 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 언니가 대신 해줬어 알람 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 제가 다 해 놓았어요 알림 부탁해요",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 이미 해뒀거든 알림만",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 스스로 할게 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 내가 챙길게 마감 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 안 해도 돼 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 됐어요 알림 켜 주세요",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 필요없어 알림만 해줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 패스하고 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 빼고 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 하는 중이야 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 하고 있는데 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 다 끝나면 그때 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 마쳤고 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 끝~ 알림 부탁",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 완료됨 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "준비 다 됐으니 알림만 맞춰줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 나중에 할 거고 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 담에 할래 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 다음달에 할게 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 신경 쓰지 마 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 안 할 거야 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 됐고 알림 설정만 부탁해",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 하지 마 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 이미 다 해놨으니까 공식 페이지만 열어줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 끝냈어 신청서 쓰는 것만 도와줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 해놨어요",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 어제 다 했음",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 하는 중임",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 진행 중이에요 알림 켜주세요",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 끝냈는데 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 마무리 지었어 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 했었어 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 엄마가 해준대 알림만 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 엄마가 해준대 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 다 끝냄 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 내가 할 거야 알림만 부탁",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 내가 할게 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "이 혜택 마감 알림 켜줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알림 좀 켜줄래",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "마감 3일 전에 알려줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "이거 알림 설정해줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "푸시 알림 켜줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "신청 시작하면 알려줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "마감 임박하면 알림 보내줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "이 장학금 알림 받을래",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알람 켜 줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알림 ON",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "준비 기간 시작하면 알람 줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "준비 서류 알림 켜줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "준비물 챙기라고 알림 켜줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "신청 준비 알람 맞춰줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "신청 준비 시작일 알림 켜줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "서류 준비 마감 알림 켜줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "준비할 거 있으면 알림 줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "마감 알림만 켜줘 신청은 내가 할게",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "이 혜택 알림 꼭 켜줘요",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알림 켜주세요",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "마감되기 전에 알림 줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알림 신청해줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "이 정책 알림 등록",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "오픈하면 알림 와야 돼",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알람 설정 부탁드려요",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알림만 켜놔",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "신청 준비 리마인드 해줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "준비 기간 끝나기 전에 알려줘",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "신청 준비 알림 좀",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "마감 알림 켜줘 준비는 알아서 할게",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "알림 켜줘 신청 준비는 됐어",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "준비물 마감 알림만",
+   "source": "re-review 9 L"
+  },
+  {
+   "goal": "신청 준비는 제가 할게요 알림 켜주세요",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 내가 알아볼게 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 다음 달에 할게 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 나중에 천천히 할게 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 이번엔 스킵 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 아직 안 할래 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 내가 할게",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 패스",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 안 할 거야",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 담에 할게",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 다 끝냄",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 내가 할 테니까 알림만 켜",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 내가 할 테니까 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 제가 해놓을게요 알림 켜주세요",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 됐다 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 다 해 뒀어요 알림 켜주세요",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 이미 했다고 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 생략하고 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비는 나 혼자서 해볼게 알림 켜줘",
+   "source": "re-review 9 C"
+  },
+  {
+   "goal": "신청 준비 저번에 끝내놨어 알림 켜줘",
+   "source": "re-review 9 C"
+  }
+ ]
+}

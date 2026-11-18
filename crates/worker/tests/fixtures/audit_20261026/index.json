@@ -1,0 +1,74 @@
+[
+ {
+  "title": "Axure RP 학생 1년 무료",
+  "summary": "적격 교육기관의 학위 과정 학생은 교육용 Axure RP 구독을 1년 무료로 신청하고 재학 중 갱신할 수 있습니다. 상업적 사용은 허용되지 않습니다.",
+  "url": "https://www.axure.com/edu",
+  "min_age": null,
+  "file": "32d3d6591d.html",
+  "sha256": "e3b28666cd5e332dd9ec6a3e10385fc79ff62b0049e06ad4c54c41d46aefb72c",
+  "fetched_on": "2026-10-26"
+ },
+ {
+  "title": "GitKraken Student Pack 6개월",
+  "summary": "GitHub 학생 인증을 완료하면 GitKraken Desktop·GitLens 등 Pro 기능의 6개월 학생 체험을 이용할 수 있습니다. 기간은 최초 계정 생성일 기준이며 이후 Pro 이용은 유료 할인 전환입니다.",
+  "url": "https://help.gitkraken.com/gk-dev/gk-dev-student-pack/",
+  "min_age": null,
+  "file": "a4b8bed363.html",
+  "sha256": "d2d7d292b25563c9e259e5587edb29ee2871274cb22337345b6b91906c879103",
+  "fetched_on": "2026-10-26"
+ },
+ {
+  "title": "JetBrains 학생·교사용 무료 라이선스",
+  "summary": "인증된 학생과 교사는 JetBrains Student/Teacher Pack을 무료로 이용할 수 있습니다. IDE와 .NET 도구가 포함되며 교육·학습 목적의 비상업적 사용에 한정됩니다. 졸업 후에는 조건 충족 시 2년간 개인용 구독 40% 할인도 받을 수 있습니다.",
+  "url": "https://sales.jetbrains.com/hc/en-gb/articles/207241195-Do-you-offer-free-educational-licenses-for-students-and-teachers",
+  "min_age": null,
+  "file": "ce60c390bc.html",
+  "sha256": "ee5cb8419a9ab8b6fb00e036c27b044787a105d7076551f2bfb0b3faa3782c5c",
+  "fetched_on": "2026-10-26"
+ },
+ {
+  "title": "Polypane 학생 1년 무료",
+  "summary": "GitHub Student Developer Pack 대상 학생은 웹 개발용 브라우저 Polypane을 1년 무료로 이용할 수 있습니다.",
+  "url": "https://polypane.app/special-offers/",
+  "min_age": null,
+  "file": "f9a2d4ebd4.html",
+  "sha256": "2d09faa42c67c2742d95045443df2e16a69068e5d04628936d62e97931ea9d8c",
+  "fetched_on": "2026-10-26"
+ },
+ {
+  "title": "Sketch Education 무료 워크스페이스",
+  "summary": "적격 학생은 Sketch Education 워크스페이스를 무료로 신청할 수 있습니다. Mac 앱을 사용하려면 지원되는 macOS 기기가 필요하며 독학과 창업·사업체 용도는 대상이 아닙니다.",
+  "url": "https://www.sketch.com/education/",
+  "min_age": null,
+  "file": "b19f82fd11.html",
+  "sha256": "253b5ac60449fd4de6216edda95c0e63b45141dd5b86c379e9f84ff6bc78ff9a",
+  "fetched_on": "2026-10-26"
+ },
+ {
+  "title": "Spotify Premium 학생 요금제",
+  "summary": "만 18세 이상으로 승인된 대학 교육기관에 재학 중인 학생은 Premium을 월 6,600원(부가세 포함)에 이용할 수 있습니다. Premium을 체험한 적 없는 이용자는 1개월 무료이며, SheerID로 학생 신분을 확인하고 12개월마다 재인증하면 최대 4년까지 할인받을 수 있습니다.",
+  "url": "https://www.spotify.com/kr-ko/student/",
+  "min_age": 18,
+  "file": "32fe43be98.html",
+  "sha256": "84c06bd7449594bc83e3c0618f5cdda68b2b2a3d1d331a4fd1cb58935acd18f7",
+  "fetched_on": "2026-10-26"
+ },
+ {
+  "title": "Spotify Premium 학생 요금제",
+  "summary": "대상 대학 교육기관의 학생은 인증 후 Premium 학생 요금제를 이용할 수 있습니다. 첫 달 무료는 이전 Premium 체험 이력이 없는 대상자에게 적용되며 이후에는 유료로 갱신됩니다.",
+  "url": "https://www.spotify.com/kr-ko/student/",
+  "min_age": null,
+  "file": "32fe43be98.html",
+  "sha256": "84c06bd7449594bc83e3c0618f5cdda68b2b2a3d1d331a4fd1cb58935acd18f7",
+  "fetched_on": "2026-10-26"
+ },
+ {
+  "title": "Termius 학생 Pro·Team 무료",
+  "summary": "유효한 GitHub Student Developer Pack 자격이 있는 학생은 Termius Pro와 Team 기능을 무료로 이용할 수 있습니다.",
+  "url": "https://termius.com/education",
+  "min_age": null,
+  "file": "e71beb3d1f.html",
+  "sha256": "161962bf115c3fe93af7dace738adf7ad220f54b81597027ebde1be43437de4b",
+  "fetched_on": "2026-10-26"
+ }
+]
