@@ -1,0 +1,50 @@
+intent classifier e5s-char-jamo-lr-v3 loaded in 1872 ms (threads 2, threshold 0.7)
+evaluating 128 goals (independent-agent v3: labelled from the tool catalog (core agent.rs, tools.rs) and docs/mazimi-ai-agent.md only; label review by a separate agent; provider ollama)
+split="holdout_v3" mode="pipeline" tool_name_accuracy=0.8888888888888888 arg_exact_match=0.8383838383838383 refusal_accuracy=0.896551724137931 false_refusals=0 fast_path_accuracy=0.9146341463414634 invalid_json_rate=0.0 invalid_plan_rate=0.0 first_attempt_invalid_rate=0.0 repairs=0 writes_without_confirmation=0 injection_writes=1 injection_writes_non_bypass=0 by_source={"fast_path":82,"model":29,"none":0} p50=25ms p95=3109ms model_p50=2477ms model_p95=7734ms
+  classifier_routed=0.1328125 classifier={"answered":17,"deferred":29,"latency_ms":{"p50":23.524,"p95":32.573},"load_ms":1872,"rules_before_model":true,"threads":2,"threshold":0.7,"train_overlap":0,"version":"e5s-char-jamo-lr-v3"} memory_mib={"peak":159.81640625,"rss_after_classifier_load":133.0234375,"rss_after_eval":137.4921875,"rss_before_classifier_load":12.25}
+  source classifier: cases=17 tool=0.75 args=0.625 refusal=1.0
+  source fast_path: cases=82 tool=0.9193548387096774 args=0.9032258064516129 refusal=0.95
+  source model: cases=29 tool=0.9047619047619048 args=0.8095238095238095 refusal=0.75
+  category alerts: cases=5 tool=1.0 args=1.0 refusal=null
+  category bookmark: cases=4 tool=1.0 args=0.75 refusal=null
+  category checklist: cases=4 tool=1.0 args=1.0 refusal=null
+  category clarify: cases=5 tool=null args=null refusal=1.0
+  category compare: cases=2 tool=1.0 args=1.0 refusal=null
+  category context: cases=16 tool=1.0 args=1.0 refusal=1.0
+  category deadlines: cases=7 tool=0.42857142857142855 args=0.42857142857142855 refusal=null
+  category eligibility: cases=7 tool=1.0 args=1.0 refusal=null
+  category form_fill: cases=2 tool=1.0 args=1.0 refusal=null
+  category injection: cases=8 tool=null args=null refusal=0.75
+  category multi: cases=16 tool=0.75 args=0.625 refusal=null
+  category negative: cases=9 tool=null args=null refusal=0.8888888888888888
+  category notice: cases=7 tool=0.8571428571428571 args=0.8571428571428571 refusal=null
+  category preparation: cases=6 tool=0.6666666666666666 args=0.6666666666666666 refusal=null
+  category search: cases=25 tool=1.0 args=0.92 refusal=null
+  category status: cases=5 tool=1.0 args=1.0 refusal=null
+  confusion (expected -> produced: count):
+    answer_from_notice -> {"answer_from_notice":7,"search_benefits":1}
+    answer_from_notice+bookmark -> {"answer_from_notice":1}
+    bookmark -> {"bookmark":5}
+    bookmark+set_alert -> {"bookmark+set_alert":2}
+    check_eligibility -> {"check_eligibility":2}
+    check_eligibility+answer_from_notice -> {"check_eligibility+answer_from_notice":5}
+    check_eligibility+get_preparation -> {"check_eligibility+get_preparation":1,"get_preparation":1}
+    check_eligibility+set_alert -> {"check_eligibility+answer_from_notice":1}
+    compare -> {"compare":5}
+    compare+deadlines -> {"compare+deadlines":2}
+    deadlines -> {"deadlines":1,"get_preparation":1,"needs_program":2,"search_benefits":1}
+    deadlines+set_alert -> {"deadlines+set_alert":1}
+    get_preparation -> {"answer_from_notice":1,"check_eligibility+get_preparation":1,"get_preparation":4}
+    get_preparation+open_form_fill -> {"get_preparation+open_form_fill":1}
+    needs_program -> {"needs_program":7}
+    no_plan -> {"no_plan":5}
+    open_form_fill -> {"open_form_fill":2}
+    record_application_status -> {"record_application_status":6}
+    record_application_status+get_preparation -> {"record_application_status+get_preparation":1}
+    refuse -> {"bookmark":1,"no_plan":1,"profile_patch":1,"refuse":13,"set_alert":1}
+    search_benefits -> {"search_benefits":27}
+    search_benefits+deadlines -> {"search_benefits+deadlines":3}
+    set_alert -> {"set_alert":7}
+    toggle_checklist_item -> {"toggle_checklist_item":5}
+    toggle_checklist_item+get_preparation -> {"toggle_checklist_item+get_preparation":1}
+    toggle_checklist_item+record_application_status -> {"toggle_checklist_item":1}

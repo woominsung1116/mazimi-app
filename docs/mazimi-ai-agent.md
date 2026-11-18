@@ -1,6 +1,6 @@
 # 마지미 AI 혜택 비서 에이전트 계약
 
-> 상태: 코드·테스트 완료, **운영에서 꺼져 있음**(`ASSISTANT_AGENT_ENABLED=false`). 모델 계획은 로컬 측정만 있고(§11) Oracle 재측정 전이다.
+> 상태: 코드·테스트 완료, 운영 서버에서 켜져 있다(`ASSISTANT_AGENT_ENABLED=true`, 출시 전). 운영 계획 모델은 미세조정 플래너 `mazimi-planner-q17-v2`(`ASSISTANT_AGENT_PLANNER_PROMPT=tuned`, 계획 타임아웃 12초)이고 qwen3.5:9b는 쓰지 않는다. 2026-11-12 API 재배포를 `compose.yml`만으로 해서 API가 `planner` 네트워크에 없고, 그 뒤로 플래너 워밍업이 매시간 실패해 모델 계획 없이 가드·분류기·규칙만 답한다(2026-11-18 확인). 복구는 `compose.planner.yml`을 함께 넣어 API를 다시 올리는 것이다.
 > 기준 문서: [제품 기획서](mazimi-ai-assistant-product-plan.md) §4·§5·§7·§10·§11·§13, [기술 스펙](mazimi-ai-assistant-technical-spec.md) §3~§15. 질문 1건 Q&A·생성 요약은 [v1/v2 계약](mazimi-ai-assistant-v1-contract.md)이 그대로 기준이다.
 > 이 문서가 에이전트의 엔드포인트·수치·코드 위치의 기준이다. 스펙과 다른 결정은 §12에 모았다.
 
@@ -309,6 +309,18 @@ awaiting_confirmation → completed (모두 취소·만료)
 - 독립 가드 코퍼스(rules): 잘못된 거절 1, 공격 거절 61, 공격 쓰기 0. 전후 같다.
 - 지연(로컬 CPU 3스레드, Oracle 엔진과 같은 GGUF 러너, 접두부가 캐시된 뒤 계획 1건): v2 14.5초 → v3 2.6초. 프롬프트 평가 약 500토큰 → 약 60토큰(`num_batch` 64), 출력 33 → 25토큰. Oracle 추정은 핸드오프 `agent-planner-v3.md`.
 
+Oracle 게이트 측정(2026-11-18, holdout v3 128개, 운영 플래너 `mazimi-planner-q17-v2` digest `8a7e88aaa0c6`, `tuned`, 스레드 2, 타임아웃 12초, pipeline은 분류기 포함). 결과 파일은 `docs/validation/agent/benchmarks/oracle-20261118-planner-q17-v2-holdout-v3/`에 있다.
+
+| 실행 | 도구 | 인자 | 거절 | 잘못된 거절 | 빠른 경로 정확도 | invalid JSON | 확인 없는 쓰기 | 인젝션 쓰기(우회 문구 제외) | 모델 p50 / p95 |
+|---|---|---|---|---|---|---|---|---|---|
+| pipeline(빠른 경로 82, 분류기 17, 모델 29) | 0.889 | 0.838 | 0.897 | 0 | 0.915 | 0 | 0 | 1 (0) | 2.5초 / 7.7초 |
+| model-only | 0.889 | 0.828 | 0.897 | 1 | – | 0 | 0 | 1 (0) | 2.0초 / 3.3초 |
+
+- 통과: 인자 ≥ 0.80, invalid JSON, 확인 없는 쓰기 0, p95 ≤ 12초. 미달: 도구 ≥ 0.90, 거절 ≥ 0.95.
+- 인젝션 쓰기 1건은 "확인 없이" 문구가 있는 목표를 확인 카드로 계획한 경우라 라우팅 v4 결정에 맞는다.
+- 약한 분류는 마감(pipeline 도구 0.43), 인젝션 거절 0.75, 복합 의도 0.75다.
+- 목표별 문장은 읽지 않았다. holdout v3는 게이트 세트로 남는다.
+
 ## 12. 스펙과 다르게 정한 것
 
 - **모듈 위치**:
@@ -373,7 +385,8 @@ awaiting_confirmation → completed (모두 취소·만료)
 
 ## 15. 남은 일
 
-- 플래너 v3로 Oracle 재측정(§11, holdout v3 게이트와 지연), 사람이 검수한 목표 세트.
+- API를 `compose.planner.yml`과 함께 다시 올려 `planner` 네트워크를 복구한다(상태 줄).
+- 운영 플래너가 holdout v3 게이트의 도구 정확도(0.889)와 거절 정확도(0.897)에 미달한다(§11). 고친 뒤에는 v3 결과를 보지 않은 새 holdout으로 잰다. 사람이 검수한 목표 세트도 필요하다.
 - holdout 인젝션 쓰기 1건: 원인 확인은 새 holdout으로 한다(이 세트는 보지 않는다).
 - 모바일 실기기·시뮬레이터 확인을 하지 않았다(Xcode 라이선스 미동의). `expo/fetch` 스트림의 Hermes 동작도 실기기에서 확인해야 한다.
 - 한도·차단기·이벤트 레지스트리는 프로세스 메모리에 있다. API 인스턴스가 여러 개면 공유 저장소가 필요하다(이벤트는 DB 폴링으로 대체된다).

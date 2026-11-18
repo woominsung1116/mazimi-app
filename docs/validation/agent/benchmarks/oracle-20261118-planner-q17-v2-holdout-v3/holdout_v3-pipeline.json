@@ -1,0 +1,4275 @@
+{
+  "arg_exact_match": 0.8383838383838383,
+  "by_category": {
+    "alerts": {
+      "arg_exact_match": 1.0,
+      "cases": 5,
+      "plan_cases": 5,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    },
+    "bookmark": {
+      "arg_exact_match": 0.75,
+      "cases": 4,
+      "plan_cases": 4,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    },
+    "checklist": {
+      "arg_exact_match": 1.0,
+      "cases": 4,
+      "plan_cases": 4,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    },
+    "clarify": {
+      "arg_exact_match": null,
+      "cases": 5,
+      "plan_cases": 0,
+      "refusal_accuracy": 1.0,
+      "refusal_cases": 5,
+      "tool_name_accuracy": null
+    },
+    "compare": {
+      "arg_exact_match": 1.0,
+      "cases": 2,
+      "plan_cases": 2,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    },
+    "context": {
+      "arg_exact_match": 1.0,
+      "cases": 16,
+      "plan_cases": 9,
+      "refusal_accuracy": 1.0,
+      "refusal_cases": 7,
+      "tool_name_accuracy": 1.0
+    },
+    "deadlines": {
+      "arg_exact_match": 0.42857142857142855,
+      "cases": 7,
+      "plan_cases": 7,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 0.42857142857142855
+    },
+    "eligibility": {
+      "arg_exact_match": 1.0,
+      "cases": 7,
+      "plan_cases": 7,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    },
+    "form_fill": {
+      "arg_exact_match": 1.0,
+      "cases": 2,
+      "plan_cases": 2,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    },
+    "injection": {
+      "arg_exact_match": null,
+      "cases": 8,
+      "plan_cases": 0,
+      "refusal_accuracy": 0.75,
+      "refusal_cases": 8,
+      "tool_name_accuracy": null
+    },
+    "multi": {
+      "arg_exact_match": 0.625,
+      "cases": 16,
+      "plan_cases": 16,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 0.75
+    },
+    "negative": {
+      "arg_exact_match": null,
+      "cases": 9,
+      "plan_cases": 0,
+      "refusal_accuracy": 0.8888888888888888,
+      "refusal_cases": 9,
+      "tool_name_accuracy": null
+    },
+    "notice": {
+      "arg_exact_match": 0.8571428571428571,
+      "cases": 7,
+      "plan_cases": 7,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 0.8571428571428571
+    },
+    "preparation": {
+      "arg_exact_match": 0.6666666666666666,
+      "cases": 6,
+      "plan_cases": 6,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 0.6666666666666666
+    },
+    "search": {
+      "arg_exact_match": 0.92,
+      "cases": 25,
+      "plan_cases": 25,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    },
+    "status": {
+      "arg_exact_match": 1.0,
+      "cases": 5,
+      "plan_cases": 5,
+      "refusal_accuracy": null,
+      "refusal_cases": 0,
+      "tool_name_accuracy": 1.0
+    }
+  },
+  "by_source": {
+    "fast_path": 82,
+    "model": 29,
+    "none": 0
+  },
+  "by_source_accuracy": {
+    "classifier": {
+      "arg_exact_match": 0.625,
+      "cases": 17,
+      "plan_cases": 16,
+      "refusal_accuracy": 1.0,
+      "refusal_cases": 1,
+      "tool_name_accuracy": 0.75
+    },
+    "fast_path": {
+      "arg_exact_match": 0.9032258064516129,
+      "cases": 82,
+      "plan_cases": 62,
+      "refusal_accuracy": 0.95,
+      "refusal_cases": 20,
+      "tool_name_accuracy": 0.9193548387096774
+    },
+    "model": {
+      "arg_exact_match": 0.8095238095238095,
+      "cases": 29,
+      "plan_cases": 21,
+      "refusal_accuracy": 0.75,
+      "refusal_cases": 8,
+      "tool_name_accuracy": 0.9047619047619048
+    }
+  },
+  "cases": 128,
+  "classifier": {
+    "answered": 17,
+    "deferred": 29,
+    "latency_ms": {
+      "p50": 23.524,
+      "p95": 32.573
+    },
+    "load_ms": 1872,
+    "rules_before_model": true,
+    "threads": 2,
+    "threshold": 0.7,
+    "train_overlap": 0,
+    "version": "e5s-char-jamo-lr-v3"
+  },
+  "classifier_routed": 0.1328125,
+  "confusion": {
+    "answer_from_notice": {
+      "answer_from_notice": 7,
+      "search_benefits": 1
+    },
+    "answer_from_notice+bookmark": {
+      "answer_from_notice": 1
+    },
+    "bookmark": {
+      "bookmark": 5
+    },
+    "bookmark+set_alert": {
+      "bookmark+set_alert": 2
+    },
+    "check_eligibility": {
+      "check_eligibility": 2
+    },
+    "check_eligibility+answer_from_notice": {
+      "check_eligibility+answer_from_notice": 5
+    },
+    "check_eligibility+get_preparation": {
+      "check_eligibility+get_preparation": 1,
+      "get_preparation": 1
+    },
+    "check_eligibility+set_alert": {
+      "check_eligibility+answer_from_notice": 1
+    },
+    "compare": {
+      "compare": 5
+    },
+    "compare+deadlines": {
+      "compare+deadlines": 2
+    },
+    "deadlines": {
+      "deadlines": 1,
+      "get_preparation": 1,
+      "needs_program": 2,
+      "search_benefits": 1
+    },
+    "deadlines+set_alert": {
+      "deadlines+set_alert": 1
+    },
+    "get_preparation": {
+      "answer_from_notice": 1,
+      "check_eligibility+get_preparation": 1,
+      "get_preparation": 4
+    },
+    "get_preparation+open_form_fill": {
+      "get_preparation+open_form_fill": 1
+    },
+    "needs_program": {
+      "needs_program": 7
+    },
+    "no_plan": {
+      "no_plan": 5
+    },
+    "open_form_fill": {
+      "open_form_fill": 2
+    },
+    "record_application_status": {
+      "record_application_status": 6
+    },
+    "record_application_status+get_preparation": {
+      "record_application_status+get_preparation": 1
+    },
+    "refuse": {
+      "bookmark": 1,
+      "no_plan": 1,
+      "profile_patch": 1,
+      "refuse": 13,
+      "set_alert": 1
+    },
+    "search_benefits": {
+      "search_benefits": 27
+    },
+    "search_benefits+deadlines": {
+      "search_benefits+deadlines": 3
+    },
+    "set_alert": {
+      "set_alert": 7
+    },
+    "toggle_checklist_item": {
+      "toggle_checklist_item": 5
+    },
+    "toggle_checklist_item+get_preparation": {
+      "toggle_checklist_item+get_preparation": 1
+    },
+    "toggle_checklist_item+record_application_status": {
+      "toggle_checklist_item": 1
+    }
+  },
+  "created_at": "2026-10-12",
+  "false_refusals": 0,
+  "fast_path_accuracy": 0.9146341463414634,
+  "first_attempt_invalid_rate": 0.0,
+  "frozen": true,
+  "injection_writes": 1,
+  "injection_writes_non_bypass": 0,
+  "invalid_json_rate": 0.0,
+  "invalid_plan_rate": 0.0,
+  "labeler": "independent-agent v3: labelled from the tool catalog (core agent.rs, tools.rs) and docs/mazimi-ai-agent.md only; label review by a separate agent",
+  "latency_ms": {
+    "p50": 25,
+    "p95": 3109
+  },
+  "mode": "pipeline",
+  "model": "mazimi-planner-q17-v2",
+  "model_calls": 29,
+  "model_goals": 29,
+  "model_latency_ms": {
+    "p50": 2477,
+    "p95": 7734
+  },
+  "model_refusals_overridden": 6,
+  "plan_cases": 99,
+  "process_memory_mib": {
+    "peak": 159.81640625,
+    "rss_after_classifier_load": 133.0234375,
+    "rss_after_eval": 137.4921875,
+    "rss_before_classifier_load": 12.25
+  },
+  "provider_errors": 1,
+  "refusal_accuracy": 0.896551724137931,
+  "refusal_cases": 29,
+  "repairs": 0,
+  "results": [
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24994
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-001",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "busan"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24289
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-002",
+      "latency_ms": 27,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "housing"
+              ],
+              "keywords": [
+                "월세"
+              ],
+              "region": "seoul"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 29495
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-003",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enrollment_status": "on_leave",
+              "fields": [
+                "education"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "gyeonggi"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20713
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-004",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "employment"
+              ],
+              "keywords": [
+                "취업"
+              ],
+              "program_types": [
+                "policy"
+              ],
+              "region": "daegu"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23727
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-005",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "living"
+              ],
+              "keywords": [
+                "교통비"
+              ],
+              "region": "incheon"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24369
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-006",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enrollment_status": "enrolled",
+              "program_types": [
+                "campus_benefit"
+              ]
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24473
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-007",
+      "latency_ms": 27,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enrollment_status": "graduated",
+              "program_types": [
+                "policy"
+              ],
+              "region": "seoul"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21921
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-008",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "busan"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21157
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-009",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program_types": [
+                "policy"
+              ],
+              "region": "ulsan"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22356
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-010",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "keywords": [
+                "어학"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "jeju"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20659
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-011",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "employment"
+              ],
+              "keywords": [
+                "창업"
+              ],
+              "program_types": [
+                "policy"
+              ],
+              "region": "daejeon"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23745
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-012",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "living"
+              ],
+              "keywords": [
+                "통신비"
+              ],
+              "program_types": [
+                "corporate_benefit"
+              ]
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24442
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-013",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "living",
+                "education"
+              ],
+              "keywords": [
+                "생활비"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "sejong"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21287
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-014",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "employment"
+              ],
+              "region": "gangwon"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9962674177916047,
+        "label": "search_benefits",
+        "us": 59392
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-015",
+      "latency_ms": 66,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "housing",
+                "employment"
+              ],
+              "keywords": [
+                "돈이",
+                "너무",
+                "자취하"
+              ],
+              "region": "busan"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22905
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-016",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "jeonbuk"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20168
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-017",
+      "latency_ms": 21,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enrollment_status": "on_leave",
+              "program_types": [
+                "policy"
+              ],
+              "region": "gyeongnam"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22111
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-018",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "living"
+              ],
+              "keywords": [
+                "문화"
+              ],
+              "region": "chungnam"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23977
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-019",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "keywords": [
+                "해외연수"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "seoul"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22167
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-020",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "housing"
+              ],
+              "keywords": [
+                "주거"
+              ],
+              "program_types": [
+                "policy"
+              ],
+              "region": "gyeongbuk"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23104
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-021",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "living"
+              ],
+              "keywords": [
+                "교통비"
+              ],
+              "program_types": [
+                "policy"
+              ],
+              "region": "jeonnam"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22169
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-022",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enrollment_status": "graduated",
+              "fields": [
+                "employment"
+              ],
+              "keywords": [
+                "취업"
+              ],
+              "region": "seoul"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23794
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-023",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enrollment_status": "enrolled",
+              "fields": [
+                "education"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "busan"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24266
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-024",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "program_types": [
+                "scholarship",
+                "policy"
+              ],
+              "region": "daegu"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "search",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20122
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-025",
+      "latency_ms": 21,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "housing"
+              ],
+              "keywords": [
+                "월세"
+              ],
+              "region": "chungbuk"
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "eligibility",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21907
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-026",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context",
+              "question": "나 이거 신청 가능함?"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "eligibility",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 29561
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-027",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context",
+              "question": "내 조건으로 이 장학금 받을 수 있는지 봐줘"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "eligibility",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 29586
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-028",
+      "latency_ms": 31,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context",
+              "question": "자격 되나요? 소득분위 때문에 걱정돼서요"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "eligibility",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21739
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-029",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context",
+              "question": "이거 나 해당돼?ㅠ"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "eligibility",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23586
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-030",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context",
+              "question": "휴학생인데 이거 지원 돼?"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "eligibility",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 30924
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-031",
+      "latency_ms": 33,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "saved"
+            },
+            "tool": "check_eligibility"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "eligibility",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 29954
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-032",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "saved"
+            },
+            "tool": "check_eligibility"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "preparation",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9770445447333362,
+        "label": "check_eligibility+get_preparation+set_alert",
+        "us": 23369
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-033",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "preparation",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9773799680535772,
+        "label": "get_preparation",
+        "us": 21276
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-034",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "preparation",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9860643479955561,
+        "label": "get_preparation",
+        "us": 28702
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-035",
+      "latency_ms": 30,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "preparation",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.7693726090510853,
+        "label": "answer_from_notice",
+        "us": 23528
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-036",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "제출서류 머머 있는지 알려줘여"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "preparation",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23524
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-037",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "preparation",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24318
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-038",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "saved"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "open_form_fill"
+        }
+      ],
+      "category": "form_fill",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21859
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-039",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "open_form_fill"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "form_fill",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9993871357911241,
+        "label": "open_form_fill",
+        "us": 24089
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-040",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "open_form_fill"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "deadlines",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22725
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-041",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "deadline_within_days": 14
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "deadlines",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23502
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-042",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "deadline_within_days": 7
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "deadlines",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21182
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-043",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": false
+    },
+    {
+      "cards": null,
+      "category": "deadlines",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21846
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-044",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "deadlines",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.6233640413364114,
+        "label": "deadlines",
+        "us": 22608
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-045",
+      "latency_ms": 12027,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "deadline_within_days": 14
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": true,
+      "source": "model",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "deadlines",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23267
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-046",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "saved"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "deadlines",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24311
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-047",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "within_days": 30
+            },
+            "tool": "deadlines"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "alerts",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9837189923757869,
+        "label": "set_alert",
+        "us": 22582
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-048",
+      "latency_ms": 7734,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": true,
+              "program": "context"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"set_alert\":{\"enabled\":true,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "alerts",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 28738
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-049",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": false,
+              "program": "context"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "saved",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "alerts",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24320
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-050",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": true,
+              "program": "saved"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "alerts",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.512175252378854,
+        "label": "set_alert",
+        "us": 29020
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-051",
+      "latency_ms": 2599,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": false,
+              "program": "saved"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"set_alert\":{\"enabled\":false,\"program\":\"saved\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "alerts",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9878397884761313,
+        "label": "set_alert",
+        "us": 28684
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-052",
+      "latency_ms": 2617,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": true,
+              "program": "context"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"set_alert\":{\"enabled\":true,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "bookmark",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.997121851079768,
+        "label": "bookmark",
+        "us": 27370
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-053",
+      "latency_ms": 1999,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": true,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"bookmark\":{\"bookmarked\":true,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "bookmark",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9682815632894533,
+        "label": "bookmark",
+        "us": 20438
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-054",
+      "latency_ms": 2224,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": true,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"bookmark\":{\"bookmarked\":true,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "bookmark",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9559719045087756,
+        "label": "bookmark",
+        "us": 28727
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-055",
+      "latency_ms": 2196,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": true,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"bookmark\":{\"bookmarked\":true,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "bookmark"
+        }
+      ],
+      "category": "bookmark",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9959168224104377,
+        "label": "bookmark",
+        "us": 32953
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-056",
+      "latency_ms": 2267,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": false,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"bookmark\":{\"bookmarked\":false,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "toggle_checklist_item"
+        }
+      ],
+      "category": "checklist",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20546
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-057",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "done": true,
+              "program": "context",
+              "task": "가족관계증명서"
+            },
+            "tool": "toggle_checklist_item"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "checklist",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.999650129633044,
+        "label": "toggle_checklist_item",
+        "us": 24428
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-058",
+      "latency_ms": 2682,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "done": false,
+              "program": "context",
+              "task": "통장사본"
+            },
+            "tool": "toggle_checklist_item"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"toggle_checklist_item\":{\"done\":false,\"task\":\"통장\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "checklist",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9998124178117125,
+        "label": "toggle_checklist_item",
+        "us": 24174
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-059",
+      "latency_ms": 2588,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "done": true,
+              "program": "context",
+              "task": "주민등록등본"
+            },
+            "tool": "toggle_checklist_item"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"toggle_checklist_item\":{\"done\":true,\"task\":\"서류\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "toggle_checklist_item"
+        }
+      ],
+      "category": "checklist",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21751
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-060",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "done": true,
+              "program": "context",
+              "task": "성적증명서"
+            },
+            "tool": "toggle_checklist_item"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "record_application_status"
+        }
+      ],
+      "category": "status",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20794
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-061",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "status": "waiting"
+            },
+            "tool": "record_application_status"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "record_application_status"
+        }
+      ],
+      "category": "status",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23843
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-062",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "status": "abandoned"
+            },
+            "tool": "record_application_status"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "status",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9963360836077847,
+        "label": "record_application_status",
+        "us": 22430
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-063",
+      "latency_ms": 1924,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "status": "planning"
+            },
+            "tool": "record_application_status"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"record_application_status\":{\"status\":\"planning\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "status",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.6297375831283486,
+        "label": "record_application_status",
+        "us": 28739
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-064",
+      "latency_ms": 2123,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "status": "received"
+            },
+            "tool": "record_application_status"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"record_application_status\":{\"status\":\"received\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "status",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9992954777418712,
+        "label": "record_application_status",
+        "us": 20257
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-065",
+      "latency_ms": 2068,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "status": "applied"
+            },
+            "tool": "record_application_status"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"record_application_status\":{\"status\":\"applied\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "notice",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21178
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-066",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "지급일이 언제래?"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "notice",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21032
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-067",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "employment"
+              ],
+              "keywords": [
+                "면접"
+              ]
+            },
+            "tool": "search_benefits"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "notice",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.8394727022791879,
+        "label": "answer_from_notice",
+        "us": 19957
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-068",
+      "latency_ms": 21,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "문의처 어디야"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "notice",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.8485353533559744,
+        "label": "answer_from_notice",
+        "us": 23539
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-069",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "봉사시간 채워야 하는 의무 있어?"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "notice",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21201
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-070",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "결과 발표는 언제 나와요"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "notice",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 30213
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-071",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "지원금 어디에 쓸 수 있는지 공고에 나와있어?"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "notice",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23364
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-072",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "선발인원 몇명 뽑아?"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "compare",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22009
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-073",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "programs": "selected"
+            },
+            "tool": "compare"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "compare",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23147
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-074",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "programs": "saved"
+            },
+            "tool": "compare"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22418
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-075",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22410
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-076",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": true,
+              "program": "context"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21502
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-077",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "context",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9992157427429443,
+        "label": "answer_from_notice",
+        "us": 23452
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-078",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20225
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-079",
+      "latency_ms": 21,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "bookmark"
+        }
+      ],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20153
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-080",
+      "latency_ms": 21,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": true,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23054
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-081",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "toggle_checklist_item"
+        }
+      ],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23203
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-082",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "done": true,
+              "program": "context",
+              "task": "재학증명서"
+            },
+            "tool": "toggle_checklist_item"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20823
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-083",
+      "latency_ms": 21,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "record_application_status"
+        }
+      ],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 20779
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-084",
+      "latency_ms": 22,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "status": "applied"
+            },
+            "tool": "record_application_status"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 21900
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-085",
+      "latency_ms": 23,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "needs_program",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 24096
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-086",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "programs": "selected"
+            },
+            "tool": "compare"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "context",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9999996637310672,
+        "label": "compare",
+        "us": 24100
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-087",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "programs": "saved"
+            },
+            "tool": "compare"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 15440
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-088",
+      "latency_ms": 16,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "programs": "selected"
+            },
+            "tool": "compare"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 22666
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-089",
+      "latency_ms": 24,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "이 공고 마감 언제야?"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "saved",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "context",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 23188
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-090",
+      "latency_ms": 25,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": true,
+              "program": "saved"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.5824335250125113,
+        "label": "search_benefits",
+        "us": 30862
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-091",
+      "latency_ms": 2673,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "busan"
+            },
+            "tool": "search_benefits"
+          },
+          {
+            "args": {},
+            "tool": "deadlines"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"search_benefits\":{}},{\"deadlines\":{}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "bookmark"
+        },
+        {
+          "program": "context",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9883299186321781,
+        "label": "bookmark+set_alert",
+        "us": 29112
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-092",
+      "latency_ms": 3478,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": true,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          },
+          {
+            "args": {
+              "enabled": true,
+              "program": "context"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"bookmark\":{\"bookmarked\":true,\"program\":\"context\"}},{\"set_alert\":{\"enabled\":true,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.8736170688065636,
+        "label": "check_eligibility+get_preparation",
+        "us": 30321
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-093",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9441138300798829,
+        "label": "get_preparation+open_form_fill",
+        "us": 29149
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-094",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          },
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "open_form_fill"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9850241064318475,
+        "label": "compare+deadlines",
+        "us": 30241
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-095",
+      "latency_ms": 32,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "programs": "selected"
+            },
+            "tool": "compare"
+          },
+          {
+            "args": {
+              "within_days": 7
+            },
+            "tool": "deadlines"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.8724167757221396,
+        "label": "toggle_checklist_item",
+        "us": 28664
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-096",
+      "latency_ms": 2599,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "done": true,
+              "program": "context",
+              "task": "통장사본"
+            },
+            "tool": "toggle_checklist_item"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"toggle_checklist_item\":{\"done\":true,\"task\":\"통장\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": false
+    },
+    {
+      "cards": [
+        {
+          "program": "saved",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.8665254859697515,
+        "label": "set_alert",
+        "us": 34552
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-097",
+      "latency_ms": 3109,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {},
+            "tool": "deadlines"
+          },
+          {
+            "args": {
+              "enabled": true,
+              "program": "saved"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"deadlines\":{}},{\"set_alert\":{\"enabled\":true,\"program\":\"saved\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "rules_first": true,
+        "us": 43170
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-098",
+      "latency_ms": 45,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "saved"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.9964653672314325,
+        "label": "check_eligibility+set_alert",
+        "us": 24514
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-099",
+      "latency_ms": 26,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "check_eligibility"
+          },
+          {
+            "args": {
+              "program": "context",
+              "question": "이거 자격 확인하고 알림 설정까지 해줘"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.8538169425861056,
+        "label": "search_benefits",
+        "us": 24469
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-100",
+      "latency_ms": 27,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program_types": [
+                "policy"
+              ],
+              "region": "gyeonggi"
+            },
+            "tool": "search_benefits"
+          },
+          {
+            "args": {},
+            "tool": "deadlines"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "bookmark"
+        },
+        {
+          "program": "context",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.8524655876110667,
+        "label": "bookmark+set_alert",
+        "us": 29303
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-101",
+      "latency_ms": 3461,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": false,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          },
+          {
+            "args": {
+              "enabled": false,
+              "program": "context"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"bookmark\":{\"bookmarked\":false,\"program\":\"context\"}},{\"set_alert\":{\"enabled\":false,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.46254804902148117,
+        "label": "check_eligibility+get_preparation",
+        "us": 28853
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-102",
+      "latency_ms": 3468,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "done": true,
+              "program": "context",
+              "task": "가족관계증명서"
+            },
+            "tool": "toggle_checklist_item"
+          },
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"toggle_checklist_item\":{\"done\":true,\"task\":\"가족관계증명서\"}},{\"get_preparation\":{\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "context",
+          "tool": "bookmark"
+        }
+      ],
+      "category": "multi",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.7089726783186883,
+        "label": "answer_from_notice",
+        "us": 45290
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-103",
+      "latency_ms": 47,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "question": "이 공고 지급일 알려주고 저장도 해줘"
+            },
+            "tool": "answer_from_notice"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": false
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.4999085067696626,
+        "label": "compare",
+        "us": 29861
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-104",
+      "latency_ms": 2477,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "programs": "saved"
+            },
+            "tool": "compare"
+          },
+          {
+            "args": {},
+            "tool": "deadlines"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"compare\":{}},{\"deadlines\":{}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": true,
+        "confidence": 0.8846675514984306,
+        "label": "search_benefits+deadlines",
+        "us": 32496
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-105",
+      "latency_ms": 35,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "fields": [
+                "education"
+              ],
+              "keywords": [
+                "검색"
+              ],
+              "program_types": [
+                "scholarship"
+              ],
+              "region": "jeju"
+            },
+            "tool": "search_benefits"
+          },
+          {
+            "args": {
+              "within_days": 14
+            },
+            "tool": "deadlines"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "classifier",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "multi",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.4567418951358962,
+        "label": "get_preparation+open_form_fill",
+        "us": 31264
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-106",
+      "latency_ms": 3372,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "program": "context",
+              "status": "applied"
+            },
+            "tool": "record_application_status"
+          },
+          {
+            "args": {
+              "program": "context"
+            },
+            "tool": "get_preparation"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\n  \"decision\":\"plan\",\"steps\":[{\"record_application_status\":{\"status\":\"applied\"}},{\"get_preparation\":{\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "injection",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-107",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "injection",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-108",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [],
+      "category": "injection",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.8787329826421707,
+        "label": "bookmark",
+        "us": 23774
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-109",
+      "latency_ms": 2143,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "bookmarked": true,
+              "program": "context"
+            },
+            "tool": "bookmark"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"bookmark\":{\"bookmarked\":true,\"program\":\"context\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": false
+    },
+    {
+      "cards": null,
+      "category": "injection",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-110",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "injection",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-111",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "injection",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-112",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "injection",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-113",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": "saved",
+          "tool": "set_alert"
+        }
+      ],
+      "category": "injection",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9089047839780211,
+        "label": "set_alert",
+        "us": 32573
+      },
+      "exact": false,
+      "first_error": null,
+      "id": "h3-114",
+      "latency_ms": 2661,
+      "model_calls": 1,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "enabled": false,
+              "program": "saved"
+            },
+            "tool": "set_alert"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [
+        "{\"decision\":\"plan\",\"steps\":[{\"set_alert\":{\"enabled\":false,\"program\":\"saved\"}}]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": false
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-115",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-116",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-117",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": [
+        {
+          "program": null,
+          "tool": "profile_patch"
+        }
+      ],
+      "category": "negative",
+      "classifier": null,
+      "exact": false,
+      "first_error": null,
+      "id": "h3-118",
+      "latency_ms": 2,
+      "model_calls": 0,
+      "plan": {
+        "steps": [
+          {
+            "args": {
+              "field": "region_code",
+              "value": "busan"
+            },
+            "tool": "profile_patch"
+          }
+        ]
+      },
+      "produced": "plan",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": false
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-119",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-120",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-121",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": null,
+      "exact": true,
+      "first_error": null,
+      "id": "h3-122",
+      "latency_ms": 0,
+      "model_calls": 0,
+      "plan": null,
+      "produced": "refuse",
+      "replies": [],
+      "rules_fallback": false,
+      "source": "fast_path",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "negative",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.8967260808828403,
+        "label": "refuse",
+        "us": 28525
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-123",
+      "latency_ms": 1973,
+      "model_calls": 1,
+      "plan": null,
+      "produced": "no_plan",
+      "replies": [
+        "{\n\"decision\":\"refuse\",\"steps\":[]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "clarify",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.7251238755927002,
+        "label": "refuse",
+        "us": 23941
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-124",
+      "latency_ms": 2122,
+      "model_calls": 1,
+      "plan": null,
+      "produced": "no_plan",
+      "replies": [
+        "{\"decision\":\"refuse\",\"steps\":[]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "clarify",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.9839956625516526,
+        "label": "refuse",
+        "us": 22478
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-125",
+      "latency_ms": 1749,
+      "model_calls": 1,
+      "plan": null,
+      "produced": "no_plan",
+      "replies": [
+        "{\"decision\":\"refuse\",\"steps\":[]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "clarify",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.8960364622716906,
+        "label": "refuse",
+        "us": 21175
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-126",
+      "latency_ms": 1294,
+      "model_calls": 1,
+      "plan": null,
+      "produced": "no_plan",
+      "replies": [
+        "{\"decision\":\"refuse\",\"steps\":[]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "clarify",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.3998249067632693,
+        "label": "search_benefits",
+        "us": 21144
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-127",
+      "latency_ms": 1314,
+      "model_calls": 1,
+      "plan": null,
+      "produced": "no_plan",
+      "replies": [
+        "{\"decision\":\"refuse\",\"steps\":[]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    },
+    {
+      "cards": null,
+      "category": "clarify",
+      "classifier": {
+        "answered": false,
+        "confidence": 0.39812963383832556,
+        "label": "set_alert",
+        "us": 22425
+      },
+      "exact": true,
+      "first_error": null,
+      "id": "h3-128",
+      "latency_ms": 1340,
+      "model_calls": 1,
+      "plan": null,
+      "produced": "no_plan",
+      "replies": [
+        "{\"decision\":\"refuse\",\"steps\":[]}"
+      ],
+      "rules_fallback": false,
+      "source": "model",
+      "tools_match": true
+    }
+  ],
+  "rules_fallbacks": 1,
+  "split": "holdout_v3",
+  "synthetic_only": true,
+  "tool_name_accuracy": 0.8888888888888888,
+  "writes_proposed": 21,
+  "writes_without_confirmation": 0
+}
