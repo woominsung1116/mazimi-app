@@ -149,7 +149,9 @@ jobs:
 
   lint-web:
     name: Web lint & typecheck
-    runs-on: ubuntu-latest
+    # Playwright's pinned Chromium has no build for the ubuntu-latest image
+    # (26.04); stay on 24.04 until tools/design upgrades Playwright.
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: apps/web
@@ -187,7 +189,9 @@ jobs:
 
   test-mobile:
     name: Mobile types and session regressions
-    runs-on: ubuntu-latest
+    # Playwright's pinned Chromium has no build for the ubuntu-latest image
+    # (26.04); stay on 24.04 until tools/design upgrades Playwright.
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: apps/mobile
