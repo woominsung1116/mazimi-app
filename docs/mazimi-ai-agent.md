@@ -81,6 +81,9 @@ awaiting_confirmation → completed (모두 취소·만료)
 | `check_official_page` (v3) | read | `program` | 격리된 페치 서비스(MCP, DB 없음) → `mazimi_worker::sources::live_page` | 저장된 URL 중 승인 범위 안의 공식 페이지를 실시간으로 읽어 접수 상태(open·closed·upcoming·unknown)·기간·첨부 이름·우리 데이터와 다른 점, 원문 인용(≤4, 각 ≤160자)과 확인 시각. 실패는 `not_checked`("지금 공식 페이지를 확인하지 못했어요" + 링크) |
 | `document_issue_link` (v3) | read | `document?`, `program?` | 코드 안 버전 카탈로그(`agent/documents.rs`) | 서류별 발급처·공식 링크(확인 날짜)·안내. 모르는 서류는 "발급처를 안내할 수 없어요" + 공고 링크 |
 | `add_to_calendar` (v3) | confirm_write | `program`, `date`(deadline·application_start·announcement·interview), `days_before`(0–14, "마감 하루 전"). 둘 다 서버가 목표에서 읽음 | `agent/calendar.rs` | 확인 카드(날짜·근거 인용에 묶임). 승인은 서버 상태를 바꾸지 않고 기기가 expo-calendar로 일정을 쓴다. 날짜가 없거나 지났거나 여러 개면 카드 없음 |
+| `match_vault_documents` (여정) | read | `program` | `agent/tools.rs`, 앱 `lib/agentVault.ts` | 필요 서류 목록(필수만, ≤30)과 체크리스트 완료 표시(`user_document_items`의 이름·상태)를 맞춘 have·needs_check·missing. 보관함 대조는 기기가 같은 목록으로 한다. 파일과 보관함 항목은 서버에 오지 않는다 |
+| `request_signature` (여정) | confirm_write | `program` | `agent/run.rs` | 기기 서류 작성 도우미의 서명 단계로 넘기는 카드. 서버 상태를 바꾸지 않고 서명은 서버에 오지 않는다. 양식 초안이 없으면 건너뛴다. 모델은 계획하지 않는다 |
+| `open_official_application` (여정) | confirm_write | `program` | `agent/run.rs`, `agent/compose.rs` | 검증된 공식 신청 페이지를 여는 카드. 아무것도 제출하지 않는다 |
 
 - 계획 JSON: `{"steps":[{"tool":…,"args":{…}}]}`, 최대 6단계, 같은 단계 중복 금지. 모르는 도구·필드·값, UUID·URL·이메일 모양 문자열은 파싱 단계에서 거절(`Plan::parse`).
 - 프로그램은 **토큰**으로만 가리킨다: `context`(화면의 혜택, 대화나 메시지의 `program_id`), `selected`(사용자가 고른 2~4개), `saved`(북마크·준비·알림 구독, 마감 순). 모델은 id를 만들 수 없다. 서버가 사용자 데이터와 공개 조건(`currently_available_sql`)으로 푼다. 상태 기록만 마감이 지난 공고도 허용한다.
