@@ -46,3 +46,37 @@ Leakage: these per-goal results were read to build planner v3 (`agent/args.rs`, 
 Gates: arg exact (>= 0.80), invalid JSON, writes without confirmation and p95 latency (<= 12 s) pass. Tool accuracy (>= 0.90) and refusal accuracy (>= 0.95) fail. The injection write is a skip-confirmation goal planned as a confirmation card (routing v4 decision), so `injection_writes_non_bypass` is 0. Weakest categories: deadlines (pipeline tool 0.43), injection refusal 0.75, multi 0.75.
 
 The per-goal texts were not read, so holdout v3 stays a gate set.
+
+These numbers score the planner's output, not the run. `agent-eval` then loaded no understanding model, while production loads it by default and lets the intent layer replace the planner's writes with its own cards, so the run's cards were not measured. See the next section.
+
+## 2026-11-20 replay and mock runs (no model calls, local WSL)
+
+Not a server run. The 11-18 model-only replies were turned into a replay file (`{masked goal \u0001 has_program \u0001 selected: reply}`) and scored with `agent-eval --provider replay`; `--provider mock` stands in for a perfect planner. Replaying the 11-18 model-only replies reproduces its numbers exactly (tool 0.889, args 0.828, refusal 0.897). Artefacts: classifier `e5s-char-jamo-lr-v3`, understanding `e5s-char-jamo-understand-v4`, e5 encoder at the pinned revision. Card accuracy: among goals whose label asks for a write, the share whose cards after `observe::expand` equal the expected writes, direction included (alert on/off, save/unsave, checklist done/undone, status).
+
+holdout v3, pipeline, 11-18 replies:
+
+| run | tool acc | arg exact | card acc | unasked cards |
+|---|---|---|---|---|
+| lexical rules (the 11-18 eval condition) | 0.899 | 0.848 | 0.500 | 2 |
+| understanding model (production before the fix) | 0.899 | 0.838 | 0.559 | 2 |
+| understanding model + rule agreement (production after `49c1fa6`) | 0.899 | 0.838 | 0.618 | 2 |
+| same, `--saved 3` | 0.899 | 0.838 | 0.676 | 3 |
+
+Before the fix, card accuracy by route was fast path 1.0, classifier 0.50, model 0.19. The pipeline tool 0.899 is one goal above the 11-18 pipeline record (0.889): replay answers model-routed goals with the model-only replies.
+
+Intent layer with a perfect planner (`--provider mock --saved 3`, dev sets):
+
+| set | lexical rules | understanding model | + rule agreement |
+|---|---|---|---|
+| dev | 0.78 | 0.68 | 0.84 |
+| holdout v1 | 0.36 | 0.50 | 0.64 |
+| holdout v2 | 0.73 | 0.73 | 0.87 |
+
+Card precision on the hand-labelled `agent_card_requests.json` (1,034 rows, all on screen, saved 3, `acceptance_probe`): rows with an unasked card 34 before and after the rule agreement.
+
+Tried and not kept (chosen on the dev sets and the probe, not on holdout v3):
+
+- Value bars scaled 0.75 to 0.25: no wrong-direction card on the dev sets, but only one more card each on holdout v1 and v2 and no change on the probe.
+- Alert and save with no allowed target sent to the programme on screen: one more card on dev and on the probe, and one more probe row with an unasked card (35).
+
+Leakage: holdout v3 aggregates were read for several variants (per category, per route, miss counts by write type and act, and the category and tool of unasked cards). No per-goal text was read and no variant was chosen on v3, so it stays the gate set.
