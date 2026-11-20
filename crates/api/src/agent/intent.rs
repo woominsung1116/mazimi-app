@@ -398,8 +398,46 @@ fn read_uncached(goal: &str, context: GoalContext, head: Option<&dyn ActHead>) -
         return vec![button];
     }
     if let Some(model) = UNDERSTANDING.get().filter(|_| understanding_on()) {
-        return read_understood(goal, context, model, reading(goal).as_deref());
+        let mut intents = read_understood(goal, context, model, reading(goal).as_deref());
+        agree_with_rules(&mut intents, &read_lexical(goal, context, head));
+        return intents;
     }
+    read_lexical(goal, context, head)
+}
+
+/// Where the model reads a write but cannot settle it (unclear: below the
+/// card or value bar; or a request whose step it could not fill), the rules'
+/// card of the same type stands when the rules settle it and agree with
+/// what the model did fill. The model's other reads (a question, a mention,
+/// a retraction, no write at all) keep their veto, and nothing is added for
+/// a type the model did not read.
+fn agree_with_rules(intents: &mut [WriteIntent], rules: &[WriteIntent]) {
+    for intent in intents.iter_mut() {
+        let unsettled = intent.act == Act::Unclear
+            || (writes_for(intent.write, intent.act) && intent.step.is_none());
+        if !unsettled {
+            continue;
+        }
+        let Some(rule) = rules.iter().find(|r| {
+            r.write == intent.write
+                && writes_for(r.write, r.act)
+                && r.step.is_some()
+                && intent.on.is_none_or(|on| r.on == Some(on))
+                && intent
+                    .step
+                    .as_ref()
+                    .is_none_or(|step| r.step.as_ref() == Some(step))
+        }) else {
+            continue;
+        };
+        intent.act = rule.act;
+        intent.step = rule.step.clone();
+    }
+}
+
+/// The lexical rules' write intents: the AI-off fallback, and the second
+/// reader [`agree_with_rules`] consults.
+fn read_lexical(goal: &str, context: GoalContext, head: Option<&dyn ActHead>) -> Vec<WriteIntent> {
     // A barred goal keeps only a form-field-value card its own bar allows.
     if writes_barred(goal) {
         let field = cards::field_value(goal) || goals::names_field_value(&cue_words(goal));

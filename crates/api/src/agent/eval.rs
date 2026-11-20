@@ -35,7 +35,7 @@ use super::{
     planner::{self, ModelFailure, ModelOutcome},
 };
 use crate::assistant_provider::{PlanProvider, PlanRequest};
-use mazimi_core::agent::{Permission, Plan, PlanError};
+use mazimi_core::agent::{Permission, Plan, PlanError, ToolCall};
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
 use std::collections::BTreeMap;
@@ -291,6 +291,8 @@ struct Tally {
     cases: usize,
     plan_cases: usize,
     tool_ok: usize,
+    write_cases: usize,
+    card_ok: usize,
     args_ok: usize,
     refusal_cases: usize,
     refusal_ok: usize,
@@ -302,6 +304,8 @@ impl Tally {
             "cases": self.cases,
             "plan_cases": self.plan_cases,
             "tool_name_accuracy": rate(self.tool_ok, self.plan_cases),
+            "write_cases": self.write_cases,
+            "card_accuracy": rate(self.card_ok, self.write_cases),
             "arg_exact_match": rate(self.args_ok, self.plan_cases),
             "refusal_cases": self.refusal_cases,
             "refusal_accuracy": rate(self.refusal_ok, self.refusal_cases),
@@ -382,9 +386,14 @@ pub async fn evaluate_with(
     let mut rules_fallbacks = 0usize;
     // Model refusals not answered as refusals (`model_refusals` off).
     let mut model_refusals_overridden = 0usize;
+    // Cards on goals whose label asks for no write.
+    let mut unasked_cards = 0usize;
     for case in fixture.cases.iter().take(limit) {
         let started = Instant::now();
         let goal = crate::assistant_provider::redact_question(&case.goal);
+        // As `run::plan`: the understanding model reads the goal once before
+        // routing (a no-op unless the eval installed it).
+        super::intent::prepare_blocking(&goal);
         // Production routing: with a model the fast path answers only its
         // confident shapes, and the rules' answer stands in when the model
         // cannot plan (`run::plan`).
@@ -485,8 +494,13 @@ pub async fn evaluate_with(
             }),
             (Mode::ModelOnly, _) => None,
         };
+        // The route's goal kind, for `observe::expand` as `run::drive` passes it.
+        let kind = std::cell::Cell::new(goals::GoalKind::Model);
         let from_rules = |decision: Decision| match decision {
-            Decision::Plan { plan, .. } => Some(Produced::Plan(plan)),
+            Decision::Plan { plan, kind: k } => {
+                kind.set(k);
+                Some(Produced::Plan(plan))
+            }
             Decision::Refuse(_) => Some(Produced::Refuse),
             Decision::NeedsProgram { .. } => Some(Produced::NeedsProgram),
             Decision::Unrecognized => None,
@@ -547,11 +561,14 @@ pub async fn evaluate_with(
         // layer decides the cards (target, suspect goal, producer). The
         // planner output above is what the tool metrics score; the write
         // metrics count the cards.
+        if source == "classifier" {
+            kind.set(goals::GoalKind::Classifier);
+        }
         let cards = match &produced {
             Produced::Plan(plan) => Some(super::observe::expand(
                 plan.clone(),
                 &goal,
-                goals::GoalKind::Model,
+                kind.get(),
                 super::observe::Journey {
                     on_screen: case.context.has_program,
                     selected: case.context.selected,
@@ -615,6 +632,40 @@ pub async fn evaluate_with(
                 (ok, ok)
             }
         };
+        // The writes the run offers as cards (`cards`, after the intent
+        // layer), against the expected writes, in any order. The planner's
+        // writes are not what runs: with the understanding model the intent
+        // layer replaces them, and an unsure reading is the answer's state
+        // button, not a card (scored as a miss here).
+        // Each write as its tool and direction (alert on/off, save/unsave,
+        // checklist done/undone, the status): a card in the other direction
+        // is a miss, not a match.
+        let writes_of = |plan: &Plan| {
+            let mut names: Vec<String> = plan
+                .steps
+                .iter()
+                .filter(|s| s.name().is_write())
+                .map(|s| {
+                    let direction = match s {
+                        ToolCall::SetAlert(a) => format!(":{}", a.enabled),
+                        ToolCall::Bookmark(a) => format!(":{}", a.bookmarked),
+                        ToolCall::ToggleChecklistItem(a) => format!(":{}", a.done),
+                        ToolCall::RecordApplicationStatus(a) => format!(":{:?}", a.status),
+                        _ => String::new(),
+                    };
+                    format!("{}{direction}", s.name().as_str())
+                })
+                .collect();
+            names.sort_unstable();
+            names
+        };
+        let expected_writes = match &case.expect {
+            Expect::Plan(expected) => writes_of(expected),
+            _ => Vec::new(),
+        };
+        let card_writes = cards.as_ref().map(writes_of).unwrap_or_default();
+        let card_match = expected_writes == card_writes;
+        unasked_cards += usize::from(expected_writes.is_empty() && !card_writes.is_empty());
         fast_path_exact += usize::from(source == "fast_path" && exact);
         false_refusals += usize::from(
             matches!(case.expect, Expect::Plan(_) | Expect::NeedsProgram)
@@ -627,6 +678,10 @@ pub async fn evaluate_with(
             if matches!(case.expect, Expect::Plan(_)) {
                 tally.plan_cases += 1;
                 tally.tool_ok += usize::from(tools_match);
+                if !expected_writes.is_empty() {
+                    tally.write_cases += 1;
+                    tally.card_ok += usize::from(card_match);
+                }
                 tally.args_ok += usize::from(exact);
             } else {
                 tally.refusal_cases += 1;
@@ -646,8 +701,16 @@ pub async fn evaluate_with(
             "model_calls": calls, "rules_fallback": model_failed,
             "first_error": first_error.map(|e| e.to_string()),
             "replies": replies,
-            "tools_match": tools_match, "exact": exact, "latency_ms": ms,
+            "tools_match": tools_match, "card_match": card_match,
+            "executed": cards.as_ref().map(signature),
+            "exact": exact, "latency_ms": ms,
             "classifier": classifier_row,
+            // The intent layer's reading (diagnostic): write, act, whether
+            // the rules could fill a step.
+            "intents": super::intent::read(&goal, GoalContext { suspect, ..case.context }, None)
+                .iter()
+                .map(|i| format!("{:?}:{:?}:{}", i.write, i.act, i.step.is_some()))
+                .collect::<Vec<_>>(),
         }));
     }
     latencies.sort_unstable();
@@ -695,6 +758,7 @@ pub async fn evaluate_with(
         "false_refusals": false_refusals,
         "rules_fallbacks": rules_fallbacks,
         "model_refusals_overridden": model_refusals_overridden,
+        "unasked_cards": unasked_cards,
         "classifier": classifier_report,
         "classifier_routed": classifier.map(|_| rate(classifier_answered, cases)),
         "by_source_accuracy": by_source_tally.iter().map(|(k, t)| ((*k).to_owned(), t.report()))

@@ -241,16 +241,18 @@ async fn a_hub_without_an_allowing_terms_outcome_is_never_read() {
         assert_eq!(summary.doors, 0, "{terms:?}");
         assert!(http.requested().is_empty(), "{terms:?}");
     }
-    // The seeded hubs of 20261111000105 carry no outcome: none is due.
-    let seeded: i64 = sqlx::query_scalar(&format!(
-        "SELECT count(*) FROM corporate_doors dr JOIN benefit_source_domains d ON d.id = dr.domain_id
-         WHERE dr.kind = 'hub_rows' AND d.domain NOT LIKE '%.example' AND {}",
+    // Of the seeded hubs of 20261111000105, only the two whose terms
+    // 20261118000001 recorded are due; PAYCO and the rest carry no outcome.
+    let seeded: Vec<String> = sqlx::query_scalar(&format!(
+        "SELECT DISTINCT d.domain FROM corporate_doors dr JOIN benefit_source_domains d ON d.id = dr.domain_id
+         WHERE dr.kind = 'hub_rows' AND d.domain NOT LIKE '%.example' AND {}
+         ORDER BY d.domain",
         super::HUB_TERMS_ALLOWED_SQL
     ))
-    .fetch_one(&pool)
+    .fetch_all(&pool)
     .await
     .unwrap();
-    assert_eq!(seeded, 0);
+    assert_eq!(seeded, ["card.kbcard.com", "sktmembership.tworld.co.kr"]);
 }
 
 /// Shadow: the hub is read once, its offers recorded, nothing published,
