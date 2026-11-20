@@ -100,7 +100,7 @@ sha2 = "0.10"
 psl = "2"
 # SMTP for operator alerts (MIT). Pinned; rustls with the ring provider the
 # workspace already uses through sqlx, so no OpenSSL dependency is added.
-lettre = { version = "=0.11.23", default-features = false, features = ["smtp-transport", "tokio1", "tokio1-rustls", "ring", "webpki-roots", "builder", "hostname"] }
+lettre = { version = "=0.11.24", default-features = false, features = ["smtp-transport", "tokio1", "tokio1-rustls", "ring", "webpki-roots", "builder", "hostname"] }
 ego-tree = "0.10"
 # NFKC for the one canonical text quotes and pages are compared in
 # (`corporate_auto::evidence::canonical`); already in the lockfile.
