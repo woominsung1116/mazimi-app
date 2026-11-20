@@ -693,6 +693,12 @@ pub async fn evaluate_with(
             "executed": cards.as_ref().map(signature),
             "exact": exact, "latency_ms": ms,
             "classifier": classifier_row,
+            // The intent layer's reading (diagnostic): write, act, whether
+            // the rules could fill a step.
+            "intents": super::intent::read(&goal, GoalContext { suspect, ..case.context }, None)
+                .iter()
+                .map(|i| format!("{:?}:{:?}:{}", i.write, i.act, i.step.is_some()))
+                .collect::<Vec<_>>(),
         }));
     }
     latencies.sort_unstable();
