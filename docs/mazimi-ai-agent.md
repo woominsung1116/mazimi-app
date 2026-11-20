@@ -193,7 +193,7 @@ awaiting_confirmation → completed (모두 취소·만료)
 - 모델 이름: `ASSISTANT_AGENT_PLANNER_MODEL`, 없으면 `ASSISTANT_AI_MODEL`, 그것도 없으면 `qwen3.5:9b`.
 - **미세조정 플래너**(`ASSISTANT_AGENT_PLANNER_ENABLED`, `ASSISTANT_AGENT_PLANNER_PROMPT=tuned`): 답변 모델 없이 플래너만 켠다. Qwen3-1.7B를 계획 과제에 LoRA로 조정해 Q4_K_M GGUF(약 1.1 GB)로 Ollama 서비스(`infra/docker/compose.planner.yml`, `ASSISTANT_AGENT_PLANNER_URL`)에서 돌린다. 프롬프트는 학습 때와 같은 짧은 고정 시스템 턴(`TUNED_SYSTEM`, 버전 `agent-plan-tuned-v1`)과 목표뿐이고 예시가 없다. 문법은 v1/v2 도구만이다(v3 도구는 규칙이 라우팅). 출력은 다른 모델과 같은 `planner::interpret`·가드·`bars_writes`·확인 카드를 거친다. 학습·내보내기는 `scripts/ai/planner-finetune/`(sft.py, ft.py, export.sh). 플래너 계획 타임아웃은 `tuned`에서 기본 12초다(`ASSISTANT_AGENT_PLAN_TIMEOUT_SECS`로 바꾼다). `ASSISTANT_AGENT_PLANNER_DIGEST`를 주면 서빙 중인 모델 digest가 맞을 때까지 플래너를 끄고, 다르면 경고 한 번과 함께 끈다. 쓰기만 남은 계획을 쓰기 금지 목표에서 버린 경우(`WritesBarred`)는 가드의 거절이고, 모델이 스스로 고른 거절과 구분한다. 모델의 거절은 기본으로 거절로 답하지 않는다(`ASSISTANT_AGENT_PLANNER_REFUSALS`, 기본 off): 규칙의 답이 있으면 그 답, 없으면 '이해하지 못했어요' 안내다. 거절은 가드·규칙·분류기 기준선(0.99)의 몫이다. 조정 플래너가 사기 용어를 언급한 정직한 질문 16개 중 3개를 거절했기 때문이다.
 - **검색 관련도 재정렬**(`ASSISTANT_SEARCH_RERANK_ENABLED`, 기본 꺼짐, 분류기 인코더 필요, `services/relevance.rs`): 검색 후보를 주제어(`query: `)와 제목+요약(`passage: `)의 e5 코사인으로 다시 매긴다. 키워드가 있고 마감 창이 없는 검색에서 0.78 미만은 빼고(아무것도 안 남으면 찾지 못했다고 말한다), 같은 주제 단계의 최고점보다 0.05 넘게 낮은 것은 뒤로 보낸다. 프로그램 벡터는 id·내용 해시로 캐시하고 백그라운드 작업이 시작 때와 매시 바뀐 행만 다시 만든다. 호출 위치는 `benefit_assistant/search.rs`에 있다(플래그로만 켜진다). 카탈로그 작업은 32개씩 나눠 사이에 쉬어, 같은 인코더 풀을 쓰는 실시간 분류가 끼어든다.
-- **쓰기 이해 모델**(`ASSISTANT_UNDERSTANDING_ENABLED`, 기본 켜짐, `classifier/understand.rs`, `intent/policy.rs`): 목표 하나를 e5 한 번 + 문자·자모·끝 16자·마지막 두 단어 TF-IDF로 읽어 쓰기 종류별 행위(요청·언급·질문·보고·철회), 방향(알림 켜기/끄기, 저장/해제, 체크/해제, 상태), 대상(화면·저장 목록·선택·없음)을 낸다. 정책은 거르고 정할 뿐 알아보지 않는다: 종류별 카드 기준(dev 정밀도 ≥ 0.90) 이상이고 맨 위 행위가 요청일 때만 카드, 질문·언급·철회는 카드가 되지 않는다. 방향이 둘인 쓰기는 두 방향의 차이가 값 기준(dev에서 방향 오류가 없는 최저 차이)을 넘을 때만 카드이고, 아니면 현재 상태에 맞는 버튼이다. 저장 목록 대상은 저장한 혜택이 있고 목록 단어("목록", "리스트")가 있거나, 화면에 혜택이 없을 때 복수("…들", "다", "전부")일 때만이다. 화면에서 "내가 저장한 거"는 화면의 혜택이다. 가드가 막은 목표(주입 표지, AI에게 하는 지시+쓰기 등)는 모델에 가지 않는다. 계획기·분류기는 이때 쓰기를 계획하지 않고(게이트가 버린다), 양식·공식 페이지 안내만 모델이 요청할 때 남긴다. 산출물 `understanding.json`(git `crates/api/assets/understanding/`, sha256 고정)은 `scripts/ai/understanding/`(build_data.py, compose_rows.py, train.py)이 만들고 봉인 배치 해시와 겹치면 실패한다. 모델은 실행마다 한 번(`run::plan`의 `intent::prepare`, `spawn_blocking`, 300 ms 제한) 목표를 읽고, 읽는 곳(라우팅·게이트·생산자·답변)은 모두 그 읽기에 자기 맥락으로 정책만 적용한다. 시간을 넘기면 카드 없이 버튼이다. 실행 맥락(화면·선택·저장 수·의심)은 `run::plan`이 한 번 만들어 `observe::Journey`로 넘긴다. 상태 값에는 rejected(떨어짐·탈락·불합격)가 있다. core에 기록할 상태가 없으므로 카드 없이 상태 선택 버튼이다. 모델이 올라오기 전·실패·플래그 끔·`ASSISTANT_MODELS_ENABLED=false`에서는 어휘 규칙이 쓰기를 읽는다(AI 끔 대체 경로). 남은 일(통합 리뷰 L1): 모델이 켜져 있어도 `goals.rs` 쓰기 경로가 라우팅(프로그램 선택 요청, 계획 여부)을 정한다. 쓰기 자체는 게이트·생산자 한 곳에서 정하지만, 다음 단계는 그 경로가 `model_active()`일 때 의도 층을 읽게 하는 것이다.
+- **쓰기 이해 모델**(`ASSISTANT_UNDERSTANDING_ENABLED`, 기본 켜짐, `classifier/understand.rs`, `intent/policy.rs`): 목표 하나를 e5 한 번 + 문자·자모·끝 16자·마지막 두 단어 TF-IDF로 읽어 쓰기 종류별 행위(요청·언급·질문·보고·철회), 방향(알림 켜기/끄기, 저장/해제, 체크/해제, 상태), 대상(화면·저장 목록·선택·없음)을 낸다. 정책은 거르고 정할 뿐 알아보지 않는다: 종류별 카드 기준(dev 정밀도 ≥ 0.90) 이상이고 맨 위 행위가 요청일 때만 카드, 질문·언급·철회는 카드가 되지 않는다. 방향이 둘인 쓰기는 두 방향의 차이가 값 기준(dev에서 방향 오류가 없는 최저 차이)을 넘을 때만 카드이고, 아니면 현재 상태에 맞는 버튼이다. 저장 목록 대상은 저장한 혜택이 있고 목록 단어("목록", "리스트")가 있거나, 화면에 혜택이 없을 때 복수("…들", "다", "전부")일 때만이다. 화면에서 "내가 저장한 거"는 화면의 혜택이다. 가드가 막은 목표(주입 표지, AI에게 하는 지시+쓰기 등)는 모델에 가지 않는다. 계획기·분류기는 이때 쓰기를 계획하지 않고(게이트가 버린다), 양식·공식 페이지 안내만 모델이 요청할 때 남긴다. 산출물 `understanding.json`(git `crates/api/assets/understanding/`, sha256 고정)은 `scripts/ai/understanding/`(build_data.py, compose_rows.py, train.py)이 만들고 봉인 배치 해시와 겹치면 실패한다. 모델은 실행마다 한 번(`run::plan`의 `intent::prepare`, `spawn_blocking`, 300 ms 제한) 목표를 읽고, 읽는 곳(라우팅·게이트·생산자·답변)은 모두 그 읽기에 자기 맥락으로 정책만 적용한다. 시간을 넘기면 카드 없이 버튼이다. 실행 맥락(화면·선택·저장 수·의심)은 `run::plan`이 한 번 만들어 `observe::Journey`로 넘긴다. 상태 값에는 rejected(떨어짐·탈락·불합격)가 있다. core에 기록할 상태가 없으므로 카드 없이 상태 선택 버튼이다. 모델이 올라오기 전·실패·플래그 끔·`ASSISTANT_MODELS_ENABLED=false`에서는 어휘 규칙이 쓰기를 읽는다(AI 끔 대체 경로). 모델이 쓰기를 읽었지만 확신하지 못했거나 단계를 못 채운 종류는, 어휘 규칙이 같은 종류의 카드를 만들고 모델이 채운 값·대상과 맞으면 그 카드를 쓴다(`intent::agree_with_rules`). 질문·언급·철회로 읽은 종류와 모델이 읽지 않은 종류에는 쓰지 않는다. 남은 일(통합 리뷰 L1): 모델이 켜져 있어도 `goals.rs` 쓰기 경로가 라우팅(프로그램 선택 요청, 계획 여부)을 정한다. 쓰기 자체는 게이트·생산자 한 곳에서 정하지만, 다음 단계는 그 경로가 `model_active()`일 때 의도 층을 읽게 하는 것이다.
 - **의도 분류기 산출물**(§2): API 이미지의 `/opt/mazimi/intent-classifier/`(`ASSISTANT_INTENT_CLASSIFIER_DIR`)에 세 파일이 있다. 세 sha256은 `classifier/mod.rs`에 고정돼 있다.
   - `model.safetensors`·`tokenizer.json`: intfloat/multilingual-e5-small(MIT), 리비전 `614241f622f53c4eeff9890bdc4f31cfecc418b3`. 이미지 빌드가 Hugging Face에서 받아 sha256을 확인한다(`infra/docker/Dockerfile.api`). git에는 없다.
   - `classifier.json`(약 5.8 MB, 형식 `mazimi-intent-classifier/2`, 버전 `e5s-char-jamo-lr-v3`, git `crates/api/assets/intent-classifier/`): 가중치·문자 어휘·자모 3–6그램 어휘·주제 헤드·학습 목표 해시. `scripts/ai/intent-classifier/train.py`(uv)가 `data/train_v3.json`(`data/gen_train.py`가 만든 합성 학습 세트)만으로 만든다. 평가 세트(dev·fd·holdout v1–v3·주제 eval·가드 코퍼스·topic_dev·fraud_dev, 저장소 밖 블라인드 홀드아웃의 정규화 해시)와 겹치는 학습 목표가 하나라도 있으면 실패한다(`train_overlap = 0`). 다시 돌리면 바이트가 같다(`--check`).
@@ -249,7 +249,7 @@ awaiting_confirmation → completed (모두 취소·만료)
   - **dev** `crates/api/tests/fixtures/agent_goals.json`(124개, `split: dev`): 원래 78개 + `dev2-*` 46개(구어·오타·띄어쓰기·복합 의도). 빠른 경로·프롬프트·정규화를 이 세트로만 고쳤다. 수치는 회귀 하한이다.
   - **holdout** `agent_goals_holdout.json`(55개, `frozen`, `created_at 2026-10-12`): dev 세트와 라우터를 읽지 않은 별도 라벨러가 라벨 규칙 문서만 보고 썼다. 튜닝 전에 커밋했고 sha256을 테스트가 고정한다. 결과를 본 뒤 고치지 않는다. 새 세트는 새 파일로 만든다. 프롬프트 예시는 두 세트 어디에도 없다(테스트).
 - CLI `agent-eval`(`crates/api/src/bin/agent-eval.rs`):
-  - 옵션: `--provider rules|mock|ollama`, `--mode pipeline|model-only`, `--split dev|holdout`(또는 `--fixture`), `--model`, `--url`, `--allow-any-port`, `--num-thread`, `--timeout-seconds`, `--limit`, `--out`, `--classifier`(`--classifier-dir`, `--classifier-threads`, `--classifier-threshold`, 비교용 `--classifier-deferral-to-model`), `--understanding`(`--understanding-dir`), `--provider replay --replies PATH`
+  - 옵션: `--provider rules|mock|ollama`, `--mode pipeline|model-only`, `--split dev|holdout`(또는 `--fixture`), `--model`, `--url`, `--allow-any-port`, `--num-thread`, `--timeout-seconds`, `--limit`, `--out`, `--classifier`(`--classifier-dir`, `--classifier-threads`, `--classifier-threshold`, 비교용 `--classifier-deferral-to-model`), `--understanding`(`--understanding-dir`), `--saved N`(모든 목표의 사용자가 저장한 혜택 수, 기본 0), `--provider replay --replies PATH`. 결과 행의 `intents`는 의도 층의 읽기(종류:행위:단계 유무)다
   - `--understanding`은 운영 `runtime.rs`처럼 쓰기 이해 모델을 올리고, 목표마다 라우팅 전에 한 번 읽힌다(`intent::prepare_blocking`). 빼면 쓰기 카드는 AI 끔 대체 경로(어휘 규칙)가 만든다. 운영은 이 모델이 기본으로 켜져 있으므로 운영 수치는 이 옵션을 넣고 잰다.
   - `--provider replay`는 녹화한 플래너 응답(`{가린 목표 \u0001 has_program \u0001 selected: 응답}`)을 같은 `planner::interpret`에 넣는다. model-only로 한 번 녹화하면 모델 없이 라우팅·카드 변경을 다시 잴 수 있다. 11-18 holdout v3 model-only 응답의 replay는 기록 수치(도구 0.889, 인자 0.828, 거절 0.897)를 그대로 재현한다.
   - `--classifier`는 pipeline에 의도 분류기를 넣는다(가드 → 분류기 → 0.7 미만이면 규칙의 확신 모양, 그다음 모델, 모델이 없으면 규칙). 보고서에 `classifier_routed`(분류기가 답한 비율), `classifier`(지연·답함/넘김·픽스처와 학습 목표의 해시 겹침 `train_overlap`), `by_source_accuracy`, `process_memory_mib`(Linux)가 붙는다.
@@ -327,19 +327,33 @@ Oracle 게이트 측정(2026-11-18, holdout v3 128개, 운영 플래너 `mazimi-
 - 목표별 문장은 읽지 않았다. holdout v3는 게이트 세트로 남는다.
 - 이 측정은 쓰기 이해 모델 없이 돌았고 도구 지표는 플래너 출력 기준이라, 운영에서 사용자가 받는 카드는 재지 않았다.
 
-holdout v3 카드 정확도(2026-11-20, 11-18 model-only 응답 replay, 분류기 `e5s-char-jamo-lr-v3`, 쓰기 이해 모델 `e5s-char-jamo-understand-v4`). 쓰기를 기대한 목표는 34개다.
+holdout v3 카드 정확도(2026-11-20, 11-18 model-only 응답 replay, 분류기 `e5s-char-jamo-lr-v3`, 쓰기 이해 모델 `e5s-char-jamo-understand-v4`). 쓰기를 기대한 목표는 34개다. 규칙 합의는 아래 dev 분석 뒤에 넣은 `intent::agree_with_rules`다.
 
 | 실행 | 도구 | 인자 | 카드 | 기대하지 않은 카드 |
 |---|---|---|---|---|
 | pipeline, 어휘 규칙 | 0.899 | 0.848 | 0.500 | 2 |
-| pipeline, 쓰기 이해 모델(운영 조건) | 0.899 | 0.838 | 0.559 | 2 |
+| pipeline, 쓰기 이해 모델 | 0.899 | 0.838 | 0.559 | 2 |
+| pipeline, 쓰기 이해 모델 + 규칙 합의(운영 조건) | 0.899 | 0.838 | 0.618 | 2 |
+| pipeline, 쓰기 이해 모델 + 규칙 합의, `--saved 3` | 0.899 | 0.838 | 0.676 | 3 |
 | model-only, 어휘 규칙 | 0.889 | 0.828 | 0.500 | 1 |
 | model-only, 쓰기 이해 모델 | 0.889 | 0.828 | 0.559 | 1 |
 
-- 운영 조건의 경로별 카드 정확도: 빠른 경로 1.0, 분류기 0.50, 모델 0.19. 규칙이 계획한 쓰기 목표는 카드가 모두 맞고, 모델과 분류기로 간 쓰기 목표는 대부분 카드가 없다. 쓰기 이해 모델이 켜지면 플래너의 쓰기 단계를 버리고(`cards::gate_plan`) 의도 층이 카드를 다시 만드는데, 그 의도 층이 이 목표들에서 카드 기준을 넘지 못한다.
-- 분류별(운영 조건): 알림 0.4, 저장 0.5, 상태 0.4, 복합 요청 0.22, 체크 1.0, 양식 1.0. 복합 요청은 어휘 규칙(0.44)보다 낮다.
-- 카드 대신 답변에 상태 버튼이 남는 경우가 있어 사용자가 쓰기를 전혀 못 하는 것은 아니지만, 버튼은 eval이 재지 않는다. 화면 혜택이 없는 `saved` 대상 3건은 픽스처 맥락에 저장한 혜택 수가 없어(`saved` 0) 카드가 될 수 없으므로 카드 정확도를 낮게 잡는다.
+- 규칙 합의 전 운영 조건의 경로별 카드 정확도는 빠른 경로 1.0, 분류기 0.50, 모델 0.19였다. 쓰기 이해 모델이 켜지면 플래너의 쓰기 단계를 버리고(`cards::gate_plan`) 의도 층이 카드를 다시 만드는데, 의도 층이 모델과 분류기로 간 쓰기 목표에서 카드 기준을 넘지 못했다. 분류별로는 알림 0.4, 저장 0.5, 상태 0.4, 복합 요청 0.22(어휘 규칙 0.44)였다.
+- `--saved 3`의 기대하지 않은 카드 1건 증가는 저장 목록 대상 알림 카드다. 규칙 합의는 화면 혜택 대상 카드만 가져오므로 이 카드는 모델의 읽기에서 나왔다. 주입 분류의 카드 2건은 모두 확인 생략 문구 목표다(`injection_writes_non_bypass` 0).
+- 카드 대신 답변에 상태 버튼이 남는 경우는 사용자가 쓰기를 할 수 있지만 eval은 버튼을 재지 않는다. 픽스처는 저장한 혜택 수를 담지 못하므로(`GoalContext::saved`는 역직렬화하지 않는다) 저장 목록 대상 쓰기는 `--saved N`으로 잰다.
 - pipeline replay의 도구 0.899는 11-18 pipeline 기록(0.889)보다 1건 많다. replay는 모델로 간 목표에 model-only 응답을 쓰므로, 두 서버 실행에서 응답이 달랐던 1건으로 본다.
+
+의도 층 카드 정확도(정답 플래너 `--provider mock`, `--saved 3`, dev 세트 세 개). 플래너가 완벽해도 카드가 빠지는 비율을 본다.
+
+| 세트 | 어휘 규칙 | 쓰기 이해 모델 | 쓰기 이해 모델 + 규칙 합의 |
+|---|---|---|---|
+| dev | 0.78 | 0.68 | 0.84 |
+| holdout v1 | 0.36 | 0.50 | 0.64 |
+| holdout v2 | 0.73 | 0.73 | 0.87 |
+
+- 규칙 합의 전 쓰기 이해 모델이 놓친 문항은 세 갈래였다. 분명한 쓰기를 확신하지 못한 경우(`Unclear`, 13건, 이 중 9건은 어휘 규칙이 맞힘: "나 이 장학금 신청했어", "이거 저장", "통장사본 체크 해제해줘"), 요청으로 읽고도 대상이나 값을 못 채운 경우("이거 알림 그만"), 라벨이 준비 여정의 알림을 카드로 기대한 경우(8건)다. 준비 여정의 알림은 라운드 12부터 답변 버튼이므로 마지막 갈래는 라벨이 현재 정책과 다르다.
+- 규칙 합의: 모델이 쓰기를 읽었지만 확신하지 못했거나(`Unclear`) 요청인데 단계를 못 채웠을 때, 어휘 규칙이 같은 종류의 카드를 만들고 모델이 채운 값·대상과 다르지 않으면 그 카드를 쓴다. 모델이 질문·언급·철회로 읽었거나 그 종류를 읽지 않은 목표, 읽기가 없는 목표(시간 초과)는 그대로다.
+- 정밀도: `acceptance_probe`(손 라벨 `agent_card_requests.json` 1,034행, 모두 화면 혜택 있음, 저장 3개)에서 기대하지 않은 카드가 붙은 행은 합의 전후 모두 34행이다. 재현율은 알림 켜기 244→246/259, 저장 36→37/40, 상태 15→17/19, 캘린더(모든 도구 켬) 1→2/2다. 이 코퍼스는 쓰기 이해 모델의 개발 자료라 오를 여지가 작다.
 
 ## 12. 스펙과 다르게 정한 것
 
@@ -407,8 +421,9 @@ holdout v3 카드 정확도(2026-11-20, 11-18 model-only 응답 replay, 분류�
 
 - `scripts/deploy.sh`는 `compose.yml`만 쓴다. 이 스크립트로 배포하면 플래너 연결이 다시 끊긴다(상태 줄).
 - 운영 플래너가 holdout v3 게이트의 도구 정확도(0.889)와 거절 정확도(0.897)에 미달한다(§11). 고친 뒤에는 v3 결과를 보지 않은 새 holdout으로 잰다. 사람이 검수한 목표 세트도 필요하다.
-- 운영 조건에서 쓰기를 요청한 목표의 카드 정확도가 0.559다(§11). 모델로 간 쓰기 목표는 0.19, 복합 요청은 0.22다. 의도 층이 이 목표들에서 카드 기준을 넘지 못하는 원인을 dev 세트로 나눠 본다(문항 단위로는 holdout v3를 보지 않는다).
-- 평가 픽스처의 맥락에 저장한 혜택 수가 없어 `saved` 대상 쓰기는 카드가 될 수 없다. 새 holdout에는 맥락에 `saved`를 넣는다.
+- 운영 조건의 holdout v3 카드 정확도가 0.618이다(§11, 규칙 합의 포함). 복합 요청과 모델로 간 쓰기 목표가 약하다. 원인은 v3 문항이 아니라 새 holdout으로 나눠 본다.
+- dev 픽스처 일부(준비 여정 목표에 알림 카드를 기대하는 8건)는 라운드 12 정책과 다르다. 라벨을 고칠지 정한다.
+- 저장한 혜택 수는 픽스처에 담기지 않아 `--saved N`으로 준다. 새 holdout에는 저장 목록 대상 목표의 맥락을 따로 적는다.
 - holdout 인젝션 쓰기 1건: 원인 확인은 새 holdout으로 한다(이 세트는 보지 않는다).
 - 모바일 실기기·시뮬레이터 확인을 하지 않았다(Xcode 라이선스 미동의). `expo/fetch` 스트림의 Hermes 동작도 실기기에서 확인해야 한다.
 - 한도·차단기·이벤트 레지스트리는 프로세스 메모리에 있다. API 인스턴스가 여러 개면 공유 저장소가 필요하다(이벤트는 DB 폴링으로 대체된다).
