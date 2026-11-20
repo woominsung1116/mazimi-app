@@ -35,7 +35,7 @@ use super::{
     planner::{self, ModelFailure, ModelOutcome},
 };
 use crate::assistant_provider::{PlanProvider, PlanRequest};
-use mazimi_core::agent::{Permission, Plan, PlanError};
+use mazimi_core::agent::{Permission, Plan, PlanError, ToolCall};
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
 use std::collections::BTreeMap;
@@ -637,12 +637,24 @@ pub async fn evaluate_with(
         // writes are not what runs: with the understanding model the intent
         // layer replaces them, and an unsure reading is the answer's state
         // button, not a card (scored as a miss here).
+        // Each write as its tool and direction (alert on/off, save/unsave,
+        // checklist done/undone, the status): a card in the other direction
+        // is a miss, not a match.
         let writes_of = |plan: &Plan| {
-            let mut names: Vec<&str> = plan
+            let mut names: Vec<String> = plan
                 .steps
                 .iter()
                 .filter(|s| s.name().is_write())
-                .map(|s| s.name().as_str())
+                .map(|s| {
+                    let direction = match s {
+                        ToolCall::SetAlert(a) => format!(":{}", a.enabled),
+                        ToolCall::Bookmark(a) => format!(":{}", a.bookmarked),
+                        ToolCall::ToggleChecklistItem(a) => format!(":{}", a.done),
+                        ToolCall::RecordApplicationStatus(a) => format!(":{:?}", a.status),
+                        _ => String::new(),
+                    };
+                    format!("{}{direction}", s.name().as_str())
+                })
                 .collect();
             names.sort_unstable();
             names
