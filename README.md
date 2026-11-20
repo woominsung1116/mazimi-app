@@ -178,6 +178,8 @@ cargo run --bin worker
 cargo test --workspace
 ```
 
+`api` 크레이트는 Unix 전용 파일 API(`read_exact_at`)를 써서 Windows에서는 빌드되지 않습니다. Windows에서는 WSL이나 Linux에서 빌드하고, 빌드 산출물은 `CARGO_TARGET_DIR`로 용량이 넉넉한 드라이브에 둡니다(디버그와 릴리스 합쳐 10GB 안팎). `core.autocrlf=true`로 받은 작업 사본은 줄바꿈이 CRLF로 바뀌어 sha256을 고정한 파일(`crates/api/assets/intent-classifier/classifier.json`, `crates/api/tests/fixtures/agent_goals_holdout*.json`)이 맞지 않습니다. 분류기가 적재되지 않고 고정 테스트 세 개가 실패하므로, 이 파일들은 `git show HEAD:<경로> > <경로>`로 LF 원본을 받아 쓰거나 `core.autocrlf=false`로 받은 사본에서 테스트합니다.
+
 ## CI/CD
 
 - **PR → main**: `cargo check` + `cargo clippy` + `cargo test` + `pnpm build` + ESLint 자동 실행
