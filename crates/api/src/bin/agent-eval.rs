@@ -47,7 +47,7 @@ const USAGE: &str =
 [--model INSTALLED_MODEL] [--url http://ollama:11434] [--allow-any-port] [--num-thread 1..64] \
 [--timeout-seconds 1..300] [--limit N] [--split dev|holdout|holdout_v2|holdout_v3 | --fixture PATH] [--out PATH] \
 [--classifier] [--classifier-dir DIR] [--classifier-threads 1..16] [--classifier-threshold 0.5..0.99] \
-[--classifier-deferral-to-model] [--understanding] [--understanding-dir DIR] [--replies PATH] [--planner-prompt few-shot|tuned] [--classifier-sha256 HEX] [--classifier-first] [--classifier-refuse-threshold 0.5..1.0] [--model-refusals]";
+[--classifier-deferral-to-model] [--understanding] [--understanding-dir DIR] [--saved N] [--replies PATH] [--planner-prompt few-shot|tuned] [--classifier-sha256 HEX] [--classifier-first] [--classifier-refuse-threshold 0.5..1.0] [--model-refusals]";
 
 /// Resident and peak memory of this process in MiB (Linux `/proc` only;
 /// `None` elsewhere). Reported around the classifier load so the server
@@ -91,6 +91,7 @@ async fn main() -> anyhow::Result<()> {
     let mut refuse_threshold: Option<f64> = None;
     let mut understanding_dir: Option<String> = None;
     let mut use_understanding = false;
+    let mut saved = 0usize;
     let value = |args: &mut std::iter::Skip<std::env::Args>, name: &str| {
         args.next()
             .ok_or_else(|| anyhow::anyhow!("{name} needs a value\n{USAGE}"))
@@ -147,6 +148,8 @@ async fn main() -> anyhow::Result<()> {
             // from the intent layer (production default), not the lexical
             // rules (AI-off fallback).
             "--understanding" => use_understanding = true,
+            // Every goal's user has this many saved programmes (default 0).
+            "--saved" => saved = value(&mut args, "--saved")?.parse()?,
             "--understanding-dir" => {
                 understanding_dir = Some(value(&mut args, "--understanding-dir")?);
                 use_understanding = true;
@@ -177,10 +180,15 @@ async fn main() -> anyhow::Result<()> {
         num_thread.is_none_or(|n| (1..=64).contains(&n)),
         "--num-thread is 1..64"
     );
-    let fixture: Fixture = match &fixture_path {
+    let mut fixture: Fixture = match &fixture_path {
         Some(path) => serde_json::from_str(&std::fs::read_to_string(path)?)?,
         None => eval::split_fixture(split),
     };
+    // Fixtures cannot carry the saved count (`GoalContext::saved` is never
+    // deserialized): without it no write can target the saved list.
+    for case in &mut fixture.cases {
+        case.context.saved = saved;
+    }
     let timeout = Duration::from_secs(seconds);
     let provider: Option<Box<dyn PlanProvider>> = match provider_name.as_str() {
         "rules" => None,
