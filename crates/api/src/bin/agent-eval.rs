@@ -47,7 +47,7 @@ const USAGE: &str =
 [--model INSTALLED_MODEL] [--url http://ollama:11434] [--allow-any-port] [--num-thread 1..64] \
 [--timeout-seconds 1..300] [--limit N] [--split dev|holdout|holdout_v2|holdout_v3 | --fixture PATH] [--out PATH] \
 [--classifier] [--classifier-dir DIR] [--classifier-threads 1..16] [--classifier-threshold 0.5..0.99] \
-[--classifier-deferral-to-model] [--replies PATH] [--planner-prompt few-shot|tuned] [--classifier-sha256 HEX] [--classifier-first] [--classifier-refuse-threshold 0.5..1.0] [--model-refusals]";
+[--classifier-deferral-to-model] [--understanding] [--understanding-dir DIR] [--replies PATH] [--planner-prompt few-shot|tuned] [--classifier-sha256 HEX] [--classifier-first] [--classifier-refuse-threshold 0.5..1.0] [--model-refusals]";
 
 /// Resident and peak memory of this process in MiB (Linux `/proc` only;
 /// `None` elsewhere). Reported around the classifier load so the server
@@ -89,6 +89,8 @@ async fn main() -> anyhow::Result<()> {
     let mut classifier_first = false;
     let mut model_refusals = false;
     let mut refuse_threshold: Option<f64> = None;
+    let mut understanding_dir: Option<String> = None;
+    let mut use_understanding = false;
     let value = |args: &mut std::iter::Skip<std::env::Args>, name: &str| {
         args.next()
             .ok_or_else(|| anyhow::anyhow!("{name} needs a value\n{USAGE}"))
@@ -141,6 +143,14 @@ async fn main() -> anyhow::Result<()> {
                 provider_name = "replay".into();
             }
             "--classifier" => use_classifier = true,
+            // The understanding model, as the runtime loads it: writes come
+            // from the intent layer (production default), not the lexical
+            // rules (AI-off fallback).
+            "--understanding" => use_understanding = true,
+            "--understanding-dir" => {
+                understanding_dir = Some(value(&mut args, "--understanding-dir")?);
+                use_understanding = true;
+            }
             "--classifier-dir" => {
                 classifier_dir = Some(value(&mut args, "--classifier-dir")?);
                 use_classifier = true;
@@ -247,6 +257,29 @@ async fn main() -> anyhow::Result<()> {
     } else {
         None
     };
+    if use_understanding {
+        use api::agent::classifier::understand::{Understanding, UnderstandingPaths};
+        let dir = understanding_dir
+            .or_else(|| std::env::var("ASSISTANT_UNDERSTANDING_DIR").ok())
+            .or_else(|| std::env::var("ASSISTANT_INTENT_CLASSIFIER_DIR").ok())
+            .unwrap_or_else(|| classifier::DEFAULT_DIR.into());
+        let started = Instant::now();
+        let loaded = Understanding::load(
+            &UnderstandingPaths::in_dir(dir.as_ref()),
+            classifier_threads,
+        )
+        .map_err(|e| anyhow::anyhow!("understanding model: {e}"))?;
+        eprintln!(
+            "understanding model {} loaded in {} ms",
+            loaded.version(),
+            started.elapsed().as_millis()
+        );
+        api::agent::intent::install_understanding(std::sync::Arc::new(loaded));
+        anyhow::ensure!(
+            api::agent::intent::model_active(),
+            "understanding model loaded but off (ASSISTANT_UNDERSTANDING_ENABLED or ASSISTANT_MODELS_ENABLED)"
+        );
+    }
     eprintln!(
         "evaluating {} goals ({}; provider {provider_name})",
         fixture.cases.len().min(limit),
@@ -284,10 +317,13 @@ async fn main() -> anyhow::Result<()> {
         None => println!("{text}"),
     }
     eprintln!(
-        "split={} mode={} tool_name_accuracy={} arg_exact_match={} refusal_accuracy={} false_refusals={} fast_path_accuracy={} invalid_json_rate={} invalid_plan_rate={} first_attempt_invalid_rate={} repairs={} writes_without_confirmation={} injection_writes={} injection_writes_non_bypass={} by_source={} p50={}ms p95={}ms model_p50={}ms model_p95={}ms",
+        "split={} mode={} understanding={} tool_name_accuracy={} card_accuracy={} unasked_cards={} arg_exact_match={} refusal_accuracy={} false_refusals={} fast_path_accuracy={} invalid_json_rate={} invalid_plan_rate={} first_attempt_invalid_rate={} repairs={} writes_without_confirmation={} injection_writes={} injection_writes_non_bypass={} by_source={} p50={}ms p95={}ms model_p50={}ms model_p95={}ms",
         report["split"],
         report["mode"],
+        use_understanding,
         report["tool_name_accuracy"],
+        report["card_accuracy"],
+        report["unasked_cards"],
         report["arg_exact_match"],
         report["refusal_accuracy"],
         report["false_refusals"],
@@ -314,16 +350,24 @@ async fn main() -> anyhow::Result<()> {
     if let Some(sources) = report["by_source_accuracy"].as_object() {
         for (name, m) in sources {
             eprintln!(
-                "  source {name}: cases={} tool={} args={} refusal={}",
-                m["cases"], m["tool_name_accuracy"], m["arg_exact_match"], m["refusal_accuracy"]
+                "  source {name}: cases={} tool={} cards={} args={} refusal={}",
+                m["cases"],
+                m["tool_name_accuracy"],
+                m["card_accuracy"],
+                m["arg_exact_match"],
+                m["refusal_accuracy"]
             );
         }
     }
     if let Some(categories) = report["by_category"].as_object() {
         for (name, m) in categories {
             eprintln!(
-                "  category {name}: cases={} tool={} args={} refusal={}",
-                m["cases"], m["tool_name_accuracy"], m["arg_exact_match"], m["refusal_accuracy"]
+                "  category {name}: cases={} tool={} cards={} args={} refusal={}",
+                m["cases"],
+                m["tool_name_accuracy"],
+                m["card_accuracy"],
+                m["arg_exact_match"],
+                m["refusal_accuracy"]
             );
         }
     }

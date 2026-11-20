@@ -249,10 +249,12 @@ awaiting_confirmation → completed (모두 취소·만료)
   - **dev** `crates/api/tests/fixtures/agent_goals.json`(124개, `split: dev`): 원래 78개 + `dev2-*` 46개(구어·오타·띄어쓰기·복합 의도). 빠른 경로·프롬프트·정규화를 이 세트로만 고쳤다. 수치는 회귀 하한이다.
   - **holdout** `agent_goals_holdout.json`(55개, `frozen`, `created_at 2026-10-12`): dev 세트와 라우터를 읽지 않은 별도 라벨러가 라벨 규칙 문서만 보고 썼다. 튜닝 전에 커밋했고 sha256을 테스트가 고정한다. 결과를 본 뒤 고치지 않는다. 새 세트는 새 파일로 만든다. 프롬프트 예시는 두 세트 어디에도 없다(테스트).
 - CLI `agent-eval`(`crates/api/src/bin/agent-eval.rs`):
-  - 옵션: `--provider rules|mock|ollama`, `--mode pipeline|model-only`, `--split dev|holdout`(또는 `--fixture`), `--model`, `--url`, `--allow-any-port`, `--num-thread`, `--timeout-seconds`, `--limit`, `--out`, `--classifier`(`--classifier-dir`, `--classifier-threads`, `--classifier-threshold`, 비교용 `--classifier-deferral-to-model`)
+  - 옵션: `--provider rules|mock|ollama`, `--mode pipeline|model-only`, `--split dev|holdout`(또는 `--fixture`), `--model`, `--url`, `--allow-any-port`, `--num-thread`, `--timeout-seconds`, `--limit`, `--out`, `--classifier`(`--classifier-dir`, `--classifier-threads`, `--classifier-threshold`, 비교용 `--classifier-deferral-to-model`), `--understanding`(`--understanding-dir`), `--provider replay --replies PATH`
+  - `--understanding`은 운영 `runtime.rs`처럼 쓰기 이해 모델을 올리고, 목표마다 라우팅 전에 한 번 읽힌다(`intent::prepare_blocking`). 빼면 쓰기 카드는 AI 끔 대체 경로(어휘 규칙)가 만든다. 운영은 이 모델이 기본으로 켜져 있으므로 운영 수치는 이 옵션을 넣고 잰다.
+  - `--provider replay`는 녹화한 플래너 응답(`{가린 목표 \u0001 has_program \u0001 selected: 응답}`)을 같은 `planner::interpret`에 넣는다. model-only로 한 번 녹화하면 모델 없이 라우팅·카드 변경을 다시 잴 수 있다. 11-18 holdout v3 model-only 응답의 replay는 기록 수치(도구 0.889, 인자 0.828, 거절 0.897)를 그대로 재현한다.
   - `--classifier`는 pipeline에 의도 분류기를 넣는다(가드 → 분류기 → 0.7 미만이면 규칙의 확신 모양, 그다음 모델, 모델이 없으면 규칙). 보고서에 `classifier_routed`(분류기가 답한 비율), `classifier`(지연·답함/넘김·픽스처와 학습 목표의 해시 겹침 `train_overlap`), `by_source_accuracy`, `process_memory_mib`(Linux)가 붙는다.
   - `pipeline`은 운영 순서(거절 규칙 → 빠른 경로 → 모델)다. 모델 경로는 운영과 같은 `planner::plan`(정규화·수리 포함)이다.
-  - 지표: 도구명 정확도, 인자 완전 일치(프로그램 유형 순서 무시), 거절 정확도(`needs_program`은 엄격), 수리 뒤 invalid JSON·plan 비율, 첫 시도 무효율, 수리 수, 쓰기 제안, **확인 없는 쓰기(0이어야 함)**, 인젝션 쓰기, 지연, 분류별 지표, 기대→산출 도구 순서 혼동표, 원문 응답(진단용)
+  - 지표: 도구명 정확도(플래너 출력 기준), 카드 정확도(`card_accuracy`: 쓰기를 기대한 목표에서 기대한 쓰기와 `observe::expand` 뒤 실제 카드가 순서 무시로 같은 비율. 확신이 낮아 카드 대신 답변의 상태 버튼이 된 경우는 틀린 것으로 센다), 기대하지 않은 카드(`unasked_cards`), 인자 완전 일치(프로그램 유형 순서 무시), 거절 정확도(`needs_program`은 엄격), 수리 뒤 invalid JSON·plan 비율, 첫 시도 무효율, 수리 수, 쓰기 제안, **확인 없는 쓰기(0이어야 함)**, 인젝션 쓰기, 지연, 분류별 지표, 기대→산출 도구 순서 혼동표, 원문 응답(진단용)
 - 서버 벤치: `scripts/ai/benchmark-agent.sh`(사람이 서버에서 실행). 기본 `RUNS`가 dev·holdout × model-only·pipeline 4회다.
 
 로컬 측정(2026-10-12, M5 Pro Metal, Ollama 0.40.1, `qwen3.5:9b` digest `d63f830f28d5`). 품질만 비교 가능하고 지연은 Oracle과 비교할 수 없다.
@@ -323,6 +325,21 @@ Oracle 게이트 측정(2026-11-18, holdout v3 128개, 운영 플래너 `mazimi-
 - 인젝션 쓰기 1건은 "확인 없이" 문구가 있는 목표를 확인 카드로 계획한 경우라 라우팅 v4 결정에 맞는다.
 - 약한 분류는 마감(pipeline 도구 0.43), 인젝션 거절 0.75, 복합 의도 0.75다.
 - 목표별 문장은 읽지 않았다. holdout v3는 게이트 세트로 남는다.
+- 이 측정은 쓰기 이해 모델 없이 돌았고 도구 지표는 플래너 출력 기준이라, 운영에서 사용자가 받는 카드는 재지 않았다.
+
+holdout v3 카드 정확도(2026-11-20, 11-18 model-only 응답 replay, 분류기 `e5s-char-jamo-lr-v3`, 쓰기 이해 모델 `e5s-char-jamo-understand-v4`). 쓰기를 기대한 목표는 34개다.
+
+| 실행 | 도구 | 인자 | 카드 | 기대하지 않은 카드 |
+|---|---|---|---|---|
+| pipeline, 어휘 규칙 | 0.899 | 0.848 | 0.500 | 2 |
+| pipeline, 쓰기 이해 모델(운영 조건) | 0.899 | 0.838 | 0.559 | 2 |
+| model-only, 어휘 규칙 | 0.889 | 0.828 | 0.500 | 1 |
+| model-only, 쓰기 이해 모델 | 0.889 | 0.828 | 0.559 | 1 |
+
+- 운영 조건의 경로별 카드 정확도: 빠른 경로 1.0, 분류기 0.50, 모델 0.19. 규칙이 계획한 쓰기 목표는 카드가 모두 맞고, 모델과 분류기로 간 쓰기 목표는 대부분 카드가 없다. 쓰기 이해 모델이 켜지면 플래너의 쓰기 단계를 버리고(`cards::gate_plan`) 의도 층이 카드를 다시 만드는데, 그 의도 층이 이 목표들에서 카드 기준을 넘지 못한다.
+- 분류별(운영 조건): 알림 0.4, 저장 0.5, 상태 0.4, 복합 요청 0.22, 체크 1.0, 양식 1.0. 복합 요청은 어휘 규칙(0.44)보다 낮다.
+- 카드 대신 답변에 상태 버튼이 남는 경우가 있어 사용자가 쓰기를 전혀 못 하는 것은 아니지만, 버튼은 eval이 재지 않는다. 화면 혜택이 없는 `saved` 대상 3건은 픽스처 맥락에 저장한 혜택 수가 없어(`saved` 0) 카드가 될 수 없으므로 카드 정확도를 낮게 잡는다.
+- pipeline replay의 도구 0.899는 11-18 pipeline 기록(0.889)보다 1건 많다. replay는 모델로 간 목표에 model-only 응답을 쓰므로, 두 서버 실행에서 응답이 달랐던 1건으로 본다.
 
 ## 12. 스펙과 다르게 정한 것
 
@@ -390,6 +407,8 @@ Oracle 게이트 측정(2026-11-18, holdout v3 128개, 운영 플래너 `mazimi-
 
 - `scripts/deploy.sh`는 `compose.yml`만 쓴다. 이 스크립트로 배포하면 플래너 연결이 다시 끊긴다(상태 줄).
 - 운영 플래너가 holdout v3 게이트의 도구 정확도(0.889)와 거절 정확도(0.897)에 미달한다(§11). 고친 뒤에는 v3 결과를 보지 않은 새 holdout으로 잰다. 사람이 검수한 목표 세트도 필요하다.
+- 운영 조건에서 쓰기를 요청한 목표의 카드 정확도가 0.559다(§11). 모델로 간 쓰기 목표는 0.19, 복합 요청은 0.22다. 의도 층이 이 목표들에서 카드 기준을 넘지 못하는 원인을 dev 세트로 나눠 본다(문항 단위로는 holdout v3를 보지 않는다).
+- 평가 픽스처의 맥락에 저장한 혜택 수가 없어 `saved` 대상 쓰기는 카드가 될 수 없다. 새 holdout에는 맥락에 `saved`를 넣는다.
 - holdout 인젝션 쓰기 1건: 원인 확인은 새 holdout으로 한다(이 세트는 보지 않는다).
 - 모바일 실기기·시뮬레이터 확인을 하지 않았다(Xcode 라이선스 미동의). `expo/fetch` 스트림의 Hermes 동작도 실기기에서 확인해야 한다.
 - 한도·차단기·이벤트 레지스트리는 프로세스 메모리에 있다. API 인스턴스가 여러 개면 공유 저장소가 필요하다(이벤트는 DB 폴링으로 대체된다).
