@@ -1179,17 +1179,12 @@ mod tests {
     /// about organizing it.
     /// 2026-10-26 (round 12, one card gate for every write): a 준비 journey
     /// labelled with an unasked `set_alert` placeholder plans the read-only
-    /// journey; the alert is the answer's button, not a card.
+    /// journey; the alert is the answer's button, not a card. The dev rows of
+    /// this shape carry the new label (2026-11-26); holdout v1 is frozen.
     const SUPERSEDED: &[&str] = &[
         "dev2-deadline-2",
         "dev2-deadline-3",
         "ho-012",
-        "prepare-1",
-        "prepare-2",
-        "prepare-3",
-        "dev2-prepare-1",
-        "dev2-prepare-2",
-        "dev3-journey-1",
         "ho-024",
         "dev2-alerts-3",
         "dev2-bookmark-1",
@@ -1207,15 +1202,7 @@ mod tests {
     /// button is the way to that write.
     const NO_CARD_WITHOUT_ENDING: &[&str] =
         &["dev2-alerts-3", "dev2-bookmark-1", "dev2-bookmark-2"];
-    const JOURNEY_WITHOUT_ALERT: &[&str] = &[
-        "prepare-1",
-        "prepare-2",
-        "prepare-3",
-        "dev2-prepare-1",
-        "dev2-prepare-2",
-        "dev3-journey-1",
-        "ho-024",
-    ];
+    const JOURNEY_WITHOUT_ALERT: &[&str] = &["ho-024"];
 
     fn pinned_to_a_closing_soon_search(rows: &[Value]) {
         for id in JOURNEY_WITHOUT_ALERT {

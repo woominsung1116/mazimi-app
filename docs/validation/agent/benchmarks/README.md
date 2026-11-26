@@ -80,3 +80,13 @@ Tried and not kept (chosen on the dev sets and the probe, not on holdout v3):
 - Alert and save with no allowed target sent to the programme on screen: one more card on dev and on the probe, and one more probe row with an unasked card (35).
 
 Leakage: holdout v3 aggregates were read for several variants (per category, per route, miss counts by write type and act, and the category and tool of unasked cards). No per-goal text was read and no variant was chosen on v3, so it stays the gate set.
+
+## 2026-11-26 dev card accuracy after the journey relabel (no model calls, local WSL)
+
+Six dev 준비 journey rows (prepare-1, prepare-2, prepare-3, dev2-prepare-1, dev2-prepare-2, dev3-journey-1) were relabelled to check_eligibility + get_preparation: since round 12 the journey's alert is the answer's button, not a card. They now ask for no write, so dev has 44 write goals instead of 50. Same conditions as the 11-20 mock table (`--provider mock --saved 3`, same artefacts); the understanding-only column was run with `intent.rs` from before `agree_with_rules`. Holdout v1 and v2 reproduce the 11-20 numbers; holdout v1 keeps its frozen `ho-024` label.
+
+| set | lexical rules | understanding model | + rule agreement | unasked cards (lexical / understanding) |
+|---|---|---|---|---|
+| dev | 0.89 | 0.77 | 0.95 | 0 / 1 |
+
+The relabelled rows were misses in every condition, so only the denominator changed (39, 34 and 42 hits). The unasked card is `open_official_application` on `dev4-official-1`, a check-the-official-page goal, and appears only with the understanding model. With and without `--classifier` the card numbers are the same.

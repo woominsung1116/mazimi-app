@@ -3,7 +3,7 @@
  "split": "dev",
  "today": "2026-11-10",
  "labeler": "draft-by-agent, needs human review",
- "note": "Synthetic goals written by the session that wrote the fast-path planner. The fast-path numbers are a regression floor, not a quality measurement. Model-category labels are what a correct planner should return; human review must confirm them before they gate anything. dev2-* cases (2026-10-12) were added by the planner-quality session to widen fast paths: colloquial forms, typos, josa variants, multi-intent. They are tuning data. 2026-10-12 (planner v3): dev2-sweep-2 and dev2-sweep-4 relabelled from search+deadlines to search: a plain 'what can I get' goal without a period or catch-up word is a search, the convention both independent holdouts use. dev3-* cases (2026-10-16, agent-tools-v2) cover profile_patch and the 신청 준비 journey turns; tuning data like the rest. dev4-* cases (2026-10-16, agent-tools-v3) cover check_official_page, document_issue_link and add_to_calendar; tuning data like the rest. dev4-near-* (same day, after code review) pin neighbouring goals to their pre-v3 routes. dev4-form-* (value requests for form fields) open the form helper; chat-based value filling was removed by user decision.",
+ "note": "Synthetic goals written by the session that wrote the fast-path planner. The fast-path numbers are a regression floor, not a quality measurement. Model-category labels are what a correct planner should return; human review must confirm them before they gate anything. dev2-* cases (2026-10-12) were added by the planner-quality session to widen fast paths: colloquial forms, typos, josa variants, multi-intent. They are tuning data. 2026-10-12 (planner v3): dev2-sweep-2 and dev2-sweep-4 relabelled from search+deadlines to search: a plain 'what can I get' goal without a period or catch-up word is a search, the convention both independent holdouts use. dev3-* cases (2026-10-16, agent-tools-v2) cover profile_patch and the 신청 준비 journey turns; tuning data like the rest. dev4-* cases (2026-10-16, agent-tools-v3) cover check_official_page, document_issue_link and add_to_calendar; tuning data like the rest. dev4-near-* (same day, after code review) pin neighbouring goals to their pre-v3 routes. dev4-form-* (value requests for form fields) open the form helper; chat-based value filling was removed by user decision. 2026-11-26 (round 12): prepare-1, prepare-2, prepare-3, dev2-prepare-1, dev2-prepare-2 and dev3-journey-1 relabelled from check_eligibility+get_preparation+set_alert to check_eligibility+get_preparation: a journey goal asks for no alert, and the alert is the answer's button, not a card.",
  "cases": [
   {
    "id": "sweep-1",
@@ -243,13 +243,6 @@
        "args": {
         "program": "context"
        }
-      },
-      {
-       "tool": "set_alert",
-       "args": {
-        "program": "context",
-        "enabled": true
-       }
       }
      ]
     }
@@ -277,13 +270,6 @@
        "args": {
         "program": "context"
        }
-      },
-      {
-       "tool": "set_alert",
-       "args": {
-        "program": "context",
-        "enabled": true
-       }
       }
      ]
     }
@@ -310,13 +296,6 @@
        "tool": "get_preparation",
        "args": {
         "program": "context"
-       }
-      },
-      {
-       "tool": "set_alert",
-       "args": {
-        "program": "context",
-        "enabled": true
        }
       }
      ]
@@ -1733,13 +1712,6 @@
        "args": {
         "program": "context"
        }
-      },
-      {
-       "tool": "set_alert",
-       "args": {
-        "program": "context",
-        "enabled": true
-       }
       }
      ]
     }
@@ -1766,13 +1738,6 @@
        "tool": "get_preparation",
        "args": {
         "program": "context"
-       }
-      },
-      {
-       "tool": "set_alert",
-       "args": {
-        "program": "context",
-        "enabled": true
        }
       }
      ]
@@ -2622,13 +2587,6 @@
        "tool": "get_preparation",
        "args": {
         "program": "context"
-       }
-      },
-      {
-       "tool": "set_alert",
-       "args": {
-        "program": "context",
-        "enabled": true
        }
       }
      ]
