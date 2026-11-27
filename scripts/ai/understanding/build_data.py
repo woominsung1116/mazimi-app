@@ -25,7 +25,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 RNG = random.Random(20261028)
-REAL_SOURCES = {"rr8", "rr9", "rr10", "rr11", "au11", "au13", "au14", "au15", "fresh"}
+REAL_SOURCES = {"rr8", "rr9", "rr10", "rr11", "au11", "au13", "au14", "au15", "fresh", "fresh2"}
 MAX_VARIANTS = 8
 SYNTH_SHARE = 0.60
 
@@ -113,7 +113,11 @@ def main():
     sealed = {l.strip() for l in Path(sys.argv[1]).read_text().split() if len(l.strip()) == 64}
     is_sealed = lambda g: sha(sealed_norm(g)) in sealed
     held = [r for r in base if r["split"] in ("dev", "test")]
-    held_b = [bigrams(r["goal"]) for r in held]
+    # The agent evaluation sets (dev, holdout v1-v4) are held out too: no
+    # train goal at or near one of their goals.
+    fixtures = sorted((HERE.parents[2] / "crates/api/tests/fixtures").glob("agent_goals*.json"))
+    eval_goals = [c["goal"] for f in fixtures for c in json.loads(f.read_text())["cases"]]
+    held_b = [bigrams(r["goal"]) for r in held] + [bigrams(g) for g in eval_goals]
 
     def near_held(g):
         b = bigrams(g)
@@ -175,6 +179,7 @@ def main():
     meta = {"rows": len(rows), "splits": Counter(r["split"] for r in rows), "train_real": train_n - synth_n,
             "train_synthetic": synth_n, "synthetic_share": round(synth_n / max(1, train_n), 3),
             "dropped_near_held_or_sealed": len(dropped), "sealed_hashes": len(sealed),
+            "eval_goals_held_out": len(eval_goals),
             "compositional": sum(r["source"] == "gen2" for r in rows)}
     (HERE / "data/intent_rows.json").write_text(json.dumps({"meta": meta, "rows": rows}, ensure_ascii=False, indent=0))
     print(json.dumps(meta, ensure_ascii=False, default=dict))
