@@ -755,6 +755,38 @@ pub(crate) fn asks_deadlines(words: &[String]) -> bool {
     has(words, DEADLINE_DIGEST) || has(words, DEADLINE_WORDS)
 }
 
+/// "3일 남은 거", "일주일 남았는데": time left before a deadline (not 준비
+/// left), as the period it states.
+fn time_left(words: &[String]) -> Option<args::Reading> {
+    const LENGTHS: &[&str] = &[
+        "일주일",
+        "한달",
+        "열흘",
+        "하루",
+        "이틀",
+        "사흘",
+        "나흘",
+        "보름",
+    ];
+    let length = |w: &str| {
+        LENGTHS.contains(&w)
+            || ["일", "주", "주일", "달", "개월"].iter().any(|unit| {
+                w.strip_suffix(unit)
+                    .is_some_and(|n| !n.is_empty() && n.chars().all(|c| c.is_ascii_digit()))
+            })
+    };
+    words
+        .windows(2)
+        .any(|p| length(&p[0]) && (p[1].starts_with("남은") || p[1].starts_with("남았")))
+        .then(|| {
+            args::reading_on(
+                &words.join(" "),
+                mazimi_core::seoul_date(chrono::Utc::now()),
+            )
+        })
+        .flatten()
+}
+
 /// A deadlines request on top of a search: the saved list named, or an
 /// additive `도` ("마감인 것도", "마감도 같이"): the saved digest besides the
 /// search. Without either, a closing-soon search goal is the catalogue.
@@ -2841,7 +2873,8 @@ fn route(goal: &str, context: GoalContext, words: &[String], extras: Extras) -> 
     // no saved list (저장/찜/관심/북마크/내가 담은) searches the catalogue, with
     // or without a programme on screen; a goal about that programme itself
     // (이거/이 혜택) is its own route.
-    let asks_existing = has(words, SEARCH)
+    // With nothing on screen a question asks the same ("이번 주 마감 뭐야").
+    let asks_existing = (has(words, SEARCH) || (!ctx && question))
         && !has(words, SAVE_WORDS)
         && !has(
             words,
@@ -2857,12 +2890,13 @@ fn route(goal: &str, context: GoalContext, words: &[String], extras: Extras) -> 
                 "~먼저",
             ],
         );
-    if (has(words, DEADLINE_DIGEST) || has(words, &["~마감", "~끝나"]))
+    let left = time_left(words);
+    if (has(words, DEADLINE_DIGEST) || has(words, &["~마감", "~끝나"]) || left.is_some())
         && (topical && guard::benefit_anchor(goal) || asks_existing)
         && !saved_ref
         && !(ctx && deictic)
     {
-        if let Some(period) = args::search_reading(goal) {
+        if let Some(period) = args::search_reading(goal).or(left) {
             let mut search = search.clone();
             search.keywords.clear();
             args::set_search_period(&mut search, Some(period));
@@ -2872,15 +2906,48 @@ fn route(goal: &str, context: GoalContext, words: &[String], extras: Extras) -> 
             );
         }
     }
-    if has(words, DEADLINE_DIGEST) && !(ctx && deictic) {
+    if (has(words, DEADLINE_DIGEST) || left.is_some()) && !(ctx && deictic) {
         return (
             plan(
                 GoalKind::DeadlineDigest,
                 vec![ToolCall::Deadlines(args::deadline_args(
-                    args::deadline_window(goal),
+                    args::deadline_window(goal).or(left.map(|r| r.period)),
                 ))],
             ),
             single && !narrowed,
+        );
+    }
+    // "저장한 거 마감 언제야?": the saved list's deadlines, not one programme's.
+    if saved_ref && !ctx && has(words, DEADLINE_WORDS) {
+        return sure(plan(
+            GoalKind::DeadlineDigest,
+            vec![ToolCall::Deadlines(args::deadline_args(
+                args::deadline_window(goal),
+            ))],
+        ));
+    }
+    // "저장한 것들 자격이랑 준비물 같이 봐줘": both for the saved list.
+    let topics = rule_topics(goal);
+    if saved_ref
+        && !ctx
+        && topics.contains(&Topic::Eligibility)
+        && (has(words, PROGRESS)
+            || acquires(words)
+            || topics.contains(&Topic::Documents)
+            || words.iter().any(|w| w.contains("준비")))
+    {
+        let saved = ProgramArgs {
+            program: ProgramRef::Saved,
+        };
+        return (
+            plan(
+                GoalKind::CheckEligibility,
+                vec![
+                    ToolCall::CheckEligibility(saved.clone()),
+                    ToolCall::GetPreparation(saved),
+                ],
+            ),
+            true,
         );
     }
     // "서류 뭐 떼야 돼": the checklist of the programme (or the saved ones).
@@ -2957,7 +3024,6 @@ fn route(goal: &str, context: GoalContext, words: &[String], extras: Extras) -> 
     // From here on the goal names no write, form, digest or checklist: a
     // confident answer names no tool family at all.
     let none_named = named == 0;
-    let topics = rule_topics(goal);
     // "찜한 거 중에 내가 받을 수 있는 거": eligibility of saved ones, not a sweep.
     if saved_ref && !ctx && topics.contains(&Topic::Eligibility) {
         return (
@@ -3043,7 +3109,10 @@ fn route(goal: &str, context: GoalContext, words: &[String], extras: Extras) -> 
     // Holdout class 2: a topic the goal names (a field) is a read-only
     // search even without a search verb ("전시 관람 지원되는 거?"). Only a
     // write on what a search finds needs an explicit search verb.
-    if (anchored || !search.program_types.is_empty() || !search.fields.is_empty())
+    // "면접 있어 이거?" is about the programme on screen, not a field search.
+    let about_screen = ctx && deictic;
+    if !about_screen
+        && (anchored || !search.program_types.is_empty() || !search.fields.is_empty())
         && (narrowed
             || !search.fields.is_empty()
             || (has(words, SEARCH) && !search.keywords.is_empty()))
@@ -4572,7 +4641,6 @@ mod tests {
         for (goal, period) in [
             ("담달 안에 끝나는 거 정리해줘", "다음 달"),
             ("저장한 것 중 다음 주까지 마감인 거 있어?", "다음 주까지"),
-            ("다음달 마감하는 거 뭐야", "다음 달"),
         ] {
             let expected = args::period_on(period, today);
             assert!(expected.is_some_and(|(from, _)| from > 0) == (period == "다음 달"));
@@ -4599,6 +4667,66 @@ mod tests {
             kind_of(decide_with_model("담달 안에 끝나는 거 정리해줘", NONE)),
             "deadline_digest"
         );
+        // A closing-soon question naming no saved list, with nothing on
+        // screen, is the catalogue with its period.
+        let next_month = args::period_on("다음 달", today);
+        for goal in ["다음달 마감하는 거 뭐야", "이번 주 마감 뭐야"] {
+            let [ToolCall::SearchBenefits(args)] = &steps(goal, NONE)[..] else {
+                panic!("{goal}: {:?}", steps(goal, NONE))
+            };
+            if goal.starts_with("다음달") {
+                assert_eq!(
+                    (args.deadline_from_days, args.deadline_within_days),
+                    (next_month.map(|p| p.0), next_month.map(|p| p.1))
+                );
+            }
+            assert!(args.deadline_within_days.is_some(), "{goal}");
+        }
+    }
+
+    /// Holdout v3 (dev since 2026-11-27): the saved list's deadline date,
+    /// time left as a deadline, the saved list's eligibility with its 준비,
+    /// and a question about the programme on screen.
+    #[test]
+    fn deadline_and_saved_list_questions_name_their_targets() {
+        for goal in ["찜한 것들 마감일 언제야", "저장한 혜택 마감 언제까지야"]
+        {
+            assert_eq!(
+                steps(goal, NONE),
+                vec![ToolCall::Deadlines(args::deadline_args(
+                    args::deadline_window(goal)
+                ))],
+                "{goal}"
+            );
+        }
+        for (goal, days) in [("일주일 남은 거 있어?", 7), ("2일 남은 거 있어? 급해", 2)]
+        {
+            let [ToolCall::SearchBenefits(args)] = &steps(goal, NONE)[..] else {
+                panic!("{goal}: {:?}", steps(goal, NONE))
+            };
+            assert_eq!(args.deadline_within_days, Some(days), "{goal}");
+        }
+        // 준비 left is still the checklist.
+        assert!(matches!(
+            steps("남은 준비 뭐야", ON_SCREEN)[..],
+            [ToolCall::GetPreparation(_)]
+        ));
+        let saved = ProgramArgs {
+            program: ProgramRef::Saved,
+        };
+        assert_eq!(
+            steps("저장한 것들 자격이랑 준비물 같이 봐줘", NONE),
+            vec![
+                ToolCall::CheckEligibility(saved.clone()),
+                ToolCall::GetPreparation(saved)
+            ]
+        );
+        // "이거" with a programme on screen is no field search.
+        assert!(!matches!(
+            decide("이거 면접 봐?", ON_SCREEN),
+            Decision::Plan { ref plan, .. }
+                if plan.steps.iter().any(|s| matches!(s, ToolCall::SearchBenefits(_)))
+        ));
     }
 
     #[test]
