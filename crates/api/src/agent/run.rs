@@ -688,10 +688,23 @@ pub(crate) fn route_decision(
         .or_else(|| confident_rules(goal, context, extras));
     match rules.map(Ok).unwrap_or(Err(routed)) {
         Ok(decision) => Route::Decision(decision),
+        Err(Ok((outcome, _))) if model_on && defers_compound(goal, &outcome) => {
+            Route::Decision(Decision::Unrecognized)
+        }
         Err(Ok((outcome, label))) => Route::Classified(outcome, label),
         Err(Err(_)) if model_on => Route::Decision(Decision::Unrecognized),
         Err(Err(_)) => Route::Decision(goals::decide_with(goal, context, extras)),
     }
+}
+
+/// A compound goal is the model's over a classifier answer, as on the rules'
+/// path: one label drops the other request. An answer with a route-owned
+/// handoff (form, official page) stands, since the gate keeps a handoff only
+/// when the route asks for it.
+pub(crate) fn defers_compound(goal: &str, outcome: &ModelOutcome) -> bool {
+    goals::compound(goal)
+        && !matches!(outcome, ModelOutcome::Plan(plan)
+            if plan.steps.iter().any(super::intent::is_handoff))
 }
 
 async fn plan_route(
@@ -1760,5 +1773,54 @@ mod route_tests {
                 );
             }
         }
+    }
+
+    /// A compound goal the classifier answers with one label goes to the
+    /// model when one plans (the rules hold it too); without a model the
+    /// classifier's answer stands.
+    #[test]
+    fn a_compound_goal_is_the_models_over_a_classifier_label() {
+        let flags = super::super::ToolFlags::ALL;
+        let route = |goal: &str, model_on: bool| {
+            let mut context = GoalContext {
+                has_program: false,
+                selected: 2,
+                saved: 3,
+                suspect: false,
+                handoffs: true,
+            };
+            let answer = Plan::new(vec![ToolCall::Compare(mazimi_core::agent::CompareArgs {
+                programs: ProgramRef::Selected,
+            })]);
+            route_decision(
+                goal,
+                &mut context,
+                Some(Ok((ModelOutcome::Plan(answer), "compare".into()))),
+                flags.extras(),
+                model_on,
+                |_| true,
+            )
+        };
+        let goal = "선택한 두 개 비교해주고 마감 급한 것도 알려줘";
+        assert!(goals::compound(goal));
+        assert!(matches!(
+            route(goal, true),
+            Route::Decision(Decision::Unrecognized)
+        ));
+        assert!(matches!(route(goal, false), Route::Classified(..)));
+        assert!(!goals::compound("선택한 두 개 비교해줘"));
+        // A whole answer with its handoff stands.
+        let args = mazimi_core::agent::ProgramArgs {
+            program: ProgramRef::Context,
+        };
+        let form = ModelOutcome::Plan(Plan::new(vec![
+            ToolCall::GetPreparation(args.clone()),
+            ToolCall::OpenFormFill(args),
+        ]));
+        assert!(!defers_compound(
+            "준비물 보고 신청서 작성 화면도 열어줘",
+            &form
+        ));
+        assert!(defers_compound(goal, &ModelOutcome::NeedsProgram));
     }
 }

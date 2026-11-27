@@ -464,6 +464,19 @@ pub async fn evaluate_with(
                         Some(decision)
                     } else {
                         match routed {
+                            // As `run::route_decision`: a compound goal is
+                            // the model's when one plans.
+                            Ok(Routed::Answered {
+                                outcome,
+                                label,
+                                confidence,
+                            }) if provider.is_some()
+                                && super::run::defers_compound(&goal, &outcome) =>
+                            {
+                                classifier_deferred += 1;
+                                classifier_row = json!({"label": label, "confidence": confidence, "us": us, "answered": false, "compound": true});
+                                Some(Decision::Unrecognized)
+                            }
                             Ok(Routed::Answered {
                                 outcome,
                                 label,

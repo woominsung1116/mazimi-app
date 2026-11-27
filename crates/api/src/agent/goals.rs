@@ -864,6 +864,15 @@ fn joined_requests(words: &[String]) -> bool {
     })
 }
 
+/// Two requests joined ("보고 맞으면", "비교해주고 마감 급한 것도"): the rules
+/// hold these for the model ([`pre_route`]), and so does the classifier's
+/// path when a model plans: one label drops the other request.
+pub(crate) fn compound(goal: &str) -> bool {
+    let spaced = args::respace(goal);
+    let words = cue_words(&spaced);
+    has(&words, COMPOUND) || joined_requests(&words)
+}
+
 /// Where the part after "이거 말고" (the programme on screen set aside)
 /// starts: "이거 말고", "이 혜택 말고", "이거말고" (re-review 4 L2).
 fn released_at(words: &[String]) -> Option<usize> {
