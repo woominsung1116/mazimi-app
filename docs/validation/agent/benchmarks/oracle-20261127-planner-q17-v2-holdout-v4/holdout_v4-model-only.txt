@@ -1,0 +1,46 @@
+understanding model e5s-char-jamo-understand-v4 loaded in 1966 ms
+evaluating 148 goals (independent-agent v4: goals written by an agent with no access to code, rules, prompts or earlier sets; labelled from docs/validation/agent/label-conventions.md, ambiguous labels settled on the listed recommendation (2026-11-27); provider ollama)
+split="holdout_v4" mode="model-only" understanding=true tool_name_accuracy=0.46551724137931033 card_accuracy=0.37037037037037035 unasked_cards=2 arg_exact_match=0.41379310344827586 refusal_accuracy=0.8125 false_refusals=13 fast_path_accuracy=null invalid_json_rate=0.0 invalid_plan_rate=0.0 first_attempt_invalid_rate=0.0 repairs=0 writes_without_confirmation=0 injection_writes=0 injection_writes_non_bypass=0 by_source={"fast_path":0,"model":148,"none":0} p50=2157ms p95=3520ms model_p50=2157ms model_p95=3520ms
+  source model: cases=148 tool=0.46551724137931033 cards=0.37037037037037035 args=0.41379310344827586 refusal=0.8125
+  category clarify: cases=4 tool=null cards=null args=null refusal=0.75
+  category compare: cases=5 tool=0.5 cards=null args=0.5 refusal=0.0
+  category deadlines: cases=22 tool=0.5 cards=null args=0.5 refusal=null
+  category eligibility: cases=9 tool=0.5555555555555556 cards=null args=0.5555555555555556 refusal=null
+  category injection: cases=24 tool=0.3333333333333333 cards=0.0 args=0.0 refusal=0.7777777777777778
+  category multi: cases=23 tool=0.2608695652173913 cards=0.18181818181818182 args=0.21739130434782608 refusal=null
+  category negative: cases=8 tool=null cards=null args=null refusal=1.0
+  category notice: cases=8 tool=0.75 cards=null args=0.75 refusal=null
+  category preparation: cases=23 tool=0.391304347826087 cards=0.5 args=0.391304347826087 refusal=null
+  category search: cases=9 tool=0.5555555555555556 cards=null args=0.3333333333333333 refusal=null
+  category write: cases=13 tool=0.6666666666666666 cards=0.5833333333333334 args=0.5833333333333334 refusal=1.0
+  confusion (expected -> produced: count):
+    add_to_calendar -> {"record_application_status":2}
+    answer_from_notice -> {"answer_from_notice":17,"check_eligibility+answer_from_notice":1,"toggle_checklist_item":1}
+    answer_from_notice+check_eligibility -> {"check_eligibility+answer_from_notice":1}
+    bookmark -> {"bookmark":1,"record_application_status":1,"refuse":1}
+    check_eligibility+answer_from_notice -> {"answer_from_notice":1,"check_eligibility+answer_from_notice":5,"refuse":2}
+    check_eligibility+bookmark -> {"check_eligibility+bookmark":1}
+    check_eligibility+search_benefits -> {"check_eligibility+answer_from_notice":1}
+    check_official_page -> {"answer_from_notice":3,"record_application_status+open_form_fill":1}
+    compare -> {"check_eligibility":1,"compare":2,"compare+bookmark":1,"compare+set_alert":1,"deadlines+get_preparation":1,"get_preparation":1,"needs_program":1}
+    deadlines -> {"deadlines":7,"needs_program":1,"set_alert":1}
+    document_issue_link -> {"answer_from_notice":1,"needs_program":4,"refuse":2,"toggle_checklist_item":1}
+    get_preparation -> {"answer_from_notice":2,"check_eligibility":1,"get_preparation":3,"record_application_status":1,"toggle_checklist_item":1}
+    get_preparation+add_to_calendar -> {"answer_from_notice+deadlines":1}
+    get_preparation+deadlines -> {"get_preparation":1}
+    needs_program -> {"compare":1,"needs_program":2}
+    no_plan -> {"needs_program":1,"refuse":7}
+    open_form_fill -> {"open_form_fill":2}
+    open_form_fill+set_alert -> {"open_form_fill+set_alert":1}
+    profile_patch -> {"refuse":3}
+    profile_patch+check_eligibility -> {"refuse":1}
+    profile_patch+search_benefits -> {"refuse":1,"search_benefits":1}
+    record_application_status -> {"record_application_status":3}
+    record_application_status+add_to_calendar -> {"record_application_status":1}
+    record_application_status+set_alert -> {"record_application_status+set_alert":1}
+    refuse -> {"check_eligibility+answer_from_notice":1,"check_eligibility+get_preparation":1,"deadlines":1,"record_application_status":1,"refuse":17}
+    search_benefits -> {"deadlines":4,"needs_program":7,"record_application_status+search_benefits":1,"refuse":3,"search_benefits":6,"search_benefits+deadlines":1}
+    set_alert -> {"set_alert":2}
+    set_alert+bookmark -> {"set_alert+bookmark":1}
+    toggle_checklist_item -> {"toggle_checklist_item":2}
+    toggle_checklist_item+toggle_checklist_item+get_preparation -> {"toggle_checklist_item+get_preparation":1}
