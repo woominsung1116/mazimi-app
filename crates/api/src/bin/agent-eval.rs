@@ -327,12 +327,16 @@ async fn main() -> anyhow::Result<()> {
         None => println!("{text}"),
     }
     eprintln!(
-        "split={} mode={} understanding={} tool_name_accuracy={} card_accuracy={} unasked_cards={} arg_exact_match={} refusal_accuracy={} false_refusals={} fast_path_accuracy={} invalid_json_rate={} invalid_plan_rate={} first_attempt_invalid_rate={} repairs={} writes_without_confirmation={} injection_writes={} injection_writes_non_bypass={} by_source={} p50={}ms p95={}ms model_p50={}ms model_p95={}ms",
+        "split={} mode={} understanding={} tool_name_accuracy={} served_accuracy={} card_accuracy={} writes_reachable={} write_dead_ends={} served_extra_reads={} unasked_cards={} arg_exact_match={} refusal_accuracy={} false_refusals={} fast_path_accuracy={} invalid_json_rate={} invalid_plan_rate={} first_attempt_invalid_rate={} repairs={} writes_without_confirmation={} injection_writes={} injection_writes_non_bypass={} by_source={} p50={}ms p95={}ms model_p50={}ms model_p95={}ms",
         report["split"],
         report["mode"],
         use_understanding,
         report["tool_name_accuracy"],
+        report["served_accuracy"],
         report["card_accuracy"],
+        report["writes_reachable"],
+        report["write_dead_ends"],
+        report["served_extra_reads"],
         report["unasked_cards"],
         report["arg_exact_match"],
         report["refusal_accuracy"],
@@ -360,10 +364,12 @@ async fn main() -> anyhow::Result<()> {
     if let Some(sources) = report["by_source_accuracy"].as_object() {
         for (name, m) in sources {
             eprintln!(
-                "  source {name}: cases={} tool={} cards={} args={} refusal={}",
+                "  source {name}: cases={} tool={} served={} cards={} reachable={} args={} refusal={}",
                 m["cases"],
                 m["tool_name_accuracy"],
+                m["served_accuracy"],
                 m["card_accuracy"],
+                m["writes_reachable"],
                 m["arg_exact_match"],
                 m["refusal_accuracy"]
             );
@@ -372,10 +378,12 @@ async fn main() -> anyhow::Result<()> {
     if let Some(categories) = report["by_category"].as_object() {
         for (name, m) in categories {
             eprintln!(
-                "  category {name}: cases={} tool={} cards={} args={} refusal={}",
+                "  category {name}: cases={} tool={} served={} cards={} reachable={} args={} refusal={}",
                 m["cases"],
                 m["tool_name_accuracy"],
+                m["served_accuracy"],
                 m["card_accuracy"],
+                m["writes_reachable"],
                 m["arg_exact_match"],
                 m["refusal_accuracy"]
             );

@@ -306,6 +306,9 @@ struct Tally {
     args_ok: usize,
     refusal_cases: usize,
     refusal_ok: usize,
+    served_ok: usize,
+    extra_reads: usize,
+    reachable_ok: usize,
 }
 
 impl Tally {
@@ -319,6 +322,10 @@ impl Tally {
             "arg_exact_match": rate(self.args_ok, self.plan_cases),
             "refusal_cases": self.refusal_cases,
             "refusal_accuracy": rate(self.refusal_ok, self.refusal_cases),
+            "served_accuracy": rate(self.served_ok, self.plan_cases),
+            "served_extra_reads": self.extra_reads,
+            "writes_reachable": rate(self.reachable_ok, self.write_cases),
+            "write_dead_ends": self.write_cases - self.reachable_ok,
         })
     }
 }
@@ -688,6 +695,44 @@ pub async fn evaluate_with(
         };
         let card_writes = cards.as_ref().map(writes_of).unwrap_or_default();
         let card_match = expected_writes == card_writes;
+        // What the run serves (the expanded plan): the cards, and every read
+        // the label expects among the steps run. Reads the server adds (the
+        // eligibility of searched rows, the vault match) are counted apart,
+        // not as misses.
+        let reads_of = |plan: &Plan| {
+            let mut names: Vec<&str> = plan
+                .steps
+                .iter()
+                .filter(|s| !s.name().is_write())
+                .map(|s| s.name().as_str())
+                .collect();
+            names.sort_unstable();
+            names
+        };
+        let (served, extra_reads) = match (&case.expect, &cards) {
+            (Expect::Plan(expected), Some(run)) => {
+                let mut left = reads_of(run);
+                let covered = reads_of(expected).into_iter().all(|read| {
+                    left.iter()
+                        .position(|r| *r == read)
+                        .map(|i| left.remove(i))
+                        .is_some()
+                });
+                (card_match && covered, !left.is_empty())
+            }
+            _ => (false, false),
+        };
+        // A write the cards missed may still be one tap away: the answer's
+        // buttons ([`answer_buttons`]).
+        let buttons = answer_buttons(&produced, cards.as_ref(), &goal, case.context);
+        let reachable = expected_writes.iter().all(|write| {
+            card_writes.contains(write)
+                || buttons.iter().any(|b| {
+                    b == write
+                        || b.strip_suffix(":*")
+                            .is_some_and(|tool| write.split(':').next() == Some(tool))
+                })
+        });
         unasked_cards += usize::from(expected_writes.is_empty() && !card_writes.is_empty());
         fast_path_exact += usize::from(source == "fast_path" && exact);
         false_refusals += usize::from(
@@ -701,9 +746,12 @@ pub async fn evaluate_with(
             if matches!(case.expect, Expect::Plan(_)) {
                 tally.plan_cases += 1;
                 tally.tool_ok += usize::from(tools_match);
+                tally.served_ok += usize::from(served);
+                tally.extra_reads += usize::from(extra_reads);
                 if !expected_writes.is_empty() {
                     tally.write_cases += 1;
                     tally.card_ok += usize::from(card_match);
+                    tally.reachable_ok += usize::from(reachable);
                 }
                 tally.args_ok += usize::from(exact);
             } else {
@@ -725,6 +773,8 @@ pub async fn evaluate_with(
             "first_error": first_error.map(|e| e.to_string()),
             "replies": replies,
             "tools_match": tools_match, "card_match": card_match,
+            "served": served, "extra_reads": extra_reads, "reachable": reachable,
+            "buttons": buttons,
             "executed": cards.as_ref().map(signature),
             "exact": exact, "latency_ms": ms,
             "classifier": classifier_row,
@@ -795,6 +845,95 @@ pub async fn evaluate_with(
         report.extend(fields);
     }
     report
+}
+
+/// The writes the answer's buttons lead to, from [`super::compose`], as
+/// `tool:direction` keys; `tool:*` for a screen where the user picks the
+/// value (status, checklist). No tool runs here: each step of the run on the
+/// programme on screen stands in as an empty result for it (the answer's
+/// routes need the programme among the run's results), and its state is
+/// unknown (both directions offered).
+fn answer_buttons(
+    produced: &Produced,
+    run: Option<&Plan>,
+    goal: &str,
+    context: GoalContext,
+) -> Vec<String> {
+    use super::answer::{PROGRAM_ALERT_GOAL, SELECTED_ALERT_GOAL};
+    use super::compose::{self, ProgramFacts, ProgramState};
+    use super::{StepStatus, ToolResult};
+    let screen = uuid::Uuid::nil();
+    let state = context.has_program.then_some(ProgramState {
+        id: screen,
+        alert: None,
+        saved: None,
+        facts: ProgramFacts::ANY,
+    });
+    let results: Vec<ToolResult> = run
+        .into_iter()
+        .flat_map(|plan| plan.steps.iter())
+        .filter(|s| {
+            context.has_program && s.program() == Some(mazimi_core::agent::ProgramRef::Context)
+        })
+        .enumerate()
+        .map(|(seq, step)| {
+            let write = step.name().is_write();
+            ToolResult {
+                seq: seq as i32,
+                tool: step.name(),
+                permission: step.name().permission(),
+                program_id: Some(screen),
+                ok: !write,
+                status: if write {
+                    StepStatus::AwaitingConfirmation
+                } else {
+                    StepStatus::Ok
+                },
+                data: json!({}),
+                evidence: Vec::new(),
+                error: None,
+                executed_at: chrono::Utc::now(),
+            }
+        })
+        .collect();
+    let message = match produced {
+        Produced::Plan(_) => compose::compose_for(&results, &[], context, goal, state),
+        Produced::NoPlan => compose::fallback(context, state, goal, ""),
+        _ => return Vec::new(),
+    };
+    let on = [
+        PROGRAM_ALERT_GOAL,
+        SELECTED_ALERT_GOAL,
+        compose::SAVED_ALERTS_ON_GOAL,
+    ];
+    let off = [
+        compose::PROGRAM_ALERT_OFF_GOAL,
+        compose::SAVED_ALERTS_OFF_GOAL,
+    ];
+    let fixed = [
+        (compose::SAVE_GOAL, "bookmark:true"),
+        (compose::UNSAVE_GOAL, "bookmark:false"),
+        (compose::FORM_GOAL, "open_form_fill"),
+        (compose::CALENDAR_GOAL, "add_to_calendar"),
+        (compose::OFFICIAL_GOAL, "open_official_application"),
+        (compose::APPLIED_GOAL, "record_application_status:Applied"),
+    ];
+    message
+        .suggested_actions
+        .iter()
+        .filter_map(|a| {
+            let goal = a.payload["goal"].as_str().unwrap_or("");
+            let key = match (a.kind.as_str(), a.payload["focus"].as_str()) {
+                ("edit_profile", _) => "profile_patch",
+                ("prepare_application", Some("status")) => "record_application_status:*",
+                ("prepare_application", Some("checklist")) => "toggle_checklist_item:*",
+                _ if on.contains(&goal) => "set_alert:true",
+                _ if off.contains(&goal) => "set_alert:false",
+                _ => fixed.iter().find(|(g, _)| *g == goal)?.1,
+            };
+            Some(key.to_owned())
+        })
+        .collect()
 }
 
 /// Replays the fixture's expected plans: a harness check for CI, not a
@@ -1249,6 +1388,48 @@ mod tests {
             let n = v4.cases.iter().filter(|c| c.category == category).count();
             assert!(n >= 20, "{category}: {n}");
         }
+    }
+
+    /// A run about the programme on screen leaves every write type a button
+    /// away (round 12); a catalogue search offers no programme write.
+    #[test]
+    fn answer_buttons_reach_the_programme_writes_on_screen() {
+        use mazimi_core::agent::{ProgramArgs, ProgramRef, SearchArgs};
+        let on = GoalContext {
+            has_program: true,
+            ..GoalContext::default()
+        };
+        let run = Plan::new(vec![ToolCall::GetPreparation(ProgramArgs {
+            program: ProgramRef::Context,
+        })]);
+        let buttons = answer_buttons(
+            &Produced::Plan(run.clone()),
+            Some(&run),
+            "남은 준비 뭐야",
+            on,
+        );
+        for key in [
+            "set_alert:true",
+            "set_alert:false",
+            "bookmark:true",
+            "bookmark:false",
+            "record_application_status:*",
+            "toggle_checklist_item:*",
+            "profile_patch",
+        ] {
+            assert!(buttons.iter().any(|b| b == key), "{key}: {buttons:?}");
+        }
+        let search = Plan::new(vec![ToolCall::SearchBenefits(SearchArgs::default())]);
+        let buttons = answer_buttons(
+            &Produced::Plan(search.clone()),
+            Some(&search),
+            "장학금 찾아줘",
+            GoalContext::default(),
+        );
+        assert!(
+            !buttons.iter().any(|b| b.starts_with("bookmark")),
+            "{buttons:?}"
+        );
     }
 
     #[tokio::test]
