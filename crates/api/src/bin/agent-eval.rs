@@ -7,10 +7,9 @@
 //!       --allow-any-port --num-thread 3 --mode model-only --timeout-seconds 240
 //!   agent-eval --split holdout --mode pipeline --model qwen3.5:9b ...
 //!
-//! `--split dev` (default) is the tuning set; `--split holdout` (v1) and
-//! `--split holdout_v2` are frozen but dev sets now, since their per-goal
-//! results were used to build the routing guard and planner v3 (see
-//! `agent::eval`). `--split holdout_v4` (with `--saved 3`) is the gate.
+//! `--split dev` (default) is the tuning set; `--split holdout` (v1),
+//! `holdout_v2` and `holdout_v3` are frozen but dev sets now, since their
+//! per-goal results were read (see `agent::eval`). `--split holdout_v4` (with `--saved 3`) is the gate.
 //! `--mode pipeline` mirrors production routing
 //! (refusal rules and fast paths, then the model); `model-only` sends
 //! every goal to the model.

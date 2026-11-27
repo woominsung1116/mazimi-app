@@ -45,7 +45,7 @@ Leakage: these per-goal results were read to build planner v3 (`agent/args.rs`, 
 
 Gates: arg exact (>= 0.80), invalid JSON, writes without confirmation and p95 latency (<= 12 s) pass. Tool accuracy (>= 0.90) and refusal accuracy (>= 0.95) fail. The injection write is a skip-confirmation goal planned as a confirmation card (routing v4 decision), so `injection_writes_non_bypass` is 0. Weakest categories: deadlines (pipeline tool 0.43), injection refusal 0.75, multi 0.75.
 
-The per-goal texts were not read, so holdout v3 stays a gate set.
+The per-goal results were opened after the holdout v4 baseline (2026-11-27 section below), so holdout v3 is a dev set.
 
 These numbers score the planner's output, not the run. `agent-eval` then loaded no understanding model, while production loads it by default and lets the intent layer replace the planner's writes with its own cards, so the run's cards were not measured. See the next section.
 
@@ -79,7 +79,7 @@ Tried and not kept (chosen on the dev sets and the probe, not on holdout v3):
 - Value bars scaled 0.75 to 0.25: no wrong-direction card on the dev sets, but only one more card each on holdout v1 and v2 and no change on the probe.
 - Alert and save with no allowed target sent to the programme on screen: one more card on dev and on the probe, and one more probe row with an unasked card (35).
 
-Leakage: holdout v3 aggregates were read for several variants (per category, per route, miss counts by write type and act, and the category and tool of unasked cards). No per-goal text was read and no variant was chosen on v3, so it stays the gate set.
+Leakage: holdout v3 aggregates were read for several variants (per category, per route, miss counts by write type and act, and the category and tool of unasked cards). No per-goal text was read and no variant was chosen on v3 in these runs.
 
 ## 2026-11-26 dev card accuracy after the journey relabel (no model calls, local WSL)
 
@@ -106,3 +106,15 @@ Gates: invalid JSON, writes without confirmation, injection writes and p95 laten
 Reading: the mock row hands each label back as the planner's reply, so it is the most the rest of the server lets through. The intent layer decides the cards whatever the planner says (0.370 in all three rows, against 0.95 on dev with the same mock), and guard refusals and server rewrites of labelled plans cap tool accuracy at 0.888. The real planner reaches about half of that ceiling in model-only. On holdout v3 the same planner scored 0.889 tool; v3 was labelled from the tool catalog the system was built around, v4 from the label conventions by a blind author.
 
 Leakage: the label-echo planner test and the mock rows (one model-only run while registering the set, one for the ceiling above) showed aggregates of how the server treats the labels themselves: 4 labelled plans refused by the guard and three lines of the tool confusion table (a `set_alert+bookmark` label, two lone checklist labels, and a two-checklist label merged into one checklist step). For the server runs, the summary, route, category and tool confusion aggregates were read. No per-goal result was read and no label was changed after any of them, except the `answer_from_notice` question of v4-061, which the plan parser rejected for a pasted URL before the set was frozen; it and v4-064, the other notice question under pasted text, carry the user's own last line, as the conventions say. holdout v4 stays the gate set.
+
+## 2026-11-27 holdout v3 opened as a dev set (no model calls, local WSL)
+
+After the holdout v4 baseline, the per-goal results of holdout v3 were read to split the failures by layer. Conditions: the 11-18 model-only replies replayed (`--provider replay`, reproduces tool 0.889, args 0.828, refusal 0.897), understanding model, classifier, `--saved 3`; the mock rows hand each label back as the planner's reply.
+
+| run | tool acc | arg exact | card acc | refusal acc |
+|---|---|---|---|---|
+| pipeline, 11-18 replies (production condition) | 0.899 | 0.838 | 0.676 | 0.897 |
+| pipeline, mock planner | 0.909 | 0.869 | 0.676 | 0.897 |
+| model-only, mock planner | 1.0 | 0.970 | 0.676 | 1.0 |
+
+Five labels conflict with later decisions (two confirmation-bypass goals and an own-profile change, which are cards now, and two deadline questions that name no saved list, which search under the label conventions); the three refusal misses are those three goals. The remaining failures are fast-path rules (5), classifier plans that drop a write of a multi-intent goal (2), and intent-layer card misses (11: multi-intent 5, colloquial endings 4, a request read as a question 1, English mixed in 1). The breakdown and the fix it led to (`cards::gate_plan`: a dropped on-screen write fell back to the saved deadline digest under the understanding model) are in `docs/mazimi-ai-agent.md` §11, leakage notice 3.

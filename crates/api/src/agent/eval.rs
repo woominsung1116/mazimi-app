@@ -15,8 +15,8 @@
 //! - `holdout_v3` (`agent_goals_holdout_v3.json`): written after the
 //!   planner tuning on v2, without reading the planner, guard, prompts or
 //!   any earlier set; label-reviewed by a second agent. Disjoint from the
-//!   other splits by goal hash. Its aggregates were read for the intent
-//!   layer work (2026-11-20), so it is a dev set once v4 is measured.
+//!   other splits by goal hash. A dev set since the v4 baseline
+//!   (2026-11-27), when its per-goal results were read.
 //! - `holdout_v4` (`agent_goals_holdout_v4.json`): goals written by an
 //!   agent with no access to code, rules, prompts or earlier sets, labelled
 //!   from `docs/validation/agent/label-conventions.md`. Disjoint from every
@@ -25,9 +25,10 @@
 //! Leakage: holdout v1's per-goal results on the Oracle host were read to
 //! diagnose the routing guard (`guard.rs`), and holdout v2's to build
 //! planner v3 (`args.rs`, the fast-path precision rules, the model-step
-//! alignment in `planner.rs`). Both are dev sets now: their numbers are
-//! regression floors, not quality claims. The gate is a newer holdout
-//! written without seeing either.
+//! alignment in `planner.rs`), and holdout v3's to split the failures after
+//! the v4 baseline. All three are dev sets now: their numbers are
+//! regression floors, not quality claims. The gate is holdout v4, written
+//! without seeing any of them.
 //!
 //! The model path is [`planner::plan`], the same call production makes.
 //! With an intent classifier ([`evaluate_with`]), pipeline mode routes as
