@@ -1945,6 +1945,7 @@ pub(crate) fn gate_plan(
             && step.program() != Some(mazimi_core::agent::ProgramRef::Found)
             && !super::intent::is_handoff(&step)
         {
+            dropped_on_screen |= step.program() == Some(mazimi_core::agent::ProgramRef::Context);
             continue;
         }
         match super::intent::gate(goal, context, &step, searched) {

@@ -63,6 +63,7 @@ fn the_saved_list_alert_survives_the_journey() {
         let journey = Journey {
             on_screen: false,
             saved: context.saved,
+            handoffs: context.handoffs,
             ..Journey::ALL
         };
         assert_eq!(journey.context(), context);
@@ -74,6 +75,41 @@ fn the_saved_list_alert_survives_the_journey() {
             ran.steps
         );
     }
+}
+
+/// A planned write about the programme on screen that the model drops and
+/// the intent layer does not card leaves the run with the read-only journey
+/// for that programme (its answer offers the write as a button), as on the
+/// lexical path, not the saved deadline digest.
+#[test]
+#[ignore = "needs INTENT_CLASSIFIER_MODEL_DIR with the e5 files"]
+fn a_dropped_write_on_screen_falls_back_to_the_programme() {
+    use api::agent::goals::GoalKind;
+    use mazimi_core::agent::{BookmarkArgs, Plan};
+    if !install() {
+        return;
+    }
+    let goal = "북마크 풀어주셈";
+    intent::prepare_blocking(goal);
+    let plan = Plan::new(vec![ToolCall::Bookmark(BookmarkArgs {
+        program: ProgramRef::Context,
+        bookmarked: false,
+    })]);
+    let journey = Journey {
+        on_screen: true,
+        saved: 3,
+        ..Journey::ALL
+    };
+    let ran = expand(plan, goal, GoalKind::Bookmark, journey);
+    assert!(!ran.steps.is_empty(), "{goal}: empty plan");
+    assert!(
+        ran.steps
+            .iter()
+            .all(|s| !matches!(s, ToolCall::Deadlines(_))
+                && s.program() == Some(ProgramRef::Context)),
+        "{goal}: {:?}",
+        ran.steps
+    );
 }
 
 /// Integrated review M2: the model reads a goal once, in the run's
