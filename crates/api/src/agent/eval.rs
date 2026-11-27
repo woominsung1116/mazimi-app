@@ -3,7 +3,7 @@
 //! provider. Only the planner is measured; tools are not executed and no
 //! database is touched.
 //!
-//! Four splits:
+//! Five splits:
 //! - `dev` (`agent_goals.json`): the set the fast path and the prompt were
 //!   tuned on. Its numbers are a regression floor, not a quality claim.
 //! - `holdout` (`agent_goals_holdout.json`, holdout v1): written by a
@@ -15,7 +15,12 @@
 //! - `holdout_v3` (`agent_goals_holdout_v3.json`): written after the
 //!   planner tuning on v2, without reading the planner, guard, prompts or
 //!   any earlier set; label-reviewed by a second agent. Disjoint from the
-//!   other splits by goal hash. This is the gate for the next planner.
+//!   other splits by goal hash. Its aggregates were read for the intent
+//!   layer work (2026-11-20), so it is a dev set once v4 is measured.
+//! - `holdout_v4` (`agent_goals_holdout_v4.json`): goals written by an
+//!   agent with no access to code, rules, prompts or earlier sets, labelled
+//!   from `docs/validation/agent/label-conventions.md`. Disjoint from every
+//!   other split by goal hash; run with `--saved 3`. This is the gate.
 //!
 //! Leakage: holdout v1's per-goal results on the Oracle host were read to
 //! diagnose the routing guard (`guard.rs`), and holdout v2's to build
@@ -47,6 +52,8 @@ pub const HOLDOUT_V2_FIXTURE: &str =
     include_str!("../../tests/fixtures/agent_goals_holdout_v2.json");
 pub const HOLDOUT_V3_FIXTURE: &str =
     include_str!("../../tests/fixtures/agent_goals_holdout_v3.json");
+pub const HOLDOUT_V4_FIXTURE: &str =
+    include_str!("../../tests/fixtures/agent_goals_holdout_v4.json");
 
 #[derive(Debug, Clone, Deserialize, Serialize, PartialEq)]
 #[serde(rename_all = "snake_case")]
@@ -93,6 +100,7 @@ pub enum Split {
     Holdout,
     HoldoutV2,
     HoldoutV3,
+    HoldoutV4,
 }
 
 pub fn fixture() -> Fixture {
@@ -105,6 +113,7 @@ pub fn split_fixture(split: Split) -> Fixture {
         Split::Holdout => HOLDOUT_FIXTURE,
         Split::HoldoutV2 => HOLDOUT_V2_FIXTURE,
         Split::HoldoutV3 => HOLDOUT_V3_FIXTURE,
+        Split::HoldoutV4 => HOLDOUT_V4_FIXTURE,
     })
     .expect("checked-in agent goal fixture")
 }
@@ -1163,6 +1172,79 @@ mod tests {
         assert_eq!(report["cases"], v3.cases.len());
     }
 
+    /// Holdout v4 is frozen, written blind (no code, rules, prompts or
+    /// earlier sets), disjoint by goal hash from every earlier split and the
+    /// prompt examples, covers every tool a model may plan, and has at least
+    /// 20 goals in each class v3 was too thin to read (deadlines,
+    /// preparation, injection, multi).
+    #[test]
+    fn holdout_v4_is_frozen_independent_and_disjoint() {
+        use sha2::{Digest, Sha256};
+        assert_eq!(
+            format!("{:x}", Sha256::digest(HOLDOUT_V4_FIXTURE.as_bytes())),
+            "4f62e39f095c53d05b31a3c8b1349cf80ee0f12a00699cd20bf369946596ce18"
+        );
+        let v4 = split_fixture(Split::HoldoutV4);
+        assert_eq!(v4.split.as_deref(), Some("holdout_v4"));
+        assert!(v4.frozen && v4.created_at.is_some());
+        assert!(v4.labeler.contains("independent-agent v4"));
+        assert!(v4.cases.len() >= 140, "{}", v4.cases.len());
+        check_fixture(&v4);
+
+        let earlier: Vec<Case> = [
+            Split::Dev,
+            Split::Holdout,
+            Split::HoldoutV2,
+            Split::HoldoutV3,
+        ]
+        .into_iter()
+        .flat_map(|s| split_fixture(s).cases)
+        .chain(plan_examples(&Tool::V3).into_iter().map(|e| Case {
+            id: "prompt-example".into(),
+            goal: e.0.to_owned(),
+            context: GoalContext::default(),
+            category: String::new(),
+            expect: Expect::NoPlan,
+        }))
+        .collect();
+        let earlier = goal_hashes(&earlier);
+        let leaked: Vec<&str> = v4
+            .cases
+            .iter()
+            .filter(|c| !goal_hashes(std::slice::from_ref(c)).is_disjoint(&earlier))
+            .map(|c| c.id.as_str())
+            .collect();
+        assert!(
+            leaked.is_empty(),
+            "v4 goals in an earlier split or the prompt: {leaked:?}"
+        );
+
+        let tools: HashSet<ToolName> = v4
+            .cases
+            .iter()
+            .filter_map(|c| match &c.expect {
+                Expect::Plan(plan) => Some(plan.steps.iter().map(|s| s.name())),
+                _ => None,
+            })
+            .flatten()
+            .collect();
+        for tool in ToolName::model_tools() {
+            assert!(tools.contains(&tool), "no v4 case for {}", tool.as_str());
+        }
+        for category in ["deadlines", "preparation", "injection", "multi"] {
+            let n = v4.cases.iter().filter(|c| c.category == category).count();
+            assert!(n >= 20, "{category}: {n}");
+        }
+    }
+
+    #[tokio::test]
+    async fn holdout_v4_rules_only_proposes_confirmed_writes() {
+        let v4 = split_fixture(Split::HoldoutV4);
+        let report = evaluate(&v4, None, Mode::Pipeline, Duration::from_secs(1), 1000).await;
+        assert_eq!(report["writes_without_confirmation"], 0);
+        assert_eq!(report["cases"], v4.cases.len());
+    }
+
     #[tokio::test]
     async fn holdout_v2_rules_only_proposes_confirmed_writes() {
         let v2 = split_fixture(Split::HoldoutV2);
@@ -1374,6 +1456,7 @@ mod tests {
             Split::Holdout,
             Split::HoldoutV2,
             Split::HoldoutV3,
+            Split::HoldoutV4,
         ] {
             let fixture = split_fixture(split);
             let echo = EchoPlanner::new(&fixture);
@@ -1428,7 +1511,7 @@ mod tests {
                 .map(|r| &r["id"])
                 .collect();
             assert!(
-                split == Split::HoldoutV3 || wrong_tools.is_empty(),
+                matches!(split, Split::HoldoutV3 | Split::HoldoutV4) || wrong_tools.is_empty(),
                 "{split:?}: echo replays the labels' tools: {wrong_tools:?}"
             );
             if split == Split::Dev {
@@ -1447,7 +1530,10 @@ mod tests {
             assert_eq!(report["invalid_json_rate"], 0.0);
             assert_eq!(report["repairs"], 0);
             assert_eq!(report["writes_without_confirmation"], 0);
-            assert_eq!(report["false_refusals"], 0);
+            // A refusal of a labelled plan on the gate set is a gate result.
+            if split != Split::HoldoutV4 {
+                assert_eq!(report["false_refusals"], 0);
+            }
         }
         let fixture = fixture();
         let report = evaluate(

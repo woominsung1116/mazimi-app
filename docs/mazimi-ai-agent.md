@@ -246,11 +246,12 @@ awaiting_confirmation → completed (모두 취소·만료)
 
 ## 11. 평가
 
-- 두 분할(둘 다 사람 검수 전 초안, 출시 게이트 아님):
+- 분할(게이트는 holdout v4다. holdout v2와 v3는 아래 측정 기록에 있다):
   - **dev** `crates/api/tests/fixtures/agent_goals.json`(124개, `split: dev`): 원래 78개 + `dev2-*` 46개(구어·오타·띄어쓰기·복합 의도). 빠른 경로·프롬프트·정규화를 이 세트로만 고쳤다. 수치는 회귀 하한이다.
   - **holdout** `agent_goals_holdout.json`(55개, `frozen`, `created_at 2026-10-12`): dev 세트와 라우터를 읽지 않은 별도 라벨러가 라벨 규칙 문서만 보고 썼다. 튜닝 전에 커밋했고 sha256을 테스트가 고정한다. 결과를 본 뒤 고치지 않는다. 새 세트는 새 파일로 만든다. 프롬프트 예시는 두 세트 어디에도 없다(테스트).
+  - **holdout v4** `agent_goals_holdout_v4.json`(148개, `frozen`, `created_at 2026-11-27`): 코드, 규칙, 프롬프트, 이전 세트를 보지 않은 에이전트가 목표를 썼고, 라벨은 `docs/validation/agent/label-conventions.md`로 달았다. 규약으로 정하지 못한 라벨은 검수 목록의 추천대로 정했다. 마감, 준비, 주입, 복합 요청이 각각 22-24개이고 모델이 계획할 수 있는 도구 15개가 모두 들어 있다. 이전 세트, 학습 자료, 코드 속 예시와 같은 문장 8개는 라벨 전에 뺐고, 이전 분할과 프롬프트 예시와의 겹침 없음과 sha256을 테스트가 고정한다. `--saved 3`으로 돌린다.
 - CLI `agent-eval`(`crates/api/src/bin/agent-eval.rs`):
-  - 옵션: `--provider rules|mock|ollama`, `--mode pipeline|model-only`, `--split dev|holdout`(또는 `--fixture`), `--model`, `--url`, `--allow-any-port`, `--num-thread`, `--timeout-seconds`, `--limit`, `--out`, `--classifier`(`--classifier-dir`, `--classifier-threads`, `--classifier-threshold`, 비교용 `--classifier-deferral-to-model`), `--understanding`(`--understanding-dir`), `--saved N`(모든 목표의 사용자가 저장한 혜택 수, 기본 0), `--provider replay --replies PATH`. 결과 행의 `intents`는 의도 층의 읽기(종류:행위:단계 유무)다
+  - 옵션: `--provider rules|mock|ollama`, `--mode pipeline|model-only`, `--split dev|holdout|holdout_v2|holdout_v3|holdout_v4`(또는 `--fixture`), `--model`, `--url`, `--allow-any-port`, `--num-thread`, `--timeout-seconds`, `--limit`, `--out`, `--classifier`(`--classifier-dir`, `--classifier-threads`, `--classifier-threshold`, 비교용 `--classifier-deferral-to-model`), `--understanding`(`--understanding-dir`), `--saved N`(모든 목표의 사용자가 저장한 혜택 수, 기본 0), `--provider replay --replies PATH`. 결과 행의 `intents`는 의도 층의 읽기(종류:행위:단계 유무)다
   - `--understanding`은 운영 `runtime.rs`처럼 쓰기 이해 모델을 올리고, 목표마다 라우팅 전에 한 번 읽힌다(`intent::prepare_blocking`). 빼면 쓰기 카드는 AI 끔 대체 경로(어휘 규칙)가 만든다. 운영은 이 모델이 기본으로 켜져 있으므로 운영 수치는 이 옵션을 넣고 잰다.
   - `--provider replay`는 녹화한 플래너 응답(`{가린 목표 \u0001 has_program \u0001 selected: 응답}`)을 같은 `planner::interpret`에 넣는다. model-only로 한 번 녹화하면 모델 없이 라우팅·카드 변경을 다시 잴 수 있다. 11-18 holdout v3 model-only 응답의 replay는 기록 수치(도구 0.889, 인자 0.828, 거절 0.897)를 그대로 재현한다.
   - `--classifier`는 pipeline에 의도 분류기를 넣는다(가드 → 분류기 → 0.7 미만이면 규칙의 확신 모양, 그다음 모델, 모델이 없으면 규칙). 보고서에 `classifier_routed`(분류기가 답한 비율), `classifier`(지연·답함/넘김·픽스처와 학습 목표의 해시 겹침 `train_overlap`), `by_source_accuracy`, `process_memory_mib`(Linux)가 붙는다.
@@ -443,7 +444,7 @@ holdout v3 카드 정확도(2026-11-20, 11-18 model-only 응답 replay, 분류�
 
 아래 순서로 한다. 후보를 고를 때는 dev 세트 세 개(dev, holdout v1, holdout v2)와 `acceptance_probe`만 쓰고, 게이트 세트는 고른 뒤 한 번만 잰다. 실행 방법과 지금까지의 수치는 §11과 `docs/validation/agent/benchmarks/README.md`에 있다.
 
-1. 새 게이트 세트(holdout v4)를 만든다. holdout v3 게이트 미달(도구 0.889, 거절 0.897, 카드 0.618)의 원인을 문항 단위로 보려면 v3를 열어야 하고, 열면 게이트가 없어진다. v3의 약한 분류(마감 7개, 준비 6개, 인젝션 8개, 복합 요청 16개)는 한 건이 6-14%p라 원인을 가르기 어렵다. 규칙과 결과를 모르는 별도 작성자가 150개 안팎을 쓰고, 약한 분류마다 20개 이상 넣는다. 라벨은 `docs/validation/agent/label-conventions.md`(마감 정리와 공고 인용의 경계 포함)로 달고, 저장 목록 대상 목표는 저장한 혜택이 있는 맥락으로 적는다(`--saved`). 애매한 라벨은 사람이 검수하고 sha256을 고정해 커밋한 뒤에만 돌린다. v4가 생기면 v3는 dev 세트가 되므로 그때 v3 문항을 열어 마감·복합 요청·거절 실패를 나눠 본다.
+1. holdout v4로 운영 설정(쓰기 이해 모델, `--saved 3`, 분류기는 운영과 같게)을 Oracle에서 한 번 잰다. 후보를 고르기 전의 기준선이고, 집계만 보고 문항은 열지 않는다. 잰 뒤에는 holdout v3를 dev 세트로 열어 마감, 복합 요청, 거절 실패를 문항 단위로 나눠 본다. v3의 약한 분류(마감 7개, 준비 6개, 인젝션 8개, 복합 요청 16개)는 한 건이 6-14%p라 게이트로 두기에는 작다.
 2. 어휘 규칙이 명사로 끝나는 짧은 명령(`이거 저장`, `찜 해제`, `알림 그만`)에도 그 쓰기의 확인 카드를 만들게 한다. 2026-11-27 사용자 결정으로 이 꼴은 카드인데, 규칙은 아직 답변 버튼만 준다(§2). 바꾼 뒤 `goals.rs` 테스트와 `eval.rs`의 `NO_CARD_WITHOUT_ENDING` 고정값을 카드 기준으로 고치고, `acceptance_probe`의 기대하지 않은 카드 행 수(지금 34행)가 늘지 않는지 본다.
 3. 쓰기 이해 모델을 다시 학습한다. 남은 카드 누락은 대부분 모델이 쓰기를 읽지 않았거나(복합 요청의 두 번째 쓰기, 영어가 섞인 목표) 규칙도 못 읽는 확신 미달(명사로 끝나는 짧은 명령 "이거 저장", 상태 보고 "합격했다!! 상태 바꿔놔줘")이다. 정책 쪽 시도(값 기준 낮추기, 알림·저장의 화면 기본 대상)는 근거가 없거나 정밀도가 떨어져 넣지 않았다(§11). `scripts/ai/understanding/`의 학습 자료에 이런 모양을 늘리고, 봉인 배치와 평가 세트와 겹치지 않게 한다. 재는 법은 dev 세트 카드 정확도와 `acceptance_probe`의 기대하지 않은 카드 행 수(지금 34행)이고, 행 수가 늘면 넣지 않는다.
 4. 목표를 읽는 네 곳(규칙, 의도 분류기, 쓰기 이해 모델, 플래너)의 답이 엇갈리는지를 신호로 쓴다. 규칙 합의가 첫 적용이다. 다음 후보는 분류기가 읽기 계획을 냈는데 쓰기 이해 모델이 쓰기 요청을 읽은 목표를 플래너로 넘기는 것이다(holdout v3에서 분류기 경로의 도구 정확도가 0.75로 가장 낮고, 복합 요청에서 두 번째 쓰기가 빠졌다). dev 세트에서 엇갈림 종류별로 "엇갈렸을 때 최종 답이 틀린 비율"과 "맞은 답에서 엇갈리는 비율"을 재서, 앞의 것이 높고 뒤의 것이 낮은 신호만 쓴다.

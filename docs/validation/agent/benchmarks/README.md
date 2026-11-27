@@ -90,3 +90,9 @@ Six dev 준비 journey rows (prepare-1, prepare-2, prepare-3, dev2-prepare-1, de
 | dev | 0.89 | 0.77 | 0.95 | 0 / 1 |
 
 The relabelled rows were misses in every condition, so only the denominator changed (39, 34 and 42 hits). The unasked card is `open_official_application` on `dev4-official-1`, a check-the-official-page goal, and appears only with the understanding model. With and without `--classifier` the card numbers are the same.
+
+## holdout v4 (gate, not yet measured)
+
+`agent_goals_holdout_v4.json`, 148 goals, frozen 2026-11-27. Goals written by an agent with no access to code, rules, prompts or earlier sets; labelled from `docs/validation/agent/label-conventions.md`. Run with `--saved 3`. No system has been scored on it yet; the first run is the production configuration on Oracle.
+
+Leakage while registering the set: the label-echo planner test (`mock_provider_path_counts_invalid_output_repairs_and_writes`) and one `agent-eval --provider mock --mode model-only` run on v4 showed aggregates of how the server treats the labels themselves: 4 labelled plans refused by the guard, and three lines of the tool confusion table (a `set_alert+bookmark` label, two lone checklist labels, and a two-checklist label merged into one checklist step). No per-goal result was read and no label was changed after them, except the `answer_from_notice` question of v4-061, which the plan parser rejected for a pasted URL. It and v4-064, the other notice question under pasted text, now carry the user's own last line, as the conventions say.

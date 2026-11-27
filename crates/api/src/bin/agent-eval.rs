@@ -10,7 +10,7 @@
 //! `--split dev` (default) is the tuning set; `--split holdout` (v1) and
 //! `--split holdout_v2` are frozen but dev sets now, since their per-goal
 //! results were used to build the routing guard and planner v3 (see
-//! `agent::eval`). `--split holdout_v3` is the gate.
+//! `agent::eval`). `--split holdout_v4` (with `--saved 3`) is the gate.
 //! `--mode pipeline` mirrors production routing
 //! (refusal rules and fast paths, then the model); `model-only` sends
 //! every goal to the model.
@@ -45,7 +45,7 @@ use std::time::{Duration, Instant};
 const USAGE: &str =
     "Usage: agent-eval [--provider rules|mock|ollama] [--mode pipeline|model-only] \
 [--model INSTALLED_MODEL] [--url http://ollama:11434] [--allow-any-port] [--num-thread 1..64] \
-[--timeout-seconds 1..300] [--limit N] [--split dev|holdout|holdout_v2|holdout_v3 | --fixture PATH] [--out PATH] \
+[--timeout-seconds 1..300] [--limit N] [--split dev|holdout|holdout_v2|holdout_v3|holdout_v4 | --fixture PATH] [--out PATH] \
 [--classifier] [--classifier-dir DIR] [--classifier-threads 1..16] [--classifier-threshold 0.5..0.99] \
 [--classifier-deferral-to-model] [--understanding] [--understanding-dir DIR] [--saved N] [--replies PATH] [--planner-prompt few-shot|tuned] [--classifier-sha256 HEX] [--classifier-first] [--classifier-refuse-threshold 0.5..1.0] [--model-refusals]";
 
@@ -122,7 +122,10 @@ async fn main() -> anyhow::Result<()> {
                     "holdout" => Split::Holdout,
                     "holdout_v2" | "holdout-v2" => Split::HoldoutV2,
                     "holdout_v3" | "holdout-v3" => Split::HoldoutV3,
-                    _ => anyhow::bail!("--split is dev, holdout, holdout_v2 or holdout_v3"),
+                    "holdout_v4" | "holdout-v4" => Split::HoldoutV4,
+                    _ => anyhow::bail!(
+                        "--split is dev, holdout, holdout_v2, holdout_v3 or holdout_v4"
+                    ),
                 }
             }
             "--out" => out = Some(value(&mut args, "--out")?),
