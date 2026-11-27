@@ -18,7 +18,7 @@
 //! pass if this reading asks for them.
 //!
 //! # Left to buttons (deliberately)
-//! Elliptical or verbless requests ("알림 ON", "마감 알림도"), unclear
+//! Elliptical requests ("마감 알림도"), a lone topic word ("알림"), unclear
 //! clauses, and anything the act head (when loaded) does not settle. The
 //! answer's state-aware buttons carry every write type for the programme
 //! on screen, so these cost a tap. Governance: see [`super::intent`] (the
@@ -974,6 +974,8 @@ const ALERT_ON_VERBS: &[&str] = &[
     "보내주세요",
     "일정에등록해줘",
     "일정에넣어줘",
+    "켜주셈",
+    "설정해주셈",
 ];
 /// The off forms (re-review 11 H4): 안 오게 / 안 받 / 그만 / 끄 / 꺼 / 해제 /
 /// 중지 / 멈춰 / 받기 싫, each with a request or desire ending.
@@ -993,6 +995,8 @@ const ALERT_OFF_VERBS: &[&str] = &[
     "꺼줄수있어",
     "꺼주실래요",
     "꺼주시겠어요",
+    "꺼주셈",
+    "해제해주셈",
     "해제해주시겠어요",
     "꺼줄래요",
     "끄고싶어",
@@ -1089,6 +1093,25 @@ static ALERT_ON: LazyLock<HashSet<String>> = LazyLock::new(|| {
 static ALERT_OFF: LazyLock<HashSet<String>> =
     LazyLock::new(|| product(ALERT_NOUNS, PARTICLES, ALERT_OFF_VERBS));
 
+/// Short noun commands with a clear write action ("이거 저장", "찜 해제",
+/// "알림 그만"): a card as the goal's last clause (2026-11-27 decision). A
+/// lone topic word ("저장", "알림") names no action and stays a button.
+static ALERT_BARE_ON: LazyLock<HashSet<String>> =
+    LazyLock::new(|| product(ALERT_NOUNS, &[""], &["켜기", "on"]));
+static ALERT_BARE_OFF: LazyLock<HashSet<String>> = LazyLock::new(|| {
+    product(
+        ALERT_NOUNS,
+        &[""],
+        &["그만", "해제", "끄기", "off", "오프", "중지"],
+    )
+});
+
+/// A short command (`bare`) in the goal's last clause, not a lone noun.
+fn bare_command(bare: &HashSet<String>, nouns: &[&str], clause: &[String], c: &str) -> bool {
+    let c = c.to_lowercase();
+    bare.contains(&c) && (clause.len() >= 2 || !nouns.contains(&c.as_str()))
+}
+
 /// A polite request said as a question ("켜 줄 수 있어?", "저장해 주시겠어요?").
 fn polite(s: &str) -> bool {
     [
@@ -1131,10 +1154,14 @@ pub(crate) fn alert(goal: &str) -> Option<bool> {
         if question && i + 1 == parts.len() && !polite(&c) {
             continue;
         }
-        if ALERT_ON.contains(&c) {
+        let last = i + 1 == all.len();
+        if ALERT_ON.contains(&c) || (last && bare_command(&ALERT_BARE_ON, ALERT_NOUNS, clause, &c))
+        {
             found = Some(true);
             seen = true;
-        } else if ALERT_OFF.contains(&c) {
+        } else if ALERT_OFF.contains(&c)
+            || (last && bare_command(&ALERT_BARE_OFF, ALERT_NOUNS, clause, &c))
+        {
             found = Some(false);
             seen = true;
         } else if seen && retracts(clause) {
@@ -1187,6 +1214,10 @@ const SAVE_ON_VERBS: &[&str] = &[
     "해줄수있어",
     "해줄수있나요",
     "해주실수있나요",
+    "해놓을래",
+    "해둘래",
+    "해주셈",
+    "해두셈",
 ];
 const SAVE_OFF_VERBS: &[&str] = &[
     "취소해줘",
@@ -1207,6 +1238,13 @@ const SAVE_OFF_VERBS: &[&str] = &[
     "취소해주시겠어요",
     "해제해주시겠어요",
     "취소해줄수있어",
+    "취소해",
+    "해제해",
+    "취소해주셈",
+    "해제해주셈",
+    "풀어줘",
+    "풀어주세요",
+    "풀어주셈",
 ];
 const SAVE_LISTS: &[&str] = &["관심목록에", "관심혜택에", "저장목록에", "찜목록에"];
 const SAVE_LIST_VERBS: &[&str] = &[
@@ -1235,6 +1273,11 @@ static SAVE_OFF: LazyLock<HashSet<String>> = LazyLock::new(|| {
     set.extend(product(SAVE_OUT_LISTS, &[""], SAVE_OUT_VERBS));
     set
 });
+/// Short save commands (see [`ALERT_BARE_ON`]).
+static SAVE_BARE_ON: LazyLock<HashSet<String>> =
+    LazyLock::new(|| product(SAVE_NOUNS, &[""], &["", "하기"]));
+static SAVE_BARE_OFF: LazyLock<HashSet<String>> =
+    LazyLock::new(|| product(SAVE_NOUNS, &[""], &["해제", "취소", "삭제", "빼기", "풀기"]));
 
 /// The bookmark state the goal asks for in one of its clauses.
 pub(crate) fn bookmark(goal: &str) -> Option<bool> {
@@ -1271,9 +1314,12 @@ pub(crate) fn bookmark(goal: &str) -> Option<bool> {
         if question && i + 1 == parts.len() && !polite(&c) {
             continue;
         }
-        if SAVE_ON.contains(&c) {
+        let last = i + 1 == all.len();
+        if SAVE_ON.contains(&c) || (last && bare_command(&SAVE_BARE_ON, SAVE_NOUNS, clause, &c)) {
             found = Some(true).filter(|_| !retracted_after(&parts, i));
-        } else if SAVE_OFF.contains(&c) {
+        } else if SAVE_OFF.contains(&c)
+            || (last && bare_command(&SAVE_BARE_OFF, SAVE_NOUNS, clause, &c))
+        {
             found = Some(false).filter(|_| !retracted_after(&parts, i));
         }
     }
@@ -2050,9 +2096,22 @@ mod tests {
             "알림 이제 안 와도 돼",
             "이거 알림 끊어줘",
             "알림 꺼도 돼",
-            "알림 해제",
+            // A lone topic word names no action.
+            "알림",
+            "이 혜택 알림?",
         ] {
             assert_eq!(alert(g), None, "{g}");
+        }
+        // A short command with a clear action is a card (2026-11-27).
+        for (g, on) in [
+            ("알림 해제", false),
+            ("이거 알림 그만", false),
+            ("마감 알림 끄기", false),
+            ("알림 off", false),
+            ("알림 켜기", true),
+            ("이 혜택 알림 꺼주셈", false),
+        ] {
+            assert_eq!(alert(g), Some(on), "{g}");
         }
         assert_eq!(alert("저장은 빼고 알림 켜 주세요"), Some(true));
         assert_eq!(alert("이 혜택 신청 준비하고 알림도 켜줘"), Some(true));
@@ -2066,8 +2125,22 @@ mod tests {
             Some(true)
         );
         assert_eq!(bookmark("이 혜택 찜 해제해줘"), Some(false));
-        assert_eq!(bookmark("이 혜택 찜 해제"), None);
-        assert_eq!(bookmark("이 혜택 저장"), None);
+        // Short commands and colloquial endings (2026-11-27); a lone noun or
+        // a question is no card.
+        for (g, on) in [
+            ("이 혜택 찜 해제", false),
+            ("이 혜택 저장", true),
+            ("이거 저장", true),
+            ("찜 해제", false),
+            ("저장 취소", false),
+            ("북마크 풀어주셈", false),
+            ("일단 찜 해놓을래", true),
+        ] {
+            assert_eq!(bookmark(g), Some(on), "{g}");
+        }
+        for g in ["저장", "이거 저장?", "찜"] {
+            assert_eq!(bookmark(g), None, "{g}");
+        }
         assert_eq!(bookmark("관심 목록에 넣어둔 거 보여줘"), None);
         assert_eq!(bookmark("북마크 삭제된 거 복구해줘"), None);
         assert_eq!(status("나 이거 신청했어"), Some(ApplicationStatus::Applied));

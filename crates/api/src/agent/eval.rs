@@ -1463,9 +1463,6 @@ mod tests {
         "dev2-deadline-3",
         "ho-012",
         "ho-024",
-        "dev2-alerts-3",
-        "dev2-bookmark-1",
-        "dev2-bookmark-2",
         "ho-028",
         "ho-029",
         "ho-034",
@@ -1474,11 +1471,6 @@ mod tests {
     /// model plans, with no model, only the writes the goal asks for; each
     /// is one of its label's steps (the reads are the answer's buttons).
     const R0_WRITES_ONLY: &[&str] = &["ho-028", "ho-029", "ho-034"];
-    /// 2026-10-26 (round 12): a bare noun command with no request ending
-    /// ("이거 저장", "찜 해제", "알림 그만") is no card; the answer's state-aware
-    /// button is the way to that write.
-    const NO_CARD_WITHOUT_ENDING: &[&str] =
-        &["dev2-alerts-3", "dev2-bookmark-1", "dev2-bookmark-2"];
     const JOURNEY_WITHOUT_ALERT: &[&str] = &["ho-024"];
 
     fn pinned_to_a_closing_soon_search(rows: &[Value]) {
@@ -1491,24 +1483,10 @@ mod tests {
                 assert_eq!(tools, ["check_eligibility", "get_preparation"], "{id}: {r}");
             }
         }
-        for id in NO_CARD_WITHOUT_ENDING {
-            if let Some(r) = rows.iter().find(|r| r["id"] == *id) {
-                let writes = r["plan"]["steps"]
-                    .as_array()
-                    .into_iter()
-                    .flatten()
-                    .filter(|t| {
-                        ["set_alert", "bookmark"].contains(&t["tool"].as_str().unwrap_or(""))
-                    })
-                    .count();
-                assert_eq!(writes, 0, "{id}: {r}");
-            }
-        }
-        for id in SUPERSEDED.iter().filter(|id| {
-            !JOURNEY_WITHOUT_ALERT.contains(id)
-                && !NO_CARD_WITHOUT_ENDING.contains(id)
-                && !R0_WRITES_ONLY.contains(id)
-        }) {
+        for id in SUPERSEDED
+            .iter()
+            .filter(|id| !JOURNEY_WITHOUT_ALERT.contains(id) && !R0_WRITES_ONLY.contains(id))
+        {
             if let Some(r) = rows.iter().find(|r| r["id"] == *id) {
                 let steps = r["plan"]["steps"].as_array().cloned().unwrap_or_default();
                 assert_eq!(steps.len(), 1, "{id}: {r}");

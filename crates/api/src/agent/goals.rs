@@ -3398,11 +3398,11 @@ mod tests {
         };
         for (goal, context, expected) in [
             ("알람 켜줘", ON_SCREEN, "enable_alerts"),
-            // Round 12: a bare noun command has no request ending, so no card.
-            ("이거 알림 그만", ON_SCREEN, "unrecognized"),
+            // A short command with a clear action is a card (2026-11-27).
+            ("이거 알림 그만", ON_SCREEN, "disable_alerts"),
             ("이거 알림 그만 보내줘", ON_SCREEN, "disable_alerts"),
             ("마감 알림 설정해조", ON_SCREEN, "enable_alerts"),
-            ("이거 저장", ON_SCREEN, "unrecognized"),
+            ("이거 저장", ON_SCREEN, "bookmark"),
             ("이거 저장해", ON_SCREEN, "bookmark"),
             ("이거 지원 완료함", ON_SCREEN, "record_status"),
             ("신청서 쓰는 거 도와줘", ON_SCREEN, "form_fill"),
