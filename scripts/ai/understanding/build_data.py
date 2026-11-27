@@ -109,14 +109,14 @@ def negative(row, k):
 
 
 def main():
-    base = json.loads((HERE / "data/base_rows.json").read_text())["rows"]
+    base = json.loads((HERE / "data/base_rows.json").read_text(encoding="utf-8"))["rows"]
     sealed = {l.strip() for l in Path(sys.argv[1]).read_text().split() if len(l.strip()) == 64}
     is_sealed = lambda g: sha(sealed_norm(g)) in sealed
     held = [r for r in base if r["split"] in ("dev", "test")]
     # The agent evaluation sets (dev, holdout v1-v4) are held out too: no
     # train goal at or near one of their goals.
     fixtures = sorted((HERE.parents[2] / "crates/api/tests/fixtures").glob("agent_goals*.json"))
-    eval_goals = [c["goal"] for f in fixtures for c in json.loads(f.read_text())["cases"]]
+    eval_goals = [c["goal"] for f in fixtures for c in json.loads(f.read_text(encoding="utf-8"))["cases"]]
     held_b = [bigrams(r["goal"]) for r in held] + [bigrams(g) for g in eval_goals]
 
     def near_held(g):

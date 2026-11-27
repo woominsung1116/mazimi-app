@@ -1109,7 +1109,12 @@ static ALERT_BARE_OFF: LazyLock<HashSet<String>> = LazyLock::new(|| {
 /// A short command (`bare`) in the goal's last clause, not a lone noun.
 fn bare_command(bare: &HashSet<String>, nouns: &[&str], clause: &[String], c: &str) -> bool {
     let c = c.to_lowercase();
-    bare.contains(&c) && (clause.len() >= 2 || !nouns.contains(&c.as_str()))
+    // "내 찜", "이미 저장": a filler before a lone noun is no command.
+    let words = clause
+        .iter()
+        .filter(|w| !FILLERS.contains(&w.as_str()))
+        .count();
+    bare.contains(&c) && (words >= 2 || !nouns.contains(&c.as_str()))
 }
 
 /// A polite request said as a question ("켜 줄 수 있어?", "저장해 주시겠어요?").
@@ -2138,7 +2143,14 @@ mod tests {
         ] {
             assert_eq!(bookmark(g), Some(on), "{g}");
         }
-        for g in ["저장", "이거 저장?", "찜"] {
+        for g in [
+            "저장",
+            "이거 저장?",
+            "찜",
+            "내 찜",
+            "이미 저장",
+            "방금 저장",
+        ] {
             assert_eq!(bookmark(g), None, "{g}");
         }
         assert_eq!(bookmark("관심 목록에 넣어둔 거 보여줘"), None);

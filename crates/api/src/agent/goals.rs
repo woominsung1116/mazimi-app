@@ -2899,15 +2899,20 @@ fn route(goal: &str, context: GoalContext, words: &[String], extras: Extras) -> 
                 "~먼저",
             ],
         );
-    let left = time_left(words);
+    // "일주일 남았는데 준비 뭐 남았어?" asks what is left to prepare.
+    let left = time_left(words).filter(|_| {
+        !acquires(words)
+            && !words.iter().any(|w| w.contains("준비"))
+            && !rule_topics(goal).contains(&Topic::Documents)
+    });
     if (has(words, DEADLINE_DIGEST) || has(words, &["~마감", "~끝나"]) || left.is_some())
         && (topical && guard::benefit_anchor(goal) || asks_existing)
         && !saved_ref
         && !(ctx && deictic)
     {
         if let Some(period) = args::search_reading(goal).or(left) {
+            // The goal's own words stay ("청년도약계좌 이번 달 마감이야?").
             let mut search = search.clone();
-            search.keywords.clear();
             args::set_search_period(&mut search, Some(period));
             return (
                 plan(GoalKind::Search, vec![ToolCall::SearchBenefits(search)]),
@@ -3118,8 +3123,9 @@ fn route(goal: &str, context: GoalContext, words: &[String], extras: Extras) -> 
     // Holdout class 2: a topic the goal names (a field) is a read-only
     // search even without a search verb ("전시 관람 지원되는 거?"). Only a
     // write on what a search finds needs an explicit search verb.
-    // "면접 있어 이거?" is about the programme on screen, not a field search.
-    let about_screen = ctx && deictic;
+    // "면접 있어 이거?" is about the programme on screen, not a field search;
+    // "이 분야 장학금 더 있어?" still searches the field.
+    let about_screen = ctx && has(words, &["이거", "이것", "이 혜택", "이 공고", "이번 공고"]);
     if !about_screen
         && (anchored || !search.program_types.is_empty() || !search.fields.is_empty())
         && (narrowed
@@ -4716,10 +4722,20 @@ mod tests {
             assert_eq!(args.deadline_within_days, Some(days), "{goal}");
         }
         // 준비 left is still the checklist.
-        assert!(matches!(
-            steps("남은 준비 뭐야", ON_SCREEN)[..],
-            [ToolCall::GetPreparation(_)]
-        ));
+        for goal in ["남은 준비 뭐야", "일주일 남았는데 준비 뭐 남았어?"] {
+            assert!(
+                matches!(steps(goal, ON_SCREEN)[..], [ToolCall::GetPreparation(_)]),
+                "{goal}: {:?}",
+                steps(goal, ON_SCREEN)
+            );
+        }
+        // A named programme keeps its name in the period search.
+        let [ToolCall::SearchBenefits(args)] = &steps("청년도약계좌 이번 달 마감이야?", NONE)[..]
+        else {
+            panic!("{:?}", steps("청년도약계좌 이번 달 마감이야?", NONE))
+        };
+        assert_eq!(args.keywords, ["청년도약계좌"]);
+        assert!(args.deadline_within_days.is_some());
         let saved = ProgramArgs {
             program: ProgramRef::Saved,
         };
@@ -4735,6 +4751,11 @@ mod tests {
             decide("이거 면접 봐?", ON_SCREEN),
             Decision::Plan { ref plan, .. }
                 if plan.steps.iter().any(|s| matches!(s, ToolCall::SearchBenefits(_)))
+        ));
+        // A field named with "이" is still a field search.
+        assert!(matches!(
+            steps("이 분야 장학금 더 있어?", ON_SCREEN)[..],
+            [ToolCall::SearchBenefits(_)]
         ));
     }
 
