@@ -584,7 +584,8 @@ def eval_goals(paths):
 def build(root, external, prompt_goals, out):
     fx = root + "/crates/api/tests/fixtures/"
     evals = {n: eval_goals([fx + n]) for n in ["agent_goals.json", "agent_goals_holdout.json",
-             "agent_goals_holdout_v2.json", "agent_goals_holdout_v3.json", "assistant_topic_eval.json",
+             "agent_goals_holdout_v2.json", "agent_goals_holdout_v3.json", "agent_goals_holdout_v4.json",
+             "assistant_topic_eval.json",
              "agent_guard_corpus.json", "assistant_intents.json", "assistant_intents_holdout.json",
              "assistant_intents_regression.json", "grounded_qa_draft.json", "agent_card_requests.json"]}
     for name in ("fast_intent_dev.json", "topic_dev.json", "fraud_dev.json"):

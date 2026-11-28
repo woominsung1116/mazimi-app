@@ -3,7 +3,7 @@
 //! provider. Only the planner is measured; tools are not executed and no
 //! database is touched.
 //!
-//! Four splits:
+//! Five splits:
 //! - `dev` (`agent_goals.json`): the set the fast path and the prompt were
 //!   tuned on. Its numbers are a regression floor, not a quality claim.
 //! - `holdout` (`agent_goals_holdout.json`, holdout v1): written by a
@@ -15,14 +15,20 @@
 //! - `holdout_v3` (`agent_goals_holdout_v3.json`): written after the
 //!   planner tuning on v2, without reading the planner, guard, prompts or
 //!   any earlier set; label-reviewed by a second agent. Disjoint from the
-//!   other splits by goal hash. This is the gate for the next planner.
+//!   other splits by goal hash. A dev set since the v4 baseline
+//!   (2026-11-27), when its per-goal results were read.
+//! - `holdout_v4` (`agent_goals_holdout_v4.json`): goals written by an
+//!   agent with no access to code, rules, prompts or earlier sets, labelled
+//!   from `docs/validation/agent/label-conventions.md`. Disjoint from every
+//!   other split by goal hash; run with `--saved 3`. This is the gate.
 //!
 //! Leakage: holdout v1's per-goal results on the Oracle host were read to
 //! diagnose the routing guard (`guard.rs`), and holdout v2's to build
 //! planner v3 (`args.rs`, the fast-path precision rules, the model-step
-//! alignment in `planner.rs`). Both are dev sets now: their numbers are
-//! regression floors, not quality claims. The gate is a newer holdout
-//! written without seeing either.
+//! alignment in `planner.rs`), and holdout v3's to split the failures after
+//! the v4 baseline. All three are dev sets now: their numbers are
+//! regression floors, not quality claims. The gate is holdout v4, written
+//! without seeing any of them.
 //!
 //! The model path is [`planner::plan`], the same call production makes.
 //! With an intent classifier ([`evaluate_with`]), pipeline mode routes as
@@ -47,6 +53,8 @@ pub const HOLDOUT_V2_FIXTURE: &str =
     include_str!("../../tests/fixtures/agent_goals_holdout_v2.json");
 pub const HOLDOUT_V3_FIXTURE: &str =
     include_str!("../../tests/fixtures/agent_goals_holdout_v3.json");
+pub const HOLDOUT_V4_FIXTURE: &str =
+    include_str!("../../tests/fixtures/agent_goals_holdout_v4.json");
 
 #[derive(Debug, Clone, Deserialize, Serialize, PartialEq)]
 #[serde(rename_all = "snake_case")]
@@ -93,6 +101,7 @@ pub enum Split {
     Holdout,
     HoldoutV2,
     HoldoutV3,
+    HoldoutV4,
 }
 
 pub fn fixture() -> Fixture {
@@ -105,6 +114,7 @@ pub fn split_fixture(split: Split) -> Fixture {
         Split::Holdout => HOLDOUT_FIXTURE,
         Split::HoldoutV2 => HOLDOUT_V2_FIXTURE,
         Split::HoldoutV3 => HOLDOUT_V3_FIXTURE,
+        Split::HoldoutV4 => HOLDOUT_V4_FIXTURE,
     })
     .expect("checked-in agent goal fixture")
 }
@@ -296,6 +306,9 @@ struct Tally {
     args_ok: usize,
     refusal_cases: usize,
     refusal_ok: usize,
+    served_ok: usize,
+    extra_reads: usize,
+    reachable_ok: usize,
 }
 
 impl Tally {
@@ -309,6 +322,10 @@ impl Tally {
             "arg_exact_match": rate(self.args_ok, self.plan_cases),
             "refusal_cases": self.refusal_cases,
             "refusal_accuracy": rate(self.refusal_ok, self.refusal_cases),
+            "served_accuracy": rate(self.served_ok, self.plan_cases),
+            "served_extra_reads": self.extra_reads,
+            "writes_reachable": rate(self.reachable_ok, self.write_cases),
+            "write_dead_ends": self.write_cases - self.reachable_ok,
         })
     }
 }
@@ -454,6 +471,19 @@ pub async fn evaluate_with(
                         Some(decision)
                     } else {
                         match routed {
+                            // As `run::route_decision`: a compound goal is
+                            // the model's when one plans.
+                            Ok(Routed::Answered {
+                                outcome,
+                                label,
+                                confidence,
+                            }) if provider.is_some()
+                                && super::run::defers_compound(&goal, &outcome) =>
+                            {
+                                classifier_deferred += 1;
+                                classifier_row = json!({"label": label, "confidence": confidence, "us": us, "answered": false, "compound": true});
+                                Some(Decision::Unrecognized)
+                            }
                             Ok(Routed::Answered {
                                 outcome,
                                 label,
@@ -665,6 +695,44 @@ pub async fn evaluate_with(
         };
         let card_writes = cards.as_ref().map(writes_of).unwrap_or_default();
         let card_match = expected_writes == card_writes;
+        // What the run serves (the expanded plan): the cards, and every read
+        // the label expects among the steps run. Reads the server adds (the
+        // eligibility of searched rows, the vault match) are counted apart,
+        // not as misses.
+        let reads_of = |plan: &Plan| {
+            let mut names: Vec<&str> = plan
+                .steps
+                .iter()
+                .filter(|s| !s.name().is_write())
+                .map(|s| s.name().as_str())
+                .collect();
+            names.sort_unstable();
+            names
+        };
+        let (served, extra_reads) = match (&case.expect, &cards) {
+            (Expect::Plan(expected), Some(run)) => {
+                let mut left = reads_of(run);
+                let covered = reads_of(expected).into_iter().all(|read| {
+                    left.iter()
+                        .position(|r| *r == read)
+                        .map(|i| left.remove(i))
+                        .is_some()
+                });
+                (card_match && covered, !left.is_empty())
+            }
+            _ => (false, false),
+        };
+        // A write the cards missed may still be one tap away: the answer's
+        // buttons ([`answer_buttons`]).
+        let buttons = answer_buttons(&produced, cards.as_ref(), &goal, case.context);
+        let reachable = expected_writes.iter().all(|write| {
+            card_writes.contains(write)
+                || buttons.iter().any(|b| {
+                    b == write
+                        || b.strip_suffix(":*")
+                            .is_some_and(|tool| write.split(':').next() == Some(tool))
+                })
+        });
         unasked_cards += usize::from(expected_writes.is_empty() && !card_writes.is_empty());
         fast_path_exact += usize::from(source == "fast_path" && exact);
         false_refusals += usize::from(
@@ -678,9 +746,12 @@ pub async fn evaluate_with(
             if matches!(case.expect, Expect::Plan(_)) {
                 tally.plan_cases += 1;
                 tally.tool_ok += usize::from(tools_match);
+                tally.served_ok += usize::from(served);
+                tally.extra_reads += usize::from(extra_reads);
                 if !expected_writes.is_empty() {
                     tally.write_cases += 1;
                     tally.card_ok += usize::from(card_match);
+                    tally.reachable_ok += usize::from(reachable);
                 }
                 tally.args_ok += usize::from(exact);
             } else {
@@ -702,6 +773,8 @@ pub async fn evaluate_with(
             "first_error": first_error.map(|e| e.to_string()),
             "replies": replies,
             "tools_match": tools_match, "card_match": card_match,
+            "served": served, "extra_reads": extra_reads, "reachable": reachable,
+            "buttons": buttons,
             "executed": cards.as_ref().map(signature),
             "exact": exact, "latency_ms": ms,
             "classifier": classifier_row,
@@ -772,6 +845,95 @@ pub async fn evaluate_with(
         report.extend(fields);
     }
     report
+}
+
+/// The writes the answer's buttons lead to, from [`super::compose`], as
+/// `tool:direction` keys; `tool:*` for a screen where the user picks the
+/// value (status, checklist). No tool runs here: each step of the run on the
+/// programme on screen stands in as an empty result for it (the answer's
+/// routes need the programme among the run's results), and its state is
+/// unknown (both directions offered).
+fn answer_buttons(
+    produced: &Produced,
+    run: Option<&Plan>,
+    goal: &str,
+    context: GoalContext,
+) -> Vec<String> {
+    use super::answer::{PROGRAM_ALERT_GOAL, SELECTED_ALERT_GOAL};
+    use super::compose::{self, ProgramFacts, ProgramState};
+    use super::{StepStatus, ToolResult};
+    let screen = uuid::Uuid::nil();
+    let state = context.has_program.then_some(ProgramState {
+        id: screen,
+        alert: None,
+        saved: None,
+        facts: ProgramFacts::ANY,
+    });
+    let results: Vec<ToolResult> = run
+        .into_iter()
+        .flat_map(|plan| plan.steps.iter())
+        .filter(|s| {
+            context.has_program && s.program() == Some(mazimi_core::agent::ProgramRef::Context)
+        })
+        .enumerate()
+        .map(|(seq, step)| {
+            let write = step.name().is_write();
+            ToolResult {
+                seq: seq as i32,
+                tool: step.name(),
+                permission: step.name().permission(),
+                program_id: Some(screen),
+                ok: !write,
+                status: if write {
+                    StepStatus::AwaitingConfirmation
+                } else {
+                    StepStatus::Ok
+                },
+                data: json!({}),
+                evidence: Vec::new(),
+                error: None,
+                executed_at: chrono::Utc::now(),
+            }
+        })
+        .collect();
+    let message = match produced {
+        Produced::Plan(_) => compose::compose_for(&results, &[], context, goal, state),
+        Produced::NoPlan => compose::fallback(context, state, goal, ""),
+        _ => return Vec::new(),
+    };
+    let on = [
+        PROGRAM_ALERT_GOAL,
+        SELECTED_ALERT_GOAL,
+        compose::SAVED_ALERTS_ON_GOAL,
+    ];
+    let off = [
+        compose::PROGRAM_ALERT_OFF_GOAL,
+        compose::SAVED_ALERTS_OFF_GOAL,
+    ];
+    let fixed = [
+        (compose::SAVE_GOAL, "bookmark:true"),
+        (compose::UNSAVE_GOAL, "bookmark:false"),
+        (compose::FORM_GOAL, "open_form_fill"),
+        (compose::CALENDAR_GOAL, "add_to_calendar"),
+        (compose::OFFICIAL_GOAL, "open_official_application"),
+        (compose::APPLIED_GOAL, "record_application_status:Applied"),
+    ];
+    message
+        .suggested_actions
+        .iter()
+        .filter_map(|a| {
+            let goal = a.payload["goal"].as_str().unwrap_or("");
+            let key = match (a.kind.as_str(), a.payload["focus"].as_str()) {
+                ("edit_profile", _) => "profile_patch",
+                ("prepare_application", Some("status")) => "record_application_status:*",
+                ("prepare_application", Some("checklist")) => "toggle_checklist_item:*",
+                _ if on.contains(&goal) => "set_alert:true",
+                _ if off.contains(&goal) => "set_alert:false",
+                _ => fixed.iter().find(|(g, _)| *g == goal)?.1,
+            };
+            Some(key.to_owned())
+        })
+        .collect()
 }
 
 /// Replays the fixture's expected plans: a harness check for CI, not a
@@ -1163,6 +1325,121 @@ mod tests {
         assert_eq!(report["cases"], v3.cases.len());
     }
 
+    /// Holdout v4 is frozen, written blind (no code, rules, prompts or
+    /// earlier sets), disjoint by goal hash from every earlier split and the
+    /// prompt examples, covers every tool a model may plan, and has at least
+    /// 20 goals in each class v3 was too thin to read (deadlines,
+    /// preparation, injection, multi).
+    #[test]
+    fn holdout_v4_is_frozen_independent_and_disjoint() {
+        use sha2::{Digest, Sha256};
+        assert_eq!(
+            format!("{:x}", Sha256::digest(HOLDOUT_V4_FIXTURE.as_bytes())),
+            "4f62e39f095c53d05b31a3c8b1349cf80ee0f12a00699cd20bf369946596ce18"
+        );
+        let v4 = split_fixture(Split::HoldoutV4);
+        assert_eq!(v4.split.as_deref(), Some("holdout_v4"));
+        assert!(v4.frozen && v4.created_at.is_some());
+        assert!(v4.labeler.contains("independent-agent v4"));
+        assert!(v4.cases.len() >= 140, "{}", v4.cases.len());
+        check_fixture(&v4);
+
+        let earlier: Vec<Case> = [
+            Split::Dev,
+            Split::Holdout,
+            Split::HoldoutV2,
+            Split::HoldoutV3,
+        ]
+        .into_iter()
+        .flat_map(|s| split_fixture(s).cases)
+        .chain(plan_examples(&Tool::V3).into_iter().map(|e| Case {
+            id: "prompt-example".into(),
+            goal: e.0.to_owned(),
+            context: GoalContext::default(),
+            category: String::new(),
+            expect: Expect::NoPlan,
+        }))
+        .collect();
+        let earlier = goal_hashes(&earlier);
+        let leaked: Vec<&str> = v4
+            .cases
+            .iter()
+            .filter(|c| !goal_hashes(std::slice::from_ref(c)).is_disjoint(&earlier))
+            .map(|c| c.id.as_str())
+            .collect();
+        assert!(
+            leaked.is_empty(),
+            "v4 goals in an earlier split or the prompt: {leaked:?}"
+        );
+
+        let tools: HashSet<ToolName> = v4
+            .cases
+            .iter()
+            .filter_map(|c| match &c.expect {
+                Expect::Plan(plan) => Some(plan.steps.iter().map(|s| s.name())),
+                _ => None,
+            })
+            .flatten()
+            .collect();
+        for tool in ToolName::model_tools() {
+            assert!(tools.contains(&tool), "no v4 case for {}", tool.as_str());
+        }
+        for category in ["deadlines", "preparation", "injection", "multi"] {
+            let n = v4.cases.iter().filter(|c| c.category == category).count();
+            assert!(n >= 20, "{category}: {n}");
+        }
+    }
+
+    /// A run about the programme on screen leaves every write type a button
+    /// away (round 12); a catalogue search offers no programme write.
+    #[test]
+    fn answer_buttons_reach_the_programme_writes_on_screen() {
+        use mazimi_core::agent::{ProgramArgs, ProgramRef, SearchArgs};
+        let on = GoalContext {
+            has_program: true,
+            ..GoalContext::default()
+        };
+        let run = Plan::new(vec![ToolCall::GetPreparation(ProgramArgs {
+            program: ProgramRef::Context,
+        })]);
+        let buttons = answer_buttons(
+            &Produced::Plan(run.clone()),
+            Some(&run),
+            "남은 준비 뭐야",
+            on,
+        );
+        for key in [
+            "set_alert:true",
+            "set_alert:false",
+            "bookmark:true",
+            "bookmark:false",
+            "record_application_status:*",
+            "toggle_checklist_item:*",
+            "profile_patch",
+        ] {
+            assert!(buttons.iter().any(|b| b == key), "{key}: {buttons:?}");
+        }
+        let search = Plan::new(vec![ToolCall::SearchBenefits(SearchArgs::default())]);
+        let buttons = answer_buttons(
+            &Produced::Plan(search.clone()),
+            Some(&search),
+            "장학금 찾아줘",
+            GoalContext::default(),
+        );
+        assert!(
+            !buttons.iter().any(|b| b.starts_with("bookmark")),
+            "{buttons:?}"
+        );
+    }
+
+    #[tokio::test]
+    async fn holdout_v4_rules_only_proposes_confirmed_writes() {
+        let v4 = split_fixture(Split::HoldoutV4);
+        let report = evaluate(&v4, None, Mode::Pipeline, Duration::from_secs(1), 1000).await;
+        assert_eq!(report["writes_without_confirmation"], 0);
+        assert_eq!(report["cases"], v4.cases.len());
+    }
+
     #[tokio::test]
     async fn holdout_v2_rules_only_proposes_confirmed_writes() {
         let v2 = split_fixture(Split::HoldoutV2);
@@ -1179,21 +1456,13 @@ mod tests {
     /// about organizing it.
     /// 2026-10-26 (round 12, one card gate for every write): a 준비 journey
     /// labelled with an unasked `set_alert` placeholder plans the read-only
-    /// journey; the alert is the answer's button, not a card.
+    /// journey; the alert is the answer's button, not a card. The dev rows of
+    /// this shape carry the new label (2026-11-26); holdout v1 is frozen.
     const SUPERSEDED: &[&str] = &[
         "dev2-deadline-2",
         "dev2-deadline-3",
         "ho-012",
-        "prepare-1",
-        "prepare-2",
-        "prepare-3",
-        "dev2-prepare-1",
-        "dev2-prepare-2",
-        "dev3-journey-1",
         "ho-024",
-        "dev2-alerts-3",
-        "dev2-bookmark-1",
-        "dev2-bookmark-2",
         "ho-028",
         "ho-029",
         "ho-034",
@@ -1202,20 +1471,7 @@ mod tests {
     /// model plans, with no model, only the writes the goal asks for; each
     /// is one of its label's steps (the reads are the answer's buttons).
     const R0_WRITES_ONLY: &[&str] = &["ho-028", "ho-029", "ho-034"];
-    /// 2026-10-26 (round 12): a bare noun command with no request ending
-    /// ("이거 저장", "찜 해제", "알림 그만") is no card; the answer's state-aware
-    /// button is the way to that write.
-    const NO_CARD_WITHOUT_ENDING: &[&str] =
-        &["dev2-alerts-3", "dev2-bookmark-1", "dev2-bookmark-2"];
-    const JOURNEY_WITHOUT_ALERT: &[&str] = &[
-        "prepare-1",
-        "prepare-2",
-        "prepare-3",
-        "dev2-prepare-1",
-        "dev2-prepare-2",
-        "dev3-journey-1",
-        "ho-024",
-    ];
+    const JOURNEY_WITHOUT_ALERT: &[&str] = &["ho-024"];
 
     fn pinned_to_a_closing_soon_search(rows: &[Value]) {
         for id in JOURNEY_WITHOUT_ALERT {
@@ -1227,24 +1483,10 @@ mod tests {
                 assert_eq!(tools, ["check_eligibility", "get_preparation"], "{id}: {r}");
             }
         }
-        for id in NO_CARD_WITHOUT_ENDING {
-            if let Some(r) = rows.iter().find(|r| r["id"] == *id) {
-                let writes = r["plan"]["steps"]
-                    .as_array()
-                    .into_iter()
-                    .flatten()
-                    .filter(|t| {
-                        ["set_alert", "bookmark"].contains(&t["tool"].as_str().unwrap_or(""))
-                    })
-                    .count();
-                assert_eq!(writes, 0, "{id}: {r}");
-            }
-        }
-        for id in SUPERSEDED.iter().filter(|id| {
-            !JOURNEY_WITHOUT_ALERT.contains(id)
-                && !NO_CARD_WITHOUT_ENDING.contains(id)
-                && !R0_WRITES_ONLY.contains(id)
-        }) {
+        for id in SUPERSEDED
+            .iter()
+            .filter(|id| !JOURNEY_WITHOUT_ALERT.contains(id) && !R0_WRITES_ONLY.contains(id))
+        {
             if let Some(r) = rows.iter().find(|r| r["id"] == *id) {
                 let steps = r["plan"]["steps"].as_array().cloned().unwrap_or_default();
                 assert_eq!(steps.len(), 1, "{id}: {r}");
@@ -1387,6 +1629,7 @@ mod tests {
             Split::Holdout,
             Split::HoldoutV2,
             Split::HoldoutV3,
+            Split::HoldoutV4,
         ] {
             let fixture = split_fixture(split);
             let echo = EchoPlanner::new(&fixture);
@@ -1441,7 +1684,7 @@ mod tests {
                 .map(|r| &r["id"])
                 .collect();
             assert!(
-                split == Split::HoldoutV3 || wrong_tools.is_empty(),
+                matches!(split, Split::HoldoutV3 | Split::HoldoutV4) || wrong_tools.is_empty(),
                 "{split:?}: echo replays the labels' tools: {wrong_tools:?}"
             );
             if split == Split::Dev {
@@ -1460,7 +1703,10 @@ mod tests {
             assert_eq!(report["invalid_json_rate"], 0.0);
             assert_eq!(report["repairs"], 0);
             assert_eq!(report["writes_without_confirmation"], 0);
-            assert_eq!(report["false_refusals"], 0);
+            // A refusal of a labelled plan on the gate set is a gate result.
+            if split != Split::HoldoutV4 {
+                assert_eq!(report["false_refusals"], 0);
+            }
         }
         let fixture = fixture();
         let report = evaluate(

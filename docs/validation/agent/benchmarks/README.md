@@ -34,7 +34,7 @@ Rules-only on the current guard (round 2, local, no model): holdout v2 refusal 0
 
 Leakage: these per-goal results were read to build planner v3 (`agent/args.rs`, fast-path precision, model-step alignment, prompt `agent-plan-v3`). From then on holdout v2 is a dev set too; its numbers are a regression floor. The gate is holdout v3, written without seeing v2's results or planner v3. Local before/after numbers are in `docs/mazimi-ai-agent.md` §11.
 
-## oracle-20261118-planner-q17-v2-holdout-v3 (gate, production planner)
+## oracle-20261118-planner-q17-v2-holdout-v3 (production planner)
 
 128 holdout v3 goals (the gate set). Model: the production fine-tuned planner `mazimi-planner-q17-v2` (digest `8a7e88aaa0c6`), served by the running `mazimi-planner-1` container (Ollama 0.40.3, cpuset 2,3). `agent-eval` built from commit `75a7d29` and run in the `mazimi-api` image on the `mazimi_planner` network (cpuset 0,1): `--planner-prompt tuned --num-thread 2 --timeout-seconds 12`, pipeline with `--classifier` (classifier `e5s-char-jamo-lr-v3`, threshold 0.7). Not `scripts/ai/benchmark-agent.sh`: that script starts its own Ollama for qwen3.5 models.
 
@@ -45,7 +45,7 @@ Leakage: these per-goal results were read to build planner v3 (`agent/args.rs`, 
 
 Gates: arg exact (>= 0.80), invalid JSON, writes without confirmation and p95 latency (<= 12 s) pass. Tool accuracy (>= 0.90) and refusal accuracy (>= 0.95) fail. The injection write is a skip-confirmation goal planned as a confirmation card (routing v4 decision), so `injection_writes_non_bypass` is 0. Weakest categories: deadlines (pipeline tool 0.43), injection refusal 0.75, multi 0.75.
 
-The per-goal texts were not read, so holdout v3 stays a gate set.
+The per-goal results were opened after the holdout v4 baseline (2026-11-27 section below), so holdout v3 is a dev set.
 
 These numbers score the planner's output, not the run. `agent-eval` then loaded no understanding model, while production loads it by default and lets the intent layer replace the planner's writes with its own cards, so the run's cards were not measured. See the next section.
 
@@ -79,4 +79,42 @@ Tried and not kept (chosen on the dev sets and the probe, not on holdout v3):
 - Value bars scaled 0.75 to 0.25: no wrong-direction card on the dev sets, but only one more card each on holdout v1 and v2 and no change on the probe.
 - Alert and save with no allowed target sent to the programme on screen: one more card on dev and on the probe, and one more probe row with an unasked card (35).
 
-Leakage: holdout v3 aggregates were read for several variants (per category, per route, miss counts by write type and act, and the category and tool of unasked cards). No per-goal text was read and no variant was chosen on v3, so it stays the gate set.
+Leakage: holdout v3 aggregates were read for several variants (per category, per route, miss counts by write type and act, and the category and tool of unasked cards). No per-goal text was read and no variant was chosen on v3 in these runs.
+
+## 2026-11-26 dev card accuracy after the journey relabel (no model calls, local WSL)
+
+Six dev 준비 journey rows (prepare-1, prepare-2, prepare-3, dev2-prepare-1, dev2-prepare-2, dev3-journey-1) were relabelled to check_eligibility + get_preparation: since round 12 the journey's alert is the answer's button, not a card. They now ask for no write, so dev has 44 write goals instead of 50. Same conditions as the 11-20 mock table (`--provider mock --saved 3`, same artefacts); the understanding-only column was run with `intent.rs` from before `agree_with_rules`. Holdout v1 and v2 reproduce the 11-20 numbers; holdout v1 keeps its frozen `ho-024` label.
+
+| set | lexical rules | understanding model | + rule agreement | unasked cards (lexical / understanding) |
+|---|---|---|---|---|
+| dev | 0.89 | 0.77 | 0.95 | 0 / 1 |
+
+The relabelled rows were misses in every condition, so only the denominator changed (39, 34 and 42 hits). The unasked card is `open_official_application` on `dev4-official-1`, a check-the-official-page goal, and appears only with the understanding model. With and without `--classifier` the card numbers are the same.
+
+## oracle-20261127-planner-q17-v2-holdout-v4 (gate, production configuration)
+
+148 holdout v4 goals (`agent_goals_holdout_v4.json`, frozen 2026-11-27). Goals written by an agent with no access to code, rules, prompts or earlier sets; labelled from `docs/validation/agent/label-conventions.md`. Code: `agent-eval` built from main `558ece9` on the host (rust:1.94.0-slim-bookworm), run in the `mazimi-api` image on the `mazimi_planner` network (cpuset 0,1) with the running API's `ASSISTANT_*` flags. Model: `mazimi-planner-q17-v2` (digest `8a7e88aaa0c6`) in `mazimi-planner-1`, `--planner-prompt tuned --num-thread 2 --timeout-seconds 12`. Both runs load the understanding model `e5s-char-jamo-understand-v4` and use `--saved 3`; the pipeline adds the classifier `e5s-char-jamo-lr-v3` (threshold 0.7). The running API image was built on 2026-11-12, before the rule agreement, so this measures main with production flags and artefacts, not the binary users get.
+
+| mode | tool acc | arg exact | card acc | unasked cards | refusal acc | false refusals | fast-path acc | invalid JSON | writes w/o confirm | injection writes | model p50 / p95 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| pipeline (82 fast path, 20 classifier, 46 model) | 0.586 | 0.431 | 0.370 | 1 | 0.813 | 0 | 0.512 | 0 | 0 | 0 | 2.4 s / 3.7 s |
+| model-only | 0.466 | 0.414 | 0.370 | 2 | 0.813 | 13 | – | 0 | 0 | 0 | 2.2 s / 3.5 s |
+| ceiling: `--provider mock --mode model-only` (local WSL, same artefacts) | 0.888 | 0.759 | 0.370 | 2 | 1.0 | 4 | – | 0 | 0 | 0 | – |
+
+Gates: invalid JSON, writes without confirmation, injection writes and p95 latency pass. Tool accuracy (>= 0.90), arg exact (>= 0.80) and refusal accuracy (>= 0.95) fail. By route (pipeline): fast path tool 0.72 and cards 0.71, classifier tool 0.39 and cards 0.20, model tool 0.44 and cards 0.27. Weakest categories (pipeline tool): multi 0.30, injection 0.33, deadlines 0.45, preparation 0.61, eligibility 0.67.
+
+Reading: the mock row hands each label back as the planner's reply, so it is the most the rest of the server lets through. The intent layer decides the cards whatever the planner says (0.370 in all three rows, against 0.95 on dev with the same mock), and guard refusals and server rewrites of labelled plans cap tool accuracy at 0.888. The real planner reaches about half of that ceiling in model-only. On holdout v3 the same planner scored 0.889 tool; v3 was labelled from the tool catalog the system was built around, v4 from the label conventions by a blind author.
+
+Leakage: the label-echo planner test and the mock rows (one model-only run while registering the set, one for the ceiling above) showed aggregates of how the server treats the labels themselves: 4 labelled plans refused by the guard and three lines of the tool confusion table (a `set_alert+bookmark` label, two lone checklist labels, and a two-checklist label merged into one checklist step). For the server runs, the summary, route, category and tool confusion aggregates were read. No per-goal result was read and no label was changed after any of them, except the `answer_from_notice` question of v4-061, which the plan parser rejected for a pasted URL before the set was frozen; it and v4-064, the other notice question under pasted text, carry the user's own last line, as the conventions say. holdout v4 stays the gate set.
+
+## 2026-11-27 holdout v3 opened as a dev set (no model calls, local WSL)
+
+After the holdout v4 baseline, the per-goal results of holdout v3 were read to split the failures by layer. Conditions: the 11-18 model-only replies replayed (`--provider replay`, reproduces tool 0.889, args 0.828, refusal 0.897), understanding model, classifier, `--saved 3`; the mock rows hand each label back as the planner's reply.
+
+| run | tool acc | arg exact | card acc | refusal acc |
+|---|---|---|---|---|
+| pipeline, 11-18 replies (production condition) | 0.899 | 0.838 | 0.676 | 0.897 |
+| pipeline, mock planner | 0.909 | 0.869 | 0.676 | 0.897 |
+| model-only, mock planner | 1.0 | 0.970 | 0.676 | 1.0 |
+
+Five labels conflict with later decisions (two confirmation-bypass goals and an own-profile change, which are cards now, and two deadline questions that name no saved list, which search under the label conventions); the three refusal misses are those three goals. The remaining failures are fast-path rules (5), classifier plans that drop a write of a multi-intent goal (2), and intent-layer card misses (11: multi-intent 5, colloquial endings 4, a request read as a question 1, English mixed in 1). The breakdown and the fix it led to (`cards::gate_plan`: a dropped on-screen write fell back to the saved deadline digest under the understanding model) are in `docs/mazimi-ai-agent.md` §11, leakage notice 3.

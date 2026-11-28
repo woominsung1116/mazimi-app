@@ -7,10 +7,9 @@
 //!       --allow-any-port --num-thread 3 --mode model-only --timeout-seconds 240
 //!   agent-eval --split holdout --mode pipeline --model qwen3.5:9b ...
 //!
-//! `--split dev` (default) is the tuning set; `--split holdout` (v1) and
-//! `--split holdout_v2` are frozen but dev sets now, since their per-goal
-//! results were used to build the routing guard and planner v3 (see
-//! `agent::eval`). `--split holdout_v3` is the gate.
+//! `--split dev` (default) is the tuning set; `--split holdout` (v1),
+//! `holdout_v2` and `holdout_v3` are frozen but dev sets now, since their
+//! per-goal results were read (see `agent::eval`). `--split holdout_v4` (with `--saved 3`) is the gate.
 //! `--mode pipeline` mirrors production routing
 //! (refusal rules and fast paths, then the model); `model-only` sends
 //! every goal to the model.
@@ -45,7 +44,7 @@ use std::time::{Duration, Instant};
 const USAGE: &str =
     "Usage: agent-eval [--provider rules|mock|ollama] [--mode pipeline|model-only] \
 [--model INSTALLED_MODEL] [--url http://ollama:11434] [--allow-any-port] [--num-thread 1..64] \
-[--timeout-seconds 1..300] [--limit N] [--split dev|holdout|holdout_v2|holdout_v3 | --fixture PATH] [--out PATH] \
+[--timeout-seconds 1..300] [--limit N] [--split dev|holdout|holdout_v2|holdout_v3|holdout_v4 | --fixture PATH] [--out PATH] \
 [--classifier] [--classifier-dir DIR] [--classifier-threads 1..16] [--classifier-threshold 0.5..0.99] \
 [--classifier-deferral-to-model] [--understanding] [--understanding-dir DIR] [--saved N] [--replies PATH] [--planner-prompt few-shot|tuned] [--classifier-sha256 HEX] [--classifier-first] [--classifier-refuse-threshold 0.5..1.0] [--model-refusals]";
 
@@ -122,7 +121,10 @@ async fn main() -> anyhow::Result<()> {
                     "holdout" => Split::Holdout,
                     "holdout_v2" | "holdout-v2" => Split::HoldoutV2,
                     "holdout_v3" | "holdout-v3" => Split::HoldoutV3,
-                    _ => anyhow::bail!("--split is dev, holdout, holdout_v2 or holdout_v3"),
+                    "holdout_v4" | "holdout-v4" => Split::HoldoutV4,
+                    _ => anyhow::bail!(
+                        "--split is dev, holdout, holdout_v2, holdout_v3 or holdout_v4"
+                    ),
                 }
             }
             "--out" => out = Some(value(&mut args, "--out")?),
@@ -325,12 +327,16 @@ async fn main() -> anyhow::Result<()> {
         None => println!("{text}"),
     }
     eprintln!(
-        "split={} mode={} understanding={} tool_name_accuracy={} card_accuracy={} unasked_cards={} arg_exact_match={} refusal_accuracy={} false_refusals={} fast_path_accuracy={} invalid_json_rate={} invalid_plan_rate={} first_attempt_invalid_rate={} repairs={} writes_without_confirmation={} injection_writes={} injection_writes_non_bypass={} by_source={} p50={}ms p95={}ms model_p50={}ms model_p95={}ms",
+        "split={} mode={} understanding={} tool_name_accuracy={} served_accuracy={} card_accuracy={} writes_reachable={} write_dead_ends={} served_extra_reads={} unasked_cards={} arg_exact_match={} refusal_accuracy={} false_refusals={} fast_path_accuracy={} invalid_json_rate={} invalid_plan_rate={} first_attempt_invalid_rate={} repairs={} writes_without_confirmation={} injection_writes={} injection_writes_non_bypass={} by_source={} p50={}ms p95={}ms model_p50={}ms model_p95={}ms",
         report["split"],
         report["mode"],
         use_understanding,
         report["tool_name_accuracy"],
+        report["served_accuracy"],
         report["card_accuracy"],
+        report["writes_reachable"],
+        report["write_dead_ends"],
+        report["served_extra_reads"],
         report["unasked_cards"],
         report["arg_exact_match"],
         report["refusal_accuracy"],
@@ -358,10 +364,12 @@ async fn main() -> anyhow::Result<()> {
     if let Some(sources) = report["by_source_accuracy"].as_object() {
         for (name, m) in sources {
             eprintln!(
-                "  source {name}: cases={} tool={} cards={} args={} refusal={}",
+                "  source {name}: cases={} tool={} served={} cards={} reachable={} args={} refusal={}",
                 m["cases"],
                 m["tool_name_accuracy"],
+                m["served_accuracy"],
                 m["card_accuracy"],
+                m["writes_reachable"],
                 m["arg_exact_match"],
                 m["refusal_accuracy"]
             );
@@ -370,10 +378,12 @@ async fn main() -> anyhow::Result<()> {
     if let Some(categories) = report["by_category"].as_object() {
         for (name, m) in categories {
             eprintln!(
-                "  category {name}: cases={} tool={} cards={} args={} refusal={}",
+                "  category {name}: cases={} tool={} served={} cards={} reachable={} args={} refusal={}",
                 m["cases"],
                 m["tool_name_accuracy"],
+                m["served_accuracy"],
                 m["card_accuracy"],
+                m["writes_reachable"],
                 m["arg_exact_match"],
                 m["refusal_accuracy"]
             );

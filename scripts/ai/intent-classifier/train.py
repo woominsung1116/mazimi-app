@@ -66,7 +66,8 @@ HERE = Path(__file__).resolve().parent
 FIX = ROOT / "crates/api/tests/fixtures"
 TRAIN = HERE / "data/train_v3.json"
 EVAL_FIXTURES = ["agent_goals.json", "agent_goals_holdout.json", "agent_goals_holdout_v2.json",
-                 "agent_goals_holdout_v3.json", "assistant_topic_eval.json", "agent_guard_corpus.json",
+                 "agent_goals_holdout_v3.json", "agent_goals_holdout_v4.json", "assistant_topic_eval.json",
+                 "agent_guard_corpus.json",
                  "agent_card_requests.json"]
 DEFAULT_EXCLUDE = ([HERE / "data/fast_intent_dev.json", HERE / "data/topic_dev.json", HERE / "data/fraud_dev.json"]
                    + [FIX / n for n in EVAL_FIXTURES])

@@ -1,5 +1,5 @@
 {
-"note": "Write-intent rows before augmentation. One row per goal; cands are the write candidates with act (none/request/mention/question/report/retract), value (alert on/off, save/unsave, checklist done/undo, status planning/applied/waiting/received/abandoned, na) and target (on_screen/saved/selected/none). Sources: act_rows (author rounds 11/13/14/15 and re-reviews 8-11, acts hand-labelled per candidate on feat/act-head), train_v3 (router rows; read rows have no candidate), act_test (re-reviews 12-13: dev only), au16 (new author rows at a realistic prior: dev 80% / internal test 20% by group). Values and targets were filled by labelling patterns once and corrected by hand where listed in build_data.py; they are labels, not runtime rules.",
+"note": "Write-intent rows before augmentation. One row per goal; cands are the write candidates with act (none/request/mention/question/report/retract), value (alert on/off, save/unsave, checklist done/undo, status planning/applied/waiting/received/abandoned, na) and target (on_screen/saved/selected/none). Sources: act_rows (author rounds 11/13/14/15 and re-reviews 8-11, acts hand-labelled per candidate on feat/act-head), train_v3 (router rows; read rows have no candidate), act_test (re-reviews 12-13: dev only), au16 (new author rows at a realistic prior: dev 80% / internal test 20% by group). Values and targets were filled by labelling patterns once and corrected by hand where listed in build_data.py; they are labels, not runtime rules. fresh2 (2026-11-27): hand-written train rows for the holdout v3 card misses (a write with a read, two writes, colloquial endings, a reason after the request, English words, the saved list as target), written without access to the evaluation sets.",
 "rows": [
 {
 "goal": "신청서는 벌써 써놨고 서류 준비 도와줘",
@@ -77573,6 +77573,4480 @@
 "group": "dev3:9",
 "root": "성적증명서 챙겼어 체크 부탁",
 "split": "dev"
+},
+{
+"goal": "이 장학금 알림 켜주고 필요한 서류도 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:1",
+"root": "이 장학금 알림 켜주고 필요한 서류도 알려줘",
+"split": "train"
+},
+{
+"goal": "마감 알림 설정해 주시고 제출 서류 뭐 있는지도 알려주세요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:1",
+"root": "마감 알림 설정해 주시고 제출 서류 뭐 있는지도 알려주세요",
+"split": "train"
+},
+{
+"goal": "서류 뭐 내야 되는지 확인하고 마감 알림 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:2",
+"root": "서류 뭐 내야 되는지 확인하고 마감 알림 켜줘",
+"split": "train"
+},
+{
+"goal": "필요서류 보여주고 알림까지 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:2",
+"root": "필요서류 보여주고 알림까지 켜줘",
+"split": "train"
+},
+{
+"goal": "어디서 신청하는지 확인하고 알림까지 걸어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:2",
+"root": "어디서 신청하는지 확인하고 알림까지 걸어줘",
+"split": "train"
+},
+{
+"goal": "자격 조건 알려주고 이거 저장해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:3",
+"root": "자격 조건 알려주고 이거 저장해줘",
+"split": "train"
+},
+{
+"goal": "이거 찜해두고 소득 기준 어떻게 되는지도 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:3",
+"root": "이거 찜해두고 소득 기준 어떻게 되는지도 알려줘",
+"split": "train"
+},
+{
+"goal": "등본 뗐어 다음엔 뭐 준비해야 돼?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:4",
+"root": "등본 뗐어 다음엔 뭐 준비해야 돼?",
+"split": "train"
+},
+{
+"goal": "주민등록등본 발급 완료! 남은 서류 뭐야",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:4",
+"root": "주민등록등본 발급 완료! 남은 서류 뭐야",
+"split": "train"
+},
+{
+"goal": "통장 사본 준비했어요 이제 뭐 남았는지 알려주세요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:4",
+"root": "통장 사본 준비했어요 이제 뭐 남았는지 알려주세요",
+"split": "train"
+},
+{
+"goal": "신청했어요 결과는 언제 나와요?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:5",
+"root": "신청했어요 결과는 언제 나와요?",
+"split": "train"
+},
+{
+"goal": "방금 신청 완료함 발표일 언제야",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:5",
+"root": "방금 신청 완료함 발표일 언제야",
+"split": "train"
+},
+{
+"goal": "마감일 알려주고 알림은 꺼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:6",
+"root": "마감일 알려주고 알림은 꺼줘",
+"split": "train"
+},
+{
+"goal": "알림 꺼주고 마감 지난 건지도 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:6",
+"root": "알림 꺼주고 마감 지난 건지도 알려줘",
+"split": "train"
+},
+{
+"goal": "체크리스트 보여주고 통장사본은 완료로 체크해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:7",
+"root": "체크리스트 보여주고 통장사본은 완료로 체크해줘",
+"split": "train"
+},
+{
+"goal": "준비물 목록 띄워줘 그리고 재학증명서 했다고 표시해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:7",
+"root": "준비물 목록 띄워줘 그리고 재학증명서 했다고 표시해줘",
+"split": "train"
+},
+{
+"goal": "얼마 주는지 알려주고 관심 목록에 넣어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:8",
+"root": "얼마 주는지 알려주고 관심 목록에 넣어줘",
+"split": "train"
+},
+{
+"goal": "지원금 액수 확인하고 저장까지 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:8",
+"root": "지원금 액수 확인하고 저장까지 해줘",
+"split": "train"
+},
+{
+"goal": "저장 해제해주고 비슷한 다른 장학금 찾아줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:9",
+"root": "저장 해제해주고 비슷한 다른 장학금 찾아줘",
+"split": "train"
+},
+{
+"goal": "이거 찜 취소하고 다른거 추천해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:9",
+"root": "이거 찜 취소하고 다른거 추천해줘",
+"split": "train"
+},
+{
+"goal": "신청 예정으로 바꿔주고 필요 서류 정리해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "planning",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:10",
+"root": "신청 예정으로 바꿔주고 필요 서류 정리해줘",
+"split": "train"
+},
+{
+"goal": "나 이거 할 거야 서류 뭐 필요해?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "planning",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:10",
+"root": "나 이거 할 거야 서류 뭐 필요해?",
+"split": "train"
+},
+{
+"goal": "결과 기다리는 중이야 보통 얼마나 걸려?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "waiting",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:11",
+"root": "결과 기다리는 중이야 보통 얼마나 걸려?",
+"split": "train"
+},
+{
+"goal": "떨어졌어ㅠㅠ 다른 거 뭐 있어?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "rejected",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:12",
+"root": "떨어졌어ㅠㅠ 다른 거 뭐 있어?",
+"split": "train"
+},
+{
+"goal": "불합격이래요.. 비슷한 지원사업 또 있나요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "rejected",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:12",
+"root": "불합격이래요.. 비슷한 지원사업 또 있나요",
+"split": "train"
+},
+{
+"goal": "캘린더에 마감일 넣어주고 몇 시까지인지도 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:13",
+"root": "캘린더에 마감일 넣어주고 몇 시까지인지도 알려줘",
+"split": "train"
+},
+{
+"goal": "제출 기한 확인해서 달력에 추가해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:13",
+"root": "제출 기한 확인해서 달력에 추가해줘",
+"split": "train"
+},
+{
+"goal": "신청 페이지 열어주고 준비할 거 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "page",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:14",
+"root": "신청 페이지 열어주고 준비할 거 알려줘",
+"split": "train"
+},
+{
+"goal": "뭐 필요한지 먼저 알려주고 신청서 작성 도우미 열어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "form",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:14",
+"root": "뭐 필요한지 먼저 알려주고 신청서 작성 도우미 열어줘",
+"split": "train"
+},
+{
+"goal": "가족관계증명서 체크 해제해주고 체크리스트 다시 보여줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "undo",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:15",
+"root": "가족관계증명서 체크 해제해주고 체크리스트 다시 보여줘",
+"split": "train"
+},
+{
+"goal": "소득분위 기준 뭐야? 나 해당되면 알림 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:16",
+"root": "소득분위 기준 뭐야? 나 해당되면 알림 켜줘",
+"split": "train"
+},
+{
+"goal": "지원 대상이 누군지 보고 알림 꺼줘 나 해당 안 될 듯",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:17",
+"root": "지원 대상이 누군지 보고 알림 꺼줘 나 해당 안 될 듯",
+"split": "train"
+},
+{
+"goal": "이거 저장해주고 언제까지 신청인지도 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:18",
+"root": "이거 저장해주고 언제까지 신청인지도 알려줘",
+"split": "train"
+},
+{
+"goal": "마감 언제까지인지 알려주고 찜까지 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:18",
+"root": "마감 언제까지인지 알려주고 찜까지 해줘",
+"split": "train"
+},
+{
+"goal": "성적증명서 냈어 나머지 서류 목록 보여줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:19",
+"root": "성적증명서 냈어 나머지 서류 목록 보여줘",
+"split": "train"
+},
+{
+"goal": "합격했어요! 상태 바꿔주시고 지급일 언제인지 알려주세요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "received",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:20",
+"root": "합격했어요! 상태 바꿔주시고 지급일 언제인지 알려주세요",
+"split": "train"
+},
+{
+"goal": "면접 대상자인지 확인해주고 결과 대기로 바꿔줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "waiting",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:21",
+"root": "면접 대상자인지 확인해주고 결과 대기로 바꿔줘",
+"split": "train"
+},
+{
+"goal": "나이 제한 있어? 그리고 알림도 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:22",
+"root": "나이 제한 있어? 그리고 알림도 켜줘",
+"split": "train"
+},
+{
+"goal": "이 지원사업 중복 수혜 되는지 알려주고 관심목록에 추가해",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:23",
+"root": "이 지원사업 중복 수혜 되는지 알려주고 관심목록에 추가해",
+"split": "train"
+},
+{
+"goal": "알림 켜져 있어? 그리고 서류 뭐 필요해",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:24",
+"root": "알림 켜져 있어? 그리고 서류 뭐 필요해",
+"split": "train"
+},
+{
+"goal": "마감 알림 설정돼 있나요? 자격 요건도 궁금해요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:24",
+"root": "마감 알림 설정돼 있나요? 자격 요건도 궁금해요",
+"split": "train"
+},
+{
+"goal": "저장하면 어디서 봐? 자격도 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:25",
+"root": "저장하면 어디서 봐? 자격도 알려줘",
+"split": "train"
+},
+{
+"goal": "아까 알림 켜달라고 했는데 마감이 언제였지?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:26",
+"root": "아까 알림 켜달라고 했는데 마감이 언제였지?",
+"split": "train"
+},
+{
+"goal": "체크리스트에 등본 체크한 거 맞지? 남은 거 뭐야",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:27",
+"root": "체크리스트에 등본 체크한 거 맞지? 남은 거 뭐야",
+"split": "train"
+},
+{
+"goal": "친구가 이거 신청했대 나도 자격 돼?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:28",
+"root": "친구가 이거 신청했대 나도 자격 돼?",
+"split": "train"
+},
+{
+"goal": "서류랑 마감일 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [],
+"source": "fresh2",
+"group": "fresh2:multi_read:29",
+"root": "서류랑 마감일 알려줘",
+"split": "train"
+},
+{
+"goal": "이거 지원 자격이랑 금액 정리해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [],
+"source": "fresh2",
+"group": "fresh2:multi_read:29",
+"root": "이거 지원 자격이랑 금액 정리해줘",
+"split": "train"
+},
+{
+"goal": "저장 말고 그냥 필요 서류만 알려줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:30",
+"root": "저장 말고 그냥 필요 서류만 알려줘",
+"split": "train"
+},
+{
+"goal": "신청 페이지 어디 있는지만 알려줘 열지는 말고",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "page",
+"value": "na",
+"target": "on_screen",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:multi_read:31",
+"root": "신청 페이지 어디 있는지만 알려줘 열지는 말고",
+"split": "train"
+},
+{
+"goal": "서류 다 냈고 신청도 끝났어",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+},
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:1",
+"root": "서류 다 냈고 신청도 끝났어",
+"split": "train"
+},
+{
+"goal": "등본이랑 통장사본 올렸고 지원 완료했어요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+},
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:1",
+"root": "등본이랑 통장사본 올렸고 지원 완료했어요",
+"split": "train"
+},
+{
+"goal": "서류 제출하고 신청까지 마쳤음",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+},
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:1",
+"root": "서류 제출하고 신청까지 마쳤음",
+"split": "train"
+},
+{
+"goal": "이거 저장하고 알림도 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:2",
+"root": "이거 저장하고 알림도 켜줘",
+"split": "train"
+},
+{
+"goal": "찜해놓고 마감 알림 설정해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:2",
+"root": "찜해놓고 마감 알림 설정해줘",
+"split": "train"
+},
+{
+"goal": "관심 목록에 넣고 알림 켜둬",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:2",
+"root": "관심 목록에 넣고 알림 켜둬",
+"split": "train"
+},
+{
+"goal": "알림 끄고 저장도 해제해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:3",
+"root": "알림 끄고 저장도 해제해줘",
+"split": "train"
+},
+{
+"goal": "이제 관심 없어 알림 꺼주고 찜 취소해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:3",
+"root": "이제 관심 없어 알림 꺼주고 찜 취소해줘",
+"split": "train"
+},
+{
+"goal": "알림 off하고 목록에서 빼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:3",
+"root": "알림 off하고 목록에서 빼줘",
+"split": "train"
+},
+{
+"goal": "신청 예정으로 바꾸고 캘린더에 마감일 넣어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "planning",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:4",
+"root": "신청 예정으로 바꾸고 캘린더에 마감일 넣어줘",
+"split": "train"
+},
+{
+"goal": "이거 지원할 거야 캘린더에 일정 추가해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "planning",
+"target": "on_screen",
+"act": "report"
+},
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:4",
+"root": "이거 지원할 거야 캘린더에 일정 추가해줘",
+"split": "train"
+},
+{
+"goal": "신청 완료로 바꾸고 알림은 꺼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:5",
+"root": "신청 완료로 바꾸고 알림은 꺼줘",
+"split": "train"
+},
+{
+"goal": "신청했어 이제 마감 알림 필요 없으니까 꺼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+},
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:5",
+"root": "신청했어 이제 마감 알림 필요 없으니까 꺼줘",
+"split": "train"
+},
+{
+"goal": "포기할래 알림도 끄고 저장도 지워줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "abandoned",
+"target": "on_screen",
+"act": "report"
+},
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:6",
+"root": "포기할래 알림도 끄고 저장도 지워줘",
+"split": "train"
+},
+{
+"goal": "합격했어!! 상태 바꿔주고 알림 꺼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "received",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:7",
+"root": "합격했어!! 상태 바꿔주고 알림 꺼줘",
+"split": "train"
+},
+{
+"goal": "재학증명서 체크하고 신청서 작성 화면 열어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "form",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:8",
+"root": "재학증명서 체크하고 신청서 작성 화면 열어줘",
+"split": "train"
+},
+{
+"goal": "신청 페이지 열어주고 상태는 신청 예정으로 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "page",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "status",
+"value": "planning",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:9",
+"root": "신청 페이지 열어주고 상태는 신청 예정으로 해줘",
+"split": "train"
+},
+{
+"goal": "캘린더에 넣어주고 알림도 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:10",
+"root": "캘린더에 넣어주고 알림도 켜줘",
+"split": "train"
+},
+{
+"goal": "마감일 달력에 등록하고 하루 전에 알림 오게 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:10",
+"root": "마감일 달력에 등록하고 하루 전에 알림 오게 해줘",
+"split": "train"
+},
+{
+"goal": "등본 체크해주고 저장도 해놔",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:11",
+"root": "등본 체크해주고 저장도 해놔",
+"split": "train"
+},
+{
+"goal": "떨어졌어 상태 바꾸고 관심목록에서도 빼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "rejected",
+"target": "on_screen",
+"act": "report"
+},
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:12",
+"root": "떨어졌어 상태 바꾸고 관심목록에서도 빼줘",
+"split": "train"
+},
+{
+"goal": "결과 기다리는 중으로 바꾸고 캘린더에 발표일 넣어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "waiting",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:13",
+"root": "결과 기다리는 중으로 바꾸고 캘린더에 발표일 넣어줘",
+"split": "train"
+},
+{
+"goal": "저장하고 알림 켜면 둘 다 어디서 확인해?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "question"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:14",
+"root": "저장하고 알림 켜면 둘 다 어디서 확인해?",
+"split": "train"
+},
+{
+"goal": "아까 저장이랑 알림 켜달라고 했잖아 그건 됐고 서류 보여줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "mention"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:15",
+"root": "아까 저장이랑 알림 켜달라고 했잖아 그건 됐고 서류 보여줘",
+"split": "train"
+},
+{
+"goal": "알림 끄고 저장 해제하려다가 그냥 둘게",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "retract"
+},
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:two_writes:16",
+"root": "알림 끄고 저장 해제하려다가 그냥 둘게",
+"split": "train"
+},
+{
+"goal": "알림 켜주셈",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:1",
+"root": "알림 켜주셈",
+"split": "train"
+},
+{
+"goal": "마감 알림 좀요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:1",
+"root": "마감 알림 좀요",
+"split": "train"
+},
+{
+"goal": "알림 켜놔",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:1",
+"root": "알림 켜놔",
+"split": "train"
+},
+{
+"goal": "알림 해조",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:1",
+"root": "알림 해조",
+"split": "train"
+},
+{
+"goal": "알림 다시 켜",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:1",
+"root": "알림 다시 켜",
+"split": "train"
+},
+{
+"goal": "이거 알림 꺼",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:2",
+"root": "이거 알림 꺼",
+"split": "train"
+},
+{
+"goal": "알림좀 꺼주라",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:2",
+"root": "알림좀 꺼주라",
+"split": "train"
+},
+{
+"goal": "찜 ㄱㄱ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:3",
+"root": "찜 ㄱㄱ",
+"split": "train"
+},
+{
+"goal": "이거 찜",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:3",
+"root": "이거 찜",
+"split": "train"
+},
+{
+"goal": "저장해둬",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:3",
+"root": "저장해둬",
+"split": "train"
+},
+{
+"goal": "관심목록에 넣어둘래?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:3",
+"root": "관심목록에 넣어둘래?",
+"split": "train"
+},
+{
+"goal": "저장ㄱ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:3",
+"root": "저장ㄱ",
+"split": "train"
+},
+{
+"goal": "저장 취소",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:4",
+"root": "저장 취소",
+"split": "train"
+},
+{
+"goal": "목록에서 이거 빼",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:4",
+"root": "목록에서 이거 빼",
+"split": "train"
+},
+{
+"goal": "캘린더에 넣어놓을래?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:5",
+"root": "캘린더에 넣어놓을래?",
+"split": "train"
+},
+{
+"goal": "체크리스트 등본 완료 체크해조",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:6",
+"root": "체크리스트 등본 완료 체크해조",
+"split": "train"
+},
+{
+"goal": "통장사본 뗌",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:6",
+"root": "통장사본 뗌",
+"split": "train"
+},
+{
+"goal": "재학증명서 아직 안 뗐어 체크 해제",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "undo",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:7",
+"root": "재학증명서 아직 안 뗐어 체크 해제",
+"split": "train"
+},
+{
+"goal": "신청페이지 열어주셈",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "page",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:8",
+"root": "신청페이지 열어주셈",
+"split": "train"
+},
+{
+"goal": "다음 주에 넣을 예정이야",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "planning",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:9",
+"root": "다음 주에 넣을 예정이야",
+"split": "train"
+},
+{
+"goal": "이번 주 안에 신청할 거임",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "planning",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:9",
+"root": "이번 주 안에 신청할 거임",
+"split": "train"
+},
+{
+"goal": "붙었다!! 합격으로 바꿔줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "received",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:10",
+"root": "붙었다!! 합격으로 바꿔줘",
+"split": "train"
+},
+{
+"goal": "합격함ㅋㅋ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "received",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:10",
+"root": "합격함ㅋㅋ",
+"split": "train"
+},
+{
+"goal": "결과 기다리는 중임",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "waiting",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:11",
+"root": "결과 기다리는 중임",
+"split": "train"
+},
+{
+"goal": "발표 대기중",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "waiting",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:11",
+"root": "발표 대기중",
+"split": "train"
+},
+{
+"goal": "이번 건 접을래",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "abandoned",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:12",
+"root": "이번 건 접을래",
+"split": "train"
+},
+{
+"goal": "이거 패스 포기함",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "abandoned",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:12",
+"root": "이거 패스 포기함",
+"split": "train"
+},
+{
+"goal": "떨어짐ㅠ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "rejected",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:13",
+"root": "떨어짐ㅠ",
+"split": "train"
+},
+{
+"goal": "불합격 처리해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "rejected",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:13",
+"root": "불합격 처리해줘",
+"split": "train"
+},
+{
+"goal": "넣었음",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:14",
+"root": "넣었음",
+"split": "train"
+},
+{
+"goal": "신청 완 ㅋㅋ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:14",
+"root": "신청 완 ㅋㅋ",
+"split": "train"
+},
+{
+"goal": "프로필에 학년 3학년으로 바꿔둬",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "profile",
+"value": "na",
+"target": "none",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:15",
+"root": "프로필에 학년 3학년으로 바꿔둬",
+"split": "train"
+},
+{
+"goal": "내 거주지 부산으로 수정해놓을래?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "profile",
+"value": "na",
+"target": "none",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:15",
+"root": "내 거주지 부산으로 수정해놓을래?",
+"split": "train"
+},
+{
+"goal": "마감알림 설정좀해줘요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:16",
+"root": "마감알림 설정좀해줘요",
+"split": "train"
+},
+{
+"goal": "일정 폰에 박아줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:17",
+"root": "일정 폰에 박아줘",
+"split": "train"
+},
+{
+"goal": "알림 켜놨나?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:18",
+"root": "알림 켜놨나?",
+"split": "train"
+},
+{
+"goal": "찜했었나",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:19",
+"root": "찜했었나",
+"split": "train"
+},
+{
+"goal": "저장 취소 어케 함?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:20",
+"root": "저장 취소 어케 함?",
+"split": "train"
+},
+{
+"goal": "아 됐어 저장 안 해도 돼",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:21",
+"root": "아 됐어 저장 안 해도 돼",
+"split": "train"
+},
+{
+"goal": "아니다 알림 켜지 마",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:22",
+"root": "아니다 알림 켜지 마",
+"split": "train"
+},
+{
+"goal": "알림 끄기 버튼 어딨음",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:23",
+"root": "알림 끄기 버튼 어딨음",
+"split": "train"
+},
+{
+"goal": "친구가 알림 꺼두래",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:24",
+"root": "친구가 알림 꺼두래",
+"split": "train"
+},
+{
+"goal": "신청했냐고 엄마가 물어봄",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:colloquial:25",
+"root": "신청했냐고 엄마가 물어봄",
+"split": "train"
+},
+{
+"goal": "알림 꺼줘 너무 자주 와",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:1",
+"root": "알림 꺼줘 너무 자주 와",
+"split": "train"
+},
+{
+"goal": "알림 좀 꺼주세요 하루에 몇 번씩 와서 귀찮아요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:1",
+"root": "알림 좀 꺼주세요 하루에 몇 번씩 와서 귀찮아요",
+"split": "train"
+},
+{
+"goal": "알림 꺼 줘 시끄러워",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:1",
+"root": "알림 꺼 줘 시끄러워",
+"split": "train"
+},
+{
+"goal": "저장해 둬 나중에 다시 볼래",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:2",
+"root": "저장해 둬 나중에 다시 볼래",
+"split": "train"
+},
+{
+"goal": "찜해줘 이따 엄마한테 보여주게",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:2",
+"root": "찜해줘 이따 엄마한테 보여주게",
+"split": "train"
+},
+{
+"goal": "저장해 줘요 마감 아직 많이 남았으니까 천천히 보게",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:2",
+"root": "저장해 줘요 마감 아직 많이 남았으니까 천천히 보게",
+"split": "train"
+},
+{
+"goal": "알림 켜줘 맨날 까먹어서",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:3",
+"root": "알림 켜줘 맨날 까먹어서",
+"split": "train"
+},
+{
+"goal": "마감 알림 설정해주세요 저번에도 놓쳤거든요ㅠ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:3",
+"root": "마감 알림 설정해주세요 저번에도 놓쳤거든요ㅠ",
+"split": "train"
+},
+{
+"goal": "알림 다시 켜줘 실수로 껐어",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:3",
+"root": "알림 다시 켜줘 실수로 껐어",
+"split": "train"
+},
+{
+"goal": "저장 취소해줘 조건 안 맞더라",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:4",
+"root": "저장 취소해줘 조건 안 맞더라",
+"split": "train"
+},
+{
+"goal": "관심목록에서 지워줘 나이 제한 걸림",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:4",
+"root": "관심목록에서 지워줘 나이 제한 걸림",
+"split": "train"
+},
+{
+"goal": "이거 찜 해제 좀 다른 거 할래",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:4",
+"root": "이거 찜 해제 좀 다른 거 할래",
+"split": "train"
+},
+{
+"goal": "캘린더에 넣어줘 폰 캘린더만 보거든",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:5",
+"root": "캘린더에 넣어줘 폰 캘린더만 보거든",
+"split": "train"
+},
+{
+"goal": "신청 완료로 바꿔줘 어제 냈거든",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:6",
+"root": "신청 완료로 바꿔줘 어제 냈거든",
+"split": "train"
+},
+{
+"goal": "포기로 바꿔줘 서류 준비가 너무 빡세",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "abandoned",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:7",
+"root": "포기로 바꿔줘 서류 준비가 너무 빡세",
+"split": "train"
+},
+{
+"goal": "결과 대기로 바꿔줘 서류 심사 중이래",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "waiting",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:8",
+"root": "결과 대기로 바꿔줘 서류 심사 중이래",
+"split": "train"
+},
+{
+"goal": "등본 체크해줘 아까 주민센터 다녀왔어",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:9",
+"root": "등본 체크해줘 아까 주민센터 다녀왔어",
+"split": "train"
+},
+{
+"goal": "신청 페이지 바로 열어줘 오늘 마감이라 급해",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "page",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:10",
+"root": "신청 페이지 바로 열어줘 오늘 마감이라 급해",
+"split": "train"
+},
+{
+"goal": "신청서 도우미 열어줘 혼자 쓰기 어려워",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "form",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:11",
+"root": "신청서 도우미 열어줘 혼자 쓰기 어려워",
+"split": "train"
+},
+{
+"goal": "프로필 소득분위 4분위로 바꿔줘 올해 바뀌었어",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "profile",
+"value": "na",
+"target": "none",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:12",
+"root": "프로필 소득분위 4분위로 바꿔줘 올해 바뀌었어",
+"split": "train"
+},
+{
+"goal": "알림 끄셈 이제 볼 일 없음",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:13",
+"root": "알림 끄셈 이제 볼 일 없음",
+"split": "train"
+},
+{
+"goal": "저장해줘 괜찮아 보여서",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:14",
+"root": "저장해줘 괜찮아 보여서",
+"split": "train"
+},
+{
+"goal": "알림이 너무 자주 오네",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "none"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:15",
+"root": "알림이 너무 자주 오네",
+"split": "train"
+},
+{
+"goal": "왜 이렇게 알림이 많이 와?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:16",
+"root": "왜 이렇게 알림이 많이 와?",
+"split": "train"
+},
+{
+"goal": "알림 켜놨는데도 까먹었어ㅠㅠ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:17",
+"root": "알림 켜놨는데도 까먹었어ㅠㅠ",
+"split": "train"
+},
+{
+"goal": "저장해 뒀는데 어디 갔지?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:18",
+"root": "저장해 뒀는데 어디 갔지?",
+"split": "train"
+},
+{
+"goal": "나중에 다시 볼 거라 저장해놨었어",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:19",
+"root": "나중에 다시 볼 거라 저장해놨었어",
+"split": "train"
+},
+{
+"goal": "알림 꺼져 있었나? 하나도 안 왔는데",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:20",
+"root": "알림 꺼져 있었나? 하나도 안 왔는데",
+"split": "train"
+},
+{
+"goal": "나는 알림 같은 거 맨날 까먹고 안 켜",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "none"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:21",
+"root": "나는 알림 같은 거 맨날 까먹고 안 켜",
+"split": "train"
+},
+{
+"goal": "저장 취소했는데 아직 목록에 있네",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:22",
+"root": "저장 취소했는데 아직 목록에 있네",
+"split": "train"
+},
+{
+"goal": "조건 안 맞아서 찜은 안 할래",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:24",
+"root": "조건 안 맞아서 찜은 안 할래",
+"split": "train"
+},
+{
+"goal": "알림 꺼달라고 했는데 아직도 와",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:reason_tail:25",
+"root": "알림 꺼달라고 했는데 아직도 와",
+"split": "train"
+},
+{
+"goal": "notification 다 꺼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:1",
+"root": "notification 다 꺼줘",
+"split": "train"
+},
+{
+"goal": "알림 turn off 해주세요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:1",
+"root": "알림 turn off 해주세요",
+"split": "train"
+},
+{
+"goal": "알림 mute 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:1",
+"root": "알림 mute 해줘",
+"split": "train"
+},
+{
+"goal": "remind 그만해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:1",
+"root": "remind 그만해줘",
+"split": "train"
+},
+{
+"goal": "push 알림 on",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:2",
+"root": "push 알림 on",
+"split": "train"
+},
+{
+"goal": "마감 remind 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:2",
+"root": "마감 remind 해줘",
+"split": "train"
+},
+{
+"goal": "알림 on 해놔",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:2",
+"root": "알림 on 해놔",
+"split": "train"
+},
+{
+"goal": "notification 켜주세요",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:2",
+"root": "notification 켜주세요",
+"split": "train"
+},
+{
+"goal": "deadline 알림 설정 plz",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:2",
+"root": "deadline 알림 설정 plz",
+"split": "train"
+},
+{
+"goal": "이거 save 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:3",
+"root": "이거 save 해줘",
+"split": "train"
+},
+{
+"goal": "이 장학금 bookmark 좀",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:3",
+"root": "이 장학금 bookmark 좀",
+"split": "train"
+},
+{
+"goal": "bookmark 해제해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:4",
+"root": "bookmark 해제해줘",
+"split": "train"
+},
+{
+"goal": "save 취소",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:4",
+"root": "save 취소",
+"split": "train"
+},
+{
+"goal": "unsave 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:4",
+"root": "unsave 해줘",
+"split": "train"
+},
+{
+"goal": "status applied로 바꿔줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:5",
+"root": "status applied로 바꿔줘",
+"split": "train"
+},
+{
+"goal": "apply 완료했어",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "applied",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:5",
+"root": "apply 완료했어",
+"split": "train"
+},
+{
+"goal": "status를 waiting으로",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "waiting",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:6",
+"root": "status를 waiting으로",
+"split": "train"
+},
+{
+"goal": "나 rejected 됨ㅠ",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "rejected",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:7",
+"root": "나 rejected 됨ㅠ",
+"split": "train"
+},
+{
+"goal": "drop할래 이거",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "status",
+"value": "abandoned",
+"target": "on_screen",
+"act": "report"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:8",
+"root": "drop할래 이거",
+"split": "train"
+},
+{
+"goal": "calendar에 add 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:9",
+"root": "calendar에 add 해줘",
+"split": "train"
+},
+{
+"goal": "google calendar에 넣어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:9",
+"root": "google calendar에 넣어줘",
+"split": "train"
+},
+{
+"goal": "checklist에서 등본 done 처리",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "done",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:10",
+"root": "checklist에서 등본 done 처리",
+"split": "train"
+},
+{
+"goal": "통장사본 check 풀어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "checklist",
+"value": "undo",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:10",
+"root": "통장사본 check 풀어줘",
+"split": "train"
+},
+{
+"goal": "신청 page open 해줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "page",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:11",
+"root": "신청 page open 해줘",
+"split": "train"
+},
+{
+"goal": "form 작성 도우미 열어줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "form",
+"value": "na",
+"target": "on_screen",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:11",
+"root": "form 작성 도우미 열어줘",
+"split": "train"
+},
+{
+"goal": "profile 학교 바꿔줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "profile",
+"value": "na",
+"target": "none",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:12",
+"root": "profile 학교 바꿔줘",
+"split": "train"
+},
+{
+"goal": "저장한 것들 알림 전부 off",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:13",
+"root": "저장한 것들 알림 전부 off",
+"split": "train"
+},
+{
+"goal": "찜한 거 notification 다 끄고 싶어",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:13",
+"root": "찜한 거 notification 다 끄고 싶어",
+"split": "train"
+},
+{
+"goal": "bookmark한 장학금들 알림 다 on 해줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:14",
+"root": "bookmark한 장학금들 알림 다 on 해줘",
+"split": "train"
+},
+{
+"goal": "saved 목록 전부 remind 켜줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:14",
+"root": "saved 목록 전부 remind 켜줘",
+"split": "train"
+},
+{
+"goal": "관심목록 push 알림 다 켜고 싶어요",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:14",
+"root": "관심목록 push 알림 다 켜고 싶어요",
+"split": "train"
+},
+{
+"goal": "찜한 것들 bookmark 다 해제",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:15",
+"root": "찜한 것들 bookmark 다 해제",
+"split": "train"
+},
+{
+"goal": "알림 on 돼 있어?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:16",
+"root": "알림 on 돼 있어?",
+"split": "train"
+},
+{
+"goal": "save하면 어디서 봐?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:17",
+"root": "save하면 어디서 봐?",
+"split": "train"
+},
+{
+"goal": "notification 왜 안 와?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:18",
+"root": "notification 왜 안 와?",
+"split": "train"
+},
+{
+"goal": "아 알림 off 하지 마 그냥 둬",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:19",
+"root": "아 알림 off 하지 마 그냥 둬",
+"split": "train"
+},
+{
+"goal": "친구는 push 알림 다 꺼놨대",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "on_screen",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:20",
+"root": "친구는 push 알림 다 꺼놨대",
+"split": "train"
+},
+{
+"goal": "저장한 거 notification 켜져 있나요?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:21",
+"root": "저장한 거 notification 켜져 있나요?",
+"split": "train"
+},
+{
+"goal": "bookmark 해제하면 기록도 사라져?",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 0
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "on_screen",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:english_mix:22",
+"root": "bookmark 해제하면 기록도 사라져?",
+"split": "train"
+},
+{
+"goal": "저장한 거 알림 다 켜줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:1",
+"root": "저장한 거 알림 다 켜줘",
+"split": "train"
+},
+{
+"goal": "관심 목록 전부 알림 설정",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:1",
+"root": "관심 목록 전부 알림 설정",
+"split": "train"
+},
+{
+"goal": "내가 저장해둔 지원사업들 알림 한꺼번에 켜주세요",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:1",
+"root": "내가 저장해둔 지원사업들 알림 한꺼번에 켜주세요",
+"split": "train"
+},
+{
+"goal": "관심 목록에 있는 것들 알림 좀 켜놔줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:1",
+"root": "관심 목록에 있는 것들 알림 좀 켜놔줘",
+"split": "train"
+},
+{
+"goal": "찜 목록 알림 켜기",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:1",
+"root": "찜 목록 알림 켜기",
+"split": "train"
+},
+{
+"goal": "저장한 거 하나도 빠짐없이 마감 알림 받게 해줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:1",
+"root": "저장한 거 하나도 빠짐없이 마감 알림 받게 해줘",
+"split": "train"
+},
+{
+"goal": "저장한 것들 중에 알림 꺼진 거 다 켜줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:2",
+"root": "저장한 것들 중에 알림 꺼진 거 다 켜줘",
+"split": "train"
+},
+{
+"goal": "찜한 장학금들 마감 알림 꺼줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:3",
+"root": "찜한 장학금들 마감 알림 꺼줘",
+"split": "train"
+},
+{
+"goal": "찜 목록에 있는 거 다 알림 끄기",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:3",
+"root": "찜 목록에 있는 거 다 알림 끄기",
+"split": "train"
+},
+{
+"goal": "찜해둔 거 알림 싹 다 꺼버려",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:3",
+"root": "찜해둔 거 알림 싹 다 꺼버려",
+"split": "train"
+},
+{
+"goal": "관심목록 알림 전체 해제",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:3",
+"root": "관심목록 알림 전체 해제",
+"split": "train"
+},
+{
+"goal": "저장된 지원사업 알림 전부 꺼줄래?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:3",
+"root": "저장된 지원사업 알림 전부 꺼줄래?",
+"split": "train"
+},
+{
+"goal": "관심목록 싹 비워줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:4",
+"root": "관심목록 싹 비워줘",
+"split": "train"
+},
+{
+"goal": "저장한 것들 전부 저장 해제해줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:4",
+"root": "저장한 것들 전부 저장 해제해줘",
+"split": "train"
+},
+{
+"goal": "관심목록 다 지워주세요 새로 담을래요",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:4",
+"root": "관심목록 다 지워주세요 새로 담을래요",
+"split": "train"
+},
+{
+"goal": "찜한 거 마감일 캘린더에 다 넣어줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:5",
+"root": "찜한 거 마감일 캘린더에 다 넣어줘",
+"split": "train"
+},
+{
+"goal": "저장한 장학금 전부 캘린더에 등록해줘",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:5",
+"root": "저장한 장학금 전부 캘린더에 등록해줘",
+"split": "train"
+},
+{
+"goal": "이거 말고 저장한 거 전부 알림 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:6",
+"root": "이거 말고 저장한 거 전부 알림 켜줘",
+"split": "train"
+},
+{
+"goal": "지금 보는 거 말고 찜한 것들 알림 꺼줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:6",
+"root": "지금 보는 거 말고 찜한 것들 알림 꺼줘",
+"split": "train"
+},
+{
+"goal": "이것도 저장하고 저장한 거 전부 알림 켜줘",
+"ctx": {
+"has_program": true,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "save",
+"value": "save",
+"target": "on_screen",
+"act": "request"
+},
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "request"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:7",
+"root": "이것도 저장하고 저장한 거 전부 알림 켜줘",
+"split": "train"
+},
+{
+"goal": "저장한 것들 알림 켜져 있어?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:8",
+"root": "저장한 것들 알림 켜져 있어?",
+"split": "train"
+},
+{
+"goal": "관심 목록 알림 다 끄면 나중에 다시 켤 수 있어?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:9",
+"root": "관심 목록 알림 다 끄면 나중에 다시 켤 수 있어?",
+"split": "train"
+},
+{
+"goal": "저장한 거 전부 알림 켜달라고 했던 거 취소할게",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "on",
+"target": "saved",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:10",
+"root": "저장한 거 전부 알림 켜달라고 했던 거 취소할게",
+"split": "train"
+},
+{
+"goal": "아 아니다 찜한 거 알림 끄지 마",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "retract"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:11",
+"root": "아 아니다 찜한 거 알림 끄지 마",
+"split": "train"
+},
+{
+"goal": "엄마가 관심목록 알림 다 꺼놓으래",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "alert",
+"value": "off",
+"target": "saved",
+"act": "mention"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:12",
+"root": "엄마가 관심목록 알림 다 꺼놓으래",
+"split": "train"
+},
+{
+"goal": "찜한 것들 캘린더에 들어가 있나?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "calendar",
+"value": "na",
+"target": "saved",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:13",
+"root": "찜한 것들 캘린더에 들어가 있나?",
+"split": "train"
+},
+{
+"goal": "저장한 거 다 해제하면 복구돼요?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [
+{
+"type": "save",
+"value": "unsave",
+"target": "saved",
+"act": "question"
+}
+],
+"source": "fresh2",
+"group": "fresh2:saved_list:14",
+"root": "저장한 거 다 해제하면 복구돼요?",
+"split": "train"
+},
+{
+"goal": "저장한 장학금들 마감 언제야?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [],
+"source": "fresh2",
+"group": "fresh2:saved_list:15",
+"root": "저장한 장학금들 마감 언제야?",
+"split": "train"
+},
+{
+"goal": "찜한 거 몇 개야?",
+"ctx": {
+"has_program": false,
+"selected": 0,
+"saved": 3
+},
+"cands": [],
+"source": "fresh2",
+"group": "fresh2:saved_list:15",
+"root": "찜한 거 몇 개야?",
+"split": "train"
 }
 ]
 }

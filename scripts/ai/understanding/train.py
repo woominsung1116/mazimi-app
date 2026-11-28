@@ -59,7 +59,7 @@ _spec.loader.exec_module(intent)
 ENCODER, Encoder, jamo, sha256 = intent.ENCODER, intent.Encoder, intent.jamo, intent.sha256
 
 FORMAT = "mazimi-understanding/4"
-VERSION = "e5s-char-jamo-understand-v4"
+VERSION = "e5s-char-jamo-understand-v5"
 TYPES = ["alert", "save", "status", "checklist", "calendar", "profile", "form", "page"]
 ACTS = ["none", "request", "mention", "question", "report", "retract"]
 VALUES = {"alert": ["on", "off"], "save": ["save", "unsave"], "checklist": ["done", "undo"],

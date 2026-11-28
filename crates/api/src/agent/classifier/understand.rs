@@ -33,7 +33,7 @@ use std::{
 
 /// `understanding.json` as committed (retraining changes this pin).
 pub const UNDERSTANDING_SHA256: &str =
-    "ba2d18cf09617b9e8963082804519b4c7f65033668693894ea50d53636a596b4";
+    "7917552b7292602171e3d8bce00fcc3569127f5cdd0b07e25377fee63d108ce7";
 const FORMAT: &str = "mazimi-understanding/4";
 /// The write types, in the artefact's order.
 pub const TYPES: [&str; 8] = [
